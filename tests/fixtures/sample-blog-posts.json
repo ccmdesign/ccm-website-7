@@ -1,0 +1,32 @@
+[
+  {
+    "_path": "/blog/2025-01-27-mobile-first-research-reports",
+    "brow": "Mobile-First Research Reports",
+    "title": "Meeting Your Audience Where 94% of Internet Happens",
+    "tagline": "Transform research impact through progressive disclosure methodology",
+    "author": "CCM Design Team",
+    "categories": ["Digital Strategy", "Research Communication"],
+    "tags": ["mobile-first design", "research accessibility", "progressive disclosure"],
+    "seo_tags": ["mobile research reports", "research accessibility"],
+    "date": "2025-01-27",
+    "excerpt": "94% of research stakeholders consume content on mobile devices",
+    "body": {
+      "html": "<p>Your groundbreaking research deserves an audience that can actually access it.</p>"
+    }
+  },
+  {
+    "_path": "/blog/2025-08-27-executive-approval-accelerator",
+    "brow": "Executive Communications",
+    "title": "Getting Executive Buy-In for Research Initiatives",
+    "tagline": "Strategic communication frameworks for research leadership",
+    "author": "CCM Strategy Team",
+    "categories": ["Leadership", "Research Communication"],
+    "tags": ["executive communication", "stakeholder engagement", "research strategy"],
+    "seo_tags": ["executive buy-in", "research leadership"],
+    "date": "2025-08-27",
+    "excerpt": "Research leaders need strategic communication tools",
+    "body": {
+      "html": "<p>Executive stakeholders require focused, value-driven communication.</p>"
+    }
+  }
+]

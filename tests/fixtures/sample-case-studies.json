@@ -1,0 +1,26 @@
+[
+  {
+    "_path": "/case-studies/bfna-federalism-in-crisis",
+    "title": "Policy Research Organization: National Colors Transform Complex Federalism Analysis",
+    "challenge": "Make comparative federalism analysis intuitive for diverse audiences",
+    "solution": "100-page publication using national colors as sophisticated narrative device",
+    "impact": "Direct acknowledgment for incredible design of prestigious policy publication",
+    "sector": "Policy Research",
+    "services": ["research communication", "design strategy", "stakeholder engagement"],
+    "body": {
+      "html": "<p>Comparative political analysis suffers from a fundamental design problem.</p>"
+    }
+  },
+  {
+    "_path": "/case-studies/harvard-tech-spotlight",
+    "title": "Harvard Technology: Spotlight on Innovation Leadership",
+    "challenge": "Communicate complex technology research to broader audiences",
+    "solution": "Strategic narrative framework highlighting practical applications",
+    "impact": "Increased stakeholder engagement and research visibility",
+    "sector": "Higher Education",
+    "services": ["research accessibility", "digital strategy", "progressive disclosure"],
+    "body": {
+      "html": "<p>Technology research requires clear communication strategies.</p>"
+    }
+  }
+]
