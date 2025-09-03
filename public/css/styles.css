@@ -27,6 +27,6 @@
 
 
 
-/* Development Styles */
-@import "dev.css" layer(overrides);
+/* Development Styles - Import only if dev.css has content */
+/* @import "dev.css" layer(overrides); */
 

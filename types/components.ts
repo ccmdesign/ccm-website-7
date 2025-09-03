@@ -157,3 +157,58 @@ export interface ContentComponentState {
   /** Visibility state for sections */
   visibleSections: Record<string, boolean>
 }
+
+// Story 1.3: Content Relationship Components Props
+
+/**
+ * Props for ccmRelatedPosts component
+ * Displays related blog posts and case studies based on computed relationships
+ */
+export interface RelatedPostsProps {
+  /** Current content item to find relationships for */
+  currentItem: BlogPost | CaseStudy
+  /** Array of computed relationships from useContentRelationships */
+  relationships: ContentRelationship[]
+  /** Maximum number of related items to display */
+  limit?: number
+  /** Display variant for different placements */
+  variant?: 'sidebar' | 'footer' | 'inline'
+  /** Additional CSS classes for styling customization */
+  class?: string
+}
+
+/**
+ * Props for ccmClientPortfolio component
+ * Displays case studies grouped by client organization
+ */
+export interface ClientPortfolioProps {
+  /** Client organization name to display portfolio for */
+  clientName: string
+  /** Array of case study projects for this client */
+  projects: CaseStudy[]
+  /** Relationships connecting projects to other content */
+  relationships: ContentRelationship[]
+  /** Display variant for portfolio layout */
+  variant?: 'grid' | 'list' | 'carousel'
+  /** Whether to show featured images in portfolio */
+  showImages?: boolean
+  /** Additional CSS classes for styling customization */
+  class?: string
+}
+
+/**
+ * Props for ccmProjectLinks component
+ * Shows cross-references between blog posts and case studies
+ */
+export interface ProjectLinksProps {
+  /** Source content item for cross-references */
+  sourceContent: BlogPost | CaseStudy
+  /** Bidirectional relationships for cross-referencing */
+  crossReferences: ContentRelationship[]
+  /** Display variant for different link types */
+  variant?: 'tags' | 'categories' | 'related'
+  /** Whether to show computed relationship reasons */
+  showReasons?: boolean
+  /** Additional CSS classes for styling customization */
+  class?: string
+}
