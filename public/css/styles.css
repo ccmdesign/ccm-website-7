@@ -12,6 +12,11 @@
 @import 'tokens/primitives/colors.css' layer(defaults);
 @import 'tokens/primitives/spacing.css' layer(defaults);
 
+/* Semantic Tokens */
+@import 'tokens/semantic/colors.css' layer(defaults);
+@import 'tokens/semantic/typography.css' layer(defaults);
+@import 'tokens/semantic/spacing.css' layer(defaults);
+
 @import 'vars/colors.css' layer(defaults);
 @import 'vars/space.css' layer(defaults);
 @import 'vars/vars.css' layer(defaults);

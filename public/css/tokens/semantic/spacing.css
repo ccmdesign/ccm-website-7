@@ -1,0 +1,141 @@
+/* Semantic Spacing Tokens - Layout and Component Relationships */
+/* Maps Utopia space scales to semantic layout and component roles */
+
+@layer defaults {
+  :root {
+    /* Layout Gutter System */
+    /* Horizontal spacing between main layout sections */
+    --layout-gutter-3xs: var(--space-3xs);      /* clamp(0.25rem, 0.2284rem + 0.1078vw, 0.3125rem) */
+    --layout-gutter-2xs: var(--space-2xs);      /* clamp(0.375rem, 0.3319rem + 0.2155vw, 0.5rem) */
+    --layout-gutter-xs: var(--space-xs);        /* clamp(0.6875rem, 0.6013rem + 0.431vw, 0.9375rem) */
+    --layout-gutter-small: var(--space-s);      /* clamp(0.875rem, 0.7457rem + 0.6466vw, 1.25rem) */
+    --layout-gutter-medium: var(--space-m);     /* clamp(1.3125rem, 1.1185rem + 0.9698vw, 1.875rem) */
+    --layout-gutter-large: var(--space-l);      /* clamp(1.75rem, 1.4914rem + 1.2931vw, 2.5rem) */
+    --layout-gutter-xl: var(--space-xl);        /* clamp(2.625rem, 2.2371rem + 1.9397vw, 3.75rem) */
+    
+    /* Section Gap System */
+    /* Vertical spacing between major page sections */
+    --section-gap-small: var(--space-l);        /* clamp(1.75rem, 1.4914rem + 1.2931vw, 2.5rem) */
+    --section-gap-medium: var(--space-xl);      /* clamp(2.625rem, 2.2371rem + 1.9397vw, 3.75rem) */
+    --section-gap-large: var(--space-2xl);      /* clamp(3.5rem, 2.9828rem + 2.5862vw, 5rem) */
+    --section-gap-xl: var(--space-3xl);         /* clamp(5.25rem, 4.4741rem + 3.8793vw, 7.5rem) */
+    
+    /* Component Gap System */
+    /* Internal spacing within components and between related elements */
+    --component-gap-3xs: var(--space-3xs);      /* clamp(0.25rem, 0.2284rem + 0.1078vw, 0.3125rem) */
+    --component-gap-2xs: var(--space-2xs);      /* clamp(0.375rem, 0.3319rem + 0.2155vw, 0.5rem) */
+    --component-gap-xs: var(--space-xs);        /* clamp(0.6875rem, 0.6013rem + 0.431vw, 0.9375rem) */
+    --component-gap-small: var(--space-s);      /* clamp(0.875rem, 0.7457rem + 0.6466vw, 1.25rem) */
+    --component-gap-medium: var(--space-m);     /* clamp(1.3125rem, 1.1185rem + 0.9698vw, 1.875rem) */
+    --component-gap-large: var(--space-l);      /* clamp(1.75rem, 1.4914rem + 1.2931vw, 2.5rem) */
+    
+    /* Content Flow Spacing */
+    /* Spacing between content elements like paragraphs, lists, headings */
+    --content-flow-tight: var(--space-xs);      /* clamp(0.6875rem, 0.6013rem + 0.431vw, 0.9375rem) */
+    --content-flow-default: var(--space-s);     /* clamp(0.875rem, 0.7457rem + 0.6466vw, 1.25rem) */
+    --content-flow-loose: var(--space-m);       /* clamp(1.3125rem, 1.1185rem + 0.9698vw, 1.875rem) */
+    --content-flow-spacious: var(--space-l);    /* clamp(1.75rem, 1.4914rem + 1.2931vw, 2.5rem) */
+    
+    /* Interactive Element Spacing */
+    /* Padding and margins for buttons, form elements, interactive components */
+    --interactive-padding-2xs: var(--space-2xs); /* clamp(0.375rem, 0.3319rem + 0.2155vw, 0.5rem) */
+    --interactive-padding-xs: var(--space-xs);   /* clamp(0.6875rem, 0.6013rem + 0.431vw, 0.9375rem) */
+    --interactive-padding-small: var(--space-s); /* clamp(0.875rem, 0.7457rem + 0.6466vw, 1.25rem) */
+    --interactive-padding-medium: var(--space-m); /* clamp(1.3125rem, 1.1185rem + 0.9698vw, 1.875rem) */
+    
+    /* Card and Container Spacing */
+    /* Internal padding for cards, panels, and container components */
+    --container-padding-small: var(--space-s);   /* clamp(0.875rem, 0.7457rem + 0.6466vw, 1.25rem) */
+    --container-padding-medium: var(--space-m);  /* clamp(1.3125rem, 1.1185rem + 0.9698vw, 1.875rem) */
+    --container-padding-large: var(--space-l);   /* clamp(1.75rem, 1.4914rem + 1.2931vw, 2.5rem) */
+    --container-padding-xl: var(--space-xl);     /* clamp(2.625rem, 2.2371rem + 1.9397vw, 3.75rem) */
+    
+    /* Grid and Flexbox Gaps */
+    /* Spacing between grid items and flex children */
+    --grid-gap-tight: var(--space-xs);          /* clamp(0.6875rem, 0.6013rem + 0.431vw, 0.9375rem) */
+    --grid-gap-default: var(--space-s);         /* clamp(0.875rem, 0.7457rem + 0.6466vw, 1.25rem) */
+    --grid-gap-loose: var(--space-m);           /* clamp(1.3125rem, 1.1185rem + 0.9698vw, 1.875rem) */
+    --grid-gap-spacious: var(--space-l);        /* clamp(1.75rem, 1.4914rem + 1.2931vw, 2.5rem) */
+
+    /* Contextual Spacing Pairs */
+    /* One-up pairs for balanced proportional relationships */
+    --spacing-pair-3xs-2xs: var(--space-3xs-2xs); /* clamp(0.25rem, 0.1638rem + 0.431vw, 0.5rem) */
+    --spacing-pair-2xs-xs: var(--space-2xs-xs);   /* clamp(0.375rem, 0.181rem + 0.9698vw, 0.9375rem) */
+    --spacing-pair-xs-s: var(--space-xs-s);       /* clamp(0.6875rem, 0.4935rem + 0.9698vw, 1.25rem) */
+    --spacing-pair-s-m: var(--space-s-m);         /* clamp(0.875rem, 0.5302rem + 1.7241vw, 1.875rem) */
+    --spacing-pair-m-l: var(--space-m-l);         /* clamp(1.3125rem, 0.903rem + 2.0474vw, 2.5rem) */
+    --spacing-pair-l-xl: var(--space-l-xl);       /* clamp(1.75rem, 1.0603rem + 3.4483vw, 3.75rem) */
+
+    /* Macro Layout Relationships */
+    /* Large-scale spacing for page-level composition */
+    --macro-spacing-s-l: var(--space-s-l);       /* clamp(0.875rem, 0.3147rem + 2.8017vw, 2.5rem) */
+    --macro-spacing-s-xl: var(--space-s-xl);     /* clamp(0.875rem, -0.1164rem + 4.9569vw, 3.75rem) */
+    --macro-spacing-m-3xl: var(--space-m-3xl);   /* clamp(1.3125rem, -0.8211rem + 10.6681vw, 7.5rem) */
+    --macro-spacing-xs-m: var(--space-xs-m);     /* clamp(0.6875rem, 0.278rem + 2.0474vw, 1.875rem) */
+    --macro-spacing-xs-l: var(--space-xs-l);     /* clamp(0.6875rem, 0.0625rem + 3.125vw, 2.5rem) */
+  }
+}
+
+/*
+Semantic Spacing Usage Guidelines:
+
+Layout Gutters (Page Structure):
+- --layout-gutter-* : Horizontal spacing in master grid system
+- Use for main content areas, sidebar gaps, navigation spacing
+- Typically used in CSS Grid gap property or margin/padding
+
+Section Gaps (Content Hierarchy):
+- --section-gap-* : Vertical spacing between major page sections
+- Use between hero, content sections, footer
+- Creates visual hierarchy and reading rhythm
+- Best for margin-bottom on section containers
+
+Component Gaps (UI Elements):
+- --component-gap-* : Internal spacing within components
+- Use for button groups, form field spacing, card content
+- Creates cohesive component spacing relationships
+- Apply to gap property in flexbox/grid or margin between elements
+
+Content Flow (Typography Rhythm):
+- --content-flow-* : Spacing between text elements
+- Use between paragraphs, headings, lists, blockquotes
+- Maintains optimal reading rhythm and visual hierarchy
+- Apply as margin-bottom on content elements
+
+Interactive Elements (User Interface):
+- --interactive-padding-* : Internal padding for clickable elements  
+- Use for buttons, form inputs, links, navigation items
+- Ensures adequate touch targets and visual breathing room
+- Apply as padding on interactive components
+
+Containers (Layout Containers):
+- --container-padding-* : Internal spacing for panels and cards
+- Use for article padding, sidebar content, modal dialogs
+- Creates comfortable reading environment within bounded areas
+- Apply as padding on container components
+
+Grid and Flexbox (Layout Systems):
+- --grid-gap-* : Spacing between layout items
+- Use with CSS Grid gap or Flexbox gap properties
+- Maintains consistent relationships in layout systems
+- Automatically responsive across all screen sizes
+
+Spacing Pairs (Proportional Relationships):
+- --spacing-pair-* : Balanced spacing for related elements
+- Use when elements need proportional rather than equal spacing
+- Creates more dynamic and visually interesting layouts
+- Ideal for asymmetrical design compositions
+
+Macro Layout (Page-Level Composition):
+- --macro-spacing-* : Large-scale responsive spacing relationships
+- Use for dramatic spacing variations across viewport sizes
+- Best for landing pages and marketing layouts
+- Creates impactful responsive typography and spacing
+
+Responsive Behavior:
+- All spacing tokens use Utopia clamp() functions
+- Automatically scales from mobile (320px) to desktop (1248px)
+- No media queries needed - fully fluid responsive design
+- Maintains proportional relationships at all screen sizes
+- Mobile base: 14px | Desktop base: 20px with optimized ratios
+*/

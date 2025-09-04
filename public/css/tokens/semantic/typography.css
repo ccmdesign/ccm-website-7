@@ -1,0 +1,88 @@
+/* Semantic Typography Tokens - Hierarchical Text Roles */
+/* Maps Utopia font scales to semantic typography hierarchy */
+
+@layer defaults {
+  :root {
+    /* Typography Semantic Aliases */
+    /* Large Display Headlines */
+    --typography-display-1: var(--size-5);      /* clamp(1.3515rem, 0.8523rem + 2.4963vw, 2.7994rem) */
+    --typography-display-2: var(--size-4);      /* clamp(1.2014rem, 0.8112rem + 1.9508vw, 2.3328rem) */
+    
+    /* Primary Headings */
+    --typography-heading-1: var(--size-3);      /* clamp(1.0679rem, 0.7658rem + 1.5106vw, 1.944rem) */
+    --typography-heading-2: var(--size-2);      /* clamp(0.9492rem, 0.7179rem + 1.1565vw, 1.62rem) */
+    --typography-heading-3: var(--size-1);      /* clamp(0.8438rem, 0.6692rem + 0.8728vw, 1.35rem) */
+    --typography-heading-4: var(--size-0);      /* clamp(0.75rem, 0.6207rem + 0.6466vw, 1.125rem) */
+    
+    /* Body Text Hierarchy */
+    --typography-body-large: var(--size-0);     /* clamp(0.75rem, 0.6207rem + 0.6466vw, 1.125rem) */
+    --typography-body-text: var(--size--1);     /* clamp(0.6667rem, 0.5733rem + 0.467vw, 0.9375rem) */
+    --typography-body-small: var(--size--2);    /* clamp(0.5926rem, 0.5275rem + 0.3253vw, 0.7813rem) */
+    
+    /* Supporting Text Elements */
+    --typography-caption: var(--size--2);       /* clamp(0.5926rem, 0.5275rem + 0.3253vw, 0.7813rem) */
+    --typography-label: var(--size--1);         /* clamp(0.6667rem, 0.5733rem + 0.467vw, 0.9375rem) */
+    --typography-overline: var(--size--2);      /* clamp(0.5926rem, 0.5275rem + 0.3253vw, 0.7813rem) */
+    
+    /* Interactive Elements */
+    --typography-button-large: var(--size-0);   /* clamp(0.75rem, 0.6207rem + 0.6466vw, 1.125rem) */
+    --typography-button-default: var(--size--1); /* clamp(0.6667rem, 0.5733rem + 0.467vw, 0.9375rem) */
+    --typography-button-small: var(--size--2);  /* clamp(0.5926rem, 0.5275rem + 0.3253vw, 0.7813rem) */
+    
+    /* Form Elements */
+    --typography-input-large: var(--size-0);    /* clamp(0.75rem, 0.6207rem + 0.6466vw, 1.125rem) */
+    --typography-input-default: var(--size--1); /* clamp(0.6667rem, 0.5733rem + 0.467vw, 0.9375rem) */
+    --typography-input-small: var(--size--2);   /* clamp(0.5926rem, 0.5275rem + 0.3253vw, 0.7813rem) */
+    
+    /* Link Text */
+    --typography-link-large: var(--size-0);     /* clamp(0.75rem, 0.6207rem + 0.6466vw, 1.125rem) */
+    --typography-link-default: var(--size--1);  /* clamp(0.6667rem, 0.5733rem + 0.467vw, 0.9375rem) */
+    --typography-link-small: var(--size--2);    /* clamp(0.5926rem, 0.5275rem + 0.3253vw, 0.7813rem) */
+
+    /* Typography Scale Context */
+    /* Font size scales automatically from mobile (320px) to desktop (1248px) */
+    /* Mobile base: 12px | Desktop base: 18px */
+    /* Scale ratios: Mobile 1.125 (Major Second) | Desktop 1.2 (Minor Third) */
+  }
+}
+
+/*
+Typography Hierarchy Usage Guidelines:
+
+Display Text (Hero Headlines):
+- --typography-display-1 : Largest hero headlines, landing page titles
+- --typography-display-2 : Secondary hero text, section intros
+
+Headings (Content Structure):
+- --typography-heading-1 : Page titles, main content headings (h1)
+- --typography-heading-2 : Major section headings (h2)
+- --typography-heading-3 : Subsection headings (h3)
+- --typography-heading-4 : Minor headings and subheadings (h4-h6)
+
+Body Text (Readable Content):
+- --typography-body-large : Emphasized body text, introductory paragraphs
+- --typography-body-text : Standard paragraph text, default reading size
+- --typography-body-small : Fine print, secondary information
+
+Supporting Elements:
+- --typography-caption : Image captions, footnotes, metadata
+- --typography-label : Form labels, UI element labels
+- --typography-overline : Section labels, category tags
+
+Interactive Components:
+- --typography-button-* : Button text at different sizes
+- --typography-input-* : Form input text at different sizes  
+- --typography-link-* : Link text at different sizes
+
+Responsive Design:
+- All typography tokens use Utopia clamp() functions for fluid scaling
+- Automatically adjusts from mobile (320px) to desktop (1248px) viewports
+- Maintains proportional relationships across all screen sizes
+- No media queries needed - fully responsive by design
+
+Best Practices:
+- Use semantic tokens instead of primitive size tokens in components
+- Maintain consistent hierarchy by using appropriate semantic levels
+- Test typography at both mobile and desktop sizes
+- Ensure sufficient contrast with background colors using semantic color tokens
+*/
