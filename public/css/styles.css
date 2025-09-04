@@ -8,6 +8,10 @@
 /* Defaults Layer */
 @import 'base/fonts.css' layer(defaults);
 
+/* Primitive Tokens */
+@import 'tokens/primitives/colors.css' layer(defaults);
+@import 'tokens/primitives/spacing.css' layer(defaults);
+
 @import 'vars/colors.css' layer(defaults);
 @import 'vars/space.css' layer(defaults);
 @import 'vars/vars.css' layer(defaults);

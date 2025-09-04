@@ -1,0 +1,19 @@
+/* Primitive Color Tokens - Raw HSL Values Only */
+/* Extracted from /public/css/vars/colors.css lines 3-23 */
+
+:root {
+  /* Core Neutral Colors */
+  --white-hsl: 255, 100%, 100%;
+  --black-hsl: 0, 0%, 3%;
+
+  /* Brand Colors */
+  --primary-hsl: 45, 100%, 50%;   /* yellow */
+  --secondary-hsl: 0, 84%, 34%;   /* red */
+
+  /* System Colors */
+  --red-hsl: 352, 59%, 55%;
+  --yellow-hsl: 36, 83%, 61%;
+  --blue-hsl: 208, 50%, 38%;
+  --navy-hsl: 201, 100%, 18%;
+  --green-hsl: 188, 97%, 28%;
+}
