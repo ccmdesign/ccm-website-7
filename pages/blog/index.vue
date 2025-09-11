@@ -12,13 +12,13 @@
         <option value="Ethical Technology & Social Impact">Ethical Technology & Social Impact</option>
       </select>
     </field-group>
-    <div class="stack">
-    <ccm-card v-for="post in blogPosts" :key="post._path">
-        <h4>{{ post.meta.brow }}</h4>
-        <h3>{{ post.title || post._path }}</h3>
-        <p>{{ post.meta.tagline }}</p>
-      </ccm-card>
-    </div>
+  </ccm-section>
+  <ccm-section>
+    <ccm-card v-for="post in blogPosts" :key="post._path" :to="post.path">
+      <h4>{{ post.meta.brow }}</h4>
+      <h3>{{ post.title || post._path }}</h3>
+      <p>{{ post.meta.tagline }}</p>
+    </ccm-card>
   </ccm-section>
   <ccm-section>
     <h2>Subscribe to Our Insights</h2>
@@ -37,8 +37,6 @@ definePageMeta({
     brow: 'Blog',
     title: 'Insights',
     tagline: 'Insights on Design, Data, and Social Impact',
-    size: 'l',
-    hideTopbar: false
   }
 })
 

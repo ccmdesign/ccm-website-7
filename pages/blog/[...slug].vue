@@ -48,7 +48,9 @@ if (post.value?.hero) {
     tagline: post.value.description,
     backgroundColor: 'transparent',
     size: 'l',
-    hideTopbar: false
+    hideTopbar: false,
+    hideBottom: true,
+    variant: 'minimal'
   }
 }
 
