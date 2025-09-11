@@ -24,6 +24,29 @@ export default defineContentConfig({
         // Adding a basic schema for services as well
         status: z.string().optional()
       })
+    }),
+    components: defineCollection({
+      type: 'page',
+      source: 'components/*.md',
+      schema: z.object({
+        category: z.string(),
+        props: z.array(z.object({
+          name: z.string(),
+          type: z.string(),
+          default: z.string().optional(),
+          required: z.boolean().optional(),
+          description: z.string()
+        })).optional(),
+        slots: z.array(z.object({
+          name: z.string(),
+          description: z.string()
+        })).optional(),
+        examples: z.array(z.object({
+          title: z.string(),
+          code: z.string()
+        })).optional(),
+        order: z.number().optional()
+      })
     })
   }
 })
