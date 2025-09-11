@@ -6,13 +6,11 @@
     <p>Our approach is holistic, integrating strategy, design, and technology to build the digital experiences that advance knowledge and drive social impact. We translate your most complex ideas into clear, effective, and engaging platforms that serve your audience and achieve your mission.</p>    
   </ccm-section>
   <ccm-section v-if="services && services.length > 0">
-    <div class="stack">
-      <ccm-card v-for="service in services" :key="service.path" :to="service.path">
-        <h4>{{ service.meta.brow }}</h4>
-        <h2>{{ service.title }}</h2>
-        <p>{{ service.meta.tagline }}</p>
-      </ccm-card>
-    </div>
+    <ccm-card v-for="service in services" :key="service.path" :to="service.path">
+      <h4>{{ service.meta.brow }}</h4>
+      <h2>{{ service.title }}</h2>
+      <p>{{ service.meta.tagline }}</p>
+    </ccm-card>
   </ccm-section>
 
   <ccm-section v-else>
@@ -28,7 +26,6 @@ definePageMeta({
     tagline: 'Professional design services tailored for research and mission-driven organizations.',
   }
 })
-
 
 const { data: services } = await useAsyncData('services', async () => {
   const servicesData = await queryCollection('services').all()

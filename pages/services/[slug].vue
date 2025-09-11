@@ -69,8 +69,6 @@ if (service.value?.hero) {
     title: service.value.hero.title || service.value.title,
     tagline: service.value.hero.tagline || service.value.description,
     backgroundColor: service.value.hero.backgroundColor || 'base-color-super-light',
-    size: service.value.hero.size || 'l',
-    hideTopbar: service.value.hero.hideTopbar === true
   }
 } else {
   // Default hero from content basics
@@ -78,9 +76,6 @@ if (service.value?.hero) {
     brow: 'Service',
     title: service.value.title,
     tagline: service.value.description,
-    backgroundColor: 'base-color-super-light',
-    size: 'l',
-    hideTopbar: false
   }
 }
 </script>
