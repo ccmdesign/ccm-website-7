@@ -1,16 +1,24 @@
 <template>
-  <nuxt-link class="ccm-card" :to="to">
+  <nuxt-link 
+    class="ccm-card" 
+    :to="to" 
+    :aria-label="title" 
+    :aria-describedby="ctaId" 
+    :image="image"
+    :style="{
+      '--_card-padding': `var(--space-${size})`,
+      '--_card-background-color': `var(--${backgroundColor})`
+    }"
+    >
     
-    <div class="ccm-card__image">
-      <img v-if="image" :src="image" :alt="title" />
-      <div v-else class="ccm-card__image-placeholder">
-        <slot name="image-placeholder" />
-      </div>
-    </div>
+  <slot name="image">
+    <img class="ccm-card__image" v-if="image" :src="image" :alt="title" />
+    <div v-else class="ccm-card__image"></div>
+  </slot>
 
-    <div class="ccm-card__text">
-      <slot />
-    </div>
+  <div class="ccm-card__text">
+    <slot />
+  </div>
     
   </nuxt-link>
 </template>
@@ -28,11 +36,28 @@ const props = defineProps({
   image: {
     type: String,
     required: false
+  },
+  size: {
+    type: String,
+    default: 'l'
+  },
+  backgroundColor: {
+    type: String,
+    default: 'color-primary-tint-20'
   }
 })
 </script>
 
 <style scoped>
+
+.ccm-card {
+  --_card-padding: var(--space-l);
+  --_card-border-radius: var(--border-radius-l);
+  --_card-gap: var(--space-m);
+  --_card-background-color: var(--color-primary-tint-20);
+}
+
+
 .ccm-card {
   display: flex;
   flex-direction: column;
@@ -43,13 +68,13 @@ const props = defineProps({
 
 .ccm-card__text {
   flex: 1;
-  padding-block: var(--space-m);
+  padding-block: var(--_card-padding);
 }
 
 .ccm-card__image {
   flex: 1;
-  padding: var(--space-m);
-  background-color: var(--color-primary-tint-20);
+  padding: var(--_card-padding);
+  background-color: var(--_card-background-color);
   width: 100%;
   aspect-ratio: 16/9;
 }
@@ -59,9 +84,9 @@ const props = defineProps({
 @media (min-width: 768px) {
   .ccm-card { flex-direction: row; }
 
-  .ccm-card__text { padding-inline: var(--space-m); }
+  .ccm-card__text { padding-inline: var(--_card-padding); }
 
-  .ccm-card__image-placeholder {
+  .ccm-card__image {
     width: 100%;
     aspect-ratio: 1/1; 
   }
