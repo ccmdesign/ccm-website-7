@@ -1,6 +1,6 @@
 <template>
   <ccm-section>
-    <div class="text-align:center padding-block:m">
+    <div class="text-align:center padding-block:l">
       <h2 class="h1">Latest Blog Posts</h2>
     </div>
     <div v-if="blogPosts && blogPosts.length > 0" class="stack">
@@ -11,14 +11,14 @@
       </ccm-card>
 
       <div class="text-align:center padding-block:m">
-        <NuxtLink to="/blog">View all blog posts →</NuxtLink>
+        <ccm-button color="primary" to="/blog">View all blog posts</ccm-button>
       </div>
     </div>
     <p v-else>No blog posts found</p>
   </ccm-section>
 
   <ccm-section>
-    <div class="text-align:center padding-block:m">
+    <div class="text-align:center padding-block:l">
       <h2 class="h1">Case Studies</h2>
     </div>
     <div v-if="caseStudies && caseStudies.length > 0" class="stack">
@@ -28,7 +28,7 @@
         <p>{{ study.meta.tagline }}</p>
       </ccm-card>
       <div class="text-align:center padding-block:m">
-        <NuxtLink to="/case-studies">View all case studies →</NuxtLink>
+        <ccm-button color="primary" to="/case-studies">View all case studies</ccm-button>
       </div>
     </div>
     <p v-else>No case studies found</p>
@@ -42,8 +42,6 @@ definePageMeta({
     title: 'We build systems',
     tagline: 'Strategy, design, and engineering.',
     backgroundColor: 'base-color-super-light',
-    size: 'l',
-    hideTopbar: false
   }
 })
 
