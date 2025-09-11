@@ -75,8 +75,14 @@ const props = defineProps({
   aspect-ratio: 16/7;
   display: flex;
   flex-direction: column;
+  max-width: 100vw; 
+  max-height: 600px;
 
-  * { width: 100%; }
+  * { 
+    max-width: 100%; 
+    width: -webkit-fill-available; 
+    width: -moz-available; 
+  }
 }
 
 .ccm-hero__main {
