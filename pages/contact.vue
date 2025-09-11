@@ -1,22 +1,27 @@
 <template>
   <ccm-section>
-    <form class="stack" @submit.prevent="submitContact">
-      <field-group>
-        <label for="name">Name</label>
-        <input id="name" v-model="contact.name" type="text" required autocomplete="name" />
-      </field-group>
-      <field-group>
-        <label for="email">Email</label>
-        <input id="email" v-model="contact.email" type="email" required autocomplete="email" />
-      </field-group>
-      <field-group>
-        <label for="message">Message</label>
-        <textarea id="message" v-model="contact.message" required rows="5"></textarea>
-      </field-group>
-      <button type="submit" :disabled="submitting">{{ submitting ? 'Sending…' : 'Send' }}</button>
-      <p v-if="success">Thanks for reaching out! We'll get back to you soon.</p>
-      <p v-if="error">Something went wrong. Please try again.</p>
-    </form>
+    <div class="center">
+      <form class="form | stack" @submit.prevent="submitContact">
+        <field-group>
+          <label for="name">Name</label>
+          <input id="name" v-model="contact.name" type="text" required autocomplete="name" />
+        </field-group>
+        <field-group>
+          <label for="email">Email</label>
+          <input id="email" v-model="contact.email" type="email" required autocomplete="email" />
+        </field-group>
+        <field-group>
+          <label for="message">Message</label>
+          <textarea id="message" v-model="contact.message" required rows="5"></textarea>
+        </field-group>
+        <field-group>
+          <label for="submit"></label>
+          <ccm-button type="submit" :disabled="submitting">{{ submitting ? 'Sending…' : 'Send' }}</ccm-button>
+          <p v-if="success">Thanks for reaching out! We'll get back to you soon.</p>
+          <p v-if="error">Something went wrong. Please try again.</p>
+        </field-group>
+      </form>
+    </div>
   </ccm-section>
 </template>
 
