@@ -4,13 +4,13 @@
       <ccm-hero
         v-if="hero"
         class="layout-hero"
-        
         :brow="hero.brow"
         :title="hero.title"
         :tagline="hero.tagline"
-        :background-color="hero.backgroundColor || 'base-color'"
-        :size="hero.size || 'l'"
-        :hide-topbar="hero.hideTopbar === true"
+        :background-color="hero.backgroundColor"
+        :size="hero.size"
+        :hide-topbar="hero.hideTopbar"
+        :hide-bottom="hero.hideBottom"
       />
     </slot>
     <main class="layout-main">

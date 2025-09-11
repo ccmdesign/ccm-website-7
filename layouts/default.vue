@@ -8,7 +8,9 @@
       :tagline="hero.tagline"
       :background-color="hero.backgroundColor || 'transparent'"
       :size="hero.size || 'l'"
-      :hide-topbar="hero.hideTopbar === true"
+      :hide-top="hero.hideTop"
+      :hide-bottom="hero.hideBottom"
+      :variant="hero.variant"
     />
     <main class="layout-main">
       <slot />
