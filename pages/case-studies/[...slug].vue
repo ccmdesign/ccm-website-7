@@ -37,9 +37,6 @@ if (caseStudy.value?.hero) {
     brow: 'Case Study',
     title: caseStudy.value.title,
     tagline: caseStudy.value.description,
-    backgroundColor: 'transparent',
-    size: 'l',
-    hideTopbar: false
   }
 }
 </script>

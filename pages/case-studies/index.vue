@@ -1,12 +1,10 @@
 <template>
   <ccm-section>
-    <div class="stack">
-      <ccm-card v-for="study in caseStudies" :key="study._path">
+      <ccm-card v-for="study in caseStudies" :key="study._path" :to="study.path">
         <h4>{{ study.meta.brow }}</h4>
         <h3>{{ study.title || study._path }}</h3>
         <p>{{ study.meta.tagline }}</p>
       </ccm-card>
-    </div>
   </ccm-section>
 </template>
 
@@ -16,8 +14,6 @@ definePageMeta({
     brow: 'Case Studies',
     title: 'Case Studies',
     tagline: 'See our work',
-    size: 'l',
-    hideTopbar: false
   }
 })
 
