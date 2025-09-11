@@ -12,6 +12,7 @@
 
 .prose {
   hgroup {
+    h4 ~ h1,
     h4 ~ h2,
     h4 ~ h3 { margin-top: 0; }
 
@@ -21,8 +22,17 @@
       font-family: var(--body-font);
     }
   }
-}
 
+  hr {
+    opacity: .2;
+    margin-block: var(--space-xl);
+    border-width: 1px 0 0 0;
+  }
+
+  li + li {
+    margin-top: var(--space-3xs);
+  }
+}
 
 .prose-layout {
   --_prose-padding-inline: 1rem;
