@@ -26,8 +26,6 @@ definePageMeta({
     brow: 'Contact',
     title: 'Contact',
     tagline: 'Get in touch with us',
-    size: 'l',
-    hideTopbar: false
   }
 })
 
