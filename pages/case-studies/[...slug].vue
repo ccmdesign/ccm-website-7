@@ -8,35 +8,35 @@
       </div>
     </div>
   </ccm-section>
+  
 </template>
 
 <script setup>
 definePageMeta({
-  layout: 'article-layout'
+  layout: 'case-study-layout'
 })
 
 const route = useRoute()
-const { data: caseStudy } = await useAsyncData(`case-study-${route.params.slug}`, () => {
-  return queryCollection('casestudies').path(`/case-studies/${route.params.slug}`).first()
+const slugParam = Array.isArray(route.params.slug) ? route.params.slug.join('/') : route.params.slug
+const { data: caseStudy } = await useAsyncData(`case-study-${slugParam}`, () => {
+  return queryCollection('casestudies').path(`/case-studies/${slugParam}`).first()
 })
 
 // Provide hero data from content front-matter (if present) to layout via shared state
 const heroState = useState('hero', () => null)
-if (caseStudy.value?.hero) {
+if (caseStudy.value) {
+  const doc = caseStudy.value
   heroState.value = {
-    brow: caseStudy.value.hero.brow || 'Service',
-    title: caseStudy.value.hero.title || caseStudy.value.title,
-    tagline: caseStudy.value.hero.tagline || caseStudy.value.description,
-    backgroundColor: caseStudy.value.hero.backgroundColor || 'transparent',
-    size: caseStudy.value.hero.size || 'l',
-    hideTopbar: caseStudy.value.hero.hideTopbar === true
-  }
-} else {
-  // Default hero from content basics
-  heroState.value = {
-    brow: 'Case Study',
-    title: caseStudy.value.title,
-    tagline: caseStudy.value.description,
+    brow: doc.brow || doc.meta?.brow,
+    title: doc.title || doc.meta?.title,
+    tagline: doc.tagline || doc.meta?.tagline,
+    backgroundColor: doc.backgroundColor || doc.meta?.backgroundColor,
+    size: doc.size || doc.meta?.size,
+    client: doc.client || doc.meta?.client,
+    project: doc.project || doc.meta?.project,
+    hideTopbar: doc.hideTopbar ?? doc.meta?.hideTopbar,
+    hideBottom: doc.hideBottom ?? doc.meta?.hideBottom,
+    variant: doc.variant || doc.meta?.variant
   }
 }
 </script>
