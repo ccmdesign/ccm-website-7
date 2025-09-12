@@ -10,9 +10,12 @@
       '--_ccm-hero-background-color': `var(--${backgroundColor})`
     }"
     >
-    <ccm-topbar v-if="!hideTopbar" class="ccm-hero__top | center"/>
-    
-    <div class="ccm-hero__main | center">
+    <div class="center">
+      <ccm-topbar v-if="!hideTopbar" class="ccm-hero__top"/>
+    </div>
+
+    <div class="center">
+      <div class="ccm-hero__main">
       <slot>
         <hgroup>
           <span v-if="brow">{{ brow }}</span>
@@ -20,9 +23,13 @@
           <p v-if="tagline">{{ tagline }}</p>
         </hgroup>  
       </slot>
+      </div>
     </div>
-    <div class="ccm-hero__bottom | center">
-      <slot name="footer" />
+
+    <div class="center">
+      <div class="ccm-hero__bottom">
+        <slot name="footer" />
+      </div>
     </div>
   </header>
 </template>
@@ -53,6 +60,10 @@ const props = defineProps({
     type: Boolean,
     default: false
   },
+  hideTopbar: {
+    type: Boolean,
+    default: false
+  },
   hideBottom: {
     type: Boolean,
     default: true
@@ -72,17 +83,10 @@ const props = defineProps({
 
 .ccm-hero {
   background-color: var(--_ccm-hero-background-color);
-  aspect-ratio: 16/7;
-  display: flex;
-  flex-direction: column;
+  display: block;
   max-width: 100vw; 
   max-height: 600px;
-
-  * { 
-    max-width: 100%; 
-    width: -webkit-fill-available; 
-    width: -moz-available; 
-  }
+  
 }
 
 .ccm-hero__main {
@@ -90,6 +94,7 @@ const props = defineProps({
   padding-block: var(--_ccm-hero-padding-block);
   align-items: center;
   flex: 1;
+  aspect-ratio: 16/7;
 }
 
 .ccm-hero__main {
@@ -103,6 +108,6 @@ const props = defineProps({
 .ccm-hero[hide-top="true"] .ccm-hero__top { display: none; }
 .ccm-hero[hide-bottom="true"] .ccm-hero__bottom { display: none; }
 
-.ccm-hero[variant="minimal"] { aspect-ratio: unset; }
+.ccm-hero[variant="minimal"] .ccm-hero__main { aspect-ratio: unset; }
 
 </style>
