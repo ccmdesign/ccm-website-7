@@ -6,6 +6,7 @@
     :background-color="backgroundColor"
     :style="{
       '--_ccm-section-background-color': `var(--${backgroundColor})`,
+      '--_ccm-section-foreground-color': `var(--${foregroundColor})`,
       '--_ccm-section-padding-block': `var(--space-${size})`
     }"
     >
@@ -26,6 +27,10 @@ const props = defineProps({
     type: String,
     default: 'transparent'
   },
+  foregroundColor: {
+    type: String,
+    default: 'color-base'
+  },
   fullWidth: {
     type: Boolean,
     default: false
@@ -37,10 +42,12 @@ const props = defineProps({
 .ccm-section {
   --_ccm-section-padding-block: var(--space-l);
   --_ccm-section-background-color: transparent;
+  --_ccm-section-foreground-color: var(--color-base);
 }
 
 .ccm-section { 
   padding-block: var(--_ccm-section-padding-block);
-  background-color: var(--_ccm-section-background-color); 
+  background-color: var(--_ccm-section-background-color);
+  color: var(--_ccm-section-foreground-color);
 }
 </style>

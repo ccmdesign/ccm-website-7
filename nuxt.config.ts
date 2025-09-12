@@ -36,6 +36,6 @@ export default defineNuxtConfig({
     clientFallback: true
   },
   components: [
-    { path: '~/components', pathPrefix: false }
+    { path: '~/components', pathPrefix: false, global: true }
   ],
 })

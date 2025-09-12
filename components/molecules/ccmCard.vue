@@ -88,7 +88,7 @@ const props = defineProps({
 
   .ccm-card__image {
     width: 100%;
-    aspect-ratio: 1/1; 
+    /* aspect-ratio: 1/1;  */
   }
 
   .ccm-card:nth-child(even) { 
