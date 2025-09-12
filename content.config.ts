@@ -14,7 +14,17 @@ export default defineContentConfig({
       type: 'page',
       source: 'case-studies/*.md',
       schema: z.object({
-        published: z.boolean().default(true)
+        published: z.boolean().default(true),
+        client: z.string().optional(),
+        clientId: z.string().optional()
+      })
+    }),
+    clients: defineCollection({
+      type: 'page',
+      source: 'clients/*.md',
+      schema: z.object({
+        name: z.string(),
+        logo: z.string().optional(),
       })
     }),
     services: defineCollection({
