@@ -1,4 +1,9 @@
 <template>
+
+  <ccm-section>
+    <ccm-client-list />
+  </ccm-section>
+
   <ccm-section>
     <div class="text-align:center padding-block:l">
       <h2 class="h1">Latest Blog Posts</h2>
@@ -41,7 +46,7 @@ definePageMeta({
     brow: '',
     title: 'We build systems',
     tagline: 'Strategy, design, and engineering.',
-    backgroundColor: 'base-color-super-light',
+    backgroundColor: 'color-accent',
   }
 })
 

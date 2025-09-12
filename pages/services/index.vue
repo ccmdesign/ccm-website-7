@@ -24,6 +24,7 @@ definePageMeta({
     brow: 'Services',
     title: 'How We Can Help',
     tagline: 'Professional design services tailored for research and mission-driven organizations.',
+    backgroundColor: 'color-accent'
   }
 })
 

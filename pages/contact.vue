@@ -31,6 +31,7 @@ definePageMeta({
     brow: 'Contact',
     title: 'Contact',
     tagline: 'Get in touch with us',
+    backgroundColor: 'color-accent'
   }
 })
 
