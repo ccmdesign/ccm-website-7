@@ -25,28 +25,21 @@ const { data: post } = await useAsyncData(`blog-${route.params.slug}`, () => {
 useHead({
   title: post.value?.title || 'Blog Post',
   meta: [
-    { name: 'description', content: post.value?.description || 'Blog post description' }
+    { name: 'description', content: post.value?.meta?.excerpt || post.value?.meta?.tagline || 'Blog post from CCM Design Team' }
   ]
 })
 
-// Provide hero data from content front-matter (if present) to layout via shared state
+// Provide hero data from content frontmatter to layout via shared state
 const heroState = useState('hero', () => null)
-if (post.value?.hero) {
+if (post.value) {
   heroState.value = {
-    brow: post.value.hero.brow || 'Service',
-    title: post.value.hero.title || post.value.title,
-    tagline: post.value.hero.tagline || post.value.description,
-    backgroundColor: post.value.hero.backgroundColor || 'transparent',
-    size: post.value.hero.size || 'l',
-    hideTopbar: post.value.hero.hideTopbar === true
-  }
-} else {
-  // Default hero from content basics
-  heroState.value = {
-    brow: 'Blog',
+    brow: post.value.meta?.brow || 'Blog',
     title: post.value.title,
-    tagline: post.value.description,
-    backgroundColor: 'transparent',
+    tagline: post.value.meta?.tagline || post.value.meta?.excerpt || 'Blog Post',
+    date: post.value.meta?.date,
+    author: post.value.meta?.author || 'CCM Design Team',
+    tags: post.value.meta?.tags || [],
+    backgroundColor: 'color-primary-tint-20',
     size: 'l',
     hideTopbar: false,
     hideBottom: true,
