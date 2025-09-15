@@ -33,6 +33,7 @@ Use this exact structure for all blog posts:
 brow: "Category/Section Name"
 title: "Main Article Title"
 tagline: "Compelling subtitle that explains the value proposition"
+slug: "simplified-title-slugified-for-url-use"
 date: "YYYY-MM-DD"
 author: "CCM Design Team"
 categories: ["Category 1", "Category 2"]
