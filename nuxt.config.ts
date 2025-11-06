@@ -2,6 +2,12 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
+  ignore: ['**/_archive/**'],
+  watchers: {
+    chokidar: {
+      ignored: ['**/_archive/**'],
+    },
+  },
   modules: [
     '@nuxt/content'
   ],
@@ -27,6 +33,11 @@ export default defineNuxtConfig({
     transpile: ['vue-carousel'],
   },
   vite: {
+    server: {
+      watch: {
+        ignored: ['**/_archive/**'],
+      },
+    },
   },
   plugins: [
     
