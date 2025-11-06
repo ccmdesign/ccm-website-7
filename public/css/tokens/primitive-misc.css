@@ -1,19 +1,23 @@
 /* Effects */
 :root {
-  --border: 2px solid currentColor;
+  --border-width: 2px;
+  --border: var(--border-width) solid var(--color-base);
+  --border-radius: 4px;
+
+  --box-shadow-base: 2px 2px 8px hsla(217, 81%, 10%, 0.15);
 
   --border-radius-s: 4px;
   --border-radius-m: 8px;
   --border-radius-l: 12px;
 
-  --box-shadow-inset: inset rgba(0, 0, 0, 0.03) 0px 0px 4px 0px;
+  --box-shadow-inset: inset hsla(217, 81%, 10%, 0.03) 0px 0px 4px 0px;
 
-  --box-shadow-s: rgba(0, 0, 0, 0.03) 0px 3px 4px 0px;
+  --box-shadow-s: hsla(217, 81%, 10%, 0.03) 0px 3px 4px 0px;
 
-  --box-shadow-m: rgba(0, 0, 0, 0.03) 0px 3px 4px 0px, rgba(0, 0, 0, 0.03) 0px 0px 4px 0px, rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
-    rgba(0, 0, 0, 0.035) 0px 0px 16px 0px;
+  --box-shadow-m: hsla(217, 81%, 10%, 0.03) 0px 3px 4px 0px, hsla(217, 81%, 10%, 0.03) 0px 0px 4px 0px, hsla(217, 81%, 10%, 0.03) 0px 0px 8px 0px,
+    hsla(217, 81%, 10%, 0.035) 0px 0px 16px 0px;
 
-  --box-shadow-l: rgba(0, 0, 0, 0.03) 0px 3px 4px 0px, rgba(0, 0, 0, 0.03) 0px 0px 4px 0px, rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
-    rgba(0, 0, 0, 0.05) 0px 0px 16px 0px, rgba(0, 0, 0, 0.035) 0px 0px 32px 0px;
+  --box-shadow-l: hsla(217, 81%, 10%, 0.03) 0px 3px 4px 0px, hsla(217, 81%, 10%, 0.03) 0px 0px 4px 0px, hsla(217, 81%, 10%, 0.03) 0px 0px 8px 0px,
+    hsla(217, 81%, 10%, 0.05) 0px 0px 16px 0px, hsla(217, 81%, 10%, 0.035) 0px 0px 32px 0px;
 }
 

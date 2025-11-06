@@ -6,8 +6,8 @@
 
 
 :root {
-  --display-font: "Sentinel SSm A", "Sentinel SSm B", sans-serif;
-  --body-font: "trade-gothic-next", sans-serif;
+  --display-font: "Sentinel SSm A", "Sentinel SSm B", serif;
+  --body-font: urw-din, sans-serif;
   --icon-font: "Material Symbols Outlined";
 }
 

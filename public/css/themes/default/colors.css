@@ -1,10 +1,9 @@
 /* Color Values */
 :root {
-  --hsl-base: 220, 13%, 18%;
-  --hsl-primary: 214, 84%, 56%;
-  --hsl-secondary: 45, 100%, 51%;
-  --hsl-tertiary: 342, 75%, 51%;
-  --hsl-accent: 159, 64%, 52%;
+  --hsl-base: 217, 81%, 10%;
+  --hsl-primary: 217, 81%, 10%;
+  --hsl-secondary: 182, 43%, 76%;
+  --hsl-accent: 54, 100%, 47%;
 }
 
 /* Solid Colors */
@@ -12,7 +11,6 @@
   --color-base: hsl(var(--hsl-base));
   --color-primary: hsl(var(--hsl-primary));
   --color-secondary: hsl(var(--hsl-secondary));
-  --color-tertiary: hsl(var(--hsl-tertiary));
   --color-accent: hsl(var(--hsl-accent));
 }
 

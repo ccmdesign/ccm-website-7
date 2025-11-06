@@ -2,15 +2,16 @@
   :root {
     font-family: var(--body-font);
     font-optical-sizing: auto;
-    font-weight: var(--body-font-weight,);
+    font-weight: var(--body-font-weight);
     font-style: var(--body-font-style);
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: clamp(1rem, 0.3vw + 0.9rem, 1.5rem);
+    line-height: 1.62;
+    font-variant-numeric: lining-nums;
   }
 
   body {
-    background-color: var(--white-color);
-    color: var(--black-color);
+    background-color: var(--color-white);
+    color: var(--color-black);
   }
 
   h1,
@@ -27,46 +28,53 @@
   .h6 {
     font-family: var(--display-font);
     margin-block: 0;
+    font-variant-numeric: lining-nums;
   }
 
   h1,
   .h1 {
-    font-size: var(--size-4);
+    font-size: 300%;
+    line-height: 130%;
     font-weight: 600;
   }
   h2,
   .h2 {
-    font-size: var(--size-2);
+    font-size: 250%;
+    line-height: 130%;
     font-weight: 500;
   }
   h3,
   .h3 {
-    font-size: var(--size-1);
+    font-size: 200%;
+    line-height: 140%;
     font-weight: 500;
   }
   h4,
   .h4 {
-    font-size: var(--size-0);
+    font-size: 160%;
+    line-height: 150%;
     font-weight: 500;
   }
   h5,
   .h5 {
-    font-size: var(--size-0);
+    font-size: 120%;
+    line-height: 150%;
     font-weight: 500;
   }
   h6,
   .h6 {
-    font-size: var(--size--1);
+    font-size: 100%;
+    line-height: 1.62;
     font-weight: 500;
     text-transform: uppercase;
   }
 
   p, dl, li {
-    font-size: var(--size-0);
+    font-size: 100%;
   }
 
   a:not([class]) {
-    color: var(--link-color, #007bff);
+    color: var(--color-accent);
     text-decoration: none;
   }
 
@@ -87,8 +95,8 @@
 
   blockquote {
     margin: 0;
-    padding: 0 var(--base-padding-inline);
-    color: var(--base-color, #666);
+    padding: 0 var(--space-s);
+    color: var(--color-base);
     border-left: 0;
   }
 
@@ -97,10 +105,10 @@
   input,
   button,
   a {
-    font-weight: 100;
+    font-weight: 400;
   }
 
   strong {
-    font-weight: 400;
+    font-weight: 700;
   }
 }
