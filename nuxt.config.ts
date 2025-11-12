@@ -22,6 +22,8 @@ export default defineNuxtConfig({
       link: [
         // google icons
         { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" },
+        { rel: "stylesheet", href: "https://cloud.typography.com/7264818/6341032/css/fonts.css" },
+        { rel: "stylesheet", href: "https://use.typekit.net/hzz7acw.css" },
       ],
       script: [],
     }

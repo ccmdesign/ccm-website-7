@@ -45,7 +45,7 @@ definePageMeta({
   hero: {
     brow: '',
     title: 'We build systems',
-    tagline: 'Strategy, design, and engineering.',
+    tagline: 'We use design, data, and emerging tech to help our clients stay clear and connected as the world changes',
     backgroundColor: 'color-accent',
   }
 })

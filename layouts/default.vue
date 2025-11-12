@@ -1,29 +1,12 @@
 <template>
   <div class="layout">
-    <ccm-hero
-      v-if="hero"
-      class="layout-hero"
-      :brow="hero.brow"
-      :title="hero.title"
-      :tagline="hero.tagline"
-      :background-color="hero.backgroundColor"
-      :size="hero.size || 'l'"
-      :hide-top="hero.hideTop"
-      :hide-bottom="hero.hideBottom"
-      :variant="hero.variant"
-    />
+    <ccm-page-hero class="layout-hero" />
     <main class="layout-main">
       <slot />
     </main>
     <ccm-footer class="layout-footer" />
   </div>
 </template>
-
-<script setup>
-const route = useRoute()
-const heroState = useState('hero', () => null)
-const hero = computed(() => route.meta.hero || heroState.value)
-</script>
 
 <style>
 .layout {

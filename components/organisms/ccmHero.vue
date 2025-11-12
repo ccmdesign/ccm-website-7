@@ -5,6 +5,7 @@
     :size="size" 
     :hide-top="hideTop" 
     :hide-bottom="hideBottom" 
+    :hide-topbar="hideTopbar"
     :variant="variant"
     :style="{
       '--_ccm-hero-background-color': `var(--${backgroundColor})`
