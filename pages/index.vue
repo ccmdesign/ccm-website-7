@@ -47,6 +47,7 @@ definePageMeta({
     title: 'We build systems',
     tagline: 'We use design, data, and emerging tech to help our clients stay clear and connected as the world changes',
     backgroundColor: 'color-accent',
+    typewriterWords: ['Strategy', 'Design', 'Engineering', 'Data', 'Artificial Intelligence'],
   }
 })
 
