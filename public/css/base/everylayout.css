@@ -43,6 +43,7 @@
 .reel {
   display: flex;
   block-size: auto;
+  gap: var(--_reel-gap, 1rem);
   overflow-x: auto;
   overflow-y: hidden;
   scrollbar-color: #fff #000;
@@ -73,11 +74,11 @@
 }
 
 .reel > * + * {
-  margin-inline-start: 1rem;
+  margin-inline-start: var(--_reel-gap, 1rem);
 }
 
 .reel.overflowing {
-  padding-block-end: 1rem;
+  padding-block-end: var(--_reel-gap, 1rem);
 }
 
 .switcher {

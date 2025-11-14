@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
-@import url("https://cloud.typography.com/7264818/6341032/css/fonts.css");
-@import url("https://use.typekit.net/hzz7acw.css");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: 'Caslon Doric Extended';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/assets/fonts/caslon-doric/CaslonDoricExtended-Semibold-Trial.otf') format('opentype');
+}
 
 :root {
-  --display-font: "Sentinel SSm A", "Sentinel SSm B", "Times New Roman", serif;
-  --body-font: "DIN Next LT Pro", "DIN 2014", "DIN Next", "DIN", sans-serif;
+  --display-font: 'Caslon Doric Extended', sans-serif;
+  --body-font: "Libre Franklin", sans-serif;
   --body-font-condensed: "DIN Next LT Pro Condensed", "DIN 2014 Cond", "DIN Next Condensed", "DIN Condensed", sans-serif;
   --icon-font: "Material Symbols Outlined";
 }
