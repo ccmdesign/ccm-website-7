@@ -1,5 +1,5 @@
 <template>
-  <header class="ccm-page-hero | master-grid">
+  <header class="ccm-page-hero | master-grid-columns master-grid-rows">
     <ccm-topbar class="ccm-page-hero__topbar" />
 
     <hgroup class="ccm-page-hero__main">

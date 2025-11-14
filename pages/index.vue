@@ -1,6 +1,6 @@
 <template>
 
-  <ccm-section>
+  <!-- <ccm-section>
     <div class="text-align:center padding-block:l">
       <h2 class="h1">Latest Blog Posts</h2>
     </div>
@@ -19,27 +19,20 @@
       </div>
     </div>
     <p v-else>No blog posts found</p>
-  </ccm-section>
+  </ccm-section> -->
 
-  <ccm-section>
-    <div class="text-align:center padding-block:l">
-      <h2 class="h1">Case Studies</h2>
-    </div>
-    <div v-if="caseStudies && caseStudies.length > 0" class="stack">
-      <ProjectCard
-        v-for="study in caseStudies.slice(0, 3)"
-        :key="study.path"
-        :to="study.path"
-        :brow="study.meta?.brow"
-        :title="study.title ?? ''"
-        :tagline="study.meta?.tagline"
-      />
-      <div class="text-align:center padding-block:m">
-        <ccm-button color="primary" to="/case-studies">View all case studies</ccm-button>
-      </div>
-    </div>
-    <p v-else>No case studies found</p>
-  </ccm-section>
+
+<portfolio-section section-title="Work">
+  <project-card
+    v-for="study in caseStudies.slice(0, 5)"
+    :key="study.path"
+    :to="study.path"
+    :brow="study.meta?.brow"
+    :title="study.title ?? ''"
+    :tagline="study.meta?.tagline"
+  />
+</portfolio-section>
+  
 </template>
 
 <script setup>
@@ -64,6 +57,11 @@ const { data: caseStudies } = await useAsyncData('home-case-studies', async () =
   // Sort manually since database queries aren't working
   return studies.sort((a, b) => (a.title || '').localeCompare(b.title || ''))
 })
+
+const randomSize = () => {
+  const sizes = ['xl', 'l', 'm']
+  return sizes[Math.floor(Math.random() * sizes.length)]
+}
 </script>
 
 <style scoped>
