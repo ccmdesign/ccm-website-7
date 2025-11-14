@@ -25,6 +25,9 @@ export default defineContentConfig({
       schema: z.object({
         name: z.string(),
         logo: z.string().optional(),
+        client_logo: z.string().optional(),
+        logo_scale: z.number().optional(),
+        featured: z.boolean().optional(),
       })
     }),
     services: defineCollection({

@@ -8,6 +8,8 @@ location: "Cambridge, MA"
 website: "https://harvard.edu"
 description: "Harvard University is a private Ivy League research university in Cambridge, Massachusetts, established in 1636."
 logo: "/images/clients/harvard-logo.svg"
+client_logo: "harvard-university.svg"
+logo_scale: 1.1
 featured: true
 established: "1636"
 size: "Large Institution"

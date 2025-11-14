@@ -8,6 +8,8 @@ location: "New York, NY"
 website: "https://thegovlab.org"
 description: "The GovLab's mission is to improve people's lives by changing the way we govern, using technology to make government more effective and collaborative."
 logo: "/images/clients/govlab-logo.svg"
+client_logo: "the-govlab.svg"
+logo_scale: 1.5
 featured: true
 established: "2012"
 size: "Medium Organization"

@@ -8,7 +8,8 @@ location: "United Kingdom"
 website: "https://www.threesixtygiving.org"
 description: "360Giving is a philanthropic data organization that helps funders publish their grants data in an open, standardized way."
 logo: "/images/clients/360giving-logo.svg"
-featured: true
+client_logo: "360giving.svg"
+featured: false
 established: "2014"
 size: "Medium Organization"
 tags: ["philanthropy", "open-data", "grants", "nonprofit"]

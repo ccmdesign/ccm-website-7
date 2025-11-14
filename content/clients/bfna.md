@@ -8,6 +8,7 @@ location: "Washington, DC"
 website: "https://bfna.org"
 description: "The Bertelsmann Foundation is a nonprofit public policy organization that conducts research on democracy, governance, and economic policy."
 logo: ""
+client_logo: "bertelsmann-foundation.svg"
 featured: true
 established: "1993"
 size: "Medium Organization"

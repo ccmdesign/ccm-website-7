@@ -1,11 +1,10 @@
 <template>
-  <header class="ccm-page-hero">
+  <header class="ccm-page-hero | master-grid">
     <ccm-topbar class="ccm-page-hero__topbar" />
 
     <hgroup class="ccm-page-hero__main">
       <span v-if="hero?.brow">{{ hero.brow }}</span>
-      <h1>{{ hero?.title }}</h1>
-      <p v-if="hero?.tagline" class="ccm-page-hero__tagline">{{ hero.tagline }}</p>
+      <h1>{{ hero.tagline }}</h1>
       <div class="typewriter">
         <span>{{ typewriterText }}</span>
       </div>
@@ -53,8 +52,7 @@
 }
 
 h1 {
-  font-weight: 600;
-  font-size: var(--size-3);
+  font-size: var(--size-2);
   color: var(--color-accent);
 }
 
