@@ -14,7 +14,7 @@
 .project-card {
   height: 100%;
   width: 100%;
-  /* background-color: red; */
+  /* outline: 1px solid red; */
   
   img {
     object-fit: cover;

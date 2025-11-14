@@ -31,6 +31,11 @@
     :title="study.title ?? ''"
     :tagline="study.meta?.tagline"
   />
+  <template #footer>
+    <div class="text-align:center padding-block:m">
+      <ccm-button size="xl" class="portfolio-section__button" color="primary" to="/case-studies">View all case studies</ccm-button>
+    </div>
+  </template>
 </portfolio-section>
   
 </template>

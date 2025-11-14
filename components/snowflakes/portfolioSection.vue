@@ -11,10 +11,8 @@ const props = defineProps<{
     <div class="portfolio-section__content | portfolio-grid-columns">
       <slot />
     </div>
-    
-    <div class="text-align:center padding-block:m">
-      <ccm-button size="xl" class="portfolio-section__button" color="primary" to="/case-studies">View all case studies</ccm-button>
-    </div>
+
+    <slot name="footer" />
   </div>
 </template>
 
@@ -35,25 +33,21 @@ const props = defineProps<{
   }
 }
 
-.portfolio-section__content {
-  
-}
-
 
 @media (min-width: 769px) {
-:deep(.project-card:first-of-type) {
+:deep(.project-card:nth-of-type(5n+1)) {
   grid-column: span 8;
   grid-row: span 4;
 }
 
-:deep(.project-card:nth-of-type(2)),
-:deep(.project-card:nth-of-type(3)) {
+:deep(.project-card:nth-of-type(5n+2)),
+:deep(.project-card:nth-of-type(5n+3)) {
   grid-column: span 4;
   grid-row: span 2;
 }
 
-:deep(.project-card:nth-of-type(4)),
-:deep(.project-card:nth-of-type(5)) {
+:deep(.project-card:nth-of-type(5n+4)),
+:deep(.project-card:nth-of-type(5n+5)) {
   grid-column: span 6;
   grid-row: span 3;
 }

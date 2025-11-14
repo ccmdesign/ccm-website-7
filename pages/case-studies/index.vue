@@ -1,28 +1,16 @@
 <template>
-  <!-- Clients Section -->
-  <ccm-section background-color="color-accent-tint-20">
-    <h2>Our Clients</h2>
-    <ccm-client-list />
-  </ccm-section>
-
   <!-- Case Studies Section -->
-  <ccm-section>
-    <h2>Case Studies</h2>
-    <div class="stack">
-      <ccm-card v-for="study in caseStudies" :key="study.path" :to="study.path">
-        <h4>{{ study.meta?.brow || study.brow }}</h4>
-        <h3>{{ study.title }}</h3>
-        <p>{{ study.meta?.tagline || study.tagline }}</p>
-      </ccm-card>
-    </div>
-  </ccm-section>
+  <portfolio-section section-title="">
+    <project-card v-for="study in caseStudies" :key="study.path" :to="study.path" :brow="study.meta?.brow || study.brow" :title="study.title" :tagline="study.meta?.tagline || study.tagline" />
+  </portfolio-section>
 </template>
 
 <script setup>
 definePageMeta({
+  layout: 'minimal',
   hero: {
     brow: 'Case Studies',
-    title: 'Case Studies',
+    title: 'Work',
     tagline: 'See our work',
     backgroundColor: 'color-accent',
   }

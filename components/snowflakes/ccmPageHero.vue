@@ -1,8 +1,8 @@
 <template>
-  <header class="ccm-page-hero | master-grid-columns master-grid-rows">
+  <header class="ccm-page-hero | master-grid-columns master-grid-rows" :minimal="minimal">
     <ccm-topbar class="ccm-page-hero__topbar" />
 
-    <hgroup class="ccm-page-hero__main">
+    <hgroup v-if="!minimal" class="ccm-page-hero__main">
       <span v-if="hero?.brow">{{ hero.brow }}</span>
       <h1>{{ hero.tagline }}</h1>
       <div class="typewriter">
@@ -11,7 +11,7 @@
     </hgroup>
     <!-- <pre>{{ hero }}</pre> -->
 
-    <footer class="ccm-page-hero__footer">
+    <footer v-if="!minimal" class="ccm-page-hero__footer">
       <slot name="footer">
         <ccm-logo-reel />
       </slot>
@@ -22,6 +22,10 @@
 <style scoped>
 .ccm-page-hero {
   background-color: transparent;
+  block-size: 5svh;
+}
+
+.ccm-page-hero[minimal="false"] {
   block-size: 92svh;
 }
 
@@ -115,6 +119,7 @@ const props = defineProps<{
   hero?: CcmHeroContent | null
   fallback?: CcmHeroContent | null
   typewriterWords?: string[]
+  minimal?: boolean
 }>()
 
 const hero = useHeroContent(
