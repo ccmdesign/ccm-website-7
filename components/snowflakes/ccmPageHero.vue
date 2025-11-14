@@ -22,38 +22,52 @@
 <style scoped>
 .ccm-page-hero {
   background-color: transparent;
-  min-block-size: 90svh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: auto 1100px auto;
-    
-  grid-template-areas:
-    ". topbar ."
-    ". main ."
-    "footer footer footer";
+  block-size: 92svh;
+}
+
+.ccm-page-hero__topbar :deep(img) {
+  max-inline-size: 250px;
+  inline-size: 100%;
 }
 
 .ccm-page-hero__topbar {
-  grid-column: 2/3;
+  grid-column: wider-start / wider-end;
+
+  @media (min-width: 1441px) {
+    grid-column: wide-start / wide-end;
+  }
+    
   grid-row: 1/2;
+  align-self: end;
 }
 
 .ccm-page-hero__main {
-  grid-column: 2/3;
-  grid-row: 2/3;
-  align-self: center;
   width: 100%;
+  grid-column: wider-start / wider-end;
+  grid-row: tall-start / tall-end;
+  align-self: center;
+
+  @media (min-width: 1441px) {
+    grid-column: narrow-start / normal-end;
+  }
   
 }
 
 .ccm-page-hero__footer {
-  grid-area: footer;
-  grid-row: 3/4;
+  grid-column: full-start / full-end;
+  grid-row: taller-end / full-end;
+  align-self: end;
+  justify-self: center;
 }
 
 h1 {
-  font-size: var(--size-2);
-  color: var(--color-accent);
+  /* TODO:We might want to make this a default scale for all headings */
+  
+  font-size: var(--size-1);
+  @media (min-width: 600px) { font-size: var(--size-2); }
+  @media (min-width: 1441px) { font-size: var(--size-3); }
+  color: var(--color-base);
+  font-weight: 600;
 }
 
 .ccm-page-hero__tagline {
@@ -70,7 +84,7 @@ h1 {
 
 .typewriter {
   overflow: hidden;
-  display: block;
+  display: none;
   white-space: nowrap;
   position: absolute;
   left: -25svw;

@@ -4,7 +4,7 @@
 
 .master-grid {
   display: grid;
-  grid-template-columns: [full-start] auto [wider-start] 28fr [wide-start]45fr [normal-start] 73fr [narrow-start] 118fr [center-start] 191fr [center] 191fr [center-end] 118fr [narrow-end] 73fr [normal-end] 45fr [wide-end] 28fr [wider-end] auto [full-end];
-  grid-template-rows: 50fr 31fr 51fr 82fr 133fr 215fr;
+  grid-template-columns: [full-start] 45fr [wider-start] 28fr [wide-start] 45fr [normal-start] 73fr [narrow-start] 118fr [center-start] 191fr [center] 191fr [center-end] 118fr [narrow-end] 73fr [normal-end] 45fr [wide-end] 28fr [wider-end] 45fr [full-end];
+  grid-template-rows: [full-start] 50fr [taller-start] 31fr [tall-start] 51fr [normal-start] 82fr [center] 82fr [normal-end] 51fr [tall-end] 31fr [taller-end] 50fr [full-end];
     
 }

@@ -71,6 +71,7 @@ watch(reelClients, () => {
 </template>
 
 <style lang="css" scoped>
+
 .reel {
   max-width: 100svw;
   width: 100%;
@@ -78,6 +79,12 @@ watch(reelClients, () => {
   justify-content: space-between;
   padding-inline: var(--space-3xl);
   --_reel-gap: var(--space-2xl);
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.reel::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
 }
 
 .reel--scrolling {
