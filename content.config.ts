@@ -60,6 +60,29 @@ export default defineContentConfig({
         })).optional(),
         order: z.number().optional()
       })
+    }),
+    work: defineCollection({
+      type: 'page',
+      source: 'work/*.md',
+      schema: z.object({
+        published: z.boolean().default(true),
+        title: z.string(),
+        client: z.string(),
+        description: z.string(),
+        items: z.array(z.union([
+          z.object({
+            type: z.literal('image'),
+            image: z.string(),
+            title: z.string().optional(),
+            caption: z.string().optional()
+          }),
+          z.object({
+            type: z.literal('text'),
+            content: z.string(),
+            heading: z.string().optional()
+          })
+        ]))
+      })
     })
   }
 })

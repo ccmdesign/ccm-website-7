@@ -1,7 +1,6 @@
 <template>
-  <nuxt-link class="project-card" :to="to">
-    <img :src="`/assets/portfolio/bfna/${randomImage()}`" :alt="title" />
-    <!-- <img :src="image" :alt="title" /> -->
+  <nuxt-link class="project-card portfolio-item" :to="to">
+    <img v-if="image" :src="image" :alt="title" />
     <!-- <caption>
       <p v-if="brow">{{ brow }}</p>
       <p>{{ title }}</p>
@@ -18,6 +17,8 @@
   
   img {
     object-fit: cover;
+    height: 100%;
+    width: 100%;
   }
 
   caption { display: none; }
@@ -32,23 +33,6 @@ const props = defineProps<{
   title: string
   tagline?: string | null
   to: RouteLocationRaw
+  image?: string | null
 }>()
-
-const randomImage = () => {
-  const images = [
-    'bfna-federalism-in-crisis-10-11.png',
-    'bfna-federalism-in-crisis-24-25.png',
-    'bfna-federalism-in-crisis-26-27.png',
-    'bfna-federalism-in-crisis-44-45.png',
-    'bfna-federalism-in-crisis-54-55.png',
-    'bfna-federalism-in-crisis-60-61.png',
-    'bfna-federalism-in-crisis-64-65.png',
-    'bfna-federalism-in-crisis-82-83.png',
-    'bfna-federalism-in-crisis-86-87.png',
-    'bfna-federalism-in-crisis-cover.png',
-    'bfna-federalism-in-crisis-toc.png'
-  ]
-
-  return images[Math.floor(Math.random() * images.length)]
-}
 </script>
