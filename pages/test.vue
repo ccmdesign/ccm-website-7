@@ -1,34 +1,36 @@
 <template>
-  <ccm-section>
-    <h2>Default Section</h2>
-    <p>This is the default <code>ccm-section</code> with no props.</p>
-  </ccm-section>
-
-  <ccm-section size="m" background-color="primary">
-    <h2>Primary Color Section</h2>
-    <p>This section uses <code>color="primary"</code> for a primary palette background.</p>
-  </ccm-section>
-
-  <ccm-section size="s" background-color="secondary">
-    <h2>Secondary Color Section</h2>
-    <p>This section uses <code>color="secondary"</code> for a secondary palette background.</p>
-  </ccm-section>
-
-  <ccm-section color="accent" :elevated="true">
-    <h2>Accent Color, Elevated</h2>
-    <p>This section uses <code>color="accent"</code> and <code>:elevated="true"</code> for a raised accent look.</p>
-  </ccm-section>
-
-  <ccm-section color="white" border>
-    <h2>White Section with Border</h2>
-    <p>This section uses <code>color="white"</code> and <code>border</code> for a card-like appearance.</p>
-  </ccm-section>
-</template>
-
-<script setup>
-
-</script>
-
-<style scoped>
-
-</style>
+  <portfolio-section>
+    <image-card image="/assets/portfolio/bfna/bfna-federalism-in-crisis-10-11.png" title="Federalism in Crisis" caption="A study of the federalism in crisis" />
+    <image-card image="/assets/portfolio/bfna/bfna-federalism-in-crisis-24-25.png" title="Federalism in Crisis" caption="A study of the federalism in crisis" />
+    <div class="project-info | stack">
+      <h2 class="h5">Federalism in Crisis</h2>
+      <p><strong>2024</strong> | A study of the federalism in crisis</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sequi molestias, animi quisquam, commodi ad inventore similique temporibus voluptatibus ab provident, assumenda minima alias. Assumenda incidunt velit adipisci labore repellendus.</p>
+    </div>
+    <image-card image="/assets/portfolio/bfna/bfna-federalism-in-crisis-26-27.png" title="Federalism in Crisis" caption="A study of the federalism in crisis" />
+    <image-card image="/assets/portfolio/bfna/bfna-federalism-in-crisis-44-45.png" title="Federalism in Crisis" caption="A study of the federalism in crisis" />
+    <image-card image="/assets/portfolio/bfna/bfna-federalism-in-crisis-54-55.png" title="Federalism in Crisis" caption="A study of the federalism in crisis" />
+    <image-card image="/assets/portfolio/bfna/bfna-federalism-in-crisis-60-61.png" title="Federalism in Crisis" caption="A study of the federalism in crisis" />
+    <image-card image="/assets/portfolio/bfna/bfna-federalism-in-crisis-64-65.png" title="Federalism in Crisis" caption="A study of the federalism in crisis" />
+    <image-card image="/assets/portfolio/bfna/bfna-federalism-in-crisis-82-83.png" title="Federalism in Crisis" caption="A study of the federalism in crisis" />
+    <div class="project-info | stack">
+      <p class="h4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sequi molestias, animi quisquam, commodi ad inventore similique temporibus voluptatibus ab provident, assumenda minima alias. Assumenda incidunt velit adipisci labore repellendus.</p>
+    </div>
+    <image-card image="/assets/portfolio/bfna/bfna-federalism-in-crisis-86-87.png" title="Federalism in Crisis" caption="A study of the federalism in crisis" />
+    <image-card image="/assets/portfolio/bfna/bfna-federalism-in-crisis-cover.png" title="Federalism in Crisis" caption="A study of the federalism in crisis" />
+    <image-card image="/assets/portfolio/bfna/bfna-federalism-in-crisis-toc.png" title="Federalism in Crisis" caption="A study of the federalism in crisis" />
+  </portfolio-section>
+  </template>
+  
+  <script setup>
+  definePageMeta({
+    layout: 'work-layout'
+  })
+  
+  </script>
+  
+  <style scoped>
+  .project-info {
+    justify-content: center;
+  }
+  </style>

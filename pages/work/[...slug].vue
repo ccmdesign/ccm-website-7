@@ -1,14 +1,7 @@
 <template>
-  <ccm-section>
-    <div class=" | prose-layout | prose">      
-      <ContentRenderer v-if="caseStudy" :value="caseStudy" />
-      <div v-else>
-        <h1>Case Study not found</h1>
-        <NuxtLink to="/case-studies">← Back to Case Studies</NuxtLink>
-      </div>
-    </div>
-  </ccm-section>
-  
+<portfolio-section>
+  <img :src="`/assets/portfolio/bfna/${randomImage()}`" :alt="title" />
+</portfolio-section>
 </template>
 
 <script setup>

@@ -33,21 +33,24 @@ const props = defineProps<{
   }
 }
 
+.portfolio-grid-columns > * {
+}
+
 
 @media (min-width: 769px) {
-:deep(.project-card:nth-of-type(5n+1)) {
+:deep(:nth-child(5n+1)) {
   grid-column: span 8;
   grid-row: span 4;
 }
 
-:deep(.project-card:nth-of-type(5n+2)),
-:deep(.project-card:nth-of-type(5n+3)) {
+:deep(:nth-child(5n+2)),
+:deep(:nth-child(5n+3)) {
   grid-column: span 4;
   grid-row: span 2;
 }
 
-:deep(.project-card:nth-of-type(5n+4)),
-:deep(.project-card:nth-of-type(5n+5)) {
+:deep(:nth-child(5n+4)),
+:deep(:nth-child(5n+5)) {
   grid-column: span 6;
   grid-row: span 3;
 }
