@@ -1,5 +1,5 @@
 <template>
-  <figure class="image-card" :aria-label="title" :aria-describedby="caption" >
+  <figure class="image-card portfolio-item" :aria-label="title" :aria-describedby="caption" >
     <img :src="image" :alt="title" />
     <!-- <figcaption v-if="caption">
       <p v-if="title">{{ title }}</p>
@@ -16,8 +16,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* outline: 1px solid red; */
+
+  /* background: linear-gradient(to top, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.05)); */
   
-  img { object-fit: cover; }
+  img { 
+    mix-blend-mode: multiply;
+    object-fit: cover; 
+    height: 100%;
+    width: 100%;
+    
+  }
 
   figcaption { display: none; }
 }
