@@ -103,6 +103,21 @@
   flex-basis: 100%;
 }
 
+.imposter {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: max-content;
+  height: max-content;
+}
+
+.imposter-fixed {
+  position: fixed;
+  z-index: 1000;
+  max-width: calc(100% - 2rem);
+  max-height: calc(100% - 2rem);
+}
+
 
 
 

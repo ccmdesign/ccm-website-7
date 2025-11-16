@@ -17,12 +17,10 @@
 .project-card {
   height: 100%;
   width: 100%;
-  overflow: hidden;
   /* display handled by global mockup-type styles */
   
   img {
     width: 100%;
-    height: 100%;
     display: block;
     object-fit: cover; /* Default fallback */
   }
