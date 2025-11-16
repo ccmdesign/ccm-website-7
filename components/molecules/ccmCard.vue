@@ -13,7 +13,7 @@
     
   <slot name="image">
     <img class="ccm-card__image" v-if="image && image !== 'false'" :src="image" :alt="title" />
-    <div v-else class="ccm-card__image"></div>
+    <div v-else-if="image !== 'false'" class="ccm-card__image"></div>
   </slot>
 
   <div class="ccm-card__text">
@@ -84,7 +84,7 @@ const props = defineProps({
 @media (min-width: 768px) {
   .ccm-card { flex-direction: row; }
 
-  .ccm-card__text { padding-inline: var(--_card-padding); }
+  .ccm-card__text:not(:only-child) { padding-inline: var(--_card-padding); }
 
   .ccm-card__image {
     width: 100%;

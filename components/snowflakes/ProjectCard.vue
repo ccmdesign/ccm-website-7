@@ -5,11 +5,6 @@
     :to="to"
   >
     <img v-if="image" :src="image" :alt="title" />
-    <!-- <caption>
-      <p v-if="brow">{{ brow }}</p>
-      <p>{{ title }}</p>
-      <p v-if="tagline">{{ tagline }}</p>
-    </caption> -->
   </nuxt-link>
 </template>
 

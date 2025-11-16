@@ -4,7 +4,8 @@
 
     <hgroup v-if="!minimal" class="ccm-page-hero__main">
       <span v-if="hero?.brow">{{ hero.brow }}</span>
-      <h1>{{ hero.tagline }}</h1>
+      <h1>{{ hero?.title || hero?.tagline }}</h1>
+      <p class="ccm-page-hero__tagline" v-if="hero?.tagline && hero?.title">{{ hero.tagline }}</p>
       <div class="typewriter">
         <span>{{ typewriterText }}</span>
       </div>

@@ -5,7 +5,11 @@
       :title="workItem.title"
       :client="workItem.client"
       :description="workItem.description"
-    />
+    >
+      <template #before>
+        <ccm-button to="/work" label="Back to Portfolio" />
+      </template>
+    </project-header>
   </portfolio-section>
   <portfolio-section v-if="workItem">
     <template v-for="(item, index) in workItem.items" :key="index">

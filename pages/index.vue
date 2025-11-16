@@ -22,7 +22,7 @@
   </ccm-section> -->
 
 
-<portfolio-section section-title="Work">
+<portfolio-section section-title="Work" class="padding-block:3xl">
   <project-card
     v-for="workItem in workItems.slice(0, 5)"
     :key="getWorkPath(workItem)"

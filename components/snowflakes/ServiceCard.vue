@@ -19,5 +19,8 @@ const props = defineProps<{
 
 <style scoped>
 /* Styling to be added later */
+:deep(.ccm-card__text) {
+  border: 1px solid red;
+}
 </style>
 

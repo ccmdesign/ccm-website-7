@@ -1,5 +1,6 @@
 <template>
   <hgroup class="project-header | stack">
+    <slot name="before" />
     <h2 class="h5">{{ title }}</h2>
     <p>{{ client }}</p>
     <p>{{ description }}</p>
