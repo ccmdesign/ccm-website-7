@@ -1,6 +1,11 @@
 <template>
-  <figure class="image-card portfolio-item" :aria-label="title" :aria-describedby="caption" >
-    <img :src="image" :alt="title" />
+  <figure 
+    class="image-card portfolio-item" 
+    :data-mockup="mockupType"
+    :aria-label="title || undefined" 
+    :aria-describedby="caption || undefined"
+  >
+    <img :src="image" :alt="title || undefined" />
     <!-- <figcaption v-if="caption">
       <p v-if="title">{{ title }}</p>
       <p>{{ caption }}</p>
@@ -10,7 +15,6 @@
 
 <style scoped>
 .image-card {
-  height: 100%;
   width: 100%;
   margin: 0;
   display: flex;
@@ -20,14 +24,6 @@
 
   /* background: linear-gradient(to top, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.05)); */
   
-  img { 
-    mix-blend-mode: multiply;
-    object-fit: cover; 
-    height: 100%;
-    width: 100%;
-    
-  }
-
   figcaption { display: none; }
 }
 </style>
@@ -35,10 +31,13 @@
 <script setup lang="ts">
 
 
+type MockupType = 'editorial' | 'branding' | 'web'
+
 const props = defineProps<{
   image: string
   title?: string | null
   caption?: string | null
+  mockupType?: MockupType | null
 }>()
 
 const randomImage = () => {

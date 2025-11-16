@@ -25,10 +25,7 @@ import { useRoute } from '#imports'
 const route = useRoute()
 const navLinks = [
   { to: '/services', label: 'What we do' },
-  { to: '/about', label: 'About' },
   { to: '/work', label: 'Work' },
-  { to: '/case-studies', label: 'Case Studies' },
-  { to: '/blog', label: 'Insights' },
   { to: '/contact', label: 'Contact' },
 ]
 </script>

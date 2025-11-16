@@ -1,5 +1,9 @@
 <template>
-  <nuxt-link class="project-card portfolio-item" :to="to">
+  <nuxt-link 
+    class="project-card portfolio-item" 
+    :data-mockup="mockupType"
+    :to="to"
+  >
     <img v-if="image" :src="image" :alt="title" />
     <!-- <caption>
       <p v-if="brow">{{ brow }}</p>
@@ -13,12 +17,14 @@
 .project-card {
   height: 100%;
   width: 100%;
-  /* outline: 1px solid red; */
+  overflow: hidden;
+  /* display handled by global mockup-type styles */
   
   img {
-    object-fit: cover;
-    height: 100%;
     width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover; /* Default fallback */
   }
 
   caption { display: none; }
@@ -28,11 +34,14 @@
 <script setup lang="ts">
 import type { RouteLocationRaw } from 'vue-router'
 
+type MockupType = 'editorial' | 'branding' | 'web'
+
 const props = defineProps<{
   brow?: string | null
   title: string
   tagline?: string | null
   to: RouteLocationRaw
   image?: string | null
+  mockupType?: MockupType | null
 }>()
 </script>

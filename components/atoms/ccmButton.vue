@@ -3,7 +3,7 @@
     class="button"
     :is="componentTag"
     v-bind="linkProps"
-    :variant="visual"
+    :variant="variant"
     :color="color"
     :size="size"
     :icon-before="iconBefore"
@@ -63,6 +63,10 @@
     color: {
       type: String,
       default: 'base'
+    },
+    variant: {
+      type: String,
+      default: null
     },
     iconBefore: {
       type: String,

@@ -69,12 +69,16 @@ export default defineContentConfig({
         title: z.string(),
         client: z.string(),
         description: z.string(),
+        tags: z.array(z.string()).optional(),
+        projectType: z.enum(['Editorial', 'Logo', 'Web']).optional(),
         items: z.array(z.union([
           z.object({
             type: z.literal('image'),
             image: z.string(),
             title: z.string().optional(),
-            caption: z.string().optional()
+            caption: z.string().optional(),
+            mockupType: z.enum(['web', 'editorial', 'branding']).optional(),
+            cover: z.boolean().optional()
           }),
           z.object({
             type: z.literal('text'),

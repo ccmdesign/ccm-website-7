@@ -26,6 +26,7 @@
 
 @import "components/prose.css" layer(components);
 @import "components/form.css" layer(components);
+@import "components/mockup-types.css" layer(components);
 
 /* Utils Layer */
 @import "utils/color-utils-background-color.css" layer(utils);

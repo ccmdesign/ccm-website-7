@@ -12,7 +12,7 @@
     >
     
   <slot name="image">
-    <img class="ccm-card__image" v-if="image" :src="image" :alt="title" />
+    <img class="ccm-card__image" v-if="image && image !== 'false'" :src="image" :alt="title" />
     <div v-else class="ccm-card__image"></div>
   </slot>
 
@@ -91,10 +91,10 @@ const props = defineProps({
     /* aspect-ratio: 1/1;  */
   }
 
-  .ccm-card:nth-child(even) { 
+  /* .ccm-card:nth-child(even) { 
     flex-direction: row-reverse; 
     .ccm-card__text { text-align: right; }
-  }
+  } */
   
 }
 

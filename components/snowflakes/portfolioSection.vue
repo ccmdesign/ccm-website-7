@@ -1,13 +1,16 @@
 <script setup lang="ts">
 const props = defineProps<{
-  sectionTitle: string
+  sectionTitle?: string
 }>()
 </script>
 
 <template>
   <div class="portfolio-section | stack">
-    <h2 v-if="sectionTitle" class="h1 text-align:center">{{ sectionTitle }}</h2>
+    <slot name="header">
+      <h2 v-if="sectionTitle" class="h1 text-align:center">{{ sectionTitle }}</h2>
+    </slot>
     
+
     <div class="portfolio-section__content | portfolio-grid-columns">
       <slot />
     </div>

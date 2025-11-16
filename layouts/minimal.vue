@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <ccm-page-hero class="layout-hero" minimal="true" />
+    <ccm-page-hero class="layout-hero" :minimal="true" />
     <main class="layout-main">
       <slot />
     </main>

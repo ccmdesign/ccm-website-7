@@ -14,6 +14,7 @@
         :image="item.image"
         :title="item.title"
         :caption="item.caption"
+        :mockupType="item.mockupType || null"
       />
       <project-info
         v-else-if="item.type === 'text'"

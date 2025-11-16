@@ -6,11 +6,14 @@
     <p>Our approach is holistic, integrating strategy, design, and technology to build the digital experiences that advance knowledge and drive social impact. We translate your most complex ideas into clear, effective, and engaging platforms that serve your audience and achieve your mission.</p>    
   </ccm-section>
   <ccm-section v-if="services && services.length > 0">
-    <ccm-card v-for="service in services" :key="service.path" :to="service.path">
-      <h4>{{ service.meta.brow }}</h4>
-      <h2>{{ service.title }}</h2>
-      <p>{{ service.meta.tagline }}</p>
-    </ccm-card>
+    <service-card 
+      v-for="service in services" 
+      :key="service.path" 
+      :to="service.path"
+      :brow="service.meta?.brow"
+      :title="service.title"
+      :tagline="service.meta?.tagline"
+    />
   </ccm-section>
 
   <ccm-section v-else>
@@ -20,6 +23,7 @@
 
 <script setup>
 definePageMeta({
+  layout: 'minimal',
   hero: {
     brow: 'Services',
     title: 'How We Can Help',
