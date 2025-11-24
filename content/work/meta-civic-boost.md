@@ -1,8 +1,10 @@
 ---
 title: Civic Boost
 client: Meta
+client-slug: meta
 description: Digital platform supporting civic engagement and community initiatives.
 tags: [web]
+services: ['interface-design-and-development']
 published: true
 items:
   - type: image
@@ -11,4 +13,3 @@ items:
     title: Civic Boost
     caption: Platform interface
 ---
-

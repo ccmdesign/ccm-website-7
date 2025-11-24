@@ -1,8 +1,10 @@
 ---
 title: Data Collab
 client: The GovLab
+client-slug: govlab
 description: Brand identity for Data Collab collaborative research platform.
 tags: [branding]
+services: ['branding', 'design-subscription']
 published: true
 items:
   - type: image
@@ -18,4 +20,3 @@ items:
     title: Data Collab
     caption: Logo design
 ---
-

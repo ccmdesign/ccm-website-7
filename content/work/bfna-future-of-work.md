@@ -1,8 +1,10 @@
 ---
 title: The Future of Work
 client: Bertelsmann Foundation
+client-slug: bfna
 description: Research publication and digital platform examining the evolving landscape of work and employment.
 tags: [web]
+services: ['interface-design-and-development', 'design-subscription']
 published: true
 items:
   - type: image
@@ -37,4 +39,3 @@ items:
     title: The Future of Work
     caption: Riverside case study
 ---
-

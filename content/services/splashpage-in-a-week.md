@@ -1,9 +1,8 @@
 ---
-brow: Splashpage
-title: Go from Concept to Launch in One Week
-tagline: We create a world-class brand identity and a high-impact splash page for your new project, fast.
+title: Splashpage
+tagline: We create a world-class brand identity and a high-impact splash pages for your projects.
 slug: /services/splashpage-in-a-week
-status: draft
+status: published
 ---
 
 ### The Strategic Goal

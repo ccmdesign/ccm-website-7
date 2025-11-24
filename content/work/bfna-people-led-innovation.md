@@ -1,8 +1,10 @@
 ---
 title: People-led Innovation
 client: Bertelsmann Foundation
+client-slug: bfna
 description: A visual methodology guide for urban governance innovation, transforming complex frameworks into actionable tools for city practitioners.
 tags: [web, editorial]
+services: ['interface-design-and-development', 'publication-in-30-days', 'design-subscription']
 published: true
 items:
   - type: image
@@ -54,4 +56,3 @@ items:
     title: People-led Innovation
     caption: Report cover
 ---
-

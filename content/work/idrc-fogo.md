@@ -1,8 +1,10 @@
 ---
 title: Fogo Report
 client: International Development Research Centre
+client-slug: idrc
 description: Publication design for Networked Economies research report exploring technology and development in the Global South.
 tags: [editorial]
+services: ['publication-in-30-days']
 published: true
 items:
   - type: image
@@ -46,4 +48,3 @@ items:
     title: Fogo Report
     caption: Pages 80-81
 ---
-

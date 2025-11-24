@@ -1,10 +1,9 @@
 ---
-brow: Design Subscription
-title: Your On-Demand Design Partner for Research and Communications
-tagline: High-quality design, right when you need it. So you can focus on your mission, not on making slides.
 
+title: Design Subscription 
+tagline: High-quality design, right when you need it. So you can focus on your mission, not on making slides.
 slug: /services/design-subscription
-status: draft
+status: published
 ---
 
 ### The Strategic Goal

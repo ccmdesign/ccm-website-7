@@ -1,8 +1,10 @@
 ---
 title: GovLab Website
 client: The GovLab
+client-slug: govlab
 description: Institutional website redesign for The Governance Lab, showcasing research and innovation in governance.
 tags: [web]
+services: ['interface-design-and-development', 'design-subscription']
 published: true
 items:
   - type: image
@@ -26,4 +28,3 @@ items:
     title: GovLab Website
     caption: Projects showcase
 ---
-

@@ -1,8 +1,10 @@
 ---
 title: Open Data Policy Lab
 client: The GovLab
+client-slug: govlab
 description: Brand identity and digital platform for Open Data Policy Lab research initiative.
 tags: [branding]
+services: ['branding', 'design-subscription']
 published: true
 items:
   - type: image
@@ -21,4 +23,3 @@ items:
     title: Open Data Policy Lab
     caption: Platform homepage
 ---
-

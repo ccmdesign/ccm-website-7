@@ -1,8 +1,10 @@
 ---
 title: BFNA Website
 client: Bertelsmann Foundation
+client-slug: bfna
 description: Institutional website redesign showcasing policy research and publications.
 tags: [web]
+services: ['interface-design-and-development', 'design-subscription']
 published: true
 items:
   - type: image
@@ -31,4 +33,3 @@ items:
     title: BFNA Website
     caption: Workstream navigation
 ---
-

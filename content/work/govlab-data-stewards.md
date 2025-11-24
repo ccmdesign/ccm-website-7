@@ -1,8 +1,10 @@
 ---
 title: Data Stewards
 client: The GovLab
+client-slug: govlab
 description: Brand identity for Data Stewards program promoting responsible data governance.
 tags: [branding]
+services: ['branding', 'design-subscription']
 published: true
 items:
   - type: image
@@ -21,4 +23,3 @@ items:
     title: Data Stewards
     caption: Logo variation 3
 ---
-

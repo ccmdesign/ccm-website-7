@@ -1,9 +1,8 @@
 ---
-brow: Interface Design & Development
-title: Digital Platforms for Mission-Driven Organizations
-tagline: We design and build powerful, user-centric websites and web apps that help you share your knowledge, engage your audience, and advance your mission.
+title: Interfaces
+tagline: We design and build powerful, user-centric interfaces that help you engage with your audience, and advance your mission.
 slug: /services/interface-design-development
-status: draft
+status: published
 ---
 
 ### The Strategic Goal

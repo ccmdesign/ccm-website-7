@@ -1,9 +1,9 @@
 ---
-brow: Publications
-title: From Manuscript to Masterpiece in 30 Days
-tagline: We transform your finalized research into a professionally designed, distribution-ready publication.
+brow: 
+title: Publications
+tagline: We transform your documents into a professionally designed, distribution-ready publication.
 slug: /services/publication-in-30-days
-status: draft
+status: published
 ---
 
 ### The Strategic Goal

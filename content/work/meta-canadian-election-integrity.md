@@ -1,8 +1,10 @@
 ---
 title: Canadian Election Integrity Initiative
 client: Meta
+client-slug: meta
 description: Digital platform for election integrity research and transparency initiatives in Canada.
 tags: [web]
+services: ['interface-design-and-development']
 published: true
 items:
   - type: image
@@ -11,4 +13,3 @@ items:
     title: Canadian Election Integrity Initiative
     caption: Platform homepage
 ---
-

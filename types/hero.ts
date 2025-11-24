@@ -16,6 +16,7 @@ export interface CcmHeroContent {
   hideTop?: boolean
   hideTopbar?: boolean
   hideBottom?: boolean
+  hideLogoReel?: boolean
   variant?: CcmHeroVariant
   author?: string
   date?: string

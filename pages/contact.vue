@@ -31,7 +31,8 @@ definePageMeta({
     brow: 'Contact',
     title: 'Contact',
     tagline: 'Get in touch with us',
-    backgroundColor: 'color-accent'
+    backgroundColor: 'color-accent',
+    hideLogoReel: true
   }
 })
 
@@ -68,5 +69,12 @@ async function submitContact() {
 </script>
 
 <style scoped>
+.form {
+  gap: var(--space-m);
+}
 
+.form input,
+.form textarea {
+  padding: var(--space-s);
+}
 </style>

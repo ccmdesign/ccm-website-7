@@ -1,8 +1,10 @@
 ---
 title: Smarter Crowdsourcing
 client: The GovLab
+client-slug: govlab
 description: Brand identity system and digital platform for Smarter Crowdsourcing initiative.
 tags: [branding]
+services: ['branding', 'design-subscription']
 published: true
 items:
   - type: image
@@ -21,4 +23,3 @@ items:
     title: Smarter Crowdsourcing
     caption: Zika case study interface
 ---
-

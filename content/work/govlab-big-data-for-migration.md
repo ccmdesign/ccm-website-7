@@ -1,8 +1,10 @@
 ---
 title: Big Data for Migration
 client: The GovLab
+client-slug: govlab
 description: Brand identity system for Big Data for Migration research initiative.
 tags: [branding]
+services: ['branding', 'design-subscription']
 published: true
 items:
   - type: image
@@ -21,4 +23,3 @@ items:
     title: Big Data for Migration
     caption: Logo variation 3
 ---
-

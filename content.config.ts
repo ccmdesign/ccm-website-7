@@ -1,6 +1,16 @@
 import { defineContentConfig, defineCollection } from '@nuxt/content'
 import { z } from 'zod'
 
+const serviceSlugs = [
+  'branding',
+  'design-subscription',
+  'interface-design-and-development',
+  'publication-in-30-days',
+  'splashpage-in-a-week',
+] as const
+
+const serviceSlugEnum = z.enum(serviceSlugs)
+
 export default defineContentConfig({
   collections: {
     blog: defineCollection({
@@ -71,6 +81,7 @@ export default defineContentConfig({
         description: z.string(),
         tags: z.array(z.string()).optional(),
         projectType: z.enum(['Editorial', 'Logo', 'Web']).optional(),
+        services: z.array(serviceSlugEnum).optional(),
         items: z.array(z.union([
           z.object({
             type: z.literal('image'),

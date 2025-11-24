@@ -35,6 +35,9 @@
 .font-weight\:600 { font-weight: 600; }
 .font-weight\:700 { font-weight: 700; }
 
+.font-family\:body { font-family: var(--body-font); }
+.font-family\:display { font-family: var(--display-font); }
+
 .text-transform\:uppercase { text-transform: uppercase; }
 .text-transform\:lowercase { text-transform: lowercase; }
 .text-transform\:capitalize { text-transform: capitalize; }

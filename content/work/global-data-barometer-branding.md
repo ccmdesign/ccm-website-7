@@ -1,8 +1,10 @@
 ---
 title: Brand Identity
 client: Global Data Barometer
+client-slug: global-data-barometer
 description: Visual identity system reflecting the four-dimensional framework for mapping data governance globally.
 tags: [branding]
+services: ['branding']
 published: true
 items:
   - type: image
@@ -26,4 +28,3 @@ items:
     title: Brand Identity
     caption: Brand system overview 4
 ---
-

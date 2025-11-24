@@ -1,8 +1,10 @@
 ---
 title: The 100 Questions
 client: Bertelsmann Foundation
+client-slug: bfna
 description: Research initiative exploring critical questions for democratic governance and policy innovation.
 tags: [web]
+services: ['interface-design-and-development', 'design-subscription']
 published: true
 items:
   - type: image
@@ -11,4 +13,3 @@ items:
     title: The 100 Questions
     caption: Initiative overview
 ---
-

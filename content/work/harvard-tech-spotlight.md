@@ -1,8 +1,10 @@
 ---
 title: Tech Spotlight
 client: Harvard University
+client-slug: harvard-university
 description: Brand identity, publication design, and digital platform for Harvard's Tech Spotlight award program.
 tags: [web, branding]
+services: ['branding', 'interface-design-and-development', 'design-subscription']
 published: true
 items:
   - type: image
@@ -21,4 +23,3 @@ items:
     title: Tech Spotlight
     caption: Logo design
 ---
-

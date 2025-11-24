@@ -1,9 +1,8 @@
 ---
-brow: Branding
-title: Branding for Mission-Driven Organizations
+title: Branding
 tagline: We build brands that connect with your audience.
 slug: /services/branding
-status: draft
+status: published
 ---
 
 ### The Strategic Goal

@@ -1,44 +1,36 @@
 <template>
-  <!-- Client Information Section -->
-  <ccm-section v-if="client">
-    <div class="client-info | prose-layout | prose">
-      <div class="client-details">
-        <div class="client-meta">
-          <p class="sector">{{ client.meta?.sector }}</p>
-          <p v-if="client.meta?.location" class="location">{{ client.meta?.location }}</p>
-          <p v-if="client.meta?.established" class="established">Founded {{ client.meta?.established }}</p>
-        </div>
-        <div class="client-description">
-          <ContentRenderer v-if="client" :value="client" />
-        </div>
-      </div>
-    </div>
-  </ccm-section>
-
-  <!-- Case Studies Section -->
   <ccm-section>
     <h2>Our Work Together</h2>
-    <div class="client-case-studies">
-      <div v-if="filteredCaseStudies.length === 0">
-        <p>No case studies found for this client yet.</p>
-      </div>
-      <div v-else>
-        <ccm-card
-          v-for="cs in filteredCaseStudies"
-          :key="cs.path"
-          :to="cs.path"
-        >
-          <h4>{{ cs.meta?.brow || cs.brow }}</h4>
-          <h3>{{ cs.title }}</h3>
-          <p v-if="cs.meta?.tagline || cs.tagline">{{ cs.meta?.tagline || cs.tagline }}</p>
-        </ccm-card>
-      </div>
+    <div v-if="filteredWorkProjects.length === 0">
+      <p>No standalone projects are listed for this client yet.</p>
     </div>
+    <portfolio-section v-else>
+      <template #header>
+        <div class="client-projects-header">
+          <h2>Projects with {{ clientDisplayName }}</h2>
+          <p class="body-sm">Selected work from the portfolio filtered to this client.</p>
+        </div>
+      </template>
+      <project-card
+        v-for="project in filteredWorkProjects"
+        :key="getWorkPath(project)"
+        :to="getWorkPath(project)"
+        :brow="project.client"
+        :title="project.title"
+        :tagline="project.description"
+        :image="getFirstImage(project)?.image || null"
+        :mockupType="getFirstImage(project)?.mockupType || null"
+      />
+    </portfolio-section>
   </ccm-section>
 </template>
 
 <script setup>
 import { computed } from 'vue'
+
+definePageMeta({
+  layout: 'minimal',
+})
 
 const route = useRoute()
 
@@ -90,6 +82,50 @@ const filteredCaseStudies = computed(() => {
   })
 })
 
+const { data: workItems } = await useAsyncData('client-work-items', () => {
+  return queryCollection('work').all()
+})
+
+const filteredWorkProjects = computed(() => {
+  if (!workItems.value) return []
+  const target = clientParam.value.toLowerCase()
+  return workItems.value.filter((doc) => {
+    if (doc.meta?.['client-slug']) {
+      return doc.meta['client-slug'].toLowerCase() === target
+    }
+    if (doc.meta?.client) {
+      return slugify(doc.meta.client) === target
+    }
+    if (doc['client-slug']) {
+      return doc['client-slug'].toLowerCase() === target
+    }
+    if (doc.client) {
+      return slugify(doc.client) === target
+    }
+    return false
+  })
+})
+
+const getWorkPath = (item) => {
+  if (item.path) return item.path
+  if (item._path) return item._path
+  if (item._file) {
+    const filename = item._file.replace('.md', '')
+    return `/work/${filename}`
+  }
+  return '#'
+}
+
+const getFirstImage = (item) => {
+  if (!item.items || !Array.isArray(item.items)) return null
+
+  const images = item.items.filter((entry) => entry.type === 'image')
+  if (images.length === 0) return null
+
+  const coverImages = images.filter((entry) => entry.cover)
+  return coverImages[0] || images[0] || null
+}
+
 // Hero state for default layout
 const heroState = useState('hero', () => null)
 const clientDisplayName = computed(() => {
@@ -116,7 +152,7 @@ heroState.value = {
   tagline: clientTagline.value,
   backgroundColor: 'color-accent',
   size: 'l',
-  hideBottom: true
+  hideBottom: true,
 }
 
 // Set page SEO
@@ -131,5 +167,3 @@ useHead({
 <style scoped>
 
 </style>
-
-

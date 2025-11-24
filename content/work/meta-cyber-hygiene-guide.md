@@ -1,8 +1,10 @@
 ---
 title: Cyber Hygiene Guide
 client: Meta
+client-slug: meta
 description: Publication design for cybersecurity best practices guide promoting digital safety.
 tags: [editorial]
+services: ['publication-in-30-days']
 published: true
 items:
   - type: image
@@ -31,4 +33,3 @@ items:
     title: Cyber Hygiene Guide
     caption: Guide layout 5
 ---
-

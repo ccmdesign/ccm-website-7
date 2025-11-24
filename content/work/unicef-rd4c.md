@@ -1,8 +1,10 @@
 ---
 title: Responsible Data for Children
 client: UNICEF
+client-slug: unicef
 description: Digital platform and brand identity for Responsible Data for Children initiative promoting ethical data practices.
 tags: [web, branding]
+services: ['branding', 'interface-design-and-development']
 published: true
 items:
   - type: image
@@ -33,4 +35,3 @@ items:
     title: Responsible Data for Children
     caption: Logo variation 3
 ---
-

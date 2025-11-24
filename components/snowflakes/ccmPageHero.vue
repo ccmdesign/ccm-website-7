@@ -14,7 +14,7 @@
 
     <footer v-if="!minimal" class="ccm-page-hero__footer">
       <slot name="footer">
-        <ccm-logo-reel />
+        <ccm-logo-reel v-if="!hero?.hideLogoReel" />
       </slot>
     </footer>
   </header>

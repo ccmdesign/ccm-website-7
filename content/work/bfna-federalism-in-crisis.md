@@ -1,8 +1,10 @@
 ---
 title: Federalism in Crisis
 client: Bertelsmann Foundation
+client-slug: bfna
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sequi molestias, animi quisquam, commodi ad inventore similique temporibus voluptatibus ab provident, assumenda minima alias. Assumenda incidunt velit adipisci labore repellendus.
 tags: [editorial]
+services: ['publication-in-30-days', 'design-subscription']
 published: true
 items:
   - type: image
@@ -66,4 +68,3 @@ items:
     title: Federalism in Crisis
     caption: A study of the federalism in crisis
 ---
-

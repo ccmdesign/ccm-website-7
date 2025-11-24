@@ -1,8 +1,10 @@
 ---
 title: ODImpact
 client: The GovLab
+client-slug: govlab
 description: Digital platform and publication design for Open Data Impact research initiative.
 tags: [web]
+services: ['interface-design-and-development', 'design-subscription']
 published: true
 items:
   - type: image
@@ -16,4 +18,3 @@ items:
     title: ODImpact
     caption: Platform homepage
 ---
-

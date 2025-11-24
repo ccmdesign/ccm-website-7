@@ -1,8 +1,10 @@
 ---
 title: How to Fix Democracy
 client: Bertelsmann Foundation
+client-slug: bfna
 description: Digital platform and publication design exploring solutions for democratic renewal and civic engagement.
 tags: [web]
+services: ['interface-design-and-development', 'design-subscription']
 published: true
 items:
   - type: image
@@ -16,4 +18,3 @@ items:
     title: How to Fix Democracy
     caption: Navigation menu
 ---
-
