@@ -9,7 +9,7 @@
             <li v-for="link in navLinks" :key="link.to">
               <nuxt-link :to="link.to" class="footer-link">{{ link.label }}</nuxt-link>
             </li>
-            <li><nuxt-link to="/insights" class="footer-link">Insights</nuxt-link></li>
+            <li><nuxt-link to="/blog" class="footer-link">Insights</nuxt-link></li>
           </ul>
         </nav>
       </div>
@@ -18,7 +18,7 @@
       <div class="footer__col stack">
         <h3 class="footer__heading">About ccm.design</h3>
         <p>Our team have over fifteen years of experience designing brand identities, online experiences and digital products.</p>
-        <p><nuxt-link to="/about-us/" class="button button--outline">Learn About Us</nuxt-link></p>
+        <p><nuxt-link to="/about" class="button button--outline">Learn About Us</nuxt-link></p>
       </div>
 
       <!-- Careers -->
@@ -57,7 +57,7 @@ const router = useRouter()
 
 // Primary navigation links (same as top‑bar)
 const topbarNavLinks = [
-  { to: '/about-us', label: 'About' },
+  { to: '/about', label: 'About' },
   { to: '/work', label: 'Work' },
   { to: '/services', label: 'Services' },
   { to: '/contact', label: 'Contact' },
