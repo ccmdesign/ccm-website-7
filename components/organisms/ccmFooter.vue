@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <div class="footer__grid center padding-bottom:s3">
+    <div class="footer__grid center padding-bottom:3xl">
       <!-- Sections navigation -->
       <div class="footer__col stack">
         <h3 class="footer__heading">Sections</h3>
@@ -18,21 +18,21 @@
       <div class="footer__col stack">
         <h3 class="footer__heading">About ccm.design</h3>
         <p>Our team have over fifteen years of experience designing brand identities, online experiences and digital products.</p>
-        <p><nuxt-link to="/about" class="button button--outline">Learn About Us</nuxt-link></p>
+        <p><ccm-button to="/about" color="accent" size="s">Learn About Us</ccm-button></p>
       </div>
 
       <!-- Careers -->
       <div class="footer__col stack">
         <h3 class="footer__heading">Careers</h3>
         <p>We are always on the lookout for great designers and developers who enjoy the freedom and responsibility of a fully remote team.</p>
-        <p><nuxt-link to="/contact/" class="button button--outline">Apply</nuxt-link></p>
+        <p><ccm-button to="/contact/" color="accent" size="s">Apply</ccm-button></p>
       </div>
 
       <!-- Let's Talk -->
       <div class="footer__col stack">
         <h3 class="footer__heading">Let's Talk</h3>
         <p>Did you like what you see? Feel free to contact us if you are starting a new project, fixing an old one, just wanna say hi.</p>
-        <p><nuxt-link to="/contact/" class="button button--solid">Contact</nuxt-link></p>
+        <p><ccm-button to="/contact/" color="accent" variant="primary" size="s">Contact</ccm-button></p>
       </div>
     </div>
 
@@ -86,7 +86,7 @@ const props = defineProps({
   gap: var(--space-xl);
   max-width: var(--max-content-width);
   margin: 0 auto;
-  padding: var(--space-m) var(--space-m) var(--space-2xl);
+  padding: var(--space-m) var(--space-2xl) var(--space-2xl);
 }
 
 .footer__col {
@@ -96,9 +96,9 @@ const props = defineProps({
 }
 
 .footer__heading {
-  font-size: var(--font-size-l);
+  font-size: var(--size-0);
   margin-bottom: var(--space-xs);
-  color: var(--color-base-tint-80); /* Slightly muted white */
+  color: var(--color-base-tint-70); /* Slightly muted white */
   font-weight: bold;
 }
 
@@ -126,44 +126,11 @@ p {
   color: var(--color-white);
 }
 
-.button {
-  display: inline-block;
-  padding: var(--space-xs) var(--space-m);
-  text-decoration: none;
-  font-weight: 500;
-  border-radius: 4px; /* Or use a token if available */
-  transition: all 0.2s ease;
-  text-align: center;
-  margin-top: var(--space-s);
-}
-
-.button--outline {
-  border: 1px solid var(--color-accent);
-  color: var(--color-accent);
-  background: transparent;
-}
-
-.button--outline:hover {
-  background: var(--color-accent);
-  color: var(--color-primary);
-}
-
-.button--solid {
-  background-color: var(--color-accent);
-  color: var(--color-primary);
-  border: 1px solid var(--color-accent);
-}
-
-.button--solid:hover {
-  background-color: var(--color-white);
-  border-color: var(--color-white);
-}
-
 .site-credits-bar {
   background-color: color-mix(in srgb, var(--color-primary) 80%, black 20%); /* Darker shade */
   padding: var(--space-s) 0;
-  font-size: var(--font-size-xs);
-  color: var(--color-white-alpha-50);
+  font-size: var(--size--2);
+  opacity: 0.4;
 }
 
 .site-credits-content {

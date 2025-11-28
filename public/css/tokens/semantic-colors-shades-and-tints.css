@@ -302,7 +302,7 @@
   --color-accent-alpha-80: hsla(var(--hsl-accent), 0.8);
   --color-accent-alpha-85: hsla(var(--hsl-accent), 0.85);
   --color-accent-alpha-90: hsla(var(--hsl-accent), 0.9);
-  --color-accent-alpha-95: hsla(var(--accent-hsl), 0.95);
+  --color-accent-alpha-95: hsla(var(--hsl-accent), 0.95);
 }
 
 /* Named tint/shade aliases (Material-style) */
