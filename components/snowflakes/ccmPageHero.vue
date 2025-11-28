@@ -70,7 +70,6 @@ h1 {
   
   font-size: var(--size-1);
   @media (min-width: 600px) { font-size: var(--size-2); }
-  @media (min-width: 1441px) { font-size: var(--size-3); }
   color: var(--color-base);
   font-weight: 600;
 }
