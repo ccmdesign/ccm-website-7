@@ -75,8 +75,8 @@ const props = defineProps({
 
 <style scoped>
 .footer {
-  background-color: var(--color-primary);
-  color: var(--color-white);
+  background-color: hsla(var(--hsl-primary), 0.03);
+  color: var(--color-primary);
   padding-top: var(--space-2xl);
 }
 
@@ -98,7 +98,7 @@ const props = defineProps({
 .footer__heading {
   font-size: var(--size-0);
   margin-bottom: var(--space-xs);
-  color: var(--color-base-tint-70); /* Slightly muted white */
+  color: var(--color-primary);
   font-weight: bold;
 }
 
@@ -112,7 +112,7 @@ const props = defineProps({
 }
 
 .footer-link {
-  color: var(--color-accent);
+  color: var(--color-primary);
   text-decoration: none;
   font-weight: 500;
 }
@@ -123,14 +123,14 @@ const props = defineProps({
 
 p {
   line-height: 1.5;
-  color: var(--color-white);
+  color: var(--color-primary);
 }
 
 .site-credits-bar {
-  background-color: color-mix(in srgb, var(--color-primary) 80%, black 20%); /* Darker shade */
+  background-color: hsla(var(--hsl-primary), 0.03);
   padding: var(--space-s) 0;
   font-size: var(--size--2);
-  opacity: 0.4;
+  color: var(--color-primary);
 }
 
 .site-credits-content {

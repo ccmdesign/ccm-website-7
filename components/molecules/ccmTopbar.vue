@@ -65,6 +65,7 @@ const navLinks = [
   text-decoration: none;
   letter-spacing: .5px;
   font-weight: 400;
+  font-family: var(--display-font);
   color: var(--color-base-tint-50);
 }
 

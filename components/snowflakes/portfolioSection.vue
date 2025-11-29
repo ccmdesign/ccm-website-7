@@ -24,7 +24,7 @@ const props = defineProps<{
 .portfolio-grid-columns {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: var(--space-xl);
+  /* gap: var(--space-xl); */
   max-width: 90svw;
   margin-inline: auto;
   @media (max-width: 768px) {
@@ -32,7 +32,7 @@ const props = defineProps<{
   }
 }
 
-:deep(.portfolio-item) { aspect-ratio: 4/3; }
+/* :deep(.portfolio-item) { aspect-ratio: 4/3; } */
 
 
 @media (min-width: 769px) {

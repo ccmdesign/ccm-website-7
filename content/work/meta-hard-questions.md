@@ -8,7 +8,7 @@ services: ['interface-design-and-development']
 published: true
 items:
   - type: image
-    mockupType: editorial
+    mockupType: web
     image: /assets/portfolio/meta/hard-questions.png
     title: Hard Questions
     caption: Publication layout

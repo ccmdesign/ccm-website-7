@@ -1,8 +1,8 @@
 <template>
-  <header class="ccm-page-hero | master-grid-columns master-grid-rows" :minimal="minimal">
+  <header class="ccm-page-hero | master-grid-columns master-grid-rows" :minimal="isMinimal">
     <ccm-topbar class="ccm-page-hero__topbar" />
 
-    <hgroup v-if="!minimal" class="ccm-page-hero__main">
+    <hgroup v-if="!isMinimal" class="ccm-page-hero__main">
       <span v-if="hero?.brow">{{ hero.brow }}</span>
       <h1>{{ hero?.title || hero?.tagline }}</h1>
       <p class="ccm-page-hero__tagline" v-if="hero?.tagline && hero?.title">{{ hero.tagline }}</p>
@@ -12,7 +12,7 @@
     </hgroup>
     <!-- <pre>{{ hero }}</pre> -->
 
-    <footer v-if="!minimal" class="ccm-page-hero__footer">
+    <footer v-if="!isMinimal" class="ccm-page-hero__footer">
       <slot name="footer">
         <ccm-logo-reel v-if="!hero?.hideLogoReel" />
       </slot>
@@ -23,7 +23,8 @@
 <style scoped>
 .ccm-page-hero {
   background-color: transparent;
-  block-size: 5svh;
+  block-size: auto;
+  min-block-size: 5svh;
 }
 
 .ccm-page-hero[minimal="false"] {
@@ -127,6 +128,11 @@ const hero = useHeroContent(
   computed(() => props.fallback),
 )
 
+const isMinimal = computed(() => {
+  if (props.minimal) return true
+  return hero.value?.variant === 'minimal'
+})
+
 const heroBindings = computed(() => {
   if (!hero.value) { return null }
   return {
@@ -150,8 +156,8 @@ const typewriterWordList = computed<string[]>(() => {
     return props.typewriterWords
   }
 
-  const heroWords = hero.value?.typewriterWords
-  if (heroWords && heroWords.length > 0) {
+  const heroWords = hero.value?.typewriterWords as string[] | undefined
+  if (heroWords && Array.isArray(heroWords) && heroWords.length > 0) {
     return heroWords
   }
 

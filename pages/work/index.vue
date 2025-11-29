@@ -1,7 +1,7 @@
 <template>
   <portfolio-section section-title="" class="padding-block:3xl">
     <template #header>
-      <div class="work-filters | cluster | margin-inline:auto">
+      <div class="work-filters | cluster | margin-inline:auto padding-bottom:xl">
         <button
           class="h5"
           v-for="filter in filters"
@@ -39,7 +39,7 @@ definePageMeta({
 })
 
 const { data: workItems } = await useAsyncData('work-items', () => {
-  return queryCollection('work').all()
+  return queryCollection('work').where('published', '=', true).all()
 })
 
 // Debug: log the data structure
