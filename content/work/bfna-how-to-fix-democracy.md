@@ -6,6 +6,7 @@ description: Digital platform and publication design exploring solutions for dem
 tags: [web]
 services: ['interface-design-and-development', 'design-subscription']
 published: true
+featured: true
 items:
   - type: image
     mockupType: web

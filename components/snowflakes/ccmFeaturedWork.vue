@@ -1,0 +1,163 @@
+<template>
+  <div class="featured-work">
+    <div class="featured-work__item">
+    
+      <AnimatePresence mode="wait">
+        <Motion
+          :key="currentIndex"
+          :initial="{ x: '100%', opacity: 0 }"
+          :animate="{ x: 0, opacity: 1 }"
+          :exit="{ x: '100%', opacity: 0 }"
+          :transition="{ duration: .5, ease: 'easeInOut' }"
+          class="featured-work__image-wrapper"
+        >
+          <img 
+            :src="currentImage" 
+            :data-mockup="currentMockupType"
+            alt="Featured work"
+          />
+        </Motion>
+      </AnimatePresence>
+      <div class="featured-work__info">
+        <div class="featured-work__timer">
+          <Motion
+            :key="`timer-${currentIndex}`"
+            :initial="{ width: '0%' }"
+            :animate="{ width: '100%' }"
+            :transition="{ duration: 6, ease: 'linear' }"
+            class="featured-work__timer-line"
+          />
+        </div>
+        <AnimatePresence mode="wait">
+          <Motion
+            :key="`info-${currentIndex}`"
+            :initial="{ y: '30%', opacity: 0 }"
+            :animate="{ y: 0, opacity: 1 }"
+            :exit="{ y: '30%', opacity: 0 }"
+            :transition="{ duration: 0.3, ease: 'easeInOut' }"
+            class="featured-work__info-wrapper"
+          >
+          <h4 class="featured-work__project">{{ currentProject }}</h4>  
+          <h5 class="featured-work__client">{{ currentClient }}</h5>
+            
+          </Motion>
+        </AnimatePresence>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+.featured-work {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-work__project {
+  font-size: var(--size--1);
+  font-weight: 600;
+}
+
+.featured-work__client {
+  font-size: var(--size--1);
+  font-weight: 200;
+  opacity: 0.6;
+}
+
+.featured-work__info {
+  position: relative;
+}
+
+.featured-work__timer {
+  width: 30%;
+  height: 2px;
+  background: var(--color-base-tint-05);
+  position: relative;
+  z-index: 1;
+}
+
+.featured-work__timer-line {
+  height: 100%;
+  background: var(--color-accent);
+}
+
+.featured-work__info-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: var(--size--2);
+}
+
+.featured-work__item {
+  width: 100%;
+  position: relative;
+}
+
+.featured-work__image-wrapper {
+  width: 100%;
+  aspect-ratio: 4/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  img {
+    width: 100%;
+    object-fit: contain;
+    display: block;
+    
+    &:not([data-mockup="editorial"]) {
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+</style>
+
+
+<script setup lang="ts">
+import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
+import { AnimatePresence, Motion } from 'motion-v'
+
+const images = [
+  { 
+    image: '/assets/portfolio/bfna/bfna-federalism-in-crisis-24-25.png', 
+    mockupType: 'editorial',
+    client: 'Bertelsmann Foundation',
+    project: 'Federalism in Crisis'
+  },
+  { 
+    image: '/assets/portfolio/bfna/bfna-future-of-work-homepage.png', 
+    mockupType: 'web',
+    client: 'Bertelsmann Foundation',
+    project: 'The Future of Work'
+  },
+  { 
+    image: '/assets/portfolio/bfna/bfna-website-homepage.png', 
+    mockupType: 'web',
+    client: 'Bertelsmann Foundation',
+    project: 'BFNA Website'
+  }
+]
+
+const currentIndex = ref(0)
+const currentImage = computed(() => images[currentIndex.value].image)
+const currentMockupType = computed(() => images[currentIndex.value].mockupType)
+const currentClient = computed(() => images[currentIndex.value].client)
+const currentProject = computed(() => images[currentIndex.value].project)
+
+let interval: ReturnType<typeof setInterval> | null = null
+
+onMounted(() => {
+  interval = setInterval(() => {
+    currentIndex.value = (currentIndex.value + 1) % images.length
+  }, 6000)
+})
+
+onBeforeUnmount(() => {
+  if (interval) {
+    clearInterval(interval)
+  }
+})
+</script>
+
+

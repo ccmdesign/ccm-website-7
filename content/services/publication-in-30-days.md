@@ -3,6 +3,7 @@ brow:
 title: Publications
 tagline: We transform your documents into a professionally designed, distribution-ready publication.
 slug: /services/publication-in-30-days
+description: Transform your finalized manuscript into a professionally designed, distribution-ready publication in just 30 days. We handle layout, data visualization, and accessibility to ensure your research makes a real impact. Perfect for reports, white papers, and briefs that need to be published fast.
 status: published
 ---
 

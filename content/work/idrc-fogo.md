@@ -6,6 +6,7 @@ description: Publication design for Networked Economies research report explorin
 tags: [editorial]
 services: ['publication-in-30-days']
 published: true
+featured: true
 items:
   - type: image
     mockupType: editorial
