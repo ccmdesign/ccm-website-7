@@ -82,6 +82,7 @@ export default defineContentConfig({
         tags: z.array(z.string()).optional(),
         projectType: z.enum(['Editorial', 'Logo', 'Web']).optional(),
         services: z.array(serviceSlugEnum).optional(),
+        featured: z.boolean().optional(),
         items: z.array(z.union([
           z.object({
             type: z.literal('image'),

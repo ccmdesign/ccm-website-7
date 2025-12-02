@@ -2,13 +2,9 @@
   <div class="featured-work">
     <nuxt-link :to="currentPath" class="featured-work__item">
       <div class="featured-work__image-container">
-        <AnimatePresence mode="wait">
-          <Motion
+        <Transition name="slide-fade" mode="out-in">
+          <div
             :key="currentIndex"
-            :initial="{ x: '100%', opacity: 0 }"
-            :animate="{ x: 0, opacity: 1 }"
-            :exit="{ x: '100%', opacity: 0 }"
-            :transition="{ duration: .5, ease: 'easeInOut' }"
             class="featured-work__image-wrapper"
           >
             <img 
@@ -16,34 +12,26 @@
               :data-mockup="currentMockupType"
               alt="Featured work"
             />
-          </Motion>
-        </AnimatePresence>
+          </div>
+        </Transition>
       </div>
       
       <div class="featured-work__info">
         <div class="featured-work__timer">
-          <Motion
+          <div
             :key="`timer-${currentIndex}`"
-            :initial="{ width: '0%' }"
-            :animate="{ width: '100%' }"
-            :transition="{ duration: 6, ease: 'linear' }"
             class="featured-work__timer-line"
           />
         </div>
-        <AnimatePresence mode="wait">
-          <Motion
+        <Transition name="slide-up" mode="out-in">
+          <div
             :key="`info-${currentIndex}`"
-            :initial="{ y: '30%', opacity: 0 }"
-            :animate="{ y: 0, opacity: 1 }"
-            :exit="{ y: '30%', opacity: 0 }"
-            :transition="{ duration: 0.3, ease: 'easeInOut' }"
             class="featured-work__info-wrapper"
           >
-          <h4 class="featured-work__project">{{ currentProject }}</h4>  
-          <h5 class="featured-work__client">{{ currentClient }}</h5>
-            
-          </Motion>
-        </AnimatePresence>
+            <h4 class="featured-work__project">{{ currentProject }}</h4>  
+            <h5 class="featured-work__client">{{ currentClient }}</h5>
+          </div>
+        </Transition>
       </div>
 
     </nuxt-link>
@@ -77,6 +65,17 @@
 .featured-work__timer-line {
   height: 100%;
   background: var(--color-accent);
+  width: 0%;
+  animation: timer-progress 6s linear forwards;
+}
+
+@keyframes timer-progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .featured-work__item {
@@ -87,7 +86,6 @@
   aspect-ratio: 4/3;
   display: flex;
   align-items: center;
-  
   
   img {
     width: 100%;
@@ -102,6 +100,44 @@
       transform: scale(1.27);
     }
   }
+}
+
+/* Slide-fade transition for images */
+.slide-fade-enter-active {
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.slide-fade-leave-active {
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.slide-fade-enter-from {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.slide-fade-leave-to {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+/* Slide-up transition for info */
+.slide-up-enter-active {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.slide-up-leave-active {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.slide-up-enter-from {
+  transform: translateY(30%);
+  opacity: 0;
+}
+
+.slide-up-leave-to {
+  transform: translateY(30%);
+  opacity: 0;
 }
 
 .featured-work__project {
@@ -120,45 +156,58 @@
 
 <script setup lang="ts">
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
-import { AnimatePresence, Motion } from 'motion-v'
 
-const images = [
-  { 
-    image: '/assets/portfolio/bfna/bfna-federalism-in-crisis-24-25.png', 
-    mockupType: 'editorial',
-    client: 'Bertelsmann Foundation',
-    project: 'Federalism in Crisis',
-    path: '/work/bfna-federalism-in-crisis'
-  },
-  { 
-    image: '/assets/portfolio/bfna/bfna-future-of-work-homepage.png', 
-    mockupType: 'web',
-    client: 'Bertelsmann Foundation',
-    project: 'The Future of Work',
-    path: '/work/bfna-future-of-work'
-  },
-  { 
-    image: '/assets/portfolio/bfna/bfna-website-homepage.png', 
-    mockupType: 'web',
-    client: 'Bertelsmann Foundation',
-    project: 'BFNA Website',
-    path: '/work/bfna-website'
+const { data: featuredWorkItems } = await useAsyncData('featured-work', () => {
+  return queryCollection('work')
+    .where('published', '=', true)
+    .where('featured', '=', true)
+    .all()
+})
+
+const getWorkPath = (item: any) => {
+  if (item.path) return item.path
+  if (item._path) return item._path
+  if (item._file) {
+    const filename = item._file.replace('.md', '')
+    return `/work/${filename}`
   }
-]
+  return '/work'
+}
+
+const images = computed(() => {
+  if (!featuredWorkItems.value) return []
+  
+  return featuredWorkItems.value.map((workItem: any) => {
+    // Get first cover image or first image
+    const imageItems = workItem.items?.filter((item: any) => item.type === 'image') || []
+    const coverImage = imageItems.find((item: any) => item.cover === true)
+    const firstImage = coverImage || imageItems[0]
+    
+    return {
+      image: firstImage?.image || '',
+      mockupType: firstImage?.mockupType || 'web',
+      client: workItem.client || '',
+      project: workItem.title || '',
+      path: getWorkPath(workItem)
+    }
+  }).filter((item) => item.image) // Only include items with images
+})
 
 const currentIndex = ref(0)
-const currentImage = computed(() => images[currentIndex.value]?.image ?? '')
-const currentMockupType = computed(() => images[currentIndex.value]?.mockupType ?? 'web')
-const currentClient = computed(() => images[currentIndex.value]?.client ?? '')
-const currentProject = computed(() => images[currentIndex.value]?.project ?? '')
-const currentPath = computed(() => images[currentIndex.value]?.path ?? '/work')
+const currentImage = computed(() => images.value[currentIndex.value]?.image ?? '')
+const currentMockupType = computed(() => images.value[currentIndex.value]?.mockupType ?? 'web')
+const currentClient = computed(() => images.value[currentIndex.value]?.client ?? '')
+const currentProject = computed(() => images.value[currentIndex.value]?.project ?? '')
+const currentPath = computed(() => images.value[currentIndex.value]?.path ?? '/work')
 
 let interval: ReturnType<typeof setInterval> | null = null
 
 onMounted(() => {
-  interval = setInterval(() => {
-    currentIndex.value = (currentIndex.value + 1) % images.length
-  }, 6000)
+  if (images.value.length > 0) {
+    interval = setInterval(() => {
+      currentIndex.value = (currentIndex.value + 1) % images.value.length
+    }, 6000)
+  }
 })
 
 onBeforeUnmount(() => {

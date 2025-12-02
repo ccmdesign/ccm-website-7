@@ -6,6 +6,7 @@ description: Annual report design showcasing Meta's research initiatives and soc
 tags: [editorial]
 services: ['publication-in-30-days']
 published: true
+featured: true
 items:
   - type: image
     mockupType: editorial
