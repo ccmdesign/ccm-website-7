@@ -1,61 +1,79 @@
 <template>
-  <portfolio-section class="padding-block:3xl">
-    <hgroup class="project-header | stack">
-      <h2 class="h5">Federalism in Crisis</h2>
-      <p>Bertelsmann Foundation</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sequi molestias, animi quisquam, commodi ad inventore similique temporibus voluptatibus ab provident, assumenda minima alias. Assumenda incidunt velit adipisci labore repellendus.</p>
-    </hgroup>
-  </portfolio-section>
-  <portfolio-section>
-    <image-card image="/assets/portfolio/bfna/bfna-federalism-in-crisis-10-11.png" title="Federalism in Crisis" caption="A study of the federalism in crisis" />
-    <image-card image="/assets/portfolio/bfna/bfna-federalism-in-crisis-24-25.png" title="Federalism in Crisis" caption="A study of the federalism in crisis" />
-    <div class="project-info portfolio-item | stack">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sequi molestias, animi quisquam, commodi ad inventore similique temporibus voluptatibus ab provident, assumenda minima alias. Assumenda incidunt velit adipisci labore repellendus.</p>
-    </div>
-    <image-card image="/assets/portfolio/test.avif" title="Federalism in Crisis" caption="A study of the federalism in crisis" />
-    <image-card image="/assets/portfolio/test3.avif" title="Federalism in Crisis" caption="A study of the federalism in crisis" />
-    <image-card image="/assets/portfolio/bfna/bfna-federalism-in-crisis-54-55.png" title="Federalism in Crisis" caption="A study of the federalism in crisis" />
-    <image-card image="/assets/portfolio/bfna/bfna-federalism-in-crisis-60-61.png" title="Federalism in Crisis" caption="A study of the federalism in crisis" />
-    <image-card image="/assets/portfolio/bfna/bfna-federalism-in-crisis-64-65.png" title="Federalism in Crisis" caption="A study of the federalism in crisis" />
-    <image-card image="/assets/portfolio/bfna/bfna-federalism-in-crisis-82-83.png" title="Federalism in Crisis" caption="A study of the federalism in crisis" />
-    <div class="project-info portfolio-item | stack">
-      <p class="h4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sequi molestias, animi quisquam, commodi ad inventore similique temporibus voluptatibus ab provident, assumenda minima alias. Assumenda incidunt velit adipisci labore repellendus.</p>
-    </div>
-    <image-card image="/assets/portfolio/bfna/bfna-federalism-in-crisis-86-87.png" title="Federalism in Crisis" caption="A study of the federalism in crisis" />
-    <image-card image="/assets/portfolio/bfna/bfna-federalism-in-crisis-cover.png" title="Federalism in Crisis" caption="A study of the federalism in crisis" />
-    <image-card image="/assets/portfolio/bfna/bfna-federalism-in-crisis-toc.png" title="Federalism in Crisis" caption="A study of the federalism in crisis" />
-  </portfolio-section>
-  </template>
-  
-  <script setup>
-  definePageMeta({
-    layout: 'work-layout'
-  })
-  
-  </script>
-  
-  <style scoped>
+  <div class="test-page">
+    <h1>Collections Debug</h1>
 
-.project-header {
-  grid-column: 2 / 12;
+    <details v-for="collection in collections" :key="collection.name" open>
+      <summary>
+        <strong>{{ collection.name }}</strong> ({{ collection.items?.length || 0 }} items)
+      </summary>
+      <pre>{{ JSON.stringify(collection.items, null, 2) }}</pre>
+    </details>
+  </div>
+</template>
+
+<script setup>
+// Define the known collections based on content.config.ts
+const collectionNames = [
+  'blog',
+  'casestudies', // Note: config uses 'casestudies', not 'case-studies'
+  'clients',
+  'components',
+  'services',
+  'work'
+];
+
+// Fetch all collections
+const { data: allCollections } = await useAsyncData('all-collections', async () => {
+  const collectionsWithItems = await Promise.all(
+    collectionNames.map(async (name) => {
+      try {
+        const items = await queryCollection(name).all();
+        return {
+          name,
+          items
+        };
+      } catch (error) {
+        console.error(`Error fetching collection ${name}:`, error);
+        return {
+          name,
+          items: [],
+          error: error.message
+        };
+      }
+    })
+  );
+
+  return collectionsWithItems;
+});
+
+const collections = computed(() => allCollections.value || []);
+</script>
+
+<style scoped>
+.test-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-  .project-header {
-    /* outline: 1px solid red; */
-  }
+details {
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 4px;
+}
 
-  .project-info {
-    /* outline: 1px solid blue; */
-  }
+summary {
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
 
-  .image-card {
-    /* outline: 1px solid green; */
-  }
-
-  .project-info {
-    justify-content: center;
-    p { 
-      font-weight: 500;
-     }
-  }
-  </style>
+pre {
+  background: #f5f5f5;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 0.875rem;
+}
+</style>

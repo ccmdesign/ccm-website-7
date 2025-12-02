@@ -72,7 +72,6 @@ const navLinks = [
 .menu__item {
   color: var(--color-base);
   text-decoration: none;
-  text-transform: uppercase;
 
   &:hover { text-decoration: underline; }
 }

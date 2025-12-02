@@ -23,13 +23,12 @@ export default defineNuxtConfig({
         // google icons
         { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" },
         { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" },
+        // project styles
+        { rel: "stylesheet", href: "/css/styles.css" },
       ],
       script: [],
     }
   },
-  css: [
-    'public/css/styles.css'
-  ],
   build: {
     transpile: ['vue-carousel'],
   },
@@ -41,11 +40,15 @@ export default defineNuxtConfig({
     },
   },
   plugins: [
-    
+
   ],
   ssr: true,
-  experimental: {
-    clientFallback: true
+  nitro: {
+    preset: 'static',
+    prerender: {
+      crawlLinks: true,
+      routes: ['/']
+    }
   },
   components: [
     { path: '~/components', pathPrefix: false, global: true }

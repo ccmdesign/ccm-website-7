@@ -17,7 +17,7 @@
 </template>
 
 <script setup>
-  import { toRefs, defineProps, computed, resolveComponent } from 'vue';
+  import { toRefs, computed, resolveComponent } from 'vue';
   
   const props = defineProps({
     is: {

@@ -2,6 +2,10 @@
 import { useRoute } from 'vue-router';
 import type { ParsedContent } from '@nuxt/content/dist/runtime/types';
 
+definePageMeta({
+  name: 'client-single'
+});
+
 // Get the current route to access the client's slug
 const route = useRoute();
 const slug = route.params.slug as string;

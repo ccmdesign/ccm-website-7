@@ -29,6 +29,7 @@
 import { computed } from 'vue'
 
 definePageMeta({
+  name: 'client-catchall',
   layout: 'minimal',
 })
 

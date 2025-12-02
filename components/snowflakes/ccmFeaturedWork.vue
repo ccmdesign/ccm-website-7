@@ -1,6 +1,6 @@
 <template>
   <div class="featured-work">
-    <div class="featured-work__item">
+    <nuxt-link :to="currentPath" class="featured-work__item">
     
       <AnimatePresence mode="wait">
         <Motion
@@ -43,7 +43,7 @@
           </Motion>
         </AnimatePresence>
       </div>
-    </div>
+    </nuxt-link>
   </div>
 </template>
 
@@ -51,6 +51,8 @@
 .featured-work {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  padding: var(--space-l);
 }
 
 .featured-work__project {
@@ -92,6 +94,9 @@
 .featured-work__item {
   width: 100%;
   position: relative;
+  text-decoration: none;
+  display: block;
+  color: inherit;
 }
 
 .featured-work__image-wrapper {
@@ -109,6 +114,10 @@
     &:not([data-mockup="editorial"]) {
       box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
     }
+
+    &[data-mockup="editorial"] {
+      transform: scale(1.27);
+    }
   }
 }
 </style>
@@ -123,27 +132,31 @@ const images = [
     image: '/assets/portfolio/bfna/bfna-federalism-in-crisis-24-25.png', 
     mockupType: 'editorial',
     client: 'Bertelsmann Foundation',
-    project: 'Federalism in Crisis'
+    project: 'Federalism in Crisis',
+    path: '/work/bfna-federalism-in-crisis'
   },
   { 
     image: '/assets/portfolio/bfna/bfna-future-of-work-homepage.png', 
     mockupType: 'web',
     client: 'Bertelsmann Foundation',
-    project: 'The Future of Work'
+    project: 'The Future of Work',
+    path: '/work/bfna-future-of-work'
   },
   { 
     image: '/assets/portfolio/bfna/bfna-website-homepage.png', 
     mockupType: 'web',
     client: 'Bertelsmann Foundation',
-    project: 'BFNA Website'
+    project: 'BFNA Website',
+    path: '/work/bfna-website'
   }
 ]
 
 const currentIndex = ref(0)
-const currentImage = computed(() => images[currentIndex.value].image)
-const currentMockupType = computed(() => images[currentIndex.value].mockupType)
-const currentClient = computed(() => images[currentIndex.value].client)
-const currentProject = computed(() => images[currentIndex.value].project)
+const currentImage = computed(() => images[currentIndex.value]?.image ?? '')
+const currentMockupType = computed(() => images[currentIndex.value]?.mockupType ?? 'web')
+const currentClient = computed(() => images[currentIndex.value]?.client ?? '')
+const currentProject = computed(() => images[currentIndex.value]?.project ?? '')
+const currentPath = computed(() => images[currentIndex.value]?.path ?? '/work')
 
 let interval: ReturnType<typeof setInterval> | null = null
 
