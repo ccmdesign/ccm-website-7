@@ -5,7 +5,7 @@
         <nuxt-link to="/"><img src="/assets/ccm-logo.svg" alt="CCM Design" /></nuxt-link>
       </slot>
     </h1>
-    <nav class="margin-left:auto">
+    <nav>
       <ul class="menu | cluster">
         <li v-for="link in navLinks" :key="link.to">
           <nuxt-link
@@ -23,11 +23,7 @@
 import { useRoute } from '#imports'
 
 const route = useRoute()
-const navLinks = [
-  { to: '/services', label: 'What we do' },
-  { to: '/work', label: 'Work' },
-  { to: '/contact', label: 'Contact' },
-]
+const navLinks = useNavigation()
 </script>
 
 <style scoped>
@@ -38,11 +34,22 @@ const navLinks = [
 }
 
 .topbar__title {
-  img {
-    block-size: 1.5rem;
+
+  margin-inline: auto;
+  @media (min-width: 960px) {
+    margin-inline: 0; 
   }
 
+
+  img { block-size: 1.5rem; }
+
   * { text-decoration: none; }
+}
+
+nav {
+  @media (min-width: 960px) {
+    margin-inline-start: auto;
+  }
 }
 
 .menu {

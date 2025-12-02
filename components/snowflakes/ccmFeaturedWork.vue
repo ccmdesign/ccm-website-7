@@ -1,23 +1,25 @@
 <template>
   <div class="featured-work">
     <nuxt-link :to="currentPath" class="featured-work__item">
-    
-      <AnimatePresence mode="wait">
-        <Motion
-          :key="currentIndex"
-          :initial="{ x: '100%', opacity: 0 }"
-          :animate="{ x: 0, opacity: 1 }"
-          :exit="{ x: '100%', opacity: 0 }"
-          :transition="{ duration: .5, ease: 'easeInOut' }"
-          class="featured-work__image-wrapper"
-        >
-          <img 
-            :src="currentImage" 
-            :data-mockup="currentMockupType"
-            alt="Featured work"
-          />
-        </Motion>
-      </AnimatePresence>
+      <div class="featured-work__image-container">
+        <AnimatePresence mode="wait">
+          <Motion
+            :key="currentIndex"
+            :initial="{ x: '100%', opacity: 0 }"
+            :animate="{ x: 0, opacity: 1 }"
+            :exit="{ x: '100%', opacity: 0 }"
+            :transition="{ duration: .5, ease: 'easeInOut' }"
+            class="featured-work__image-wrapper"
+          >
+            <img 
+              :src="currentImage" 
+              :data-mockup="currentMockupType"
+              alt="Featured work"
+            />
+          </Motion>
+        </AnimatePresence>
+      </div>
+      
       <div class="featured-work__info">
         <div class="featured-work__timer">
           <Motion
@@ -43,6 +45,7 @@
           </Motion>
         </AnimatePresence>
       </div>
+
     </nuxt-link>
   </div>
 </template>
@@ -51,31 +54,24 @@
 .featured-work {
   display: flex;
   flex-direction: column;
+}
+
+.featured-work__image-container {
   overflow: hidden;
   padding: var(--space-l);
-}
-
-.featured-work__project {
-  font-size: var(--size--1);
-  font-weight: 600;
-}
-
-.featured-work__client {
-  font-size: var(--size--1);
-  font-weight: 200;
-  opacity: 0.6;
+  padding-inline: var(--system-padding-edge);
 }
 
 .featured-work__info {
   position: relative;
+  padding-inline: var(--system-padding-edge);
 }
 
 .featured-work__timer {
-  width: 30%;
+  width: 50%;
   height: 2px;
   background: var(--color-base-tint-05);
-  position: relative;
-  z-index: 1;
+  margin-block: var(--space-s);
 }
 
 .featured-work__timer-line {
@@ -83,28 +79,15 @@
   background: var(--color-accent);
 }
 
-.featured-work__info-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding-top: var(--size--2);
-}
-
 .featured-work__item {
-  width: 100%;
-  position: relative;
   text-decoration: none;
-  display: block;
-  color: inherit;
 }
 
 .featured-work__image-wrapper {
-  width: 100%;
   aspect-ratio: 4/3;
   display: flex;
   align-items: center;
-  justify-content: center;
+  
   
   img {
     width: 100%;
@@ -120,6 +103,18 @@
     }
   }
 }
+
+.featured-work__project {
+  font-size: var(--size--1);
+  font-weight: 600;
+}
+
+.featured-work__client {
+  font-size: var(--size--1);
+  font-weight: 200;
+  opacity: 0.6;
+}
+
 </style>
 
 

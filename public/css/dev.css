@@ -1,5 +1,9 @@
 :root {
-  
+  --system-padding-edge: var(--space-l);
+
+  @media (min-width: 960px) {
+    --system-padding-edge: var(--space-3xl);
+  }
 }
 
 [class*="master-grid"] {
