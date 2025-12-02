@@ -11,7 +11,7 @@ const props = defineProps<{
     </slot>
     
 
-    <div class="portfolio-section__content | portfolio-grid-columns">
+    <div class="portfolio-section__content">
       <slot />
     </div>
 
@@ -21,19 +21,11 @@ const props = defineProps<{
 
 <style lang="css" scoped>
 
-.portfolio-grid-columns {
+.portfolio-section__content {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  /* gap: var(--space-xl); */
-  max-width: 90svw;
-  margin-inline: auto;
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
+  margin-inline: var(--system-padding-edge);
 }
-
-/* :deep(.portfolio-item) { aspect-ratio: 4/3; } */
-
 
 @media (min-width: 769px) {
 :deep(.portfolio-item:nth-child(5n+1)) {

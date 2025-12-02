@@ -9,9 +9,9 @@
       <ul class="menu | cluster">
         <li v-for="link in navLinks" :key="link.to">
           <nuxt-link
-            class="menu__item"
+            class="menu__item menu-item"
             :to="link.to"
-            :aria-current="route.path === link.to ? 'page' : undefined"
+            :aria-active="route.path === link.to ? 'true' : undefined"
           >{{ link.label }}</nuxt-link>
         </li>
       </ul>
@@ -31,14 +31,15 @@ const navLinks = useNavigation()
 .topbar {
   align-items: baseline;
   padding-block: var(--space-m);
+  justify-content: center;
 }
 
 .topbar__title {
-
-  margin-inline: auto;
+  
+  /* margin-inline: auto;
   @media (min-width: 960px) {
-    margin-inline: 0; 
-  }
+    margin-inline-start: 0; 
+  } */
 
 
   img { block-size: 1.5rem; }
@@ -47,7 +48,7 @@ const navLinks = useNavigation()
 }
 
 nav {
-  @media (min-width: 960px) {
+  @media (min-width: 600px) {
     margin-inline-start: auto;
   }
 }
@@ -80,11 +81,7 @@ nav {
   color: var(--color-base);
   text-decoration: none;
 
-  &:hover { text-decoration: underline; }
-}
-
-.menu__item[aria-current="page"] {
-  color: var(--color-accent);
+  &:hover { color: var(--color-primary-tint-80); }
 }
 
 li:not(:first-child) .menu__item { padding-inline-start: var(--space-xs); }

@@ -24,7 +24,7 @@
 }
 
 .project-card {
-  border: 1px solid var(--color-primary-tint-05);
+  /* border: 1px solid var(--color-primary-tint-05); */
 }
 
 .project-card[data-mockup="web"] {

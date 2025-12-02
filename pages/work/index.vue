@@ -1,9 +1,12 @@
 <template>
-  <portfolio-section section-title="" class="padding-block:3xl">
+
+  <h2 class="tagline">{{ hero?.tagline }}</h2>
+  
+  <portfolio-section>
     <template #header>
       <div class="work-filters | cluster | margin-inline:auto padding-bottom:xl">
         <button
-          class="h5"
+          class="menu-item | h5"
           v-for="filter in filters"
           :key="filter.value"
           :aria-active="activeFilter === filter.value ? 'true' : undefined"
@@ -15,40 +18,61 @@
     </template>
     
     <project-card 
-      v-for="workItem in filteredWorkItems" 
-      :key="getWorkPath(workItem)" 
-      :to="getWorkPath(workItem)" 
+      v-for="workItem in workItemsWithImages" 
+      :key="workItem.path" 
+      :to="workItem.path" 
       :brow="workItem.client" 
       :title="workItem.title" 
       :tagline="workItem.description"
-      :image="getFirstImage(workItem, activeFilter)?.image || null"
-      :mockupType="getFirstImage(workItem, activeFilter)?.mockupType || null"
+      :image="workItem.image || null"
+      :mockupType="workItem.mockupType || null"
     />
   </portfolio-section>
 </template>
 
+<style scoped lang="css">
+
+.tagline {
+  display: flex;
+  align-items: center;
+  @media (min-width: 960px) {
+    height: 40.75svh;
+  }
+}
+
+.work-filters {
+  --_cluster-space: var(--space-xl);
+}
+button {
+  all: unset;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--color-base-tint-40);
+  transition: all 0.3s ease;
+  line-height: 1;
+  letter-spacing: .5px;
+}
+
+button[aria-active] {
+  color: var(--color-primary-tint-80);
+  transform: scale(1);
+}
+</style>
+
+
 <script setup>
 definePageMeta({
-  layout: 'minimal',
   hero: {
-    brow: 'Portfolio',
-    title: 'Work',
-    tagline: 'See our work',
-    backgroundColor: 'color-accent',
+    tagline: 'We use design, data, and emerging tech to help our clients stay clear and connected as the world changes',
+    typewriterWords: ['Strategy', 'Design', 'Engineering', 'Data', 'Artificial Intelligence']
   }
 })
+
+const hero = useHeroContent()
 
 const { data: workItems } = await useAsyncData('work-items', () => {
   return queryCollection('work').where('published', '=', true).all()
 })
-
-// Debug: log the data structure
-watch(workItems, (items) => {
-  if (items && items.length > 0) {
-    console.log('Work items sample:', items[0])
-    console.log('First item tags:', items[0].tags)
-  }
-}, { immediate: true })
 
 const activeFilter = ref('all')
 
@@ -60,9 +84,7 @@ const filters = [
 ]
 
 const setFilter = (value) => {
-  console.log('Filter clicked:', value)
   activeFilter.value = value
-  console.log('Active filter set to:', activeFilter.value)
 }
 
 const filteredWorkItems = computed(() => {
@@ -72,29 +94,14 @@ const filteredWorkItems = computed(() => {
     return workItems.value
   }
   
-  const filtered = workItems.value.filter(item => {
+  return workItems.value.filter(item => {
     const tags = item.tags || []
-    const hasTag = tags.includes(activeFilter.value)
-    console.log(`Item: ${item.title}, tags:`, tags, `filter: ${activeFilter.value}, matches:`, hasTag)
-    return hasTag
+    return tags.includes(activeFilter.value)
   })
-  
-  console.log(`Filtered ${filtered.length} items for filter: ${activeFilter.value}`)
-  return filtered
 })
 
 const getWorkPath = (item) => {
-  // Try path properties first
-  if (item.path) return item.path
-  if (item._path) return item._path
-  
-  // Fallback: construct from _file
-  if (item._file) {
-    const filename = item._file.replace('.md', '')
-    return `/work/${filename}`
-  }
-  
-  return '#'
+  return item.path ?? item._path ?? (item._file ? `/work/${item._file.replace('.md', '')}` : '#')
 }
 
 const getFirstImage = (item, activeFilter = 'all') => {
@@ -103,76 +110,30 @@ const getFirstImage = (item, activeFilter = 'all') => {
   const images = item.items.filter(i => i.type === 'image')
   if (images.length === 0) return null
   
-  // Find cover images
   const coverImages = images.filter(i => i.cover === true)
   
-  // Debug logging
-  if (item.title === 'People-led Innovation') {
-    console.log(`[${item.title}] Active filter:`, activeFilter)
-    console.log(`[${item.title}] Cover images:`, coverImages.map(c => ({ 
-      mockupType: c.mockupType, 
-      cover: c.cover,
-      image: c.image?.split('/').pop() 
-    })))
-  }
-  
   if (activeFilter === 'all') {
-    // Return first cover, or fallback to first image
     return coverImages[0] || images[0] || null
   }
   
-  // Match mockupType to active filter
   const matchingCover = coverImages.find(i => i.mockupType === activeFilter)
-  if (matchingCover) {
-    if (item.title === 'People-led Innovation') {
-      console.log(`[${item.title}] Found matching cover:`, matchingCover.image?.split('/').pop())
-    }
-    return matchingCover
-  }
+  if (matchingCover) return matchingCover
   
-  // If no cover for this mockupType, return first image with matching mockupType
   const matchingImage = images.find(i => i.mockupType === activeFilter)
-  if (matchingImage) {
-    if (item.title === 'People-led Innovation') {
-      console.log(`[${item.title}] Found matching image (no cover):`, matchingImage.image?.split('/').pop())
-    }
-    return matchingImage
-  }
+  if (matchingImage) return matchingImage
   
-  // Final fallback: first cover or first image (for edge cases)
-  if (item.title === 'People-led Innovation') {
-    console.log(`[${item.title}] Using fallback:`, coverImages[0]?.image?.split('/').pop() || images[0]?.image?.split('/').pop())
-  }
   return coverImages[0] || images[0] || null
 }
+
+const workItemsWithImages = computed(() => {
+  return filteredWorkItems.value.map(item => {
+    const imageData = getFirstImage(item, activeFilter.value)
+    return {
+      ...item,
+      path: getWorkPath(item),
+      image: imageData?.image || null,
+      mockupType: imageData?.mockupType || null
+    }
+  })
+})
 </script>
-
-<style scoped>
-.work-filters {
-  --_cluster-space: var(--space-2xl);
-
-  button {
-    border: 0;
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
-    background-color: transparent;
-    color: var(--color-base-tint-40);
-    transition: all 0.3s ease;
-    line-height: .7;
-  }
-
-  button[aria-active] {
-    transition: all 0.3s ease;
-    color: var(--color-primary);
-    transform: scale(1.2);
-    transform-origin: bottom center;
-    
-
-  }
-}
-
-
-
-
-</style>

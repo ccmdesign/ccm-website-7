@@ -6,6 +6,37 @@
   }
 }
 
+.tagline {
+  padding-inline: var(--system-padding-edge);
+  font-size: calc(var(--size-2) * 0.8);
+  font-weight: 100;
+  color: var(--color-primary-tint-70);
+  text-wrap: balance;
+  align-self: center;
+  
+  
+  @media (min-width: 960px) {
+    font-size: var(--size-2);
+  }
+}
+
+.menu-item[aria-active="true"] {
+  position: relative;
+  
+  &::after {
+    transition: width 0.3s ease-in-out;
+    content: '';
+    width: 50%;
+    height: 4px;
+    background-color: var(--color-accent);
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+  }
+}
+
+
+
 [class*="master-grid"] {
   display: grid;
   grid-template-columns: inherit;
