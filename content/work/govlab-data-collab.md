@@ -6,6 +6,7 @@ description: Brand identity for Data Collab collaborative research platform.
 tags: [branding]
 services: ['branding', 'design-subscription']
 published: true
+year:
 items:
   - type: image
     mockupType: branding

@@ -7,6 +7,7 @@ tags: [editorial]
 services: ['publication-in-30-days']
 published: true
 featured: true
+year:
 items:
   - type: image
     mockupType: editorial

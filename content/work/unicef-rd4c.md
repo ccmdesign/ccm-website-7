@@ -6,6 +6,7 @@ description: Digital platform and brand identity for Responsible Data for Childr
 tags: [web, branding]
 services: ['branding', 'interface-design-and-development']
 published: true
+year:
 items:
   - type: image
     mockupType: web

@@ -1,11 +1,12 @@
 ---
-title: Design System
+title: Identity and Design System
 client: 360Giving
 client-slug: 360giving
 description: Comprehensive design system enabling team autonomy and product consistency across the digital ecosystem.
 tags: [web, branding]
 services: ['branding', 'interface-design-and-development']
 published: true
+year:
 items:
   - type: image
     mockupType: web

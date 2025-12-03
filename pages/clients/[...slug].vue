@@ -1,170 +1,165 @@
 <template>
-  <ccm-section>
-    <h2>Our Work Together</h2>
-    <div v-if="filteredWorkProjects.length === 0">
-      <p>No standalone projects are listed for this client yet.</p>
-    </div>
-    <portfolio-section v-else>
-      <template #header>
-        <div class="client-projects-header">
-          <h2>Projects with {{ clientDisplayName }}</h2>
-          <p class="body-sm">Selected work from the portfolio filtered to this client.</p>
-        </div>
-      </template>
-      <project-card
-        v-for="project in filteredWorkProjects"
-        :key="getWorkPath(project)"
-        :to="getWorkPath(project)"
-        :brow="project.client"
-        :title="project.title"
-        :tagline="project.description"
-        :image="getFirstImage(project)?.image || null"
-        :mockupType="getFirstImage(project)?.mockupType || null"
-      />
-    </portfolio-section>
-  </ccm-section>
+
+  <h2 class="tagline">{{ hero?.tagline }}</h2>
+  
+  <portfolio-section>
+    <template #header>
+      <div class="work-filters | cluster | margin-inline:auto padding-bottom:xl">
+        <button
+          class="menu-item | h5"
+          v-for="filter in filters"
+          :key="filter.value"
+          :aria-active="activeFilter === filter.value ? 'true' : undefined"
+          @click="setFilter(filter.value)"
+        >
+          {{ filter.label }}
+        </button>
+      </div>
+    </template>
+    
+    <project-card 
+      v-for="workItem in workItemsWithImages" 
+      :key="workItem.path" 
+      :to="workItem.path" 
+      :brow="workItem.client" 
+      :title="workItem.title" 
+      :tagline="workItem.description"
+      :image="workItem.image || null"
+      :mockupType="workItem.mockupType || null"
+    />
+  </portfolio-section>
 </template>
 
-<script setup>
-import { computed } from 'vue'
+<style scoped lang="css">
 
-definePageMeta({
-  name: 'client-catchall',
-  layout: 'minimal',
-})
+.tagline {
+  display: flex;
+  align-items: center;
+  padding-block: var(--space-3xl);
 
-const route = useRoute()
-
-const slugify = (value) => {
-  if (!value) return ''
-  return String(value)
-    .toLowerCase()
-    .trim()
-    .replace(/&/g, 'and')
-    .replace(/["'’]/g, '')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/(^-|-$)/g, '')
+  @media (min-width: 960px) {
+    height: 40.75svh;
+  }
 }
 
-const clientParam = computed(() => {
-  const raw = Array.isArray(route.params.slug)
-    ? route.params.slug.join('/')
-    : route.params.slug
-  return String(raw)
+.work-filters {
+  --_cluster-space: var(--space-xl);
+}
+button {
+  all: unset;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--color-base-tint-40);
+  transition: all 0.3s ease;
+  line-height: 1;
+  letter-spacing: .5px;
+}
+
+button[aria-active] {
+  color: var(--color-primary-tint-80);
+  transform: scale(1);
+}
+</style>
+
+
+<script setup>
+definePageMeta({
+  hero: {
+    tagline: 'We use design, data, and emerging tech to help our clients stay clear and connected as the world changes',
+    typewriterWords: ['Strategy', 'Design', 'Engineering', 'Data', 'Artificial Intelligence']
+  }
 })
 
-// Fetch client data from clients collection
-const { data: client } = await useAsyncData(`client-${clientParam.value}`, () => {
-  return queryCollection('clients').path(`/clients/${clientParam.value}`).first()
+const hero = useHeroContent()
+
+const route = useRoute()
+const clientSlug = Array.isArray(route.params.slug) ? route.params.slug.join('/') : route.params.slug
+
+const { data: client } = await useAsyncData(`client-${clientSlug}`, () => {
+  return queryCollection('clients').path(`/clients/${clientSlug}`).first()
 })
 
-// Fetch case studies
-const { data: allCaseStudies } = await useAsyncData('all-case-studies', () => {
-  return queryCollection('casestudies').all()
+const { data: workItems } = await useAsyncData(`work-items-${clientSlug}`, () => {
+  return queryCollection('work').where('published', '=', true).all()
 })
 
-const filteredCaseStudies = computed(() => {
-  if (!allCaseStudies.value) return []
-  const target = clientParam.value.toLowerCase()
-  return allCaseStudies.value.filter((doc) => {
-    // First check if there's a client-slug field in meta
-    if (doc.meta?.['client-slug']) {
-      return doc.meta['client-slug'].toLowerCase() === target
-    }
-    // Fallback to slugifying the client name from meta
-    if (doc.meta?.client) {
-      return slugify(doc.meta.client) === target
-    }
-    // Final fallback to direct properties
-    if (doc['client-slug']) {
-      return doc['client-slug'].toLowerCase() === target
-    }
-    return slugify(doc.client) === target
-  })
-})
+const activeFilter = ref('all')
 
-const { data: workItems } = await useAsyncData('client-work-items', () => {
-  return queryCollection('work').all()
-})
+const filters = [
+  { label: 'All', value: 'all' },
+  { label: 'Web', value: 'web' },
+  { label: 'Editorial', value: 'editorial' },
+  { label: 'Branding', value: 'branding' }
+]
 
-const filteredWorkProjects = computed(() => {
+const setFilter = (value) => {
+  activeFilter.value = value
+}
+
+const filteredWorkItems = computed(() => {
   if (!workItems.value) return []
-  const target = clientParam.value.toLowerCase()
-  return workItems.value.filter((doc) => {
-    if (doc.meta?.['client-slug']) {
-      return doc.meta['client-slug'].toLowerCase() === target
+  
+  // First filter by client
+  let clientFiltered = workItems.value.filter(item => {
+    // Match by client-slug if available (preferred method)
+    const itemClientSlug = item['client-slug'] || item.clientSlug
+    if (itemClientSlug) {
+      return itemClientSlug === clientSlug
     }
-    if (doc.meta?.client) {
-      return slugify(doc.meta.client) === target
+    
+    // Fallback: match by client name if client data is loaded
+    if (client.value?.name && item.client) {
+      return item.client === client.value.name
     }
-    if (doc['client-slug']) {
-      return doc['client-slug'].toLowerCase() === target
-    }
-    if (doc.client) {
-      return slugify(doc.client) === target
-    }
+    
     return false
+  })
+  
+  // Then filter by active filter (tags)
+  if (activeFilter.value === 'all') {
+    return clientFiltered
+  }
+  
+  return clientFiltered.filter(item => {
+    const tags = item.tags || []
+    return tags.includes(activeFilter.value)
   })
 })
 
 const getWorkPath = (item) => {
-  if (item.path) return item.path
-  if (item._path) return item._path
-  if (item._file) {
-    const filename = item._file.replace('.md', '')
-    return `/work/${filename}`
-  }
-  return '#'
+  return item.path ?? item._path ?? (item._file ? `/work/${item._file.replace('.md', '')}` : '#')
 }
 
-const getFirstImage = (item) => {
+const getFirstImage = (item, activeFilter = 'all') => {
   if (!item.items || !Array.isArray(item.items)) return null
-
-  const images = item.items.filter((entry) => entry.type === 'image')
+  
+  const images = item.items.filter(i => i.type === 'image')
   if (images.length === 0) return null
-
-  const coverImages = images.filter((entry) => entry.cover)
+  
+  const coverImages = images.filter(i => i.cover === true)
+  
+  if (activeFilter === 'all') {
+    return coverImages[0] || images[0] || null
+  }
+  
+  const matchingCover = coverImages.find(i => i.mockupType === activeFilter)
+  if (matchingCover) return matchingCover
+  
+  const matchingImage = images.find(i => i.mockupType === activeFilter)
+  if (matchingImage) return matchingImage
+  
   return coverImages[0] || images[0] || null
 }
 
-// Hero state for default layout
-const heroState = useState('hero', () => null)
-const clientDisplayName = computed(() => {
-  if (client.value) {
-    return client.value.meta?.['display-name'] || client.value.meta?.name || client.value.title
-  }
-  if (filteredCaseStudies.value.length > 0) {
-    return filteredCaseStudies.value[0].client
-  }
-  // fallback: derive a display name from slug
-  return clientParam.value.replace(/-/g, ' ').replace(/\b\w/g, (m) => m.toUpperCase())
-})
-
-const clientTagline = computed(() => {
-  if (client.value) {
-    return client.value.meta?.description || `${filteredCaseStudies.value.length} case study${filteredCaseStudies.value.length === 1 ? '' : 'ies'}`
-  }
-  return `${filteredCaseStudies.value.length} case study${filteredCaseStudies.value.length === 1 ? '' : 'ies'}`
-})
-
-heroState.value = {
-  brow: client.value?.meta?.sector || 'Client',
-  title: clientDisplayName.value,
-  tagline: clientTagline.value,
-  backgroundColor: 'color-accent',
-  size: 'l',
-  hideBottom: true,
-}
-
-// Set page SEO
-useHead({
-  title: `${clientDisplayName.value} - Client Work | CCM`,
-  meta: [
-    { name: 'description', content: client.value?.meta?.description || `Case studies and work completed for ${clientDisplayName.value}` }
-  ]
+const workItemsWithImages = computed(() => {
+  return filteredWorkItems.value.map(item => {
+    const imageData = getFirstImage(item, activeFilter.value)
+    return {
+      ...item,
+      path: getWorkPath(item),
+      image: imageData?.image || null,
+      mockupType: imageData?.mockupType || null
+    }
+  })
 })
 </script>
-
-<style scoped>
-
-</style>

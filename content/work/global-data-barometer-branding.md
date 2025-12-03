@@ -6,6 +6,7 @@ description: Visual identity system reflecting the four-dimensional framework fo
 tags: [branding]
 services: ['branding']
 published: true
+year:
 items:
   - type: image
     mockupType: branding

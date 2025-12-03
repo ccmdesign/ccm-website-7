@@ -6,6 +6,7 @@ description: Brand identity for Data Stewards program promoting responsible data
 tags: [branding]
 services: ['branding', 'design-subscription']
 published: true
+year:
 items:
   - type: image
     mockupType: branding

@@ -6,6 +6,7 @@ description: Publication design for Hard Questions series exploring complex soci
 tags: [web]
 services: ['interface-design-and-development']
 published: true
+year:
 items:
   - type: image
     mockupType: web

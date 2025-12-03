@@ -78,6 +78,7 @@ export default defineContentConfig({
         published: z.boolean().default(true),
         title: z.string(),
         client: z.string(),
+        'client-slug': z.string().optional(),
         description: z.string(),
         tags: z.array(z.string()).optional(),
         projectType: z.enum(['Editorial', 'Logo', 'Web']).optional(),

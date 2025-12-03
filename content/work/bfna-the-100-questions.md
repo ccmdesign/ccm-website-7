@@ -6,6 +6,7 @@ description: Research initiative exploring critical questions for democratic gov
 tags: [web]
 services: ['interface-design-and-development', 'design-subscription']
 published: true
+year:
 items:
   - type: image
     mockupType: web

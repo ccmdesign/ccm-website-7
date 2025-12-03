@@ -6,6 +6,7 @@ description: Publication design for cybersecurity best practices guide promoting
 tags: [editorial]
 services: ['publication-in-30-days']
 published: true
+year:
 items:
   - type: image
     mockupType: editorial

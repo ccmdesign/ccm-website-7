@@ -35,6 +35,8 @@
 .tagline {
   display: flex;
   align-items: center;
+  padding-block: var(--space-3xl);
+
   @media (min-width: 960px) {
     height: 40.75svh;
   }

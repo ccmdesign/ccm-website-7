@@ -6,6 +6,7 @@ description: Brand identity, publication design, and digital platform for Harvar
 tags: [web, branding]
 services: ['branding', 'interface-design-and-development', 'design-subscription']
 published: true
+year:
 items:
   - type: image
     mockupType: web

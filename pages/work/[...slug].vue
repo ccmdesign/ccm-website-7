@@ -1,105 +1,188 @@
 <template>
-  <portfolio-section class="padding-block:3xl">
-    <project-header
-      v-if="workItem"
-      :title="workItem.title"
-      :client="workItem.client"
-      :description="workItem.description"
-    >
-      <template #before>
-        <ccm-button to="/work" label="Back to Portfolio" />
-      </template>
-    </project-header>
-  </portfolio-section>
-  <portfolio-section v-if="workItem">
-    <template v-for="(item, index) in workItem.items" :key="index">
-      <image-card
-        v-if="item.type === 'image'"
-        :image="item.image"
-        :title="item.title"
-        :caption="item.caption"
-        :mockupType="item.mockupType || null"
-        @open="handleImageOpen(item, index)"
-      />
-      <project-info
-        v-else-if="item.type === 'text'"
-        :content="item.content"
-        :heading="item.heading"
-      />
-    </template>
-  </portfolio-section>
 
-  <image-lightbox
-    v-if="workItem"
-    :isOpen="isLightboxOpen"
-    :currentImage="currentImage"
-    :currentIndex="currentImageIndex"
-    :images="allImages"
-    @close="isLightboxOpen = false"
-    @navigate="handleNavigate"
-  />
+<section class="overview">
+  <tr>
+    <td class="project-title">{{ workItem?.title }}</td>
+    <td class="project-tags">{{ workItem?.tags?.join(', ') }}</td>
+  </tr>
+  <tr>
+    <td class="border-top project-client">{{ workItem?.client }}</td>
+    <td class="border-top project-year">{{ workItem?.year }}</td>
+  </tr>
+
+</section>
+  <section v-if="firstImage" class="first-image">
+    <project-card class="grid-9"
+      :to="workItem?.path || workItem?._path || `/work/${slugParam}`"
+      :brow="workItem?.client" 
+      :title="firstImage.title || workItem?.title" 
+      :tagline="firstImage.caption || workItem?.description"
+      :image="firstImage.image || null"
+      :mockupType="firstImage.mockupType || null"
+    />
+
+    <p class="grid-3">{{ workItem?.description }}</p>
+  </section>
+
+
+  <section v-if="brandingImages.length > 0">
+    <project-card class="grid-6"
+      v-for="(imageItem, index) in brandingImages" 
+      :key="index" 
+      :to="workItem?.path || workItem?._path || `/work/${slugParam}`"
+      :brow="workItem?.client" 
+      :title="imageItem.title || workItem?.title" 
+      :tagline="imageItem.caption || workItem?.description"
+      :image="imageItem.image || null"
+      :mockupType="imageItem.mockupType || null"
+    />
+  </section>
+
+  <section v-if="editorialImages.length > 0">
+    <project-card class="grid-6"
+      v-for="(imageItem, index) in editorialImages" 
+      :key="index" 
+      :to="workItem?.path || workItem?._path || `/work/${slugParam}`"
+      :brow="workItem?.client" 
+      :title="imageItem.title || workItem?.title" 
+      :tagline="imageItem.caption || workItem?.description"
+      :image="imageItem.image || null"
+      :mockupType="imageItem.mockupType || null"
+    />
+  </section>
+
+  <section v-if="webImages.length > 0">
+    <project-card class="grid-6"
+      v-for="(imageItem, index) in webImages" 
+      :key="index" 
+      :to="workItem?.path || workItem?._path || `/work/${slugParam}`"
+      :brow="workItem?.client" 
+      :title="imageItem.title || workItem?.title" 
+      :tagline="imageItem.caption || workItem?.description"
+      :image="imageItem.image || null"
+      :mockupType="imageItem.mockupType || null"
+    />
+  </section>
 </template>
 
-<script setup>
-definePageMeta({
-  layout: 'work-layout'
-})
+<style scoped>
+section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-inline: var(--system-padding-edge);
+  gap: var(--space-xl);
+}
 
+h2 {
+  font-size: var(--size-1);
+  font-weight: 200;
+  margin-block-start: var(--space-3xl);
+  margin-block-end: var(--space-2xl);
+}
+
+
+@media (max-width: 768px) {
+  .overview {
+    
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-s);
+
+    > * {
+      flex: 1;
+      flex-basis: 0;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .overview {
+    display: table;
+    width: calc(100% - var(--system-padding-edge) * 2);
+    table-layout: fixed;
+    color: var(--color-base-tint-80);
+    padding-block: var(--space-3xl);
+  }
+}
+
+.border-top {
+  border-top: 1px solid var(--color-base-tint-20);
+  padding-block-start: var(--space-s);
+}
+
+.project-title {
+  font-size: var(--size-1);
+  font-weight: 200;
+}
+
+.project-client {
+  font-size: var(--size--1);
+  font-weight: 600;
+  
+}
+
+.project-tags { 
+  @media (min-width: 769px) {text-align: right; }
+  font-size: var(--size--1);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+
+@media (max-width: 768px) {
+  [class*="grid-"] {
+    grid-column: span 12;
+  }
+}
+
+@media (min-width: 769px) {
+  .grid-6 { grid-column: span 6; }
+  .grid-9 { grid-column: span 9; }
+  .grid-3 { grid-column: span 3; }
+}
+
+
+</style>
+
+<script setup>
 const route = useRoute()
 const slugParam = Array.isArray(route.params.slug) ? route.params.slug.join('/') : route.params.slug
+
 const { data: workItem } = await useAsyncData(`work-${slugParam}`, () => {
   return queryCollection('work').path(`/work/${slugParam}`).first()
 })
 
-// Lightbox state
-const isLightboxOpen = ref(false)
-const currentImageIndex = ref(0)
-
-const allImages = computed(() => {
+const imageItems = computed(() => {
   if (!workItem.value?.items) return []
   return workItem.value.items.filter((item) => item.type === 'image')
 })
 
-const currentImage = computed(() => {
-  return allImages.value[currentImageIndex.value] || null
+const firstImage = computed(() => {
+  return imageItems.value[0] || null
 })
 
-const handleImageOpen = (item, index) => {
-  // Find the index in the filtered images array
-  const imageIndex = allImages.value.findIndex((img) => img === item)
-  if (imageIndex !== -1) {
-    currentImageIndex.value = imageIndex
-    isLightboxOpen.value = true
-  }
-}
+const brandingImages = computed(() => {
+  const first = firstImage.value
+  return imageItems.value.filter((item) => 
+    item.mockupType === 'branding' && item !== first
+  )
+})
 
-const handleNavigate = (direction) => {
-  if (direction === 'prev' && currentImageIndex.value > 0) {
-    currentImageIndex.value--
-  } else if (direction === 'next' && currentImageIndex.value < allImages.value.length - 1) {
-    currentImageIndex.value++
-  }
-}
+const editorialImages = computed(() => {
+  const first = firstImage.value
+  return imageItems.value.filter((item) => 
+    item.mockupType === 'editorial' && item !== first
+  )
+})
 
-// Provide hero data from content front-matter (if present) to layout via shared state
-const heroState = useState('hero', () => null)
-if (workItem.value) {
-  const doc = workItem.value
-  heroState.value = {
-    brow: doc.brow || doc.meta?.brow,
-    title: doc.title || doc.meta?.title,
-    tagline: doc.tagline || doc.meta?.tagline,
-    backgroundColor: doc.backgroundColor || doc.meta?.backgroundColor,
-    size: doc.size || doc.meta?.size,
-    client: doc.client || doc.meta?.client,
-    project: doc.project || doc.meta?.project,
-    hideTopbar: doc.hideTopbar ?? doc.meta?.hideTopbar,
-    hideBottom: doc.hideBottom ?? doc.meta?.hideBottom,
-    variant: doc.variant || doc.meta?.variant
-  }
-}
+const webImages = computed(() => {
+  const first = firstImage.value
+  return imageItems.value.filter((item) => 
+    item.mockupType === 'web' && item !== first
+  )
+})
 </script>
 
-<style scoped>
 
-</style>

@@ -27,6 +27,19 @@ const props = defineProps<{
   margin-inline: var(--system-padding-edge);
 }
 
+h2 {
+  font-size: var(--size-2);
+  font-weight: 200;
+  text-align: center;
+  margin-block-start: var(--space-3xl);
+  margin-block-end: var(--space-2xl);
+}
+
+:deep(.portfolio-item) {
+  grid-column: span 12;
+  grid-row: span 1;
+}
+
 @media (min-width: 769px) {
 :deep(.portfolio-item:nth-child(5n+1)) {
   grid-column: span 8;

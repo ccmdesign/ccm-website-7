@@ -6,6 +6,7 @@ description: Institutional website redesign for The Governance Lab, showcasing r
 tags: [web]
 services: ['interface-design-and-development', 'design-subscription']
 published: true
+year:
 items:
   - type: image
     mockupType: web
