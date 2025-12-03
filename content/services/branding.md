@@ -3,6 +3,13 @@ title: Branding
 tagline: We build brands that connect with your audience.
 slug: /services/branding
 description: We build brands that connect with your audience. Our collaborative process goes beyond logos and colors to create a complete brand system rooted in your purpose. We help mission-driven organizations develop authentic identities that are consistent, scalable, and designed to advance their impact.
+activities:
+  - Brand Discovery & Positioning
+  - Audience & Stakeholder Research
+  - Visual Identity Systems
+  - Messaging & Voice Guidelines
+  - Brand Toolkits & Templates
+icon: /assets/service-icons/branding.svg
 status: published
 ---
 

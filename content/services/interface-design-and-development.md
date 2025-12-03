@@ -3,6 +3,13 @@ title: Interfaces
 tagline: We design and build powerful, user-centric interfaces that help you engage with your audience, and advance your mission.
 slug: /services/interface-design-development
 description: We design and build powerful, user-centric interfaces that help you engage with your audience. From complex research hubs to scalable digital platforms, we create custom websites that reflect the quality of your work. Our process ensures a seamless, user-friendly experience for both your team and your visitors.
+activities:
+  - User & Content Discovery
+  - Information Architecture & UX Flows
+  - UI Design Systems & Components
+  - Front-end Development & CMS Integration
+  - Accessibility, QA & Performance
+icon: /assets/service-icons/interfaces.svg
 status: published
 ---
 

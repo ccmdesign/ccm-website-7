@@ -1,9 +1,16 @@
 ---
 
-title: Design Subscription 
+title: Design Subscription
 tagline: High-quality design, right when you need it. So you can focus on your mission, not on making slides.
 slug: /services/design-subscription
 description: High-quality design, right when you need it. Our Design Subscription service offers a flexible, on-demand partnership for research and communications teams. Access a dedicated design team for a flat monthly fee to create presentations, social graphics, and publications without the hassle of hiring.
+activities:
+  - Request Intake & Prioritization
+  - Presentation & Deck Design
+  - Social & Campaign Creative
+  - Publication & Report Layouts
+  - Data Visualization & Infographics
+icon: /assets/service-icons/branding.svg
 status: published
 ---
 

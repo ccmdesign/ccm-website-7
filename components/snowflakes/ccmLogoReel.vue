@@ -74,10 +74,9 @@ watch(reelClients, () => {
 
 .reel {
   max-width: 100svw;
-  width: 100%;
-  margin-inline: auto;
+  width: 100svw;
   justify-content: space-between;
-  padding-inline: var(--space-3xl);
+  padding-inline: var(--system-padding-edge);
   --_reel-gap: var(--space-2xl);
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE/Edge */
@@ -94,7 +93,7 @@ watch(reelClients, () => {
 
 .reel li {
   min-block-size: 80px;
-  min-inline-size: 120px;
+  /* min-inline-size: 120px; */
   max-inline-size: 160px;
 }
 
@@ -107,6 +106,7 @@ watch(reelClients, () => {
 } 
 
 .reel img {
+  width: 120px;
   max-inline-size: 100%;
   max-block-size: 80px;
   object-fit: contain;

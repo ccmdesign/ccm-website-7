@@ -1,47 +1,60 @@
 <template>
   <div class="service-card">
     <hgroup class="service-card__header">
-      <h6>{{ title }}</h6>
+      <h3 class="h5">{{ service.title }}</h3>
+      <p>{{ service.description }}</p>
     </hgroup>
 
-    <div class="service-card__content">
-      <p v-if="tagline">{{ tagline }}</p>
-      <ccm-button :to="to" class="service-card__cta">Explore service</ccm-button>
+    <div class="service-card__icon">
+      <img :src="service.meta?.icon" :alt="service.title" />
+    </div>
+
+    <div class="service-card__activities">
+      <ul>
+        <li v-for="activity in service.meta.activities" :key="activity">
+          <p>{{ activity }}</p>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import type { RouteLocationRaw } from 'vue-router'
-
 defineProps<{
-  brow?: string | null
-  title: string
-  tagline?: string | null
-  to: RouteLocationRaw
-  slug?: string | null
+  service: Service
 }>()
 </script>
 
 <style scoped>
 .service-card {
-  display: grid;
-  grid-template-columns: subgrid;
-  grid-column: wide-start / wide-end;
+  display: flex;
+  gap: var(--space-2xl);
+  padding-block: var(--space-2xl);
   border-top: 1px solid var(--color-base-tint-10);
-  gap: var(--space-ml);
-  padding: var(--space-l) 0;
 }
 
 .service-card__header {
-  grid-column: wide-start / normal-start;
+  flex: 2;
+  font-weight: 100;
 }
 
-.service-card__content {
-  grid-column: normal-start / wide-end;
+.service-card__icon {
+  flex: 1;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: var(--space-m);
+  align-items: center;
+  justify-content: center;
+}
+
+.service-card__activities {
+  flex: 1;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  
+  
 }
 </style>

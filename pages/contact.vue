@@ -1,6 +1,6 @@
 <template>
   <h2 class="tagline">{{ hero?.tagline }}</h2>
-  <form class="form | stack" @submit.prevent="submitContact">
+  <form class="form | stack">
     <p class="mailto-link"><a href="mailto:hello@ccmdesign.ca">hello@ccmdesign.ca</a></p>
     <div class="switcher">
       <fieldset>
@@ -96,24 +96,5 @@ const submitting = ref(false)
 const success = ref(false)
 const error = ref(false)
 
-async function submitContact() {
-  if (submitting.value) return
-  success.value = false
-  error.value = false
-  submitting.value = true
-  try {
-    await $fetch('/api/contact', {
-      method: 'POST',
-      body: contact
-    })
-    success.value = true
-    contact.name = ''
-    contact.email = ''
-    contact.message = ''
-  } catch (e) {
-    error.value = true
-  } finally {
-    submitting.value = false
-  }
-}
+
 </script>

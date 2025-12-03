@@ -3,7 +3,14 @@ title: Splashpage
 tagline: We create a world-class brand identity and a high-impact splash pages for your projects.
 slug: /services/splashpage-in-a-week
 description: Launch a stunning, professional online presence in just one week. Our "Splashpage in a Week" service provides a foundational brand identity and a high-impact, single-page website. Ideal for startups, new initiatives, and events that need to establish credibility and capture interest immediately.
-status: published
+activities:
+  - Concept Intake & Launch Goals
+  - Brand Identity Essentials
+  - One-page UX/UI Design
+  - No-code Build & Integration
+  - QA, Launch & Analytics Setup
+icon: /assets/service-icons/interfaces.svg
+status: draft
 ---
 
 ### The Strategic Goal
