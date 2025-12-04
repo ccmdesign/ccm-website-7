@@ -1,22 +1,12 @@
 <template>
 
-  <h2 class="tagline">{{ hero?.tagline }}</h2>
+  <header class="switcher">
+    <img class="client-logo" v-if="client?.client_logo" :src="`/assets/clients/${client?.client_logo}`" :alt="client?.name" />
+    <h1 v-else>{{ client?.name }}</h1>
+    <p>{{ client?.description }}</p>
+  </header>
   
   <portfolio-section>
-    <template #header>
-      <div class="work-filters | cluster | margin-inline:auto padding-bottom:xl">
-        <button
-          class="menu-item | h5"
-          v-for="filter in filters"
-          :key="filter.value"
-          :aria-active="activeFilter === filter.value ? 'true' : undefined"
-          @click="setFilter(filter.value)"
-        >
-          {{ filter.label }}
-        </button>
-      </div>
-    </template>
-    
     <project-card 
       v-for="workItem in workItemsWithImages" 
       :key="workItem.path" 
@@ -31,6 +21,28 @@
 </template>
 
 <style scoped lang="css">
+header {
+  padding-block: var(--space-3xl);
+  margin-block-end: var(--space-3xl);
+  margin-inline: var(--system-padding-edge);
+  gap: var(--space-xl);
+  justify-content: space-between;
+  border-block: 1px solid var(--color-base-tint-10);
+
+  > * {
+    flex: 1;
+  }
+
+  p {
+    text-wrap: balance;
+    max-width: 60ch;
+  }
+}
+.client-logo {
+  max-height: 54px;
+  max-width: 180px;
+  object-fit: contain;
+}
 
 .tagline {
   display: flex;
