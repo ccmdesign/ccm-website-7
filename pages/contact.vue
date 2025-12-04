@@ -1,24 +1,24 @@
 <template>
   <h2 class="tagline">{{ hero?.tagline }}</h2>
-  <form class="form | stack">
+  <form class="form | stack" @submit.prevent="handleSubmit" action="https://formspree.io/f/mnnarojy" method="POST">
     <p class="mailto-link"><a href="mailto:hello@ccmdesign.ca">hello@ccmdesign.ca</a></p>
     <div class="switcher">
       <fieldset>
         <label for="name" class="sr-only">Name</label>
-        <input id="name" v-model="contact.name" type="text" required autocomplete="name" placeholder="Name" />
+        <input id="name" v-model="contact.name" type="text" name="name" required autocomplete="name" placeholder="Name" />
       </fieldset>
       <fieldset>
         <label for="email" class="sr-only">Email</label>
-        <input id="email" v-model="contact.email" type="email" required autocomplete="email" placeholder="Email" />
+        <input id="email" v-model="contact.email" type="email" name="email" required autocomplete="email" placeholder="Email" />
       </fieldset>
     </div>
 
     <fieldset>
       <label for="message" class="sr-only">Message</label>
-      <textarea id="message" v-model="contact.message" required rows="8" placeholder="Message"></textarea>
+      <textarea id="message" v-model="contact.message" name="message" required rows="8" placeholder="Message"></textarea>
     </fieldset>
     <fieldset class="form-actions">
-      <input type="submit" :disabled="submitting" value="Send" class="button" data-variant="primary" />
+      <button type="submit" :disabled="submitting" class="button" data-variant="primary">Send</button>
     </fieldset>
     <div v-if="success" class="form-message success">Thanks for reaching out! We'll get back to you soon.</div>
     <div v-if="error" class="form-message error">Something went wrong. Please try again.</div>
@@ -96,5 +96,38 @@ const submitting = ref(false)
 const success = ref(false)
 const error = ref(false)
 
+const handleSubmit = async () => {
+  submitting.value = true
+  success.value = false
+  error.value = false
+
+  try {
+    const response = await fetch('https://formspree.io/f/mnnarojy', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        name: contact.name,
+        email: contact.email,
+        message: contact.message
+      })
+    })
+
+    if (response.ok) {
+      success.value = true
+      contact.name = ''
+      contact.email = ''
+      contact.message = ''
+    } else {
+      error.value = true
+    }
+  } catch (err) {
+    error.value = true
+  } finally {
+    submitting.value = false
+  }
+}
 
 </script>
