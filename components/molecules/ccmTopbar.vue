@@ -2,16 +2,17 @@
   <div class="topbar | cluster">
     <h1 class="topbar__title">
       <slot name="logo">
-        <nuxt-link to="/"><img src="/assets/ccm-logo.svg" alt="CCM Design" /></nuxt-link>
+        <nuxt-link to="/" data-slide-in="from-top"><img src="/assets/ccm-logo.svg" alt="CCM Design" /></nuxt-link>
       </slot>
     </h1>
     <nav>
       <ul class="menu | cluster">
-        <li v-for="link in navLinks" :key="link.to">
+        <li v-for="link in navLinks" :key="link.to" data-slide-in="from-top">
           <nuxt-link
             class="menu__item menu-item"
             :to="link.to"
-            :aria-active="route.path === link.to ? 'true' : undefined"
+            :class="{ 'current-page': isActiveRoute(link.to) }"
+            :aria-active="isActiveRoute(link.to) ? 'true' : undefined"
           >{{ link.label }}</nuxt-link>
         </li>
       </ul>
@@ -21,9 +22,17 @@
 
 <script setup>
 import { useRoute } from '#imports'
+import { computed } from 'vue'
 
 const route = useRoute()
 const navLinks = useNavigation()
+
+const isActiveRoute = (linkPath) => {
+  if (route.path === linkPath) return true
+  // Check if current route is a subpage of the nav link
+  if (route.path.startsWith(linkPath + '/')) return true
+  return false
+}
 </script>
 
 <style scoped>

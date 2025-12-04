@@ -10,14 +10,14 @@ year:
 items:
   - type: image
     mockupType: branding
-    image: /assets/portfolio/govlab/smarter-crowdsourcing-branding-system-1.svg
-    title: Smarter Crowdsourcing
-    caption: Branding system variation 1
-  - type: image
-    mockupType: branding
     image: /assets/portfolio/govlab/smarter-crowdsourcing-branding-system-2.svg
     title: Smarter Crowdsourcing
     caption: Branding system variation 2
+  - type: image
+    mockupType: branding
+    image: /assets/portfolio/govlab/smarter-crowdsourcing-branding-system-1.svg
+    title: Smarter Crowdsourcing
+    caption: Branding system variation 1
   - type: image
     mockupType: branding
     image: /assets/portfolio/govlab/smarter-crowdsourcing-zika.png

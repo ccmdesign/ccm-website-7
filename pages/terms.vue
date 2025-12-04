@@ -4,3 +4,11 @@
     <p>Content coming soon.</p>
   </div>
 </template>
+
+<script setup>
+definePageMeta({
+  hero: {
+    tagline: 'Terms of Use'
+  }
+})
+</script>

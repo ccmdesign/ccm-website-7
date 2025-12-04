@@ -2,6 +2,7 @@
   <div class="test-page">
     <h1>Collections Debug</h1>
 
+    
     <details v-for="collection in collections" :key="collection.name" open>
       <summary>
         <strong>{{ collection.name }}</strong> ({{ collection.items?.length || 0 }} items)
@@ -54,6 +55,45 @@ const collections = computed(() => allCollections.value || []);
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.glow-input-section {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+}
+
+.glow-input-section h2 {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.glowing-input-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.glowing-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #00f;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 4px 10px 2px rgba(0, 0, 255, 0.7);
+  transition: box-shadow 0.3s ease;
+}
+
+.glowing-input:focus {
+  box-shadow: 0 4px 15px 3px rgba(0, 0, 255, 0.9);
+}
+
+.glowing-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 details {

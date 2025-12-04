@@ -44,16 +44,6 @@ header {
   object-fit: contain;
 }
 
-.tagline {
-  display: flex;
-  align-items: center;
-  padding-block: var(--space-3xl);
-
-  @media (min-width: 960px) {
-    height: 40.75svh;
-  }
-}
-
 .work-filters {
   --_cluster-space: var(--space-xl);
 }
@@ -81,8 +71,6 @@ definePageMeta({
     typewriterWords: ['Strategy', 'Design', 'Engineering', 'Data', 'Artificial Intelligence']
   }
 })
-
-const hero = useHeroContent()
 
 const route = useRoute()
 const clientSlug = Array.isArray(route.params.slug) ? route.params.slug.join('/') : route.params.slug

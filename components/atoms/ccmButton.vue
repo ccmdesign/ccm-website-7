@@ -80,6 +80,10 @@
       type: Boolean,
       default: false
     },
+    type: {
+      type: String,
+      default: 'button'
+    },
   });
 
   const { value, label, size, color, iconBefore, iconAfter } = toRefs(props)
@@ -112,7 +116,7 @@
         rel: props.rel
       }
     }
-    return { type: 'button' }
+    return { type: props.type }
   })
 
 </script>
@@ -183,23 +187,30 @@
 
 .button[data-size="s"],
 .button[size="s"] {
-  --_button-padding-block: var(--s-2);
-  --_button-padding-inline: var(--s0);
-  --_button-font-size: 75%; 
+  --_button-padding-block: var(--space-s);
+  --_button-padding-inline: var(--space-l);
+  --_button-font-size: var(--size--1);
+}
+
+.button[data-size="m"],
+.button[size="m"] {
+  --_button-padding-block: var(--space-m);
+  --_button-padding-inline: var(--space-xl);
+  --_button-font-size: var(--size-0);
 }
 
 .button[data-size="l"],
 .button[size="l"] {
-  --_button-padding-block: var(--s0);
-  --_button-padding-inline: var(--s2);
-  --_button-font-size: 120%;
+  --_button-padding-block: var(--space-l);
+  --_button-padding-inline: var(--space-2xl);
+  --_button-font-size: var(--size-1);
 }
 
 .button[data-size="xl"],
 .button[size="xl"] {
-  --_button-padding-block: var(--s0);
-  --_button-padding-inline: var(--s2);
-  --_button-font-size: 150%;
+  --_button-padding-block: var(--space-l);
+  --_button-padding-inline: var(--space-2xl);
+  --_button-font-size: var(--size-2);
 }
 
 .button {

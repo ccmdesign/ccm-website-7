@@ -1,5 +1,5 @@
 <template>
-  <div class="service-card">
+  <div class="service-card" data-slide-in="from-top">
     <hgroup class="service-card__header">
       <h3 class="h5">{{ service.title }}</h3>
       <p>{{ service.description }}</p>

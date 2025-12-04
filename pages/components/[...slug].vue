@@ -87,6 +87,13 @@ definePageMeta({
     hideBottom: false
   }
 })
+
+const heroState = useState('hero', () => null)
+heroState.value = {
+  tagline: doc.value?.tagline || 'Component Documentation',
+  variant: 'minimal',
+  hideBottom: false
+}
 </script>
 
 <style scoped>

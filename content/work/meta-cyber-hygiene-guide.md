@@ -10,6 +10,11 @@ year:
 items:
   - type: image
     mockupType: editorial
+    image: /assets/portfolio/meta/cyber-higiene-guide-5.png
+    title: Cyber Hygiene Guide
+    caption: Guide layout 5
+  - type: image
+    mockupType: editorial
     image: /assets/portfolio/meta/cyber-higiene-guide-1.png
     title: Cyber Hygiene Guide
     caption: Guide layout 1
@@ -28,9 +33,5 @@ items:
     image: /assets/portfolio/meta/cyber-higiene-guide-4.png
     title: Cyber Hygiene Guide
     caption: Guide layout 4
-  - type: image
-    mockupType: editorial
-    image: /assets/portfolio/meta/cyber-higiene-guide-5.png
-    title: Cyber Hygiene Guide
-    caption: Guide layout 5
+  
 ---

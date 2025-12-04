@@ -9,6 +9,12 @@ published: true
 year:
 items:
   - type: image
+    mockupType: branding
+    cover: true
+    image: /assets/portfolio/360giving/360giving-logo-1.svg
+    title: Design System
+    caption: Logo variation 1
+  - type: image
     mockupType: web
     image: /assets/portfolio/360giving/360Giving-Data-Standard-documentation.png
     title: Design System
@@ -19,11 +25,15 @@ items:
     title: Design System
     caption: Institutional website
   - type: image
-    mockupType: branding
-    cover: true
-    image: /assets/portfolio/360giving/360giving-logo-1.svg
+    mockupType: web
+    image: /assets/portfolio/360giving/Data-Registry-360Giving.png
     title: Design System
-    caption: Logo variation 1
+    caption: Data Registry interface
+  - type: image
+    mockupType: web
+    image: /assets/portfolio/360giving/Resource-Library.png
+    title: Design System
+    caption: Resource Library interface
   - type: image
     mockupType: branding
     image: /assets/portfolio/360giving/360giving-logo-2.svg
@@ -34,14 +44,4 @@ items:
     image: /assets/portfolio/360giving/360giving-logo-3.svg
     title: Design System
     caption: Logo variation 3
-  - type: image
-    mockupType: web
-    image: /assets/portfolio/360giving/Data-Registry-360Giving.png
-    title: Design System
-    caption: Data Registry interface
-  - type: image
-    mockupType: web
-    image: /assets/portfolio/360giving/Resource-Library.png
-    title: Design System
-    caption: Resource Library interface
 ---

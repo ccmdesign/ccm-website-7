@@ -20,7 +20,8 @@
   }
 }
 
-.menu-item[aria-active="true"] {
+.menu-item[aria-active="true"],
+.menu-item.current-page {
   position: relative;
   
   &::after {

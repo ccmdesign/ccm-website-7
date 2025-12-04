@@ -11,6 +11,17 @@ year:
 items:
   - type: image
     mockupType: web
+    cover: true
+    image: /assets/portfolio/bfna/bfna-people-led-innovation-homepage.png
+    title: People-led Innovation
+    caption: Interactive platform homepage
+  - type: image
+    mockupType: editorial
+    image: /assets/portfolio/bfna/bfna-people-led-Innovation-report-cover.png
+    title: People-led Innovation
+    caption: Report cover
+  - type: image
+    mockupType: web
     image: /assets/portfolio/bfna/bfna-people-led-innovation-chapter.png
     title: People-led Innovation
     cover: true
@@ -25,12 +36,7 @@ items:
     image: /assets/portfolio/bfna/bfna-people-led-innovation-guide.png
     title: People-led Innovation
     caption: Visual guide layout
-  - type: image
-    mockupType: web
-    cover: true
-    image: /assets/portfolio/bfna/bfna-people-led-innovation-homepage.png
-    title: People-led Innovation
-    caption: Interactive platform homepage
+  
   - type: image
     mockupType: editorial
     image: /assets/portfolio/bfna/bfna-people-led-Innovation-report-8-9.png
@@ -52,9 +58,5 @@ items:
     image: /assets/portfolio/bfna/bfna-people-led-Innovation-report-cover-2.png
     title: People-led Innovation
     caption: Report cover alternative
-  - type: image
-    mockupType: editorial
-    image: /assets/portfolio/bfna/bfna-people-led-Innovation-report-cover.png
-    title: People-led Innovation
-    caption: Report cover
+  
 ---

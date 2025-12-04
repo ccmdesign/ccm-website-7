@@ -1,24 +1,26 @@
 <template>
-  <h2 class="tagline">{{ hero?.tagline }}</h2>
   <form class="form | stack" @submit.prevent="handleSubmit" action="https://formspree.io/f/mnnarojy" method="POST">
-    <p class="mailto-link"><a href="mailto:hello@ccmdesign.ca">hello@ccmdesign.ca</a></p>
-    <div class="switcher">
-      <fieldset>
-        <label for="name" class="sr-only">Name</label>
-        <input id="name" v-model="contact.name" type="text" name="name" required autocomplete="name" placeholder="Name" />
-      </fieldset>
-      <fieldset>
-        <label for="email" class="sr-only">Email</label>
-        <input id="email" v-model="contact.email" type="email" name="email" required autocomplete="email" placeholder="Email" />
-      </fieldset>
-    </div>
+    
+    <div class="form-content">
+      <div class="stack">
+        <fieldset data-slide-in="from-top">
+          <label for="name" class="sr-only">Name</label>
+          <input id="name" v-model="contact.name" type="text" name="name" required autocomplete="name" placeholder="Name" />
+        </fieldset>
+        <fieldset data-slide-in="from-top">
+          <label for="email" class="sr-only">Email</label>
+          <input id="email" v-model="contact.email" type="email" name="email" required autocomplete="email" placeholder="Email" />
+        </fieldset>
+        <p class="mailto-link" data-slide-in="from-top"><a href="mailto:hello@ccmdesign.ca">hello@ccmdesign.ca</a></p>
+      </div>
 
-    <fieldset>
+    <fieldset data-slide-in="from-top">
       <label for="message" class="sr-only">Message</label>
       <textarea id="message" v-model="contact.message" name="message" required rows="8" placeholder="Message"></textarea>
     </fieldset>
+    </div>  
     <fieldset class="form-actions">
-      <button type="submit" :disabled="submitting" class="button" data-variant="primary">Send</button>
+      <ccm-button type="submit" :disabled="submitting" variant="primary">Send</ccm-button>
     </fieldset>
     <div v-if="success" class="form-message success">Thanks for reaching out! We'll get back to you soon.</div>
     <div v-if="error" class="form-message error">Something went wrong. Please try again.</div>
@@ -29,7 +31,7 @@
 
 <style scoped>
 .form {
-  max-width: 50svw;
+  max-width: 960px;
   height: 50svh;
   width: 100%;
   margin-inline: auto;
@@ -37,13 +39,20 @@
   padding: var(--space-xl);
 }
 
+.form-content {
+  @media (min-width: 800px) {
+    columns: 2;
+  }
+  gap: var(--space-m);
+  
+}
+
 .mailto-link {
   color: var(--color-base);
   font-size: var(--size-1);
   font-weight: 500;
   text-align: center;
-  margin-block: 0;
-  margin-inline: auto;
+  margin-block-start: auto;
 }
 
 fieldset {
@@ -83,8 +92,6 @@ definePageMeta({
     typewriterWords: ['Strategy', 'Design', 'Engineering', 'Data', 'Artificial Intelligence']
   }
 })
-
-const hero = useHeroContent()
 
 const contact = reactive({
   name: '',

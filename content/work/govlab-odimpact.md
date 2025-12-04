@@ -10,12 +10,13 @@ year:
 items:
   - type: image
     mockupType: web
-    image: /assets/portfolio/govlab/odimpact-article.png
-    title: ODImpact
-    caption: Article layout
-  - type: image
-    mockupType: web
     image: /assets/portfolio/govlab/odimpact-homepage.png
     title: ODImpact
     caption: Platform homepage
+  - type: image
+    mockupType: web
+    image: /assets/portfolio/govlab/odimpact-article.png
+    title: ODImpact
+    caption: Article layout
+  
 ---

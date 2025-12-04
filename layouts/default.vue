@@ -1,9 +1,14 @@
 <template>
   <main class="layout">
     <ccm-topbar class="topbar" />
+    <h2 v-if="hero?.tagline" class="tagline" data-slide-in="from-top">{{ hero.tagline }}</h2>
     <slot />
   </main>
 </template>
+
+<script setup>
+const hero = useHeroContent()
+</script>
 
 <style>
 
@@ -21,5 +26,12 @@
   @media (min-width: 960px) {
     padding-block-start: var(--system-padding-edge);
   }
+}
+
+.tagline {
+  margin-block: 8svh;
+  max-width: 40ch;
+  margin-inline-end: auto;
+  
 }
 </style>

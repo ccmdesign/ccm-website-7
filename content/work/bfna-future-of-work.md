@@ -10,20 +10,9 @@ year:
 items:
   - type: image
     mockupType: web
-    image: /assets/portfolio/bfna/bfna-future-of-work-article.png
+    image: /assets/portfolio/bfna/bfna-the-future-of-work-riverside.png
     title: The Future of Work
-    caption: Article layout
-  - type: image
-    mockupType: web
-    cover: true
-    image: /assets/portfolio/bfna/bfna-future-of-work-homepage.png
-    title: The Future of Work
-    caption: Platform homepage
-  - type: image
-    mockupType: web
-    image: /assets/portfolio/bfna/bfna-future-of-work-map.png
-    title: The Future of Work
-    caption: Interactive map visualization
+    caption: Riverside case study
   - type: image
     mockupType: web
     image: /assets/portfolio/bfna/bfna-the-future-of-work-las-vegas.png
@@ -36,7 +25,12 @@ items:
     caption: Orlando case study
   - type: image
     mockupType: web
-    image: /assets/portfolio/bfna/bfna-the-future-of-work-riverside.png
+    image: /assets/portfolio/bfna/bfna-future-of-work-article.png
     title: The Future of Work
-    caption: Riverside case study
+    caption: Article layout
+  - type: image
+    mockupType: web
+    image: /assets/portfolio/bfna/bfna-future-of-work-map.png
+    title: The Future of Work
+    caption: Interactive map visualization
 ---

@@ -1,6 +1,5 @@
 <template>
-  <h2 class="tagline">{{ hero?.tagline }}</h2>
-  <ccm-featured-work class="featured-work" />
+  <ccm-featured-work class="featured-work" data-slide-in="from-top" />
   <ccm-logo-reel class="logo-reel" />
 </template>
 
@@ -26,7 +25,5 @@ definePageMeta({
     typewriterWords: ['Strategy', 'Design', 'Engineering', 'Data', 'Artificial Intelligence']
   }
 })
-
-const hero = useHeroContent()
 </script>
 

@@ -3,6 +3,7 @@
     class="project-card portfolio-item" 
     :data-mockup="mockupType"
     :to="to"
+    data-slide-in="from-top"
   >
     <img v-if="image" :src="image" :alt="title" />
   </nuxt-link>

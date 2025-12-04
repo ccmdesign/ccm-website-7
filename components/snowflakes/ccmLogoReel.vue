@@ -57,8 +57,8 @@ watch(reelClients, () => {
 
 <template>
   <ul ref="reelRef" class="reel" :class="{ 'reel--scrolling': hasScroll }">
-    <li v-for="client in reelClients" :key="client.key">
-      <nuxt-link class="reel__link" :to="client.slug ? `/clients/${client.slug}` : '#'">
+    <li v-for="client in reelClients" :key="client.key" data-slide-in="from-top">
+      <nuxt-link class="reel__link" :to="client.slug ? `/clients/${client.slug}` : '#'" >
         <img 
           v-if="client.logo" 
           :src="client.logo" 

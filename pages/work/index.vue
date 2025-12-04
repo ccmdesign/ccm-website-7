@@ -1,7 +1,4 @@
 <template>
-
-  <h2 class="tagline">{{ hero?.tagline }}</h2>
-  
   <portfolio-section>
     <template #header>
       <div class="work-filters | cluster | margin-inline:auto padding-bottom:xl">
@@ -32,16 +29,6 @@
 
 <style scoped lang="css">
 
-.tagline {
-  display: flex;
-  align-items: center;
-  padding-block: var(--space-3xl);
-
-  @media (min-width: 960px) {
-    height: 40.75svh;
-  }
-}
-
 .work-filters {
   --_cluster-space: var(--space-xl);
 }
@@ -69,8 +56,6 @@ definePageMeta({
     typewriterWords: ['Strategy', 'Design', 'Engineering', 'Data', 'Artificial Intelligence']
   }
 })
-
-const hero = useHeroContent()
 
 const { data: workItems } = await useAsyncData('work-items', () => {
   return queryCollection('work').where('published', '=', true).all()

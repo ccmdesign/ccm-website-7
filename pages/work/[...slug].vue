@@ -83,7 +83,6 @@ h2 {
 
 @media (max-width: 768px) {
   .overview {
-    
     display: flex;
     flex-direction: column;
     gap: var(--space-s);
@@ -153,6 +152,13 @@ const slugParam = Array.isArray(route.params.slug) ? route.params.slug.join('/')
 const { data: workItem } = await useAsyncData(`work-${slugParam}`, () => {
   return queryCollection('work').path(`/work/${slugParam}`).first()
 })
+
+const heroState = useState('hero', () => null)
+if (workItem.value) {
+  heroState.value = {
+    tagline: workItem.value.description || workItem.value.title || 'Work'
+  }
+}
 
 const imageItems = computed(() => {
   if (!workItem.value?.items) return []

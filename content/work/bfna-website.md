@@ -11,14 +11,14 @@ year:
 items:
   - type: image
     mockupType: web
-    image: /assets/portfolio/bfna/bfna-website-article.png
-    title: BFNA Website
-    caption: Article page layout
-  - type: image
-    mockupType: web
     image: /assets/portfolio/bfna/bfna-website-homepage.png
     title: BFNA Website
     caption: Homepage design
+  - type: image
+    mockupType: web
+    image: /assets/portfolio/bfna/bfna-website-article.png
+    title: BFNA Website
+    caption: Article page layout
   - type: image
     mockupType: web
     image: /assets/portfolio/bfna/bfna-website-product.png

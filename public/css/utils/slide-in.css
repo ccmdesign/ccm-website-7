@@ -1,0 +1,83 @@
+/* Slide-in animation utility */
+
+/* Base state - elements maintain their layout space */
+[data-slide-in] {
+  opacity: 0;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition-delay: 0s;
+  will-change: opacity, transform;
+}
+
+/* Staggered delays for sibling elements */
+[data-slide-in]:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+[data-slide-in]:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+[data-slide-in]:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+[data-slide-in]:nth-child(5) {
+  transition-delay: 0.4s;
+}
+
+[data-slide-in]:nth-child(6) {
+  transition-delay: 0.5s;
+}
+
+[data-slide-in]:nth-child(7) {
+  transition-delay: 0.6s;
+}
+
+[data-slide-in]:nth-child(8) {
+  transition-delay: 0.7s;
+}
+
+[data-slide-in]:nth-child(9) {
+  transition-delay: 0.8s;
+}
+
+[data-slide-in]:nth-child(10) {
+  transition-delay: 0.9s;
+}
+
+/* Initial positions based on direction - all start with opacity: 0 */
+[data-slide-in="from-top"] {
+  opacity: 0;
+  transform: translateY(-2rem);
+}
+
+[data-slide-in="from-bottom"] {
+  opacity: 0;
+  transform: translateY(2rem);
+}
+
+[data-slide-in="from-left"] {
+  opacity: 0;
+  transform: translateX(-2rem);
+}
+
+[data-slide-in="from-right"] {
+  opacity: 0;
+  transform: translateX(2rem);
+}
+
+/* Animated state - triggered by JavaScript - ends with opacity: 1 */
+[data-slide-in].slide-in-active {
+  opacity: 1;
+  transform: translate(0);
+}
+
+/* Reduce motion preference */
+@media (prefers-reduced-motion: reduce) {
+  [data-slide-in] {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
