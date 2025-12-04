@@ -17,7 +17,7 @@ definePageMeta({
 })
 
 const { data: caseStudies } = await useAsyncData('case-studies', () => {
-  return queryCollection('casestudies').all()
+  return queryCollection('casestudies').where('published', '=', true).all()
 })
 </script>
 

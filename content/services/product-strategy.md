@@ -10,7 +10,7 @@ activities:
   - Product Requirements
   - User/Audience Definition
 icon: /assets/service-icons/strategy.svg
-status: published
+published: true
 ---
 
 ### The Strategic Goal

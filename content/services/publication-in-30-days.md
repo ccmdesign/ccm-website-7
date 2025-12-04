@@ -11,7 +11,7 @@ activities:
   - Accessibility & SEO Optimization
   - QA & Printing Advisory
 icon: /assets/service-icons/publications.svg
-status: published
+published: true
 ---
 
 ### The Strategic Goal

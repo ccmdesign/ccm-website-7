@@ -12,7 +12,7 @@ featured: false
 established: "1993"
 size: "Global Foundation"
 tags: ["philanthropy", "democracy", "human-rights", "social-justice"]
-published: true
+published: false
 ---
 
 # Open Society Foundations

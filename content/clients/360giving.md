@@ -13,7 +13,7 @@ featured: false
 established: "2014"
 size: "Medium Organization"
 tags: ["philanthropy", "open-data", "grants", "nonprofit"]
-published: true
+published: false
 ---
 
 # 360Giving

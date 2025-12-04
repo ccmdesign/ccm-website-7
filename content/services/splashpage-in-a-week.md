@@ -10,7 +10,7 @@ activities:
   - No-code Build & Integration
   - QA, Launch & Analytics Setup
 icon: /assets/service-icons/interfaces.svg
-status: draft
+published: false
 ---
 
 ### The Strategic Goal

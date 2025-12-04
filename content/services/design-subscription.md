@@ -11,7 +11,7 @@ activities:
   - Publication & Report Layouts
   - Data Visualization & Infographics
 icon: /assets/service-icons/branding.svg
-status: published
+published: true
 ---
 
 ### The Strategic Goal

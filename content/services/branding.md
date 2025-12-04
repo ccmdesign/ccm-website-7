@@ -10,7 +10,7 @@ activities:
   - Messaging & Voice Guidelines
   - Brand Toolkits & Templates
 icon: /assets/service-icons/branding.svg
-status: published
+published: true
 ---
 
 ### The Strategic Goal

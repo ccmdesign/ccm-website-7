@@ -41,9 +41,8 @@ definePageMeta({
 
 const hero = useHeroContent()
 
-const { data: services } = await useAsyncData('services', async () => {
-  const servicesData = await queryCollection('services').all()
-  return servicesData.filter(service => service.status === 'published')
+const { data: services } = await useAsyncData('services', () => {
+  return queryCollection('services').where('published', '=', true).all()
 })
 </script>
 

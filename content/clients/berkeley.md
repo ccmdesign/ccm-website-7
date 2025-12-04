@@ -12,7 +12,7 @@ featured: false
 established: "1868"
 size: "Large Research University"
 tags: ["public-research", "higher-education", "innovation", "public-service"]
-published: true
+published: false
 ---
 
 # UC Berkeley

@@ -10,7 +10,7 @@ activities:
   - Front-end Development & CMS Integration
   - Accessibility, QA & Performance
 icon: /assets/service-icons/interfaces.svg
-status: published
+published: true
 ---
 
 ### The Strategic Goal

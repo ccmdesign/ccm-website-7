@@ -11,7 +11,8 @@ const reelClients = computed(() => {
   return clients.value
     .filter((client) => {
       const featured = client.featured || client.meta?.featured
-      return featured === true
+      const published = client.published || client.meta?.published
+      return featured === true && published === true
     })
     .map((client) => {
       const name =

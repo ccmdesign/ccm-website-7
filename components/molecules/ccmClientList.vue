@@ -13,7 +13,7 @@
 
 <script setup>
 const { data: clients } = await useAsyncData('clients-list', () => {
-  return queryCollection('clients').all()
+  return queryCollection('clients').where('published', '=', true).all()
 })
 
 // Debug client data structure if needed

@@ -40,7 +40,7 @@ definePageMeta({
 })
 
 const { data: blogPosts } = await useAsyncData('blog-posts', () => {
-  return queryCollection('blog').all()
+  return queryCollection('blog').where('published', '=', true).all()
 })
 
 const selectedCategory = ref('All Topics');

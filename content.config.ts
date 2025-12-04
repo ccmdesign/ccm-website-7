@@ -38,14 +38,14 @@ export default defineContentConfig({
         client_logo: z.string().optional(),
         logo_scale: z.number().optional(),
         featured: z.boolean().optional(),
+        published: z.boolean().default(true)
       })
     }),
     services: defineCollection({
       type: 'page',
       source: 'services/*.md',
       schema: z.object({
-        // Adding a basic schema for services as well
-        status: z.string().optional()
+        published: z.boolean().default(true)
       })
     }),
     components: defineCollection({
