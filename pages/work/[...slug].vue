@@ -1,14 +1,14 @@
 <template>
 
 <section class="overview">
-  <tr>
-    <td class="project-title">{{ workItem?.title }}</td>
-    <td class="project-tags">{{ workItem?.tags?.join(', ') }}</td>
-  </tr>
-  <tr>
-    <td class="border-top project-client">{{ workItem?.client }}</td>
-    <td class="border-top project-year">{{ workItem?.year }}</td>
-  </tr>
+  <div class="overview-row">
+    <div class="project-title">{{ workItem?.title }}</div>
+    <div class="project-tags">{{ workItem?.tags?.join(', ') }}</div>
+  </div>
+  <div class="overview-row">
+    <div class="border-top project-client">{{ workItem?.client }}</div>
+    <div class="border-top project-year">{{ workItem?.year }}</div>
+  </div>
 
 </section>
   <section v-if="firstImage" class="first-image">
@@ -91,6 +91,12 @@ h2 {
     table-layout: fixed;
     color: var(--color-base-tint-80);
     padding-block: var(--space-3xl);
+  }
+  .overview-row {
+    display: table-row;
+  }
+  .overview-row > div {
+    display: table-cell;
   }
 }
 

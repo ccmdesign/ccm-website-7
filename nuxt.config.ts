@@ -9,7 +9,8 @@ export default defineNuxtConfig({
     },
   },
   modules: [
-    '@nuxt/content'
+    '@nuxt/content',
+    '@tresjs/nuxt'
   ],
   runtimeConfig: {
     public: {
@@ -53,4 +54,15 @@ export default defineNuxtConfig({
   components: [
     { path: '~/components', pathPrefix: false, global: true }
   ],
+  postcss: {
+    plugins: {
+      'postcss-import': {},
+      'postcss-preset-env': {
+        stage: 1,
+        features: {
+          'nesting-rules': true
+        }
+      }
+    }
+  }
 })
