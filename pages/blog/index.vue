@@ -1,24 +1,24 @@
 <template>
-  <ccm-section>
+
+  <ccm-section v-if="blogPosts?.length > 0">
     <div class="cluster">
-      <ccm-button @click="setCategory('All Topics')">All Topics</ccm-button>
-      <ccm-button @click="setCategory('Design Strategy')">Design Strategy</ccm-button>
-      <ccm-button @click="setCategory('Research Communication')">Research Communication</ccm-button>
-      <ccm-button @click="setCategory('Nonprofit & Foundation Strategy')">Nonprofit & Foundation Strategy</ccm-button>
-      <ccm-button @click="setCategory('Content & Workflow')">Content & Workflow</ccm-button>
+      <ccm-chip :active="selectedCategory === 'All Topics'" @click="setCategory('All Topics')">All Topics</ccm-chip>
+      <ccm-chip v-if="hasPostsInCategory('Design Strategy')" :active="selectedCategory === 'Design Strategy'" @click="setCategory('Design Strategy')">Design Strategy</ccm-chip>
+      <ccm-chip v-if="hasPostsInCategory('Research Communication')" :active="selectedCategory === 'Research Communication'" @click="setCategory('Research Communication')">Research Communication</ccm-chip>
+      <ccm-chip v-if="hasPostsInCategory('Nonprofit & Foundation Strategy')" :active="selectedCategory === 'Nonprofit & Foundation Strategy'" @click="setCategory('Nonprofit & Foundation Strategy')">Nonprofit & Foundation Strategy</ccm-chip>
+      <ccm-chip v-if="hasPostsInCategory('Content & Workflow')" :active="selectedCategory === 'Content & Workflow'" @click="setCategory('Content & Workflow')">Content & Workflow</ccm-chip>
     </div>
   </ccm-section>
 
   <ccm-section>
     <ul class="portfolio-section__content">
-      <li class="portfolio-item" v-for="post in filteredBlogPosts" :key="post._path">
-        <ccm-post-card 
-          :to="post.path"
-          :categories="post.meta.categories.join(', ')"
-          :brow="post.meta.brow"
-          :title="post.title"
-        />
-      </li>
+      <ccm-post-card class="portfolio-item" v-for="post in filteredBlogPosts" :key="post._path"
+        :to="post.path"
+        :categories="post.meta.categories.join(', ')"
+        :brow="post.meta.brow"
+        :title="post.title"
+        :tldr="post.meta.tldr"
+      />
     </ul>
   </ccm-section>
   
@@ -27,9 +27,10 @@
 </template>
 
 <style scoped>
+
 .cluster,
 ul { 
-  grid-column: 3/9; 
+  grid-column: 3/11; 
   padding: 0;
 }
 </style>
@@ -64,6 +65,11 @@ const filteredBlogPosts = computed(() => {
 
 function setCategory(category) {
   selectedCategory.value = category;
+}
+
+function hasPostsInCategory(category) {
+  if (!blogPosts.value) return false;
+  return blogPosts.value.some(post => post.meta.brow === category);
 }
 </script>
 

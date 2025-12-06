@@ -31,9 +31,7 @@ tldr: |-
   As a rule of thumb, if your product is just starting or you don't have a lot of data from your users, the UX work will rely heavily on best practices and competition analysis, which is totally fine. This approach will render great results, shouldn't be too expensive, and, if coupled with good UI and Branding, you will have a pretty good product from the start.
 
   If your product is a few years old and you are just starting with this, you have two options, depending on how much data you collected from your users and the size of your budget. If either your data or budget are not sizeable, the approach described above is already an excellent place to start. However, if you have the data and the budget, hire a good UX firm/team and let them cook. I'm sure you will be surprised.
-  ::
 
-  ::prose-section
 ---
 
 ::prose-section

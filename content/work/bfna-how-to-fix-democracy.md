@@ -13,52 +13,42 @@ items:
   - type: image
     mockupType: web
     cover: true
-    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-v2-01.png
-    title: How to Fix Democracy v2
-    caption: Updated homepage
+    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-1.png
+    title: How to Fix Democracy
+    caption: Platform homepage
   - type: image
     mockupType: web
-    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-v2-02.png
-    title: How to Fix Democracy v2
+    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-2.png
+    title: How to Fix Democracy
     caption: Platform redesign
   - type: image
     mockupType: web
-    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-v2-03.png
-    title: How to Fix Democracy v2
+    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-3.png
+    title: How to Fix Democracy
     caption: Enhanced interface
   - type: image
     mockupType: web
-    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-v2-04.png
-    title: How to Fix Democracy v2
+    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-4.png
+    title: How to Fix Democracy
     caption: Updated platform
   - type: image
     mockupType: web
-    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-v2-05.png
-    title: How to Fix Democracy v2
+    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-5.png
+    title: How to Fix Democracy
     caption: Platform features
   - type: image
     mockupType: web
-    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-v2-about.png
-    title: How to Fix Democracy v2
-    caption: About page
+    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-6.png
+    title: How to Fix Democracy
+    caption: Content showcase
   - type: image
     mockupType: web
-    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-v2-episode-s4-ep8.png
-    title: How to Fix Democracy v2
-    caption: Episode page - Season 4 Episode 8
+    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-7.png
+    title: How to Fix Democracy
+    caption: Episode pages
   - type: image
     mockupType: web
-    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-v2-episode-s4-ep10.png
-    title: How to Fix Democracy v2
-    caption: Episode page - Season 4 Episode 10
-  - type: image
-    mockupType: web
-    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-v2-episode-s5-ep20.png
-    title: How to Fix Democracy v2
-    caption: Episode page - Season 5 Episode 20
-  - type: image
-    mockupType: web
-    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-v2-host.png
-    title: How to Fix Democracy v2
-    caption: Host page
+    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-8.png
+    title: How to Fix Democracy
+    caption: Platform overview
 ---
