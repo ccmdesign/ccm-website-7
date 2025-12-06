@@ -45,6 +45,10 @@
   }
   gap: var(--space-m);
   
+  
+  > * { 
+    height: 100%;
+  }
 }
 
 .mailto-link {
