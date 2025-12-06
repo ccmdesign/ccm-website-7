@@ -1,5 +1,5 @@
 <template>
-  <ccm-section background-color="color-base" foreground-color="color-white">
+  <ccm-section>
   <div class="switcher">
     <div class="stack">
       <h2>Subscribe to Our Insights</h2>
@@ -18,5 +18,10 @@
 </script>
 
 <style lang="scss" scoped>
+
+.switcher {
+  grid-column: 3/11;
+  display: flex;
+}
 
 </style>

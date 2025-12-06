@@ -1,7 +1,9 @@
 <template>
   <main class="layout">
     <ccm-topbar class="topbar" />
-    <h2 v-if="hero?.tagline" class="tagline" data-slide-in="from-top">{{ hero.tagline }}</h2>
+    <slot name="tagline">
+      <h2 v-if="hero?.tagline" class="tagline" data-slide-in="from-top">{{ hero.tagline }}</h2>
+    </slot>
     <slot />
   </main>
 </template>
