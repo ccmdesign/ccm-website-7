@@ -11,4 +11,7 @@
   --color-fail: var(--color-red);
   --color-warning: var(--color-yellow);
   --color-info: var(--color-primary);
+
+
+  --color-shadow: var(--color-black);
 }
