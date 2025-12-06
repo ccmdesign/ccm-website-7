@@ -6,6 +6,7 @@ description: Research publication and digital platform examining the evolving la
 tags: [web]
 services: ['interface-design-and-development', 'design-subscription']
 published: true
+order: 4
 year:
 items:
   - type: image

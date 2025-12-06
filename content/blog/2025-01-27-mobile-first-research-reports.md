@@ -1,15 +1,34 @@
 ---
-brow: "Mobile-First Research Reports"
-title: "Meeting Your Audience Where 94% of Internet Happens"
-tagline: "Transform research impact through progressive disclosure methodology that reaches foundation officers, policy makers, and media professionals where they actually consume content"
+brow: Mobile-First Research Reports
+title: Meeting Your Audience Where 94% of Internet Happens
+tagline: Transform research impact through progressive disclosure methodology that reaches foundation officers, policy makers, and media professionals where they actually consume content
 date: "2025-01-27"
-author: "CCM Design Team"
-categories: ["Research & Academic Communication", "Design & Digital Strategy"]
-tags: ["mobile-first-design", "research-accessibility", "progressive-disclosure", "stakeholder-engagement", "policy-impact"]
-seo_tags: ["mobile-research-reports", "research-accessibility", "foundation-engagement", "policy-communication", "research-platform-design", "mobile-responsive-reports", "research-distribution-strategy", "stakeholder-engagement", "research-impact-measurement", "progressive-disclosure-methodology"]
-excerpt: "94% of research stakeholders consume content on mobile devices, yet most research remains trapped in desktop-optimized PDFs. Organizations implementing mobile-first research architecture achieve 340% higher engagement rates."
+author: CCM Design Team
+categories:
+  - Research & Academic Communication
+  - Design & Digital Strategy
+tags:
+  - mobile-first-design
+  - research-accessibility
+  - progressive-disclosure
+  - stakeholder-engagement
+  - policy-impact
+seo_tags:
+  - mobile-research-reports
+  - research-accessibility
+  - foundation-engagement
+  - policy-communication
+  - research-platform-design
+  - mobile-responsive-reports
+  - research-distribution-strategy
+  - stakeholder-engagement
+  - research-impact-measurement
+  - progressive-disclosure-methodology
+excerpt: 94% of research stakeholders consume content on mobile devices, yet most research remains trapped in desktop-optimized PDFs. Organizations implementing mobile-first research architecture achieve 340% higher engagement rates.
 published: true
+tldr: 94% of research stakeholders consume content on mobile devices, yet most research remains trapped in desktop-optimized PDFs. Organizations implementing mobile-first research architecture achieve 340% higher engagement rates.
 ---
+
 
 <!-- # Mobile-First Research Reports: Meeting Your Audience Where 94% of Internet Happens -->
 ::prose-section

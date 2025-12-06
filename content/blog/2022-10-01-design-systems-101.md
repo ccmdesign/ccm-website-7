@@ -1,20 +1,33 @@
 ---
-brow: "Design Systems 101"
-title: "A Business Guide to Design Consistency"
-slug: "design-systems-101-business-guide-consistency"
-tagline: "A business focused overview of why Design Systems might be a good idea for your organization"
+brow: Design Systems 101
+title: A Business Guide to Design Consistency
+slug: design-systems-101-business-guide-consistency
+tagline: A business focused overview of why Design Systems might be a good idea for your organization
 date: "2022-10-01"
-author: "CCM Design Team"
-categories: ["Design & Digital Strategy"]
-tags: ["design systems", "business strategy", "design efficiency", "organizational design", "frontend development"]
-seo_tags: ["design systems guide", "business design strategy", "design system benefits", "design consistency", "design system ROI", "organizational design", "design efficiency", "design system implementation", "frontend development", "component-based design"]
-excerpt: "A business-focused overview explaining why design systems deliver measurable ROI through reduced development costs and improved design consistency."
+author: CCM Design Team
+categories:
+  - Design & Digital Strategy
+tags:
+  - design systems
+  - business strategy
+  - design efficiency
+  - organizational design
+  - frontend development
+seo_tags:
+  - design systems guide
+  - business design strategy
+  - design system benefits
+  - design consistency
+  - design system ROI
+  - organizational design
+  - design efficiency
+  - design system implementation
+  - frontend development
+  - component-based design
+excerpt: A business-focused overview explaining why design systems deliver measurable ROI through reduced development costs and improved design consistency.
 published: true
+tldr: A Design System is a toolbox for your production team(s). Its core benefits are increased developer efficiency and consistency, resulting in better product quality and User Experience. Pretty great, right? The caveat is the high level of commitment necessary to make this tool effective. Said that the ROI is very positive independently of your organization size. Although, it is essential to highlight that Design Systems are boosters for economies of scale, making them very appealing for organizations with multiple websites.
 ---
-
-::tldr-section
-A Design System is a toolbox for your production team(s). Its core benefits are increased developer efficiency and consistency, resulting in better product quality and User Experience. Pretty great, right? The caveat is the high level of commitment necessary to make this tool effective. Said that the ROI is very positive independently of your organization size. Although, it is essential to highlight that Design Systems are boosters for economies of scale, making them very appealing for organizations with multiple websites.
-::
 
 ::prose-section
 So you heard about this thing called Design System. I guess you're probably a Director of Innovation or have a similar title at your organization, and someone told you about this thing called a design system. The reason for this article is to provide a non-technical explanation about this hugely successful tool.

@@ -1,15 +1,34 @@
 ---
-brow: "Digital Marketing"
-title: "How To Get More Traffic To Your Website"
-tagline: "Content Creation, Email List, and SEO tips to increase visibility and engage your audience"
+brow: Digital Marketing
+title: How To Get More Traffic To Your Website
+tagline: Content Creation, Email List, and SEO tips to increase visibility and engage your audience
 date: "2024-04-03"
-author: "CCM Design Team"
-categories: ["Content Strategy & Workflow", "Nonprofit & Foundation Strategy"]
-tags: ["website-traffic", "seo", "content-creation", "email-marketing", "inbound-marketing"]
-seo_tags: ["website-traffic-growth", "seo-tips", "content-creation-strategy", "email-list-building", "inbound-marketing", "nonprofit-marketing", "digital-marketing", "audience-engagement", "website-optimization", "content-strategy"]
-excerpt: "Transform your website traffic with proven Content Creation, Email List, and SEO strategies. These inbound marketing techniques help nonprofits increase visibility by 40%+ and build deeper audience connections."
+author: CCM Design Team
+categories:
+  - Content Strategy & Workflow
+  - Nonprofit & Foundation Strategy
+tags:
+  - website-traffic
+  - seo
+  - content-creation
+  - email-marketing
+  - inbound-marketing
+seo_tags:
+  - website-traffic-growth
+  - seo-tips
+  - content-creation-strategy
+  - email-list-building
+  - inbound-marketing
+  - nonprofit-marketing
+  - digital-marketing
+  - audience-engagement
+  - website-optimization
+  - content-strategy
+excerpt: Transform your website traffic with proven Content Creation, Email List, and SEO strategies. These inbound marketing techniques help nonprofits increase visibility by 40%+ and build deeper audience connections.
 published: true
+tldr: Transform your website traffic with proven Content Creation, Email List, and SEO strategies. These inbound marketing techniques help nonprofits increase visibility by 40%+ and build deeper audience connections.
 ---
+
 
 # How To Get More Traffic To Your Website
 

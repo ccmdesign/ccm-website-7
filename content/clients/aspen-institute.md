@@ -13,6 +13,7 @@ established: "1949"
 size: "Global Think Tank"
 tags: ["leadership", "policy", "public-affairs", "nonprofit"]
 published: false
+order: 2
 ---
 
 # Aspen Institute

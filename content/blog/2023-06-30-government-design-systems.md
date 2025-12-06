@@ -1,15 +1,34 @@
 ---
-brow: "Design & Digital Strategy"
-title: "User-Centred Design for Digital Government"
-tagline: "Making life easier for citizens through human-centered design principles that prioritize user needs over government processes"
+brow: Design & Digital Strategy
+title: User-Centred Design for Digital Government
+tagline: Making life easier for citizens through human-centered design principles that prioritize user needs over government processes
 date: "2023-06-30"
-author: "CCM Design Team"
-categories: ["Design & Digital Strategy", "Research & Academic Communication"]
-tags: ["government-design", "user-centered-design", "digital-transformation", "public-services", "accessibility"]
-seo_tags: ["user-centered-design", "digital-government-services", "government-design-systems", "public-service-design", "citizen-experience", "government-accessibility", "digital-transformation", "gov-uk-design", "public-sector-UX", "government-usability"]
-excerpt: "Pioneering nations are transforming government services through user-centered design principles, creating swift, accessible, and user-friendly platforms that reimagine how citizens and government interact."
+author: CCM Design Team
+categories:
+  - Design & Digital Strategy
+  - Research & Academic Communication
+tags:
+  - government-design
+  - user-centered-design
+  - digital-transformation
+  - public-services
+  - accessibility
+seo_tags:
+  - user-centered-design
+  - digital-government-services
+  - government-design-systems
+  - public-service-design
+  - citizen-experience
+  - government-accessibility
+  - digital-transformation
+  - gov-uk-design
+  - public-sector-UX
+  - government-usability
+excerpt: Pioneering nations are transforming government services through user-centered design principles, creating swift, accessible, and user-friendly platforms that reimagine how citizens and government interact.
 published: true
+tldr: Pioneering nations are transforming government services through user-centered design principles, creating swift, accessible, and user-friendly platforms that reimagine how citizens and government interact.
 ---
+
 
 # User-Centred Design for Digital Government
 

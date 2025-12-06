@@ -6,6 +6,7 @@ description: Publication design for cybersecurity best practices guide promoting
 tags: [editorial]
 services: ['publication-in-30-days']
 published: true
+order: 25
 year:
 items:
   - type: image

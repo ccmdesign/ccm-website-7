@@ -12,6 +12,7 @@ activities:
   - Data Visualization & Infographics
 icon: /assets/service-icons/branding.svg
 published: true
+order: 5
 ---
 
 ### The Strategic Goal

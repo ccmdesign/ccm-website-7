@@ -11,6 +11,7 @@ activities:
   - Accessibility, QA & Performance
 icon: /assets/service-icons/interfaces.svg
 published: true
+order: 4
 ---
 
 ### The Strategic Goal

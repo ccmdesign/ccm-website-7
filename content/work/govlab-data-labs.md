@@ -6,6 +6,7 @@ description: Visual identity and branding for Data Labs initiative exploring dat
 tags: [branding]
 services: ['branding', 'design-subscription']
 published: false
+order: 13
 year:
 items:
   - type: image

@@ -1,15 +1,33 @@
 ---
-brow: "Working Remotely"
-title: "How Asynchronous Communication Improves Remote Working Environments"
-tagline: "Asynchronous communication will make your team think, execute, and communicate in a more intentional, cohesive, and productive way"
+brow: Working Remotely
+title: How Asynchronous Communication Improves Remote Working Environments
+tagline: Asynchronous communication will make your team think, execute, and communicate in a more intentional, cohesive, and productive way
 date: "2024-02-21"
-author: "CCM Design Team"
-categories: ["Content Strategy & Workflow"]
-tags: ["remote-work", "asynchronous-communication", "team-productivity", "workflow-optimization", "communication-strategy"]
-seo_tags: ["remote-work", "asynchronous-communication", "team-productivity", "remote-collaboration", "workflow-optimization", "communication-tools", "distributed-teams", "work-from-home", "team-management", "remote-communication"]
-excerpt: "Boost remote team productivity by up to 50% with asynchronous communication strategies. Learn the proven sync vs async framework that eliminates distractions and improves focus for distributed teams."
+author: CCM Design Team
+categories:
+  - Content Strategy & Workflow
+tags:
+  - remote-work
+  - asynchronous-communication
+  - team-productivity
+  - workflow-optimization
+  - communication-strategy
+seo_tags:
+  - remote-work
+  - asynchronous-communication
+  - team-productivity
+  - remote-collaboration
+  - workflow-optimization
+  - communication-tools
+  - distributed-teams
+  - work-from-home
+  - team-management
+  - remote-communication
+excerpt: Boost remote team productivity by up to 50% with asynchronous communication strategies. Learn the proven sync vs async framework that eliminates distractions and improves focus for distributed teams.
 published: true
+tldr: Boost remote team productivity by up to 50% with asynchronous communication strategies. Learn the proven sync vs async framework that eliminates distractions and improves focus for distributed teams.
 ---
+
 
 # Working remotely: How Asynchronous Communication Improves Remote Working Environments
 

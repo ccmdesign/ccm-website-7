@@ -1,27 +1,42 @@
 ---
-brow: "Design System Benefits"
-title: "Medium to Long-Term Strategic Investment"
-tagline: "Transform interface production with reusable components that deliver exponential efficiency gains"
+brow: Design System Benefits
+title: Medium to Long-Term Strategic Investment
+tagline: Transform interface production with reusable components that deliver exponential efficiency gains
 date: "2023-01-18"
-author: "CCM Design Team"
-categories: ["Design & Digital Strategy"]
-tags: ["design systems", "development efficiency", "strategic investment", "component library", "scalable design"]
-seo_tags: ["design system benefits", "component library", "design system ROI", "scalable design systems", "interface development", "design system investment", "reusable components", "development efficiency", "design standards", "systematic design"]
-excerpt: "Design systems deliver exponential interface production efficiency through reusable components, enabling 50% faster development cycles and significant cost reductions over 18-24 months."
+author: CCM Design Team
+categories:
+  - Design & Digital Strategy
+tags:
+  - design systems
+  - development efficiency
+  - strategic investment
+  - component library
+  - scalable design
+seo_tags:
+  - design system benefits
+  - component library
+  - design system ROI
+  - scalable design systems
+  - interface development
+  - design system investment
+  - reusable components
+  - development efficiency
+  - design standards
+  - systematic design
+excerpt: Design systems deliver exponential interface production efficiency through reusable components, enabling 50% faster development cycles and significant cost reductions over 18-24 months.
 published: true
+tldr: |-
+  As I wrote in this article, a design system is a toolbox for your development team. Inside that toolbox, we will have many interface components to be used and reused across the organization's interfaces.
+
+  These components are built(design and code) as abstract prototypes with robustness and flexibility in mind so they can work on multiple scenarios.
+
+  The **Bad news** of this approach is that these components are harder to build, requiring more time to design, develop and test.
+
+  The **good news** is that once a component is finished, chances are they won't change anytime soon and will be used and reused in multiple instances and applications without much regard for how it works internally.
 ---
 
 If you expect your online presence to grow or branch out into multiple websites, a design system is a sensible investment.
 
-## TD;DR
-
-As I wrote in this article, a design system is a toolbox for your development team. Inside that toolbox, we will have many interface components to be used and reused across the organization's interfaces.
-
-These components are built(design and code) as abstract prototypes with robustness and flexibility in mind so they can work on multiple scenarios.
-
-The **Bad news** of this approach is that these components are harder to build, requiring more time to design, develop and test.
-
-The **good news** is that once a component is finished, chances are they won't change anytime soon and will be used and reused in multiple instances and applications without much regard for how it works internally.
 
 ## Full Explanation
 

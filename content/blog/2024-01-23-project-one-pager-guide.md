@@ -1,15 +1,33 @@
 ---
-brow: "The Project One-Pager"
-title: "How to Make One"
-tagline: "An elevator pitch on paper"
+brow: The Project One-Pager
+title: How to Make One
+tagline: An elevator pitch on paper
 date: "2024-01-23"
-author: "CCM Design Team"
-categories: ["Research & Academic Communication"]
-tags: ["one-pager", "research-communication", "marketing", "project-presentation", "stakeholder-engagement"]
-seo_tags: ["project-one-pager", "research-communication", "elevator-pitch", "stakeholder-engagement", "academic-marketing", "research-presentation", "project-summary", "investor-communication", "research-promotion", "academic-writing"]
-excerpt: "Master the art of condensing complex research into compelling one-pagers. Learn the proven 4-step structure that captures investor attention and facilitates decision-making in just 20 seconds."
+author: CCM Design Team
+categories:
+  - Research & Academic Communication
+tags:
+  - one-pager
+  - research-communication
+  - marketing
+  - project-presentation
+  - stakeholder-engagement
+seo_tags:
+  - project-one-pager
+  - research-communication
+  - elevator-pitch
+  - stakeholder-engagement
+  - academic-marketing
+  - research-presentation
+  - project-summary
+  - investor-communication
+  - research-promotion
+  - academic-writing
+excerpt: Master the art of condensing complex research into compelling one-pagers. Learn the proven 4-step structure that captures investor attention and facilitates decision-making in just 20 seconds.
 published: true
+tldr: Master the art of condensing complex research into compelling one-pagers. Learn the proven 4-step structure that captures investor attention and facilitates decision-making in just 20 seconds.
 ---
+
 
 # The project one-pager: how to make
 

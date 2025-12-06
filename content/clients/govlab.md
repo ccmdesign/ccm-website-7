@@ -15,6 +15,7 @@ established: "2012"
 size: "Medium Organization"
 tags: ["governance", "technology", "research", "innovation"]
 published: true
+order: 7
 ---
 
 # The GovLab

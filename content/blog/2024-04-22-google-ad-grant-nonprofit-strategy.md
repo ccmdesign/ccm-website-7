@@ -1,20 +1,30 @@
 ---
-brow: "Nonprofit Strategy"
-title: "How To Use Google Ad Grant In Your Nonprofit Marketing Strategy"
-slug: "google-ad-grant-nonprofit-marketing-strategy"
-tagline: "Maximize your $10,000 monthly Google Ad Grant to drive targeted traffic and meaningful conversions"
+brow: Nonprofit Strategy
+title: How To Use Google Ad Grant In Your Nonprofit Marketing Strategy
+slug: google-ad-grant-nonprofit-marketing-strategy
+tagline: Maximize your $10,000 monthly Google Ad Grant to drive targeted traffic and meaningful conversions
 date: "2024-04-22"
-author: "CCM Design Team"
-categories: ["Nonprofit & Foundation Strategy"]
-tags: ["Google Ad Grant", "nonprofit marketing", "digital advertising", "nonprofit strategy"]
-seo_tags: ["Google Ad Grant strategy", "nonprofit Google ads", "nonprofit marketing strategy", "Google Ad Grant optimization", "nonprofit digital marketing", "charity advertising", "nonprofit fundraising ads", "Google grants for nonprofits"]
-excerpt: "Learn how to strategically use Google's $10,000 monthly Ad Grant to attract the right visitors and convert them into supporters of your nonprofit mission."
+author: CCM Design Team
+categories:
+  - Nonprofit & Foundation Strategy
+tags:
+  - Google Ad Grant
+  - nonprofit marketing
+  - digital advertising
+  - nonprofit strategy
+seo_tags:
+  - Google Ad Grant strategy
+  - nonprofit Google ads
+  - nonprofit marketing strategy
+  - Google Ad Grant optimization
+  - nonprofit digital marketing
+  - charity advertising
+  - nonprofit fundraising ads
+  - Google grants for nonprofits
+excerpt: Learn how to strategically use Google's $10,000 monthly Ad Grant to attract the right visitors and convert them into supporters of your nonprofit mission.
 published: true
+tldr: Google Ad Grant provides approved nonprofit organizations with $10,000 in monthly advertising credits for Google search ads. This comprehensive guide covers eligibility requirements, application process, optimization strategies, and campaign setup to help nonprofits attract the right visitors, drive meaningful conversions, and maintain program compliance while maximizing their digital marketing impact.
 ---
-
-::tldr-section
-Google Ad Grant provides approved nonprofit organizations with $10,000 in monthly advertising credits for Google search ads. This comprehensive guide covers eligibility requirements, application process, optimization strategies, and campaign setup to help nonprofits attract the right visitors, drive meaningful conversions, and maintain program compliance while maximizing their digital marketing impact.
-::
 
 ::prose-section
 More important than attracting a large number of visitors to your website is to attract the right visitors to your website. The same applies to creating an email list, as you can see in this article.

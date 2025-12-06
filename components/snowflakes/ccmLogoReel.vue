@@ -2,7 +2,9 @@
 import { computed, ref, onMounted, nextTick, watch } from 'vue'
 
 const { data: clients } = await useAsyncData('logo-reel-clients', () => {
-  return queryCollection('clients').all()
+  return queryCollection('clients')
+    .order('order', 'ASC')
+    .all()
 })
 
 const reelClients = computed(() => {
@@ -56,28 +58,39 @@ watch(reelClients, () => {
 </script>
 
 <template>
-  <ul ref="reelRef" class="reel" :class="{ 'reel--scrolling': hasScroll }">
-    <li v-for="client in reelClients" :key="client.key" data-slide-in="from-top">
-      <nuxt-link class="reel__link" :to="client.slug ? `/clients/${client.slug}` : '#'" >
-        <img 
-          v-if="client.logo" 
-          :src="client.logo" 
-          :alt="client.name"
-          :style="{ transform: `scale(${client.logoScale})` }"
-        />
-        <span v-else class="reel__placeholder">{{ client.name }}</span>
-      </nuxt-link>
-    </li>
-  </ul>
+  <section>
+    <h3 class="h6 | text-align:center margin-block: var(--space-l)">Trusted by</h3>
+    <ul ref="reelRef" class="reel" :class="{ 'reel--scrolling': hasScroll }">
+      <li v-for="client in reelClients" :key="client.key" data-slide-in="from-top">
+        <nuxt-link class="reel__link" :to="client.slug ? `/clients/${client.slug}` : '#'" >
+          <img 
+            v-if="client.logo" 
+            :src="client.logo" 
+            :alt="client.name"
+            :style="{ transform: `scale(${client.logoScale})` }"
+          />
+          <span v-else class="reel__placeholder">{{ client.name }}</span>
+        </nuxt-link>
+      </li>
+    </ul>
+  </section>
 </template>
 
 <style lang="css" scoped>
 
+section {
+  margin-block-start: var(--space-xl);
+}
+
+.h6 {
+  color: var(--color-base-tint-30);
+}
+
 .reel {
-  max-width: 100svw;
+  max-width: calc(100svw - var(--system-padding-edge) * 2);
   width: 100svw;
   justify-content: space-between;
-  padding-inline: var(--system-padding-edge);
+  padding-inline: 0;
   --_reel-gap: var(--space-2xl);
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE/Edge */

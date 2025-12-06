@@ -1,15 +1,33 @@
 ---
-brow: "Designing Research"
+brow: Designing Research
 title: "Headings for Academics: 3 Fields Idea"
-tagline: "Transform long academic titles into scannable, engaging headers using the journalism-inspired three-field structure"
+tagline: Transform long academic titles into scannable, engaging headers using the journalism-inspired three-field structure
 date: "2023-12-06"
-author: "CCM Design Team"
-categories: ["Research & Academic Communication"]
-tags: ["academic-writing", "typography", "visual-hierarchy", "editorial-design", "research-communication"]
-seo_tags: ["academic-headings", "research-writing", "typography-hierarchy", "academic-design", "publication-layout", "research-communication", "editorial-structure", "academic-publications", "visual-hierarchy", "readable-design"]
-excerpt: "After working with researchers for years, discover the journalism-inspired three-field approach that transforms overwhelming academic titles into 8-second attention grabbers with perfect visual hierarchy."
+author: CCM Design Team
+categories:
+  - Research & Academic Communication
+tags:
+  - academic-writing
+  - typography
+  - visual-hierarchy
+  - editorial-design
+  - research-communication
+seo_tags:
+  - academic-headings
+  - research-writing
+  - typography-hierarchy
+  - academic-design
+  - publication-layout
+  - research-communication
+  - editorial-structure
+  - academic-publications
+  - visual-hierarchy
+  - readable-design
+excerpt: After working with researchers for years, discover the journalism-inspired three-field approach that transforms overwhelming academic titles into 8-second attention grabbers with perfect visual hierarchy.
 published: true
+tldr: After working with researchers for years, discover the journalism-inspired three-field approach that transforms overwhelming academic titles into 8-second attention grabbers with perfect visual hierarchy.
 ---
+
 
 # Headings for academics: 3 fields idea
 

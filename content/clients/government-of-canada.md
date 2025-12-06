@@ -13,6 +13,7 @@ established: "1867"
 size: "Federal Government"
 tags: ["government", "public-services", "policy", "civic-tech"]
 published: false
+order: 6
 ---
 
 # Government of Canada

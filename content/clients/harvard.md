@@ -15,6 +15,7 @@ established: "1636"
 size: "Large Institution"
 tags: ["university", "research", "ivy-league", "academic"]
 published: true
+order: 8
 ---
 
 # Harvard University

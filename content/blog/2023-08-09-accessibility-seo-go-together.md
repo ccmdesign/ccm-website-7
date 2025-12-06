@@ -1,15 +1,34 @@
 ---
-brow: "Design & Digital Strategy"
-title: "How Accessibility and SEO Go Together"
-tagline: "Making your website accessible boosts engagement and raises your SEO rankings through better user experience and technical optimization"
+brow: Design & Digital Strategy
+title: How Accessibility and SEO Go Together
+tagline: Making your website accessible boosts engagement and raises your SEO rankings through better user experience and technical optimization
 date: "2023-08-09"
-author: "CCM Design Team"
-categories: ["Design & Digital Strategy", "Content Strategy & Workflow"]
-tags: ["accessibility", "SEO", "user-experience", "inclusive-design", "web-standards"]
-seo_tags: ["web-accessibility", "SEO-optimization", "inclusive-design", "WCAG-compliance", "semantic-HTML", "alt-text-optimization", "mobile-accessibility", "screen-reader-optimization", "accessible-web-design", "SEO-accessibility-overlap"]
-excerpt: "Making your website accessible improves user experience for everyone while boosting SEO rankings. Discover how accessibility features like semantic HTML and alt text benefit both users with disabilities and search engines."
+author: CCM Design Team
+categories:
+  - Design & Digital Strategy
+  - Content Strategy & Workflow
+tags:
+  - accessibility
+  - SEO
+  - user-experience
+  - inclusive-design
+  - web-standards
+seo_tags:
+  - web-accessibility
+  - SEO-optimization
+  - inclusive-design
+  - WCAG-compliance
+  - semantic-HTML
+  - alt-text-optimization
+  - mobile-accessibility
+  - screen-reader-optimization
+  - accessible-web-design
+  - SEO-accessibility-overlap
+excerpt: Making your website accessible improves user experience for everyone while boosting SEO rankings. Discover how accessibility features like semantic HTML and alt text benefit both users with disabilities and search engines.
 published: true
+tldr: Making your website accessible improves user experience for everyone while boosting SEO rankings. Discover how accessibility features like semantic HTML and alt text benefit both users with disabilities and search engines.
 ---
+
 
 # How accessibility and SEO go together
 

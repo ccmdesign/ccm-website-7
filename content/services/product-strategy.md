@@ -11,6 +11,7 @@ activities:
   - User/Audience Definition
 icon: /assets/service-icons/strategy.svg
 published: true
+order: 1
 ---
 
 ### The Strategic Goal

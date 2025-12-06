@@ -1,14 +1,32 @@
 ---
-brow: "Design Systems"
-title: "Business Advantages"
-tagline: "Medium and long-term benefits of implementing design systems that accelerate development, ensure consistency, and drive competitive advantage"
+brow: Design Systems
+title: Business Advantages
+tagline: Medium and long-term benefits of implementing design systems that accelerate development, ensure consistency, and drive competitive advantage
 date: "2023-08-16"
-author: "CCM Design Team"
-categories: ["Design & Digital Strategy", "Content Strategy & Workflow"]
-tags: ["design-systems", "business-efficiency", "development-productivity", "brand-consistency", "competitive-advantage"]
-seo_tags: ["design-system-benefits", "UI-component-library", "development-efficiency", "brand-consistency", "faster-development", "design-system-ROI", "modular-design", "component-reusability", "design-productivity", "business-advantages"]
-excerpt: "Design systems significantly improve development efficiency by providing reusable UI components that speed up interface building, ensure branding consistency, and enable faster iterations for both large and small organizations."
+author: CCM Design Team
+categories:
+  - Design & Digital Strategy
+  - Content Strategy & Workflow
+tags:
+  - design-systems
+  - business-efficiency
+  - development-productivity
+  - brand-consistency
+  - competitive-advantage
+seo_tags:
+  - design-system-benefits
+  - UI-component-library
+  - development-efficiency
+  - brand-consistency
+  - faster-development
+  - design-system-ROI
+  - modular-design
+  - component-reusability
+  - design-productivity
+  - business-advantages
+excerpt: Design systems significantly improve development efficiency by providing reusable UI components that speed up interface building, ensure branding consistency, and enable faster iterations for both large and small organizations.
 published: true
+tldr: Implementing a design system - a library of reusable UI components - significantly improves development efficiency. It speeds up building interfaces by letting developers focus on new features instead of common elements. It also ensures branding consistency and better UX. Despite the initial cost to create components, design systems save much time and money long-term. They enable faster iterations, shorter backlogs, and more agility. For both large and small organizations, a design system is an essential part of modern software development.
 ---
 
 # Design Systems - Business Advantages
@@ -17,9 +35,6 @@ published: true
 
 Medium and Long-term benefits of a Design System
 
-## TLDR
-
-Implementing a design system - a library of reusable UI components - significantly improves development efficiency. It speeds up building interfaces by letting developers focus on new features instead of common elements. It also ensures branding consistency and better UX. Despite the initial cost to create components, design systems save much time and money long-term. They enable faster iterations, shorter backlogs, and more agility. For both large and small organizations, a design system is an essential part of modern software development.
 
 ---
 

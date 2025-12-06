@@ -7,6 +7,7 @@ tags: [editorial]
 services: ['publication-in-30-days']
 published: true
 featured: true
+order: 20
 year:
 items:
   - type: image

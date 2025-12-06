@@ -1,21 +1,32 @@
 ---
-brow: "Why Precision Became Obsolete"
-title: "Pixel (in)Perfect"
-tagline: "Embrace responsive design reality and focus on user experience over pixel-perfect accuracy"
+brow: Why Precision Became Obsolete
+title: Pixel (in)Perfect
+tagline: Embrace responsive design reality and focus on user experience over pixel-perfect accuracy
 date: "2023-01-09"
-author: "CCM Design Team"
-categories: ["Design & Digital Strategy"]
-tags: ["responsive design", "web development", "design philosophy", "user experience"]
-seo_tags: ["pixel perfect design", "responsive web design", "modern web development", "design flexibility", "mobile web design", "web design philosophy", "user experience design", "adaptive design"]
-excerpt: "Why pixel perfection became obsolete in modern web design and how embracing flexibility improves user experience across devices."
+author: CCM Design Team
+categories:
+  - Design & Digital Strategy
+tags:
+  - responsive design
+  - web development
+  - design philosophy
+  - user experience
+seo_tags:
+  - pixel perfect design
+  - responsive web design
+  - modern web development
+  - design flexibility
+  - mobile web design
+  - web design philosophy
+  - user experience design
+  - adaptive design
+excerpt: Why pixel perfection became obsolete in modern web design and how embracing flexibility improves user experience across devices.
 published: true
+tldr: Forget about precision on webdesign. Since the iPhone, the web became such a chaotic medium it is unrealistic to expect a pixel perfect design. A website that doesn't look "broken" is already a good enough.
 ---
 
 Why pixel perfection became an obsolete concept for the web
 
-## TLDR;
-
-Forget about precision on webdesign. Since the iPhone, the web became such a chaotic medium it is unrealistic to expect a pixel perfect design. A website that doesn't look "broken" is already a good enough.
 
 ## Introduction
 

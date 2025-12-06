@@ -6,6 +6,7 @@ description: Digital platform showcasing Canadian cultural and performing arts i
 tags: [web]
 services: ['interface-design-and-development']
 published: true
+order: 22
 year:
 items:
   - type: image

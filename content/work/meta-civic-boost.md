@@ -6,6 +6,7 @@ description: Digital platform supporting civic engagement and community initiati
 tags: [web]
 services: ['interface-design-and-development']
 published: true
+order: 24
 year:
 items:
   - type: image

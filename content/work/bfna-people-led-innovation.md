@@ -7,6 +7,7 @@ tags: [web, editorial]
 services: ['interface-design-and-development', 'publication-in-30-days', 'design-subscription']
 published: true
 featured: true
+order: 6
 year:
 items:
   - type: image

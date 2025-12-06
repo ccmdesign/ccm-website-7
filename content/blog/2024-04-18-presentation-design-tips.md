@@ -1,15 +1,33 @@
 ---
-brow: "Presentation Design"
-title: "Tips for designing better presentations"
-tagline: "Balance visual appeal with usability to create presentations that communicate effectively and drive results"
+brow: Presentation Design
+title: Tips for designing better presentations
+tagline: Balance visual appeal with usability to create presentations that communicate effectively and drive results
 date: "2024-04-18"
-author: "CCM Design Team"
-categories: ["Design & Digital Strategy"]
-tags: ["presentation-design", "visual-design", "usability", "communication-design", "user-experience"]
-seo_tags: ["presentation-design-tips", "visual-presentation", "design-usability", "effective-presentations", "presentation-templates", "visual-communication", "design-principles", "presentation-best-practices", "user-centered-design", "presentation-layout"]
-excerpt: "Discover essential presentation design tips that balance visual appeal with functionality. Learn the difference between support and standalone presentations to improve communication results by 60%."
+author: CCM Design Team
+categories:
+  - Design & Digital Strategy
+tags:
+  - presentation-design
+  - visual-design
+  - usability
+  - communication-design
+  - user-experience
+seo_tags:
+  - presentation-design-tips
+  - visual-presentation
+  - design-usability
+  - effective-presentations
+  - presentation-templates
+  - visual-communication
+  - design-principles
+  - presentation-best-practices
+  - user-centered-design
+  - presentation-layout
+excerpt: Discover essential presentation design tips that balance visual appeal with functionality. Learn the difference between support and standalone presentations to improve communication results by 60%.
 published: true
+tldr: Discover essential presentation design tips that balance visual appeal with functionality. Learn the difference between support and standalone presentations to improve communication results by 60%.
 ---
+
 
 # Presentation Design: Tips for designing better presentations
 

@@ -1,20 +1,33 @@
 ---
-brow: "Research & Academic Communication"
-title: "How to sell your research"
-slug: "sell-your-research-academic-marketing-strategies"
-tagline: "Understanding the intrinsic value of your knowledge, expertise, and personal brand in academic research"
+brow: Research & Academic Communication
+title: How to sell your research
+slug: sell-your-research-academic-marketing-strategies
+tagline: Understanding the intrinsic value of your knowledge, expertise, and personal brand in academic research
 date: "2024-05-13"
-author: "CCM Design Team"
-categories: ["Research & Academic Communication"]
-tags: ["research-marketing", "academic-branding", "research-funding", "expertise-marketing", "research-value"]
-seo_tags: ["research-marketing-strategies", "academic-research-promotion", "research-funding-success", "academic-expertise", "research-commercialization", "academic-personal-branding", "research-impact", "scientific-communication", "research-visibility", "academic-networking"]
-excerpt: "Discover how to 'sell' your research by understanding its intrinsic value. Learn to market your knowledge, expertise, and personal brand to secure funding and build your academic reputation effectively."
+author: CCM Design Team
+categories:
+  - Research & Academic Communication
+tags:
+  - research-marketing
+  - academic-branding
+  - research-funding
+  - expertise-marketing
+  - research-value
+seo_tags:
+  - research-marketing-strategies
+  - academic-research-promotion
+  - research-funding-success
+  - academic-expertise
+  - research-commercialization
+  - academic-personal-branding
+  - research-impact
+  - scientific-communication
+  - research-visibility
+  - academic-networking
+excerpt: Discover how to 'sell' your research by understanding its intrinsic value. Learn to market your knowledge, expertise, and personal brand to secure funding and build your academic reputation effectively.
 published: true
+tldr: Researchers aren't just collecting data—they're selling knowledge, expertise, and personal brand. Understanding what you're actually "selling" helps secure funding, build reputation, and create impact. The key is recognizing the difference between your audience (peers who provide social proof) and your clients (funders who invest in your work).
 ---
-
-::tldr-section
-Researchers aren't just collecting data—they're selling knowledge, expertise, and personal brand. Understanding what you're actually "selling" helps secure funding, build reputation, and create impact. The key is recognizing the difference between your audience (peers who provide social proof) and your clients (funders who invest in your work).
-::
 
 ::prose-section
 It's not about commercializing the knowledge itself but understanding that there are components of your work that have intrinsic value and are sold, even if not directly.

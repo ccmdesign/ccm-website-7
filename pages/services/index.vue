@@ -1,12 +1,12 @@
 <template>
-  <section v-if="services && services.length > 0" class="service-list">
+  <ccm-section v-if="services && services.length > 0" class="service-list">
     <service-card 
       class="service-item"
       v-for="service in services" 
       :key="service.path" 
       :service="service"
     />
-  </section>
+  </ccm-section>
 
   <ccm-logo-reel class="logo-reel" />
   
@@ -17,6 +17,10 @@
 .service-list {
   --_stack-space: var(--space-xl);
   margin-inline: var(--system-padding-edge);
+
+  > * {
+    grid-column: span 12;
+  }
 }
 </style>
 
@@ -30,7 +34,10 @@ definePageMeta({
 })
 
 const { data: services } = await useAsyncData('services', () => {
-  return queryCollection('services').where('published', '=', true).all()
+  return queryCollection('services')
+    .where('published', '=', true)
+    .order('order', 'ASC')
+    .all()
 })
 </script>
 

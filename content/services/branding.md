@@ -11,6 +11,7 @@ activities:
   - Brand Toolkits & Templates
 icon: /assets/service-icons/branding.svg
 published: true
+order: 2
 ---
 
 ### The Strategic Goal

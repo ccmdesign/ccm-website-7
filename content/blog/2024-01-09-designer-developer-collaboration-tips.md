@@ -1,15 +1,33 @@
 ---
-brow: "Design & Digital Strategy"
-title: "5 Tips to Improve Designer-Developer Collaboration in Small Teams"
-tagline: "Boost collaboration between designers and developers by promoting open communication and clear project requirements"
+brow: Design & Digital Strategy
+title: 5 Tips to Improve Designer-Developer Collaboration in Small Teams
+tagline: Boost collaboration between designers and developers by promoting open communication and clear project requirements
 date: "2024-01-09"
-author: "CCM Design Team"
-categories: ["Design & Digital Strategy"]
-tags: ["team-collaboration", "designer-developer", "communication", "workflow", "project-management"]
-seo_tags: ["designer-developer-collaboration", "team-communication", "workflow-optimization", "project-management", "remote-collaboration", "design-handoff", "figma-collaboration", "async-communication", "team-productivity", "cross-functional-teams"]
-excerpt: "Eliminate friction between designers and developers with 5 proven strategies. Improve team productivity by up to 40% through better communication, collaboration tools, and structured workflows."
+author: CCM Design Team
+categories:
+  - Design & Digital Strategy
+tags:
+  - team-collaboration
+  - designer-developer
+  - communication
+  - workflow
+  - project-management
+seo_tags:
+  - designer-developer-collaboration
+  - team-communication
+  - workflow-optimization
+  - project-management
+  - remote-collaboration
+  - design-handoff
+  - figma-collaboration
+  - async-communication
+  - team-productivity
+  - cross-functional-teams
+excerpt: Eliminate friction between designers and developers with 5 proven strategies. Improve team productivity by up to 40% through better communication, collaboration tools, and structured workflows.
 published: true
+tldr: Eliminate friction between designers and developers with 5 proven strategies. Improve team productivity by up to 40% through better communication, collaboration tools, and structured workflows.
 ---
+
 
 # 5 Tips to Improve Designer-Developer Collaboration in Small Teams
 

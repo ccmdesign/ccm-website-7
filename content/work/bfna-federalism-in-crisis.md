@@ -6,6 +6,7 @@ description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta seq
 tags: [editorial]
 services: ['publication-in-30-days', 'design-subscription']
 published: true
+order: 3
 year:
 items:
 - type: image

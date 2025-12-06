@@ -6,6 +6,7 @@ description: Digital platform and publication design for Open Data Impact resear
 tags: [web]
 services: ['interface-design-and-development', 'design-subscription']
 published: true
+order: 15
 year:
 items:
   - type: image

@@ -14,6 +14,7 @@ established: "1970"
 size: "Non-Profit Research Organization"
 tags: ["international-development", "research", "policy", "innovation"]
 published: true
+order: 9
 ---
 
 # International Development Research Centre (IDRC)

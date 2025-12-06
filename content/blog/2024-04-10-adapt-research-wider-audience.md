@@ -1,20 +1,33 @@
 ---
-brow: "Research & Academic Communication"
-title: "How to adapt your research for a wider audience"
-slug: "adapt-research-wider-audience-public-engagement"
-tagline: "Transform academic research into accessible content that engages the public and drives impact"
+brow: Research & Academic Communication
+title: How to adapt your research for a wider audience
+slug: adapt-research-wider-audience-public-engagement
+tagline: Transform academic research into accessible content that engages the public and drives impact
 date: "2024-04-10"
-author: "CCM Design Team"
-categories: ["Research & Academic Communication"]
-tags: ["research-communication", "audience-targeting", "academic-writing", "visual-storytelling", "public-engagement"]
-seo_tags: ["research-communication", "academic-audience-engagement", "research-presentation", "public-outreach", "scientific-communication", "research-impact", "academic-writing-tips", "research-dissemination", "stakeholder-engagement", "research-accessibility"]
-excerpt: "Learn how to adapt academic research for wider audiences using journalistic techniques, targeted messaging, and visual storytelling. Increase research impact by 300% through strategic communication."
+author: CCM Design Team
+categories:
+  - Research & Academic Communication
+tags:
+  - research-communication
+  - audience-targeting
+  - academic-writing
+  - visual-storytelling
+  - public-engagement
+seo_tags:
+  - research-communication
+  - academic-audience-engagement
+  - research-presentation
+  - public-outreach
+  - scientific-communication
+  - research-impact
+  - academic-writing-tips
+  - research-dissemination
+  - stakeholder-engagement
+  - research-accessibility
+excerpt: Learn how to adapt academic research for wider audiences using journalistic techniques, targeted messaging, and visual storytelling. Increase research impact by 300% through strategic communication.
 published: true
+tldr: Transform your academic research into accessible content that resonates with broader audiences by adopting journalistic techniques, identifying target demographics, and tailoring messages using clear language, visual storytelling, and strategic social media engagement. Learn to structure information using the inverted pyramid method and bridge the gap between complex research findings and public understanding.
 ---
-
-::tldr-section
-Transform your academic research into accessible content that resonates with broader audiences by adopting journalistic techniques, identifying target demographics, and tailoring messages using clear language, visual storytelling, and strategic social media engagement. Learn to structure information using the inverted pyramid method and bridge the gap between complex research findings and public understanding.
-::
 
 ::prose-section
 Identifying the target audience, adapting the language, using analogies and visuals, and taking advantage of social media are some of the ways to adapt your message.

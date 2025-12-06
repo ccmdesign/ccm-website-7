@@ -1,20 +1,34 @@
 ---
-brow: "Design & Digital Strategy"
-title: "Design To Streamline Your Foundation's Digital Products"
-slug: "design-streamline-foundation-digital-products"
-tagline: "Ensure your digital products are not only visually appealing but also effective, user-friendly, and impactful"
+brow: Design & Digital Strategy
+title: Design To Streamline Your Foundation's Digital Products
+slug: design-streamline-foundation-digital-products
+tagline: Ensure your digital products are not only visually appealing but also effective, user-friendly, and impactful
 date: "2024-06-24"
-author: "CCM Design Team"
-categories: ["Design & Digital Strategy", "Nonprofit & Foundation Strategy"]
-tags: ["foundation-design", "digital-products", "user-experience", "nonprofit-design", "brand-consistency"]
-seo_tags: ["foundation-digital-design", "nonprofit-design-strategy", "digital-product-optimization", "foundation-branding", "nonprofit-user-experience", "digital-foundation-tools", "foundation-visual-identity", "nonprofit-digital-products", "foundation-design-impact", "digital-nonprofit-strategy"]
-excerpt: "Transform your foundation's digital products with strategic design that balances visual appeal with functionality. Professional design increases nonprofit credibility by 85% and enhances audience engagement significantly."
+author: CCM Design Team
+categories:
+  - Design & Digital Strategy
+  - Nonprofit & Foundation Strategy
+tags:
+  - foundation-design
+  - digital-products
+  - user-experience
+  - nonprofit-design
+  - brand-consistency
+seo_tags:
+  - foundation-digital-design
+  - nonprofit-design-strategy
+  - digital-product-optimization
+  - foundation-branding
+  - nonprofit-user-experience
+  - digital-foundation-tools
+  - foundation-visual-identity
+  - nonprofit-digital-products
+  - foundation-design-impact
+  - digital-nonprofit-strategy
+excerpt: Transform your foundation's digital products with strategic design that balances visual appeal with functionality. Professional design increases nonprofit credibility by 85% and enhances audience engagement significantly.
 published: true
+tldr: Strategic design transforms foundation digital products by balancing visual appeal with functionality and user experience. Professional design creates strong first impressions, builds consistent brand identity, improves user navigation, and increases impact and reach. Well-designed digital products enhance credibility, make organizations more recognizable, and help messages resonate more deeply with wider audiences.
 ---
-
-::tldr-section
-Strategic design transforms foundation digital products by balancing visual appeal with functionality and user experience. Professional design creates strong first impressions, builds consistent brand identity, improves user navigation, and increases impact and reach. Well-designed digital products enhance credibility, make organizations more recognizable, and help messages resonate more deeply with wider audiences.
-::
 
 ::prose-section
 Design plays an important role in ensuring these products are not only visually appealing but also effective and user-friendly.

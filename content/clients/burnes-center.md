@@ -14,6 +14,7 @@ established: "2008"
 size: "Independent Research Hub"
 tags: ["equity", "justice", "research", "community"]
 published: false
+order: 5
 ---
 
 # Burnes Center for Social Justice

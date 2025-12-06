@@ -1,20 +1,33 @@
 ---
-brow: "Developers, Designers and Teams"
-title: "How These Professionals Work Together"
-slug: "developers-designers-teams-collaboration"
-tagline: "Bridge the gap between design and development through specialized frontend teams and design systems"
+brow: Developers, Designers and Teams
+title: How These Professionals Work Together
+slug: developers-designers-teams-collaboration
+tagline: Bridge the gap between design and development through specialized frontend teams and design systems
 date: "2022-10-09"
-author: "CCM Design Team"
-categories: ["Design & Digital Strategy"]
-tags: ["design systems", "developer collaboration", "frontend development", "team dynamics", "interface development"]
-seo_tags: ["frontend designer", "design developer collaboration", "interface developer", "design system teams", "frontend development", "developer designer teams", "web development teams", "design collaboration", "frontend specialists", "multidisciplinary teams"]
-excerpt: "Frontend designers bridge design and development gaps, enabling specialized teams that deliver 40% faster interface production through systematic collaboration approaches."
+author: CCM Design Team
+categories:
+  - Design & Digital Strategy
+tags:
+  - design systems
+  - developer collaboration
+  - frontend development
+  - team dynamics
+  - interface development
+seo_tags:
+  - frontend designer
+  - design developer collaboration
+  - interface developer
+  - design system teams
+  - frontend development
+  - developer designer teams
+  - web development teams
+  - design collaboration
+  - frontend specialists
+  - multidisciplinary teams
+excerpt: Frontend designers bridge design and development gaps, enabling specialized teams that deliver 40% faster interface production through systematic collaboration approaches.
 published: true
+tldr: Frontend designers are rare "unicorn" professionals who bridge the gap between design and development by mastering both HTML/CSS and visual design. Traditional developers often avoid HTML/CSS as they're not "real" programming languages, while designers typically lack coding skills. Design system teams composed of these multidisciplinary professionals create reusable components that free up backend developers to focus on their core expertise, dramatically improving team efficiency and product consistency.
 ---
-
-::tldr-section
-Frontend designers are rare "unicorn" professionals who bridge the gap between design and development by mastering both HTML/CSS and visual design. Traditional developers often avoid HTML/CSS as they're not "real" programming languages, while designers typically lack coding skills. Design system teams composed of these multidisciplinary professionals create reusable components that free up backend developers to focus on their core expertise, dramatically improving team efficiency and product consistency.
-::
 
 ::prose-section
 The typical dev team in an organization is filled with multiple developers and maybe a couple of designers, because UX is quite important, right?

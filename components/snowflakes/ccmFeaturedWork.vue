@@ -7,10 +7,11 @@
             :key="currentIndex"
             class="featured-work__image-wrapper"
           >
-            <img 
-              :src="currentImage" 
-              :data-mockup="currentMockupType"
-              alt="Featured work"
+            <ProjectCard 
+              :image="currentImage" 
+              :mockup-type="currentMockupType"
+              :title="currentProject"
+              :caption="currentClient"
             />
           </div>
         </Transition>
@@ -87,19 +88,7 @@
   display: flex;
   align-items: center;
   
-  img {
-    width: 100%;
-    object-fit: contain;
-    display: block;
-    
-    &:not([data-mockup="editorial"]) {
-      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
-    }
 
-    &[data-mockup="editorial"] {
-      transform: scale(1.27);
-    }
-  }
 }
 
 /* Slide-fade transition for images */
@@ -156,11 +145,13 @@
 
 <script setup lang="ts">
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
+import ProjectCard from './ProjectCard.vue'
 
 const { data: featuredWorkItems } = await useAsyncData('featured-work', () => {
   return queryCollection('work')
     .where('published', '=', true)
     .where('featured', '=', true)
+    .order('order', 'ASC')
     .all()
 })
 

@@ -6,6 +6,7 @@ description: Digital platform for election integrity research and transparency i
 tags: [web]
 services: ['interface-design-and-development']
 published: true
+order: 23
 year:
 items:
   - type: image

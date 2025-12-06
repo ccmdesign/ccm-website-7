@@ -6,6 +6,7 @@ description: Brand identity system and digital platform for Smarter Crowdsourcin
 tags: [branding]
 services: ['branding', 'design-subscription']
 published: true
+order: 17
 year:
 items:
   - type: image

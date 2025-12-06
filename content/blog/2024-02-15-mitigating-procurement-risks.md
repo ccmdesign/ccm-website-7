@@ -1,15 +1,33 @@
 ---
-brow: "Procurement"
-title: "Mitigating Procurement Risks"
-tagline: "How to develop detailed RFPs when you don't understand what you need"
+brow: Procurement
+title: Mitigating Procurement Risks
+tagline: How to develop detailed RFPs when you don't understand what you need
 date: "2024-02-15"
-author: "CCM Design Team"
-categories: ["Content Strategy & Workflow"]
-tags: ["procurement", "RFP", "project-management", "UX-consultation", "risk-mitigation"]
-seo_tags: ["procurement-risks", "RFP-process", "creative-services", "project-specification", "UX-consultation", "vendor-selection", "project-management", "scope-definition", "client-agency-relationship", "discovery-phase"]
-excerpt: "Avoid costly change requests and project delays by conducting UX consultation before creating RFPs. Learn how proper discovery phases eliminate up to 80% of procurement risks in creative projects."
+author: CCM Design Team
+categories:
+  - Content Strategy & Workflow
+tags:
+  - procurement
+  - RFP
+  - project-management
+  - UX-consultation
+  - risk-mitigation
+seo_tags:
+  - procurement-risks
+  - RFP-process
+  - creative-services
+  - project-specification
+  - UX-consultation
+  - vendor-selection
+  - project-management
+  - scope-definition
+  - client-agency-relationship
+  - discovery-phase
+excerpt: Avoid costly change requests and project delays by conducting UX consultation before creating RFPs. Learn how proper discovery phases eliminate up to 80% of procurement risks in creative projects.
 published: true
+tldr: Avoid costly change requests and project delays by conducting UX consultation before creating RFPs. Learn how proper discovery phases eliminate up to 80% of procurement risks in creative projects.
 ---
+
 
 # Mitigating Procurement Risks
 

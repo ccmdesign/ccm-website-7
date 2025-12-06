@@ -1,15 +1,33 @@
 ---
-brow: "Beyond the Monolith"
-title: "Unlocking Digital Potential with JAMstack Part 2"
-tagline: "How Global Brands Are Embracing JAMstack"
+brow: Beyond the Monolith
+title: Unlocking Digital Potential with JAMstack Part 2
+tagline: How Global Brands Are Embracing JAMstack
 date: "2023-09-06"
-author: "CCM Design Team"
-categories: ["Design & Digital Strategy"]
-tags: ["JAMstack", "web-architecture", "performance", "modern-web", "digital-transformation"]
-seo_tags: ["jamstack-architecture", "web-performance", "digital-transformation", "modern-web-development", "headless-cms", "static-site-generation", "web-optimization", "developer-experience", "frontend-architecture", "scalable-websites"]
-excerpt: "Discover how global brands like IKEA, Starbucks, and Adobe are leveraging JAMstack to achieve 99.84% file size reductions and unlock unlimited innovation through decoupled architectures."
+author: CCM Design Team
+categories:
+  - Design & Digital Strategy
+tags:
+  - JAMstack
+  - web-architecture
+  - performance
+  - modern-web
+  - digital-transformation
+seo_tags:
+  - jamstack-architecture
+  - web-performance
+  - digital-transformation
+  - modern-web-development
+  - headless-cms
+  - static-site-generation
+  - web-optimization
+  - developer-experience
+  - frontend-architecture
+  - scalable-websites
+excerpt: Discover how global brands like IKEA, Starbucks, and Adobe are leveraging JAMstack to achieve 99.84% file size reductions and unlock unlimited innovation through decoupled architectures.
 published: true
+tldr: Discover how global brands like IKEA, Starbucks, and Adobe are leveraging JAMstack to achieve 99.84% file size reductions and unlock unlimited innovation through decoupled architectures.
 ---
+
 
 # Beyond the Monolith: Unlocking Digital Potential with JAMstack
 

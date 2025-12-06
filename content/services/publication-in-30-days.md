@@ -12,6 +12,7 @@ activities:
   - QA & Printing Advisory
 icon: /assets/service-icons/publications.svg
 published: true
+order: 3
 ---
 
 ### The Strategic Goal

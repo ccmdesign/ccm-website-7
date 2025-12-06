@@ -6,6 +6,7 @@ description: Brand identity system for Big Data for Migration research initiativ
 tags: [branding]
 services: ['branding', 'design-subscription']
 published: true
+order: 11
 year:
 items:
   - type: image

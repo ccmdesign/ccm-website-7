@@ -1,15 +1,33 @@
 ---
-brow: "Information Design"
-title: "Creating an Effective Infographic"
-tagline: "Behind every great infographic lies strategy, design, and a powerful narrative"
+brow: Information Design
+title: Creating an Effective Infographic
+tagline: Behind every great infographic lies strategy, design, and a powerful narrative
 date: "2023-10-26"
-author: "CCM Design Team"
-categories: ["Research & Academic Communication"]
-tags: ["infographics", "data-visualization", "visual-storytelling", "design-strategy", "edward-tufte"]
-seo_tags: ["infographic-design", "data-visualization", "visual-storytelling", "tufte-principles", "information-design", "data-narrative", "visual-hierarchy", "design-communication", "research-visualization", "effective-graphics"]
-excerpt: "Transform complex data into compelling visual stories using Edward Tufte's principles and strategic design thinking. Learn the complete process from data analysis to viral-ready infographics."
+author: CCM Design Team
+categories:
+  - Research & Academic Communication
+tags:
+  - infographics
+  - data-visualization
+  - visual-storytelling
+  - design-strategy
+  - edward-tufte
+seo_tags:
+  - infographic-design
+  - data-visualization
+  - visual-storytelling
+  - tufte-principles
+  - information-design
+  - data-narrative
+  - visual-hierarchy
+  - design-communication
+  - research-visualization
+  - effective-graphics
+excerpt: Transform complex data into compelling visual stories using Edward Tufte's principles and strategic design thinking. Learn the complete process from data analysis to viral-ready infographics.
 published: true
+tldr: Transform complex data into compelling visual stories using Edward Tufte's principles and strategic design thinking. Learn the complete process from data analysis to viral-ready infographics.
 ---
+
 
 # Creating an Effective Infographic
 

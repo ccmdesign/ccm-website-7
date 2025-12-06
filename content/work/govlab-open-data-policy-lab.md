@@ -6,6 +6,7 @@ description: Brand identity and digital platform for Open Data Policy Lab resear
 tags: [branding]
 services: ['branding', 'design-subscription']
 published: true
+order: 16
 year:
 items:
   - type: image

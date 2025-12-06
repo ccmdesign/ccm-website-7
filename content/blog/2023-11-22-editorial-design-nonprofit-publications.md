@@ -1,15 +1,33 @@
 ---
-brow: "Maximizing Impact"
-title: "How Editorial Design Elevates Non-Profit Publications and Reports"
-tagline: "Transform your nonprofit publications into powerful donor engagement tools through strategic editorial design"
+brow: Maximizing Impact
+title: How Editorial Design Elevates Non-Profit Publications and Reports
+tagline: Transform your nonprofit publications into powerful donor engagement tools through strategic editorial design
 date: "2023-11-22"
-author: "CCM Design Team"
-categories: ["Nonprofit & Foundation Strategy"]
-tags: ["editorial-design", "nonprofit-publications", "donor-engagement", "visual-identity", "typography"]
-seo_tags: ["nonprofit-editorial-design", "publication-design", "donor-engagement", "nonprofit-branding", "visual-identity", "annual-report-design", "nonprofit-marketing", "editorial-strategy", "publication-layout", "nonprofit-communications"]
-excerpt: "Discover how editorial design transforms nonprofit publications into professional donor magnets. Learn proven strategies to elevate credibility and maximize impact through strategic visual communication."
+author: CCM Design Team
+categories:
+  - Nonprofit & Foundation Strategy
+tags:
+  - editorial-design
+  - nonprofit-publications
+  - donor-engagement
+  - visual-identity
+  - typography
+seo_tags:
+  - nonprofit-editorial-design
+  - publication-design
+  - donor-engagement
+  - nonprofit-branding
+  - visual-identity
+  - annual-report-design
+  - nonprofit-marketing
+  - editorial-strategy
+  - publication-layout
+  - nonprofit-communications
+excerpt: Discover how editorial design transforms nonprofit publications into professional donor magnets. Learn proven strategies to elevate credibility and maximize impact through strategic visual communication.
 published: true
+tldr: Discover how editorial design transforms nonprofit publications into professional donor magnets. Learn proven strategies to elevate credibility and maximize impact through strategic visual communication.
 ---
+
 
 # Maximizing Impact: How Editorial Design Elevates Non-Profit Publications and Reports
 

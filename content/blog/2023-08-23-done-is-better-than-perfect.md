@@ -1,14 +1,32 @@
 ---
-brow: "Content Strategy & Workflow"
-title: "Done is Better than Perfect and the Nature of the Web"
-tagline: "The art of avoiding needless perfectionism and embracing continuous improvement through iterative web development and strategic prioritization"
+brow: Content Strategy & Workflow
+title: Done is Better than Perfect and the Nature of the Web
+tagline: The art of avoiding needless perfectionism and embracing continuous improvement through iterative web development and strategic prioritization
 date: "2023-08-23"
-author: "CCM Design Team"
-categories: ["Content Strategy & Workflow", "Design & Digital Strategy"]
-tags: ["iterative-development", "minimum-viable-product", "web-development", "project-management", "continuous-improvement"]
-seo_tags: ["iterative-web-development", "minimum-viable-product", "progressive-enhancement", "web-project-management", "done-vs-perfect", "continuous-improvement", "web-design-philosophy", "agile-development", "website-launch-strategy", "project-prioritization"]
-excerpt: "Avoid the perfectionism trap in web development. Launch quality minimum viable products quickly, then iterate based on real user feedback for better results and stronger client relationships."
+author: CCM Design Team
+categories:
+  - Content Strategy & Workflow
+  - Design & Digital Strategy
+tags:
+  - iterative-development
+  - minimum-viable-product
+  - web-development
+  - project-management
+  - continuous-improvement
+seo_tags:
+  - iterative-web-development
+  - minimum-viable-product
+  - progressive-enhancement
+  - web-project-management
+  - done-vs-perfect
+  - continuous-improvement
+  - web-design-philosophy
+  - agile-development
+  - website-launch-strategy
+  - project-prioritization
+excerpt: Avoid the perfectionism trap in web development. Launch quality minimum viable products quickly, then iterate based on real user feedback for better results and stronger client relationships.
 published: true
+tldr: The article argues against chasing perfection in website design, which can delay launch and benefits. It advocates launching a quality minimum viable product swiftly instead. Renowned experts are cited, like Steve Krug ("good enough design") and Luke Wroblewski ("shipping beats perfection"). The key is to define an MVP, view launch as a milestone, set reasonable timelines, and focus on iterative progress over perfection. This results in faster launch and a better client-firm relationship.
 ---
 
 # Done is Better than Perfect and the Nature of the Web
@@ -17,9 +35,6 @@ published: true
 
 The art of avoiding weedless perfectionism and embracing continuous improvement
 
-## TLDR
-
-The article argues against chasing perfection in website design, which can delay launch and benefits. It advocates launching a quality minimum viable product swiftly instead. Renowned experts are cited, like Steve Krug ("good enough design") and Luke Wroblewski ("shipping beats perfection"). The key is to define an MVP, view launch as a milestone, set reasonable timelines, and focus on iterative progress over perfection. This results in faster launch and a better client-firm relationship.
 
 ## Introduction
 
