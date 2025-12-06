@@ -38,6 +38,7 @@ h2 {
 :deep(.portfolio-item) {
   grid-column: span 12;
   grid-row: span 1;
+  
 }
 
 @media (min-width: 769px) {
