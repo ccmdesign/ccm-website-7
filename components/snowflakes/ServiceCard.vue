@@ -31,6 +31,10 @@ defineProps<{
   gap: var(--space-2xl);
   padding-block: var(--space-2xl);
   border-top: 1px solid var(--color-base-tint-10);
+  flex-direction: column;
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 .service-card__header {
@@ -43,6 +47,10 @@ defineProps<{
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .service-card__activities {

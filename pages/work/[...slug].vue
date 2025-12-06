@@ -13,10 +13,6 @@
 </section>
   <section v-if="firstImage" class="first-image">
     <project-card class="grid-9"
-      :to="workItem?.path || workItem?._path || `/work/${slugParam}`"
-      :brow="workItem?.client" 
-      :title="firstImage.title || workItem?.title" 
-      :tagline="firstImage.caption || workItem?.description"
       :image="firstImage.image || null"
       :mockupType="firstImage.mockupType || null"
     />
@@ -42,10 +38,6 @@
     <project-card class="grid-6"
       v-for="(imageItem, index) in editorialImages" 
       :key="index" 
-      :to="workItem?.path || workItem?._path || `/work/${slugParam}`"
-      :brow="workItem?.client" 
-      :title="imageItem.title || workItem?.title" 
-      :tagline="imageItem.caption || workItem?.description"
       :image="imageItem.image || null"
       :mockupType="imageItem.mockupType || null"
     />
@@ -55,10 +47,6 @@
     <project-card class="grid-6"
       v-for="(imageItem, index) in webImages" 
       :key="index" 
-      :to="workItem?.path || workItem?._path || `/work/${slugParam}`"
-      :brow="workItem?.client" 
-      :title="imageItem.title || workItem?.title" 
-      :tagline="imageItem.caption || workItem?.description"
       :image="imageItem.image || null"
       :mockupType="imageItem.mockupType || null"
     />

@@ -15,12 +15,9 @@
     </template>
     
     <project-card 
-      v-for="workItem in workItemsWithImages" 
-      :key="workItem.path" 
+      v-for="(workItem, index) in workItemsWithImages" 
+      :key="workItem.id || index" 
       :to="workItem.path" 
-      :brow="workItem.client" 
-      :title="workItem.title" 
-      :tagline="workItem.description"
       :image="workItem.image || null"
       :mockupType="workItem.mockupType || null"
     />
@@ -58,7 +55,10 @@ definePageMeta({
 })
 
 const { data: workItems } = await useAsyncData('work-items', () => {
-  return queryCollection('work').where('published', '=', true).all()
+  return queryCollection('work')
+    .where('published', '=', true)
+    .order('order', 'ASC')
+    .all()
 })
 
 const activeFilter = ref('all')
@@ -88,7 +88,7 @@ const filteredWorkItems = computed(() => {
 })
 
 const getWorkPath = (item) => {
-  return item.path ?? item._path ?? (item._file ? `/work/${item._file.replace('.md', '')}` : '#')
+  return item.path ?? item._path ?? (item.stem ? `/work/${item.stem}` : null) ?? (item._file ? `/work/${item._file.replace('.md', '')}` : '#')
 }
 
 const getFirstImage = (item, activeFilter = 'all') => {
