@@ -1,5 +1,5 @@
 <template>
-
+  
   <header class="switcher">
     <img class="client-logo" v-if="client?.client_logo" :src="`/assets/clients/${client?.client_logo}`" :alt="client?.name" />
     <h1 v-else>{{ client?.name }}</h1>
@@ -80,7 +80,10 @@ const { data: client } = await useAsyncData(`client-${clientSlug}`, () => {
 })
 
 const { data: workItems } = await useAsyncData(`work-items-${clientSlug}`, () => {
-  return queryCollection('work').where('published', '=', true).all()
+  return queryCollection('work')
+    .where('published', '=', true)
+    .order('order', 'ASC')
+    .all()
 })
 
 const activeFilter = ref('all')

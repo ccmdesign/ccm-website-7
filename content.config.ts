@@ -38,14 +38,16 @@ export default defineContentConfig({
         client_logo: z.string().optional(),
         logo_scale: z.number().optional(),
         featured: z.boolean().optional(),
-        published: z.boolean().default(true)
+        published: z.boolean().default(true),
+        order: z.number().optional()
       })
     }),
     services: defineCollection({
       type: 'page',
       source: 'services/*.md',
       schema: z.object({
-        published: z.boolean().default(true)
+        published: z.boolean().default(true),
+        order: z.number().optional()
       })
     }),
     components: defineCollection({
@@ -84,6 +86,7 @@ export default defineContentConfig({
         projectType: z.enum(['Editorial', 'Logo', 'Web']).optional(),
         services: z.array(serviceSlugEnum).optional(),
         featured: z.boolean().optional(),
+        order: z.number().optional(),
         items: z.array(z.union([
           z.object({
             type: z.literal('image'),
