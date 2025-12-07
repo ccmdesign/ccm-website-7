@@ -15,9 +15,10 @@
 
 <style scoped>
 .project-card {
-  height: 100%;
+  height: min-content;
   width: 100%;
   margin: 0;
+  margin-block-start: auto;
   
   img {
     width: 100%;
@@ -51,6 +52,7 @@
     
     object-fit: cover;
     box-shadow: var(--shadow-elevation-high);
+    aspect-ratio: 16/9;
   }
 }
 

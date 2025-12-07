@@ -5,6 +5,7 @@
       <ShaderGradient />
     </TresCanvas>
   </ClientOnly>
+  <typewriter-effect class="typewriter" :words="['Strategy', 'Design', 'Engineering', 'Data', 'Artificial Intelligence']" />
   <ccm-featured-work class="featured-work" data-slide-in="from-top" />
   <ccm-logo-reel class="logo-reel" />
 </template>
@@ -18,6 +19,7 @@
   height: 100vh;
   z-index: -1 !important;
   pointer-events: none;
+  opacity: 0.5;
 }
 
 .featured-work {

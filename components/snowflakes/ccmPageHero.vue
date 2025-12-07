@@ -2,13 +2,11 @@
   <header class="ccm-page-hero | master-grid-columns master-grid-rows" :minimal="isMinimal">
     <ccm-topbar class="ccm-page-hero__topbar" />
 
-    <hgroup v-if="!isMinimal" class="ccm-page-hero__main">
+    <hgroup v-if="!isMinimal" class="ccm-page-hero__main" data-typewriter-anchor>
       <span v-if="hero?.brow">{{ hero.brow }}</span>
       <h1>{{ hero?.title || hero?.tagline }}</h1>
       <p class="ccm-page-hero__tagline" v-if="hero?.tagline && hero?.title">{{ hero.tagline }}</p>
-      <div class="typewriter">
-        <span>{{ typewriterText }}</span>
-      </div>
+
     </hgroup>
     <!-- <pre>{{ hero }}</pre> -->
 
@@ -87,32 +85,13 @@ h1 {
   position: relative;
 }
 
-.typewriter {
-  overflow: hidden;
-  display: none;
-  white-space: nowrap;
-  position: absolute;
-  left: -25svw;
-  top: -17svh;
-  font-size: 20svw;
-  font-weight: 700;
-  line-height: 1;
-  font-family: var(--display-font);
-  color: transparent;
-  -webkit-text-stroke: 2px var(--color-base-tint-05);
-  z-index: -1;
-}
 
-.typewriter span {
-  display: inline-block;
-  margin: 0;
-}
 
 </style>
 
 
 <script setup lang="ts">
-import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
+import { computed, ref } from 'vue'
 import type { CcmHeroContent } from '~/types/hero'
 
 const defaultTypewriterWords = ['Create', 'Inspire', 'Collaborate', 'Deliver']
@@ -151,75 +130,6 @@ const heroBindings = computed(() => {
 defineExpose({
   hero,
 })
-const typewriterWordList = computed<string[]>(() => {
-  if (props.typewriterWords && props.typewriterWords.length > 0) {
-    return props.typewriterWords
-  }
 
-  const heroWords = hero.value?.typewriterWords as string[] | undefined
-  if (heroWords && Array.isArray(heroWords) && heroWords.length > 0) {
-    return heroWords
-  }
 
-  return defaultTypewriterWords
-})
-const typewriterText = ref('')
-const typewriterState = {
-  wordIndex: 0,
-  position: 0,
-  deleting: false,
-}
-const typingSpeed = 120
-const deletingSpeed = 60
-const pauseOnComplete = 1000
-const pauseBetweenWords = 300
-
-let typingTimeout: ReturnType<typeof setTimeout> | null = null
-
-watch(typewriterWordList, () => {
-  typewriterState.wordIndex = 0
-  typewriterState.position = 0
-  typewriterState.deleting = false
-  typewriterText.value = ''
-}, { immediate: true })
-
-const runTypewriter = () => {
-  const words = typewriterWordList.value
-  if (words.length === 0) {
-    typewriterText.value = ''
-    typingTimeout = setTimeout(runTypewriter, pauseBetweenWords)
-    return
-  }
-  const currentWord = words[typewriterState.wordIndex % words.length]
-  if (typewriterState.deleting) {
-    typewriterState.position = Math.max(0, typewriterState.position - 1)
-  } else {
-    typewriterState.position = Math.min(currentWord.length, typewriterState.position + 1)
-  }
-
-  typewriterText.value = currentWord.slice(0, typewriterState.position)
-
-  let nextDelay = typewriterState.deleting ? deletingSpeed : typingSpeed
-
-  if (!typewriterState.deleting && typewriterState.position === currentWord.length) {
-    typewriterState.deleting = true
-    nextDelay = pauseOnComplete
-  } else if (typewriterState.deleting && typewriterState.position === 0) {
-    typewriterState.deleting = false
-    typewriterState.wordIndex = (typewriterState.wordIndex + 1) % words.length
-    nextDelay = pauseBetweenWords
-  }
-
-  typingTimeout = setTimeout(runTypewriter, nextDelay)
-}
-
-onMounted(() => {
-  typingTimeout = setTimeout(runTypewriter, 400)
-})
-
-onUnmounted(() => {
-  if (typingTimeout) {
-    clearTimeout(typingTimeout)
-  }
-})
 </script>

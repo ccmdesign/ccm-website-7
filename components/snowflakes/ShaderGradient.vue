@@ -81,8 +81,8 @@ void main() {
     
     // Light gradient colors
     vec3 white = vec3(1.0);
-    vec3 navy = vec3(2., 48., 71.) / 255.;
-    vec3 yellow = vec3(255., 183., 3.) / 255.;
+    vec3 navy = vec3(2., 48., 1.) / 255.;
+    vec3 yellow = vec3(243., 224., 0.) / 255.;
 
     vec3 amberYellow = white;
     vec3 deepBlue = navy;

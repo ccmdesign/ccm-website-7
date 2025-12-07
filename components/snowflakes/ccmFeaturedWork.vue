@@ -1,5 +1,5 @@
 <template>
-  <div class="featured-work">
+  <div class="featured-work" :data-paused="dataPaused">
     <nuxt-link :to="currentPath" class="featured-work__item">
       <div class="featured-work__image-container">
         <Transition name="slide-fade" mode="out-in">
@@ -22,6 +22,7 @@
           <div
             :key="`timer-${currentIndex}`"
             class="featured-work__timer-line"
+            @animationend="nextSlide"
           />
         </div>
         <Transition name="slide-up" mode="out-in">
@@ -56,28 +57,41 @@
   position: relative;
   padding-inline: var(--system-padding-edge);
   color: var(--color-primary-tint-80);
+  text-align: center;
 }
 
 .featured-work__timer {
   width: 50%;
+  margin-inline: auto;
   height: 2px;
-  background: var(--color-base-tint-05);
-  margin-block: var(--space-s);
+  background: transparent;
+  margin-block-start: -2rem;
+  margin-block-end: var(--space-l);
+  position: relative;
 }
 
 .featured-work__timer-line {
   height: 100%;
-  background: var(--color-accent);
+  background: var(--color-primary-tint-80);
   width: 0%;
+  /* animation: timer-progress 6s linear forwards; */
   animation: timer-progress 6s linear forwards;
+  position: absolute;
+}
+
+.featured-work:hover .featured-work__timer-line,
+.featured-work[data-paused="true"] .featured-work__timer-line {
+  animation-play-state: paused;
 }
 
 @keyframes timer-progress {
   from {
     width: 0%;
+    left: 50%;
   }
   to {
     width: 100%;
+    left: 0;
   }
 }
 
@@ -89,8 +103,6 @@
   aspect-ratio: 4/3;
   display: flex;
   align-items: center;
-  
-
 }
 
 /* Slide-fade transition for images */
@@ -146,8 +158,15 @@
 
 
 <script setup lang="ts">
-import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
+import { ref, computed, onMounted, onBeforeUnmount, watch } from 'vue'
 import ProjectCard from './ProjectCard.vue'
+
+const props = defineProps({
+  dataPaused: {
+    type: Boolean,
+    default: false
+  }
+})
 
 const { data: featuredWorkItems } = await useAsyncData('featured-work', () => {
   return queryCollection('work')
@@ -193,19 +212,15 @@ const currentClient = computed(() => images.value[currentIndex.value]?.client ??
 const currentProject = computed(() => images.value[currentIndex.value]?.project ?? '')
 const currentPath = computed(() => images.value[currentIndex.value]?.path ?? '/work')
 
-let interval: ReturnType<typeof setInterval> | null = null
-
-onMounted(() => {
-  if (images.value.length > 0) {
-    interval = setInterval(() => {
-      currentIndex.value = (currentIndex.value + 1) % images.value.length
-    }, 6000)
+const nextSlide = () => {
+  if (images.value.length > 0 && !props.dataPaused) {
+    currentIndex.value = (currentIndex.value + 1) % images.value.length
   }
-})
+}
 
-onBeforeUnmount(() => {
-  if (interval) {
-    clearInterval(interval)
+watch(() => props.dataPaused, (newVal) => {
+  if (newVal) {
+    currentIndex.value = 0
   }
 })
 </script>
