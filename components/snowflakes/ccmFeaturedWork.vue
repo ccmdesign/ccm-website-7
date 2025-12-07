@@ -48,12 +48,14 @@
 .featured-work__image-container {
   overflow: hidden;
   padding: var(--space-l);
+  padding-block-end: var(--space-3xl);
   padding-inline: var(--system-padding-edge);
 }
 
 .featured-work__info {
   position: relative;
   padding-inline: var(--system-padding-edge);
+  color: var(--color-primary-tint-80);
 }
 
 .featured-work__timer {
