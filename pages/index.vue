@@ -28,6 +28,7 @@
 .logo-reel {
   padding-inline: var(--system-padding-edge);
   padding-block-end: var(--space-xl);
+  mix-blend-mode: multiply;
 }
 
 </style>

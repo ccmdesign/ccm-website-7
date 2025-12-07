@@ -11,7 +11,7 @@
 
 <script setup lang="ts">
 import { Vector2 } from 'three'
-import { onMounted } from 'vue'
+import { onMounted, onUnmounted } from 'vue'
 import { useLoop } from '@tresjs/core'
 
 const vertexShader = `
@@ -26,6 +26,7 @@ const fragmentShader = `
 varying vec2 vUv;
 uniform float iTime;
 uniform vec2 iResolution;
+uniform vec2 uMouse;
 
 #define filmGrainIntensity 0.05
 
@@ -107,6 +108,24 @@ void main() {
     vec3 layer2 = mix(color4, color1, smoothstep(-.6, .6, (tuv*Rot(radians(-5.))).x));
     
     vec3 color = mix(layer1, layer2, smoothstep(.5, -.3, tuv.y));
+    
+    // Mouse interaction
+    vec2 mouse = uMouse / iResolution;
+    // Fix mouse Y coordinate (standard GLSL UV vs Screen coords)
+    mouse.y = 1.0 - mouse.y; 
+    
+    // Adjust for aspect ratio for correct distance calculation
+    vec2 aspectUV = uv;
+    aspectUV.x *= aspectRatio;
+    vec2 aspectMouse = mouse;
+    aspectMouse.x *= aspectRatio;
+    
+    float dist = distance(aspectUV, aspectMouse);
+    float radius = 0.5; // Radius of influence
+    float interaction = 1.0 - smoothstep(0.0, radius, dist);
+    
+    // Mix white based on interaction
+    color = mix(color, white, interaction * 0.7); // 0.7 intensity
 
     // Apply film grain
     color = color - filmGrainNoise(uv) * filmGrainIntensity;
@@ -118,21 +137,46 @@ void main() {
 const uniforms = {
   iTime: { value: 0 },
   iResolution: { value: new Vector2(1, 1) },
+  uMouse: { value: new Vector2(0, 0) },
 }
+
+const targetMouse = new Vector2(0, 0)
 
 const { onRender } = useLoop()
 
 onRender(({ elapsed }) => {
   uniforms.iTime.value = elapsed
+  
+  // Lerp mouse position for smooth trailing effect
+  const lerpFactor = 0.05 // Adjust speed here
+  uniforms.uMouse.value.lerp(targetMouse, lerpFactor)
 })
+
+const updateMouse = (e: MouseEvent) => {
+  targetMouse.set(e.clientX, e.clientY)
+}
 
 onMounted(() => {
     // Initial size
     if (typeof window !== 'undefined') {
-        uniforms.iResolution.value.set(window.innerWidth, window.innerHeight)
+        const width = window.innerWidth
+        const height = window.innerHeight
+        uniforms.iResolution.value.set(width, height)
+        // Set initial mouse to center
+        targetMouse.set(width / 2, height / 2)
+        uniforms.uMouse.value.set(width / 2, height / 2)
+        
         window.addEventListener('resize', () => {
             uniforms.iResolution.value.set(window.innerWidth, window.innerHeight)
         })
+        window.addEventListener('mousemove', updateMouse)
     }
 })
+
+onUnmounted(() => {
+  if (typeof window !== 'undefined') {
+    window.removeEventListener('mousemove', updateMouse)
+  }
+})
 </script>
+
