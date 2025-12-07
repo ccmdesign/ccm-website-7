@@ -27,7 +27,7 @@ varying vec2 vUv;
 uniform float iTime;
 uniform vec2 iResolution;
 
-#define filmGrainIntensity 0.07
+#define filmGrainIntensity 0.05
 
 mat2 Rot(float a) {
     float s = sin(a);
