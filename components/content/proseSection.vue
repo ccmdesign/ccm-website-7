@@ -49,6 +49,8 @@ const props = defineProps({
   padding-block: var(--_prose-section-padding-block);
   background-color: var(--_prose-section-background-color);
   color: var(--_prose-section-foreground-color);
+
+  &:first-child { padding-block-start: 0; }
 }
 
 .prose-section__content {

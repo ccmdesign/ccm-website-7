@@ -1,23 +1,20 @@
 <template>
-  <ccm-section>
-    <div class="blog-post-container">
-      <ContentRenderer v-if="post" :value="post" class="post-main-content | prose" />
-      <div v-else>
-        <h1>Post not found</h1>
-        <NuxtLink to="/blog">← Back to Blog</NuxtLink>
+    <article class="article | center">
+      <div class="blog-post-container">
+        <ContentRenderer v-if="post" :value="post" class="post-main-content | prose" />
       </div>
-    </div>
-  </ccm-section>
+    </article>
 </template>
 
 <style>
-.blog-post-container {
-  grid-column: 3/11;
-}
+
 </style>
 
 <script setup>
 
+definePageMeta({
+  layout: 'article-layout'
+})
 
 const route = useRoute()
 const { data: post } = await useAsyncData(`blog-${route.params.slug}`, () => {
@@ -37,23 +34,17 @@ useHead({
   ]
 })
 
-// Provide hero data from content frontmatter to layout via shared state
+// Set hero data for layout
 const heroState = useState('hero', () => null)
 if (post.value) {
   heroState.value = {
-    brow: post.value.meta?.brow || 'Blog',
-    title: post.value.title,
-    tagline: post.value.meta?.tagline || post.value.meta?.excerpt || 'Blog Post',
-    date: post.value.meta?.date,
-    author: post.value.meta?.author || 'CCM Design Team',
-    tags: post.value.meta?.tags || [],
-    backgroundColor: 'color-primary-tint-20',
-    size: 'l',
-    hideTopbar: false,
-    hideBottom: true,
-    variant: 'minimal'
+    title: post.value.title || post.value.meta?.title,
+    brow: post.value.brow || post.value.meta?.brow,
+    tagline: post.value.tagline || post.value.meta?.tagline
   }
 }
+
+
 
 </script>
 
