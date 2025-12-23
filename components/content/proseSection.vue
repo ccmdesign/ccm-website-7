@@ -21,7 +21,7 @@
 const props = defineProps({
   size: {
     type: String,
-    default: 'xl'
+    default: 'm'
   },
   backgroundColor: {
     type: String,
@@ -39,7 +39,7 @@ const props = defineProps({
 </script>
 
 <style scoped>
-.prose-section {
+/* .prose-section {
   --_prose-section-padding-block: var(--space-xl);
   --_prose-section-background-color: transparent;
   --_prose-section-foreground-color: var(--color-base);
@@ -62,5 +62,5 @@ const props = defineProps({
 
 .prose-section:nth-child(even) {
   background-color: var(--base-color-02-tint);
-}
+} */
 </style>

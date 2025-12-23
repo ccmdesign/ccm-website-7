@@ -9,23 +9,20 @@
       '--_ccm-hero-background-color': `var(--${backgroundColor})`
     }"
     >
-    <div class="center">
+    
       <div class="ccm-hero__main">
       <slot>
         <hgroup>
-          <span v-if="brow">{{ brow }}</span>
-          <h1>{{ title }}</h1>
-          <p v-if="tagline">{{ tagline }}</p>
+          <!-- <span v-if="brow">{{ brow }}</span> -->
+          <h2 class="h1">{{ title }}</h2>
+          <h3 class="h2" v-if="tagline">{{ tagline }}</h3>
         </hgroup>  
       </slot>
       </div>
-    </div>
 
-    <div class="center">
       <div class="ccm-hero__bottom">
         <slot name="footer" />
       </div>
-    </div>
   </header>
 </template>
 

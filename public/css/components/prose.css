@@ -1,16 +1,19 @@
 .prose {
-
+  --_prose-max-width: 60ch;
   --_prose-space: var(--space-m);
 
   * + * { margin-top: var(--_prose-space); }
   
   :is(h1, h2, h3, h4, h5, h6) {
-    --_prose-space: var(--space-l); 
+    --_prose-space: var(--space-xl); 
     line-height: 1.35;
   } 
 }
 
 .prose {
+  max-width: var(--_prose-max-width);
+  margin-inline: auto;
+
   hgroup {
     h4 ~ h1,
     h4 ~ h2,
@@ -28,9 +31,29 @@
   }
   
   h1, h2, h3, h4, h5, h6 {
-    margin-block-start: var(--space-l);
-    margin-block-end: var(--space-m);
+    margin-block: var(--space-l);
     position: relative;
+  }
+
+  h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
+    transition: all 0.2s ease-in-out;
+
+    &:before {
+      opacity: 0;
+      content: 'link';
+      position: absolute;
+      top: .25em;
+      left: -1.25em;
+      transform: rotate(-45deg);
+      font-family: var(--icon-font);
+      font-size: 75%;
+      color: var(--color-base-tint-10);
+      transition: opacity 0.2s ease-in-out;
+    }
+  }
+
+  h2 {
+    --_prose-space: var(--space-3xl);
   }
 
   h1 > a:hover,
@@ -42,18 +65,9 @@
     text-decoration: none;
 
     &:before {
-      content: 'link';
-      position: absolute;
-      top: .25em;
-      left: -1.25em;
-      transform: rotate(-45deg);
-      font-family: var(--icon-font);
-      font-size: 75%;
-      color: var(--color-base-tint-10);
+      opacity: 1;
     }
   }
-
-  
 
   hr {
     opacity: .2;
@@ -64,6 +78,14 @@
   li + li {
     margin-top: var(--space-3xs);
   }
+
+  a {
+    color: var(--color-primary);
+
+    &:hover {
+      color: var(--color-primary-shade-90);
+    }
+  }
 }
 
 .prose-layout {
@@ -72,9 +94,16 @@
 }
 
 blockquote {
+  --_blockquote-border-width: 4px;
+  --_blockquote-left-indent: var(--space-xl);
+  --_blockquote-border-color: var(--color-primary-tint-80);
+  --_blockquote-vertical-space: var(--space-xl);
   font-style: italic;
-  border-left: 4px solid var(--color-base-tint-10);
-  padding-left: var(--space-s);
-  margin-left: 0;
+  border-left: var(--_blockquote-border-width) solid var(--_blockquote-border-color);
+  padding-left: var(--_blockquote-left-indent);
+  margin-left: calc(var(--_blockquote-left-indent) * -1);
+  color: var(--_blockquote-text-color);
+  margin-block: var(--_blockquote-vertical-space) !important;
+  
   > * { font-size: 125%; }
 }

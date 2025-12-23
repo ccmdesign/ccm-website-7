@@ -1,19 +1,18 @@
-/* Color Values */
+/* Color Values (OKLCH) */
 :root {
-  --hsl-white: 0, 0%, 100%;
-  --hsl-black: 0, 0%, 5%;
-
-  --hsl-red: 347, 58%, 46%;
-  --hsl-yellow: 37, 98%, 53%;
-  --hsl-green: 174, 62%, 47%;
+  --oklch-white: 1 0 0;
+  --oklch-black: 0.10 0 0;
+  --oklch-red: 0.62 0.19 29;
+  --oklch-yellow: 0.98 0.18 99;
+  --oklch-green: 0.80 0.14 161;
 }
 
 /* Solid Colors */
 :root {
-  --color-white: hsl(var(--hsl-white));
-  --color-black: hsl(var(--hsl-black));
+  --color-white: oklch(var(--oklch-white));
+  --color-black: oklch(var(--oklch-black));
 
-  --color-red: hsl(var(--hsl-red));
-  --color-yellow: hsl(var(--hsl-yellow));
-  --color-green: hsl(var(--hsl-green));
+  --color-red: oklch(var(--oklch-red));
+  --color-yellow: oklch(var(--oklch-yellow));
+  --color-green: oklch(var(--oklch-green));
 }

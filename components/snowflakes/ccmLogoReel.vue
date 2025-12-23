@@ -59,9 +59,9 @@ watch(reelClients, () => {
 
 <template>
   <section>
-    <h3 class="h6 | text-align:center margin-block: var(--space-l)">Trusted by</h3>
+    <h3 class="h6 | text-align:center">Trusted by</h3>
     <ul ref="reelRef" class="reel" :class="{ 'reel--scrolling': hasScroll }">
-      <li v-for="client in reelClients" :key="client.key" data-slide-in="from-top">
+      <li v-for="client in reelClients" :key="client.key" data-slide-in="from-bottom">
         <nuxt-link class="reel__link" :to="client.slug ? `/clients/${client.slug}` : '#'" >
           <img 
             v-if="client.logo" 
@@ -87,8 +87,6 @@ section {
 }
 
 .reel {
-  /* max-width: calc(100svw - var(--system-padding-edge) * 2); */
-  /* width: 100svw; */
   justify-content: space-between;
   padding-inline: 0;
   --_reel-gap: var(--space-xl);
@@ -107,7 +105,6 @@ section {
 
 .reel li {
   min-block-size: 80px;
-  /* min-inline-size: 120px; */
   max-inline-size: 160px;
 }
 

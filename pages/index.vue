@@ -13,7 +13,7 @@
   
   <NuxtLayout name="homepage">
     <template #master-layout-hero>
-      <p v-if="hero?.tagline" class="homepage-tagline">{{ hero.tagline }}</p>
+      <h2 v-if="hero?.tagline">{{ hero.tagline }}</h2>
     </template>
 
     <template #master-layout-main>
@@ -38,10 +38,7 @@
   margin-inline-start: auto;
 }
 
-.homepage-tagline {
-  font-size: var(--size-1);
-  line-height: 1.25;
-}
+
 </style>
 
 

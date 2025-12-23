@@ -158,7 +158,7 @@
 
 .button {
   /* Required Values */
-  --_button-text-color:        hsla(var(--_button-text-hsl), 1);
+  --_button-text-color:        var(--color-base-tint-80);
   --_button-padding-block:     var(--space-2xs);
   --_button-padding-inline:    var(--space-s);
 
@@ -232,10 +232,10 @@
 
 .button[data-variant="primary"],
 .button[variant="primary"] {
-  color: white;
+  color: var(--color-white);
   border-width: var(--_button-border-width, 0);
   border-style: var(--_button-border-style, solid);
-  border-color: hsla(var(--_button-hsl), 1);
+  border-color: var(--_button-color);
   --_button-background-color: var(--_button-color);
 }
 

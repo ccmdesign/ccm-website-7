@@ -1,6 +1,6 @@
 <template>
 
-  <ccm-section v-if="blogPosts?.length > 0">
+  <ccm-section v-if="blogPosts?.length > 0" class="padding-bottom:xl">
     <div class="cluster">
       <ccm-chip :active="selectedCategory === 'All Topics'" @click="setCategory('All Topics')">All Topics</ccm-chip>
       <ccm-chip v-if="hasPostsInCategory('Design Strategy')" :active="selectedCategory === 'Design Strategy'" @click="setCategory('Design Strategy')">Design Strategy</ccm-chip>
@@ -27,6 +27,10 @@
 </template>
 
 <style scoped>
+
+.cluster {
+  --_cluster-space: var(--space-s);
+}
 
 .cluster,
 ul { 

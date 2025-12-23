@@ -16,11 +16,15 @@
           {{ formatDate(post?.meta?.date || post?.date, 'MMM d, yyyy') }}
         </p>
         <p v-if="post?.meta?.author || post?.author" class="ccm-post__author">By {{ post?.meta?.author }}</p>
-        <div v-if="post?.meta?.categories?.length" class="cluster">
-          <ccm-chip v-for="category in post?.meta?.categories" :key="category" class="chip">{{ category }}</ccm-chip>
+        <div>
+          <ul v-if="post?.meta?.categories?.length" class="ccm-post__categories | stack">
+            <li v-for="category in post?.meta?.categories" :key="category"><ccm-chip class="chip">{{ category }}</ccm-chip></li>
+          </ul>
         </div>
-        <div v-if="post?.meta?.tags?.length" class="ccm-post__tags | cluster">
-          <ccm-chip v-for="tag in post?.meta?.tags" :key="tag" class="chip">{{ tag }}</ccm-chip>
+        <div>
+          <ul v-if="post?.meta?.tags?.length" class="ccm-post__tags | stack">
+            <li v-for="tag in post?.meta?.tags" :key="tag"><ccm-chip class="chip">{{ tag }}</ccm-chip></li>
+          </ul>
         </div>
       </div>
     </template>
@@ -43,14 +47,24 @@
   line-height: 1.25;
 }
 
+.post-sidebar {
+  text-align: right;
+  padding-right: var(--space-3xl);
+  --_stack-space: var(--space-xl);
+
+}
 
 .post-sidebar,
 .post-main-content {
   padding-bottom: var(--space-3xl);
 }
 
+
+.ccm-post__categories,
 .ccm-post__tags {
-  --_cluster-space: var(--space-xs);
+
+  align-items: flex-end;
+
 }
 
 </style>

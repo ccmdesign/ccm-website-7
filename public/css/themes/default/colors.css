@@ -1,16 +1,24 @@
-/* Color Values */
+/* Color Values (OKLCH) */
 :root {
-  --hsl-base: 217, 81%, 10%;
-  --hsl-primary: 217, 81%, 10%;
-  --hsl-secondary: 182, 43%, 76%;
-  --hsl-accent: 54, 100%, 47%;
+  --oklch-base: 0.21 0.05 257;       /* Dark blue */
+  --oklch-primary: 0.21 0.05 257;    /* Same as base */
+  --oklch-secondary: 0.83 0.04 184;  /* Pale teal */
+  --oklch-accent: 0.82 0.21 104;     /* Saturated yellow */
+}
+
+:root {
+  --oklch-navy-blue: 0.34 0.07 264.5; /* #0B2545 */
+  --oklch-cerulean: 0.69 0.18 231.84;          /* #219ebc */
+  --oklch-mikado-yellow: 0.91 0.21 99.56;      /* #ffb703 */
+  --oklch-mint-cream: 0.972 0.009 152.32;       /* #eef4ed */
 }
 
 /* Solid Colors */
 :root {
-  --color-base: hsl(var(--hsl-base));
-  --color-primary: hsl(var(--hsl-primary));
-  --color-secondary: hsl(var(--hsl-secondary));
-  --color-accent: hsl(var(--hsl-accent));
+  --color-base: oklch(var(--oklch-navy-blue));
+  --color-primary: oklch(var(--oklch-cerulean));
+  --color-secondary: oklch(var(--oklch-mint-cream));
+  --color-accent: oklch(var(--oklch-mikado-yellow));
 }
+
 

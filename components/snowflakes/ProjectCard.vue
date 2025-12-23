@@ -49,9 +49,10 @@
     border-radius: var(--border-radius-l);
     /* border: 2px solid var(--color-primary-tint-10);
     border-top: 40px solid var(--color-primary-tint-10); */
+    box-shadow: var(--shadow-elevation-high);
     
     object-fit: cover;
-    box-shadow: var(--shadow-elevation-high);
+    
     aspect-ratio: 16/9;
   }
 }

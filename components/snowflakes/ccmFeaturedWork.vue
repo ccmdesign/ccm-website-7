@@ -55,8 +55,7 @@
 
 .featured-work__info {
   position: relative;
-  padding-inline: var(--system-padding-edge);
-  color: var(--color-primary-tint-80);
+  color: var(--color-base-tint-80);
   text-align: center;
 }
 
@@ -72,7 +71,7 @@
 
 .featured-work__timer-line {
   height: 100%;
-  background: var(--color-primary-tint-80);
+  background: var(--color-accent);
   width: 0%;
   /* animation: timer-progress 6s linear forwards; */
   animation: timer-progress 6s linear forwards;

@@ -11,7 +11,7 @@
 
   body {
     background-color: #fdfdfd;
-    color: var(--color-black);
+    color: var(--color-base);
   }
 
   h1,
@@ -33,19 +33,19 @@
 
   h1,
   .h1 {
-    font-size: 300%;
+    font-size: var(--size-3);
     line-height: 130%;
-    font-weight: 900;
+    font-weight: 100;
   }
   h2,
   .h2 {
-    font-size: 250%;
+    font-size: var(--size-2);
     line-height: 130%;
-    font-weight: 500;
+    font-weight: 100;
   }
   h3,
   .h3 {
-    font-size: 200%;
+    font-size: var(--size-1);
     line-height: 140%;
     font-weight: 500;
   }

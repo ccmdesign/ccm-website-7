@@ -16,10 +16,10 @@
 
 <style scoped>
 .site-credits-bar {
-  background-color: hsla(var(--hsl-primary), 0.03);
+  background-color: var(--color-base-tint-10);
   padding: var(--space-s) 0;
   font-size: var(--size--2);
-  color: var(--color-primary);
+  color: var(--color-base-tint-80);
 }
 
 .site-credits-content {

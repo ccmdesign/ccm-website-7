@@ -57,7 +57,6 @@
 section {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  margin-inline: var(--system-padding-edge);
   gap: var(--space-xl);
 }
 
@@ -87,7 +86,7 @@ h2 {
 @media (min-width: 769px) {
   .overview {
     display: table;
-    width: calc(100% - var(--system-padding-edge) * 2);
+    width: 100%;
     table-layout: fixed;
     color: var(--color-base-tint-80);
     padding-block: var(--space-3xl);

@@ -100,7 +100,7 @@ function handleClick(event: MouseEvent) {
 }
 
 .chip--active:hover {
-  background-color: var(--color-base-tint-10);
-  border-color: var(--color-base-tint-10);
+  background-color: var(--color-base-tint-80);
+  border-color: var(--color-base-tint-80);
 }
 </style>

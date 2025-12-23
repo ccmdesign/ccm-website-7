@@ -1,11 +1,16 @@
 <template>
   <NuxtLayout name="homepage">
     <template #master-layout-hero>
-      <hgroup>
-        <span v-if="hero?.brow" class="hero-brow">{{ hero.brow }}</span>
-        <h1 v-if="hero?.title" class="hero-title">{{ hero.title }}</h1>
-        <p v-if="hero?.tagline" class="hero-tagline">{{ hero.tagline }}</p>
-      </hgroup>
+      <ccm-hero
+        v-if="hero"
+        :brow="hero.brow"
+        :title="hero.title"
+        :tagline="hero.tagline"
+        :background-color="hero.backgroundColor || 'transparent'"
+        :size="hero.size || 'l'"
+        :hide-bottom="hero.hideBottom !== undefined ? hero.hideBottom : true"
+        :variant="hero.variant || 'default'"
+      />
     </template>
 
     <template #master-layout-main>
@@ -100,24 +105,6 @@ textarea {
   width: auto;
 }
 
-.hero-brow {
-  font-size: var(--size--1);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-weight: 600;
-}
-
-.hero-title {
-  font-size: var(--size-2);
-  line-height: 1.15;
-  font-weight: 100;
-  margin-block: var(--space-s);
-}
-
-.hero-tagline {
-  font-size: var(--size-1);
-  line-height: 1.25;
-}
 
 </style>
 
