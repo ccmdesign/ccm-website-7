@@ -3,27 +3,27 @@
     <template #hero>
       <hgroup>
         <h1 class="ccm-post-hero__title">{{ post?.title || 'Post Title' }}</h1>
-        <p class="ccm-post-hero__tagline">{{ post?.meta?.tagline || post?.tagline || 'Post Tagline' }}</p>
+        <p class="ccm-post-hero__tagline">{{ post?.tagline || 'Post Tagline' }}</p>
       </hgroup>
-      <div v-if="post?.meta?.tldr || post?.tldr" class="tldr">
-        <p>{{ post?.meta?.tldr || post?.tldr }}</p>
+      <div v-if="post?.tldr" class="tldr">
+        <p>{{ post?.tldr }}</p>
       </div>
     </template>
 
     <template #sidebar>
       <div class="post-sidebar | stack">
-        <p v-if="post?.meta?.date || post?.date" class="ccm-post__date">
-          {{ formatDate(post?.meta?.date || post?.date, 'MMM d, yyyy') }}
+        <p v-if="post?.date" class="ccm-post__date">
+          {{ formatDate(post?.date, 'MMM d, yyyy') }}
         </p>
-        <p v-if="post?.meta?.author || post?.author" class="ccm-post__author">By {{ post?.meta?.author }}</p>
+        <p v-if="post?.author" class="ccm-post__author">By {{ post?.author }}</p>
         <div>
-          <ul v-if="post?.meta?.categories?.length" class="ccm-post__categories | stack">
-            <li v-for="category in post?.meta?.categories" :key="category"><ccm-chip class="chip">{{ category }}</ccm-chip></li>
+          <ul v-if="post?.categories?.length" class="ccm-post__categories | stack">
+            <li v-for="category in post?.categories" :key="category"><ccm-chip class="chip">{{ category }}</ccm-chip></li>
           </ul>
         </div>
         <div>
-          <ul v-if="post?.meta?.tags?.length" class="ccm-post__tags | stack">
-            <li v-for="tag in post?.meta?.tags" :key="tag"><ccm-chip class="chip">{{ tag }}</ccm-chip></li>
+          <ul v-if="post?.tags?.length" class="ccm-post__tags | stack">
+            <li v-for="tag in post?.tags" :key="tag"><ccm-chip class="chip">{{ tag }}</ccm-chip></li>
           </ul>
         </div>
       </div>
@@ -87,7 +87,7 @@ const { data: post } = await useAsyncData(`blog-${slugParam}`, async () => {
 useHead({
   title: post.value?.title || 'Blog Post',
   meta: [
-    { name: 'description', content: post.value?.meta?.excerpt || post.value?.meta?.tagline || post.value?.tagline || 'Blog post from CCM Design Team' }
+    { name: 'description', content: post.value?.excerpt || post.value?.tagline || 'Blog post from CCM Design Team' }
   ]
 })
 
@@ -96,9 +96,9 @@ const heroState = useState('hero', () => null)
 if (post.value) {
   heroState.value = {
     title: post.value.title,
-    brow: post.value.meta?.brow || post.value.brow,
-    tagline: post.value.meta?.tagline || post.value.tagline,
-    date: post.value.meta?.date || post.value.date
+    brow: post.value.brow,
+    tagline: post.value.tagline,
+    date: post.value.date
   }
 }
 </script>

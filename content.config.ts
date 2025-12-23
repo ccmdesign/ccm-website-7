@@ -17,7 +17,23 @@ export default defineContentConfig({
       type: 'page',
       source: 'blog/*.md',
       schema: z.object({
-        published: z.boolean().default(true)
+        title: z.string(),
+        slug: z.string().optional(),
+        date: z.string(),
+        author: z.string().default('CCM Design Team'),
+        excerpt: z.string(),
+        published: z.boolean().default(true),
+        brow: z.string().optional(),
+        tagline: z.string().optional(),
+        tldr: z.string().optional(),
+        categories: z.array(z.string()).optional(),
+        tags: z.array(z.string()).optional(),
+        seo_tags: z.array(z.string()).optional(),
+        stage: z.enum(['researcher', 'evaluator', 'decision-maker']).optional(),
+        related_posts: z.array(z.object({
+          slug: z.string(),
+          title: z.string()
+        })).optional()
       })
     }),
     casestudies: defineCollection({

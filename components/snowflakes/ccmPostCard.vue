@@ -1,20 +1,17 @@
 <template>
-  <li class="ccm-post-card">
-    <NuxtLink 
-      :to="to" 
-      :aria-label="`Read post: ${title}`"
-      class="ccm-post-card__link"
-    >
-      <div class="ccm-post-card__content | stack">
-        <h4 class="ccm-post-card__brow" v-if="brow">{{ brow }}</h4>
-        <h3 class="ccm-post-card__title">{{ title }}</h3>
-        <p v-if="renderedTldr" v-html="renderedTldr"></p>
-        <div class="ccm-post-card__categories | cluster | margin-top:l" v-if="categoryList.length > 0">
-          <ccm-chip v-for="category in categoryList" :key="category">{{ category }}</ccm-chip>
+    <details name="post-card" class="ccm-post-card | stack" ref="detailsEl" @toggle="handleToggle">
+      <summary>
+        <h4 class="ccm-post-card__brow" v-if="brow" :title="brow">{{ brow }}</h4>
+        <h3 class="ccm-post-card__title" :title="title">{{ title }}</h3>
+      <time v-if="date" class="ccm-post-card__date">{{ formattedDate }}</time>
+      </summary>
+      <div class="stack">
+        <div v-if="renderedTldr" v-html="renderedTldr"></div>
+        <div>
+          <NuxtLink :to="to" :aria-label="`Read post: ${title}`" class="button" data-size="s">Read more</NuxtLink>
         </div>
       </div>
-    </NuxtLink>
-  </li>
+    </details>
 </template>
 
 <style lang="css" scoped>
@@ -22,17 +19,47 @@
   border-bottom: 1px solid var(--color-base-tint-10);
   position: relative;
   transition: transform 0.2s ease-in-out;
+  padding-block: var(--space-xl);
+  interpolate-size: allow-keywords;
+  scroll-margin-top: var(--space-xl);
 
+  &::details-content {
+    opacity: 0;
+    block-size: 0;
+    overflow: hidden;
+    transition: 
+      opacity 0.3s ease,
+      block-size 0.3s ease,
+      content-visibility 0.3s allow-discrete;
+  }
+
+    &[open]::details-content {
+      opacity: 1;
+      block-size: auto;
+    }
+
+  summary:first-of-type { list-style: none; }
+  
   &:first-child {
     border-top: 1px solid var(--color-base-tint-10);
   }
 
   &:hover {
-    transform: scale(1.02);
-    a { color: var(--color-primary); }
+    transform: scale(1.03);
+    cursor: pointer;
+    .ccm-post-card__read-more { color: var(--color-primary); }
+  }
+
+  .stack {
+    --_stack-space: var(--space-l);
   }
 }
 
+.ccm-post-card:not([open]):has(~ .ccm-post-card[open]),
+.ccm-post-card[open] ~ .ccm-post-card:not([open]) {
+  opacity: 0.2;
+}
+  
 .ccm-post-card__link {
   display: block;
   padding-block: var(--space-2xl);
@@ -64,6 +91,13 @@
   font-size: var(--size-1);
   font-weight: 100;
   --_stack-space: var(--space-2xs);
+}
+
+.ccm-post-card__date {
+  font-size: var(--size--1);
+  color: var(--color-base-tint-40);
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 p {
@@ -101,7 +135,7 @@ p {
 </style>
 
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import MarkdownIt from 'markdown-it'
 
 // Create markdown parser instance once (shared across all component instances)
@@ -116,9 +150,11 @@ const props = withDefaults(defineProps<{
   categories?: string | null
   brow?: string | null
   title: string
-  tldr: string | null
+  tldr?: string | null
+  date?: string | null
 }>(), {
-  tldr: null
+  tldr: null,
+  date: null
 })
 
 const renderedTldr = computed(() => {
@@ -130,6 +166,26 @@ const categoryList = computed(() => {
   if (!props.categories) return []
   return props.categories.split(',').map(cat => cat.trim()).filter(Boolean)
 })
+
+const formattedDate = computed(() => {
+  if (!props.date) return ''
+  return formatDate(props.date)
+})
+
+const detailsEl = ref<HTMLDetailsElement | null>(null)
+
+const handleToggle = (event: Event) => {
+  const target = event.target as HTMLDetailsElement
+  if (target.open && detailsEl.value) {
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        if (detailsEl.value) {
+          detailsEl.value.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        }
+      }, 300)
+    })
+  }
+}
 
 </script>
 

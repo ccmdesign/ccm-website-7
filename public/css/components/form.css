@@ -1,7 +1,7 @@
 :root {
   --_input-font-size: var(--size-0);
-  --_input-padding-block: calc(var(--space-3xs) + var(--_input-border-width));
-  --_input-padding-inline: var(--space-2xs);
+  --_input-padding-block: calc(var(--space-xs) + var(--_input-border-width));
+  --_input-padding-inline: var(--space-m);
   --_input-border-width: 2px;
   --_input-border-style: solid;
   --_input-border-color: var(--color-base-tint-10);
@@ -43,7 +43,7 @@
   }
 
   textarea {
-    height: 200px;
+    min-height: 200px;
   }
 }
 

@@ -1,16 +1,10 @@
 <template>
-  <ccm-section>
-  <div class="switcher">
-    <div class="stack">
-      <h2>Subscribe to Our Insights</h2>
-      <p>Get the latest analysis and design thinking from our team, delivered straight to your inbox. We share practical advice for organizations looking to increase their impact.</p> 
-    </div>
+  <section class="ccm-cta-section">
     <form class="form | stack">
       <input type="email" label="Email" placeholder="Email" />
-      <input type="submit" label="Subscribe" />
+      <div class="button-container"><input type="submit" label="Subscribe" value="Subscribe" class="button" variant="primary" data-size="s"/></div>
     </form>
-  </div>
-</ccm-section>
+  </section>
 </template>
 
 <script setup>
@@ -19,9 +13,15 @@
 
 <style lang="scss" scoped>
 
-.switcher {
-  grid-column: 3/11;
-  display: flex;
+.ccm-cta-section {
+  text-align: right;
+  padding-top: var(--space-3xl);
+
+  .stack {
+    align-items: flex-end;
+  }
+
+  
 }
 
 </style>
