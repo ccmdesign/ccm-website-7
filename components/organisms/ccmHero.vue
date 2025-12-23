@@ -3,18 +3,12 @@
     class="ccm-hero" 
     :background-color="backgroundColor" 
     :size="size" 
-    :hide-top="hideTop" 
     :hide-bottom="hideBottom" 
-    :hide-topbar="hideTopbar"
     :variant="variant"
     :style="{
       '--_ccm-hero-background-color': `var(--${backgroundColor})`
     }"
     >
-    <div class="center">
-      <ccm-topbar v-if="!hideTopbar" class="ccm-hero__top"/>
-    </div>
-
     <div class="center">
       <div class="ccm-hero__main">
       <slot>
@@ -57,14 +51,6 @@ const props = defineProps({
     type: String,
     default: 'l'
   },
-  hideTop: {
-    type: Boolean,
-    default: false
-  },
-  hideTopbar: {
-    type: Boolean,
-    default: false
-  },
   hideBottom: {
     type: Boolean,
     default: true
@@ -106,7 +92,6 @@ const props = defineProps({
   padding-bottom: var(--_ccm-hero-padding-block);
 }
 
-.ccm-hero[hide-top="true"] .ccm-hero__top { display: none; }
 .ccm-hero[hide-bottom="true"] .ccm-hero__bottom { display: none; }
 
 .ccm-hero[variant="minimal"] .ccm-hero__main { aspect-ratio: unset; }

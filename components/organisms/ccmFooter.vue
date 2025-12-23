@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <div class="footer__grid center padding-bottom:3xl">
+    
       <!-- Sections navigation -->
       <div class="footer__col stack">
         <h3 class="footer__heading">Sections</h3>
@@ -34,65 +34,50 @@
         <p>Did you like what you see? Feel free to contact us if you are starting a new project, fixing an old one, just wanna say hi.</p>
         <p><ccm-button to="/contact/" color="accent" variant="primary" size="s">Contact</ccm-button></p>
       </div>
-    </div>
+    
 
     <!-- Site credits -->
-    <div class="site-credits-bar">
-      <div class="site-credits-content">
-        <span>
-          <nuxt-link class="by-line links" to="/terms" title="Terms of Use">Terms of Use</nuxt-link> |
-          <nuxt-link class="by-line links" to="/privacy" title="Privacy Policy">Privacy</nuxt-link>
-        </span>
-        <nuxt-link class="by-line" href="http://ccmdesign.ca" target="_blank" rel="noreferrer" title="Website design and development by ccm.design">by ccm.design<span class="sr-only"> (opens in new tab)</span></nuxt-link>
-      </div>
-    </div>
+    
   </footer>
 </template>
 
-<script setup>
-import { useRoute, useRouter, computed } from '#imports'
 
-const route = useRoute()
-const router = useRouter()
-
-// Primary navigation links (same as top‑bar)
-const topbarNavLinks = [
-  { to: '/about', label: 'About' },
-  { to: '/work', label: 'Work' },
-  { to: '/services', label: 'Services' },
-  { to: '/contact', label: 'Contact' },
-]
-
-// Filter to only include routes that actually exist
-const allRoutes = router.getRoutes()
-const navLinks = computed(() => topbarNavLinks.filter(link => allRoutes.some(r => r.path === link.to)))
-
-const props = defineProps({
-  backgroundColor: { type: String, default: 'transparent' },
-  size: { type: String, default: 'l' }
-})
-</script>
 
 <style scoped>
+
+.footer {
+  display: grid;
+  grid-template-columns: minmax(1rem, auto) 1fr minmax(1rem, auto);
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: ". col1 ."
+                       ". col2 ."
+                       ". col3 ."
+                       ". col4 .";
+
+  @media (min-width: 960px) {
+    grid-template-columns: minmax(1rem, auto) repeat(12, minmax(6ch, 9ch)) minmax(1rem, auto);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: ". col1 col1 col1 col2 col2 col2 col3 col3 col3 col4 col4 col4 .";
+  }
+}
+
+.footer__col:first-child { grid-area: col1; }
+.footer__col:nth-child(2) { grid-area: col2; }
+.footer__col:nth-child(3) { grid-area: col3; }
+.footer__col:last-child { grid-area: col4; }
+
+.footer__col {
+  padding-bottom: var(--space-xl);
+  @media (min-width: 960px) {
+    padding-inline-end: var(--space-xl);
+  }
+}
+
 .footer {
   background-color: hsla(var(--hsl-primary), 0.03);
   color: var(--color-primary);
   padding-top: var(--space-2xl);
-}
-
-.footer__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: var(--space-xl);
-  max-width: var(--max-content-width);
-  margin: 0 auto;
-  padding: var(--space-m) var(--space-2xl) var(--space-2xl);
-}
-
-.footer__col {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-s);
+  @media (min-width: 960px) { padding-bottom: var(--space-3xl); }
 }
 
 .footer__heading {
@@ -125,42 +110,28 @@ p {
   line-height: 1.5;
   color: var(--color-primary);
 }
-
-.site-credits-bar {
-  background-color: hsla(var(--hsl-primary), 0.03);
-  padding: var(--space-s) 0;
-  font-size: var(--size--2);
-  color: var(--color-primary);
-}
-
-.site-credits-content {
-  max-width: var(--max-content-width);
-  margin: 0 auto;
-  padding: 0 var(--space-m);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.site-credits-content a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.site-credits-content a:hover {
-  color: var(--color-white);
-}
-
-@media (max-width: 768px) {
-  .footer__grid {
-    grid-template-columns: 1fr;
-    gap: var(--space-l);
-  }
-  
-  .site-credits-content {
-    flex-direction: column;
-    gap: var(--space-xs);
-    text-align: center;
-  }
-}
 </style>
+
+<script setup>
+  import { useRoute, useRouter, computed } from '#imports'
+  
+  const route = useRoute()
+  const router = useRouter()
+  
+  // Primary navigation links (same as top‑bar)
+  const topbarNavLinks = [
+    { to: '/about', label: 'About' },
+    { to: '/work', label: 'Work' },
+    { to: '/services', label: 'Services' },
+    { to: '/contact', label: 'Contact' },
+  ]
+  
+  // Filter to only include routes that actually exist
+  const allRoutes = router.getRoutes()
+  const navLinks = computed(() => topbarNavLinks.filter(link => allRoutes.some(r => r.path === link.to)))
+  
+  const props = defineProps({
+    backgroundColor: { type: String, default: 'transparent' },
+    size: { type: String, default: 'l' }
+  })
+  </script>

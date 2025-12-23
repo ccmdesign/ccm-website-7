@@ -7,7 +7,6 @@
 
 <script setup>
 definePageMeta({
-  layout: 'minimal',
   hero: {
     brow: 'Case Studies',
     title: 'Work',

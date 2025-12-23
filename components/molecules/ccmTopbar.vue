@@ -40,23 +40,15 @@ const isActiveRoute = (linkPath) => {
 .topbar {
   align-items: baseline;
   padding-block: var(--space-m);
-  justify-content: center;
 }
 
 .topbar__title {
-  
-  /* margin-inline: auto;
-  @media (min-width: 960px) {
-    margin-inline-start: 0; 
-  } */
-
-
+  @media (max-width: 600px) { margin-inline: auto; }
   img { block-size: 1.5rem; }
-
-  * { text-decoration: none; }
 }
 
 nav {
+  @media (max-width: 600px) { margin-inline: auto; }
   @media (min-width: 600px) {
     margin-inline-start: auto;
   }
@@ -64,7 +56,6 @@ nav {
 
 .menu {
   --_cluster-space: var(--space-xl);
-
   list-style: none;
   padding-inline: 0;
   margin-block: 0;
@@ -94,4 +85,22 @@ nav {
 }
 
 li:not(:first-child) .menu__item { padding-inline-start: var(--space-xs); }
+
+
+.menu-item[aria-active="true"],
+.menu-item.current-page {
+  position: relative;
+  
+  &::after {
+    transition: width 0.3s ease-in-out;
+    content: '';
+    width: 50%;
+    height: 4px;
+    background-color: var(--color-accent);
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+  }
+}
+
 </style>

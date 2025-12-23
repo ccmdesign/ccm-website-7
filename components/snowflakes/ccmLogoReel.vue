@@ -87,11 +87,11 @@ section {
 }
 
 .reel {
-  max-width: calc(100svw - var(--system-padding-edge) * 2);
-  width: 100svw;
+  /* max-width: calc(100svw - var(--system-padding-edge) * 2); */
+  /* width: 100svw; */
   justify-content: space-between;
   padding-inline: 0;
-  --_reel-gap: var(--space-2xl);
+  --_reel-gap: var(--space-xl);
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE/Edge */
 }

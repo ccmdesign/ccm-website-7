@@ -7,9 +7,6 @@
       :service="service"
     />
   </ccm-section>
-
-  <ccm-logo-reel class="logo-reel" />
-  
 </template>
 
 <style scoped>

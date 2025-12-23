@@ -150,7 +150,9 @@ const { data: workItem } = await useAsyncData(`work-${slugParam}`, () => {
 const heroState = useState('hero', () => null)
 if (workItem.value) {
   heroState.value = {
-    tagline: workItem.value.description || workItem.value.title || 'Work'
+    brow: workItem.value.client || 'Work',
+    title: workItem.value.title || 'Project',
+    tagline: workItem.value.description || workItem.value.tagline || ''
   }
 }
 

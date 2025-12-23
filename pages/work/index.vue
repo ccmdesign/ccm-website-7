@@ -49,6 +49,8 @@ button[aria-active] {
 <script setup>
 definePageMeta({
   hero: {
+    brow: 'Portfolio',
+    title: 'Our Work',
     tagline: 'We use design, data, and emerging tech to help our clients stay clear and connected as the world changes',
     typewriterWords: ['Strategy', 'Design', 'Engineering', 'Data', 'Artificial Intelligence']
   }

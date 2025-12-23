@@ -66,10 +66,7 @@ button[aria-active] {
 
 <script setup>
 definePageMeta({
-  hero: {
-    tagline: 'We use design, data, and emerging tech to help our clients stay clear and connected as the world changes',
-    typewriterWords: ['Strategy', 'Design', 'Engineering', 'Data', 'Artificial Intelligence']
-  }
+  layout: 'default'
 })
 
 const route = useRoute()
@@ -78,6 +75,16 @@ const clientSlug = Array.isArray(route.params.slug) ? route.params.slug.join('/'
 const { data: client } = await useAsyncData(`client-${clientSlug}`, () => {
   return queryCollection('clients').path(`/clients/${clientSlug}`).first()
 })
+
+// Set hero data dynamically based on client
+const heroState = useState('hero', () => null)
+if (client.value) {
+  heroState.value = {
+    brow: 'Client',
+    title: client.value.name || 'Our Clients',
+    tagline: client.value.description || 'We use design, data, and emerging tech to help our clients stay clear and connected as the world changes'
+  }
+}
 
 const { data: workItems } = await useAsyncData(`work-items-${clientSlug}`, () => {
   return queryCollection('work')

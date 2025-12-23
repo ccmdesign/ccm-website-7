@@ -8,7 +8,10 @@
 <script setup>
 definePageMeta({
   hero: {
-    tagline: 'Terms of Use'
+    brow: 'Legal',
+    title: 'Terms of Use',
+    tagline: 'Terms and conditions for using our website and services',
+    variant: 'minimal'
   }
 })
 </script>

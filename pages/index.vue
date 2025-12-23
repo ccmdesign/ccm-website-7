@@ -9,9 +9,17 @@
     :quadrant="quadrant"
     :opacity="gradientOpacity"
   />
-  <typewriter-effect class="typewriter" :words="['Strategy', 'Design', 'Engineering', 'Data', 'Artificial Intelligence']" />
-  <ccm-featured-work class="featured-work" data-slide-in="from-top" />
-  <ccm-logo-reel class="logo-reel" />
+  <!-- <typewriter-effect class="typewriter" :words="['Strategy', 'Design', 'Engineering', 'Data', 'Artificial Intelligence']" /> -->
+  
+  <NuxtLayout name="homepage">
+    <template #master-layout-hero>
+      <p v-if="hero?.tagline" class="homepage-tagline">{{ hero.tagline }}</p>
+    </template>
+
+    <template #master-layout-main>
+      <ccm-featured-work class="featured-work" data-slide-in="from-top" />
+    </template>
+  </NuxtLayout>
 </template>
 
 <style scoped>
@@ -30,19 +38,29 @@
   margin-inline-start: auto;
 }
 
-.logo-reel {
-  padding-inline: var(--system-padding-edge);
-  padding-block-end: var(--space-xl);
-  mix-blend-mode: multiply;
+.homepage-tagline {
+  font-size: var(--size-1);
+  line-height: 1.25;
 }
 </style>
 
 
 <script setup lang="ts">
+definePageMeta({
+  layout: false,
+  hero: {
+    tagline: 'We use design, data, and emerging tech to help our clients stay clear and connected as the world changes',
+    typewriterWords: ['Strategy', 'Design', 'Engineering', 'Data', 'Artificial Intelligence']
+  }
+})
+
+const hero = useHeroContent()
+
+
 // Helper functions for color conversion
 function hexToRgb(hex: string): string {
   const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex)
-  if (!result) return '0, 0, 0'
+  if (!result || !result[1] || !result[2] || !result[3]) return '0, 0, 0'
   return `${parseInt(result[1], 16)}, ${parseInt(result[2], 16)}, ${parseInt(result[3], 16)}`
 }
 
@@ -79,11 +97,6 @@ const gradientColors = computed(() => ({
   interactive: hexToRgb(interactiveHex.value)
 }))
 
-definePageMeta({
-  hero: {
-    tagline: 'We use design, data, and emerging tech to help our clients stay clear and connected as the world changes',
-    typewriterWords: ['Strategy', 'Design', 'Engineering', 'Data', 'Artificial Intelligence']
-  }
-})
+
 </script>
 

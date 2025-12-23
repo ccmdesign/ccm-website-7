@@ -85,6 +85,7 @@ function handleClick(event: MouseEvent) {
   transition: all 0.2s ease;
   font-family: inherit;
   box-shadow: var(--shadow-elevation-low);
+  text-transform: capitalize;
 }
 
 .chip:hover {

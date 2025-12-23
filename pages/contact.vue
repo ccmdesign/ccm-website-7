@@ -1,5 +1,15 @@
 <template>
-  <form class="form | stack" @submit.prevent="handleSubmit" action="https://formspree.io/f/mnnarojy" method="POST">
+  <NuxtLayout name="homepage">
+    <template #master-layout-hero>
+      <hgroup>
+        <span v-if="hero?.brow" class="hero-brow">{{ hero.brow }}</span>
+        <h1 v-if="hero?.title" class="hero-title">{{ hero.title }}</h1>
+        <p v-if="hero?.tagline" class="hero-tagline">{{ hero.tagline }}</p>
+      </hgroup>
+    </template>
+
+    <template #master-layout-main>
+      <form class="form | stack" @submit.prevent="handleSubmit" action="https://formspree.io/f/mnnarojy" method="POST">
     
     <div class="form-content">
       <div class="stack">
@@ -24,8 +34,9 @@
     </fieldset>
     <div v-if="success" class="form-message success">Thanks for reaching out! We'll get back to you soon.</div>
     <div v-if="error" class="form-message error">Something went wrong. Please try again.</div>
-  </form>
-  <ccm-logo-reel class="logo-reel" />
+      </form>
+    </template>
+  </NuxtLayout>
 </template>
 
 
@@ -40,13 +51,15 @@
 }
 
 .form-content {
-  @media (min-width: 800px) {
+  gap: var(--space-m);
+}
+
+@media (min-width: 800px) {
+  .form-content {
     columns: 2;
   }
-  gap: var(--space-m);
   
-  
-  > * { 
+  .form-content > * { 
     height: 100%;
   }
 }
@@ -68,10 +81,11 @@ input,
 textarea {
   width: 100%;
   padding: var(--space-l);
+}
 
-  &::placeholder {
-    color: var(--color-base-tint-40);
-  }
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-base-tint-40);
 }
 
 textarea {
@@ -84,18 +98,41 @@ textarea {
 }
 .button {
   width: auto;
-  
+}
+
+.hero-brow {
+  font-size: var(--size--1);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.hero-title {
+  font-size: var(--size-2);
+  line-height: 1.15;
+  font-weight: 100;
+  margin-block: var(--space-s);
+}
+
+.hero-tagline {
+  font-size: var(--size-1);
+  line-height: 1.25;
 }
 
 </style>
 
 <script setup>
 definePageMeta({
+  layout: false,
   hero: {
+    brow: 'Contact',
+    title: 'Get in Touch',
     tagline: 'We use design, data, and emerging tech to help our clients stay clear and connected as the world changes',
     typewriterWords: ['Strategy', 'Design', 'Engineering', 'Data', 'Artificial Intelligence']
   }
 })
+
+const hero = useHeroContent()
 
 const contact = reactive({
   name: '',

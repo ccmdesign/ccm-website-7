@@ -36,14 +36,16 @@ ul {
 </style>
 
 <script setup>
+
 import { ref, computed } from 'vue';
 
 definePageMeta({
+  layout: 'default',
+
   hero: {
     brow: 'Blog',
     title: 'Insights',
     tagline: 'Insights on Design, Data, and Social Impact',
-    backgroundColor: 'color-accent',
   }
 })
 

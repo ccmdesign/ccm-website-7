@@ -8,7 +8,10 @@
 <script setup>
 definePageMeta({
   hero: {
-    tagline: 'Privacy Policy'
+    brow: 'Legal',
+    title: 'Privacy Policy',
+    tagline: 'How we collect, use, and protect your personal information',
+    variant: 'minimal'
   }
 })
 </script>

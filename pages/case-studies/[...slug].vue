@@ -13,7 +13,7 @@
 
 <script setup>
 definePageMeta({
-  layout: 'work-layout'
+  layout: 'default'
 })
 
 const route = useRoute()
