@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import ShaderGradient from '~/components/snowflakes/ShaderGradient.vue'
+import ShaderGradient from '~/components/explorations/ShaderGradient.vue'
 </script>
 
 <style scoped>

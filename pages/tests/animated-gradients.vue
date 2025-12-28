@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import animatedGradient from '~/components/animatedGradient.vue'
+import animatedGradient from '~/components/explorations/animatedGradient.vue'
 
 definePageMeta({
   layout: 'default'
