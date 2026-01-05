@@ -50,4 +50,34 @@ items:
     image: /assets/portfolio/idrc/idrc-fogo-80-81.png
     title: Fogo Report
     caption: Pages 80-81
+  - type: image
+    mockupType: editorial
+    image: /assets/portfolio/idrc/idrc-fogo-1.jpg
+    title: Fogo Report
+    caption: Additional View 1
+  - type: image
+    mockupType: editorial
+    image: /assets/portfolio/idrc/idrc-fogo-2.jpg
+    title: Fogo Report
+    caption: Additional View 2
+  - type: image
+    mockupType: editorial
+    image: /assets/portfolio/idrc/idrc-fogo-3.jpg
+    title: Fogo Report
+    caption: Additional View 3
+  - type: image
+    mockupType: editorial
+    image: /assets/portfolio/idrc/idrc-fogo-4.jpg
+    title: Fogo Report
+    caption: Additional View 4
+  - type: image
+    mockupType: editorial
+    image: /assets/portfolio/idrc/idrc-fogo-5.jpg
+    title: Fogo Report
+    caption: Additional View 5
+  - type: image
+    mockupType: editorial
+    image: /assets/portfolio/idrc/idrc-fogo-6.jpg
+    title: Fogo Report
+    caption: Additional View 6
 ---
