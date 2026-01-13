@@ -14,6 +14,10 @@ export default defineNuxtConfig({
   ],
   runtimeConfig: {
     public: {
+      siteUrl: 'https://ccmdesign.com',
+      siteName: 'CCM Design',
+      siteDescription: 'Insights on Design, Data, and Social Impact',
+      siteAuthor: 'CCM Design Team'
     }
   },
   app: {
@@ -26,6 +30,8 @@ export default defineNuxtConfig({
         { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" },
         // project styles
         { rel: "stylesheet", href: "/css/styles.css" },
+        // RSS feed
+        { rel: "alternate", type: "application/rss+xml", title: "CCM Design RSS Feed", href: "/feed.xml" },
       ],
       script: [],
     }
@@ -48,7 +54,7 @@ export default defineNuxtConfig({
     preset: 'static',
     prerender: {
       crawlLinks: true,
-      routes: ['/'],
+      routes: ['/', '/feed.xml'],
       ignore: [
         '/blog/**',
         '/blog',
