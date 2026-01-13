@@ -29,9 +29,17 @@
   h1, h2 {
     font-weight: 100;
   }
+
+  h3 a {
+    font-weight: 500;
+  }
+
+  h2 { font-size: var(--size-1); }
+  h3 { font-size: calc(var(--size-0) * 1.1); }
   
   h1, h2, h3, h4, h5, h6 {
-    margin-block: var(--space-l);
+    margin-top: var(--space-2xl);
+    margin-bottom: var(--space-m);
     position: relative;
   }
 
@@ -105,5 +113,9 @@ blockquote {
   color: var(--_blockquote-text-color);
   margin-block: var(--_blockquote-vertical-space) !important;
   
-  > * { font-size: 125%; }
+  > * { 
+    /* font-size: 125%;  */
+    list-style: none;
+
+  }
 }

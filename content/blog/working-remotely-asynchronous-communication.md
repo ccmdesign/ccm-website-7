@@ -30,10 +30,6 @@ published: true
 
 
 
-# Working remotely: How Asynchronous Communication Improves Remote Working Environments
-
-*Published: February 21, 2024*
-
 Asynchronous communication will make your team think, execute, and communicate in a more intentional, cohesive, and productive way.
 
 Good communication is the key to improving the productivity of your remote team.

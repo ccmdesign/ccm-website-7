@@ -5,7 +5,7 @@ client-slug: meta
 description: Annual report design showcasing Meta's research initiatives and social impact programs.
 tags: [editorial]
 services: ['publication-in-30-days']
-published: true
+published: false
 featured: true
 order: 21
 year:

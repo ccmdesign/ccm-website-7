@@ -7,6 +7,7 @@ tags: [web]
 services: ['web-design']
 published: true
 order: 29
+projectUrl: https://bfna-indopacific.netlify.app/
 items:
   - type: image
     mockupType: web

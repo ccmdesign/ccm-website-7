@@ -30,10 +30,6 @@ published: true
 
 
 
-# Maximizing Impact: How Editorial Design Elevates Non-Profit Publications and Reports
-
-*Published: November 22, 2023*
-
 Do you run a non-profit? You've probably wondered how to stand out in the market, attracting the attention of potential donors and supporters to your project.
 
 You may have tried countless alternatives, but one very effective way can make all the difference to your organization, helping you achieve your goals and maximize the impact of your publications and reports. The name? Editorial Design.

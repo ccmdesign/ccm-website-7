@@ -73,7 +73,7 @@ For each of these items, at the very first stages of a product, the 80/20 approa
 
 1- Make it work to close to 100% (aka fix the most critical bugs) 2- Invest in a better UX, and here we are talking about repeating the process and identifying the UX methods that will give us the best ROI for the remaining 20% for the least amount of effort? 3- Invest in updating the look and feel.
 
-# Conclusion
+## Conclusion
 
 UX is a nice buzzword and of utmost importance, but it makes more sense to lean heavily on best practices instead of following all the shiny new things about UX for most products, especially in their early stages.
 

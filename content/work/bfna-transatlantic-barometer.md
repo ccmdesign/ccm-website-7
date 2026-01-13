@@ -8,6 +8,7 @@ services: ['interface-design-and-development', 'design-subscription']
 published: true
 featured: true
 order: 8
+projectUrl: https://www.transatlanticbarometer.org/
 year:
 items:
   - type: image

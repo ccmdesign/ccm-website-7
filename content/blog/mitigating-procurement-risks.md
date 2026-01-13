@@ -30,10 +30,6 @@ published: true
 
 
 
-# Mitigating Procurement Risks
-
-*Published: February 15, 2024*
-
 How do you develop a detailed RFP for a need that you still know little about, i.e., if you don't understand what features a solution needs to offer? You will find a simple solution here.
 
 ## Mitigating Procurement Risks in Creative Services

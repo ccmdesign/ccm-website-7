@@ -6,7 +6,7 @@ description: Comprehensive design system enabling team autonomy and product cons
 tags: [web, branding]
 services: ['branding', 'interface-design-and-development']
 published: true
-order: 1
+order: 5
 year:
 items:
   - type: image

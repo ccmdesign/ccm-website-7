@@ -2,7 +2,7 @@
 title: Federalism in Crisis
 client: Bertelsmann Foundation
 client-slug: bfna
-description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sequi molestias, animi quisquam, commodi ad inventore similique temporibus voluptatibus ab provident, assumenda minima alias. Assumenda incidunt velit adipisci labore repellendus.
+description: Editorial design comparing U.S. and German federal responses to the COVID-19 pandemic.
 tags: [editorial]
 services: ['publication-in-30-days', 'design-subscription']
 published: true
@@ -25,7 +25,7 @@ items:
   title: Federalism in Crisis
   caption: A study of the federalism in crisis
 - type: text
-  content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sequi molestias, animi quisquam, commodi ad inventore similique temporibus voluptatibus ab provident, assumenda minima alias. Assumenda incidunt velit adipisci labore repellendus.
+  content: The design system uses a color transition strategy—shifting from American red, white, and blue to German black, red, and gold—to visually represent the comparative analysis as readers progress through the publication.
 - type: image
   mockupType: editorial
   image: /assets/portfolio/bfna/bfna-federalism-in-crisis-54-55.png
@@ -47,7 +47,7 @@ items:
   title: Federalism in Crisis
   caption: A study of the federalism in crisis
 - type: text
-  content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sequi molestias, animi quisquam, commodi ad inventore similique temporibus voluptatibus ab provident, assumenda minima alias. Assumenda incidunt velit adipisci labore repellendus.
+  content: Part of the Bertelsmann Foundation's Newpolitik initiative, this publication explores how structural, institutional, and political characteristics of the U.S. and German federal systems shaped their contrasting pandemic responses.
   heading: h4
 - type: image
   mockupType: editorial

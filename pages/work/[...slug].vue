@@ -1,16 +1,17 @@
 <template>
 
-<section class="overview">
-  <div class="overview-row">
-    <div class="project-title">{{ workItem?.title }}</div>
-    <div class="project-tags">{{ workItem?.tags?.join(', ') }}</div>
-  </div>
-  <div class="overview-row">
-    <div class="border-top project-client">{{ workItem?.client }}</div>
-    <div class="border-top project-year">{{ workItem?.year }}</div>
-  </div>
+  <section class="overview">
+    <div class="overview-row">
+      <div class="project-title">{{ workItem?.title }}</div>
+      <div class="project-tags">{{ workItem?.tags?.join(', ') }}</div>
+    </div>
+    <div class="overview-row">
+      <div class="border-top project-client">{{ workItem?.client }}</div>
+      <div class="border-top project-year">{{ workItem?.year }}</div>
+    </div>
+  </section>
 
-</section>
+  <div class="stack">
   <section v-if="firstImage" class="first-image">
     <project-card class="grid-9"
       :image="firstImage.image || null"
@@ -19,7 +20,6 @@
 
     <p class="grid-3">{{ workItem?.description }}</p>
   </section>
-
 
   <section v-if="brandingImages.length > 0">
     <project-card class="grid-6"
@@ -51,6 +51,14 @@
       :mockupType="imageItem.mockupType || null"
     />
   </section>
+  </div>
+
+  <nav v-if="nextProject" class="next-project">
+    <NuxtLink :to="nextProject.path" class="next-project-link">
+      <span class="next-label">Next</span>
+      <span class="next-title">{{ nextProject.title }}</span>
+    </NuxtLink>
+  </nav>
 </template>
 
 <style scoped>
@@ -67,6 +75,9 @@ h2 {
   margin-block-end: var(--space-2xl);
 }
 
+.stack {
+  --_stack-space: var(--space-3xl);
+}
 
 @media (max-width: 768px) {
   .overview {
@@ -135,7 +146,41 @@ h2 {
   .grid-3 { grid-column: span 3; }
 }
 
+section:last-of-type {
+  margin-block-end: var(--space-3xl);
+}
 
+.next-project {
+  display: flex;
+  justify-content: center;
+  padding-block: var(--space-3xl);
+  border-top: 1px solid var(--color-base-tint-10);
+}
+
+.next-project-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2xs);
+  text-decoration: none;
+  color: var(--color-base-tint-60);
+  transition: color 0.2s ease;
+}
+
+.next-project-link:hover {
+  color: var(--color-base);
+}
+
+.next-label {
+  font-size: var(--size--2);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.next-title {
+  font-size: var(--size-1);
+  font-weight: 200;
+}
 </style>
 
 <script setup>
@@ -180,9 +225,22 @@ const editorialImages = computed(() => {
 
 const webImages = computed(() => {
   const first = firstImage.value
-  return imageItems.value.filter((item) => 
+  return imageItems.value.filter((item) =>
     item.mockupType === 'web' && item !== first
   )
+})
+
+const { data: allProjects } = await useAsyncData('all-work', () => {
+  return queryCollection('work').where('published', '=', true).order('order', 'ASC').all()
+})
+
+const nextProject = computed(() => {
+  if (!allProjects.value || !workItem.value) return null
+  const currentPath = workItem.value.path
+  const currentIndex = allProjects.value.findIndex(p => p.path === currentPath)
+  if (currentIndex === -1) return null
+  const nextIndex = (currentIndex + 1) % allProjects.value.length
+  return allProjects.value[nextIndex]
 })
 </script>
 

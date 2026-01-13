@@ -30,10 +30,6 @@ published: true
 
 
 
-# Headings for academics: 3 fields idea
-
-*Published: December 6, 2023*
-
 After working with researchers for years, I've discovered some exciting things about the optimal size of document headings.
 
 What's the first thing that catches your eye when you see a newspaper article or an academic paper? I'm pretty sure you answered "the title," didn't you?

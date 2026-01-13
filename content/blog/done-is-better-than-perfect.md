@@ -30,10 +30,6 @@ published: true
 
 
 
-# Done is Better than Perfect and the Nature of the Web
-
-*Published: August 23, 2023*
-
 The art of avoiding weedless perfectionism and embracing continuous improvement
 
 ## Introduction

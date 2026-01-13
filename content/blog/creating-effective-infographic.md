@@ -30,10 +30,6 @@ published: true
 
 
 
-# Creating an Effective Infographic
-
-*Published: October 26, 2023*
-
 Behind every great infographic lies strategy, design, and a powerful narrative.
 
 ## TL;DR:

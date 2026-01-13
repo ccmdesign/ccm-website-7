@@ -30,10 +30,6 @@ published: true
 
 
 
-# User-Centred Design for Digital Government
-
-*Published: June 30, 2023*
-
 Making Life Easier for Citizens
 
 ## Introduction

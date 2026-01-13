@@ -30,10 +30,6 @@ published: true
 
 
 
-# How accessibility and SEO go together
-
-*Published: August 9, 2023*
-
 Making your website accessible boosts engagement and raise your SEO rankings.
 
 Having a website that works for all users and ranks high in search engines may seem complicated. But improving accessibility and SEO don't have to be at odds! This article will explain how making your site accessible can also make it SEO-friendly.

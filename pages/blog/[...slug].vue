@@ -1,12 +1,14 @@
 <template>
   <NuxtLayout name="master-layout-sidebar-main">
     <template #hero>
-      <hgroup>
-        <h1 class="ccm-post-hero__title">{{ post?.title || 'Post Title' }}</h1>
-        <p class="ccm-post-hero__tagline">{{ post?.tagline || 'Post Tagline' }}</p>
-      </hgroup>
-      <div v-if="post?.tldr" class="tldr">
-        <p>{{ post?.tldr }}</p>
+      <div class="center">
+        <hgroup>
+          <h1 class="ccm-post-hero__title">{{ post?.title || 'Post Title' }}</h1>
+          <p class="ccm-post-hero__tagline">{{ post?.tagline || 'Post Tagline' }}</p>
+        </hgroup>
+        <div v-if="post?.tldr" class="tldr">
+          <MDC :value="post?.tldr" />
+        </div>
       </div>
     </template>
 
@@ -37,7 +39,7 @@
 
 <style>
 .ccm-post-hero__title {
-  font-size: var(--size-3);
+  font-size: var(--size-2);
   line-height: 1.15;
   font-weight: 100;
 }

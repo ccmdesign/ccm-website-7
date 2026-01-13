@@ -30,10 +30,6 @@ published: true
 
 
 
-# Beyond the Monolith: Unlocking Digital Potential with JAMstack
-
-*Published: September 6, 2023*
-
 Break free of the constraints of legacy CMSs and step into a flexible future with JAMstack.
 
 ## Part 2: How Global Brands Are Embracing JAMstack

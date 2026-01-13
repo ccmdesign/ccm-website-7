@@ -16,7 +16,7 @@
 /* Solid Colors */
 :root {
   --color-base: oklch(var(--oklch-navy-blue));
-  --color-primary: oklch(var(--oklch-cerulean));
+  --color-primary: oklch(var(--oklch-navy-blue));
   --color-secondary: oklch(var(--oklch-mint-cream));
   --color-accent: oklch(var(--oklch-mikado-yellow));
 }

@@ -30,10 +30,6 @@ published: true
 
 
 
-# Design Systems - Business Advantages
-
-*Published: August 16, 2023*
-
 Medium and Long-term benefits of a Design System
 
 ---

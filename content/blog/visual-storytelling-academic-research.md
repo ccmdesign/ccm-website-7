@@ -30,10 +30,6 @@ published: true
 
 
 
-# The Art of Visual Storytelling in Academic Research
-
-*Published: May 6, 2024*
-
 Understand how to communicate messages, narratives, and information from your research using visual elements to reach your audience on a deep and lasting level.
 
 As a researcher, you want your research to reach more people, both in the academic community and outside it, a wider audience.

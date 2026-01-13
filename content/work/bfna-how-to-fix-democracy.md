@@ -7,7 +7,7 @@ tags: [web]
 services: ['interface-design-and-development', 'design-subscription']
 published: true
 featured: true
-order: 5
+order: 1
 year:
 items:
   - type: image
@@ -16,11 +16,6 @@ items:
     image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-1.png
     title: How to Fix Democracy
     caption: Platform homepage
-  - type: image
-    mockupType: web
-    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-2.png
-    title: How to Fix Democracy
-    caption: Platform redesign
   - type: image
     mockupType: web
     image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-3.png

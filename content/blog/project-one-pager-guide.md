@@ -30,10 +30,6 @@ published: true
 
 
 
-# The project one-pager: how to make
-
-*Published: January 23, 2024*
-
 An elevator pitch on paper
 
 So, you've decided to write a one-pager for your research or institution. You probably know that a one-pager is promotional material and even has a few key points to include. But writing a one-pager is more challenging than it sounds.

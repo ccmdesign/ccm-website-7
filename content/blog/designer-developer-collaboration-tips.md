@@ -30,10 +30,6 @@ published: true
 
 
 
-# 5 Tips to Improve Designer-Developer Collaboration in Small Teams
-
-*Published: January 9, 2024*
-
 Boost collaboration between designers and developers by promoting open communication and clear project requirements.
 
 One thing is sure when creating digital products: the success of a project depends on collaboration between designers and developers.

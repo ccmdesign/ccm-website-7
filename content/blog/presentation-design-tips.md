@@ -30,10 +30,6 @@ published: true
 
 
 
-# Presentation Design: Tips for designing better presentations
-
-*Published: April 18, 2024*
-
 Find out which types of presentation are best to use, finding a balance between visual appeal and usability to improve results.
 
 Whether presenting updates at a board meeting, documenting information internally, or sharing a new strategic proposal— **presentation design is important**
