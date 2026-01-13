@@ -1,30 +1,58 @@
 <template>
   <section class="ccm-cta-section">
     <form
-      action="https://claudiomendonca.us2.list-manage.com/subscribe/post?u=468ffb5e21f0082332ecdd5f3&amp;id=eaa305764b&amp;f_id=0074d8e3f0"
-      method="post"
-      target="_blank"
       class="form | stack"
+      @submit.prevent="handleSubmit"
     >
       <input
+        v-model="email"
         type="email"
         name="EMAIL"
         placeholder="Email"
         required
+        :disabled="subscribed"
+        :class="{ subscribed }"
       />
-      <!-- Honeypot field to prevent bot signups -->
-      <div aria-hidden="true" style="position: absolute; left: -5000px;">
-        <input type="text" name="b_468ffb5e21f0082332ecdd5f3_eaa305764b" tabindex="-1" value="">
-      </div>
       <div class="button-container">
-        <input type="submit" name="subscribe" value="Subscribe" class="button" variant="primary" data-size="s"/>
+        <input
+          type="submit"
+          name="subscribe"
+          :value="subscribed ? 'Subscribed' : 'Subscribe'"
+          class="button"
+          variant="primary"
+          data-size="s"
+          :disabled="subscribed"
+        />
       </div>
     </form>
   </section>
 </template>
 
 <script setup>
+import { ref } from 'vue'
 
+const email = ref('')
+const subscribed = ref(false)
+
+async function handleSubmit() {
+  if (!email.value || subscribed.value) return
+
+  const url = `https://claudiomendonca.us2.list-manage.com/subscribe/post-json?u=468ffb5e21f0082332ecdd5f3&id=eaa305764b&f_id=0074d8e3f0&EMAIL=${encodeURIComponent(email.value)}&c=callback`
+
+  // JSONP approach for cross-origin Mailchimp requests
+  const callbackName = `mc_callback_${Date.now()}`
+
+  window[callbackName] = () => {
+    subscribed.value = true
+    email.value = 'Subscribed'
+    delete window[callbackName]
+    document.body.removeChild(script)
+  }
+
+  const script = document.createElement('script')
+  script.src = url.replace('c=callback', `c=${callbackName}`)
+  document.body.appendChild(script)
+}
 </script>
 
 <style lang="scss" scoped>
