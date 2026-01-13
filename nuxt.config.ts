@@ -48,7 +48,14 @@ export default defineNuxtConfig({
     preset: 'static',
     prerender: {
       crawlLinks: true,
-      routes: ['/']
+      routes: ['/'],
+      ignore: [
+        '/blog/**',
+        '/blog',
+        '/layouts/**',
+        '/layouts'
+      ],
+      failOnError: false
     }
   },
   components: [
