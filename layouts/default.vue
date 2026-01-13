@@ -72,7 +72,6 @@ const hero = useHeroContent()
 }
 
 .master-layout__main {
-  grid-column: subgrid;
   grid-area: main;
 }
 </style>
