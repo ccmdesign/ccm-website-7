@@ -18,6 +18,7 @@
     "@tresjs/nuxt": "^5.1.1",
     "@types/markdown-it": "^14.1.2",
     "axios": "^1.9.0",
+    "better-sqlite3": "^12.6.0",
     "date-fns": "^4.1.0",
     "dotenv": "^16.5.0",
     "eslint": "^9.25.1",
