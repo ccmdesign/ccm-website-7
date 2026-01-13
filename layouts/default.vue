@@ -12,6 +12,7 @@
             :size="hero.size || 'l'"
             :hide-bottom="hero.hideBottom !== undefined ? hero.hideBottom : true"
             :variant="hero.variant || 'default'"
+            class="hero"
           />
         </slot>
       </div>
@@ -73,5 +74,9 @@ const hero = useHeroContent()
 
 .master-layout__main {
   grid-area: main;
+}
+
+.hero {
+  --_ccm-hero-max-height: unset;
 }
 </style>

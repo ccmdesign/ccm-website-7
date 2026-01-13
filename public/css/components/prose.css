@@ -104,7 +104,7 @@
 blockquote {
   --_blockquote-border-width: 4px;
   --_blockquote-left-indent: var(--space-xl);
-  --_blockquote-border-color: var(--color-primary-tint-80);
+  --_blockquote-border-color: var(--color-accent-tint-80);
   --_blockquote-vertical-space: var(--space-xl);
   font-style: italic;
   border-left: var(--_blockquote-border-width) solid var(--_blockquote-border-color);
@@ -113,9 +113,13 @@ blockquote {
   color: var(--_blockquote-text-color);
   margin-block: var(--_blockquote-vertical-space) !important;
   
-  > * { 
-    /* font-size: 125%;  */
-    list-style: none;
+  :last-child { 
+    
+  }
 
+  ul, li, cite {
+    list-style: none;
+    padding-left: 0;
+    font-size: 85%; 
   }
 }

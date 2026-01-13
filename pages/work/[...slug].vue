@@ -1,64 +1,65 @@
 <template>
-
-  <section class="overview">
-    <div class="overview-row">
-      <div class="project-title">{{ workItem?.title }}</div>
-      <div class="project-tags">{{ workItem?.tags?.join(', ') }}</div>
-    </div>
-    <div class="overview-row">
-      <div class="border-top project-client">{{ workItem?.client }}</div>
-      <div class="border-top project-year">{{ workItem?.year }}</div>
-    </div>
-  </section>
+  <ccmContentOverview :borderBottom="true">
+    <template #top-left>
+      <span class="project-title">{{ workItem?.title }}</span>
+    </template>
+    <template #top-right>
+      <span class="project-tags">{{ workItem?.tags?.join(', ') }}</span>
+    </template>
+    <template #bottom-left>
+      <span class="project-client">{{ workItem?.client }}</span>
+    </template>
+    <template #bottom-right>
+      <span class="project-year">{{ workItem?.year }}</span>
+    </template>
+  </ccmContentOverview>
 
   <div class="stack">
-  <section v-if="firstImage" class="first-image">
-    <project-card class="grid-9"
-      :image="firstImage.image || null"
-      :mockupType="firstImage.mockupType || null"
-    />
+    <section v-if="firstImage" class="first-image">
+      <project-card class="grid-9"
+        :image="firstImage.image || null"
+        :mockupType="firstImage.mockupType || null"
+      />
+      <p class="grid-3">{{ workItem?.description }}</p>
+    </section>
 
-    <p class="grid-3">{{ workItem?.description }}</p>
-  </section>
+    <section v-if="brandingImages.length > 0">
+      <project-card class="grid-6"
+        v-for="(imageItem, index) in brandingImages"
+        :key="index"
+        :to="workItem?.path || workItem?._path || `/work/${slugParam}`"
+        :brow="workItem?.client"
+        :title="imageItem.title || workItem?.title"
+        :tagline="imageItem.caption || workItem?.description"
+        :image="imageItem.image || null"
+        :mockupType="imageItem.mockupType || null"
+      />
+    </section>
 
-  <section v-if="brandingImages.length > 0">
-    <project-card class="grid-6"
-      v-for="(imageItem, index) in brandingImages" 
-      :key="index" 
-      :to="workItem?.path || workItem?._path || `/work/${slugParam}`"
-      :brow="workItem?.client" 
-      :title="imageItem.title || workItem?.title" 
-      :tagline="imageItem.caption || workItem?.description"
-      :image="imageItem.image || null"
-      :mockupType="imageItem.mockupType || null"
-    />
-  </section>
+    <section v-if="editorialImages.length > 0">
+      <project-card class="grid-6"
+        v-for="(imageItem, index) in editorialImages"
+        :key="index"
+        :image="imageItem.image || null"
+        :mockupType="imageItem.mockupType || null"
+      />
+    </section>
 
-  <section v-if="editorialImages.length > 0">
-    <project-card class="grid-6"
-      v-for="(imageItem, index) in editorialImages" 
-      :key="index" 
-      :image="imageItem.image || null"
-      :mockupType="imageItem.mockupType || null"
-    />
-  </section>
-
-  <section v-if="webImages.length > 0">
-    <project-card class="grid-6"
-      v-for="(imageItem, index) in webImages" 
-      :key="index" 
-      :image="imageItem.image || null"
-      :mockupType="imageItem.mockupType || null"
-    />
-  </section>
+    <section v-if="webImages.length > 0">
+      <project-card class="grid-6"
+        v-for="(imageItem, index) in webImages"
+        :key="index"
+        :image="imageItem.image || null"
+        :mockupType="imageItem.mockupType || null"
+      />
+    </section>
   </div>
 
-  <nav v-if="nextProject" class="next-project">
-    <NuxtLink :to="nextProject.path" class="next-project-link">
-      <span class="next-label">Next</span>
-      <span class="next-title">{{ nextProject.title }}</span>
-    </NuxtLink>
-  </nav>
+  <ccmNextNavigation
+    v-if="nextProject"
+    :to="nextProject.path"
+    :title="nextProject.title"
+  />
 </template>
 
 <style scoped>
@@ -79,42 +80,6 @@ h2 {
   --_stack-space: var(--space-3xl);
 }
 
-@media (max-width: 768px) {
-  .overview {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-s);
-
-    > * {
-      flex: 1;
-      flex-basis: 0;
-      display: flex;
-      flex-direction: column;
-    }
-  }
-}
-
-@media (min-width: 769px) {
-  .overview {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
-    color: var(--color-base-tint-80);
-    padding-block: var(--space-3xl);
-  }
-  .overview-row {
-    display: table-row;
-  }
-  .overview-row > div {
-    display: table-cell;
-  }
-}
-
-.border-top {
-  border-top: 1px solid var(--color-base-tint-20);
-  padding-block-start: var(--space-s);
-}
-
 .project-title {
   font-size: var(--size-1);
   font-weight: 200;
@@ -123,16 +88,17 @@ h2 {
 .project-client {
   font-size: var(--size--1);
   font-weight: 600;
-  
 }
 
-.project-tags { 
-  @media (min-width: 769px) {text-align: right; }
+.project-tags {
   font-size: var(--size--1);
   font-weight: 400;
   text-transform: capitalize;
 }
 
+.project-year {
+  font-size: var(--size--1);
+}
 
 @media (max-width: 768px) {
   [class*="grid-"] {
@@ -148,38 +114,6 @@ h2 {
 
 section:last-of-type {
   margin-block-end: var(--space-3xl);
-}
-
-.next-project {
-  display: flex;
-  justify-content: center;
-  padding-block: var(--space-3xl);
-  border-top: 1px solid var(--color-base-tint-10);
-}
-
-.next-project-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--space-2xs);
-  text-decoration: none;
-  color: var(--color-base-tint-60);
-  transition: color 0.2s ease;
-}
-
-.next-project-link:hover {
-  color: var(--color-base);
-}
-
-.next-label {
-  font-size: var(--size--2);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-.next-title {
-  font-size: var(--size-1);
-  font-weight: 200;
 }
 </style>
 
@@ -211,14 +145,14 @@ const firstImage = computed(() => {
 
 const brandingImages = computed(() => {
   const first = firstImage.value
-  return imageItems.value.filter((item) => 
+  return imageItems.value.filter((item) =>
     item.mockupType === 'branding' && item !== first
   )
 })
 
 const editorialImages = computed(() => {
   const first = firstImage.value
-  return imageItems.value.filter((item) => 
+  return imageItems.value.filter((item) =>
     item.mockupType === 'editorial' && item !== first
   )
 })
@@ -243,5 +177,3 @@ const nextProject = computed(() => {
   return allProjects.value[nextIndex]
 })
 </script>
-
-

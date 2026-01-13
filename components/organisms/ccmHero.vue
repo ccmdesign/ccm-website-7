@@ -63,13 +63,14 @@ const props = defineProps({
 .ccm-hero {
   --_ccm-hero-padding-block: var(--space-l);
   --_ccm-hero-background-color: var(--color-primary-tint-20);
+  --_ccm-hero-max-height: 600px;
 }
 
 .ccm-hero {
   background-color: var(--_ccm-hero-background-color);
   display: block;
   max-width: 100vw; 
-  max-height: 600px;
+  max-height: var(--_ccm-hero-max-height);
   
 }
 
