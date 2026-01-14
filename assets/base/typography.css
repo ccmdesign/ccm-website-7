@@ -9,106 +9,90 @@
     font-variant-numeric: lining-nums;
   }
 
-  body {
+  :where(body) {
     background-color: #fdfdfd;
     color: var(--color-base);
   }
 
-  h1,
-  .h1,
-  h2,
-  .h2,
-  h3,
-  .h3,
-  h4,
-  .h4,
-  h5,
-  .h5,
-  h6,
-  .h6 {
+  :where(h1, h2, h3, h4, h5, h6),
+  .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: var(--display-font);
     margin-block: 0;
     font-variant-numeric: lining-nums;
   }
 
-  h1,
-  .h1 {
+  :where(h1), .h1 {
     font-size: var(--size-3);
     line-height: 130%;
     font-weight: 100;
   }
-  h2,
-  .h2 {
+
+  :where(h2), .h2 {
     font-size: var(--size-2);
     line-height: 130%;
     font-weight: 100;
   }
-  h3,
-  .h3 {
+
+  :where(h3), .h3 {
     font-size: var(--size-1);
     line-height: 140%;
     font-weight: 500;
   }
-  h4,
-  .h4 {
+
+  :where(h4), .h4 {
     font-size: 160%;
     line-height: 150%;
     font-weight: 500;
   }
-  h5,
-  .h5 {
+
+  :where(h5), .h5 {
     font-size: 120%;
     line-height: 150%;
     font-weight: 500;
   }
-  h6,
-  .h6 {
+
+  :where(h6), .h6 {
     font-size: 100%;
     line-height: 1.62;
     font-weight: 500;
     text-transform: uppercase;
   }
 
-  p, dl, li {
+  :where(p, dl, li) {
     font-size: 100%;
   }
 
-  a:not([class]) {
-    color: var(--color-accent);
+  :where(a:not([class])) {
+    /* color: var(--color-accent); */
     text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
-  a:not([class]):hover {
-    text-decoration: underline;
-  }
-
-  ul:not([class]),
-  ol:not([class]) {
+  :where(ul:not([class]), ol:not([class])) {
     margin-top: 0;
     margin-bottom: var(--space-3xs);
     padding-left: var(--space-s);
   }
 
-  li {
+  :where(li) {
     margin-bottom: 0.5em;
   }
 
-  blockquote {
+  :where(blockquote) {
     margin: 0;
     padding: 0 var(--space-s);
     color: var(--color-base);
     border-left: 0;
   }
 
-  p,
-  li,
-  input,
-  button,
-  a {
+  :where(p, li, input, button, a) {
     font-weight: 400;
   }
 
-  strong {
+  :where(strong) {
     font-weight: 700;
   }
 }

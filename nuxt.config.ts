@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@tresjs/nuxt'
   ],
+  css: ['~/assets/styles.css'],
   runtimeConfig: {
     public: {
       siteUrl: 'https://ccmdesign.com',
@@ -28,8 +29,6 @@ export default defineNuxtConfig({
         // google icons
         { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" },
         { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" },
-        // project styles
-        { rel: "stylesheet", href: "/css/styles.css" },
         // RSS feed
         { rel: "alternate", type: "application/rss+xml", title: "CCM Design RSS Feed", href: "/feed.xml" },
       ],

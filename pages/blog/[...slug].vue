@@ -4,7 +4,7 @@
       <ccmHero class="post-hero">
       <hgroup class="center">
         <div class="stack">
-          <h2 class="h1">{{ post?.title }}</h2>
+          <h1>{{ post?.title }}</h1>
           <h3 class="h2" v-if="post?.tagline">{{ post?.tagline }}</h3>
           <MDC :value="post?.tldr" />
         </div>
@@ -61,6 +61,11 @@
 
 section:last-of-type {
   margin-block-end: var(--space-3xl);
+}
+
+@media (max-width: 768px) {
+  .post-hero h1 { font-size: var(--size-2); }
+  .post-hero h3 { font-size: var(--size-1); }
 }
 </style>
 

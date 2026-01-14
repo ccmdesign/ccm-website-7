@@ -28,7 +28,7 @@ defineProps({
 .top, .bottom {
   display: flex;
   gap: var(--space-3xs);
-  flex-direction: column;
+  flex-direction: row;
   align-items: space-between;
   justify-content: space-between;
 }
@@ -45,12 +45,6 @@ defineProps({
 
 .bottom {
   padding-top: var(--space-s);
-}
-
-
-@media (min-width: 768px) { 
-  .top { flex-direction: row; }
-  .bottom { flex-direction: row; }
 }
 
 </style>

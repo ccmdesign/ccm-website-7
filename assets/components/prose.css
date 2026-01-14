@@ -34,6 +34,7 @@
     font-weight: 500;
   }
 
+  h1 { font-size: var(--size-2); }
   h2 { font-size: var(--size-1); }
   h3 { font-size: calc(var(--size-0) * 1.1); }
   
@@ -41,23 +42,39 @@
     margin-top: var(--space-2xl);
     margin-bottom: var(--space-m);
     position: relative;
+    color: var(--color-base);
   }
 
-  h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-base);
     transition: all 0.2s ease-in-out;
+  }
 
-    &:before {
-      opacity: 0;
-      content: 'link';
-      position: absolute;
-      top: .25em;
-      left: -1.25em;
-      transform: rotate(-45deg);
-      font-family: var(--icon-font);
-      font-size: 75%;
-      color: var(--color-base-tint-10);
-      transition: opacity 0.2s ease-in-out;
-    }
+  h1 > a,
+  h2 > a,
+  h3 > a,
+  h4 > a,
+  h5 > a,
+  h6 > a {
+    color: var(--color-base);
+  }
+
+  h1::before,
+  h2::before,
+  h3::before,
+  h4::before,
+  h5::before,
+  h6::before {
+    opacity: 0;
+    content: 'link';
+    position: absolute;
+    top: .25em;
+    left: -1.25em;
+    transform: rotate(-45deg);
+    font-family: var(--icon-font);
+    font-size: 75%;
+    color: var(--color-base-tint-10);
+    transition: opacity 0.2s ease-in-out;
   }
 
   h2 {
@@ -71,10 +88,16 @@
   h5 > a:hover,
   h6 > a:hover {
     text-decoration: none;
+  }
 
-    &:before {
-      opacity: 1;
-    }
+  /* Show link icon when hovering headings that contain links */
+  h1:has(> a:hover)::before,
+  h2:has(> a:hover)::before,
+  h3:has(> a:hover)::before,
+  h4:has(> a:hover)::before,
+  h5:has(> a:hover)::before,
+  h6:has(> a:hover)::before {
+    opacity: 1;
   }
 
   hr {
@@ -89,10 +112,14 @@
 
   a {
     color: var(--color-primary);
+  }
 
-    &:hover {
-      color: var(--color-primary-shade-90);
-    }
+  a:hover {
+    color: var(--color-primary-shade-90);
+  }
+
+  :is(h1, h2, h3, h4, h5, h6) > a {
+    color: var(--color-base);
   }
 }
 
