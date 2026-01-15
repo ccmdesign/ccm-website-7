@@ -33,7 +33,8 @@ export default defineContentConfig({
         related_posts: z.array(z.object({
           slug: z.string(),
           title: z.string()
-        })).optional()
+        })).optional(),
+        rawbody: z.string().optional()
       })
     }),
     casestudies: defineCollection({
