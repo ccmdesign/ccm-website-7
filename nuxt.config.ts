@@ -32,7 +32,20 @@ export default defineNuxtConfig({
         // RSS feed
         { rel: "alternate", type: "application/rss+xml", title: "CCM Design RSS Feed", href: "/feed.xml" },
       ],
-      script: [],
+      script: [
+        {
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-PWP8CD3WD7',
+          async: true
+        },
+        {
+          innerHTML: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-PWP8CD3WD7');
+          `
+        }
+      ],
     }
   },
   build: {
