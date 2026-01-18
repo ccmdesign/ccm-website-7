@@ -7,7 +7,7 @@
     </h1>
     <nav>
       <ul class="menu | cluster">
-        <li v-for="link in navLinks" :key="link.to" data-slide-in="from-top">
+        <li v-for="link in navLinks" :key="link.to">
           <nuxt-link
             class="menu__item menu-item"
             :to="link.to"
