@@ -55,6 +55,8 @@
   }
 }
 
+
+
 .ccm-post-card:not([open]):has(~ .ccm-post-card[open]),
 .ccm-post-card[open] ~ .ccm-post-card:not([open]) {
   opacity: 0.2;
@@ -124,7 +126,13 @@ p {
     font-style: italic;
   }
 }
-
+.ccm-post-card__brow {
+  font-size: var(--size--1);
+  font-weight: 800;
+  color: var(--color-base-tint-40);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
 .ccm-post-card__categories {
   position: absolute;
   bottom: calc(var(--size--1) * -1 + 4px);

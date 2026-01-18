@@ -1,98 +1,96 @@
-@layer typography {
-  :root {
-    font-family: var(--body-font);
-    font-optical-sizing: auto;
-    font-weight: var(--body-font-weight);
-    font-style: var(--body-font-style);
-    font-size: clamp(1rem, 0.3vw + 0.9rem, 1.5rem);
-    line-height: 1.62;
-    font-variant-numeric: lining-nums;
-  }
+:root {
+  font-family: var(--body-font);
+  font-optical-sizing: auto;
+  font-weight: var(--body-font-weight);
+  font-style: var(--body-font-style);
+  font-size: clamp(1rem, 0.3vw + 0.9rem, 1.5rem);
+  line-height: 1.62;
+  font-variant-numeric: lining-nums;
+}
 
-  :where(body) {
-    background-color: #fdfdfd;
-    color: var(--color-base);
-  }
+:where(body) {
+  background-color: #fdfdfd;
+  color: var(--color-base);
+}
 
-  :where(h1, h2, h3, h4, h5, h6),
-  .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: var(--display-font);
-    margin-block: 0;
-    font-variant-numeric: lining-nums;
-  }
+:where(h1, h2, h3, h4, h5, h6),
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: var(--display-font);
+  margin-block: 0;
+  font-variant-numeric: lining-nums;
+}
 
-  :where(h1), .h1 {
-    font-size: var(--size-3);
-    line-height: 130%;
-    font-weight: 100;
-  }
+:where(h1), .h1 {
+  font-size: var(--size-3);
+  line-height: 130%;
+  font-weight: 100;
+}
 
-  :where(h2), .h2 {
-    font-size: var(--size-2);
-    line-height: 130%;
-    font-weight: 100;
-  }
+:where(h2), .h2 {
+  font-size: var(--size-2);
+  line-height: 130%;
+  font-weight: 100;
+}
 
-  :where(h3), .h3 {
-    font-size: var(--size-1);
-    line-height: 140%;
-    font-weight: 500;
-  }
+:where(h3), .h3 {
+  font-size: var(--size-1);
+  line-height: 140%;
+  font-weight: 500;
+}
 
-  :where(h4), .h4 {
-    font-size: 160%;
-    line-height: 150%;
-    font-weight: 500;
-  }
+:where(h4), .h4 {
+  font-size: 160%;
+  line-height: 150%;
+  font-weight: 500;
+}
 
-  :where(h5), .h5 {
-    font-size: 120%;
-    line-height: 150%;
-    font-weight: 500;
-  }
+:where(h5), .h5 {
+  font-size: 120%;
+  line-height: 150%;
+  font-weight: 500;
+}
 
-  :where(h6), .h6 {
-    font-size: 100%;
-    line-height: 1.62;
-    font-weight: 500;
-    text-transform: uppercase;
-  }
+:where(h6), .h6 {
+  font-size: 100%;
+  line-height: 1.62;
+  font-weight: 500;
+  text-transform: uppercase;
+}
 
-  :where(p, dl, li) {
-    font-size: 100%;
-  }
+:where(p, dl, li) {
+  font-size: 100%;
+}
 
-  :where(a:not([class])) {
-    /* color: var(--color-accent); */
-    text-decoration: none;
+:where(a:not([class])) {
+  /* color: var(--color-accent); */
+  text-decoration: none;
 
-    &:hover {
-      text-decoration: underline;
-    }
+  &:hover {
+    text-decoration: underline;
   }
+}
 
-  :where(ul:not([class]), ol:not([class])) {
-    margin-top: 0;
-    margin-bottom: var(--space-3xs);
-    padding-left: var(--space-s);
-  }
+:where(ul:not([class]), ol:not([class])) {
+  margin-top: 0;
+  margin-bottom: var(--space-3xs);
+  padding-left: var(--space-s);
+}
 
-  :where(li) {
-    margin-bottom: 0.5em;
-  }
+:where(li) {
+  margin-bottom: 0.5em;
+}
 
-  :where(blockquote) {
-    margin: 0;
-    padding: 0 var(--space-s);
-    color: var(--color-base);
-    border-left: 0;
-  }
+:where(blockquote) {
+  margin: 0;
+  padding: 0 var(--space-s);
+  color: var(--color-base);
+  border-left: 0;
+}
 
-  :where(p, li, input, button, a) {
-    font-weight: 400;
-  }
+:where(p, li, input, button, a) {
+  font-weight: 400;
+}
 
-  :where(strong) {
-    font-weight: 700;
-  }
+:where(strong) {
+  font-weight: 700;
 }
