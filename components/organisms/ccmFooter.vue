@@ -24,7 +24,7 @@
       <!-- Let's Talk -->
       <div class="footer__col stack">
         <h3 class="footer__heading">Let's Talk</h3>
-        <p>Did you like what you see? Feel free to contact us if you are starting a new project, fixing an old one, just wanna say hi.</p>
+        <p>Did you like what you see? Feel free to contact us if you are starting a new project, fixing an old one, or just wanna say hi.</p>
         <p><ccm-button to="/contact/" color="accent" variant="primary" size="s">Contact</ccm-button></p>
       </div>
     
