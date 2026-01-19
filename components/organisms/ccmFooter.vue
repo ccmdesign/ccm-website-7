@@ -14,13 +14,6 @@
         </nav>
       </div>
 
-      <!-- About ccm.design -->
-      <div class="footer__col stack">
-        <h3 class="footer__heading">About ccm.design</h3>
-        <p>Our team have over fifteen years of experience designing brand identities, online experiences and digital products.</p>
-        <p><ccm-button to="/about" color="accent" size="s">Learn About Us</ccm-button></p>
-      </div>
-
       <!-- Careers -->
       <div class="footer__col stack">
         <h3 class="footer__heading">Careers</h3>
@@ -120,7 +113,6 @@ p {
   
   // Primary navigation links (same as top‑bar)
   const topbarNavLinks = [
-    { to: '/about', label: 'About' },
     { to: '/work', label: 'Work' },
     { to: '/services', label: 'Services' },
     { to: '/contact', label: 'Contact' },
