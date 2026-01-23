@@ -76,7 +76,5 @@ const hero = useHeroContent()
   grid-area: main;
 }
 
-.hero {
-  --_ccm-hero-max-height: unset;
-}
+
 </style>

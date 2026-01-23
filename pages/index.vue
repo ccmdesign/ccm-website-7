@@ -34,10 +34,14 @@
 }
 
 .featured-work {
-  max-width: 800px;
+  max-width: 700px;
   margin-inline-start: auto;
+  aspect-ratio: 1;
 }
 
+h2 {
+  padding-block: var(--space-2xl);
+}
 
 </style>
 
