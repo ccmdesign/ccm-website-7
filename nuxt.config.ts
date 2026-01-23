@@ -62,13 +62,6 @@ export default defineNuxtConfig({
   build: {
     transpile: ['vue-carousel'],
   },
-  vite: {
-    server: {
-      watch: {
-        ignored: ['**/_archive/**'],
-      },
-    },
-  },
   plugins: [
 
   ],
@@ -94,12 +87,23 @@ export default defineNuxtConfig({
     plugins: {
       'postcss-import': {},
       'postcss-preset-env': {
-        stage: 1,
+        stage: 2,
+        autoprefixer: { grid: 'autoplace' },
         features: {
           'nesting-rules': true,
           'cascade-layers': false
         }
       }
     }
-  }
+  },
+  vite: {
+    server: {
+      watch: {
+        ignored: ['**/_archive/**'],
+      },
+    },
+    build: {
+      target: 'es2020'
+    }
+  },
 })

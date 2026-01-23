@@ -23,10 +23,23 @@
   flex-direction: column;
   max-width: 100%;
 
-  field-group:has(label) {
+  /* Fallback: always show flex layout for field-group */
+  field-group {
     display: flex;
     flex-direction: row;
     width: 100%;
+  }
+
+  /* Modern browsers: only apply when field-group has label */
+  @supports selector(:has(*)) {
+    field-group:not(:has(label)) {
+      display: block;
+    }
+    field-group:has(label) {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
   }
 
   label {

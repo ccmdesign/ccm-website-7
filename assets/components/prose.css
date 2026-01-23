@@ -91,13 +91,26 @@
   }
 
   /* Show link icon when hovering headings that contain links */
-  h1:has(> a:hover)::before,
-  h2:has(> a:hover)::before,
-  h3:has(> a:hover)::before,
-  h4:has(> a:hover)::before,
-  h5:has(> a:hover)::before,
-  h6:has(> a:hover)::before {
+  /* Fallback: show icon on direct link hover (works without :has()) */
+  h1 > a:hover ~ ::before,
+  h2 > a:hover ~ ::before,
+  h3 > a:hover ~ ::before,
+  h4 > a:hover ~ ::before,
+  h5 > a:hover ~ ::before,
+  h6 > a:hover ~ ::before {
     opacity: 1;
+  }
+
+  /* Modern browsers with :has() support */
+  @supports selector(:has(*)) {
+    h1:has(> a:hover)::before,
+    h2:has(> a:hover)::before,
+    h3:has(> a:hover)::before,
+    h4:has(> a:hover)::before,
+    h5:has(> a:hover)::before,
+    h6:has(> a:hover)::before {
+      opacity: 1;
+    }
   }
 
   hr {

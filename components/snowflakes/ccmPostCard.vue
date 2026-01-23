@@ -55,11 +55,19 @@
   }
 }
 
+/* Fallback for browsers without :has() */
+@supports not selector(:has(*)) {
+  .ccm-post-card[open] ~ .ccm-post-card:not([open]) {
+    opacity: 0.2;
+  }
+}
 
-
-.ccm-post-card:not([open]):has(~ .ccm-post-card[open]),
-.ccm-post-card[open] ~ .ccm-post-card:not([open]) {
-  opacity: 0.2;
+/* Modern browsers with :has() support */
+@supports selector(:has(*)) {
+  .ccm-post-card:not([open]):has(~ .ccm-post-card[open]),
+  .ccm-post-card[open] ~ .ccm-post-card:not([open]) {
+    opacity: 0.2;
+  }
 }
   
 .ccm-post-card__link {

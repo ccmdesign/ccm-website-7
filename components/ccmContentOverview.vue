@@ -33,9 +33,15 @@ defineProps({
   justify-content: space-between;
 }
 
-.top > :deep(*:only-child),
-.bottom:has(:only-child) {
+.top > :deep(*:only-child) {
   justify-content: center;
+}
+
+/* Modern browsers with :has() support */
+@supports selector(:has(*)) {
+  .bottom:has(:only-child) {
+    justify-content: center;
+  }
 }
 
 .top {
