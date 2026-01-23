@@ -1,5 +1,6 @@
 <template>
   <div class="master-layout">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <ccm-topbar class="master-layout__topbar" />
       <div class="master-layout__hero" v-if="$slots['master-layout-hero'] || hero">
         <slot name="master-layout-hero">
@@ -17,7 +18,7 @@
         </slot>
       </div>
     
-    <main class="master-layout__main">
+    <main id="main-content" class="master-layout__main">
       <slot v-if="$slots['master-layout-main']" name="master-layout-main" />
       <slot v-else />
     </main>

@@ -239,6 +239,10 @@
   --_button-background-color: var(--_button-color);
 }
 
+.button:focus-visible {
+  outline: 2px solid var(--color-primary, currentColor);
+  outline-offset: 2px;
+}
 
 /* 
 Colors

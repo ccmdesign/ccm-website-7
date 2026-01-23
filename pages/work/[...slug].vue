@@ -125,6 +125,18 @@ const { data: workItem } = await useAsyncData(`work-${slugParam}`, () => {
   return queryCollection('work').path(`/work/${slugParam}`).first()
 })
 
+const config = useRuntimeConfig()
+useSeoMeta({
+  title: workItem.value?.title ? `${workItem.value.title} - ${config.public.siteName}` : config.public.siteName,
+  description: workItem.value?.description || workItem.value?.tagline || config.public.siteDescription,
+  ogTitle: workItem.value?.title || config.public.siteName,
+  ogDescription: workItem.value?.description || workItem.value?.tagline || config.public.siteDescription,
+  ogImage: workItem.value?.items?.[0]?.image,
+  ogUrl: workItem.value?.path ? `${config.public.siteUrl}${workItem.value.path}` : config.public.siteUrl,
+  ogType: 'website',
+  twitterCard: 'summary_large_image'
+})
+
 const heroState = useState('hero', () => null)
 if (workItem.value) {
   heroState.value = {

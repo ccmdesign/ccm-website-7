@@ -37,8 +37,8 @@
     <fieldset class="form-actions">
       <ccm-button type="submit" :disabled="submitting" variant="primary">Send</ccm-button>
     </fieldset>
-    <div v-if="success" class="form-message success">Thanks for reaching out! We'll get back to you soon.</div>
-    <div v-if="error" class="form-message error">Something went wrong. Please try again.</div>
+    <div v-if="success" class="form-message success" role="status" aria-live="polite">Thanks for reaching out! We'll get back to you soon.</div>
+    <div v-if="error" class="form-message error" role="alert" aria-live="assertive">Something went wrong. Please try again.</div>
       </form>
     </template>
   </NuxtLayout>
@@ -120,6 +120,17 @@ definePageMeta({
 })
 
 const hero = useHeroContent()
+
+const config = useRuntimeConfig()
+useSeoMeta({
+  title: `Contact - ${config.public.siteName}`,
+  description: 'Get in touch with CCM Design. We use design, data, and emerging tech to help our clients stay clear and connected as the world changes.',
+  ogTitle: `Contact - ${config.public.siteName}`,
+  ogDescription: 'Get in touch with CCM Design. We use design, data, and emerging tech to help our clients stay clear and connected as the world changes.',
+  ogUrl: `${config.public.siteUrl}/contact`,
+  ogType: 'website',
+  twitterCard: 'summary'
+})
 
 const contact = reactive({
   name: '',

@@ -85,3 +85,17 @@
   white-space: nowrap;
   border-width: 0;
 }
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  z-index: 9999;
+  padding: 1em;
+  background: var(--color-base);
+  color: var(--color-white);
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}

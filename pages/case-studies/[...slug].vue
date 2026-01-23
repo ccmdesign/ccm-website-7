@@ -22,6 +22,18 @@ const { data: caseStudy } = await useAsyncData(`case-study-${slugParam}`, () => 
   return queryCollection('casestudies').path(`/case-studies/${slugParam}`).first()
 })
 
+const config = useRuntimeConfig()
+useSeoMeta({
+  title: caseStudy.value?.title ? `${caseStudy.value.title} - ${config.public.siteName}` : config.public.siteName,
+  description: caseStudy.value?.tagline || caseStudy.value?.description || config.public.siteDescription,
+  ogTitle: caseStudy.value?.title || config.public.siteName,
+  ogDescription: caseStudy.value?.tagline || caseStudy.value?.description || config.public.siteDescription,
+  ogImage: caseStudy.value?.image || caseStudy.value?.featuredImage,
+  ogUrl: caseStudy.value?.path ? `${config.public.siteUrl}${caseStudy.value.path}` : config.public.siteUrl,
+  ogType: 'article',
+  twitterCard: 'summary_large_image'
+})
+
 // Provide hero data from content front-matter (if present) to layout via shared state
 const heroState = useState('hero', () => null)
 if (caseStudy.value) {

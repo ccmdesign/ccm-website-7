@@ -57,6 +57,15 @@ definePageMeta({
 
 const hero = useHeroContent()
 
+const config = useRuntimeConfig()
+useSeoMeta({
+  title: config.public.siteName,
+  description: config.public.siteDescription,
+  ogTitle: config.public.siteName,
+  ogDescription: config.public.siteDescription,
+  ogUrl: config.public.siteUrl,
+  twitterCard: 'summary_large_image'
+})
 
 // Helper functions for color conversion
 function hexToRgb(hex: string): string {

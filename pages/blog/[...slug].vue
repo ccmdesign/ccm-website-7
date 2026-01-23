@@ -83,12 +83,17 @@ const { data: post } = await useAsyncData(`blog-${slugParam}`, async () => {
   return await queryCollection('blog').path(`/blog/${slugParam}`).first()
 })
 
-// Set page title
-useHead({
+// Set SEO meta tags
+const config = useRuntimeConfig()
+useSeoMeta({
   title: post.value?.title || 'Blog Post',
-  meta: [
-    { name: 'description', content: post.value?.excerpt || post.value?.tagline || 'Blog post from CCM Design Team' }
-  ]
+  description: post.value?.excerpt || post.value?.tagline || 'Blog post from CCM Design Team',
+  ogTitle: post.value?.title || 'Blog Post',
+  ogDescription: post.value?.excerpt || post.value?.tagline || 'Blog post from CCM Design Team',
+  ogImage: post.value?.featuredImage || post.value?.image,
+  ogUrl: post.value?.path ? `${config.public.siteUrl}${post.value.path}` : config.public.siteUrl,
+  ogType: 'article',
+  twitterCard: 'summary_large_image'
 })
 
 // Get all published blog posts for next post navigation

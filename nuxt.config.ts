@@ -10,9 +10,16 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxt/content',
-    '@tresjs/nuxt'
+    '@tresjs/nuxt',
+    '@nuxtjs/seo'
   ],
   css: ['~/assets/styles.css'],
+  site: {
+    url: 'https://ccmdesign.com',
+    name: 'CCM Design',
+    description: 'Insights on Design, Data, and Social Impact',
+    defaultLocale: 'en'
+  },
   runtimeConfig: {
     public: {
       siteUrl: 'https://ccmdesign.com',
@@ -21,8 +28,12 @@ export default defineNuxtConfig({
       siteAuthor: 'CCM Design Team'
     }
   },
+  ogImage: {
+    enabled: false
+  },
   app: {
     head: {
+      htmlAttrs: { lang: 'en' },
       meta: [
         { name: "viewport", content: "width=device-width, initial-scale=1" },],
       link: [
