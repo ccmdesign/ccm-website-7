@@ -2,8 +2,10 @@
 title: Design To Streamline Your Foundation's Digital Products
 slug: design-streamline-foundation-digital-products
 brow: Design & Digital Strategy
-tagline: Ensure your digital products are not only visually appealing but also effective, user-friendly, and impactful
-date: "2026-01-18"
+tagline: >-
+  Ensure your digital products are not only visually appealing but also
+  effective, user-friendly, and impactful
+date: '2026-01-18'
 author: CCM Design Team
 categories:
   - Digital Experience & Websites
@@ -24,9 +26,19 @@ seo_tags:
   - nonprofit-digital-products
   - foundation-design-impact
   - digital-nonprofit-strategy
-excerpt: Transform your foundation's digital products with strategic design that balances visual appeal with functionality. Professional design increases nonprofit credibility by 85% and enhances audience engagement significantly.
-tldr: Strategic design transforms foundation digital products beyond visual appeal to functional, user-friendly tools that build credibility and engagement. Professional design creates strong first impressions, maintains consistent brand identity, improves user experience, and increases organizational impact and reach through more accessible and engaging content.
+excerpt: >-
+  Transform your foundation's digital products with strategic design that
+  balances visual appeal with functionality. Professional design increases
+  nonprofit credibility by 85% and enhances audience engagement significantly.
+tldr: >-
+  Strategic design transforms foundation digital products beyond visual appeal
+  to functional, user-friendly tools that build credibility and engagement.
+  Professional design creates strong first impressions, maintains consistent
+  brand identity, improves user experience, and increases organizational impact
+  and reach through more accessible and engaging content.
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

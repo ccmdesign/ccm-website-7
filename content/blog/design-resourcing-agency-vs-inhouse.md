@@ -1,8 +1,8 @@
 ---
-title: "A Strategic Resourcing Guide"
+title: A Strategic Resourcing Guide
 slug: design-resourcing-agency-vs-inhouse
 brow: Agency vs. In-House Design
-date: "2025-02-25"
+date: '2025-02-25'
 author: CCM Design Team
 categories:
   - Content Operations & Strategy
@@ -12,17 +12,30 @@ tags:
   - design agency vs freelancer
   - hybrid design model
   - creative operations strategy
-excerpt: Compare total costs, IP risks, and workflows of design agencies, in-house teams, and freelancers to find the right model for your organization.
-tldr: |-
-  *   **It’s not just about hourly rates:** While freelancers appear cheapest ($50-$150/hr), they carry the highest "management tax" and operational risk. In-house teams offer brand intimacy but come with fixed overheads often exceeding $500k/year for a full unit.
-  *   **The IP trap is real:** Freelancers typically retain copyright by default unless contracts specify otherwise. Agencies usually provide full indemnification and ownership transfer, while in-house work is automatically property of the employer.
-  *   **Hybrid is the mature standard:** Leading organizations rarely choose just one. They adopt a hybrid architecture—using in-house talent for brand guardianship, agencies for strategic innovation, and freelancers for overflow production.
+excerpt: >-
+  Compare total costs, IP risks, and workflows of design agencies, in-house
+  teams, and freelancers to find the right model for your organization.
+tldr: >-
+  *   **It’s not just about hourly rates:** While freelancers appear cheapest
+  ($50-$150/hr), they carry the highest "management tax" and operational risk.
+  In-house teams offer brand intimacy but come with fixed overheads often
+  exceeding $500k/year for a full unit.
+
+  *   **The IP trap is real:** Freelancers typically retain copyright by default
+  unless contracts specify otherwise. Agencies usually provide full
+  indemnification and ownership transfer, while in-house work is automatically
+  property of the employer.
+
+  *   **Hybrid is the mature standard:** Leading organizations rarely choose
+  just one. They adopt a hybrid architecture—using in-house talent for brand
+  guardianship, agencies for strategic innovation, and freelancers for overflow
+  production.
 stage: evaluator
 related_posts:
   - slug: strategic-publication-design-methodology
-    title: "De-Risking Publication Design: A 9-Step Strategic Methodology"
+    title: 'De-Risking Publication Design: A 9-Step Strategic Methodology'
   - slug: publication-design-vs-marketing-design
-    title: "Publication Design vs. Marketing Design: The Hidden Differences"
+    title: 'Publication Design vs. Marketing Design: The Hidden Differences'
   - slug: designing-scalable-system-idrc
     title: A Strategic Design System Roadmap for the IDRC
   - slug: evaluate-research-publication-design-partners
@@ -30,6 +43,8 @@ related_posts:
   - slug: harvard-policy-publication-redesign
     title: How We Rebuilt Harvard’s Policy Publication Ecosystem
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

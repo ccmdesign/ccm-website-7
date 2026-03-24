@@ -1,8 +1,10 @@
 ---
 title: Strategic Approaches to SEC Digital Reporting Excellence
 brow: When Compliance Meets Creativity
-tagline: Transform regulatory requirements into competitive advantage through strategic creative implementation
-date: "2026-04-26"
+tagline: >-
+  Transform regulatory requirements into competitive advantage through strategic
+  creative implementation
+date: '2026-04-26'
 author: CCM Design Team
 categories:
   - Content Operations & Strategy
@@ -18,8 +20,16 @@ seo_tags:
   - XBRL creative implementation
   - regulatory design solutions
   - compliance-driven creativity
-excerpt: SEC compliance costs average $2.3-4.8 million annually, but creative digital approaches deliver 25-35% cost reduction with proven ROI frameworks for high-stakes communications teams.
-tldr: SEC compliance costs average $2.3-4.8 million annually, but creative digital approaches deliver 25-35% cost reduction with proven ROI frameworks for high-stakes communications teams.
+excerpt: >-
+  SEC compliance costs average $2.3-4.8 million annually, but creative digital
+  approaches deliver 25-35% cost reduction with proven ROI frameworks for
+  high-stakes communications teams.
+tldr: >-
+  SEC compliance costs average $2.3-4.8 million annually, but creative digital
+  approaches deliver 25-35% cost reduction with proven ROI frameworks for
+  high-stakes communications teams.
+newsletterSent: true
+linkedinSent: true
 ---
 
 

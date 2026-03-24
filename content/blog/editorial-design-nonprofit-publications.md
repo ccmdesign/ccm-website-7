@@ -1,8 +1,10 @@
 ---
 title: How Editorial Design Elevates Non-Profit Publications and Reports
 brow: Maximizing Impact
-tagline: Transform your nonprofit publications into powerful donor engagement tools through strategic editorial design
-date: "2023-11-22"
+tagline: >-
+  Transform your nonprofit publications into powerful donor engagement tools
+  through strategic editorial design
+date: '2023-11-22'
 author: CCM Design Team
 categories:
   - Nonprofit Growth & Fundraising
@@ -23,9 +25,17 @@ seo_tags:
   - editorial-strategy
   - publication-layout
   - nonprofit-communications
-excerpt: Discover how editorial design transforms nonprofit publications into professional donor magnets. Learn proven strategies to elevate credibility and maximize impact through strategic visual communication.
-tldr: Discover how editorial design transforms nonprofit publications into professional donor magnets. Learn proven strategies to elevate credibility and maximize impact through strategic visual communication.
+excerpt: >-
+  Discover how editorial design transforms nonprofit publications into
+  professional donor magnets. Learn proven strategies to elevate credibility and
+  maximize impact through strategic visual communication.
+tldr: >-
+  Discover how editorial design transforms nonprofit publications into
+  professional donor magnets. Learn proven strategies to elevate credibility and
+  maximize impact through strategic visual communication.
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

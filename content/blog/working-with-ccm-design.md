@@ -1,8 +1,8 @@
 ---
-title: "Working with CCM Design: A Guide for Research Leaders"
+title: 'Working with CCM Design: A Guide for Research Leaders'
 slug: working-with-ccm-design
 brow: process
-date: "2026-03-29"
+date: '2026-03-29'
 author: CCM Design Team
 categories:
   - Content Operations & Strategy
@@ -11,29 +11,52 @@ tags:
   - design subscription for non-profits
   - research communication design
   - design agency process
-excerpt: A comprehensive guide to our engagement models, design processes, and what research institutions can expect when partnering with us.
-tldr: |-
-  -   **Specialized Expertise**: We operate at the intersection of design, data, and technology, specifically for research institutions and policy organizations [1].
-  -   **Flexible Engagement**: Choose between a predictable Design Subscription for ongoing needs or project-based structures for large-scale initiatives [2].
-  -   **Risk Mitigation**: Our process emphasizes strategy first and component-based development to protect timelines and budgets [3, 4].
-  -   **Direct Collaboration**: You work directly with senior designers, not account managers, ensuring nothing is lost in translation [7].
+excerpt: >-
+  A comprehensive guide to our engagement models, design processes, and what
+  research institutions can expect when partnering with us.
+tldr: >-
+  -   **Specialized Expertise**: We operate at the intersection of design, data,
+  and technology, specifically for research institutions and policy
+  organizations [1].
 
-  For leaders in the research, policy, and non-profit sectors, selecting a design partner often involves a difficult trade-off. You frequently choose between creative agencies that produce beautiful work but lack subject matter expertise, or technical firms that understand the data but fail to engage the audience.
+  -   **Flexible Engagement**: Choose between a predictable Design Subscription
+  for ongoing needs or project-based structures for large-scale initiatives [2].
 
-  CCM Design positions itself specifically to bridge this gap. We focus on helping research institutions, think tanks, and tech companies communicate "knowledge products" systematically [1]. We do not function as generalists; our workflows are optimized to handle the nuances of academic and research communication, reducing the friction of translating complex findings into accessible narratives [2].
+  -   **Risk Mitigation**: Our process emphasizes strategy first and
+  component-based development to protect timelines and budgets [3, 4].
+
+  -   **Direct Collaboration**: You work directly with senior designers, not
+  account managers, ensuring nothing is lost in translation [7].
+
+
+  For leaders in the research, policy, and non-profit sectors, selecting a
+  design partner often involves a difficult trade-off. You frequently choose
+  between creative agencies that produce beautiful work but lack subject matter
+  expertise, or technical firms that understand the data but fail to engage the
+  audience.
+
+
+  CCM Design positions itself specifically to bridge this gap. We focus on
+  helping research institutions, think tanks, and tech companies communicate
+  "knowledge products" systematically [1]. We do not function as generalists;
+  our workflows are optimized to handle the nuances of academic and research
+  communication, reducing the friction of translating complex findings into
+  accessible narratives [2].
 stage: buyer
 related_posts:
   - slug: scoping-complex-research-communication-projects
-    title: "Scoping Complex Research Communication Projects: A Risk Mitigation Guide"
+    title: 'Scoping Complex Research Communication Projects: A Risk Mitigation Guide'
   - slug: publication-design-pricing-guide
-    title: "Publication Design Pricing Guide: Models, Costs & ROI"
+    title: 'Publication Design Pricing Guide: Models, Costs & ROI'
   - slug: preparing-publication-redesign-checklist
-    title: "Preparing for a Publication Redesign: A Buyer's Checklist"
+    title: 'Preparing for a Publication Redesign: A Buyer''s Checklist'
   - slug: 7-critical-questions-hiring-publication-design-firm
     title: 7 Critical Questions to Ask Before Hiring a Publication Design Firm
   - slug: internal-case-professional-publication-design
     title: How to Build the Internal Case for Professional Publication Design
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

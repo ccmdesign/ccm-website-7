@@ -1,9 +1,11 @@
 ---
-title: "From Service to Infrastructure"
+title: From Service to Infrastructure
 slug: foundation-communications-infrastructure-trends
 brow: Foundation Communications Strategy
-tagline: Leading foundations are shifting communications from a support function to core infrastructure
-date: "2025-04-01"
+tagline: >-
+  Leading foundations are shifting communications from a support function to
+  core infrastructure
+date: '2025-04-01'
 author: CCM Design Team
 categories:
   - Content Operations & Strategy
@@ -12,31 +14,62 @@ tags:
   - nonprofit design systems
   - strategic communications philanthropy
   - communications infrastructure
-excerpt: Leading foundations are shifting communications from a support function to core infrastructure. Explore the 4 key traits of high-performing teams.
-tldr: |-
-  *   **The "Service Bureau" model is obsolete:** Treating communications as a downstream "polishing" function creates bottlenecks and limits impact.
-  *   **Infrastructure means autonomy:** High-performing teams manage their own budgets and hold executive seats, moving from order-takers to strategic partners.
-  *   **Design belongs at inception:** Leading foundations use Human-Centered Design (HCD) to shape strategies *before* grants are made, preventing costly rework.
-  *   **Systems replace heroes:** Sustainable impact relies on robust design systems and governance, not the burnout-prone efforts of individual "unicorns."
+excerpt: >-
+  Leading foundations are shifting communications from a support function to
+  core infrastructure. Explore the 4 key traits of high-performing teams.
+tldr: >-
+  *   **The "Service Bureau" model is obsolete:** Treating communications as a
+  downstream "polishing" function creates bottlenecks and limits impact.
 
-  A program officer spends eighteen months developing a complex grantmaking strategy. They conduct landscape analysis, interview experts, and write white papers. Then, two weeks before the launch, the file lands on the desk of the communications director with a simple sticky note: "Please make this look good and get it on the website."
+  *   **Infrastructure means autonomy:** High-performing teams manage their own
+  budgets and hold executive seats, moving from order-takers to strategic
+  partners.
 
-  This scenario, familiar to almost everyone in the sector, represents the "Service Bureau" trap. In this model, communications is a downstream support function—a decoration applied to work that is already finished. While this approach was sufficient for an era of print annual reports and press releases, it is structurally incapable of meeting the demands of a networked digital environment.
+  *   **Design belongs at inception:** Leading foundations use Human-Centered
+  Design (HCD) to shape strategies *before* grants are made, preventing costly
+  rework.
 
-  Leading foundations are dismantling this model. They are reclassifying communications from a support service to "core infrastructure." Just as physical infrastructure supports economic activity, communications infrastructure—the systems, data, and brand frameworks—supports programmatic impact. This shift is not merely about better tools; it is about organizational maturity and resilience.
+  *   **Systems replace heroes:** Sustainable impact relies on robust design
+  systems and governance, not the burnout-prone efforts of individual
+  "unicorns."
+
+
+  A program officer spends eighteen months developing a complex grantmaking
+  strategy. They conduct landscape analysis, interview experts, and write white
+  papers. Then, two weeks before the launch, the file lands on the desk of the
+  communications director with a simple sticky note: "Please make this look good
+  and get it on the website."
+
+
+  This scenario, familiar to almost everyone in the sector, represents the
+  "Service Bureau" trap. In this model, communications is a downstream support
+  function—a decoration applied to work that is already finished. While this
+  approach was sufficient for an era of print annual reports and press releases,
+  it is structurally incapable of meeting the demands of a networked digital
+  environment.
+
+
+  Leading foundations are dismantling this model. They are reclassifying
+  communications from a support service to "core infrastructure." Just as
+  physical infrastructure supports economic activity, communications
+  infrastructure—the systems, data, and brand frameworks—supports programmatic
+  impact. This shift is not merely about better tools; it is about
+  organizational maturity and resilience.
 stage: researcher
 related_posts:
   - slug: science-behind-failing-board-packs
-    title: "Why Static Board Packs Fail: The Science of Digital Reporting"
+    title: 'Why Static Board Packs Fail: The Science of Digital Reporting'
   - slug: rethinking-research-communication
-    title: "Beyond the PDF: Modern Research Communication Strategies"
+    title: 'Beyond the PDF: Modern Research Communication Strategies'
   - slug: static-pdfs-undermining-research-impact
     title: Why Static PDFs Are Undermining Your Research Impact
   - slug: interactive-research-reports-trends
-    title: "The End of the PDF: 5 Trends Redefining Research Communication"
+    title: 'The End of the PDF: 5 Trends Redefining Research Communication'
   - slug: manual-research-workflows-ai
     title: Why Manual Research Workflows Are Failing in the Age of AI
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

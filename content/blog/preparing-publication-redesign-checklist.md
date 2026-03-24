@@ -1,9 +1,11 @@
 ---
-title: "Preparing for a Publication Redesign"
+title: Preparing for a Publication Redesign
 slug: preparing-publication-redesign-checklist
 brow: A Buyer's Checklist
-tagline: Reduce risk and ensure ROI with this comprehensive preparation checklist for publication redesigns
-date: "2025-08-19"
+tagline: >-
+  Reduce risk and ensure ROI with this comprehensive preparation checklist for
+  publication redesigns
+date: '2025-08-19'
 author: CCM Design Team
 categories:
   - Publication Design & Production
@@ -12,18 +14,41 @@ tags:
   - cms migration
   - media website redesign
   - content audit strategy
-excerpt: Reduce risk and ensure ROI with this comprehensive preparation checklist for publication redesigns. Learn how to align stakeholders and audit content.
-tldr: |-
-  - **Alignment prevents failure:** Define stakeholders across Editorial, Revenue, and Tech before writing the RFP.
-  - **Audit before you migrate:** Use the "Keep, Kill, Refresh" method to reduce technical debt and migration costs.
-  - **Protect your traffic:** A comprehensive 301 redirect map is the only insurance against catastrophic SEO loss.
-  - **Budget for discovery:** allocate 10-20% of the project budget to validate requirements before building.
+excerpt: >-
+  Reduce risk and ensure ROI with this comprehensive preparation checklist for
+  publication redesigns. Learn how to align stakeholders and audit content.
+tldr: >-
+  - **Alignment prevents failure:** Define stakeholders across Editorial,
+  Revenue, and Tech before writing the RFP.
 
-  A publication redesign is rarely just a facelift. It is a fundamental business transformation that touches every part of your organization, from how editors file stories to how ad operations monetize them. Yet, organizations often treat these projects as purely aesthetic exercises, focusing on fonts and layouts while neglecting the infrastructure that powers them.
+  - **Audit before you migrate:** Use the "Keep, Kill, Refresh" method to reduce
+  technical debt and migration costs.
 
-  This oversight is expensive. Industry estimates suggest that up to 80% of website redesigns fail to meet their original business objectives, often because the focus skewed too heavily toward visuals rather than functionality and strategy [1].
+  - **Protect your traffic:** A comprehensive 301 redirect map is the only
+  insurance against catastrophic SEO loss.
 
-  For buyers—whether you are a media executive, a think tank director, or a foundation leader—preparation is the primary lever you have to control cost and risk. The following checklist outlines the non-negotiable steps required to de-risk your investment and ensure your new platform drives readership and revenue.
+  - **Budget for discovery:** allocate 10-20% of the project budget to validate
+  requirements before building.
+
+
+  A publication redesign is rarely just a facelift. It is a fundamental business
+  transformation that touches every part of your organization, from how editors
+  file stories to how ad operations monetize them. Yet, organizations often
+  treat these projects as purely aesthetic exercises, focusing on fonts and
+  layouts while neglecting the infrastructure that powers them.
+
+
+  This oversight is expensive. Industry estimates suggest that up to 80% of
+  website redesigns fail to meet their original business objectives, often
+  because the focus skewed too heavily toward visuals rather than functionality
+  and strategy [1].
+
+
+  For buyers—whether you are a media executive, a think tank director, or a
+  foundation leader—preparation is the primary lever you have to control cost
+  and risk. The following checklist outlines the non-negotiable steps required
+  to de-risk your investment and ensure your new platform drives readership and
+  revenue.
 stage: buyer
 related_posts:
   - slug: 7-critical-questions-hiring-publication-design-firm
@@ -31,12 +56,14 @@ related_posts:
   - slug: internal-case-professional-publication-design
     title: How to Build the Internal Case for Professional Publication Design
   - slug: publication-design-pricing-guide
-    title: "Publication Design Pricing Guide: Models, Costs & ROI"
+    title: 'Publication Design Pricing Guide: Models, Costs & ROI'
   - slug: strategic-publication-design-methodology
-    title: "De-Risking Publication Design: A 9-Step Strategic Methodology"
+    title: 'De-Risking Publication Design: A 9-Step Strategic Methodology'
   - slug: harvard-policy-publication-redesign
     title: How We Rebuilt Harvard’s Policy Publication Ecosystem
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

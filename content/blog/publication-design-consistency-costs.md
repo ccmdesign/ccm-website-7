@@ -3,7 +3,7 @@ title: The Hidden Costs of Inconsistent Publication Design
 slug: publication-design-consistency-costs
 brow: publications
 tagline: Inconsistent design undermines research credibility and wastes budget
-date: "2025-09-02"
+date: '2025-09-02'
 author: CCM Design Team
 categories:
   - Publication Design & Production
@@ -13,18 +13,30 @@ tags:
   - design systems for research
   - scientific sinkhole
   - shadow design
-excerpt: Inconsistent design undermines research credibility and wastes budget. Discover the operational and reputational costs of shadow design in research.
-tldr: |-
-  - **Credibility is instant:** Research from the Stanford Web Credibility Project shows that 75% of users judge an organization's credibility based on visual design, often within 50 milliseconds.
-  - **The "Scientific Sinkhole":** Researchers lose approximately 52 hours per year formatting manuscripts, costing institutions millions in lost productivity.
-  - **Legal liability:** Inconsistent, ad-hoc PDF creation is a primary driver of ADA and WCAG non-compliance, inviting litigation and expensive remediation.
-  - **Infrastructure, not decoration:** Leading organizations like NASA and CERN treat design as technical infrastructure, using design systems to manage complexity and ensure accuracy.
+excerpt: >-
+  Inconsistent design undermines research credibility and wastes budget.
+  Discover the operational and reputational costs of shadow design in research.
+tldr: >-
+  - **Credibility is instant:** Research from the Stanford Web Credibility
+  Project shows that 75% of users judge an organization's credibility based on
+  visual design, often within 50 milliseconds.
+
+  - **The "Scientific Sinkhole":** Researchers lose approximately 52 hours per
+  year formatting manuscripts, costing institutions millions in lost
+  productivity.
+
+  - **Legal liability:** Inconsistent, ad-hoc PDF creation is a primary driver
+  of ADA and WCAG non-compliance, inviting litigation and expensive remediation.
+
+  - **Infrastructure, not decoration:** Leading organizations like NASA and CERN
+  treat design as technical infrastructure, using design systems to manage
+  complexity and ensure accuracy.
 stage: researcher
 related_posts:
   - slug: hidden-cost-inconsistent-publication-design
     title: The Hidden Tax of Inconsistent Publication Design
   - slug: design-debt-research-organizations
-    title: "Design Debt in Research Organizations: The Cost of 'We'll Fix It Later'"
+    title: 'Design Debt in Research Organizations: The Cost of ''We''ll Fix It Later'''
   - slug: 5-signs-research-publications-need-redesign
     title: 5 Signs Your Research Publications Need a Redesign
   - slug: static-infographics-failing-research
@@ -32,6 +44,8 @@ related_posts:
   - slug: hidden-cost-good-enough-grant-design
     title: The Hidden Cost of "Good Enough" Design in Grant Proposals
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

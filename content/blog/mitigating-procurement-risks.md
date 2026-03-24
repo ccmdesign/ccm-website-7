@@ -2,7 +2,7 @@
 title: Mitigating Procurement Risks
 brow: Procurement
 tagline: How to develop detailed RFPs when you don't understand what you need
-date: "2024-02-15"
+date: '2024-02-15'
 author: CCM Design Team
 categories:
   - Content Operations & Strategy
@@ -23,9 +23,17 @@ seo_tags:
   - scope-definition
   - client-agency-relationship
   - discovery-phase
-excerpt: Avoid costly change requests and project delays by conducting UX consultation before creating RFPs. Learn how proper discovery phases eliminate up to 80% of procurement risks in creative projects.
-tldr: Avoid costly change requests and project delays by conducting UX consultation before creating RFPs. Learn how proper discovery phases eliminate up to 80% of procurement risks in creative projects.
+excerpt: >-
+  Avoid costly change requests and project delays by conducting UX consultation
+  before creating RFPs. Learn how proper discovery phases eliminate up to 80% of
+  procurement risks in creative projects.
+tldr: >-
+  Avoid costly change requests and project delays by conducting UX consultation
+  before creating RFPs. Learn how proper discovery phases eliminate up to 80% of
+  procurement risks in creative projects.
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

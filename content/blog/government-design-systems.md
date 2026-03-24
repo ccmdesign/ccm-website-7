@@ -1,8 +1,10 @@
 ---
 title: User-Centred Design for Digital Government
 brow: Design & Digital Strategy
-tagline: Making life easier for citizens through human-centered design principles that prioritize user needs over government processes
-date: "2023-06-30"
+tagline: >-
+  Making life easier for citizens through human-centered design principles that
+  prioritize user needs over government processes
+date: '2023-06-30'
 author: CCM Design Team
 categories:
   - Digital Experience & Websites
@@ -23,9 +25,17 @@ seo_tags:
   - gov-uk-design
   - public-sector-UX
   - government-usability
-excerpt: Pioneering nations are transforming government services through user-centered design principles, creating swift, accessible, and user-friendly platforms that reimagine how citizens and government interact.
-tldr: Pioneering nations are transforming government services through user-centered design principles, creating swift, accessible, and user-friendly platforms that reimagine how citizens and government interact.
+excerpt: >-
+  Pioneering nations are transforming government services through user-centered
+  design principles, creating swift, accessible, and user-friendly platforms
+  that reimagine how citizens and government interact.
+tldr: >-
+  Pioneering nations are transforming government services through user-centered
+  design principles, creating swift, accessible, and user-friendly platforms
+  that reimagine how citizens and government interact.
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

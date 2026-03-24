@@ -1,9 +1,9 @@
 ---
-title: "Why Important Research Stays Invisible"
+title: Why Important Research Stays Invisible
 slug: science-translation-gap-invisible-research
 brow: The Science Translation Gap
-tagline: Scientific output is growing, but public impact is lagging
-date: "2025-12-02"
+tagline: 'Scientific output is growing, but public impact is lagging'
+date: '2025-12-02'
 author: CCM Design Team
 categories:
   - Research Communication & Impact
@@ -13,31 +13,65 @@ tags:
   - science communication
   - research impact
   - public trust in science
-excerpt: Scientific output is growing, but public impact is lagging. We explore the barriers creating the translation gap and how visual design bridges them.
-tldr: |-
-  -   **The Translation Gap:** A systemic failure in the research pipeline prevents breakthrough findings from reaching policymakers and the public, despite exponential growth in publishing volume.
-  -   **Three Barriers:** Science is blocked by structural paywalls, linguistic complexity (jargon), and cognitive barriers (text-heavy formats).
-  -   **The Deficit Model Fails:** Simply "educating" the public with more facts does not build trust. Effective communication requires dialogue and transparency about uncertainty.
-  -   **Visuals are Cognitive Bridges:** Visual abstracts and data storytelling are not aesthetic add-ons; they utilize dual coding to significantly increase engagement and comprehension.
+excerpt: >-
+  Scientific output is growing, but public impact is lagging. We explore the
+  barriers creating the translation gap and how visual design bridges them.
+tldr: >-
+  -   **The Translation Gap:** A systemic failure in the research pipeline
+  prevents breakthrough findings from reaching policymakers and the public,
+  despite exponential growth in publishing volume.
 
-  The "lab-to-public translation gap" represents a fundamental breakdown in the social contract of science. Despite the exponential growth in scientific publishing, a substantial portion of research remains "invisible"—locked behind financial paywalls, buried in dense jargon, or presented in formats that are cognitively inaccessible to non-specialists. This gap is not merely a matter of missed marketing opportunities; when important science stays invisible, public policy lags behind evidence, health outcomes suffer, and the public's trust in scientific institutions erodes.
+  -   **Three Barriers:** Science is blocked by structural paywalls, linguistic
+  complexity (jargon), and cognitive barriers (text-heavy formats).
 
-  For the researcher, the frustration is personal. You spend years gathering data and navigating peer review, only for the final paper to land in a digital void. Estimates regarding how many papers go unread vary wildly, with some controversial sources suggesting up to half of academic papers are read only by their authors and editors [1]. While more nuanced analysis suggests the true rate of uncited research is lower—perhaps around 12% for medicine and higher for social sciences—the "long tail" of dormant research is undeniably vast [3].
+  -   **The Deficit Model Fails:** Simply "educating" the public with more facts
+  does not build trust. Effective communication requires dialogue and
+  transparency about uncertainty.
 
-  The problem isn't the quality of the science. It's the [design of the delivery](/5-signs-research-publications-need-redesign).
+  -   **Visuals are Cognitive Bridges:** Visual abstracts and data storytelling
+  are not aesthetic add-ons; they utilize dual coding to significantly increase
+  engagement and comprehension.
+
+
+  The "lab-to-public translation gap" represents a fundamental breakdown in the
+  social contract of science. Despite the exponential growth in scientific
+  publishing, a substantial portion of research remains "invisible"—locked
+  behind financial paywalls, buried in dense jargon, or presented in formats
+  that are cognitively inaccessible to non-specialists. This gap is not merely a
+  matter of missed marketing opportunities; when important science stays
+  invisible, public policy lags behind evidence, health outcomes suffer, and the
+  public's trust in scientific institutions erodes.
+
+
+  For the researcher, the frustration is personal. You spend years gathering
+  data and navigating peer review, only for the final paper to land in a digital
+  void. Estimates regarding how many papers go unread vary wildly, with some
+  controversial sources suggesting up to half of academic papers are read only
+  by their authors and editors [1]. While more nuanced analysis suggests the
+  true rate of uncited research is lower—perhaps around 12% for medicine and
+  higher for social sciences—the "long tail" of dormant research is undeniably
+  vast [3].
+
+
+  The problem isn't the quality of the science. It's the [design of the
+  delivery](/5-signs-research-publications-need-redesign).
 stage: researcher
 related_posts:
   - slug: data-visualization-research-impact
-    title: "Data Visualization Research: Why Bad Charts Kill Impact"
+    title: 'Data Visualization Research: Why Bad Charts Kill Impact'
   - slug: hidden-cost-inconsistent-publication-design
     title: The Hidden Tax of Inconsistent Publication Design
   - slug: 5-signs-research-publications-need-redesign
     title: 5 Signs Your Research Publications Need a Redesign
   - slug: poor-data-visualization-obscures-research-impact
-    title: "The Invisible Science: How Poor Data Visualization Obscures Research Impact"
+    title: >-
+      The Invisible Science: How Poor Data Visualization Obscures Research
+      Impact
   - slug: static-pdfs-undermine-research-impact
     title: Why Static PDFs Are Undermining Your Research Impact
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

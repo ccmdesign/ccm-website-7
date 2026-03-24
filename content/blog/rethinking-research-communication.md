@@ -1,9 +1,9 @@
 ---
-title: "Modern Research Communication Strategies"
+title: Modern Research Communication Strategies
 slug: rethinking-research-communication
 brow: Beyond the PDF
 tagline: Is the static PDF failing your research
-date: "2025-11-11"
+date: '2025-11-11'
 author: CCM Design Team
 categories:
   - Research Communication & Impact
@@ -12,17 +12,31 @@ tags:
   - digital annual reports
   - philanthropic impact measurement
   - interactive storytelling data
-excerpt: Is the static PDF failing your research? Explore how leading foundations use interactive storytelling, audio, and inclusive design to drive real impact.
-tldr: |-
-  - **The "PDF Crisis" is real:** Internal data from the World Bank revealed that up to 31% of their policy reports were never downloaded, highlighting a massive waste of research potential.
-  - **Interactivity drives engagement:** Leading foundations like Gates and Rockefeller are pivoting to "scrollytelling" and interactive data portals to make complex findings digestible.
-  - **Audio humanizes data:** High-production podcasts are becoming a critical channel for reaching non-academic audiences and bridging the empathy gap.
-  - **Inclusion is the new standard:** Modern communication strategies prioritize accessibility and inclusive language from the start, ensuring research reaches diverse communities.
-  - **Metrics are evolving:** The sector is moving away from counting downloads (outputs) to measuring behavior change and policy influence (outcomes).
+excerpt: >-
+  Is the static PDF failing your research? Explore how leading foundations use
+  interactive storytelling, audio, and inclusive design to drive real impact.
+tldr: >-
+  - **The "PDF Crisis" is real:** Internal data from the World Bank revealed
+  that up to 31% of their policy reports were never downloaded, highlighting a
+  massive waste of research potential.
+
+  - **Interactivity drives engagement:** Leading foundations like Gates and
+  Rockefeller are pivoting to "scrollytelling" and interactive data portals to
+  make complex findings digestible.
+
+  - **Audio humanizes data:** High-production podcasts are becoming a critical
+  channel for reaching non-academic audiences and bridging the empathy gap.
+
+  - **Inclusion is the new standard:** Modern communication strategies
+  prioritize accessibility and inclusive language from the start, ensuring
+  research reaches diverse communities.
+
+  - **Metrics are evolving:** The sector is moving away from counting downloads
+  (outputs) to measuring behavior change and policy influence (outcomes).
 stage: researcher
 related_posts:
   - slug: interactive-research-reports-trends
-    title: "The End of the PDF: 5 Trends Redefining Research Communication"
+    title: 'The End of the PDF: 5 Trends Redefining Research Communication'
   - slug: static-pdfs-undermine-research-impact
     title: Why Static PDFs Are Undermining Your Research Impact
   - slug: static-infographics-failing-research
@@ -32,6 +46,8 @@ related_posts:
   - slug: think-tank-website-design-mistakes
     title: Is Your Think Tank's Website Undermining Your Research?
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

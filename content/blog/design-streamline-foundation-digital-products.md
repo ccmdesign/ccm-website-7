@@ -2,8 +2,10 @@
 title: Design To Streamline Your Foundation's Digital Products
 slug: design-streamline-foundation-digital-products
 brow: Design & Digital Strategy
-tagline: Ensure your digital products are not only visually appealing but also effective, user-friendly, and impactful
-date: "2024-06-24"
+tagline: >-
+  Ensure your digital products are not only visually appealing but also
+  effective, user-friendly, and impactful
+date: '2024-06-24'
 author: CCM Design Team
 categories:
   - Digital Experience & Websites
@@ -24,9 +26,20 @@ seo_tags:
   - nonprofit-digital-products
   - foundation-design-impact
   - digital-nonprofit-strategy
-excerpt: Transform your foundation's digital products with strategic design that balances visual appeal with functionality. Professional design increases nonprofit credibility by 85% and enhances audience engagement significantly.
-tldr: Strategic design transforms foundation digital products by balancing visual appeal with functionality and user experience. Professional design creates strong first impressions, builds consistent brand identity, improves user navigation, and increases impact and reach. Well-designed digital products enhance credibility, make organizations more recognizable, and help messages resonate more deeply with wider audiences.
+excerpt: >-
+  Transform your foundation's digital products with strategic design that
+  balances visual appeal with functionality. Professional design increases
+  nonprofit credibility by 85% and enhances audience engagement significantly.
+tldr: >-
+  Strategic design transforms foundation digital products by balancing visual
+  appeal with functionality and user experience. Professional design creates
+  strong first impressions, builds consistent brand identity, improves user
+  navigation, and increases impact and reach. Well-designed digital products
+  enhance credibility, make organizations more recognizable, and help messages
+  resonate more deeply with wider audiences.
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

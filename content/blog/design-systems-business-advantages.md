@@ -1,8 +1,10 @@
 ---
 title: Business Advantages
 brow: Design Systems
-tagline: Medium and long-term benefits of implementing design systems that accelerate development, ensure consistency, and drive competitive advantage
-date: "2023-08-16"
+tagline: >-
+  Medium and long-term benefits of implementing design systems that accelerate
+  development, ensure consistency, and drive competitive advantage
+date: '2023-08-16'
 author: CCM Design Team
 categories:
   - Digital Experience & Websites
@@ -23,9 +25,23 @@ seo_tags:
   - component-reusability
   - design-productivity
   - business-advantages
-excerpt: Design systems significantly improve development efficiency by providing reusable UI components that speed up interface building, ensure branding consistency, and enable faster iterations for both large and small organizations.
-tldr: Implementing a design system - a library of reusable UI components - significantly improves development efficiency. It speeds up building interfaces by letting developers focus on new features instead of common elements. It also ensures branding consistency and better UX. Despite the initial cost to create components, design systems save much time and money long-term. They enable faster iterations, shorter backlogs, and more agility. For both large and small organizations, a design system is an essential part of modern software development.
+excerpt: >-
+  Design systems significantly improve development efficiency by providing
+  reusable UI components that speed up interface building, ensure branding
+  consistency, and enable faster iterations for both large and small
+  organizations.
+tldr: >-
+  Implementing a design system - a library of reusable UI components -
+  significantly improves development efficiency. It speeds up building
+  interfaces by letting developers focus on new features instead of common
+  elements. It also ensures branding consistency and better UX. Despite the
+  initial cost to create components, design systems save much time and money
+  long-term. They enable faster iterations, shorter backlogs, and more agility.
+  For both large and small organizations, a design system is an essential part
+  of modern software development.
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

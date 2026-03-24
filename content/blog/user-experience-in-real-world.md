@@ -1,8 +1,10 @@
 ---
 title: User Experience in the Real World
 brow: Design & Digital Strategy
-tagline: Quickly understand the many ways UX is done, why some of them might be overkill for your project
-date: "2022-10-03"
+tagline: >-
+  Quickly understand the many ways UX is done, why some of them might be
+  overkill for your project
+date: '2022-10-03'
 author: CCM Design Team
 categories:
   - Digital Experience & Websites
@@ -23,14 +25,33 @@ seo_tags:
   - ux-methodology
   - product-development-ux
   - design-process-optimization
-excerpt: Discover practical UX approaches that deliver 80% of results for 20% of the budget. Learn when to use best practices vs comprehensive research for successful product development.
-tldr: |-
-  User experience comes in many shapes and forms. From simple common sense and best practices all the way to multi-million dollar exercises. In most successful cases, the UX work will be a continuous incremental exercise feeding on user data and applying it to the product as a whole.
+excerpt: >-
+  Discover practical UX approaches that deliver 80% of results for 20% of the
+  budget. Learn when to use best practices vs comprehensive research for
+  successful product development.
+tldr: >-
+  User experience comes in many shapes and forms. From simple common sense and
+  best practices all the way to multi-million dollar exercises. In most
+  successful cases, the UX work will be a continuous incremental exercise
+  feeding on user data and applying it to the product as a whole.
 
-  As a rule of thumb, if your product is just starting or you don't have a lot of data from your users, the UX work will rely heavily on best practices and competition analysis, which is totally fine. This approach will render great results, shouldn't be too expensive, and, if coupled with good UI and Branding, you will have a pretty good product from the start.
 
-  If your product is a few years old and you are just starting with this, you have two options, depending on how much data you collected from your users and the size of your budget. If either your data or budget are not sizeable, the approach described above is already an excellent place to start. However, if you have the data and the budget, hire a good UX firm/team and let them cook. I'm sure you will be surprised.
+  As a rule of thumb, if your product is just starting or you don't have a lot
+  of data from your users, the UX work will rely heavily on best practices and
+  competition analysis, which is totally fine. This approach will render great
+  results, shouldn't be too expensive, and, if coupled with good UI and
+  Branding, you will have a pretty good product from the start.
+
+
+  If your product is a few years old and you are just starting with this, you
+  have two options, depending on how much data you collected from your users and
+  the size of your budget. If either your data or budget are not sizeable, the
+  approach described above is already an excellent place to start. However, if
+  you have the data and the budget, hire a good UX firm/team and let them cook.
+  I'm sure you will be surprised.
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

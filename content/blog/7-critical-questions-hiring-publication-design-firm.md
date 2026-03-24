@@ -3,7 +3,7 @@ title: 7 Critical Questions to Ask Before Hiring a Publication Design Firm
 slug: 7-critical-questions-hiring-publication-design-firm
 brow: publications
 tagline: Don't hire a publication designer without asking these questions first
-date: "2025-01-14"
+date: '2025-01-14'
 author: CCM Design Team
 categories:
   - Content Operations & Strategy
@@ -13,29 +13,51 @@ tags:
   - hiring a design agency
   - WCAG compliance
   - design contract questions
-excerpt: Don't hire a publication designer without asking these questions first. Learn how to vet for accessibility, source files, and project risk.
-tldr: |-
-  *   **Strategic Alignment:** Verify the firm has specific experience with long-form grids and data visualization, not just general graphic design.
-  *   **Risk Mitigation:** Ensure they have a dedicated QA process for accessibility (WCAG/PDF/UA) and print production to prevent costly errors.
-  *   **Asset Ownership:** Explicitly negotiate ownership of native source files (InDesign) if you plan to handle future updates internally.
-  *   **Cost Transparency:** Clarify per-page rates versus flat fees and identify hidden costs like "author's alterations" or file release fees.
+excerpt: >-
+  Don't hire a publication designer without asking these questions first. Learn
+  how to vet for accessibility, source files, and project risk.
+tldr: >-
+  *   **Strategic Alignment:** Verify the firm has specific experience with
+  long-form grids and data visualization, not just general graphic design.
 
-  Select a [publication design firm](/evaluate-research-publication-design-partners) is an exercise in risk management. Unlike a social media graphic or a landing page, a publication—whether an annual report, white paper, or policy guide—is a high-stakes document. It often carries legal weight, financial scrutiny, and the reputation of your organization's research.
+  *   **Risk Mitigation:** Ensure they have a dedicated QA process for
+  accessibility (WCAG/PDF/UA) and print production to prevent costly errors.
 
-  If you treat this hire like a standard graphic design procurement, you risk receiving a beautiful document that is technically flawed, inaccessible to screen readers, or impossible to edit. To ensure you partner with a firm that can deliver reliability alongside aesthetics, you need to ask the right questions.
+  *   **Asset Ownership:** Explicitly negotiate ownership of native source files
+  (InDesign) if you plan to handle future updates internally.
+
+  *   **Cost Transparency:** Clarify per-page rates versus flat fees and
+  identify hidden costs like "author's alterations" or file release fees.
+
+
+  Select a [publication design
+  firm](/evaluate-research-publication-design-partners) is an exercise in risk
+  management. Unlike a social media graphic or a landing page, a
+  publication—whether an annual report, white paper, or policy guide—is a
+  high-stakes document. It often carries legal weight, financial scrutiny, and
+  the reputation of your organization's research.
+
+
+  If you treat this hire like a standard graphic design procurement, you risk
+  receiving a beautiful document that is technically flawed, inaccessible to
+  screen readers, or impossible to edit. To ensure you partner with a firm that
+  can deliver reliability alongside aesthetics, you need to ask the right
+  questions.
 stage: buyer
 related_posts:
   - slug: publication-design-pricing-guide
-    title: "Publication Design Pricing Guide: Models, Costs & ROI"
+    title: 'Publication Design Pricing Guide: Models, Costs & ROI'
   - slug: preparing-publication-redesign-checklist
-    title: "Preparing for a Publication Redesign: A Buyer's Checklist"
+    title: 'Preparing for a Publication Redesign: A Buyer''s Checklist'
   - slug: internal-case-professional-publication-design
     title: How to Build the Internal Case for Professional Publication Design
   - slug: evaluate-research-publication-design-partners
     title: How to Evaluate Design Partners for Research Publications
   - slug: publication-design-vs-marketing-design
-    title: "Publication Design vs. Marketing Design: The Hidden Differences"
+    title: 'Publication Design vs. Marketing Design: The Hidden Differences'
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

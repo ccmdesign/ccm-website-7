@@ -1,9 +1,9 @@
 ---
-title: "Bridging the 17-Year Gap: The Missing Layer in Health Communication"
+title: 'Bridging the 17-Year Gap: The Missing Layer in Health Communication'
 slug: bridging-17-year-gap-health-communication
 brow: publications
 tagline: Research shows a 17-year lag in clinical adoption
-date: "2026-03-01"
+date: '2026-03-01'
 author: CCM Design Team
 categories:
   - Research Communication & Impact
@@ -12,30 +12,58 @@ tags:
   - know-do gap
   - learning health systems
   - research impact
-excerpt: Research shows a 17-year lag in clinical adoption. Discover the knowledge translation layer that turns academic findings into real-world health impact.
-tldr: |-
-  -   **The gap is systemic, not accidental:** A widely cited 17-year lag separates research validation from routine clinical practice, creating a "valley of death" for innovation.
-  -   **Translation is a profession:** Effective impact requires a dedicated "translation layer" of knowledge brokers and strategists, not just passive dissemination.
-  -   **Infrastructure drives adoption:** Leading organizations like Mayo Clinic and Kaiser Permanente are closing the loop by building internal engines that function like think tanks.
+excerpt: >-
+  Research shows a 17-year lag in clinical adoption. Discover the knowledge
+  translation layer that turns academic findings into real-world health impact.
+tldr: >-
+  -   **The gap is systemic, not accidental:** A widely cited 17-year lag
+  separates research validation from routine clinical practice, creating a
+  "valley of death" for innovation.
 
-  For the academic researcher, the peer-reviewed [journal article](/5-signs-research-publications-need-redesign) is the currency of the realm. It represents the culmination of years of rigorous inquiry, data collection, and analysis. But from the perspective of public health and societal impact, that publication is not the finish line—it is merely the middle of the journey.
+  -   **Translation is a profession:** Effective impact requires a dedicated
+  "translation layer" of knowledge brokers and strategists, not just passive
+  dissemination.
 
-  A profound disconnect exists between the generation of biomedical knowledge and its application in the real world. This phenomenon, widely recognized as the "know-do" gap, suggests that the current pipeline for [health communication](/science-translation-gap-invisible-research) is broken [1]. While researchers are incentivized to publish, the mechanisms to move that knowledge into the hands of patients, practitioners, and policymakers are often missing or underfunded [2].
+  -   **Infrastructure drives adoption:** Leading organizations like Mayo Clinic
+  and Kaiser Permanente are closing the loop by building internal engines that
+  function like think tanks.
 
-  This is not a marketing problem. It is a structural deficiency in how health knowledge is managed. To fix it, we must look beyond the journal and build the missing layer of infrastructure required to bridge the divide.
+
+  For the academic researcher, the peer-reviewed [journal
+  article](/5-signs-research-publications-need-redesign) is the currency of the
+  realm. It represents the culmination of years of rigorous inquiry, data
+  collection, and analysis. But from the perspective of public health and
+  societal impact, that publication is not the finish line—it is merely the
+  middle of the journey.
+
+
+  A profound disconnect exists between the generation of biomedical knowledge
+  and its application in the real world. This phenomenon, widely recognized as
+  the "know-do" gap, suggests that the current pipeline for [health
+  communication](/science-translation-gap-invisible-research) is broken [1].
+  While researchers are incentivized to publish, the mechanisms to move that
+  knowledge into the hands of patients, practitioners, and policymakers are
+  often missing or underfunded [2].
+
+
+  This is not a marketing problem. It is a structural deficiency in how health
+  knowledge is managed. To fix it, we must look beyond the journal and build the
+  missing layer of infrastructure required to bridge the divide.
 stage: researcher
 related_posts:
   - slug: 5-signs-research-publications-need-redesign
     title: 5 Signs Your Research Publications Need a Redesign
   - slug: data-visualization-research-impact
-    title: "Data Visualization Research: Why Bad Charts Kill Impact"
+    title: 'Data Visualization Research: Why Bad Charts Kill Impact'
   - slug: 5-signs-research-publications-need-redesign
     title: 5 Signs Your Research Publications Need a Redesign
   - slug: science-translation-gap-invisible-research
-    title: "The Science Translation Gap: Why Important Research Stays Invisible"
+    title: 'The Science Translation Gap: Why Important Research Stays Invisible'
   - slug: static-pdfs-undermine-research-impact
     title: Why Static PDFs Are Undermining Your Research Impact
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

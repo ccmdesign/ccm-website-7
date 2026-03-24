@@ -21,11 +21,17 @@ export default defineNuxtConfig({
     defaultLocale: 'en'
   },
   runtimeConfig: {
+    // Private (server-only in dev, not available in static build)
+    linkedinAccessToken: '',
+    resendApiKey: '',
+    resendAudienceId: '',
     public: {
       siteUrl: 'https://ccmdesign.com',
       siteName: 'CCM Design',
       siteDescription: 'Insights on Design, Data, and Social Impact',
-      siteAuthor: 'CCM Design Team'
+      siteAuthor: 'CCM Design Team',
+      linkedinServiceUrl: 'http://localhost:8001',
+      newsletterServiceUrl: 'http://localhost:3100',
     }
   },
   ogImage: {
@@ -65,6 +71,9 @@ export default defineNuxtConfig({
   plugins: [
 
   ],
+  routeRules: {
+    '/admin/**': { ssr: false, prerender: false },
+  },
   ssr: true,
   nitro: {
     preset: 'static',
@@ -75,7 +84,9 @@ export default defineNuxtConfig({
         '/blog/**',
         '/blog',
         '/layouts/**',
-        '/layouts'
+        '/layouts',
+        '/admin',
+        '/admin/**'
       ],
       failOnError: false
     }

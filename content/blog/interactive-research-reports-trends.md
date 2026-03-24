@@ -1,9 +1,9 @@
 ---
-title: "The End of the PDF: 5 Trends Redefining Research Communication"
+title: 'The End of the PDF: 5 Trends Redefining Research Communication'
 slug: interactive-research-reports-trends
 brow: publications
 tagline: Static PDFs are failing to engage stakeholders
-date: "2025-06-10"
+date: '2025-06-10'
 author: CCM Design Team
 categories:
   - Digital Experience & Websites
@@ -13,13 +13,30 @@ tags:
   - data visualization
   - digital impact reporting
   - scrollytelling
-excerpt: Static PDFs are failing to engage stakeholders. Discover how leading foundations are using interactive formats, ethical data visualization, and COPE strategies to maximize research impact.
-tldr: |-
-  *   **The "PDF Graveyard" is real:** Industry data confirms that static, long-form documents struggle to retain attention, trapping high-value insights in unsearchable files.
-  *   **Interactivity drives engagement:** Organizations like The Rockefeller Foundation have seen click-through rates as high as 19.27% by shifting to digital-first "scrollytelling" formats.
-  *   **Equity is a requirement, not a feature:** Frameworks like the Urban Institute's "Do No Harm" are making accessible, inclusive data visualization the new industry standard.
-  *   **Atomize your content:** The COPE strategy (Create Once, Publish Everywhere) maximizes ROI by turning one report into dozens of social assets and briefings.
-  *   **Measure policy, not just downloads:** New tools like Overton allow researchers to track when their work is cited in legislation, offering a better metric of impact than simple download counts.
+excerpt: >-
+  Static PDFs are failing to engage stakeholders. Discover how leading
+  foundations are using interactive formats, ethical data visualization, and
+  COPE strategies to maximize research impact.
+tldr: >-
+  *   **The "PDF Graveyard" is real:** Industry data confirms that static,
+  long-form documents struggle to retain attention, trapping high-value insights
+  in unsearchable files.
+
+  *   **Interactivity drives engagement:** Organizations like The Rockefeller
+  Foundation have seen click-through rates as high as 19.27% by shifting to
+  digital-first "scrollytelling" formats.
+
+  *   **Equity is a requirement, not a feature:** Frameworks like the Urban
+  Institute's "Do No Harm" are making accessible, inclusive data visualization
+  the new industry standard.
+
+  *   **Atomize your content:** The COPE strategy (Create Once, Publish
+  Everywhere) maximizes ROI by turning one report into dozens of social assets
+  and briefings.
+
+  *   **Measure policy, not just downloads:** New tools like Overton allow
+  researchers to track when their work is cited in legislation, offering a
+  better metric of impact than simple download counts.
 stage: researcher
 related_posts:
   - slug: static-infographics-failing-research
@@ -29,10 +46,12 @@ related_posts:
   - slug: impact-report-activity-trap
     title: The Impact Report That Doesn’t Show Impact
   - slug: rethinking-research-communication
-    title: "Beyond the PDF: Modern Research Communication Strategies"
+    title: 'Beyond the PDF: Modern Research Communication Strategies'
   - slug: interactive-impact-reports-business-case
-    title: "Interactive Impact Reports: The Business Case for Going Digital"
+    title: 'Interactive Impact Reports: The Business Case for Going Digital'
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

@@ -2,7 +2,7 @@
 title: How to Make One
 brow: The Project One-Pager
 tagline: An elevator pitch on paper
-date: "2024-01-23"
+date: '2024-01-23'
 author: CCM Design Team
 categories:
   - Research Communication & Impact
@@ -23,9 +23,17 @@ seo_tags:
   - investor-communication
   - research-promotion
   - academic-writing
-excerpt: Master the art of condensing complex research into compelling one-pagers. Learn the proven 4-step structure that captures investor attention and facilitates decision-making in just 20 seconds.
-tldr: Master the art of condensing complex research into compelling one-pagers. Learn the proven 4-step structure that captures investor attention and facilitates decision-making in just 20 seconds.
+excerpt: >-
+  Master the art of condensing complex research into compelling one-pagers.
+  Learn the proven 4-step structure that captures investor attention and
+  facilitates decision-making in just 20 seconds.
+tldr: >-
+  Master the art of condensing complex research into compelling one-pagers.
+  Learn the proven 4-step structure that captures investor attention and
+  facilitates decision-making in just 20 seconds.
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

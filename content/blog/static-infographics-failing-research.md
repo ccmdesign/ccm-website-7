@@ -3,7 +3,7 @@ title: Why Static Infographics Are Failing Your Research Impact
 slug: static-infographics-failing-research
 brow: Information Design
 tagline: The 'long vertical' infographic is dead
-date: "2025-12-16"
+date: '2025-12-16'
 author: CCM Design Team
 categories:
   - Publication Design & Production
@@ -13,29 +13,57 @@ tags:
   - mobile-first design
   - research dissemination
   - scrollytelling
-excerpt: The 'long vertical' infographic is dead. Discover why static formats create mobile friction and how to design for credibility in 2025.
-tldr: |-
-  - **The format is broken:** The traditional "long vertical" infographic creates insurmountable friction on mobile devices, where over 64% of traffic now originates.
-  - **Credibility kills virality:** Modern audiences, especially researchers and policymakers, distrust data visualization that lacks visible, granular citations.
-  - **Templates signal low value:** In a market saturated with drag-and-drop designs, generic templates fail to provide the "social currency" required for professionals to share them.
-  - **The solution is modular:** Leading organizations are shifting to "scrollytelling" and modular design patterns that adapt to the user's device and reading behavior.
+excerpt: >-
+  The 'long vertical' infographic is dead. Discover why static formats create
+  mobile friction and how to design for credibility in 2025.
+tldr: >-
+  - **The format is broken:** The traditional "long vertical" infographic
+  creates insurmountable friction on mobile devices, where over 64% of traffic
+  now originates.
 
-  The "Golden Age" of the static infographic—roughly 2012 to 2016—was a time of easy wins. An organization could condense a white paper into a 6,000-pixel tall JPEG, publish it, and reliably expect significant engagement. The mere existence of visual data was novel enough to drive [sharing behavior](/why-infographics-fail-engagement).
+  - **Credibility kills virality:** Modern audiences, especially researchers and
+  policymakers, distrust data visualization that lacks visible, granular
+  citations.
 
-  That era is over. Today, communications directors and researchers often find that despite high-quality data, their static visual assets see diminishing returns. The silence isn't a distribution failure; it is a product failure. The traditional infographic format has become incompatible with modern mobile behavior and the rigorous epistemic standards of 2025. It is no longer enough to make data pretty. To [drive impact](/static-pdfs-undermining-research-impact), research must be responsive, transparent, and narrative-driven.
+  - **Templates signal low value:** In a market saturated with drag-and-drop
+  designs, generic templates fail to provide the "social currency" required for
+  professionals to share them.
+
+  - **The solution is modular:** Leading organizations are shifting to
+  "scrollytelling" and modular design patterns that adapt to the user's device
+  and reading behavior.
+
+
+  The "Golden Age" of the static infographic—roughly 2012 to 2016—was a time of
+  easy wins. An organization could condense a white paper into a 6,000-pixel
+  tall JPEG, publish it, and reliably expect significant engagement. The mere
+  existence of visual data was novel enough to drive [sharing
+  behavior](/why-infographics-fail-engagement).
+
+
+  That era is over. Today, communications directors and researchers often find
+  that despite high-quality data, their static visual assets see diminishing
+  returns. The silence isn't a distribution failure; it is a product failure.
+  The traditional infographic format has become incompatible with modern mobile
+  behavior and the rigorous epistemic standards of 2025. It is no longer enough
+  to make data pretty. To [drive
+  impact](/static-pdfs-undermining-research-impact), research must be
+  responsive, transparent, and narrative-driven.
 stage: researcher
 related_posts:
   - slug: static-pdfs-undermining-research-impact
     title: Why Static PDFs Are Undermining Your Research Impact
   - slug: interactive-research-reports-trends
-    title: "The End of the PDF: 5 Trends Redefining Research Communication"
+    title: 'The End of the PDF: 5 Trends Redefining Research Communication'
   - slug: research-website-features-impact
-    title: "Beyond Aesthetics: 4 Features That Drive Research Impact"
+    title: 'Beyond Aesthetics: 4 Features That Drive Research Impact'
   - slug: why-infographics-fail-engagement
     title: Why Your Infographics Are Failing to Gain Traction
   - slug: mobile-paradox-nonprofit-reporting
-    title: "The Mobile Paradox: Why Static Reports Fail Modern Donors"
+    title: 'The Mobile Paradox: Why Static Reports Fail Modern Donors'
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

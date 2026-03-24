@@ -3,7 +3,7 @@ title: How to Evaluate Design Partners for Research Publications
 slug: evaluate-research-publication-design-partners
 brow: publications
 tagline: Selecting a design partner for research requires more than aesthetic taste
-date: "2025-03-18"
+date: '2025-03-18'
 author: CCM Design Team
 categories:
   - Publication Design & Production
@@ -13,31 +13,61 @@ tags:
   - data visualization services
   - annual report design
   - WCAG compliance
-excerpt: Selecting a design partner for research requires more than aesthetic taste. Learn the criteria for data integrity, accessibility, and academic workflow alignment.
-tldr: |-
-  -   **Distinguish capability**: Marketing design focuses on persuasion; information design focuses on accuracy and cognitive processing. Confusing the two leads to beautiful but unusable reports.
-  -   **Scrutinize the portfolio**: Look beyond brochures. Require evidence of long-form document architecture, WCAG compliance, and complex data visualization without "chartjunk."
-  -   **Audit the workflow**: The biggest risks in research design are version control errors and broken data integrity. Your partner must have a mature, centralized revision process.
-  -   **Verify cultural fluency**: A qualified partner understands the sanctity of citations, the rigors of peer review, and the need for rigorous file naming conventions.
+excerpt: >-
+  Selecting a design partner for research requires more than aesthetic taste.
+  Learn the criteria for data integrity, accessibility, and academic workflow
+  alignment.
+tldr: >-
+  -   **Distinguish capability**: Marketing design focuses on persuasion;
+  information design focuses on accuracy and cognitive processing. Confusing the
+  two leads to beautiful but unusable reports.
 
-  Evaluating a design partner for research publications is fundamentally different from hiring an agency for a rebrand or an advertising campaign. In marketing, success is often subjective or measured in emotional resonance. In research, success is measured by clarity, accuracy, and navigability.
+  -   **Scrutinize the portfolio**: Look beyond brochures. Require evidence of
+  long-form document architecture, WCAG compliance, and complex data
+  visualization without "chartjunk."
 
-  When a research organization hires a generalist creative agency, the friction often begins immediately after the first draft. Citations break when text flows shift. Charts look beautiful but misrepresent the underlying data. Accessibility features are treated as an afterthought rather than a structural requirement.
+  -   **Audit the workflow**: The biggest risks in research design are version
+  control errors and broken data integrity. Your partner must have a mature,
+  centralized revision process.
 
-  For the evaluator, the goal is to identify a partner who possesses not only aesthetic capability but also a rigorous understanding of data integrity, academic workflows, and compliance. The following criteria provide a framework for vetting potential partners to ensure they can handle the cognitive load and structural complexity of your publications.
+  -   **Verify cultural fluency**: A qualified partner understands the sanctity
+  of citations, the rigors of peer review, and the need for rigorous file naming
+  conventions.
+
+
+  Evaluating a design partner for research publications is fundamentally
+  different from hiring an agency for a rebrand or an advertising campaign. In
+  marketing, success is often subjective or measured in emotional resonance. In
+  research, success is measured by clarity, accuracy, and navigability.
+
+
+  When a research organization hires a generalist creative agency, the friction
+  often begins immediately after the first draft. Citations break when text
+  flows shift. Charts look beautiful but misrepresent the underlying data.
+  Accessibility features are treated as an afterthought rather than a structural
+  requirement.
+
+
+  For the evaluator, the goal is to identify a partner who possesses not only
+  aesthetic capability but also a rigorous understanding of data integrity,
+  academic workflows, and compliance. The following criteria provide a framework
+  for vetting potential partners to ensure they can handle the cognitive load
+  and structural complexity of your publications.
 stage: evaluator
 related_posts:
   - slug: publication-design-vs-marketing-design
-    title: "Publication Design vs. Marketing Design: The Hidden Differences"
+    title: 'Publication Design vs. Marketing Design: The Hidden Differences'
   - slug: designing-scalable-system-idrc
     title: A Strategic Design System Roadmap for the IDRC
   - slug: strategic-publication-design-methodology
-    title: "De-Risking Publication Design: A 9-Step Strategic Methodology"
+    title: 'De-Risking Publication Design: A 9-Step Strategic Methodology'
   - slug: harvard-policy-publication-redesign
     title: How We Rebuilt Harvard’s Policy Publication Ecosystem
   - slug: design-resourcing-agency-vs-inhouse
-    title: "Agency vs. In-House Design: A Strategic Resourcing Guide"
+    title: 'Agency vs. In-House Design: A Strategic Resourcing Guide'
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

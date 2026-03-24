@@ -1,9 +1,9 @@
 ---
-title: "Interactive Impact Reports: The Business Case for Going Digital"
+title: 'Interactive Impact Reports: The Business Case for Going Digital'
 slug: interactive-impact-reports-business-case
 brow: Business Case
 tagline: Static PDFs are failing to engage donors
-date: "2025-06-03"
+date: '2025-06-03'
 author: CCM Design Team
 categories:
   - Digital Experience & Websites
@@ -11,26 +11,53 @@ tags:
   - interactive impact reports
   - nonprofit annual report trends
   - digital annual report benefits
-excerpt: "Static PDFs are failing to engage donors. Discover the business case for interactive impact reports: better data, accessibility, and retention."
-tldr: |-
-  - **The "Black Box" Problem**: Traditional PDFs offer zero visibility into reader behavior beyond the initial download, making it impossible to know what content resonates.
-  - **Data-Driven Insight**: Interactive reports leverage web analytics to track scroll depth, dwell time, and specific topic interest, providing actionable intelligence for donor cultivation.
-  - **Retention Strategy**: With donor retention rates slipping below 45%, the transparency and user experience of digital reports are critical tools for building trust.
-  - **Accessibility**: HTML-based reports are natively accessible to screen readers and mobile devices, whereas PDFs often create barriers for users with disabilities.
+excerpt: >-
+  Static PDFs are failing to engage donors. Discover the business case for
+  interactive impact reports: better data, accessibility, and retention.
+tldr: >-
+  - **The "Black Box" Problem**: Traditional PDFs offer zero visibility into
+  reader behavior beyond the initial download, making it impossible to know what
+  content resonates.
 
-  Your communications team spends months gathering data, interviewing beneficiaries, and crafting the perfect narrative for your annual report. You hire a designer, go through endless rounds of proofing, and finally launch the PDF via email and social media.
+  - **Data-Driven Insight**: Interactive reports leverage web analytics to track
+  scroll depth, dwell time, and specific topic interest, providing actionable
+  intelligence for donor cultivation.
+
+  - **Retention Strategy**: With donor retention rates slipping below 45%, the
+  transparency and user experience of digital reports are critical tools for
+  building trust.
+
+  - **Accessibility**: HTML-based reports are natively accessible to screen
+  readers and mobile devices, whereas PDFs often create barriers for users with
+  disabilities.
+
+
+  Your communications team spends months gathering data, interviewing
+  beneficiaries, and crafting the perfect narrative for your annual report. You
+  hire a designer, go through endless rounds of proofing, and finally launch the
+  PDF via email and social media.
+
 
   Then, silence.
 
-  You might see a download count, but that number is a dead end. You don't know if they read every word or closed the file after the cover page. You don't know if they skipped the financial tables or lingered on the program impact stories. In an era where data drives almost every other strategic decision, the static annual report remains a "black box"—an asset requiring immense effort but yielding minimal intelligence.
 
-  For mission-driven organizations, the shift to interactive impact reports isn't just a design trend. It is a strategic move to solve the problems of opacity, accessibility, and declining engagement.
+  You might see a download count, but that number is a dead end. You don't know
+  if they read every word or closed the file after the cover page. You don't
+  know if they skipped the financial tables or lingered on the program impact
+  stories. In an era where data drives almost every other strategic decision,
+  the static annual report remains a "black box"—an asset requiring immense
+  effort but yielding minimal intelligence.
+
+
+  For mission-driven organizations, the shift to interactive impact reports
+  isn't just a design trend. It is a strategic move to solve the problems of
+  opacity, accessibility, and declining engagement.
 stage: researcher
 related_posts:
   - slug: interactive-research-reports-trends
-    title: "The End of the PDF: 5 Trends Redefining Research Communication"
+    title: 'The End of the PDF: 5 Trends Redefining Research Communication'
   - slug: science-behind-failing-board-packs
-    title: "Why Static Board Packs Fail: The Science of Digital Reporting"
+    title: 'Why Static Board Packs Fail: The Science of Digital Reporting'
   - slug: static-pdfs-undermining-research-impact
     title: Why Static PDFs Are Undermining Your Research Impact
   - slug: static-infographics-failing-research
@@ -38,6 +65,8 @@ related_posts:
   - slug: static-pdfs-undermine-research-impact
     title: Why Static PDFs Are Undermining Your Research Impact
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

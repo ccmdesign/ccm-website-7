@@ -34,7 +34,9 @@ export default defineContentConfig({
           slug: z.string(),
           title: z.string()
         })).optional(),
-        rawbody: z.string().optional()
+        rawbody: z.string().optional(),
+        newsletterSent: z.boolean().default(false),
+        linkedinSent: z.boolean().default(false)
       })
     }),
     casestudies: defineCollection({

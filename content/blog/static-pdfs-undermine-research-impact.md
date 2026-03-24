@@ -2,8 +2,8 @@
 title: Why Static PDFs Are Undermining Your Research Impact
 slug: static-pdfs-undermine-research-impact
 brow: publications
-tagline: Static PDFs limit reach, block AI agents, and exclude disabled readers
-date: "2025-12-23"
+tagline: 'Static PDFs limit reach, block AI agents, and exclude disabled readers'
+date: '2025-12-23'
 author: CCM Design Team
 categories:
   - Publication Design & Production
@@ -13,17 +13,44 @@ tags:
   - single source publishing
   - JATS XML
   - digital publishing
-excerpt: Static PDFs limit reach, block AI agents, and exclude disabled readers. Learn why shifting to HTML is critical for modern research impact.
-tldr: |-
-  - **The "Digital Paper" Paradox:** While research distribution has moved online, the primary format remains a digital simulation of print, creating friction for modern tools.
-  - **Three Critical Bottlenecks:** Static PDFs create systemic barriers for accessibility (excluding disabled readers), mobile experience (frustrating users), and AI synthesis (blocking discovery).
-  - **The Strategic Pivot:** Leading organizations are not abandoning PDFs entirely but demoting them to archival status in favor of HTML-first workflows.
+excerpt: >-
+  Static PDFs limit reach, block AI agents, and exclude disabled readers. Learn
+  why shifting to HTML is critical for modern research impact.
+tldr: >-
+  - **The "Digital Paper" Paradox:** While research distribution has moved
+  online, the primary format remains a digital simulation of print, creating
+  friction for modern tools.
 
-  We live in an era defined by fluid, semantic web technologies and instantaneous global communication. Yet, the primary vehicle for scientific knowledge remains a digital simulation of paper: the Portable Document Format (PDF). While the PDF has historically served a vital role in preserving document fidelity across platforms, its dominance as the *primary* distribution channel is now actively undermining the [research impact](/static-pdfs-undermining-research-impact) of forward-thinking organizations.
+  - **Three Critical Bottlenecks:** Static PDFs create systemic barriers for
+  accessibility (excluding disabled readers), mobile experience (frustrating
+  users), and AI synthesis (blocking discovery).
 
-  For researchers and evaluators, understanding the limitations of the PDF is no longer merely a technical concern—it is a strategic imperative. The reliance on static PDFs creates friction at every stage of the lifecycle: it blocks accessibility tools used by disabled scholars, frustrates mobile users who now constitute the majority of web traffic, and obfuscates data from the AI agents increasingly tasked with synthesizing vast libraries of literature.
+  - **The Strategic Pivot:** Leading organizations are not abandoning PDFs
+  entirely but demoting them to archival status in favor of HTML-first
+  workflows.
 
-  This isn't an argument for eliminating the PDF. It is an argument against using it as a consumption interface. By treating PDFs as archives rather than experiences, we can unlock the full potential of digital dissemination.
+
+  We live in an era defined by fluid, semantic web technologies and
+  instantaneous global communication. Yet, the primary vehicle for scientific
+  knowledge remains a digital simulation of paper: the Portable Document Format
+  (PDF). While the PDF has historically served a vital role in preserving
+  document fidelity across platforms, its dominance as the *primary*
+  distribution channel is now actively undermining the [research
+  impact](/static-pdfs-undermining-research-impact) of forward-thinking
+  organizations.
+
+
+  For researchers and evaluators, understanding the limitations of the PDF is no
+  longer merely a technical concern—it is a strategic imperative. The reliance
+  on static PDFs creates friction at every stage of the lifecycle: it blocks
+  accessibility tools used by disabled scholars, frustrates mobile users who now
+  constitute the majority of web traffic, and obfuscates data from the AI agents
+  increasingly tasked with synthesizing vast libraries of literature.
+
+
+  This isn't an argument for eliminating the PDF. It is an argument against
+  using it as a consumption interface. By treating PDFs as archives rather than
+  experiences, we can unlock the full potential of digital dissemination.
 stage: researcher
 related_posts:
   - slug: static-pdfs-undermining-research-impact
@@ -31,12 +58,16 @@ related_posts:
   - slug: think-tank-website-undermining-impact
     title: Is Your Think Tank's Website Undermining Your Research Impact?
   - slug: data-visualization-research-impact
-    title: "Data Visualization Research: Why Bad Charts Kill Impact"
+    title: 'Data Visualization Research: Why Bad Charts Kill Impact'
   - slug: poor-data-visualization-obscures-research-impact
-    title: "The Invisible Science: How Poor Data Visualization Obscures Research Impact"
+    title: >-
+      The Invisible Science: How Poor Data Visualization Obscures Research
+      Impact
   - slug: 5-signs-research-publications-need-redesign
     title: 5 Signs Your Research Publications Need a Redesign
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

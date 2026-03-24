@@ -1,8 +1,8 @@
 ---
-title: "The GovLab Case Study"
+title: The GovLab Case Study
 slug: case-study-govlab-interactive-research-platform
 brow: Scaling Research Impact
-date: "2025-02-04"
+date: '2025-02-04'
 author: CCM Design Team
 categories:
   - Digital Experience & Websites
@@ -12,29 +12,51 @@ tags:
   - participatory design
   - research impact visualization
   - GovLab case study
-excerpt: See how we helped GovLab transform static research into interactive platforms, engaging 455 experts and scaling across 12+ websites.
-tldr: |-
-  *   **Scalability via Systems:** A centralized Pattern Library allowed GovLab to launch and maintain over 12 distinct websites without increasing technical debt.
-  *   **Engagement ROI:** Switching from static reports to interactive tools generated **70,000 visits in 48 hours** for the Christchurch recovery project.
-  *   **Participatory Validation:** Complex user flows enabled the engagement of **455 experts** and **1,700 public votes** to define research priorities.
-  *   **Future-Proofing:** "Living Evidence" platforms replaced static archives, allowing continuous updates as new data emerges.
+excerpt: >-
+  See how we helped GovLab transform static research into interactive platforms,
+  engaging 455 experts and scaling across 12+ websites.
+tldr: >-
+  *   **Scalability via Systems:** A centralized Pattern Library allowed GovLab
+  to launch and maintain over 12 distinct websites without increasing technical
+  debt.
 
-  Governance research faces a persistent delivery problem. Institutions produce rigorous, high-value data, but often trap it in static formats—PDFs, academic repositories, and dense text blocks—that fail to reach the policymakers and citizens who need it most.
+  *   **Engagement ROI:** Switching from static reports to interactive tools
+  generated **70,000 visits in 48 hours** for the Christchurch recovery project.
 
-  For The Governance Lab (GovLab) at NYU, the goal was to break this cycle. They needed to transform their "text-heavy material with a dry subject" into "contemporary, future-oriented products" that could drive actual public engagement [1]. This case study analyzes how a strategic partnership with CCM Design built the digital infrastructure to make that transition possible, scalable, and measurable.
+  *   **Participatory Validation:** Complex user flows enabled the engagement of
+  **455 experts** and **1,700 public votes** to define research priorities.
+
+  *   **Future-Proofing:** "Living Evidence" platforms replaced static archives,
+  allowing continuous updates as new data emerges.
+
+
+  Governance research faces a persistent delivery problem. Institutions produce
+  rigorous, high-value data, but often trap it in static formats—PDFs, academic
+  repositories, and dense text blocks—that fail to reach the policymakers and
+  citizens who need it most.
+
+
+  For The Governance Lab (GovLab) at NYU, the goal was to break this cycle. They
+  needed to transform their "text-heavy material with a dry subject" into
+  "contemporary, future-oriented products" that could drive actual public
+  engagement [1]. This case study analyzes how a strategic partnership with CCM
+  Design built the digital infrastructure to make that transition possible,
+  scalable, and measurable.
 stage: evaluator
 related_posts:
   - slug: evaluate-research-publication-design-partners
     title: How to Evaluate Design Partners for Research Publications
   - slug: scoping-complex-research-communication-projects
-    title: "Scoping Complex Research Communication Projects: A Risk Mitigation Guide"
+    title: 'Scoping Complex Research Communication Projects: A Risk Mitigation Guide'
   - slug: publication-design-vs-marketing-design
-    title: "Publication Design vs. Marketing Design: The Hidden Differences"
+    title: 'Publication Design vs. Marketing Design: The Hidden Differences'
   - slug: designing-scalable-system-idrc
     title: A Strategic Design System Roadmap for the IDRC
   - slug: harvard-policy-publication-redesign
     title: How We Rebuilt Harvard’s Policy Publication Ecosystem
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

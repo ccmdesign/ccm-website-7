@@ -1,8 +1,10 @@
 ---
 title: Streamlining 50-Stakeholder Sign-offs
 brow: The Executive Approval Accelerator
-tagline: Transform communication bottlenecks into competitive advantages through systematic workflow design that delivers 60-75% time reductions
-date: "2026-04-05"
+tagline: >-
+  Transform communication bottlenecks into competitive advantages through
+  systematic workflow design that delivers 60-75% time reductions
+date: '2026-04-05'
 author: CCM Design Team
 categories:
   - Content Operations & Strategy
@@ -23,9 +25,17 @@ seo_tags:
   - stakeholder-coordination
   - approval-process-improvement
   - workflow-efficiency
-excerpt: Organizations lose $2.3M annually to approval delays. Systematic workflow design delivers 60-75% time reductions and transforms communication bottlenecks into competitive advantages.
-tldr: Organizations lose $2.3M annually to approval delays. Systematic workflow design delivers 60-75% time reductions and transforms communication bottlenecks into competitive advantages.
+excerpt: >-
+  Organizations lose $2.3M annually to approval delays. Systematic workflow
+  design delivers 60-75% time reductions and transforms communication
+  bottlenecks into competitive advantages.
+tldr: >-
+  Organizations lose $2.3M annually to approval delays. Systematic workflow
+  design delivers 60-75% time reductions and transforms communication
+  bottlenecks into competitive advantages.
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

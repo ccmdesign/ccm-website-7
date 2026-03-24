@@ -1,9 +1,13 @@
 ---
-title: How Stanford Research Center Achieved 400% Engagement Through Digital Infrastructure That Actually Works
+title: >-
+  How Stanford Research Center Achieved 400% Engagement Through Digital
+  Infrastructure That Actually Works
 slug: stanford-research-400-percent-engagement-digital-infrastructure
 brow: Research Impact
-tagline: Research institutions transform stakeholder relationships when they move beyond static PDFs to personalized, trackable communications
-date: "2026-02-01"
+tagline: >-
+  Research institutions transform stakeholder relationships when they move
+  beyond static PDFs to personalized, trackable communications
+date: '2026-02-01'
 author: CCM Design Team
 categories:
   - Research Communication & Impact
@@ -24,8 +28,13 @@ seo_tags:
   - academic stakeholder tracking
   - research publication optimization
   - institutional engagement metrics
-excerpt: While 65% of digital transformations fail, research institutions implementing specialized approaches achieve 35-40% stakeholder engagement improvements through understanding academic culture, not just technology.
+excerpt: >-
+  While 65% of digital transformations fail, research institutions implementing
+  specialized approaches achieve 35-40% stakeholder engagement improvements
+  through understanding academic culture, not just technology.
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

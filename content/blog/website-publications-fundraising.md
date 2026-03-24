@@ -2,8 +2,10 @@
 title: How Your Website and Publications Can Help Your Fundraising
 slug: nonprofit-website-publications-fundraising-strategy
 brow: Nonprofit & Foundation Strategy
-tagline: Transform your digital presence into a powerful fundraising asset that builds credibility and drives donor engagement
-date: "2024-05-02"
+tagline: >-
+  Transform your digital presence into a powerful fundraising asset that builds
+  credibility and drives donor engagement
+date: '2024-05-02'
 author: CCM Design Team
 categories:
   - Nonprofit Growth & Fundraising
@@ -24,9 +26,19 @@ seo_tags:
   - foundation-websites
   - donor-communication
   - fundraising-success
-excerpt: Your website is a critical fundraising tool that validates your cause and builds credibility. Well-designed nonprofit websites can increase donor conversions by 45% through professional design and strategic content.
-tldr: Your website serves as the digital front door to your nonprofit, directly influencing public perception and fundraising success. A professionally designed website with strategic content and effective SEO can significantly boost donor engagement, build organizational credibility, and create a powerful track record that attracts future funding opportunities.
+excerpt: >-
+  Your website is a critical fundraising tool that validates your cause and
+  builds credibility. Well-designed nonprofit websites can increase donor
+  conversions by 45% through professional design and strategic content.
+tldr: >-
+  Your website serves as the digital front door to your nonprofit, directly
+  influencing public perception and fundraising success. A professionally
+  designed website with strategic content and effective SEO can significantly
+  boost donor engagement, build organizational credibility, and create a
+  powerful track record that attracts future funding opportunities.
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

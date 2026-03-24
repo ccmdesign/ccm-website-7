@@ -2,8 +2,10 @@
 title: How to sell your research
 slug: sell-your-research-academic-marketing-strategies
 brow: Research & Academic Communication
-tagline: Understanding the intrinsic value of your knowledge, expertise, and personal brand in academic research
-date: "2024-05-13"
+tagline: >-
+  Understanding the intrinsic value of your knowledge, expertise, and personal
+  brand in academic research
+date: '2024-05-13'
 author: CCM Design Team
 categories:
   - Research Communication & Impact
@@ -24,9 +26,19 @@ seo_tags:
   - scientific-communication
   - research-visibility
   - academic-networking
-excerpt: Discover how to 'sell' your research by understanding its intrinsic value. Learn to market your knowledge, expertise, and personal brand to secure funding and build your academic reputation effectively.
-tldr: Researchers aren't just collecting data—they're selling knowledge, expertise, and personal brand. Understanding what you're actually "selling" helps secure funding, build reputation, and create impact. The key is recognizing the difference between your audience (peers who provide social proof) and your clients (funders who invest in your work).
+excerpt: >-
+  Discover how to 'sell' your research by understanding its intrinsic value.
+  Learn to market your knowledge, expertise, and personal brand to secure
+  funding and build your academic reputation effectively.
+tldr: >-
+  Researchers aren't just collecting data—they're selling knowledge, expertise,
+  and personal brand. Understanding what you're actually "selling" helps secure
+  funding, build reputation, and create impact. The key is recognizing the
+  difference between your audience (peers who provide social proof) and your
+  clients (funders who invest in your work).
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

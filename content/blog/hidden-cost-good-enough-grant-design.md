@@ -2,7 +2,7 @@
 title: The Hidden Cost of "Good Enough" Design in Grant Proposals
 slug: hidden-cost-good-enough-grant-design
 brow: publications
-date: "2025-04-29"
+date: '2025-04-29'
 author: CCM Design Team
 categories:
   - Nonprofit Growth & Fundraising
@@ -12,29 +12,59 @@ tags:
   - cognitive load
   - logic models
   - grant writing strategy
-excerpt: Reviewer fatigue and cognitive load often decide funding outcomes before scientific merit is assessed. Discover why "good enough" design is a strategic liability.
-tldr: |-
-  *   **Reviewer fatigue is a silent killer**: Tired reviewers rely on heuristics (mental shortcuts) to make decisions, often rejecting poorly formatted proposals regardless of scientific merit.
-  *   **Visuals accelerate consensus**: While text requires slow linear processing, strategic visuals allow reviewers to grasp complex logic models instantly.
-  *   **Underinvestment signals incompetence**: Poor design is frequently interpreted as a proxy for a lack of organizational capability or attention to detail.
-  *   **Design is a financial strategy**: The "sunk cost" of a rejected proposal far exceeds the investment in professional visual communication.
+excerpt: >-
+  Reviewer fatigue and cognitive load often decide funding outcomes before
+  scientific merit is assessed. Discover why "good enough" design is a strategic
+  liability.
+tldr: >-
+  *   **Reviewer fatigue is a silent killer**: Tired reviewers rely on
+  heuristics (mental shortcuts) to make decisions, often rejecting poorly
+  formatted proposals regardless of scientific merit.
 
-  You wrote the perfect proposal. The methodology was rigorous, the team was qualified, and the impact was clear. Yet, the rejection letter arrived with vague feedback or, worse, silence.
+  *   **Visuals accelerate consensus**: While text requires slow linear
+  processing, strategic visuals allow reviewers to grasp complex logic models
+  instantly.
 
-  This is the "Researcher's Fallacy": the belief that scientific merit alone dictates funding success. In an ideal world, reviewers would judge every application purely on the substance of the ideas. In reality, [grant review](/psychology-grant-evaluation-design) is a human process constrained by biology, time, and psychology. When you settle for "good enough" design—standard templates, walls of text, and default charts—you are not just making an aesthetic choice. You are imposing a cognitive tax on the very people you need to persuade.
+  *   **Underinvestment signals incompetence**: Poor design is frequently
+  interpreted as a proxy for a lack of organizational capability or attention to
+  detail.
+
+  *   **Design is a financial strategy**: The "sunk cost" of a rejected proposal
+  far exceeds the investment in professional visual communication.
+
+
+  You wrote the perfect proposal. The methodology was rigorous, the team was
+  qualified, and the impact was clear. Yet, the rejection letter arrived with
+  vague feedback or, worse, silence.
+
+
+  This is the "Researcher's Fallacy": the belief that scientific merit alone
+  dictates funding success. In an ideal world, reviewers would judge every
+  application purely on the substance of the ideas. In reality, [grant
+  review](/psychology-grant-evaluation-design) is a human process constrained by
+  biology, time, and psychology. When you settle for "good enough"
+  design—standard templates, walls of text, and default charts—you are not just
+  making an aesthetic choice. You are imposing a cognitive tax on the very
+  people you need to persuade.
 stage: researcher
 related_posts:
   - slug: grant-proposal-design-differentiation
-    title: "Why Your Grant Proposals Look Like Everyone Else's: The Science of Differentiation"
+    title: >-
+      Why Your Grant Proposals Look Like Everyone Else's: The Science of
+      Differentiation
   - slug: psychology-grant-evaluation-design
-    title: "Grant Proposal Design: The Psychology of Evaluation"
+    title: 'Grant Proposal Design: The Psychology of Evaluation'
   - slug: poor-data-visualization-obscures-research-impact
-    title: "The Invisible Science: How Poor Data Visualization Obscures Research Impact"
+    title: >-
+      The Invisible Science: How Poor Data Visualization Obscures Research
+      Impact
   - slug: design-debt-research-organizations
-    title: "Design Debt in Research Organizations: The Cost of 'We'll Fix It Later'"
+    title: 'Design Debt in Research Organizations: The Cost of ''We''ll Fix It Later'''
   - slug: hidden-cost-inconsistent-publication-design
     title: The Hidden Tax of Inconsistent Publication Design
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

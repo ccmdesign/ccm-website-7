@@ -1,9 +1,9 @@
 ---
-title: "Truth Must Be Designed: Web Credibility in the Age of Mistrust"
+title: 'Truth Must Be Designed: Web Credibility in the Age of Mistrust'
 slug: truth-must-be-designed-web-credibility
 brow: publications
-tagline: In an age of misinformation, users judge credibility in 50 milliseconds
-date: "2026-03-08"
+tagline: 'In an age of misinformation, users judge credibility in 50 milliseconds'
+date: '2026-03-08'
 author: CCM Design Team
 categories:
   - Publication Design & Production
@@ -13,31 +13,62 @@ tags:
   - institutional trust
   - digital reputation
   - Stanford web credibility guidelines
-excerpt: In an age of misinformation, users judge credibility in 50 milliseconds. Learn how design bridges the gap between legitimate expertise and public trust.
-tldr: |-
-  - **The Trust Deficit**: Public confidence in traditional health institutions like the FDA and CDC has dropped significantly, while trust has contracted to local circles like "My Employer."
-  - **The 50-Millisecond Gatekeeper**: Users form credibility judgments about a website in 0.05 seconds. 94% of these first impressions are design-related, not content-related.
-  - **Cognitive Fluency**: The human brain equates "ease of processing" with "truth." Hard-to-read interfaces are subconsciously flagged as risky or false.
-  - **The Two-Stage Trust Model**: Design dictates rejection; content dictates selection. If your design fails, your content is never evaluated.
+excerpt: >-
+  In an age of misinformation, users judge credibility in 50 milliseconds. Learn
+  how design bridges the gap between legitimate expertise and public trust.
+tldr: >-
+  - **The Trust Deficit**: Public confidence in traditional health institutions
+  like the FDA and CDC has dropped significantly, while trust has contracted to
+  local circles like "My Employer."
 
-  The World Health Organization describes our current environment as an "infodemic"—an overabundance of information, both accurate and false, that makes it difficult for people to identify trustworthy sources [11]. In this chaotic ecosystem, legitimate research institutes, think tanks, and health organizations face a paradox. They possess the rigorous data and expertise the public needs, yet they are losing the battle for attention to misinformation that is often better packaged.
+  - **The 50-Millisecond Gatekeeper**: Users form credibility judgments about a
+  website in 0.05 seconds. 94% of these first impressions are design-related,
+  not content-related.
 
-  For decades, the assumption in the scientific community was that truth is self-evident. If the data is sound, the audience will follow. The reality of digital behavior proves otherwise. We have entered an era where truth is no longer enough; truth must be *designed* to look credible.
+  - **Cognitive Fluency**: The human brain equates "ease of processing" with
+  "truth." Hard-to-read interfaces are subconsciously flagged as risky or false.
 
-  When a user lands on a research publication or health portal, they are not initially acting as a rational evaluator of citations. They are acting on instinct, using rapid visual heuristics to determine if the environment is safe. If legitimate organizations fail to signal competence through their digital presentation, they do not just look outdated—they look untrustworthy.
+  - **The Two-Stage Trust Model**: Design dictates rejection; content dictates
+  selection. If your design fails, your content is never evaluated.
+
+
+  The World Health Organization describes our current environment as an
+  "infodemic"—an overabundance of information, both accurate and false, that
+  makes it difficult for people to identify trustworthy sources [11]. In this
+  chaotic ecosystem, legitimate research institutes, think tanks, and health
+  organizations face a paradox. They possess the rigorous data and expertise the
+  public needs, yet they are losing the battle for attention to misinformation
+  that is often better packaged.
+
+
+  For decades, the assumption in the scientific community was that truth is
+  self-evident. If the data is sound, the audience will follow. The reality of
+  digital behavior proves otherwise. We have entered an era where truth is no
+  longer enough; truth must be *designed* to look credible.
+
+
+  When a user lands on a research publication or health portal, they are not
+  initially acting as a rational evaluator of citations. They are acting on
+  instinct, using rapid visual heuristics to determine if the environment is
+  safe. If legitimate organizations fail to signal competence through their
+  digital presentation, they do not just look outdated—they look untrustworthy.
 stage: researcher
 related_posts:
   - slug: nonprofit-credibility-signals-funder-due-diligence
-    title: "Nonprofit Credibility Signals: What Funders Actually Check"
+    title: 'Nonprofit Credibility Signals: What Funders Actually Check'
   - slug: think-tank-website-design-mistakes
     title: Is Your Think Tank's Website Undermining Your Research?
   - slug: annual-report-comparative-disadvantage
-    title: "The Comparative Disadvantage: Why Your Annual Report Is Failing Against Peers"
+    title: >-
+      The Comparative Disadvantage: Why Your Annual Report Is Failing Against
+      Peers
   - slug: science-translation-gap-invisible-research
-    title: "The Science Translation Gap: Why Important Research Stays Invisible"
+    title: 'The Science Translation Gap: Why Important Research Stays Invisible'
   - slug: static-infographics-failing-research
     title: Why Static Infographics Are Failing Your Research Impact
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

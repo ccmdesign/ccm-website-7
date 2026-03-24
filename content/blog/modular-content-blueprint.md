@@ -1,8 +1,11 @@
 ---
-title: One Report, 20 Assets, 10x the Impact
+title: 'One Report, 20 Assets, 10x the Impact'
 brow: The Modular Content Blueprint
-tagline: Transform research ROI through systematic content multiplication strategies that achieve 340% engagement improvements and 200-400% positive ROI within 24 months
-date: "2026-04-19"
+tagline: >-
+  Transform research ROI through systematic content multiplication strategies
+  that achieve 340% engagement improvements and 200-400% positive ROI within 24
+  months
+date: '2026-04-19'
 author: CCM Design Team
 categories:
   - Content Operations & Strategy
@@ -23,9 +26,17 @@ seo_tags:
   - content-architecture-framework
   - stakeholder-engagement-optimization
   - research-impact-measurement
-excerpt: Organizations implementing modular content architectures achieve 340% engagement improvements and 200-400% ROI within 24 months by transforming single reports into strategic ecosystems of influence.
-tldr: Organizations implementing modular content architectures achieve 340% engagement improvements and 200-400% ROI within 24 months by transforming single reports into strategic ecosystems of influence.
+excerpt: >-
+  Organizations implementing modular content architectures achieve 340%
+  engagement improvements and 200-400% ROI within 24 months by transforming
+  single reports into strategic ecosystems of influence.
+tldr: >-
+  Organizations implementing modular content architectures achieve 340%
+  engagement improvements and 200-400% ROI within 24 months by transforming
+  single reports into strategic ecosystems of influence.
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

@@ -1,9 +1,9 @@
 ---
-title: "Why Static Board Packs Fail"
+title: Why Static Board Packs Fail
 slug: science-behind-failing-board-packs
 brow: The Science of Digital Reporting
 tagline: The 'Screen Inferiority Effect' undermines governance
-date: "2025-11-25"
+date: '2025-11-25'
 author: CCM Design Team
 categories:
   - Research Communication & Impact
@@ -13,29 +13,57 @@ tags:
   - board pack transformation
   - cognitive load in governance
   - board portal security
-excerpt: The 'Screen Inferiority Effect' undermines governance. Discover why leading boards are shifting from static PDFs to interactive digital reporting for better insights.
-tldr: |-
-  -   **Volume vs. Value:** Board packs have grown by 30% to an average of 226 pages, yet only 36% of directors find them useful, creating a "data dump" that obscures strategic insight.
-  -   **The Science of Reading:** The "Screen Inferiority Effect" proves that reading static documents on screens significantly reduces comprehension and encourages shallow skimming compared to paper.
-  -   **Security Blind Spots:** Distributing materials via email attachment creates unmanageable risks, including version control chaos and exposure to "Whale Phishing" attacks.
-  -   **The Design Solution:** Leading organizations are adopting "progressive disclosure," an interactive design principle that aligns information delivery with how the human brain actually processes complex data.
+excerpt: >-
+  The 'Screen Inferiority Effect' undermines governance. Discover why leading
+  boards are shifting from static PDFs to interactive digital reporting for
+  better insights.
+tldr: >-
+  -   **Volume vs. Value:** Board packs have grown by 30% to an average of 226
+  pages, yet only 36% of directors find them useful, creating a "data dump" that
+  obscures strategic insight.
 
-  The modern board pack is a paradox. Organizations possess more data than ever before, yet directors frequently report feeling less informed and more overwhelmed. The sheer volume of information provided to boards has exploded, but the mechanism for delivering that intelligence—typically a static PDF sent via email or a basic portal—has failed to evolve.
+  -   **The Science of Reading:** The "Screen Inferiority Effect" proves that
+  reading static documents on screens significantly reduces comprehension and
+  encourages shallow skimming compared to paper.
 
-  This disconnect represents more than an administrative nuisance; it is a governance risk. When directors cannot effectively digest the materials provided, their ability to provide strategic oversight and fulfill fiduciary duties is compromised. The shift from static documents to interactive digital reporting is not merely a technological upgrade. It is a necessary response to the biological limitations of human information processing in a digital environment.
+  -   **Security Blind Spots:** Distributing materials via email attachment
+  creates unmanageable risks, including version control chaos and exposure to
+  "Whale Phishing" attacks.
+
+  -   **The Design Solution:** Leading organizations are adopting "progressive
+  disclosure," an interactive design principle that aligns information delivery
+  with how the human brain actually processes complex data.
+
+
+  The modern board pack is a paradox. Organizations possess more data than ever
+  before, yet directors frequently report feeling less informed and more
+  overwhelmed. The sheer volume of information provided to boards has exploded,
+  but the mechanism for delivering that intelligence—typically a static PDF sent
+  via email or a basic portal—has failed to evolve.
+
+
+  This disconnect represents more than an administrative nuisance; it is a
+  governance risk. When directors cannot effectively digest the materials
+  provided, their ability to provide strategic oversight and fulfill fiduciary
+  duties is compromised. The shift from static documents to interactive digital
+  reporting is not merely a technological upgrade. It is a necessary response to
+  the biological limitations of human information processing in a digital
+  environment.
 stage: researcher
 related_posts:
   - slug: interactive-impact-reports-business-case
-    title: "Interactive Impact Reports: The Business Case for Going Digital"
+    title: 'Interactive Impact Reports: The Business Case for Going Digital'
   - slug: interactive-research-reports-trends
-    title: "The End of the PDF: 5 Trends Redefining Research Communication"
+    title: 'The End of the PDF: 5 Trends Redefining Research Communication'
   - slug: mobile-paradox-nonprofit-reporting
-    title: "The Mobile Paradox: Why Static Reports Fail Modern Donors"
+    title: 'The Mobile Paradox: Why Static Reports Fail Modern Donors'
   - slug: static-pdfs-undermining-research-impact
     title: Why Static PDFs Are Undermining Your Research Impact
   - slug: hybrid-publishing-digital-first-workflow
-    title: "The Hybrid Publishing Paradox: Why Digital-First Workflows Save Print"
+    title: 'The Hybrid Publishing Paradox: Why Digital-First Workflows Save Print'
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

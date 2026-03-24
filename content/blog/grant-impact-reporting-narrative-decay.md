@@ -1,9 +1,9 @@
 ---
-title: "Fixing Narrative Decay in Grant Reporting"
+title: Fixing Narrative Decay in Grant Reporting
 slug: grant-impact-reporting-narrative-decay
 brow: The 90-Day Window
 tagline: Narrative decay ruins impact reports
-date: "2025-04-08"
+date: '2025-04-08'
 author: CCM Design Team
 categories:
   - Nonprofit Growth & Fundraising
@@ -13,29 +13,54 @@ tags:
   - nonprofit documentation
   - narrative decay
   - grant closeout
-excerpt: Narrative decay ruins impact reports. Learn how the forgetting curve and staff turnover degrade data in the final 90 days of a grant cycle.
-tldr: |-
-  - **The Crisis of Memory:** The final 90 days of a grant are when compliance pressures peak and narrative quality collapses due to the "Forgetting Curve."
-  - **Staff Turnover Risks:** With nonprofit turnover exceeding 19%, the staff closing out a grant often lack the tacit knowledge of those who started it.
-  - **The "Skeleton" Solution:** Creating a report template at the kickoff meeting shifts the team's focus from retrospective gathering to real-time capture.
-  - **Agile Documentation:** Implementing a one-week "Documentation Sprint" before the deadline can rescue disappearing content and contextualize financial data.
+excerpt: >-
+  Narrative decay ruins impact reports. Learn how the forgetting curve and staff
+  turnover degrade data in the final 90 days of a grant cycle.
+tldr: >-
+  - **The Crisis of Memory:** The final 90 days of a grant are when compliance
+  pressures peak and narrative quality collapses due to the "Forgetting Curve."
 
-  The final report is often the only enduring artifact of a grant-funded project. Yet, for most organizations, this critical document is produced under the worst possible conditions: at the tail end of a funding cycle, when resources are depleted, staff are transitioning to new projects, and memories of the work have already begun to fade.
+  - **Staff Turnover Risks:** With nonprofit turnover exceeding 19%, the staff
+  closing out a grant often lack the tacit knowledge of those who started it.
 
-  This structural flaw creates a paradox. The moment you are asked to demonstrate the depth of your impact is the moment you are least equipped to recall it.
+  - **The "Skeleton" Solution:** Creating a report template at the kickoff
+  meeting shifts the team's focus from retrospective gathering to real-time
+  capture.
+
+  - **Agile Documentation:** Implementing a one-week "Documentation Sprint"
+  before the deadline can rescue disappearing content and contextualize
+  financial data.
+
+
+  The final report is often the only enduring artifact of a grant-funded
+  project. Yet, for most organizations, this critical document is produced under
+  the worst possible conditions: at the tail end of a funding cycle, when
+  resources are depleted, staff are transitioning to new projects, and memories
+  of the work have already begun to fade.
+
+
+  This structural flaw creates a paradox. The moment you are asked to
+  demonstrate the depth of your impact is the moment you are least equipped to
+  recall it.
 stage: researcher
 related_posts:
   - slug: grant-proposal-design-differentiation
-    title: "Why Your Grant Proposals Look Like Everyone Else's: The Science of Differentiation"
+    title: >-
+      Why Your Grant Proposals Look Like Everyone Else's: The Science of
+      Differentiation
   - slug: data-visualization-research-impact
-    title: "Data Visualization Research: Why Bad Charts Kill Impact"
+    title: 'Data Visualization Research: Why Bad Charts Kill Impact'
   - slug: poor-data-visualization-obscures-research-impact
-    title: "The Invisible Science: How Poor Data Visualization Obscures Research Impact"
+    title: >-
+      The Invisible Science: How Poor Data Visualization Obscures Research
+      Impact
   - slug: psychology-grant-evaluation-design
-    title: "Grant Proposal Design: The Psychology of Evaluation"
+    title: 'Grant Proposal Design: The Psychology of Evaluation'
   - slug: impact-report-activity-trap
     title: The Impact Report That Doesn’t Show Impact
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

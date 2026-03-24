@@ -1,8 +1,10 @@
 ---
 title: Pixel (in)Perfect
 brow: Why Precision Became Obsolete
-tagline: Embrace responsive design reality and focus on user experience over pixel-perfect accuracy
-date: "2023-01-09"
+tagline: >-
+  Embrace responsive design reality and focus on user experience over
+  pixel-perfect accuracy
+date: '2023-01-09'
 author: CCM Design Team
 categories:
   - Digital Experience & Websites
@@ -20,9 +22,16 @@ seo_tags:
   - web design philosophy
   - user experience design
   - adaptive design
-excerpt: Why pixel perfection became obsolete in modern web design and how embracing flexibility improves user experience across devices.
-tldr: Forget about precision on webdesign. Since the iPhone, the web became such a chaotic medium it is unrealistic to expect a pixel perfect design. A website that doesn't look "broken" is already a good enough.
+excerpt: >-
+  Why pixel perfection became obsolete in modern web design and how embracing
+  flexibility improves user experience across devices.
+tldr: >-
+  Forget about precision on webdesign. Since the iPhone, the web became such a
+  chaotic medium it is unrealistic to expect a pixel perfect design. A website
+  that doesn't look "broken" is already a good enough.
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 
