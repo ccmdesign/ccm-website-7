@@ -39,9 +39,9 @@
 
 <script setup>
 import { ref } from 'vue'
+import { useNewsletterSubscribe } from '~/composables/useNewsletterSubscribe'
 
-const email = ref('')
-const subscribed = ref(false)
+const { email, subscribed, subscribe } = useNewsletterSubscribe()
 const scrambling = ref(false)
 const displayChars = ref([])
 
@@ -105,21 +105,10 @@ function scrambleText(target, duration = 1000) {
 
 async function handleSubmit() {
   if (!email.value || subscribed.value) return
-
-  const url = `https://claudiomendonca.us2.list-manage.com/subscribe/post-json?u=468ffb5e21f0082332ecdd5f3&id=eaa305764b&f_id=0074d8e3f0&EMAIL=${encodeURIComponent(email.value)}&c=callback`
-
-  const callbackName = `mc_callback_${Date.now()}`
-
-  window[callbackName] = () => {
-    subscribed.value = true
+  await subscribe()
+  if (subscribed.value) {
     scrambleText('Subscribed')
-    delete window[callbackName]
-    document.body.removeChild(script)
   }
-
-  const script = document.createElement('script')
-  script.src = url.replace('c=callback', `c=${callbackName}`)
-  document.body.appendChild(script)
 }
 </script>
 
