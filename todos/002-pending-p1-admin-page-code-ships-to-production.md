@@ -1,5 +1,5 @@
 ---
-status: pending
+status: resolved
 priority: p1
 issue_id: "002"
 tags: [code-review, security, architecture]
@@ -84,3 +84,12 @@ The admin page at `pages/admin/index.vue` is excluded from prerendering via `nit
 - Identified that prerender exclusion does not prevent JS bundling
 - Confirmed `process.env.NODE_ENV` is build-time but component code persists
 - Assessed as P1 due to information leakage of admin endpoints
+
+### 2026-03-24 - Resolved
+
+**By:** Claude Code
+
+**Actions:**
+- Replaced `process.env.NODE_ENV` check with `import.meta.dev` which Vite statically replaces and tree-shakes
+- Added `definePageMeta({ validate })` that returns false in production, yielding a 404
+- Admin endpoint URLs and component code will be eliminated from production bundle by Vite dead-code elimination

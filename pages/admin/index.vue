@@ -80,10 +80,17 @@
 import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 
-const isDev = process.env.NODE_ENV === 'development'
+// Block route entirely in production — returns 404 before component renders
+definePageMeta({
+  validate: () => import.meta.dev || false,
+})
+
+// import.meta.dev is statically replaced by Vite at build time.
+// When false, the entire if-block (and its referenced code) is tree-shaken out.
+const isDev = import.meta.dev
 const router = useRouter()
 
-// Redirect in production
+// Redirect in production — Vite will tree-shake this entire branch away
 if (!isDev) {
   if (import.meta.client) {
     router.replace('/')

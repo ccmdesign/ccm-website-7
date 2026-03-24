@@ -1,5 +1,5 @@
 ---
-status: pending
+status: resolved
 priority: p1
 issue_id: "001"
 tags: [code-review, security]
@@ -80,3 +80,12 @@ The server routes `/api/admin/send-newsletter` and `/api/admin/send-linkedin` ac
 - Identified zero-auth admin endpoints during PR #1 review
 - Confirmed no middleware or guards present
 - Assessed risk as P1 due to potential for accidental production exposure
+
+### 2026-03-24 - Resolved
+
+**By:** Claude Code
+
+**Actions:**
+- Added `import.meta.dev` guard to both admin routes — returns 404 in production
+- Added optional `ADMIN_API_SECRET` header check for dev-mode security
+- Both routes now reject unauthenticated requests when secret is configured

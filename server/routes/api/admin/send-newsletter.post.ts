@@ -2,6 +2,20 @@ import { resolvePostPath, readPostFrontmatter, updateFrontmatter } from '../../.
 import { sendNewsletter } from '../../../utils/serviceClient'
 
 export default defineEventHandler(async (event) => {
+  // Block access in production builds
+  if (!import.meta.dev) {
+    throw createError({ statusCode: 404, statusMessage: 'Not Found' })
+  }
+
+  // In dev, require ADMIN_API_SECRET if set (optional local security)
+  const expectedSecret = process.env.ADMIN_API_SECRET
+  if (expectedSecret) {
+    const providedSecret = getHeader(event, 'x-admin-secret')
+    if (providedSecret !== expectedSecret) {
+      throw createError({ statusCode: 403, statusMessage: 'Forbidden' })
+    }
+  }
+
   const { slug } = await readBody(event)
 
   if (!slug || typeof slug !== 'string') {
