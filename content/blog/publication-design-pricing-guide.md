@@ -1,8 +1,8 @@
 ---
-title: "Publication Design Pricing Guide: Models, Costs & ROI"
+title: 'Publication Design Pricing Guide: Models, Costs & ROI'
 slug: publication-design-pricing-guide
 brow: Guide
-date: "2025-09-09"
+date: '2025-09-09'
 author: CCM Design Team
 categories:
   - Publication Design & Production
@@ -12,15 +12,32 @@ tags:
   - design retainer models
   - fixed-fee design
   - design budget planning
-excerpt: A decision-maker’s guide to understanding publication design costs, comparing pricing models, and calculating ROI for high-stakes reports.
-tldr: |-
-  - **Pricing reflects density, not length:** Costs correlate with data visualization complexity and custom asset creation, not just page count.
-  - **Model matters:** Fixed-fee and subscription models transfer financial risk to the agency, while hourly billing leaves budget uncertainty with the buyer.
-  - **Phasing reduces risk:** Structuring projects into distinct phases (Strategy → Concept → Execution) allows for "off-ramps" and better cash flow management.
+excerpt: >-
+  A decision-maker’s guide to understanding publication design costs, comparing
+  pricing models, and calculating ROI for high-stakes reports.
+tldr: >-
+  - **Pricing reflects density, not length:** Costs correlate with data
+  visualization complexity and custom asset creation, not just page count.
 
-  Two proposals sit on your desk for the same annual report project. One quotes $8,000; the other is $45,000. Both agencies seem competent, and both promise a professional result. This pricing disparity is the most common source of friction in design procurement. It rarely signals that one agency is "gouging" or the other is a "bargain." Instead, it usually reflects a fundamental difference in how scope and risk are calculated.
+  - **Model matters:** Fixed-fee and subscription models transfer financial risk
+  to the agency, while hourly billing leaves budget uncertainty with the buyer.
 
-  For decision-makers, understanding the mechanics of publication design pricing is not about finding the cheapest option—it is about aligning your investment with your risk tolerance and expected ROI.
+  - **Phasing reduces risk:** Structuring projects into distinct phases
+  (Strategy → Concept → Execution) allows for "off-ramps" and better cash flow
+  management.
+
+
+  Two proposals sit on your desk for the same annual report project. One quotes
+  $8,000; the other is $45,000. Both agencies seem competent, and both promise a
+  professional result. This pricing disparity is the most common source of
+  friction in design procurement. It rarely signals that one agency is "gouging"
+  or the other is a "bargain." Instead, it usually reflects a fundamental
+  difference in how scope and risk are calculated.
+
+
+  For decision-makers, understanding the mechanics of publication design pricing
+  is not about finding the cheapest option—it is about aligning your investment
+  with your risk tolerance and expected ROI.
 stage: buyer
 related_posts:
   - slug: 7-critical-questions-hiring-publication-design-firm
@@ -28,12 +45,14 @@ related_posts:
   - slug: internal-case-professional-publication-design
     title: How to Build the Internal Case for Professional Publication Design
   - slug: preparing-publication-redesign-checklist
-    title: "Preparing for a Publication Redesign: A Buyer's Checklist"
+    title: 'Preparing for a Publication Redesign: A Buyer''s Checklist'
   - slug: publication-design-consistency-costs
     title: The Hidden Costs of Inconsistent Publication Design
   - slug: strategic-publication-design-methodology
-    title: "De-Risking Publication Design: A 9-Step Strategic Methodology"
+    title: 'De-Risking Publication Design: A 9-Step Strategic Methodology'
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

@@ -2,7 +2,7 @@
 title: How We Rebuilt Harvard’s Policy Publication Ecosystem
 slug: rebuilding-harvard-policy-publication-ecosystem
 brow: publications
-date: "2025-09-30"
+date: '2025-09-30'
 author: CCM Design Team
 categories:
   - Content Operations & Strategy
@@ -12,16 +12,38 @@ tags:
   - UX for think tanks
   - digital transformation case study
   - academic publishing platforms
-excerpt: See how we transformed Harvard’s Belfer and Shorenstein Centers from static PDFs to dynamic digital product ecosystems using a product-led UX strategy.
-tldr: |-
-  - **The Shift:** We transitioned Harvard's Belfer and Shorenstein Centers from legacy, event-based, and static PDF models to dynamic, user-centric digital product ecosystems.
-  - **The Methodology:** Success required a "Product Mindset" rather than a "Web Design" mindset, prioritizing user needs and strategic longevity over simple aesthetics.
-  - **The Architecture:** We built scalable systems—one an archive-based casebook, the other a central data hub—that accommodate future growth without requiring a rebuild.
-  - **The Outcome:** The new platforms increased accessibility, amplified reach to industry leaders (from Sundance to Google), and preserved the institution's authoritative brand equity.
+excerpt: >-
+  See how we transformed Harvard’s Belfer and Shorenstein Centers from static
+  PDFs to dynamic digital product ecosystems using a product-led UX strategy.
+tldr: >-
+  - **The Shift:** We transitioned Harvard's Belfer and Shorenstein Centers from
+  legacy, event-based, and static PDF models to dynamic, user-centric digital
+  product ecosystems.
 
-  The digital transformation of policy publication systems represents a critical evolution in how academic and research institutions disseminate knowledge. For decades, the standard for prestige was physical: the heavy printed report, the exclusive roundtable, the packed auditorium for an award ceremony. However, as audiences fragment and digital consumption becomes the primary mode of engagement, these legacy formats often trap valuable insights in inaccessible silos.
+  - **The Methodology:** Success required a "Product Mindset" rather than a "Web
+  Design" mindset, prioritizing user needs and strategic longevity over simple
+  aesthetics.
+
+  - **The Architecture:** We built scalable systems—one an archive-based
+  casebook, the other a central data hub—that accommodate future growth without
+  requiring a rebuild.
+
+  - **The Outcome:** The new platforms increased accessibility, amplified reach
+  to industry leaders (from Sundance to Google), and preserved the institution's
+  authoritative brand equity.
+
+
+  The digital transformation of policy publication systems represents a critical
+  evolution in how academic and research institutions disseminate knowledge. For
+  decades, the standard for prestige was physical: the heavy printed report, the
+  exclusive roundtable, the packed auditorium for an award ceremony. However, as
+  audiences fragment and digital consumption becomes the primary mode of
+  engagement, these legacy formats often trap valuable insights in inaccessible
+  silos.
 stage: evaluator
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

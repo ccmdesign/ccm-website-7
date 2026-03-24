@@ -2,7 +2,7 @@
 title: The Research Brands That Funders Remember
 slug: research-brands-funders-remember
 brow: publications
-date: "2025-10-14"
+date: '2025-10-14'
 author: CCM Design Team
 categories:
   - Nonprofit Growth & Fundraising
@@ -12,29 +12,56 @@ tags:
   - science communication
   - nonprofit branding
   - grantmaking psychology
-excerpt: Discover how brand equity influences grantmaking decisions and why visual rigor is a strategic asset for securing research funding.
-tldr: |-
-  - **Brand is a Cognitive Shortcut:** In a saturated information environment, funders rely on "heuristics" (mental shortcuts) to make decisions; a strong brand serves as a proxy for trust and competence.
-  - **The "Overhead Myth" is Fading:** Major funders now view communications infrastructure as mission-critical capacity building. Initiatives like the Ford Foundation's BUILD model explicitly fund institutional strengthening.
-  - **Visual Rigor Equals Research Rigor:** Data shows that research presented with high-quality visual abstracts can receive up to 120% more citations.
-  - **Differentiation is Key:** To secure core funding, organizations must transition from project-based publishing to building a distinct "brand of thinking" that separates them from the "sea of sameness."
+excerpt: >-
+  Discover how brand equity influences grantmaking decisions and why visual
+  rigor is a strategic asset for securing research funding.
+tldr: >-
+  - **Brand is a Cognitive Shortcut:** In a saturated information environment,
+  funders rely on "heuristics" (mental shortcuts) to make decisions; a strong
+  brand serves as a proxy for trust and competence.
 
-  The landscape for research funding has shifted from a model of charitable giving to one of strategic investment. Funders—whether private foundations, government agencies, or individual donors—increasingly view their grants as investments in social impact. In this context, a research organization's brand is not a superficial marketing layer but a critical asset that communicates capacity, reliability, and alignment with the funder's theory of change.
+  - **The "Overhead Myth" is Fading:** Major funders now view communications
+  infrastructure as mission-critical capacity building. Initiatives like the
+  Ford Foundation's BUILD model explicitly fund institutional strengthening.
 
-  For researchers and organizational leaders, understanding the mechanics of brand equity is essential. Producing rigorous work is no longer sufficient; that work must be visible, recognizable, and attributed to a trusted source. When hundreds of proposals land on a program officer's desk, the organizations that stand out are those that have already established "mental availability." This article examines why certain research brands capture funder attention and how brand equity compounds into institutional authority over time.
+  - **Visual Rigor Equals Research Rigor:** Data shows that research presented
+  with high-quality visual abstracts can receive up to 120% more citations.
+
+  - **Differentiation is Key:** To secure core funding, organizations must
+  transition from project-based publishing to building a distinct "brand of
+  thinking" that separates them from the "sea of sameness."
+
+
+  The landscape for research funding has shifted from a model of charitable
+  giving to one of strategic investment. Funders—whether private foundations,
+  government agencies, or individual donors—increasingly view their grants as
+  investments in social impact. In this context, a research organization's brand
+  is not a superficial marketing layer but a critical asset that communicates
+  capacity, reliability, and alignment with the funder's theory of change.
+
+
+  For researchers and organizational leaders, understanding the mechanics of
+  brand equity is essential. Producing rigorous work is no longer sufficient;
+  that work must be visible, recognizable, and attributed to a trusted source.
+  When hundreds of proposals land on a program officer's desk, the organizations
+  that stand out are those that have already established "mental availability."
+  This article examines why certain research brands capture funder attention and
+  how brand equity compounds into institutional authority over time.
 stage: researcher
 related_posts:
   - slug: 5-signs-research-publications-need-redesign
     title: 5 Signs Your Research Publications Need a Redesign
   - slug: data-visualization-research-impact
-    title: "Data Visualization Research: Why Bad Charts Kill Impact"
+    title: 'Data Visualization Research: Why Bad Charts Kill Impact'
   - slug: nonprofit-credibility-signals-funder-due-diligence
-    title: "Nonprofit Credibility Signals: What Funders Actually Check"
+    title: 'Nonprofit Credibility Signals: What Funders Actually Check'
   - slug: psychology-grant-evaluation-design
-    title: "Grant Proposal Design: The Psychology of Evaluation"
+    title: 'Grant Proposal Design: The Psychology of Evaluation'
   - slug: research-website-features-impact
-    title: "Beyond Aesthetics: 4 Features That Drive Research Impact"
+    title: 'Beyond Aesthetics: 4 Features That Drive Research Impact'
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

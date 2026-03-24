@@ -2,8 +2,10 @@
 title: Why Researchers Should Involve Designers Early
 slug: researchers-involve-designers-early-collaboration
 brow: Research Communication
-tagline: Maximize research impact through strategic design collaboration from project inception
-date: "2024-01-16"
+tagline: >-
+  Maximize research impact through strategic design collaboration from project
+  inception
+date: '2024-01-16'
 author: CCM Design Team
 categories:
   - Research Communication & Impact
@@ -21,9 +23,20 @@ seo_tags:
   - research presentation design
   - research impact design
   - collaborative research methods
-excerpt: Early designer involvement in research projects drives innovation and significantly improves audience reach, donor engagement, and partnership opportunities.
-tldr: Early involvement of designers improves research through innovation, enabling structural and visual innovations that expand audience reach, enhance donor engagement, and create partnership opportunities. Researchers who collaborate with creative professionals from project inception unlock possibilities for interactive reports, mobile-first solutions, and user-centered design approaches that traditional research outputs cannot achieve.
+excerpt: >-
+  Early designer involvement in research projects drives innovation and
+  significantly improves audience reach, donor engagement, and partnership
+  opportunities.
+tldr: >-
+  Early involvement of designers improves research through innovation, enabling
+  structural and visual innovations that expand audience reach, enhance donor
+  engagement, and create partnership opportunities. Researchers who collaborate
+  with creative professionals from project inception unlock possibilities for
+  interactive reports, mobile-first solutions, and user-centered design
+  approaches that traditional research outputs cannot achieve.
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

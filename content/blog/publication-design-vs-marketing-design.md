@@ -1,9 +1,9 @@
 ---
-title: "Publication Design vs. Marketing Design: The Hidden Differences"
+title: 'Publication Design vs. Marketing Design: The Hidden Differences'
 slug: publication-design-vs-marketing-design
 brow: publications
 tagline: Don't let a marketing approach ruin your research report
-date: "2025-09-23"
+date: '2025-09-23'
 author: CCM Design Team
 categories:
   - Publication Design & Production
@@ -13,33 +13,61 @@ tags:
   - cognitive load in design
   - annual report design
   - data visualization ethics
-excerpt: Don't let a marketing approach ruin your research report. We analyze the critical differences in cognitive load, data integrity, and technical workflows.
-tldr: |-
-  - **Different Goals**: Marketing design is a sprint for conversion; publication design is a marathon for comprehension.
-  - **Cognitive Load**: Applying marketing aesthetics to long-form content increases extraneous cognitive load, causing readers to abandon the document.
-  - **Technical Workflows**: Efficient publication design requires specialized tools like GREP styles and InCopy integration to manage version control and consistency, which generalist marketing designers often lack.
-  - **Data Integrity**: Publication design prioritizes accurate data visualization over decorative "chart junk" to maintain research authority.
+excerpt: >-
+  Don't let a marketing approach ruin your research report. We analyze the
+  critical differences in cognitive load, data integrity, and technical
+  workflows.
+tldr: >-
+  - **Different Goals**: Marketing design is a sprint for conversion;
+  publication design is a marathon for comprehension.
 
-  Most organizations [evaluating design partners](/evaluate-research-publication-design-partners) fall into a common trap: the "Halo Effect." You see a portfolio filled with stunning websites, punchy social media campaigns, and billboard-ready visuals, and assume that aesthetic quality translates automatically to long-form report design.
+  - **Cognitive Load**: Applying marketing aesthetics to long-form content
+  increases extraneous cognitive load, causing readers to abandon the document.
+
+  - **Technical Workflows**: Efficient publication design requires specialized
+  tools like GREP styles and InCopy integration to manage version control and
+  consistency, which generalist marketing designers often lack.
+
+  - **Data Integrity**: Publication design prioritizes accurate data
+  visualization over decorative "chart junk" to maintain research authority.
+
+
+  Most organizations [evaluating design
+  partners](/evaluate-research-publication-design-partners) fall into a common
+  trap: the "Halo Effect." You see a portfolio filled with stunning websites,
+  punchy social media campaigns, and billboard-ready visuals, and assume that
+  aesthetic quality translates automatically to long-form report design.
+
 
   It does not.
 
-  Hiring a generalist branding agency to produce a 100-page research report often leads to a specific, painful failure state: a document that looks impressive at a glance but is exhausting to read. The layout fights the content. The data is "styled" rather than accurate. Revisions take weeks because the team is manually formatting text instead of using automation.
 
-  Marketing design aims to disrupt, entertain, and convert in seconds. **Publication design** aims to sustain attention, facilitate deep reading, and build authority over hours. Understanding this distinction is the only way to ensure your high-value research commands the respect it deserves.
+  Hiring a generalist branding agency to produce a 100-page research report
+  often leads to a specific, painful failure state: a document that looks
+  impressive at a glance but is exhausting to read. The layout fights the
+  content. The data is "styled" rather than accurate. Revisions take weeks
+  because the team is manually formatting text instead of using automation.
+
+
+  Marketing design aims to disrupt, entertain, and convert in seconds.
+  **Publication design** aims to sustain attention, facilitate deep reading, and
+  build authority over hours. Understanding this distinction is the only way to
+  ensure your high-value research commands the respect it deserves.
 stage: evaluator
 related_posts:
   - slug: evaluate-research-publication-design-partners
     title: How to Evaluate Design Partners for Research Publications
   - slug: strategic-publication-design-methodology
-    title: "De-Risking Publication Design: A 9-Step Strategic Methodology"
+    title: 'De-Risking Publication Design: A 9-Step Strategic Methodology'
   - slug: design-resourcing-agency-vs-inhouse
-    title: "Agency vs. In-House Design: A Strategic Resourcing Guide"
+    title: 'Agency vs. In-House Design: A Strategic Resourcing Guide'
   - slug: harvard-policy-publication-redesign
     title: How We Rebuilt Harvard’s Policy Publication Ecosystem
   - slug: designing-scalable-system-idrc
     title: A Strategic Design System Roadmap for the IDRC
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

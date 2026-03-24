@@ -1,9 +1,9 @@
 ---
-title: "The Hybrid Publishing Paradox: Why Digital-First Workflows Save Print"
+title: 'The Hybrid Publishing Paradox: Why Digital-First Workflows Save Print'
 slug: hybrid-publishing-digital-first-workflow
 brow: publications
-tagline: Print drives revenue, but digital drives growth
-date: "2025-05-13"
+tagline: 'Print drives revenue, but digital drives growth'
+date: '2025-05-13'
 author: CCM Design Team
 categories:
   - Digital Experience & Websites
@@ -14,25 +14,41 @@ tags:
   - accessible publishing
   - XML-first workflow
   - publishing trends 2025
-excerpt: Print drives revenue, but digital drives growth. Discover why leading publishers are adopting digital-first workflows to secure the future of both.
-tldr: |-
-  - **Print is the revenue backbone:** Despite digital growth, print still accounts for over 50% of U.S. publishing revenue and remains the superior format for deep cognitive retention.
-  - **Digital is the growth engine:** Digital audio revenue has surged nearly 80% in five years, while HTML-first formats offer necessary accessibility and data tracking that PDFs cannot match.
-  - **The solution is workflow, not format:** Successful organizations are adopting "XML-first" or COPE (Create Once, Publish Everywhere) workflows that allow them to produce high-quality print and dynamic digital content from a single source.
-  - **Efficiency gains are real:** Decoupling content from layout can reduce production cycle times by up to 50%, freeing resources for higher-impact editorial work.
+excerpt: >-
+  Print drives revenue, but digital drives growth. Discover why leading
+  publishers are adopting digital-first workflows to secure the future of both.
+tldr: >-
+  - **Print is the revenue backbone:** Despite digital growth, print still
+  accounts for over 50% of U.S. publishing revenue and remains the superior
+  format for deep cognitive retention.
+
+  - **Digital is the growth engine:** Digital audio revenue has surged nearly
+  80% in five years, while HTML-first formats offer necessary accessibility and
+  data tracking that PDFs cannot match.
+
+  - **The solution is workflow, not format:** Successful organizations are
+  adopting "XML-first" or COPE (Create Once, Publish Everywhere) workflows that
+  allow them to produce high-quality print and dynamic digital content from a
+  single source.
+
+  - **Efficiency gains are real:** Decoupling content from layout can reduce
+  production cycle times by up to 50%, freeing resources for higher-impact
+  editorial work.
 stage: researcher
 related_posts:
   - slug: digital-first-publishing-print-strategy
-    title: "Digital-First Publishing vs. Print: Why You Need Both Strategies"
+    title: 'Digital-First Publishing vs. Print: Why You Need Both Strategies'
   - slug: manual-publication-satisfaction-tax
-    title: "The Satisfaction Tax: Manual Publication's Hidden Cost"
+    title: 'The Satisfaction Tax: Manual Publication''s Hidden Cost'
   - slug: science-behind-failing-board-packs
-    title: "Why Static Board Packs Fail: The Science of Digital Reporting"
+    title: 'Why Static Board Packs Fail: The Science of Digital Reporting'
   - slug: mobile-paradox-nonprofit-reporting
-    title: "The Mobile Paradox: Why Static Reports Fail Modern Donors"
+    title: 'The Mobile Paradox: Why Static Reports Fail Modern Donors'
   - slug: interactive-research-reports-trends
-    title: "The End of the PDF: 5 Trends Redefining Research Communication"
+    title: 'The End of the PDF: 5 Trends Redefining Research Communication'
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

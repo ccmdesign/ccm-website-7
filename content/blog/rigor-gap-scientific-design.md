@@ -1,9 +1,11 @@
 ---
-title: "Closing the Gap in Research Communication"
+title: Closing the Gap in Research Communication
 slug: rigor-gap-scientific-design
 brow: Scientific Design Rigor
-tagline: Clinical research demands methodological rigor, but visual communication often lags behind
-date: "2025-11-18"
+tagline: >-
+  Clinical research demands methodological rigor, but visual communication often
+  lags behind
+date: '2025-11-18'
 author: CCM Design Team
 categories:
   - Publication Design & Production
@@ -13,25 +15,43 @@ tags:
   - clinical research communication
   - RIVA-C checklist
   - data visualization ethics
-excerpt: Clinical research demands methodological rigor, but visual communication often lags behind. Learn how to close the rigor gap and protect scientific integrity.
-tldr: |-
-  -   **The Rigor Gap:** A critical disparity exists between the strict standards applied to research methodology and the often lax standards applied to visual presentation [1].
-  -   **Methodological Flaws:** Poor design choices, such as using bar graphs for continuous data, are not just aesthetic errors—they actively obscure data distribution and impede peer review [9].
-  -   **Psychological Impact:** Biases like the "Aesthetic-Usability Effect" cause peers to subconsciously judge scientific credibility based on visual quality [2].
-  -   **Emerging Standards:** Frameworks like the RIVA-C checklist are professionalizing dissemination, treating visual abstracts with the same seriousness as clinical protocols [21].
+excerpt: >-
+  Clinical research demands methodological rigor, but visual communication often
+  lags behind. Learn how to close the rigor gap and protect scientific
+  integrity.
+tldr: >-
+  -   **The Rigor Gap:** A critical disparity exists between the strict
+  standards applied to research methodology and the often lax standards applied
+  to visual presentation [1].
+
+  -   **Methodological Flaws:** Poor design choices, such as using bar graphs
+  for continuous data, are not just aesthetic errors—they actively obscure data
+  distribution and impede peer review [9].
+
+  -   **Psychological Impact:** Biases like the "Aesthetic-Usability Effect"
+  cause peers to subconsciously judge scientific credibility based on visual
+  quality [2].
+
+  -   **Emerging Standards:** Frameworks like the RIVA-C checklist are
+  professionalizing dissemination, treating visual abstracts with the same
+  seriousness as clinical protocols [21].
 stage: researcher
 related_posts:
   - slug: science-translation-gap-invisible-research
-    title: "The Science Translation Gap: Why Important Research Stays Invisible"
+    title: 'The Science Translation Gap: Why Important Research Stays Invisible'
   - slug: data-visualization-research-impact
-    title: "Data Visualization Research: Why Bad Charts Kill Impact"
+    title: 'Data Visualization Research: Why Bad Charts Kill Impact'
   - slug: hidden-cost-inconsistent-publication-design
     title: The Hidden Tax of Inconsistent Publication Design
   - slug: poor-data-visualization-obscures-research-impact
-    title: "The Invisible Science: How Poor Data Visualization Obscures Research Impact"
+    title: >-
+      The Invisible Science: How Poor Data Visualization Obscures Research
+      Impact
   - slug: rethinking-research-communication
-    title: "Beyond the PDF: Modern Research Communication Strategies"
+    title: 'Beyond the PDF: Modern Research Communication Strategies'
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

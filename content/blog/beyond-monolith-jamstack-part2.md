@@ -2,7 +2,7 @@
 title: Unlocking Digital Potential with JAMstack Part 2
 brow: Beyond the Monolith
 tagline: How Global Brands Are Embracing JAMstack
-date: "2023-09-06"
+date: '2023-09-06'
 author: CCM Design Team
 categories:
   - Digital Experience & Websites
@@ -23,9 +23,17 @@ seo_tags:
   - developer-experience
   - frontend-architecture
   - scalable-websites
-excerpt: Discover how global brands like IKEA, Starbucks, and Adobe are leveraging JAMstack to achieve 99.84% file size reductions and unlock unlimited innovation through decoupled architectures.
-tldr: Discover how global brands like IKEA, Starbucks, and Adobe are leveraging JAMstack to achieve 99.84% file size reductions and unlock unlimited innovation through decoupled architectures.
+excerpt: >-
+  Discover how global brands like IKEA, Starbucks, and Adobe are leveraging
+  JAMstack to achieve 99.84% file size reductions and unlock unlimited
+  innovation through decoupled architectures.
+tldr: >-
+  Discover how global brands like IKEA, Starbucks, and Adobe are leveraging
+  JAMstack to achieve 99.84% file size reductions and unlock unlimited
+  innovation through decoupled architectures.
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

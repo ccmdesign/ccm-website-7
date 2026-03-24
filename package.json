@@ -34,10 +34,13 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
+    "@netlify/functions": "^5.1.5",
     "@nuxt/vite-builder": "^4.2.1",
+    "gray-matter": "^4.0.3",
     "postcss": "^8.4.0",
     "postcss-import": "^16.0.0",
     "postcss-preset-env": "^8.0.0",
-    "sass-embedded": "^1.93.3"
+    "sass-embedded": "^1.93.3",
+    "tsx": "^4.21.0"
   }
 }

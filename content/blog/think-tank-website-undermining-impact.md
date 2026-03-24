@@ -3,7 +3,7 @@ title: Is Your Think Tank's Website Undermining Your Research Impact?
 slug: think-tank-website-undermining-impact
 brow: publications
 tagline: Your website isn't just a brochure; it's infrastructure
-date: "2026-02-22"
+date: '2026-02-22'
 author: CCM Design Team
 categories:
   - Digital Experience & Websites
@@ -12,16 +12,41 @@ tags:
   - policy research dissemination
   - digital strategy for nonprofits
   - research impact
-excerpt: Your website isn't just a brochure; it's infrastructure. Learn how design, mobile friction, and PDFs affect policy influence and credibility.
-tldr: |-
-  -   **Credibility is visual:** 75% of users judge an organization's credibility based on website design alone, with judgments formed in 50 milliseconds [1].
-  -   **The PDF problem:** Relying solely on static PDFs creates a "data graveyard," with historical data showing up to one-third of policy reports are never downloaded [3].
-  -   **Mobile determines access:** While deep reading happens on desktops, the "triage" phase—deciding what to read—happens on mobile devices. If the mobile site fails, the desktop read never happens [4].
-  -   **Infrastructure risk:** Outdated CMS platforms are not just aesthetic issues; they are security vulnerabilities that threaten institutional reputation [8].
+excerpt: >-
+  Your website isn't just a brochure; it's infrastructure. Learn how design,
+  mobile friction, and PDFs affect policy influence and credibility.
+tldr: >-
+  -   **Credibility is visual:** 75% of users judge an organization's
+  credibility based on website design alone, with judgments formed in 50
+  milliseconds [1].
 
-  The assumption that "good research finds its own audience" is a dangerous fallacy in the digital age. For think tanks, foundations, and policy institutes, the website is not merely a digital brochure; it is the primary infrastructure for the dissemination of ideas. If a bridge collapses, traffic stops. If your digital infrastructure is outdated, the flow of ideas to policymakers, journalists, and stakeholders halts.
+  -   **The PDF problem:** Relying solely on static PDFs creates a "data
+  graveyard," with historical data showing up to one-third of policy reports are
+  never downloaded [3].
 
-  Many research organizations operate with legacy sites designed for a previous era of the internet—one where users patiently navigated complex menus on desktop computers to find a specific PDF. Today, that friction is an active barrier to impact. This analysis explores how outdated design, poor information architecture, and technical debt undermine the authority you work so hard to build.
+  -   **Mobile determines access:** While deep reading happens on desktops, the
+  "triage" phase—deciding what to read—happens on mobile devices. If the mobile
+  site fails, the desktop read never happens [4].
+
+  -   **Infrastructure risk:** Outdated CMS platforms are not just aesthetic
+  issues; they are security vulnerabilities that threaten institutional
+  reputation [8].
+
+
+  The assumption that "good research finds its own audience" is a dangerous
+  fallacy in the digital age. For think tanks, foundations, and policy
+  institutes, the website is not merely a digital brochure; it is the primary
+  infrastructure for the dissemination of ideas. If a bridge collapses, traffic
+  stops. If your digital infrastructure is outdated, the flow of ideas to
+  policymakers, journalists, and stakeholders halts.
+
+
+  Many research organizations operate with legacy sites designed for a previous
+  era of the internet—one where users patiently navigated complex menus on
+  desktop computers to find a specific PDF. Today, that friction is an active
+  barrier to impact. This analysis explores how outdated design, poor
+  information architecture, and technical debt undermine the authority you work
+  so hard to build.
 stage: researcher
 related_posts:
   - slug: think-tank-website-design-mistakes
@@ -31,10 +56,12 @@ related_posts:
   - slug: static-pdfs-undermine-research-impact
     title: Why Static PDFs Are Undermining Your Research Impact
   - slug: data-visualization-research-impact
-    title: "Data Visualization Research: Why Bad Charts Kill Impact"
+    title: 'Data Visualization Research: Why Bad Charts Kill Impact'
   - slug: 5-signs-research-publications-need-redesign
     title: 5 Signs Your Research Publications Need a Redesign
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

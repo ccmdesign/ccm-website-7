@@ -1,8 +1,8 @@
 ---
-title: "5 Features That Matter More Than Aesthetics"
+title: 5 Features That Matter More Than Aesthetics
 slug: research-website-design-features
 brow: Research Website Design
-date: "2025-10-28"
+date: '2025-10-28'
 author: CCM Design Team
 categories:
   - Digital Experience & Websites
@@ -12,32 +12,64 @@ tags:
   - web accessibility
   - knowledge management
   - website performance
-excerpt: When users visit a research platform, they aren't looking to be entertained—they are looking to be informed. Here are the 5 design features that drive engagement.
-tldr: |-
-  - **Utility drives engagement**: Users value findability over visual flair; decorative elements often increase cognitive load and reduce usability.
-  - **Search is primary**: 43% of users on content-heavy sites go directly to the search bar, converting at significantly higher rates than browsers.
-  - **Facets are mandatory**: For complex datasets, faceted search is not a luxury—it is the only way to prevent user fatigue and abandonment.
-  - **Accessibility extends reach**: With 95.9% of home pages failing WCAG standards, accessible design is a massive opportunity to improve SEO and audience reach.
-  - **Speed signals trust**: Users judge credibility in 50 milliseconds; a slow site suggests an outdated or inefficient organization.
+excerpt: >-
+  When users visit a research platform, they aren't looking to be
+  entertained—they are looking to be informed. Here are the 5 design features
+  that drive engagement.
+tldr: >-
+  - **Utility drives engagement**: Users value findability over visual flair;
+  decorative elements often increase cognitive load and reduce usability.
 
-  The "Researcher" persona is not browsing for fun. They are hunting. Whether they are a policy analyst looking for a specific brief, a journalist fact-checking a statistic, or an academic conducting a literature review, their goal is information retrieval. Yet, many organizations treat their [research website design](/research-website-features-impact) as a digital brochure—prioritizing large hero images, scroll-jacking animations, and "flashy" aesthetics over functional utility.
+  - **Search is primary**: 43% of users on content-heavy sites go directly to
+  the search bar, converting at significantly higher rates than browsers.
 
-  This creates a fundamental misalignment between user intent and platform design. While visual appeal influences the initial impression of a site (the "halo effect"), that impression evaporates the moment a search bar returns zero results or a navigation menu leads to a dead end. Studies indicate that users prioritize findability and speed above all else, with excessive visual elements often serving as distractors that increase cognitive load [1], [2].
+  - **Facets are mandatory**: For complex datasets, faceted search is not a
+  luxury—it is the only way to prevent user fatigue and abandonment.
 
-  For knowledge-driven organizations, the website is a tool, not a gallery. Success is measured by how quickly a user can move from a question to an answer. Below are the five functional pillars that matter more than aesthetics.
+  - **Accessibility extends reach**: With 95.9% of home pages failing WCAG
+  standards, accessible design is a massive opportunity to improve SEO and
+  audience reach.
+
+  - **Speed signals trust**: Users judge credibility in 50 milliseconds; a slow
+  site suggests an outdated or inefficient organization.
+
+
+  The "Researcher" persona is not browsing for fun. They are hunting. Whether
+  they are a policy analyst looking for a specific brief, a journalist
+  fact-checking a statistic, or an academic conducting a literature review,
+  their goal is information retrieval. Yet, many organizations treat their
+  [research website design](/research-website-features-impact) as a digital
+  brochure—prioritizing large hero images, scroll-jacking animations, and
+  "flashy" aesthetics over functional utility.
+
+
+  This creates a fundamental misalignment between user intent and platform
+  design. While visual appeal influences the initial impression of a site (the
+  "halo effect"), that impression evaporates the moment a search bar returns
+  zero results or a navigation menu leads to a dead end. Studies indicate that
+  users prioritize findability and speed above all else, with excessive visual
+  elements often serving as distractors that increase cognitive load [1], [2].
+
+
+  For knowledge-driven organizations, the website is a tool, not a gallery.
+  Success is measured by how quickly a user can move from a question to an
+  answer. Below are the five functional pillars that matter more than
+  aesthetics.
 stage: researcher
 related_posts:
   - slug: research-website-features-impact
-    title: "Beyond Aesthetics: 4 Features That Drive Research Impact"
+    title: 'Beyond Aesthetics: 4 Features That Drive Research Impact'
   - slug: 5-signs-research-publications-need-redesign
     title: 5 Signs Your Research Publications Need a Redesign
   - slug: rethinking-research-communication
-    title: "Beyond the PDF: Modern Research Communication Strategies"
+    title: 'Beyond the PDF: Modern Research Communication Strategies'
   - slug: research-brands-funders-remember
     title: The Research Brands That Funders Remember
   - slug: 5-signs-research-publications-need-redesign
     title: 5 Signs Your Research Publications Need a Redesign
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

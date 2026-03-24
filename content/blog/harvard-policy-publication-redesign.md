@@ -2,7 +2,7 @@
 title: How We Rebuilt Harvard’s Policy Publication Ecosystem
 slug: harvard-policy-publication-redesign
 brow: publications
-date: "2025-04-22"
+date: '2025-04-22'
 author: CCM Design Team
 categories:
   - Content Operations & Strategy
@@ -11,31 +11,62 @@ tags:
   - higher education web design
   - data visualization case study
   - research dissemination strategy
-excerpt: See how CCM Design transformed legacy print models into scalable digital policy platforms for Harvard Kennedy School and the Shorenstein Center.
-tldr: |-
-  - **Context:** The COVID-19 pandemic forced a rapid pivot from physical events and static PDFs to digital-first ecosystems for Harvard's Belfer and Shorenstein Centers.
-  - **Strategy:** We shifted the engagement from "event branding" to "product design," treating policy research as a dynamic digital product rather than a static document.
-  - **Architecture:** The solution involved building a "Central Hub" for complex data and a modular "Casebook" system for scalable award portfolios.
-  - **Outcome:** The platforms enabled the Tech Spotlight to proceed virtually with Ash Carter and helped the Indie Film Landscape project reach industry stakeholders with critical market data.
+excerpt: >-
+  See how CCM Design transformed legacy print models into scalable digital
+  policy platforms for Harvard Kennedy School and the Shorenstein Center.
+tldr: >-
+  - **Context:** The COVID-19 pandemic forced a rapid pivot from physical events
+  and static PDFs to digital-first ecosystems for Harvard's Belfer and
+  Shorenstein Centers.
 
-  When the mechanism for delivering high-stakes policy research breaks down, the research itself risks irrelevance. For decades, academic institutions relied on a dissemination model built around physical symposia, printed casebooks, and static PDFs. These formats signal authority, but they often fail on accessibility and resilience.
+  - **Strategy:** We shifted the engagement from "event branding" to "product
+  design," treating policy research as a dynamic digital product rather than a
+  static document.
 
-  We encountered this friction directly when partnering with Harvard University on two critical initiatives: the **Tech Spotlight Award** at the Harvard Kennedy School’s Belfer Center, and the **Indie Film Landscape** project at the Shorenstein Center. Both projects faced a crisis of continuity. The Tech Spotlight was originally conceived as an in-person ceremony, a plan rendered impossible by the onset of the COVID-19 pandemic [1]. Meanwhile, the Indie Film Landscape project possessed data so complex that a standard academic report would likely bury the lede [2].
+  - **Architecture:** The solution involved building a "Central Hub" for complex
+  data and a modular "Casebook" system for scalable award portfolios.
 
-  This case study outlines how we rebuilt these legacy publication models into resilient digital ecosystems. We moved beyond simple digitization—scanning a paper document into a PDF—and instead architected platforms that treat policy research as a scalable, interactive product.
+  - **Outcome:** The platforms enabled the Tech Spotlight to proceed virtually
+  with Ash Carter and helped the Indie Film Landscape project reach industry
+  stakeholders with critical market data.
+
+
+  When the mechanism for delivering high-stakes policy research breaks down, the
+  research itself risks irrelevance. For decades, academic institutions relied
+  on a dissemination model built around physical symposia, printed casebooks,
+  and static PDFs. These formats signal authority, but they often fail on
+  accessibility and resilience.
+
+
+  We encountered this friction directly when partnering with Harvard University
+  on two critical initiatives: the **Tech Spotlight Award** at the Harvard
+  Kennedy School’s Belfer Center, and the **Indie Film Landscape** project at
+  the Shorenstein Center. Both projects faced a crisis of continuity. The Tech
+  Spotlight was originally conceived as an in-person ceremony, a plan rendered
+  impossible by the onset of the COVID-19 pandemic [1]. Meanwhile, the Indie
+  Film Landscape project possessed data so complex that a standard academic
+  report would likely bury the lede [2].
+
+
+  This case study outlines how we rebuilt these legacy publication models into
+  resilient digital ecosystems. We moved beyond simple digitization—scanning a
+  paper document into a PDF—and instead architected platforms that treat policy
+  research as a scalable, interactive product.
 stage: evaluator
 related_posts:
   - slug: designing-scalable-system-idrc
     title: A Strategic Design System Roadmap for the IDRC
   - slug: strategic-publication-design-methodology
-    title: "De-Risking Publication Design: A 9-Step Strategic Methodology"
+    title: 'De-Risking Publication Design: A 9-Step Strategic Methodology'
   - slug: publication-design-vs-marketing-design
-    title: "Publication Design vs. Marketing Design: The Hidden Differences"
+    title: 'Publication Design vs. Marketing Design: The Hidden Differences'
   - slug: evaluate-research-publication-design-partners
     title: How to Evaluate Design Partners for Research Publications
   - slug: design-resourcing-agency-vs-inhouse
-    title: "Agency vs. In-House Design: A Strategic Resourcing Guide"
+    title: 'Agency vs. In-House Design: A Strategic Resourcing Guide'
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

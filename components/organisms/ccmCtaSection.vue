@@ -33,15 +33,16 @@
           </span>
         </button>
       </div>
+      <p v-if="error" class="cta-error-message">{{ error }}</p>
     </form>
   </section>
 </template>
 
 <script setup>
 import { ref } from 'vue'
+import { useNewsletterSubscribe } from '~/composables/useNewsletterSubscribe'
 
-const email = ref('')
-const subscribed = ref(false)
+const { email, subscribed, error, loading, subscribe } = useNewsletterSubscribe()
 const scrambling = ref(false)
 const displayChars = ref([])
 
@@ -104,22 +105,11 @@ function scrambleText(target, duration = 1000) {
 }
 
 async function handleSubmit() {
-  if (!email.value || subscribed.value) return
-
-  const url = `https://claudiomendonca.us2.list-manage.com/subscribe/post-json?u=468ffb5e21f0082332ecdd5f3&id=eaa305764b&f_id=0074d8e3f0&EMAIL=${encodeURIComponent(email.value)}&c=callback`
-
-  const callbackName = `mc_callback_${Date.now()}`
-
-  window[callbackName] = () => {
-    subscribed.value = true
+  if (!email.value || subscribed.value || loading.value) return
+  await subscribe()
+  if (subscribed.value) {
     scrambleText('Subscribed')
-    delete window[callbackName]
-    document.body.removeChild(script)
   }
-
-  const script = document.createElement('script')
-  script.src = url.replace('c=callback', `c=${callbackName}`)
-  document.body.appendChild(script)
 }
 </script>
 
@@ -229,6 +219,13 @@ async function handleSubmit() {
   .check {
     opacity: 0;
     transform: scale(0.8);
+  }
+
+  .cta-error-message {
+    color: #dc2626;
+    font-size: 0.8125rem;
+    margin-top: 0.5rem;
+    text-align: right;
   }
 
   .input-wrapper.subscribed {

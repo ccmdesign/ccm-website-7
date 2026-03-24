@@ -1,9 +1,9 @@
 ---
-title: "The Cost of 'We'll Fix It Later'"
+title: The Cost of 'We'll Fix It Later'
 slug: design-debt-research-organizations
 brow: Design Debt in Research Organizations
 tagline: Design debt is not just a cosmetic issue—it's a financial liability
-date: "2025-02-18"
+date: '2025-02-18'
 author: CCM Design Team
 categories:
   - Publication Design & Production
@@ -13,24 +13,54 @@ tags:
   - organizational efficiency
   - legacy systems
   - design systems
-excerpt: Design debt is not just a cosmetic issue—it's a financial liability. Learn how legacy workflows accumulate hidden costs and why systematic design is the only cure for research organizations.
-tldr: |-
-  - **Financial Liability**: Design debt is not merely cosmetic; manual document processing incurs between $2.30 and $4.70 in hidden costs for every dollar spent on direct labor.
-  - **Trust Erosion**: Inconsistency creates market confusion, potentially costing organizations up to 23% in revenue or funding opportunities.
-  - **Operational Drag**: Creative teams at research organizations spend 57% of their time on non-creative administrative tasks rather than high-value output.
-  - **Systematic Solution**: Leading organizations are moving from ad-hoc "page building" to modular design systems to reclaim velocity and ensure AI readiness.
+excerpt: >-
+  Design debt is not just a cosmetic issue—it's a financial liability. Learn how
+  legacy workflows accumulate hidden costs and why systematic design is the only
+  cure for research organizations.
+tldr: >-
+  - **Financial Liability**: Design debt is not merely cosmetic; manual document
+  processing incurs between $2.30 and $4.70 in hidden costs for every dollar
+  spent on direct labor.
 
-  You have likely experienced the panic of the eleventh hour. A major policy report is due for release. The research is rigorous, the data is groundbreaking, and the analysis is sharp. Yet, the document itself is a mess of broken formatting. Graphs pasted from Excel are pixelated, headers are inconsistent across chapters, and the bibliography styling has collapsed.
+  - **Trust Erosion**: Inconsistency creates market confusion, potentially
+  costing organizations up to 23% in revenue or funding opportunities.
 
-  Your team spends the final 48 hours not refining the argument, but acting as manual typesetters—fighting with software to make the document look professional. This scenario is not a result of incompetence. It is the symptom of a structural liability known as [design debt](/hidden-cost-inconsistent-publication-design).
+  - **Operational Drag**: Creative teams at research organizations spend 57% of
+  their time on non-creative administrative tasks rather than high-value output.
 
-  For research organizations, [think tanks](/think-tank-website-undermining-impact), and NGOs, credibility is the currency of trade. That credibility is conveyed through the clarity and consistency of your output. When that output is compromised by inefficient, legacy workflows, you are paying a high interest rate on a loan you never intended to take out.
+  - **Systematic Solution**: Leading organizations are moving from ad-hoc "page
+  building" to modular design systems to reclaim velocity and ensure AI
+  readiness.
+
+
+  You have likely experienced the panic of the eleventh hour. A major policy
+  report is due for release. The research is rigorous, the data is
+  groundbreaking, and the analysis is sharp. Yet, the document itself is a mess
+  of broken formatting. Graphs pasted from Excel are pixelated, headers are
+  inconsistent across chapters, and the bibliography styling has collapsed.
+
+
+  Your team spends the final 48 hours not refining the argument, but acting as
+  manual typesetters—fighting with software to make the document look
+  professional. This scenario is not a result of incompetence. It is the symptom
+  of a structural liability known as [design
+  debt](/hidden-cost-inconsistent-publication-design).
+
+
+  For research organizations, [think
+  tanks](/think-tank-website-undermining-impact), and NGOs, credibility is the
+  currency of trade. That credibility is conveyed through the clarity and
+  consistency of your output. When that output is compromised by inefficient,
+  legacy workflows, you are paying a high interest rate on a loan you never
+  intended to take out.
 stage: researcher
 related_posts:
   - slug: hidden-cost-inconsistent-publication-design
     title: The Hidden Tax of Inconsistent Publication Design
   - slug: poor-data-visualization-obscures-research-impact
-    title: "The Invisible Science: How Poor Data Visualization Obscures Research Impact"
+    title: >-
+      The Invisible Science: How Poor Data Visualization Obscures Research
+      Impact
   - slug: 5-signs-research-publications-need-redesign
     title: 5 Signs Your Research Publications Need a Redesign
   - slug: think-tank-website-undermining-impact
@@ -38,6 +68,8 @@ related_posts:
   - slug: static-pdfs-undermine-research-impact
     title: Why Static PDFs Are Undermining Your Research Impact
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

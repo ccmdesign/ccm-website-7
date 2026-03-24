@@ -1,9 +1,9 @@
 ---
-title: "Why Bad Charts Kill Impact"
+title: Why Bad Charts Kill Impact
 slug: data-visualization-research-impact
 brow: Data Visualization Research
 tagline: Poor data visualization obscures findings and limits research impact
-date: "2025-02-11"
+date: '2025-02-11'
 author: CCM Design Team
 categories:
   - Publication Design & Production
@@ -13,16 +13,42 @@ tags:
   - science communication
   - cognitive load in design
   - research impact
-excerpt: Poor data visualization obscures findings and limits research impact. Learn how cognitive science and visual storytelling can save your data from obscurity.
-tldr: |-
-  -   **The Integrity Crisis**: Record-high retraction rates in 2023 (>10,000 papers) highlight a growing crisis in research clarity, where poor or misleading visuals often play a central role.
-  -   **Cognitive Barriers**: Bad design increases "extraneous cognitive load," forcing readers to struggle with the format rather than understanding the data, which often leads to disengagement.
-  -   **The Visual Advantage**: Articles with "visual abstracts" see significantly higher engagement, leveraging the brain's ability to process visual patterns instantly.
-  -   **Translation, Not Decoration**: Effective visualization acts as a translation layer between expert data and public understanding—a critical step that researchers can no longer afford to overlook.
+excerpt: >-
+  Poor data visualization obscures findings and limits research impact. Learn
+  how cognitive science and visual storytelling can save your data from
+  obscurity.
+tldr: >-
+  -   **The Integrity Crisis**: Record-high retraction rates in 2023 (>10,000
+  papers) highlight a growing crisis in research clarity, where poor or
+  misleading visuals often play a central role.
 
-  The volume of scientific research produced today is staggering, yet the ability to consume and understand it has not kept pace. Researchers often suffer from the "curse of knowledge"—the cognitive bias that makes it difficult to imagine what it is like for others not to know what you know. You live in the nuances of your dataset; your audience does not.
+  -   **Cognitive Barriers**: Bad design increases "extraneous cognitive load,"
+  forcing readers to struggle with the format rather than understanding the
+  data, which often leads to disengagement.
 
-  Data visualization serves as the translation layer between these two worlds. It converts the foreign language of raw statistics into the universal language of visual patterns. When this layer fails, groundbreaking discoveries remain obscured behind impenetrable charts and confusing layouts. Worse, poor visualization can actively mislead, eroding trust in scientific institutions and stalling the application of critical knowledge. The problem is not merely aesthetic; it is a structural barrier to impact.
+  -   **The Visual Advantage**: Articles with "visual abstracts" see
+  significantly higher engagement, leveraging the brain's ability to process
+  visual patterns instantly.
+
+  -   **Translation, Not Decoration**: Effective visualization acts as a
+  translation layer between expert data and public understanding—a critical step
+  that researchers can no longer afford to overlook.
+
+
+  The volume of scientific research produced today is staggering, yet the
+  ability to consume and understand it has not kept pace. Researchers often
+  suffer from the "curse of knowledge"—the cognitive bias that makes it
+  difficult to imagine what it is like for others not to know what you know. You
+  live in the nuances of your dataset; your audience does not.
+
+
+  Data visualization serves as the translation layer between these two worlds.
+  It converts the foreign language of raw statistics into the universal language
+  of visual patterns. When this layer fails, groundbreaking discoveries remain
+  obscured behind impenetrable charts and confusing layouts. Worse, poor
+  visualization can actively mislead, eroding trust in scientific institutions
+  and stalling the application of critical knowledge. The problem is not merely
+  aesthetic; it is a structural barrier to impact.
 stage: researcher
 related_posts:
   - slug: 5-signs-research-publications-need-redesign
@@ -30,12 +56,16 @@ related_posts:
   - slug: hidden-cost-inconsistent-publication-design
     title: The Hidden Tax of Inconsistent Publication Design
   - slug: poor-data-visualization-obscures-research-impact
-    title: "The Invisible Science: How Poor Data Visualization Obscures Research Impact"
+    title: >-
+      The Invisible Science: How Poor Data Visualization Obscures Research
+      Impact
   - slug: static-pdfs-undermine-research-impact
     title: Why Static PDFs Are Undermining Your Research Impact
   - slug: static-pdfs-undermining-research-impact
     title: Why Static PDFs Are Undermining Your Research Impact
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

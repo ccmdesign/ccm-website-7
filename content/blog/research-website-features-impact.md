@@ -1,9 +1,9 @@
 ---
-title: "4 Features That Drive Research Impact"
+title: 4 Features That Drive Research Impact
 slug: research-website-features-impact
 brow: Beyond Aesthetics
-tagline: Aesthetics draw users in, but functionality keeps them there
-date: "2025-11-04"
+tagline: 'Aesthetics draw users in, but functionality keeps them there'
+date: '2025-11-04'
 author: CCM Design Team
 categories:
   - Digital Experience & Websites
@@ -13,20 +13,46 @@ tags:
   - research dissemination
   - faceted search
   - web accessibility
-excerpt: Aesthetics draw users in, but functionality keeps them there. Discover the four features that determine the success and longevity of research platforms.
-tldr: |-
-  - **Function over form**: While visual appeal matters for first impressions, empirical data shows that search efficiency and navigation structure drive long-term engagement for research audiences.
-  - **Speed is credibility**: A delay of just a few seconds actively erodes trust in an institution's competence, with bounce rates spiking 32% as load times move from 1 to 3 seconds.
-  - **The database is the product**: Static lists fail researchers. High-performing platforms use faceted search to shift cognitive load from "recall" to "recognition."
-  - **Accessibility is future-proofing**: With 95.9% of homepages failing basic accessibility standards, fixing these issues is now a prerequisite for visibility in AI-driven "answer engines."
+excerpt: >-
+  Aesthetics draw users in, but functionality keeps them there. Discover the
+  four features that determine the success and longevity of research platforms.
+tldr: >-
+  - **Function over form**: While visual appeal matters for first impressions,
+  empirical data shows that search efficiency and navigation structure drive
+  long-term engagement for research audiences.
 
-  Research institutions often face a paradoxical challenge during digital transformation. There is immense internal pressure to launch a website that looks "modern"—typically defined by large hero images, scroll-triggered animations, and minimalist aesthetics. Yet, once launched, these platforms often fail to deliver on their primary mandate: the dissemination of complex knowledge.
+  - **Speed is credibility**: A delay of just a few seconds actively erodes
+  trust in an institution's competence, with bounce rates spiking 32% as load
+  times move from 1 to 3 seconds.
 
-  For stakeholders in the research sector, the problem is rarely a lack of content quality. The issue lies in prioritizing the container over the delivery mechanism. When a user lands on a think tank or university portal, they are not shopping for a lifestyle; they are hunting for data. If the architecture impedes that hunt, the visual polish becomes irrelevant. Credibility in this space is not established by animation, but by the speed, accuracy, and accessibility of information retrieval.
+  - **The database is the product**: Static lists fail researchers.
+  High-performing platforms use faceted search to shift cognitive load from
+  "recall" to "recognition."
+
+  - **Accessibility is future-proofing**: With 95.9% of homepages failing basic
+  accessibility standards, fixing these issues is now a prerequisite for
+  visibility in AI-driven "answer engines."
+
+
+  Research institutions often face a paradoxical challenge during digital
+  transformation. There is immense internal pressure to launch a website that
+  looks "modern"—typically defined by large hero images, scroll-triggered
+  animations, and minimalist aesthetics. Yet, once launched, these platforms
+  often fail to deliver on their primary mandate: the dissemination of complex
+  knowledge.
+
+
+  For stakeholders in the research sector, the problem is rarely a lack of
+  content quality. The issue lies in prioritizing the container over the
+  delivery mechanism. When a user lands on a think tank or university portal,
+  they are not shopping for a lifestyle; they are hunting for data. If the
+  architecture impedes that hunt, the visual polish becomes irrelevant.
+  Credibility in this space is not established by animation, but by the speed,
+  accuracy, and accessibility of information retrieval.
 stage: researcher
 related_posts:
   - slug: research-website-design-features
-    title: "Research Website Design: 5 Features That Matter More Than Aesthetics"
+    title: 'Research Website Design: 5 Features That Matter More Than Aesthetics'
   - slug: static-infographics-failing-research
     title: Why Static Infographics Are Failing Your Research Impact
   - slug: static-pdfs-undermining-research-impact
@@ -36,6 +62,8 @@ related_posts:
   - slug: research-brands-funders-remember
     title: The Research Brands That Funders Remember
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

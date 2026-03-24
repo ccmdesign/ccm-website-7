@@ -12,16 +12,31 @@
     >
     <h2>Signup for our newsletter</h2>
     <p>Get the latest analysis and design thinking from our team, delivered straight to your inbox. We share practical advice for organizations looking to increase their impact.</p>
-    <form class="form">
+    <form class="form" @submit.prevent="subscribe">
       <fieldset class="form-fieldset" inline>
-        <input type="email" label="Email" placeholder="Email" />
-        <input type="submit" label="Subscribe" />
+        <input
+          v-model="email"
+          type="email"
+          placeholder="Email"
+          required
+          :disabled="subscribed || loading"
+        />
+        <input
+          type="submit"
+          :value="subscribed ? 'Subscribed!' : loading ? 'Subscribing...' : 'Subscribe'"
+          :disabled="subscribed || loading"
+        />
       </fieldset>
+      <p v-if="error" class="error-message">{{ error }}</p>
     </form>
   </section>
 </template>
 
 <script setup>
+import { useNewsletterSubscribe } from '~/composables/useNewsletterSubscribe'
+
+const { email, subscribed, error, loading, subscribe } = useNewsletterSubscribe()
+
 const props = defineProps({
   size: {
     type: String,

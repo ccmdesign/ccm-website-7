@@ -1,9 +1,9 @@
 ---
-title: "Why Your Grant Proposals Look Like Everyone Else's"
+title: Why Your Grant Proposals Look Like Everyone Else's
 slug: grant-proposal-design-differentiation
 brow: The Science of Differentiation
 tagline: Grant reviewers are exhausted
-date: "2025-04-15"
+date: '2025-04-15'
 author: CCM Design Team
 categories:
   - Nonprofit Growth & Fundraising
@@ -13,27 +13,48 @@ tags:
   - cognitive load theory
   - visual differentiation
   - grant writing strategy
-excerpt: Grant reviewers are exhausted. Learn how cognitive load theory and visual differentiation can help your proposals stand out in a sea of sameness.
-tldr: |-
-  - **The Homogeneity Crisis**: The widespread use of AI and templates has created a "sea of sameness," making it difficult for high-quality proposals to distinguish themselves from generic submissions.
-  - **Reviewers "Satisfice"**: Overworked reviewers suffering from decision fatigue do not optimize for the best proposal; they select the first satisfactory option. Dense, difficult-to-read proposals are easily rejected.
-  - **Cognitive Load is Key**: Text-heavy formatting increases extraneous cognitive load. Strategic design is not aesthetic—it is a functional requirement to reduce mental effort and increase retention.
-  - **Visuals as Strategy**: Leveraging "dual coding" through visuals can double retention pathways and act as "word savers" in character-constrained applications.
+excerpt: >-
+  Grant reviewers are exhausted. Learn how cognitive load theory and visual
+  differentiation can help your proposals stand out in a sea of sameness.
+tldr: >-
+  - **The Homogeneity Crisis**: The widespread use of AI and templates has
+  created a "sea of sameness," making it difficult for high-quality proposals to
+  distinguish themselves from generic submissions.
 
-  Funding rates are dropping while the volume of applications rises. For many research organizations, the instinct is to increase output—submitting more proposals to more funders. Yet, this volume-based strategy often yields diminishing returns. The problem is rarely the quality of the science itself; it is the mechanism of delivery. In an environment defined by saturation, indistinguishability is a silent killer of grant success.
+  - **Reviewers "Satisfice"**: Overworked reviewers suffering from decision
+  fatigue do not optimize for the best proposal; they select the first
+  satisfactory option. Dense, difficult-to-read proposals are easily rejected.
+
+  - **Cognitive Load is Key**: Text-heavy formatting increases extraneous
+  cognitive load. Strategic design is not aesthetic—it is a functional
+  requirement to reduce mental effort and increase retention.
+
+  - **Visuals as Strategy**: Leveraging "dual coding" through visuals can double
+  retention pathways and act as "word savers" in character-constrained
+  applications.
+
+
+  Funding rates are dropping while the volume of applications rises. For many
+  research organizations, the instinct is to increase output—submitting more
+  proposals to more funders. Yet, this volume-based strategy often yields
+  diminishing returns. The problem is rarely the quality of the science itself;
+  it is the mechanism of delivery. In an environment defined by saturation,
+  indistinguishability is a silent killer of grant success.
 stage: researcher
 related_posts:
   - slug: hidden-cost-good-enough-grant-design
     title: The Hidden Cost of "Good Enough" Design in Grant Proposals
   - slug: psychology-grant-evaluation-design
-    title: "Grant Proposal Design: The Psychology of Evaluation"
+    title: 'Grant Proposal Design: The Psychology of Evaluation'
   - slug: data-visualization-research-impact
-    title: "Data Visualization Research: Why Bad Charts Kill Impact"
+    title: 'Data Visualization Research: Why Bad Charts Kill Impact'
   - slug: static-pdfs-undermine-research-impact
     title: Why Static PDFs Are Undermining Your Research Impact
   - slug: static-pdfs-undermining-research-impact
     title: Why Static PDFs Are Undermining Your Research Impact
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

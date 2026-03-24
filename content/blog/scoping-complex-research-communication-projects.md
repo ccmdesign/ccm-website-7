@@ -1,8 +1,8 @@
 ---
-title: "Scoping Complex Research Communication Projects"
+title: Scoping Complex Research Communication Projects
 slug: scoping-complex-research-communication-projects
 brow: A Risk Mitigation Guide
-date: "2025-12-09"
+date: '2025-12-09'
 author: CCM Design Team
 categories:
   - Content Operations & Strategy
@@ -12,31 +12,62 @@ tags:
   - data visualization
   - scope creep
   - discovery phase
-excerpt: Learn strategic scoping methodologies that prevent scope creep and ensure alignment in complex data visualization and research communication projects.
-tldr: |-
-  -   **Scoping is strategic, not just logistical**: Effective scoping defines the "Central Curiosity" and aligns research objectives with design outputs before production begins.
-  -   **Research requires flexibility**: Unlike standard software development, research projects often require solutions to emerge over time, necessitating a phased approach rather than rigid linear planning.
-  -   **Negative scope is essential**: Defining what you will *not* do is as critical as defining what you will do. This "negative scope" prevents the grey areas that lead to budget overruns.
-  -   **Complexity demands specialized roles**: Successful execution requires accounting for the "Eight Hats of Data Visualization," ensuring that data cleaning, analysis, and journalism are scoped alongside design and code.
+excerpt: >-
+  Learn strategic scoping methodologies that prevent scope creep and ensure
+  alignment in complex data visualization and research communication projects.
+tldr: >-
+  -   **Scoping is strategic, not just logistical**: Effective scoping defines
+  the "Central Curiosity" and aligns research objectives with design outputs
+  before production begins.
 
-  The tension between the open-ended nature of scientific inquiry and the rigid constraints of communication budgets is a defining challenge for research organizations. You operate in a world where answers emerge slowly and data is rarely clean on the first pass. Yet, the contracts you sign for digital products—microsites, dashboards, and policy hubs—often demand fixed timelines and concrete deliverables from day one.
+  -   **Research requires flexibility**: Unlike standard software development,
+  research projects often require solutions to emerge over time, necessitating a
+  phased approach rather than rigid linear planning.
 
-  For evaluators assessing potential agency partners, understanding how a partner navigates this tension is the most reliable predictor of project success. A partner who claims they can execute a complex [data visualization](/5-signs-research-publications-need-redesign) project without a dedicated discovery phase is not being efficient; they are ignoring the inherent risks of the work.
+  -   **Negative scope is essential**: Defining what you will *not* do is as
+  critical as defining what you will do. This "negative scope" prevents the grey
+  areas that lead to budget overruns.
 
-  This guide outlines the methodologies required to scope complex [research communication](/interactive-research-reports-trends) projects effectively. It moves beyond standard project management to address the specific "Iron Triangle" of data, design, and policy impact.
+  -   **Complexity demands specialized roles**: Successful execution requires
+  accounting for the "Eight Hats of Data Visualization," ensuring that data
+  cleaning, analysis, and journalism are scoped alongside design and code.
+
+
+  The tension between the open-ended nature of scientific inquiry and the rigid
+  constraints of communication budgets is a defining challenge for research
+  organizations. You operate in a world where answers emerge slowly and data is
+  rarely clean on the first pass. Yet, the contracts you sign for digital
+  products—microsites, dashboards, and policy hubs—often demand fixed timelines
+  and concrete deliverables from day one.
+
+
+  For evaluators assessing potential agency partners, understanding how a
+  partner navigates this tension is the most reliable predictor of project
+  success. A partner who claims they can execute a complex [data
+  visualization](/5-signs-research-publications-need-redesign) project without a
+  dedicated discovery phase is not being efficient; they are ignoring the
+  inherent risks of the work.
+
+
+  This guide outlines the methodologies required to scope complex [research
+  communication](/interactive-research-reports-trends) projects effectively. It
+  moves beyond standard project management to address the specific "Iron
+  Triangle" of data, design, and policy impact.
 stage: evaluator
 related_posts:
   - slug: interactive-research-reports-trends
-    title: "The End of the PDF: 5 Trends Redefining Research Communication"
+    title: 'The End of the PDF: 5 Trends Redefining Research Communication'
   - slug: working-with-ccm-design
-    title: "Working with CCM Design: A Guide for Research Leaders"
+    title: 'Working with CCM Design: A Guide for Research Leaders'
   - slug: strategic-publication-design-methodology
-    title: "De-Risking Publication Design: A 9-Step Strategic Methodology"
+    title: 'De-Risking Publication Design: A 9-Step Strategic Methodology'
   - slug: evaluate-research-publication-design-partners
     title: How to Evaluate Design Partners for Research Publications
   - slug: publication-design-vs-marketing-design
-    title: "Publication Design vs. Marketing Design: The Hidden Differences"
+    title: 'Publication Design vs. Marketing Design: The Hidden Differences'
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

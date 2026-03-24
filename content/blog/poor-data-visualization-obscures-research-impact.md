@@ -1,9 +1,9 @@
 ---
-title: "How Poor Data Visualization Obscures Research Impact"
+title: How Poor Data Visualization Obscures Research Impact
 slug: poor-data-visualization-obscures-research-impact
 brow: The Invisible Science
 tagline: Poor data visualization hides nearly 30% of scientific findings
-date: "2025-08-12"
+date: '2025-08-12'
 author: CCM Design Team
 categories:
   - Publication Design & Production
@@ -13,16 +13,28 @@ tags:
   - graphical abstracts
   - research impact
   - cognitive load
-excerpt: Poor data visualization hides nearly 30% of scientific findings. Learn how to correct common design errors and increase research visibility.
-tldr: |-
-  - **Prevalence of Error:** Approximately **30% of graphs in scientific publications contain errors**, and nearly 40% are rated as poor quality, directly hindering peer review.
-  - **Cognitive Cost:** Complex, cluttered designs increase extraneous cognitive load, forcing reviewers to spend energy decoding formats rather than analyzing findings.
-  - **Diagnostic Risk:** Design choices like the "rainbow colormap" create false artifacts and have been proven to reduce diagnostic accuracy in medical imaging.
-  - **Visual Impact:** Research utilizing visual abstracts sees up to **8x more social shares**, while effective visual aids can increase persuasion by 43%.
+excerpt: >-
+  Poor data visualization hides nearly 30% of scientific findings. Learn how to
+  correct common design errors and increase research visibility.
+tldr: >-
+  - **Prevalence of Error:** Approximately **30% of graphs in scientific
+  publications contain errors**, and nearly 40% are rated as poor quality,
+  directly hindering peer review.
+
+  - **Cognitive Cost:** Complex, cluttered designs increase extraneous cognitive
+  load, forcing reviewers to spend energy decoding formats rather than analyzing
+  findings.
+
+  - **Diagnostic Risk:** Design choices like the "rainbow colormap" create false
+  artifacts and have been proven to reduce diagnostic accuracy in medical
+  imaging.
+
+  - **Visual Impact:** Research utilizing visual abstracts sees up to **8x more
+  social shares**, while effective visual aids can increase persuasion by 43%.
 stage: researcher
 related_posts:
   - slug: data-visualization-research-impact
-    title: "Data Visualization Research: Why Bad Charts Kill Impact"
+    title: 'Data Visualization Research: Why Bad Charts Kill Impact'
   - slug: static-pdfs-undermine-research-impact
     title: Why Static PDFs Are Undermining Your Research Impact
   - slug: static-pdfs-undermining-research-impact
@@ -30,8 +42,10 @@ related_posts:
   - slug: hidden-cost-inconsistent-publication-design
     title: The Hidden Tax of Inconsistent Publication Design
   - slug: design-debt-research-organizations
-    title: "Design Debt in Research Organizations: The Cost of 'We'll Fix It Later'"
+    title: 'Design Debt in Research Organizations: The Cost of ''We''ll Fix It Later'''
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

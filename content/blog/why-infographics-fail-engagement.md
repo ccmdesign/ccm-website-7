@@ -2,8 +2,8 @@
 title: Why Your Infographics Are Failing to Gain Traction
 slug: why-infographics-fail-engagement
 brow: publications
-tagline: Infographics theoretically boost engagement, yet many flatline
-date: "2026-03-15"
+tagline: 'Infographics theoretically boost engagement, yet many flatline'
+date: '2026-03-15'
 author: CCM Design Team
 categories:
   - Publication Design & Production
@@ -13,12 +13,25 @@ tags:
   - visual storytelling strategy
   - data visualization mistakes
   - mobile-first design
-excerpt: Infographics theoretically boost engagement, yet many flatline. We diagnose the narrative, design, and trust factors often killing shareability.
-tldr: |-
-  - **Generic visuals ignore the brain's preference:** While the "Picture Superiority Effect" is scientifically valid, audiences filter out stock imagery and template-based designs as "visual noise."
-  - **Data dumps aren't stories:** Most failing infographics lack a narrative arc. Without a clear beginning, middle, and end, viewers experience cognitive overload and bounce.
-  - **Desktop design kills mobile sharing:** With over 50% of traffic on mobile, landscape-oriented infographics that shrink to illegibility are functionally broken for half your audience.
-  - **The trust gap:** Sophisticated audiences treat uncited or cluttered data visualizations as "fake news," refusing to share content that lacks clear attribution or violates design integrity.
+excerpt: >-
+  Infographics theoretically boost engagement, yet many flatline. We diagnose
+  the narrative, design, and trust factors often killing shareability.
+tldr: >-
+  - **Generic visuals ignore the brain's preference:** While the "Picture
+  Superiority Effect" is scientifically valid, audiences filter out stock
+  imagery and template-based designs as "visual noise."
+
+  - **Data dumps aren't stories:** Most failing infographics lack a narrative
+  arc. Without a clear beginning, middle, and end, viewers experience cognitive
+  overload and bounce.
+
+  - **Desktop design kills mobile sharing:** With over 50% of traffic on mobile,
+  landscape-oriented infographics that shrink to illegibility are functionally
+  broken for half your audience.
+
+  - **The trust gap:** Sophisticated audiences treat uncited or cluttered data
+  visualizations as "fake news," refusing to share content that lacks clear
+  attribution or violates design integrity.
 stage: researcher
 related_posts:
   - slug: static-infographics-failing-research
@@ -26,12 +39,18 @@ related_posts:
   - slug: think-tank-website-undermining-impact
     title: Is Your Think Tank's Website Undermining Your Research Impact?
   - slug: annual-report-comparative-disadvantage
-    title: "The Comparative Disadvantage: Why Your Annual Report Is Failing Against Peers"
+    title: >-
+      The Comparative Disadvantage: Why Your Annual Report Is Failing Against
+      Peers
   - slug: rethinking-research-communication
-    title: "Beyond the PDF: Modern Research Communication Strategies"
+    title: 'Beyond the PDF: Modern Research Communication Strategies'
   - slug: grant-proposal-design-differentiation
-    title: "Why Your Grant Proposals Look Like Everyone Else's: The Science of Differentiation"
+    title: >-
+      Why Your Grant Proposals Look Like Everyone Else's: The Science of
+      Differentiation
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

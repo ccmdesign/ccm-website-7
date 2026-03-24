@@ -1,8 +1,8 @@
 ---
-title: "The Metrics You Forgot to Track: Why Impact Stories Fail"
+title: 'The Metrics You Forgot to Track: Why Impact Stories Fail'
 slug: impact-measurement-metrics-storytelling
 brow: Impact Measurement
-date: "2025-05-20"
+date: '2025-05-20'
 author: CCM Design Team
 categories:
   - Research Communication & Impact
@@ -12,29 +12,56 @@ tags:
   - behavioral metrics
   - impact reporting
   - data wireframing
-excerpt: Learn why impact stories fail before fieldwork ends and how to track the right metrics to prove your organization's value.
-tldr: |-
-  - **Upstream Failure**: The primary cause of weak impact storytelling is a lack of strategic metric planning during project design, not poor writing at the publication stage.
-  - **The Retrofitting Trap**: Attempting to reconstruct baselines after a project concludes leads to "recall bias" and scientifically weak narratives.
-  - **Vanity vs. Behavioral**: Organizations often default to "vanity metrics" (attendance) rather than "behavioral metrics" (adoption) because the latter require intentional design to capture.
-  - **Data Wireframing**: Visualizing the final report's charts before fieldwork begins ensures the right stories are engineered into the project's DNA.
+excerpt: >-
+  Learn why impact stories fail before fieldwork ends and how to track the right
+  metrics to prove your organization's value.
+tldr: >-
+  - **Upstream Failure**: The primary cause of weak impact storytelling is a
+  lack of strategic metric planning during project design, not poor writing at
+  the publication stage.
 
-  The [annual report](/nonprofit-annual-report-fundraising-tool) deadline approaches. The design team is ready, the copywriters are standing by, and the leadership team is asking for a "compelling narrative of transformation." Yet, when you look at the spreadsheet, the columns are filled with attendance figures, download counts, and list of activities. The story of *change* is missing.
+  - **The Retrofitting Trap**: Attempting to reconstruct baselines after a
+  project concludes leads to "recall bias" and scientifically weak narratives.
 
-  This scenario is common, but the diagnosis is often wrong. Organizations frequently treat this as a communications failure—a lack of creative flair or storytelling ability. In reality, it is a design failure. The data required to tell a powerful story was never defined, never instrumented, and consequently, never collected. By the time the writer sits down to draft the report, the opportunity to capture the necessary evidence has passed.
+  - **Vanity vs. Behavioral**: Organizations often default to "vanity metrics"
+  (attendance) rather than "behavioral metrics" (adoption) because the latter
+  require intentional design to capture.
+
+  - **Data Wireframing**: Visualizing the final report's charts before fieldwork
+  begins ensures the right stories are engineered into the project's DNA.
+
+
+  The [annual report](/nonprofit-annual-report-fundraising-tool) deadline
+  approaches. The design team is ready, the copywriters are standing by, and the
+  leadership team is asking for a "compelling narrative of transformation." Yet,
+  when you look at the spreadsheet, the columns are filled with attendance
+  figures, download counts, and list of activities. The story of *change* is
+  missing.
+
+
+  This scenario is common, but the diagnosis is often wrong. Organizations
+  frequently treat this as a communications failure—a lack of creative flair or
+  storytelling ability. In reality, it is a design failure. The data required to
+  tell a powerful story was never defined, never instrumented, and consequently,
+  never collected. By the time the writer sits down to draft the report, the
+  opportunity to capture the necessary evidence has passed.
 stage: researcher
 related_posts:
   - slug: operationalizing-field-storytelling
-    title: "Your Field Team Is Your Content Team: A Strategic Guide"
+    title: 'Your Field Team Is Your Content Team: A Strategic Guide'
   - slug: annual-report-comparative-disadvantage
-    title: "The Comparative Disadvantage: Why Your Annual Report Is Failing Against Peers"
+    title: >-
+      The Comparative Disadvantage: Why Your Annual Report Is Failing Against
+      Peers
   - slug: nonprofit-annual-report-fundraising-tool
-    title: "Nonprofit Annual Reports: Turning Compliance into Fundraising"
+    title: 'Nonprofit Annual Reports: Turning Compliance into Fundraising'
   - slug: static-pdfs-undermine-research-impact
     title: Why Static PDFs Are Undermining Your Research Impact
   - slug: mobile-paradox-nonprofit-reporting
-    title: "The Mobile Paradox: Why Static Reports Fail Modern Donors"
+    title: 'The Mobile Paradox: Why Static Reports Fail Modern Donors'
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

@@ -1,9 +1,9 @@
 ---
-title: "Why Your Research Is Going Unread"
+title: Why Your Research Is Going Unread
 slug: research-engagement-crisis-publication-design
 brow: The Engagement Crisis
 tagline: Estimates suggest 50% of academic papers go unread
-date: "2025-10-21"
+date: '2025-10-21'
 author: CCM Design Team
 categories:
   - Publication Design & Production
@@ -13,14 +13,29 @@ tags:
   - research impact
   - visual abstracts
   - data visualization
-excerpt: Estimates suggest 50% of academic papers go unread. Discover how strategic publication design increases visibility, credibility, and policy impact.
-tldr: |-
-  -   **The "Unread" Phenomenon:** Up to 50% of academic papers are read only by their authors, editors, and peer reviewers, creating a massive ROI deficit for research funding.
-  -   **Design is Functional:** Poor design creates cognitive barriers. If a policymaker cannot scan and understand your report in seconds, they will move on.
-  -   **Visuals Drive Traffic:** Visual abstracts have been empirically linked to a 3-fold increase in article visits and a 5-fold increase in social engagement.
-  -   **Process Matters:** Leading organizations are moving away from ad-hoc "formatting" at the end of a project to structured, strategy-first design workflows.
+excerpt: >-
+  Estimates suggest 50% of academic papers go unread. Discover how strategic
+  publication design increases visibility, credibility, and policy impact.
+tldr: >-
+  -   **The "Unread" Phenomenon:** Up to 50% of academic papers are read only by
+  their authors, editors, and peer reviewers, creating a massive ROI deficit for
+  research funding.
+
+  -   **Design is Functional:** Poor design creates cognitive barriers. If a
+  policymaker cannot scan and understand your report in seconds, they will move
+  on.
+
+  -   **Visuals Drive Traffic:** Visual abstracts have been empirically linked
+  to a 3-fold increase in article visits and a 5-fold increase in social
+  engagement.
+
+  -   **Process Matters:** Leading organizations are moving away from ad-hoc
+  "formatting" at the end of a project to structured, strategy-first design
+  workflows.
 stage: researcher
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

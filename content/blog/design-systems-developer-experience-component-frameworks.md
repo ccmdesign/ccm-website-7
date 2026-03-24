@@ -1,9 +1,13 @@
 ---
-title: Design Systems are Developer Experience - Treat Component Libraries as Software Frameworks
+title: >-
+  Design Systems are Developer Experience - Treat Component Libraries as
+  Software Frameworks
 slug: design-systems-developer-experience-component-frameworks
 brow: Design Systems
-tagline: Why developer experience principles determine design system success more than visual perfection
-date: "2025-09-15"
+tagline: >-
+  Why developer experience principles determine design system success more than
+  visual perfection
+date: '2025-09-15'
 author: CCM Design Team
 categories:
   - Digital Experience & Websites
@@ -24,8 +28,13 @@ seo_tags:
   - design system frameworks
   - UX for developers
   - system design patterns
-excerpt: Most design systems fail adoption because teams optimize for visual consistency while ignoring developer experience. Treating design systems as software frameworks transforms adoption rates and team velocity.
+excerpt: >-
+  Most design systems fail adoption because teams optimize for visual
+  consistency while ignoring developer experience. Treating design systems as
+  software frameworks transforms adoption rates and team velocity.
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

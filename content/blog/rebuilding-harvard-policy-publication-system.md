@@ -1,9 +1,11 @@
 ---
-title: "Rebuilding Harvard’s Policy Platforms"
+title: Rebuilding Harvard’s Policy Platforms
 slug: rebuilding-harvard-policy-publication-system
 brow: A Digital Case Study
-tagline: How CCM Design transformed Harvard's legacy policy systems into dynamic digital hubs
-date: "2025-10-07"
+tagline: >-
+  How CCM Design transformed Harvard's legacy policy systems into dynamic
+  digital hubs
+date: '2025-10-07'
 author: CCM Design Team
 categories:
   - Digital Experience & Websites
@@ -13,20 +15,49 @@ tags:
   - higher ed web development
   - Harvard case study
   - accessible policy research
-excerpt: How CCM Design transformed Harvard's legacy policy systems into dynamic digital hubs. A deep dive into strategy, architecture, and results.
-tldr: |-
-  - **From Repository to Experience:** Moving policy research from static PDFs to interactive digital platforms significantly increases accessibility and stakeholder engagement.
-  - **User-Centric Architecture:** Effective policy platforms must serve distinct personas—providing high-level insights for policymakers and granular data for academics—simultaneously.
-  - **Scalability as a Priority:** Building "central hubs" rather than one-off microsites ensures that research platforms can grow with longitudinal data and future initiatives.
-  - **Strategic Branding:** Digital sub-brands for initiatives like the *Tech Spotlight* can achieve distinct character while reinforcing the prestige of the parent institution.
+excerpt: >-
+  How CCM Design transformed Harvard's legacy policy systems into dynamic
+  digital hubs. A deep dive into strategy, architecture, and results.
+tldr: >-
+  - **From Repository to Experience:** Moving policy research from static PDFs
+  to interactive digital platforms significantly increases accessibility and
+  stakeholder engagement.
 
-  For major research institutions, the distance between groundbreaking insight and public impact is often measured in user experience. A rigorous policy paper buried in a static PDF repository may technically be "published," but if it fails to engage the policymaker, the journalist, or the industry stakeholder, its utility is compromised.
+  - **User-Centric Architecture:** Effective policy platforms must serve
+  distinct personas—providing high-level insights for policymakers and granular
+  data for academics—simultaneously.
 
-  This challenge was the catalyst for a strategic rebuilding of policy publication systems at Harvard University, specifically for the Belfer Center for Science and International Affairs and the Shorenstein Center on Media, Politics and Public Policy. In both instances, the goal was not merely to refresh a website, but to fundamentally transform how complex research is disseminated in a digital-first world.
+  - **Scalability as a Priority:** Building "central hubs" rather than one-off
+  microsites ensures that research platforms can grow with longitudinal data and
+  future initiatives.
 
-  This analysis outlines our methodology for these projects, examining the architectural decisions, migration strategies, and design principles that converted legacy constraints into scalable, high-impact digital platforms.
+  - **Strategic Branding:** Digital sub-brands for initiatives like the *Tech
+  Spotlight* can achieve distinct character while reinforcing the prestige of
+  the parent institution.
+
+
+  For major research institutions, the distance between groundbreaking insight
+  and public impact is often measured in user experience. A rigorous policy
+  paper buried in a static PDF repository may technically be "published," but if
+  it fails to engage the policymaker, the journalist, or the industry
+  stakeholder, its utility is compromised.
+
+
+  This challenge was the catalyst for a strategic rebuilding of policy
+  publication systems at Harvard University, specifically for the Belfer Center
+  for Science and International Affairs and the Shorenstein Center on Media,
+  Politics and Public Policy. In both instances, the goal was not merely to
+  refresh a website, but to fundamentally transform how complex research is
+  disseminated in a digital-first world.
+
+
+  This analysis outlines our methodology for these projects, examining the
+  architectural decisions, migration strategies, and design principles that
+  converted legacy constraints into scalable, high-impact digital platforms.
 stage: evaluator
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

@@ -1,9 +1,9 @@
 ---
-title: "Nonprofit Credibility Signals: What Funders Actually Check"
+title: 'Nonprofit Credibility Signals: What Funders Actually Check'
 slug: nonprofit-credibility-signals-funder-due-diligence
 brow: publications
 tagline: Funders judge capacity through digital heuristics
-date: "2025-07-22"
+date: '2025-07-22'
 author: CCM Design Team
 categories:
   - Nonprofit Growth & Fundraising
@@ -13,33 +13,67 @@ tags:
   - organizational capacity
   - grantseeker tips
   - nonprofit branding
-excerpt: Funders judge capacity through digital heuristics. Learn the visual and structural signals that impact due diligence and funding decisions.
-tldr: |-
-  -   **Funders rely on "System 1" thinking**: Rapid, intuitive judgments often precede deep analysis of proposals.
-  -   **Design is the gatekeeper**: 94% of first impressions are design-related, determining whether an evaluator engages with your content or moves on.
-  -   **Digital neglect signals risk**: Broken links and outdated content trigger the "Broken Windows" effect, suggesting operational incompetence.
-  -   **Marketing is capacity**: Modern grantmakers increasingly view communications infrastructure as a proxy for an organization's ability to execute its mission.
+excerpt: >-
+  Funders judge capacity through digital heuristics. Learn the visual and
+  structural signals that impact due diligence and funding decisions.
+tldr: >-
+  -   **Funders rely on "System 1" thinking**: Rapid, intuitive judgments often
+  precede deep analysis of proposals.
 
-  Consider the ratio of effort in your typical grant application cycle. You likely spend weeks refining the logic model, calculating budget justifications down to the cent, and polishing the narrative until every sentence sings. The resulting PDF is a masterpiece of "System 2" thinking—logical, deliberative, and dense.
+  -   **Design is the gatekeeper**: 94% of first impressions are design-related,
+  determining whether an evaluator engages with your content or moves on.
 
-  Yet, before a program officer reads a single word of that narrative, they have likely already made a subconscious decision about your organization's competence. They visited your website.
+  -   **Digital neglect signals risk**: Broken links and outdated content
+  trigger the "Broken Windows" effect, suggesting operational incompetence.
 
-  In the high-stakes environment of fundraising, trust is not merely an intellectual calculation derived from impact data. It is a psychological response to consistency, clarity, and professional presentation. When a funder conducts due diligence, they are assessing your "digital body language." If your proposal says "[world-class research](/research-brands-funders-remember)" but your digital presence says "disorganized and outdated," the dissonance creates risk.
+  -   **Marketing is capacity**: Modern grantmakers increasingly view
+  communications infrastructure as a proxy for an organization's ability to
+  execute its mission.
 
-  This article examines the implicit credibility signals that exist outside your formal proposal—and how they influence the funding decisions that shape your organization's future.
+
+  Consider the ratio of effort in your typical grant application cycle. You
+  likely spend weeks refining the logic model, calculating budget justifications
+  down to the cent, and polishing the narrative until every sentence sings. The
+  resulting PDF is a masterpiece of "System 2" thinking—logical, deliberative,
+  and dense.
+
+
+  Yet, before a program officer reads a single word of that narrative, they have
+  likely already made a subconscious decision about your organization's
+  competence. They visited your website.
+
+
+  In the high-stakes environment of fundraising, trust is not merely an
+  intellectual calculation derived from impact data. It is a psychological
+  response to consistency, clarity, and professional presentation. When a funder
+  conducts due diligence, they are assessing your "digital body language." If
+  your proposal says "[world-class research](/research-brands-funders-remember)"
+  but your digital presence says "disorganized and outdated," the dissonance
+  creates risk.
+
+
+  This article examines the implicit credibility signals that exist outside your
+  formal proposal—and how they influence the funding decisions that shape your
+  organization's future.
 stage: researcher
 related_posts:
   - slug: research-brands-funders-remember
     title: The Research Brands That Funders Remember
   - slug: annual-report-comparative-disadvantage
-    title: "The Comparative Disadvantage: Why Your Annual Report Is Failing Against Peers"
+    title: >-
+      The Comparative Disadvantage: Why Your Annual Report Is Failing Against
+      Peers
   - slug: data-visualization-research-impact
-    title: "Data Visualization Research: Why Bad Charts Kill Impact"
+    title: 'Data Visualization Research: Why Bad Charts Kill Impact'
   - slug: grant-proposal-design-differentiation
-    title: "Why Your Grant Proposals Look Like Everyone Else's: The Science of Differentiation"
+    title: >-
+      Why Your Grant Proposals Look Like Everyone Else's: The Science of
+      Differentiation
   - slug: static-pdfs-undermine-research-impact
     title: Why Static PDFs Are Undermining Your Research Impact
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

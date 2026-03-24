@@ -2,8 +2,10 @@
 title: How to adapt your research for a wider audience
 slug: adapt-research-wider-audience-public-engagement
 brow: Research & Academic Communication
-tagline: Transform academic research into accessible content that engages the public and drives impact
-date: "2024-04-10"
+tagline: >-
+  Transform academic research into accessible content that engages the public
+  and drives impact
+date: '2024-04-10'
 author: CCM Design Team
 categories:
   - Research Communication & Impact
@@ -24,9 +26,20 @@ seo_tags:
   - research-dissemination
   - stakeholder-engagement
   - research-accessibility
-excerpt: Learn how to adapt academic research for wider audiences using journalistic techniques, targeted messaging, and visual storytelling. Increase research impact by 300% through strategic communication.
-tldr: Transform your academic research into accessible content that resonates with broader audiences by adopting journalistic techniques, identifying target demographics, and tailoring messages using clear language, visual storytelling, and strategic social media engagement. Learn to structure information using the inverted pyramid method and bridge the gap between complex research findings and public understanding.
+excerpt: >-
+  Learn how to adapt academic research for wider audiences using journalistic
+  techniques, targeted messaging, and visual storytelling. Increase research
+  impact by 300% through strategic communication.
+tldr: >-
+  Transform your academic research into accessible content that resonates with
+  broader audiences by adopting journalistic techniques, identifying target
+  demographics, and tailoring messages using clear language, visual
+  storytelling, and strategic social media engagement. Learn to structure
+  information using the inverted pyramid method and bridge the gap between
+  complex research findings and public understanding.
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

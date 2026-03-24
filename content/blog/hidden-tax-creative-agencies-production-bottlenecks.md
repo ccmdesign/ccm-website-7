@@ -1,9 +1,11 @@
 ---
-title: The $40,000 Hidden Tax Every Creative Agency Pays
+title: 'The $40,000 Hidden Tax Every Creative Agency Pays'
 slug: hidden-tax-creative-agencies-production-bottlenecks
 brow: Agency Operations
-tagline: How subscription partnerships eliminate production bottlenecks and unlock competitive advantage through specialized design expertise
-date: "2026-05-10"
+tagline: >-
+  How subscription partnerships eliminate production bottlenecks and unlock
+  competitive advantage through specialized design expertise
+date: '2026-05-10'
 author: CCM Design Team
 categories:
   - Digital Experience & Websites
@@ -24,8 +26,13 @@ seo_tags:
   - design team productivity
   - agency workflow optimization
   - creative production costs
-excerpt: Creative agencies lose millions to production bottlenecks caused by specialized skill gaps. 70% of creative directors cite insufficient time as their biggest barrier to success.
+excerpt: >-
+  Creative agencies lose millions to production bottlenecks caused by
+  specialized skill gaps. 70% of creative directors cite insufficient time as
+  their biggest barrier to success.
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

@@ -1,9 +1,9 @@
 ---
-title: "The Psychology of Evaluation"
+title: The Psychology of Evaluation
 slug: psychology-grant-evaluation-design
 brow: Grant Proposal Design
 tagline: The halo effect and decision fatigue shape funding outcomes
-date: "2025-08-26"
+date: '2025-08-26'
 author: CCM Design Team
 categories:
   - Nonprofit Growth & Fundraising
@@ -12,29 +12,61 @@ tags:
   - grant evaluation psychology
   - research funding strategies
   - science communication
-excerpt: The halo effect and decision fatigue shape funding outcomes. Learn why professional grant proposal design is a critical tool for success.
-tldr: |-
-  -   **The Myth of Merit:** Relying solely on the belief that "science speaks for itself" ignores the cognitive limitations of overburdened reviewers.
-  -   **The Halo Effect:** A polished visual presentation creates a positive first impression that unconsciously influences the reviewer's judgment of the research's scientific merit.
-  -   **Signaling Capacity:** Professional design acts as a proxy for organizational infrastructure, signaling that a team is "grant-ready" and capable of managing funds.
-  -   **Cognitive Ease:** Strategic formatting reduces decision fatigue, helping reviewers process complex information without the "cognitive tax" of dense text.
+excerpt: >-
+  The halo effect and decision fatigue shape funding outcomes. Learn why
+  professional grant proposal design is a critical tool for success.
+tldr: >-
+  -   **The Myth of Merit:** Relying solely on the belief that "science speaks
+  for itself" ignores the cognitive limitations of overburdened reviewers.
 
-  Many researchers operate under a noble but dangerous assumption: that science should speak for itself. The belief is that if the methodology is rigorous, the hypothesis sound, and the potential impact high, funding will naturally follow [8, 9]. In an ideal world, this would be true. In the reality of grant review panels, however, merit is filtered through human cognition. Reviewers are not objective algorithms; they are overburdened professionals subject to fatigue, bias, and time constraints [10].
+  -   **The Halo Effect:** A polished visual presentation creates a positive
+  first impression that unconsciously influences the reviewer's judgment of the
+  research's scientific merit.
 
-  This disconnect creates a "hidden curriculum" in funding. While the explicit requirements ask for scientific aims and budget justifications, the implicit requirement is communication efficiency. The "cover" of your research—its layout, typography, and visual hierarchy—acts as a decisive filter. It determines whether your ideas are deeply engaged with or summarily dismissed. Understanding the psychology of [grant proposal design](/hidden-cost-good-enough-grant-design) is not about superficial aesthetics; it is about ensuring your science survives the review process long enough to be understood.
+  -   **Signaling Capacity:** Professional design acts as a proxy for
+  organizational infrastructure, signaling that a team is "grant-ready" and
+  capable of managing funds.
+
+  -   **Cognitive Ease:** Strategic formatting reduces decision fatigue, helping
+  reviewers process complex information without the "cognitive tax" of dense
+  text.
+
+
+  Many researchers operate under a noble but dangerous assumption: that science
+  should speak for itself. The belief is that if the methodology is rigorous,
+  the hypothesis sound, and the potential impact high, funding will naturally
+  follow [8, 9]. In an ideal world, this would be true. In the reality of grant
+  review panels, however, merit is filtered through human cognition. Reviewers
+  are not objective algorithms; they are overburdened professionals subject to
+  fatigue, bias, and time constraints [10].
+
+
+  This disconnect creates a "hidden curriculum" in funding. While the explicit
+  requirements ask for scientific aims and budget justifications, the implicit
+  requirement is communication efficiency. The "cover" of your research—its
+  layout, typography, and visual hierarchy—acts as a decisive filter. It
+  determines whether your ideas are deeply engaged with or summarily dismissed.
+  Understanding the psychology of [grant proposal
+  design](/hidden-cost-good-enough-grant-design) is not about superficial
+  aesthetics; it is about ensuring your science survives the review process long
+  enough to be understood.
 stage: researcher
 related_posts:
   - slug: hidden-cost-good-enough-grant-design
     title: The Hidden Cost of "Good Enough" Design in Grant Proposals
   - slug: grant-proposal-design-differentiation
-    title: "Why Your Grant Proposals Look Like Everyone Else's: The Science of Differentiation"
+    title: >-
+      Why Your Grant Proposals Look Like Everyone Else's: The Science of
+      Differentiation
   - slug: data-visualization-research-impact
-    title: "Data Visualization Research: Why Bad Charts Kill Impact"
+    title: 'Data Visualization Research: Why Bad Charts Kill Impact'
   - slug: 5-signs-research-publications-need-redesign
     title: 5 Signs Your Research Publications Need a Redesign
   - slug: research-brands-funders-remember
     title: The Research Brands That Funders Remember
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

@@ -2,7 +2,7 @@
 title: A Strategic Design System Roadmap for the IDRC
 slug: designing-scalable-system-idrc
 brow: publications
-date: "2025-03-04"
+date: '2025-03-04'
 author: CCM Design Team
 categories:
   - Content Operations & Strategy
@@ -12,27 +12,52 @@ tags:
   - EN 301 549 compliance
   - hybrid governance model
   - accessible data visualization
-excerpt: How to build a bilingual, accessible, and scalable design system that supports IDRC's Strategy 2030 goals across five regional offices.
-tldr: |-
-  - **Strategy 2030 requires infrastructure**: Achieving global goals in climate and health requires a unified digital ecosystem, not fragmented outputs from five regional offices.
-  - **Hybrid governance is key**: A "Centralized" model creates bottlenecks, while "Federated" creates chaos. A Hybrid Contribution Model balances Ottawa's standards with regional autonomy.
-  - **Technical internationalization matters**: The system must natively handle 30% text expansion for translations and bidirectional mirroring for Arabic scripts without breaking layouts.
-  - **Data visualization must be accessible**: Moving from PDF to digital-first reporting requires modular, EN 301 549 compliant chart components similar to the World Bank's methodology.
+excerpt: >-
+  How to build a bilingual, accessible, and scalable design system that supports
+  IDRC's Strategy 2030 goals across five regional offices.
+tldr: >-
+  - **Strategy 2030 requires infrastructure**: Achieving global goals in climate
+  and health requires a unified digital ecosystem, not fragmented outputs from
+  five regional offices.
 
-  For the International Development Research Centre (IDRC), the launch of **Strategy 2030** represents a bold commitment to mobilizing alliances and sharing knowledge on climate resilience, global health, and inclusive governance [1]. However, ambitious strategies often stall at the execution layer if the digital infrastructure cannot support them. Currently, the production of digital assets across headquarters in Ottawa and five regional offices often relies on ad-hoc solutions. This report evaluates the architectural and strategic requirements for building a scalable design system that transforms this fragmentation into a cohesive, compliant, and efficient global presence.
+  - **Hybrid governance is key**: A "Centralized" model creates bottlenecks,
+  while "Federated" creates chaos. A Hybrid Contribution Model balances Ottawa's
+  standards with regional autonomy.
+
+  - **Technical internationalization matters**: The system must natively handle
+  30% text expansion for translations and bidirectional mirroring for Arabic
+  scripts without breaking layouts.
+
+  - **Data visualization must be accessible**: Moving from PDF to digital-first
+  reporting requires modular, EN 301 549 compliant chart components similar to
+  the World Bank's methodology.
+
+
+  For the International Development Research Centre (IDRC), the launch of
+  **Strategy 2030** represents a bold commitment to mobilizing alliances and
+  sharing knowledge on climate resilience, global health, and inclusive
+  governance [1]. However, ambitious strategies often stall at the execution
+  layer if the digital infrastructure cannot support them. Currently, the
+  production of digital assets across headquarters in Ottawa and five regional
+  offices often relies on ad-hoc solutions. This report evaluates the
+  architectural and strategic requirements for building a scalable design system
+  that transforms this fragmentation into a cohesive, compliant, and efficient
+  global presence.
 stage: evaluator
 related_posts:
   - slug: strategic-publication-design-methodology
-    title: "De-Risking Publication Design: A 9-Step Strategic Methodology"
+    title: 'De-Risking Publication Design: A 9-Step Strategic Methodology'
   - slug: harvard-policy-publication-redesign
     title: How We Rebuilt Harvard’s Policy Publication Ecosystem
   - slug: design-resourcing-agency-vs-inhouse
-    title: "Agency vs. In-House Design: A Strategic Resourcing Guide"
+    title: 'Agency vs. In-House Design: A Strategic Resourcing Guide'
   - slug: evaluate-research-publication-design-partners
     title: How to Evaluate Design Partners for Research Publications
   - slug: publication-design-vs-marketing-design
-    title: "Publication Design vs. Marketing Design: The Hidden Differences"
+    title: 'Publication Design vs. Marketing Design: The Hidden Differences'
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

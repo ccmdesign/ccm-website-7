@@ -2,8 +2,10 @@
 title: Techniques for Long-Form Content That You Must Know
 slug: long-form-content-formatting-techniques-readability
 brow: Content Strategy & Workflow
-tagline: Master formatting techniques to transform overwhelming content into scannable, engaging experiences
-date: "2023-12-18"
+tagline: >-
+  Master formatting techniques to transform overwhelming content into scannable,
+  engaging experiences
+date: '2023-12-18'
 author: CCM Design Team
 categories:
   - Content Operations & Strategy
@@ -24,9 +26,20 @@ seo_tags:
   - content-planning
   - formatting-techniques
   - scannable-content
-excerpt: Transform overwhelming long-form content into engaging, scannable experiences using bullet points, visual hierarchy, and strategic formatting. Reduce reader fatigue by up to 60% with proven techniques.
-tldr: Web readers scan content looking for specific information rather than reading every word. Long-form content can be transformed into engaging, scannable experiences through strategic formatting techniques including summaries, bullet points, bolding key information, callouts, and helpful visuals. Proper planning, content structuring, and selective formatting reduce reader fatigue while maintaining engagement throughout lengthy content.
+excerpt: >-
+  Transform overwhelming long-form content into engaging, scannable experiences
+  using bullet points, visual hierarchy, and strategic formatting. Reduce reader
+  fatigue by up to 60% with proven techniques.
+tldr: >-
+  Web readers scan content looking for specific information rather than reading
+  every word. Long-form content can be transformed into engaging, scannable
+  experiences through strategic formatting techniques including summaries,
+  bullet points, bolding key information, callouts, and helpful visuals. Proper
+  planning, content structuring, and selective formatting reduce reader fatigue
+  while maintaining engagement throughout lengthy content.
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

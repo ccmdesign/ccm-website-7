@@ -2,8 +2,10 @@
 title: How To Use Google Ad Grant In Your Nonprofit Marketing Strategy
 slug: google-ad-grant-nonprofit-marketing-strategy
 brow: Nonprofit Strategy
-tagline: Maximize your $10,000 monthly Google Ad Grant to drive targeted traffic and meaningful conversions
-date: "2024-04-22"
+tagline: >-
+  Maximize your $10,000 monthly Google Ad Grant to drive targeted traffic and
+  meaningful conversions
+date: '2024-04-22'
 author: CCM Design Team
 categories:
   - Nonprofit Growth & Fundraising
@@ -21,9 +23,19 @@ seo_tags:
   - charity advertising
   - nonprofit fundraising ads
   - Google grants for nonprofits
-excerpt: Learn how to strategically use Google's $10,000 monthly Ad Grant to attract the right visitors and convert them into supporters of your nonprofit mission.
-tldr: Google Ad Grant provides approved nonprofit organizations with $10,000 in monthly advertising credits for Google search ads. This comprehensive guide covers eligibility requirements, application process, optimization strategies, and campaign setup to help nonprofits attract the right visitors, drive meaningful conversions, and maintain program compliance while maximizing their digital marketing impact.
+excerpt: >-
+  Learn how to strategically use Google's $10,000 monthly Ad Grant to attract
+  the right visitors and convert them into supporters of your nonprofit mission.
+tldr: >-
+  Google Ad Grant provides approved nonprofit organizations with $10,000 in
+  monthly advertising credits for Google search ads. This comprehensive guide
+  covers eligibility requirements, application process, optimization strategies,
+  and campaign setup to help nonprofits attract the right visitors, drive
+  meaningful conversions, and maintain program compliance while maximizing their
+  digital marketing impact.
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

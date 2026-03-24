@@ -1,8 +1,10 @@
 ---
 title: The Art of Visual Storytelling in Academic Research
 brow: Storytelling
-tagline: Communicate research messages through compelling visual elements that reach audiences at a deep and lasting level
-date: "2024-05-06"
+tagline: >-
+  Communicate research messages through compelling visual elements that reach
+  audiences at a deep and lasting level
+date: '2024-05-06'
 author: CCM Design Team
 categories:
   - Research Communication & Impact
@@ -23,9 +25,17 @@ seo_tags:
   - data-storytelling
   - interactive-research
   - research-engagement
-excerpt: Master visual storytelling to transform academic research communication. With only 8 seconds to grab attention, visual storytelling techniques can increase research engagement by 250% and broaden audience reach.
-tldr: Master visual storytelling to transform academic research communication. With only 8 seconds to grab attention, visual storytelling techniques can increase research engagement by 250% and broaden audience reach.
+excerpt: >-
+  Master visual storytelling to transform academic research communication. With
+  only 8 seconds to grab attention, visual storytelling techniques can increase
+  research engagement by 250% and broaden audience reach.
+tldr: >-
+  Master visual storytelling to transform academic research communication. With
+  only 8 seconds to grab attention, visual storytelling techniques can increase
+  research engagement by 250% and broaden audience reach.
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

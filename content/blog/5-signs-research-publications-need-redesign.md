@@ -3,7 +3,7 @@ title: 5 Signs Your Research Publications Need a Redesign
 slug: 5-signs-research-publications-need-redesign
 brow: publications
 tagline: Is your research reaching its full potential
-date: "2025-01-07"
+date: '2025-01-07'
 author: CCM Design Team
 categories:
   - Publication Design & Production
@@ -13,27 +13,53 @@ tags:
   - science communication
   - research impact
   - digital publishing trends
-excerpt: Is your research reaching its full potential? Discover 5 data-backed signs that your publication design is hindering impact, credibility, and access.
-tldr: |-
-  *   **Visual credibility is instant:** Users judge trustworthiness within 3.42 seconds, often before reading a single word.
-  *   **PDFs create mobile friction:** With over half of global traffic on mobile, static print formats alienate a massive segment of your audience.
-  *   **Accessibility is a legal and ethical minefield:** Only 2.4% of scientific PDFs meet accessibility standards, creating significant liability.
-  *   **Design drives citations:** Accessible, readable content increases reader confidence by 14% and improves retention.
-  *   **Engagement requires adaptation:** Visual abstracts and interactive formats significantly outperform text-heavy summaries on social platforms.
+excerpt: >-
+  Is your research reaching its full potential? Discover 5 data-backed signs
+  that your publication design is hindering impact, credibility, and access.
+tldr: >-
+  *   **Visual credibility is instant:** Users judge trustworthiness within 3.42
+  seconds, often before reading a single word.
 
-  "Publish or perish" has evolved. The new reality is "publish and be visible, or perish."
+  *   **PDFs create mobile friction:** With over half of global traffic on
+  mobile, static print formats alienate a massive segment of your audience.
 
-  For years, the scientific community has operated under the assumption that good data speaks for itself. If the methodology is sound and the findings are significant, the "wrapper"—the layout, the typography, the format—shouldn't matter. But digital consumption habits have dismantled this tradition. Groundbreaking science is frequently buried in "print-replica" PDFs that are hostile to modern screens and invisible to search engines.
+  *   **Accessibility is a legal and ethical minefield:** Only 2.4% of
+  scientific PDFs meet accessibility standards, creating significant liability.
 
-  Design is no longer just aesthetic decoration; it is a functional heuristic for credibility. Research shows that users form a judgment about a website’s credibility in as little as **3.42 seconds** [2]. If your research lives in a digital environment that looks outdated, the research itself is subconsciously flagged as outdated.
+  *   **Design drives citations:** Accessible, readable content increases reader
+  confidence by 14% and improves retention.
 
-  Here are five data-backed signs that your current [research publication design](/5-signs-research-publications-need-redesign) is limiting your impact.
+  *   **Engagement requires adaptation:** Visual abstracts and interactive
+  formats significantly outperform text-heavy summaries on social platforms.
+
+
+  "Publish or perish" has evolved. The new reality is "publish and be visible,
+  or perish."
+
+
+  For years, the scientific community has operated under the assumption that
+  good data speaks for itself. If the methodology is sound and the findings are
+  significant, the "wrapper"—the layout, the typography, the format—shouldn't
+  matter. But digital consumption habits have dismantled this tradition.
+  Groundbreaking science is frequently buried in "print-replica" PDFs that are
+  hostile to modern screens and invisible to search engines.
+
+
+  Design is no longer just aesthetic decoration; it is a functional heuristic
+  for credibility. Research shows that users form a judgment about a website’s
+  credibility in as little as **3.42 seconds** [2]. If your research lives in a
+  digital environment that looks outdated, the research itself is subconsciously
+  flagged as outdated.
+
+
+  Here are five data-backed signs that your current [research publication
+  design](/5-signs-research-publications-need-redesign) is limiting your impact.
 stage: researcher
 related_posts:
   - slug: 5-signs-research-publications-need-redesign
     title: 5 Signs Your Research Publications Need a Redesign
   - slug: data-visualization-research-impact
-    title: "Data Visualization Research: Why Bad Charts Kill Impact"
+    title: 'Data Visualization Research: Why Bad Charts Kill Impact'
   - slug: static-pdfs-undermine-research-impact
     title: Why Static PDFs Are Undermining Your Research Impact
   - slug: static-pdfs-undermining-research-impact
@@ -41,6 +67,8 @@ related_posts:
   - slug: think-tank-website-undermining-impact
     title: Is Your Think Tank's Website Undermining Your Research Impact?
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

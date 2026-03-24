@@ -21,11 +21,15 @@ export default defineNuxtConfig({
     defaultLocale: 'en'
   },
   runtimeConfig: {
+    // Note: Service credentials (RESEND_API_KEY, LINKEDIN_ACCESS_TOKEN, etc.)
+    // are read directly via process.env in server/utils/serviceClient.ts because
+    // that module is shared with the CLI script (scripts/distribute.ts).
+    // Do not duplicate them here — process.env is the single source of truth.
     public: {
       siteUrl: 'https://ccmdesign.com',
       siteName: 'CCM Design',
       siteDescription: 'Insights on Design, Data, and Social Impact',
-      siteAuthor: 'CCM Design Team'
+      siteAuthor: 'CCM Design Team',
     }
   },
   ogImage: {
@@ -65,6 +69,9 @@ export default defineNuxtConfig({
   plugins: [
 
   ],
+  routeRules: {
+    '/admin/**': { ssr: false, prerender: false },
+  },
   ssr: true,
   nitro: {
     preset: 'static',
@@ -75,7 +82,9 @@ export default defineNuxtConfig({
         '/blog/**',
         '/blog',
         '/layouts/**',
-        '/layouts'
+        '/layouts',
+        '/admin',
+        '/admin/**'
       ],
       failOnError: false
     }

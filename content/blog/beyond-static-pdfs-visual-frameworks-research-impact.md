@@ -1,9 +1,13 @@
 ---
-title: "Beyond Static PDFs: Visual Frameworks for Communicating Research Impact That Decision-Makers Actually Use"
+title: >-
+  Beyond Static PDFs: Visual Frameworks for Communicating Research Impact That
+  Decision-Makers Actually Use
 slug: beyond-static-pdfs-visual-frameworks-research-impact
 brow: Research Communication
-tagline: Transform complex impact data into compelling visual narratives that prove policy influence
-date: "2026-02-08"
+tagline: >-
+  Transform complex impact data into compelling visual narratives that prove
+  policy influence
+date: '2026-02-08'
 author: CCM Design Team
 categories:
   - Research Communication & Impact
@@ -24,8 +28,13 @@ seo_tags:
   - stakeholder engagement visuals
   - research communication strategy
   - impact visualization tools
-excerpt: Only 30% of research organizations can demonstrate actual behavioral change among target audiences despite measuring downloads and citations. Professional visual frameworks deliver 43% higher persuasion rates.
+excerpt: >-
+  Only 30% of research organizations can demonstrate actual behavioral change
+  among target audiences despite measuring downloads and citations. Professional
+  visual frameworks deliver 43% higher persuasion rates.
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

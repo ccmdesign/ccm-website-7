@@ -1,8 +1,11 @@
 ---
 title: Meeting Your Audience Where 94% of Internet Happens
 brow: Mobile-First Research Reports
-tagline: Transform research impact through progressive disclosure methodology that reaches foundation officers, policy makers, and media professionals where they actually consume content
-date: "2025-01-27"
+tagline: >-
+  Transform research impact through progressive disclosure methodology that
+  reaches foundation officers, policy makers, and media professionals where they
+  actually consume content
+date: '2025-01-27'
 author: CCM Design Team
 categories:
   - Research Communication & Impact
@@ -23,9 +26,17 @@ seo_tags:
   - stakeholder-engagement
   - research-impact-measurement
   - progressive-disclosure-methodology
-excerpt: 94% of research stakeholders consume content on mobile devices, yet most research remains trapped in desktop-optimized PDFs. Organizations implementing mobile-first research architecture achieve 340% higher engagement rates.
-tldr: 94% of research stakeholders consume content on mobile devices, yet most research remains trapped in desktop-optimized PDFs. Organizations implementing mobile-first research architecture achieve 340% higher engagement rates.
+excerpt: >-
+  94% of research stakeholders consume content on mobile devices, yet most
+  research remains trapped in desktop-optimized PDFs. Organizations implementing
+  mobile-first research architecture achieve 340% higher engagement rates.
+tldr: >-
+  94% of research stakeholders consume content on mobile devices, yet most
+  research remains trapped in desktop-optimized PDFs. Organizations implementing
+  mobile-first research architecture achieve 340% higher engagement rates.
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

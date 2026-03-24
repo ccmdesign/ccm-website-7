@@ -2,8 +2,10 @@
 title: Why Static PDFs Are Undermining Your Research Impact
 slug: why-static-pdfs-undermine-research-impact
 brow: publications
-tagline: Static PDFs limit accessibility, hinder AI discovery, and frustrate mobile users
-date: "2026-03-22"
+tagline: >-
+  Static PDFs limit accessibility, hinder AI discovery, and frustrate mobile
+  users
+date: '2026-03-22'
 author: CCM Design Team
 categories:
   - Publication Design & Production
@@ -13,20 +15,53 @@ tags:
   - PDF accessibility
   - HtmlRAG
   - scholarly communication
-excerpt: Static PDFs limit accessibility, hinder AI discovery, and frustrate mobile users. Learn why shifting to HTML-first publishing is essential for impact.
-tldr: |-
-  -   **Systemic Exclusion:** Over 75% of scholarly PDFs fail basic accessibility standards, effectively barring blind and low-vision researchers from accessing new knowledge.
-  -   **AI Invisibility:** Static PDFs lack the semantic structure required by modern AI tools, leading to poor parsing and lower discoverability in Large Language Models (LLMs).
-  -   **Mobile Friction:** Fixed-layout documents force users to "pinch-and-zoom" on mobile devices, causing eye strain and reducing engagement.
-  -   **The Solution:** Moving to a "born accessible" HTML-first workflow ensures research is machine-readable and inclusive, while preserving PDFs solely for archival printing.
+excerpt: >-
+  Static PDFs limit accessibility, hinder AI discovery, and frustrate mobile
+  users. Learn why shifting to HTML-first publishing is essential for impact.
+tldr: >-
+  -   **Systemic Exclusion:** Over 75% of scholarly PDFs fail basic
+  accessibility standards, effectively barring blind and low-vision researchers
+  from accessing new knowledge.
 
-  For over three decades, the Portable Document Format (PDF) has served as the undisputed currency of academic knowledge. Created to ensure that a document looked exactly the same on a Windows PC, a Mac, or a laser printer, the PDF solved the "portability" problem of the 1990s perfectly. It allowed the scientific community to transition from physical journals to digital distribution without sacrificing the visual fidelity of the printed page.
+  -   **AI Invisibility:** Static PDFs lack the semantic structure required by
+  modern AI tools, leading to poor parsing and lower discoverability in Large
+  Language Models (LLMs).
 
-  However, the digital landscape has shifted fundamentally. We have moved from a desktop-centric world to one dominated by mobile consumption, algorithmic discovery, and assistive technologies. In this modern context, the very feature that made the PDF successful—its fixed, immutable layout—has transformed from an asset into a liability.
+  -   **Mobile Friction:** Fixed-layout documents force users to
+  "pinch-and-zoom" on mobile devices, causing eye strain and reducing
+  engagement.
 
-  For the modern researcher or publisher, relying solely on static PDFs acts as a bottleneck for **research impact**. While the format remains useful for the specific "save-as" use case of archiving or printing, using it as the primary vehicle for knowledge dissemination actively limits who can read, understand, and cite your work. The evidence suggests that a strategic pivot to HTML-first publishing is no longer just a technical preference; it is a necessity for future-proofing scientific contribution.
+  -   **The Solution:** Moving to a "born accessible" HTML-first workflow
+  ensures research is machine-readable and inclusive, while preserving PDFs
+  solely for archival printing.
+
+
+  For over three decades, the Portable Document Format (PDF) has served as the
+  undisputed currency of academic knowledge. Created to ensure that a document
+  looked exactly the same on a Windows PC, a Mac, or a laser printer, the PDF
+  solved the "portability" problem of the 1990s perfectly. It allowed the
+  scientific community to transition from physical journals to digital
+  distribution without sacrificing the visual fidelity of the printed page.
+
+
+  However, the digital landscape has shifted fundamentally. We have moved from a
+  desktop-centric world to one dominated by mobile consumption, algorithmic
+  discovery, and assistive technologies. In this modern context, the very
+  feature that made the PDF successful—its fixed, immutable layout—has
+  transformed from an asset into a liability.
+
+
+  For the modern researcher or publisher, relying solely on static PDFs acts as
+  a bottleneck for **research impact**. While the format remains useful for the
+  specific "save-as" use case of archiving or printing, using it as the primary
+  vehicle for knowledge dissemination actively limits who can read, understand,
+  and cite your work. The evidence suggests that a strategic pivot to HTML-first
+  publishing is no longer just a technical preference; it is a necessity for
+  future-proofing scientific contribution.
 stage: researcher
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 

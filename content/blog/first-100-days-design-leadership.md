@@ -1,9 +1,11 @@
 ---
-title: "The First 100 Days: A Design Agenda for New Leaders"
+title: 'The First 100 Days: A Design Agenda for New Leaders'
 slug: first-100-days-design-leadership
 brow: publications
-tagline: Use the first 100 days to audit design debt, secure quick wins, and set a strategic agenda
-date: "2025-03-25"
+tagline: >-
+  Use the first 100 days to audit design debt, secure quick wins, and set a
+  strategic agenda
+date: '2025-03-25'
 author: CCM Design Team
 categories:
   - Content Operations & Strategy
@@ -12,30 +14,58 @@ tags:
   - first 100 days framework
   - design debt audit
   - research leadership transition
-excerpt: Use the first 100 days to audit design debt, secure quick wins, and set a strategic agenda. A framework for research and design leaders.
-tldr: |-
-  - The first 100 days determine the long-term trajectory of your leadership tenure, setting the baseline for team performance and strategic influence.
-  - New leaders rarely start with a blank slate; they inherit "living systems" comprised of brand equity, design debt, and entrenched workflows.
-  - A strategic audit is the primary tool for this period, turning subjective observations about "messy design" into objective data regarding operational drag.
-  - "Quick wins" are essential for building political capital, while establishing design standards early prevents the accumulation of future debt.
-  - Research leaders must use this window to shift their function from a downstream "service bureau" to an upstream strategic partner.
+excerpt: >-
+  Use the first 100 days to audit design debt, secure quick wins, and set a
+  strategic agenda. A framework for research and design leaders.
+tldr: >-
+  - The first 100 days determine the long-term trajectory of your leadership
+  tenure, setting the baseline for team performance and strategic influence.
 
-  The clock starts the moment you accept the offer. For new research and design leaders, the "First 100 Days" is not merely a calendar milestone or a probation period—it is the strategic window that defines the trajectory of your entire tenure. Decisions made and impressions formed during this brief interval harden into the reality of your leadership [1].
+  - New leaders rarely start with a blank slate; they inherit "living systems"
+  comprised of brand equity, design debt, and entrenched workflows.
 
-  The pressure to deliver immediate results often conflicts with the need to deeply understand the organization. Many leaders fall into the trap of executing tactics—shipping a feature, hiring a role, changing a tool—before they have diagnosed the system. However, the most effective leaders use this period to transition from an observer to an architect, attuned to the organization's "heartbeat" while systematically identifying the levers that will drive long-term value [12].
+  - A strategic audit is the primary tool for this period, turning subjective
+  observations about "messy design" into objective data regarding operational
+  drag.
+
+  - "Quick wins" are essential for building political capital, while
+  establishing design standards early prevents the accumulation of future debt.
+
+  - Research leaders must use this window to shift their function from a
+  downstream "service bureau" to an upstream strategic partner.
+
+
+  The clock starts the moment you accept the offer. For new research and design
+  leaders, the "First 100 Days" is not merely a calendar milestone or a
+  probation period—it is the strategic window that defines the trajectory of
+  your entire tenure. Decisions made and impressions formed during this brief
+  interval harden into the reality of your leadership [1].
+
+
+  The pressure to deliver immediate results often conflicts with the need to
+  deeply understand the organization. Many leaders fall into the trap of
+  executing tactics—shipping a feature, hiring a role, changing a tool—before
+  they have diagnosed the system. However, the most effective leaders use this
+  period to transition from an observer to an architect, attuned to the
+  organization's "heartbeat" while systematically identifying the levers that
+  will drive long-term value [12].
 stage: researcher
 related_posts:
   - slug: poor-data-visualization-obscures-research-impact
-    title: "The Invisible Science: How Poor Data Visualization Obscures Research Impact"
+    title: >-
+      The Invisible Science: How Poor Data Visualization Obscures Research
+      Impact
   - slug: 5-signs-research-publications-need-redesign
     title: 5 Signs Your Research Publications Need a Redesign
   - slug: rethinking-research-communication
-    title: "Beyond the PDF: Modern Research Communication Strategies"
+    title: 'Beyond the PDF: Modern Research Communication Strategies'
   - slug: hidden-cost-good-enough-grant-design
     title: The Hidden Cost of "Good Enough" Design in Grant Proposals
   - slug: research-website-design-features
-    title: "Research Website Design: 5 Features That Matter More Than Aesthetics"
+    title: 'Research Website Design: 5 Features That Matter More Than Aesthetics'
 published: true
+newsletterSent: true
+linkedinSent: true
 ---
 
 
