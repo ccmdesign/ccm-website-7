@@ -5,10 +5,20 @@ const ALLOWED_ORIGIN = 'https://ccmdesign.com'
 // Basic email validation regex
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
+function isLocalOrigin(origin: string): boolean {
+  try {
+    const url = new URL(origin)
+    return url.hostname === 'localhost' || url.hostname === '127.0.0.1'
+  } catch {
+    return false
+  }
+}
+
 function corsHeaders(origin?: string) {
-  // In development, allow any origin; in production, restrict to the site domain
+  // In development, allow localhost/127.0.0.1 origins (exact hostname match).
+  // In production, restrict to the site domain.
   const allowedOrigin =
-    origin && (origin.includes('localhost') || origin.includes('127.0.0.1'))
+    origin && isLocalOrigin(origin)
       ? origin
       : ALLOWED_ORIGIN
 
@@ -87,8 +97,14 @@ export const handler: Handler = async (event: HandlerEvent) => {
     if (!res.ok) {
       const errorText = await res.text()
       console.error(`Resend API error (${res.status}):`, errorText)
+      // Map upstream Resend status to appropriate client-facing codes.
+      // Do not forward internal service status codes directly.
+      const clientStatus = res.status === 409 ? 409  // already subscribed
+        : res.status === 422 ? 400                    // validation error
+        : res.status === 429 ? 429                    // rate limited
+        : 502                                         // upstream failure
       return {
-        statusCode: res.status,
+        statusCode: clientStatus,
         headers: corsHeaders(origin),
         body: JSON.stringify({ error: safeErrorMessage(res.status) }),
       }

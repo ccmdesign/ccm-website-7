@@ -1,5 +1,5 @@
 ---
-status: pending
+status: resolved
 priority: p2
 issue_id: "004"
 tags: [code-review, quality]
@@ -78,3 +78,11 @@ In `pages/admin/index.vue`, the `loadPosts()` function calls `useAsyncData()` in
 **Actions:**
 - Identified anti-pattern during PR #1 review
 - Confirmed composable is called inside onMounted lifecycle hook
+
+### 2026-03-24 - Resolved
+
+**By:** Claude Code
+
+**Actions:**
+- Replaced useAsyncData with direct queryCollection call in loadPosts()
+- Since the admin page is dev-only and client-only, a direct async query in onMounted is the appropriate pattern

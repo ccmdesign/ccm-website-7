@@ -1,5 +1,5 @@
 ---
-status: pending
+status: resolved
 priority: p3
 issue_id: "009"
 tags: [code-review, quality]
@@ -62,3 +62,13 @@ In contrast, `ctaSignup.vue` correctly displays the error message.
 **Actions:**
 - Compared both signup components during PR #1 review
 - Confirmed error ref is available but unused in ccmCtaSection
+
+### 2026-03-24 - Resolved
+
+**By:** Claude Code
+
+**Actions:**
+- Destructured error and loading from useNewsletterSubscribe composable
+- Added error message display element in the template
+- Added loading guard to handleSubmit to prevent duplicate submissions
+- Added scoped CSS for the error message

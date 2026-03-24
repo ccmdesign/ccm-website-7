@@ -35,6 +35,9 @@ export default defineContentConfig({
           title: z.string()
         })).optional(),
         rawbody: z.string().optional(),
+        // newsletterSent/linkedinSent: true means "already handled" — either
+        // actually sent via the service, or marked true by the initial backfill
+        // to prevent mass-sending old content. See PR #1 for context.
         newsletterSent: z.boolean().default(false),
         linkedinSent: z.boolean().default(false)
       })

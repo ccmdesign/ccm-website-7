@@ -1,5 +1,5 @@
 ---
-status: pending
+status: resolved
 priority: p2
 issue_id: "006"
 tags: [code-review, quality]
@@ -79,3 +79,12 @@ dependencies: []
 **Actions:**
 - Identified gray-matter stringify behavior during PR #1 review
 - Noted backfill has already normalized existing posts
+
+### 2026-03-24 - Resolved
+
+**By:** Claude Code
+
+**Actions:**
+- Replaced matter.stringify with regex-based frontmatter patching in updateFrontmatter()
+- New approach finds/replaces only the target key line or appends if missing
+- Original YAML key ordering, quoting, and formatting are preserved

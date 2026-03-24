@@ -1,5 +1,5 @@
 ---
-status: pending
+status: resolved
 priority: p3
 issue_id: "008"
 tags: [code-review, security]
@@ -59,3 +59,11 @@ In `netlify/functions/subscribe.ts`, when the Resend API returns an error, the f
 
 **Actions:**
 - Identified status code forwarding during PR #1 review
+
+### 2026-03-24 - Resolved
+
+**By:** Claude Code
+
+**Actions:**
+- Added status code mapping: 409->409, 422->400, 429->429, all others->502
+- Resend internal status codes no longer leak to the client

@@ -1,5 +1,5 @@
 ---
-status: pending
+status: resolved
 priority: p2
 issue_id: "003"
 tags: [code-review, architecture]
@@ -82,3 +82,12 @@ The current approach works but bypasses Nuxt's config layer, making it harder to
 **Actions:**
 - Identified dual config pathways during PR #1 review
 - Confirmed runtimeConfig values are declared but never consumed
+
+### 2026-03-24 - Resolved
+
+**By:** Claude Code
+
+**Actions:**
+- Removed duplicate private runtimeConfig keys (linkedinAccessToken, resendApiKey, resendAudienceId, service URLs) from nuxt.config.ts
+- Added comment documenting that process.env is the single source of truth, shared with CLI script
+- process.env in serviceClient.ts is now the only config pathway

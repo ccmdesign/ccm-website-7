@@ -1,5 +1,5 @@
 ---
-status: pending
+status: resolved
 priority: p2
 issue_id: "005"
 tags: [code-review, security]
@@ -78,3 +78,12 @@ The Netlify subscribe function at `netlify/functions/subscribe.ts` allows any or
 **Actions:**
 - Identified substring-based origin check during PR #1 review
 - Confirmed bypass scenario with subdomain spoofing
+
+### 2026-03-24 - Resolved
+
+**By:** Claude Code
+
+**Actions:**
+- Replaced substring-based origin check with URL parsing (new URL(origin).hostname)
+- Only exact matches of 'localhost' or '127.0.0.1' are now allowed as dev origins
+- Origins like localhost.evil.com are correctly rejected

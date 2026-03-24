@@ -1,5 +1,5 @@
 ---
-status: pending
+status: resolved
 priority: p3
 issue_id: "007"
 tags: [code-review, quality]
@@ -78,3 +78,11 @@ The Phase 1 backfill sets `newsletterSent: true` and `linkedinSent: true` on all
 **Actions:**
 - Noted semantic mismatch during PR #1 review
 - Confirmed all 99 posts have both flags set to true
+
+### 2026-03-24 - Resolved
+
+**By:** Claude Code
+
+**Actions:**
+- Added inline documentation comment in content.config.ts schema explaining that true means "already handled" (sent or skipped during backfill)
+- Accepted current boolean approach per Option 1 — semantics are documented for future maintainers

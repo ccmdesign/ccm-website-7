@@ -124,11 +124,12 @@ function showToast(message, type = 'success', duration = 4000) {
 
 async function loadPosts() {
   try {
-    const { data } = await useAsyncData('admin-posts', () =>
-      queryCollection('blog').order('date', 'DESC').all()
-    )
-    if (data.value) {
-      posts.value = data.value
+    // Use queryCollection directly instead of useAsyncData.
+    // useAsyncData must be called synchronously during setup, not inside onMounted.
+    // Since this is a dev-only, client-only page, a direct query is appropriate.
+    const data = await queryCollection('blog').order('date', 'DESC').all()
+    if (data) {
+      posts.value = data
     }
   } catch (err) {
     console.error('Failed to load posts:', err)

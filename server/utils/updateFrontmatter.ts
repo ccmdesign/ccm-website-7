@@ -47,15 +47,30 @@ export async function updateFrontmatter(
     }
 
     const raw = fs.readFileSync(filePath, 'utf-8')
-    const parsed = matter(raw)
 
-    // Apply updates
-    for (const [key, value] of Object.entries(updates)) {
-      parsed.data[key] = value
+    // Use regex-based patching to avoid gray-matter stringify reordering YAML keys.
+    // This preserves original formatting and only touches the updated fields.
+    const fmMatch = raw.match(/^---\r?\n([\s\S]*?)\r?\n---/)
+    if (!fmMatch) {
+      throw new Error(`No frontmatter found in: ${filePath}`)
     }
 
-    // Write back preserving body content
-    const output = matter.stringify(parsed.content, parsed.data)
+    let fmBlock = fmMatch[1]
+    const lineEnding = raw.includes('\r\n') ? '\r\n' : '\n'
+
+    for (const [key, value] of Object.entries(updates)) {
+      const serialized = typeof value === 'string' ? `"${value}"` : String(value)
+      const keyPattern = new RegExp(`^(${key}:\\s*).*$`, 'm')
+      if (keyPattern.test(fmBlock)) {
+        // Replace existing key value
+        fmBlock = fmBlock.replace(keyPattern, `$1${serialized}`)
+      } else {
+        // Append new key at end of frontmatter block
+        fmBlock = fmBlock + lineEnding + `${key}: ${serialized}`
+      }
+    }
+
+    const output = raw.replace(/^---\r?\n[\s\S]*?\r?\n---/, `---${lineEnding}${fmBlock}${lineEnding}---`)
     fs.writeFileSync(filePath, output, 'utf-8')
   })
 }

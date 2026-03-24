@@ -33,6 +33,7 @@
           </span>
         </button>
       </div>
+      <p v-if="error" class="cta-error-message">{{ error }}</p>
     </form>
   </section>
 </template>
@@ -41,7 +42,7 @@
 import { ref } from 'vue'
 import { useNewsletterSubscribe } from '~/composables/useNewsletterSubscribe'
 
-const { email, subscribed, subscribe } = useNewsletterSubscribe()
+const { email, subscribed, error, loading, subscribe } = useNewsletterSubscribe()
 const scrambling = ref(false)
 const displayChars = ref([])
 
@@ -104,7 +105,7 @@ function scrambleText(target, duration = 1000) {
 }
 
 async function handleSubmit() {
-  if (!email.value || subscribed.value) return
+  if (!email.value || subscribed.value || loading.value) return
   await subscribe()
   if (subscribed.value) {
     scrambleText('Subscribed')
@@ -218,6 +219,13 @@ async function handleSubmit() {
   .check {
     opacity: 0;
     transform: scale(0.8);
+  }
+
+  .cta-error-message {
+    color: #dc2626;
+    font-size: 0.8125rem;
+    margin-top: 0.5rem;
+    text-align: right;
   }
 
   .input-wrapper.subscribed {
