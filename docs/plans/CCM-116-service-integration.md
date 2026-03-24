@@ -1,5 +1,7 @@
 # CCM-116: Service Integration — Implementation Plan
 
+deepened: 2026-03-24
+
 ## Overview
 
 Connect ccm-website-7 (Nuxt 3 SSG on Netlify) to the shared LinkedIn Post and Newsletter Send services. Three workstreams:
@@ -38,6 +40,12 @@ Write a Node script (`scripts/backfill-frontmatter.ts`) that:
 Run once, verify with `git diff`, commit.
 
 **Why `true`:** Existing posts were already published before this system existed — marking them `false` would surface them as "unsent" in the admin UI. Only new posts going forward should default to `false`.
+
+**Backfill edge cases to handle:**
+- Posts with `published: false` (drafts) should be skipped — they were never distributed
+- Posts inside `_drafts/` subdirectory must be excluded (the glob already handles this, but verify)
+- The backfill script must be idempotent — running it twice should not corrupt files that already have the flags
+- Verify that the YAML serializer preserves existing frontmatter key ordering and does not re-quote strings unnecessarily. Use a library like `gray-matter` that round-trips frontmatter cleanly rather than a naive regex approach
 
 ### 1c. Add `.env.example`
 
@@ -79,8 +87,9 @@ Note: Since the site is SSG, `runtimeConfig` private keys are only available in 
 
 This serverless function:
 1. Accepts POST `{ email: string }`
-2. Calls the Resend API to add the email to the audience
-3. Returns success/error
+2. Validates the email format server-side (regex or lightweight validator)
+3. Calls the Resend API to add the email to the audience
+4. Returns success/error with appropriate CORS headers
 
 Why a Netlify Function instead of calling the newsletter service directly: the deployed site is static and cannot reach `localhost:3100`. The Netlify Function runs server-side with access to env vars (`RESEND_API_KEY`, `RESEND_AUDIENCE_ID`).
 
@@ -112,6 +121,30 @@ export const handler: Handler = async (event) => {
 }
 ```
 
+#### Security and hardening considerations for the subscribe endpoint
+
+The Netlify Function is a public, unauthenticated endpoint. Without mitigation, it is vulnerable to abuse:
+
+1. **Rate limiting (required):** Add Netlify's built-in rate limiting via a `config` export. A reasonable starting point is 10 requests per 60 seconds per IP. This prevents bulk signup abuse and protects the Resend API quota (Resend's default is 2 requests/second/team).
+
+   ```ts
+   export const config = {
+     rateLimit: {
+       windowLimit: 10,
+       windowSize: 60,
+       aggregateBy: ["ip"],
+     },
+   }
+   ```
+
+2. **Email validation (required):** Validate email format server-side before calling Resend. A basic regex or the same validation the form uses client-side. This prevents junk payloads from consuming API quota.
+
+3. **CORS headers (recommended):** Return `Access-Control-Allow-Origin` restricted to `https://ccmdesign.com` rather than `*`. This prevents other sites from using the endpoint as a proxy.
+
+4. **Error message opacity (recommended):** Do not forward raw Resend error text to the client. Map known error codes to safe user-facing messages to avoid leaking API internals.
+
+5. **Resend API endpoint verification:** The plan uses `https://api.resend.com/audiences/{id}/contacts`. Per current Resend docs, the contacts create endpoint is `POST /contacts` with `audienceId` in the request body (not the URL path). Verify the correct endpoint shape during implementation — the Resend API may accept both forms, but the documented form is body-based.
+
 ### 2b. Update `ccmCtaSection.vue`
 
 **File:** `components/organisms/ccmCtaSection.vue`
@@ -138,6 +171,8 @@ async function handleSubmit() {
 ```
 
 The scramble animation and all existing UI/styles remain unchanged.
+
+**Note on removing Mailchimp:** The current `ccmCtaSection.vue` uses a JSONP/script-injection pattern to call Mailchimp. When replacing it, also remove the `window[callbackName]` callback and the dynamic `<script>` element creation — do not leave dead code paths.
 
 ### 2c. Update `ctaSignup.vue`
 
@@ -203,6 +238,39 @@ UI features:
 - Filter toggle: show only unsent posts
 - Status feedback: loading spinner, success/error toast per action
 
+#### Critical: Exclude `/admin` from static generation
+
+The `process.env.NODE_ENV` guard runs client-side and only redirects after the page loads. The real risk is that `nuxt generate` will **prerender the admin page into the static build**, making it a publicly accessible HTML file (even though it redirects, the markup and JS are shipped).
+
+**Required mitigation — add to `nuxt.config.ts`:**
+
+```ts
+nitro: {
+  prerender: {
+    ignore: [
+      '/blog/**',
+      '/blog',
+      '/layouts/**',
+      '/layouts',
+      '/admin',       // <-- add this
+      '/admin/**',    // <-- add this
+    ],
+  },
+},
+```
+
+Alternatively, use `routeRules` to disable SSR for the admin route entirely:
+
+```ts
+routeRules: {
+  '/admin/**': { ssr: false, prerender: false },
+},
+```
+
+This ensures the admin page is never included in the production build output. The `process.env.NODE_ENV` guard remains as a belt-and-suspenders fallback.
+
+**Add to testing checklist:** After `nuxt generate`, verify that `.output/public/admin/` does not exist.
+
 ### 3b. Create dev-only server routes
 
 These Nitro server routes are only available during `nuxt dev` (the static build excludes server routes).
@@ -233,9 +301,19 @@ export default defineEventHandler(async (event) => {
 })
 ```
 
+#### Trigger-and-update flow: edge cases
+
+The send-then-update-frontmatter flow has a critical failure window:
+
+1. **Service call succeeds but frontmatter write fails:** The post is actually sent to LinkedIn/newsletter, but the `.md` file still says `false`. The admin UI will show an unsent state, and a retry will send it again (duplicate send). **Mitigation:** Wrap the frontmatter write in a try/catch and return a clear "sent but flag update failed" status to the UI. The admin UI should show a distinct warning state for this scenario rather than a generic error.
+
+2. **Concurrent sends for the same slug:** If the user clicks "Send Newsletter" and "Send LinkedIn" at the same time, both server routes will read and write the same `.md` file concurrently. YAML frontmatter writes are not atomic — one write can clobber the other. **Mitigation:** Either serialize writes per-file (simplest: use a mutex/lock map keyed by slug in the server process) or have `updateFrontmatter` re-read the file immediately before writing to minimize the race window.
+
+3. **Slug-to-filepath resolution:** The server routes receive a `slug` but need to find and read the actual `.md` file on disk. The plan should specify how slug maps to filepath. The convention in the repo is that the filename matches the slug (e.g., `content/blog/{slug}.md`), but this should be validated — check whether any posts have a `slug` frontmatter field that differs from the filename.
+
 ### 3c. Shared utility: frontmatter updater
 
-**File:** `utils/updateFrontmatter.ts`
+**File:** `server/utils/updateFrontmatter.ts`
 
 ```ts
 // Reads a .md file, parses YAML frontmatter, updates specified fields, writes back
@@ -250,9 +328,11 @@ This is used by both admin server routes and the CLI script. It must:
 - Preserve the markdown body exactly
 - Not add trailing whitespace or change line endings
 
+**Important: file placement.** The plan originally places this in `utils/updateFrontmatter.ts`. In Nuxt, the `utils/` directory is auto-imported into both client and server bundles. Since this utility uses `fs` (Node.js filesystem API), it **cannot** be in `utils/` — it will cause a build error when Vite tries to bundle it for the client. Place it in `server/utils/` instead, where Nitro auto-imports it only for server routes. For the CLI script (`scripts/distribute.ts`), import it directly via a relative path (`../server/utils/updateFrontmatter`).
+
 ### 3d. Shared utility: service callers
 
-**File:** `utils/serviceClient.ts`
+**File:** `server/utils/serviceClient.ts`
 
 ```ts
 export async function sendNewsletter(post: { title: string; excerpt: string; url: string; body?: string }): Promise<{ ok: boolean; error?: string }>
@@ -261,6 +341,8 @@ export async function sendLinkedInPost(post: { title: string; excerpt: string; u
 ```
 
 Reads service URLs and tokens from env vars. Used by both server routes and CLI.
+
+**Same placement note as 3c:** This must be in `server/utils/`, not `utils/`, because it reads env vars and makes server-side HTTP calls. The CLI script imports it directly.
 
 ---
 
@@ -287,6 +369,16 @@ Behavior:
 - Reads `.env` via `dotenv` (already a dependency)
 - Exits with non-zero code on failure
 
+#### CLI batch send: rate limiting and partial failure
+
+When using `--all-unsent`, the script iterates over all posts with `newsletterSent: false` (or `linkedinSent: false`) and sends each one. Edge cases:
+
+1. **Resend rate limit (2 req/sec/team):** If there are many unsent posts, rapid sequential calls will hit the Resend API rate limit (429). The CLI should add a delay between calls (at least 500ms) or respect `retry-after` headers. For LinkedIn, check the LinkedIn service's rate limits as well.
+
+2. **Partial failure:** If the 5th of 20 posts fails, the script should not exit immediately. It should continue processing remaining posts, collect errors, and report a summary at the end. Already-updated frontmatter flags for successful posts should be preserved. The exit code should be non-zero if any post failed.
+
+3. **Dry-run mode:** Consider adding a `--dry-run` flag that prints what would be sent without actually calling services or updating frontmatter. This is useful for verifying the unsent post list before triggering real sends.
+
 ---
 
 ## Phase 5: Testing & Validation
@@ -302,12 +394,31 @@ Behavior:
 - [ ] CLI `--slug` sends and updates frontmatter
 - [ ] CLI `--all-unsent` processes only unsent posts
 - [ ] Admin route redirects to `/` in production build
+- [ ] **After `nuxt generate`, verify `.output/public/admin/` directory does not exist**
 - [ ] Backfill script correctly sets `true` on all existing posts
+- [ ] Backfill script is idempotent (running twice produces no diff)
+- [ ] Rate limiting on subscribe endpoint rejects excessive requests
+- [ ] CLI `--all-unsent` respects rate limits and handles partial failures
 
 ### Dev dependency additions
 
 - `@netlify/functions` (types for Netlify Functions)
 - `tsx` (already implied by project using TypeScript scripts; may need explicit install)
+- `gray-matter` (for safe YAML frontmatter round-tripping in the backfill script and `updateFrontmatter` utility)
+
+---
+
+## Risks & Mitigations
+
+| Risk | Severity | Mitigation |
+|------|----------|------------|
+| Subscribe endpoint abuse (bot signups, spam) | High | Netlify rate limiting (config export), server-side email validation, restricted CORS origin |
+| Admin page shipped in production build | High | Exclude `/admin/**` from prerender in `nuxt.config.ts`; verify absence in `.output/public/` after generate |
+| Duplicate sends on retry after partial failure | Medium | Return distinct "sent but flag update failed" status; admin UI shows warning state; CLI collects and reports errors |
+| `utils/` auto-import bundles Node.js code for client | Medium | Place `updateFrontmatter.ts` and `serviceClient.ts` in `server/utils/` instead of `utils/` |
+| Concurrent frontmatter writes clobber each other | Low | Serialize writes per slug or re-read before write |
+| Resend API rate limit hit during batch CLI sends | Medium | Add inter-request delay; respect `retry-after` header; report partial results |
+| Resend contacts API endpoint URL may differ from plan | Low | Verify endpoint shape during implementation; current Resend docs show body-based `audienceId` |
 
 ---
 
@@ -318,7 +429,7 @@ Behavior:
 | `content.config.ts` | 1a | Modify |
 | `scripts/backfill-frontmatter.ts` | 1b | New |
 | `.env.example` | 1c | New |
-| `nuxt.config.ts` | 1c | Modify |
+| `nuxt.config.ts` | 1c, 3a | Modify |
 | `netlify/functions/subscribe.ts` | 2a | New |
 | `components/organisms/ccmCtaSection.vue` | 2b | Modify |
 | `components/content/ctaSignup.vue` | 2c | Modify |
@@ -327,8 +438,8 @@ Behavior:
 | `pages/admin/index.vue` | 3a | New |
 | `server/routes/api/admin/send-newsletter.post.ts` | 3b | New |
 | `server/routes/api/admin/send-linkedin.post.ts` | 3b | New |
-| `utils/updateFrontmatter.ts` | 3c | New |
-| `utils/serviceClient.ts` | 3d | New |
+| `server/utils/updateFrontmatter.ts` | 3c | New |
+| `server/utils/serviceClient.ts` | 3d | New |
 | `scripts/distribute.ts` | 4 | New |
 
 ---
@@ -355,4 +466,10 @@ Behavior:
 
 5. **Netlify Functions vs. Netlify Edge Functions** — Standard Functions are sufficient here. Edge Functions would add complexity without benefit for a simple subscribe endpoint.
 
-6. **LinkedIn and Newsletter service API contracts** — The plan assumes REST POST endpoints. The implementer needs to confirm the exact request/response shapes for both services (`:8001` and `:3100`).
+6. **LinkedIn and Newsletter service API contracts** — The plan assumes REST POST endpoints. The implementer needs to confirm the exact request/response shapes for both services (`:8001` and `:3100`). **This is a blocking dependency for Phase 3 and Phase 4.** Before implementation begins, the service contracts should be documented or the services should expose an OpenAPI/Swagger spec. Without this, the `serviceClient.ts` utility cannot be written correctly.
+
+### Resolved During Deepening
+
+7. **Utility file placement** — Resolved: `updateFrontmatter.ts` and `serviceClient.ts` must go in `server/utils/`, not `utils/`, to avoid client-side bundling of Node.js APIs. The CLI script imports them directly via relative path.
+
+8. **Admin page in production build** — Resolved: The `process.env.NODE_ENV` guard alone is insufficient. The route must be excluded from prerendering via `nitro.prerender.ignore` or `routeRules` in `nuxt.config.ts`.
