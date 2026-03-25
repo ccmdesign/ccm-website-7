@@ -1,5 +1,5 @@
 ---
-status: pending
+status: resolved
 priority: p1
 issue_id: "CCM-117"
 tags: [code-review, security]
