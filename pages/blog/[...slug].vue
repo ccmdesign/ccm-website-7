@@ -4,9 +4,9 @@
       <ccmHero class="post-hero">
       <hgroup class="center">
         <div class="stack post-hero-content">
+          <h4>{{ post?.brow }}</h4>
           <h1>{{ post?.title }}</h1>
           <h3 class="h2" v-if="post?.tagline">{{ post?.tagline }}</h3>
-          <MDC :value="post?.tldr" />
         </div>
       </hgroup>  
       
@@ -15,7 +15,7 @@
 
     <section v-if="post?.tldr" class="tldr-section">
       <div class="center">
-        
+        <MDC class="tldr" :value="post?.tldr" />
       </div>
     </section>
 
@@ -43,11 +43,45 @@
   </NuxtLayout>
 </template>
 
+<style>
+  .tldr {
+    a {text-decoration: underline;}
+    ul { list-style: none; }
+  }
+  .post-content #footnotes ~ p { 
+    font-size: var(--size--1);
+    position: relative;
+
+    a {text-decoration: underline;}
+
+    span {
+      position: absolute;
+      left: -4ch;
+      width: 3ch;
+      text-align: right;
+      opacity: .5;
+      font-weight: bold;
+    }
+  }
+</style>
+
+
 <style scoped>
+
+.post-hero {
+  padding-block: var(--space-xl);
+  --_ccm-hero-max-height: none;
+
+  h4 {
+    text-transform: capitalize;
+  }
+}
 
 .post-hero .stack { --_stack-space: var(--space-xl); }
 .post-hero .stack > * { width: 100%; }
 .post-content .stack { --_stack-space: var(--space-3xl); }
+
+
 
 
 .meta {
@@ -59,6 +93,7 @@
 }
 
 
+
 section:last-of-type {
   margin-block-end: var(--space-3xl);
 }
@@ -68,6 +103,7 @@ section:last-of-type {
   .post-hero-content > h3 { font-size: var(--size-1) !important; }
 }
 </style>
+
 
 <script setup>
 import { formatDate } from '~/utils/formatDate'

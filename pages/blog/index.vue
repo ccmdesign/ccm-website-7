@@ -4,8 +4,16 @@
       <ccm-hero
         brow="Blog"
         title="Insights"
-        tagline="Insights on Design, Data, and Social Impact"
-      />
+        tagline="on Design, Data, and Social Impact"
+        :hide-bottom="false"
+      >
+        <template #extra>
+          <div class="hero-subscribe | margin-top:2xl">
+            <h5>Subscribe to our newsletter</h5>
+            <ccm-cta-section />
+          </div>
+        </template>
+      </ccm-hero>
     </template>
 
     <template #sidebar>
@@ -14,7 +22,6 @@
           <li><ccm-chip :active="selectedCategory === 'All Topics'" @click="setCategory('All Topics')">All Topics</ccm-chip></li>
           <li v-for="category in allCategories" :key="category"><ccm-chip :active="selectedCategory === category" @click="setCategory(category)">{{ category }}</ccm-chip></li>
         </ul>
-        <ccm-cta-section />
       </div>
     </template>
 
@@ -51,7 +58,27 @@ ul {
   --_center-measure: 60ch;;
 }
 
-.sidebar-content { 
+.hero-subscribe {
+  /* display: flex; */
+  align-items: center;
+  gap: var(--space-m);
+}
+
+.hero-subscribe h4 {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.hero-subscribe :deep(.ccm-cta-section) {
+  padding-top: 0;
+  text-align: left;
+}
+
+.hero-subscribe :deep(.form) {
+  justify-content: flex-start;
+}
+
+.sidebar-content {
   padding-inline-end: var(--space-3xl);
   position: sticky;
   top: var(--space-3xl);

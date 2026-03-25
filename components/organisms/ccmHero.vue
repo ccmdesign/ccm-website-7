@@ -1,10 +1,9 @@
 <template>
-  <header 
-    class="ccm-hero" 
-    :background-color="backgroundColor" 
-    :size="size" 
-    :hide-bottom="hideBottom" 
-    :variant="variant"
+  <header
+    class="ccm-hero"
+    :class="{ 'ccm-hero--hide-bottom': hideBottom, 'ccm-hero--minimal': variant === 'minimal' }"
+    :background-color="backgroundColor"
+    :size="size"
     :style="{
       '--_ccm-hero-background-color': `var(--${backgroundColor})`
     }"
@@ -16,6 +15,8 @@
           <!-- <span v-if="brow">{{ brow }}</span> -->
           <h2 class="h1">{{ title }}</h2>
           <h3 class="h2" v-if="tagline">{{ tagline }}</h3>
+
+          <slot name="extra" />
         </hgroup>  
       </slot>
       </div>
@@ -79,7 +80,7 @@ const props = defineProps({
   padding-block: var(--_ccm-hero-padding-block);
   align-items: center;
   flex: 1;
-  aspect-ratio: 16/7;
+  /* aspect-ratio: 16/7; */
 }
 
 .ccm-hero__main {
@@ -90,8 +91,8 @@ const props = defineProps({
   padding-bottom: var(--_ccm-hero-padding-block);
 }
 
-.ccm-hero[hide-bottom="true"] .ccm-hero__bottom { display: none; }
+.ccm-hero--hide-bottom .ccm-hero__bottom { display: none; }
 
-.ccm-hero[variant="minimal"] .ccm-hero__main { aspect-ratio: unset; }
+.ccm-hero--minimal .ccm-hero__main { aspect-ratio: unset; }
 
 </style>
