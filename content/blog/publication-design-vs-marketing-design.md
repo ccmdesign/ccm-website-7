@@ -1,7 +1,7 @@
 ---
-title: 'Publication Design vs. Marketing Design: The Hidden Differences'
+title: 'The Hidden Differences'
 slug: publication-design-vs-marketing-design
-brow: publications
+brow: 'Publication Design vs. Marketing Design'
 tagline: Don't let a marketing approach ruin your research report
 date: '2025-09-23'
 author: CCM Design Team

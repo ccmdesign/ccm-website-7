@@ -1,7 +1,7 @@
 ---
-title: 'Publication Design Pricing Guide: Models, Costs & ROI'
+title: 'Models, Costs & ROI'
 slug: publication-design-pricing-guide
-brow: Guide
+brow: 'Publication Design Pricing Guide'
 date: '2025-09-09'
 author: CCM Design Team
 categories:

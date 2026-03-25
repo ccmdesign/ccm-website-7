@@ -1,7 +1,7 @@
 ---
-title: 'The Satisfaction Tax: Manual Publication''s Hidden Cost'
+title: "Manual Publication's Hidden Cost"
 slug: manual-publication-satisfaction-tax
-brow: publications
+brow: 'The Satisfaction Tax'
 tagline: Manual publication workflows cost more than time
 date: '2025-06-24'
 author: CCM Design Team

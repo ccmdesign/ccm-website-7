@@ -1,7 +1,7 @@
 ---
-title: 'The End of the PDF: 5 Trends Redefining Research Communication'
+title: '5 Trends Redefining Research Communication'
 slug: interactive-research-reports-trends
-brow: publications
+brow: 'The End of the PDF'
 tagline: Static PDFs are failing to engage stakeholders
 date: '2025-06-10'
 author: CCM Design Team

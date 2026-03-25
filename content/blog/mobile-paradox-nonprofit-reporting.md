@@ -1,7 +1,7 @@
 ---
-title: 'The Mobile Paradox: Why Static Reports Fail Modern Donors'
+title: 'Why Static Reports Fail Modern Donors'
 slug: mobile-paradox-nonprofit-reporting
-brow: publications
+brow: 'The Mobile Paradox'
 tagline: 'Mobile traffic dominates nonprofit sites, yet revenue lags'
 date: '2025-07-08'
 author: CCM Design Team

@@ -43,7 +43,7 @@ export default defineContentConfig({
         linkedinPostUrl: z.string().nullable().default(null),
         linkedinPostedAt: z.string().nullable().default(null),
         // Marketing content (e.g. linkedin copy from Varro) — passthrough object
-        marketing: z.record(z.unknown()).optional()
+        marketing: z.record(z.string(), z.any()).optional()
       })
     }),
     casestudies: defineCollection({

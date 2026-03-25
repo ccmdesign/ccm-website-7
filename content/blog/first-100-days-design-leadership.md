@@ -1,7 +1,7 @@
 ---
-title: 'The First 100 Days: A Design Agenda for New Leaders'
+title: 'A Design Agenda for New Leaders'
 slug: first-100-days-design-leadership
-brow: publications
+brow: 'The First 100 Days'
 tagline: >-
   Use the first 100 days to audit design debt, secure quick wins, and set a
   strategic agenda

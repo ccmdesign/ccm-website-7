@@ -1,7 +1,7 @@
 ---
-title: 'De-Risking Publication Design: A 9-Step Strategic Methodology'
+title: 'A 9-Step Strategic Methodology'
 slug: strategic-publication-design-methodology
-brow: publications
+brow: 'De-Risking Publication Design'
 tagline: Traditional waterfall design creates high risk for complex publications
 date: '2026-01-25'
 author: CCM Design Team

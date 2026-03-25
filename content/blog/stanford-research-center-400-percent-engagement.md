@@ -1,41 +1,37 @@
 ---
-title: >-
-  How Stanford Research Center Achieved 400% Engagement Through Personalized
+title: How Stanford Research Center Achieved 400% Engagement Through Personalized
   Reports
 brow: Research & Academic Communication
-tagline: >-
-  Strategic technology implementation transforms research impact while
-  maintaining academic integrity, achieving 400% engagement improvements and ROI
-  within 18-24 months
-date: '2026-05-03'
+tagline: Strategic technology implementation transforms research impact while maintaining
+  academic integrity, achieving 400% engagement improvements and ROI within 18-24
+  months
+date: '2026-04-13'
 author: CCM Design Team
 categories:
-  - Research Communication & Impact
+- Research Communication & Impact
 tags:
-  - research-transformation
-  - personalized-reports
-  - engagement-metrics
-  - academic-communication
-  - research-impact
+- research-transformation
+- personalized-reports
+- engagement-metrics
+- academic-communication
+- research-impact
 seo_tags:
-  - stanford-research-engagement
-  - personalized-research-reports
-  - research-center-digital-transformation
-  - academic-communication-strategy
-  - university-research-platform
-  - research-impact-measurement
-  - academic-stakeholder-engagement
-  - research-publication-optimization
-  - university-technology-implementation
-  - research-communication-case-study
-excerpt: >-
-  Stanford's systematic approach to personalized research communication
-  demonstrates how strategic technology implementation achieves 400% engagement
-  improvements and ROI within 18-24 months while maintaining academic integrity.
-tldr: >-
-  Stanford's systematic approach to personalized research communication
-  demonstrates how strategic technology implementation achieves 400% engagement
-  improvements and ROI within 18-24 months while maintaining academic integrity.
+- stanford-research-engagement
+- personalized-research-reports
+- research-center-digital-transformation
+- academic-communication-strategy
+- university-research-platform
+- research-impact-measurement
+- academic-stakeholder-engagement
+- research-publication-optimization
+- university-technology-implementation
+- research-communication-case-study
+excerpt: Stanford's systematic approach to personalized research communication demonstrates
+  how strategic technology implementation achieves 400% engagement improvements and
+  ROI within 18-24 months while maintaining academic integrity.
+tldr: Stanford's systematic approach to personalized research communication demonstrates
+  how strategic technology implementation achieves 400% engagement improvements and
+  ROI within 18-24 months while maintaining academic integrity.
 published: true
 newsletterSentAt: "legacy"
 newsletterPreviewUrl: null

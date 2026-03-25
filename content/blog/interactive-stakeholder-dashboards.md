@@ -1,39 +1,36 @@
 ---
 title: The Case for Interactive Stakeholder Dashboards
 brow: Why Your Research Dies in Email
-tagline: >-
-  Transform research impact through strategic stakeholder engagement systems
-  that achieve 78% meeting attendance and 15% survey response improvements over
-  email-centric approaches
-date: '2026-04-12'
+tagline: Transform research impact through strategic stakeholder engagement systems
+  that achieve 78% meeting attendance and 15% survey response improvements over email-centric
+  approaches
+date: '2026-04-02'
 author: CCM Design Team
 categories:
-  - Research Communication & Impact
+- Research Communication & Impact
 tags:
-  - stakeholder-engagement
-  - research-communication
-  - interactive-dashboards
-  - email-optimization
-  - research-impact
+- stakeholder-engagement
+- research-communication
+- interactive-dashboards
+- email-optimization
+- research-impact
 seo_tags:
-  - interactive-stakeholder-dashboards
-  - research-communication-strategy
-  - email-fatigue-solutions
-  - stakeholder-engagement-platforms
-  - dashboard-ROI
-  - grant-management-software
-  - university-dashboard-systems
-  - foundation-communication
-  - research-impact-measurement
-  - stakeholder-portal-design
-excerpt: >-
-  Organizations implementing interactive stakeholder dashboards achieve 78%
-  meeting attendance rates and 15% survey response improvements, while
-  email-centric approaches trap critical insights in digital graveyards.
-tldr: >-
-  Organizations implementing interactive stakeholder dashboards achieve 78%
-  meeting attendance rates and 15% survey response improvements, while
-  email-centric approaches trap critical insights in digital graveyards.
+- interactive-stakeholder-dashboards
+- research-communication-strategy
+- email-fatigue-solutions
+- stakeholder-engagement-platforms
+- dashboard-ROI
+- grant-management-software
+- university-dashboard-systems
+- foundation-communication
+- research-impact-measurement
+- stakeholder-portal-design
+excerpt: Organizations implementing interactive stakeholder dashboards achieve 78%
+  meeting attendance rates and 15% survey response improvements, while email-centric
+  approaches trap critical insights in digital graveyards.
+tldr: Organizations implementing interactive stakeholder dashboards achieve 78% meeting
+  attendance rates and 15% survey response improvements, while email-centric approaches
+  trap critical insights in digital graveyards.
 published: true
 newsletterSentAt: "legacy"
 newsletterPreviewUrl: null

@@ -21,12 +21,14 @@ export function useNewsletterSubscribe() {
 
       if (res.ok) {
         subscribed.value = true
+      } else if (res.status === 404) {
+        error.value = 'Subscribe service is currently unavailable. Please try again later.'
       } else {
         const data = await res.json().catch(() => ({}))
         error.value = data.error || 'Subscription failed. Please try again.'
       }
     } catch {
-      error.value = 'Network error. Please try again.'
+      error.value = 'Unable to connect. Please check your connection and try again.'
     } finally {
       loading.value = false
     }

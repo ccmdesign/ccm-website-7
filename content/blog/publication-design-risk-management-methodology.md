@@ -2,34 +2,29 @@
 title: 'Publication Design Process: A Risk-Mitigated Methodology'
 slug: publication-design-risk-management-methodology
 brow: publications
-tagline: >-
-  Learn how a structured publication design process mitigates scope creep and
+tagline: Learn how a structured publication design process mitigates scope creep and
   ensures accuracy
-date: '2026-05-17'
+date: '2026-04-20'
 author: CCM Design Team
 categories:
-  - Content Operations & Strategy
+- Content Operations & Strategy
 tags:
-  - publication design process
-  - risk mitigation in design
-  - scope creep management
-  - iterative design methodology
-  - complex research communication
-excerpt: >-
-  Learn how a structured publication design process mitigates scope creep and
-  ensures accuracy. We analyze a risk-averse, iterative methodology for complex
-  research.
-tldr: >-
-  - **Scope Management:** 92% of project failures stem from inadequate scope
+- publication design process
+- risk mitigation in design
+- scope creep management
+- iterative design methodology
+- complex research communication
+excerpt: Learn how a structured publication design process mitigates scope creep and
+  ensures accuracy. We analyze a risk-averse, iterative methodology for complex research.
+tldr: '- **Scope Management:** 92% of project failures stem from inadequate scope
   management; defining what is *not* included is as vital as defining what is.
 
-  - **Iterative Safety:** Traditional "waterfall" handoffs create expensive
-  late-stage errors. Prototyping visual concepts first reduces the cost of
-  changes by orders of magnitude.
+  - **Iterative Safety:** Traditional "waterfall" handoffs create expensive late-stage
+  errors. Prototyping visual concepts first reduces the cost of changes by orders
+  of magnitude.
 
-  - **Participatory Design:** Accuracy in research communication requires a
-  "partnership model" where researchers and designers co-create, rather than a
-  transactional hand-off.
+  - **Participatory Design:** Accuracy in research communication requires a "partnership
+  model" where researchers and designers co-create, rather than a transactional hand-off.
 
   For organizations operating at the intersection of policy, academia, and
   public interest, the stakes of publication design are often underestimated. A
