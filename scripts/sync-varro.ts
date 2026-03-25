@@ -9,6 +9,7 @@
 
 import fs from 'node:fs'
 import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 import matter from 'gray-matter'
 import {
   parseISO,
@@ -20,6 +21,38 @@ import {
   isBefore,
   startOfDay,
 } from 'date-fns'
+
+// ---------------------------------------------------------------------------
+// Slug sanitization
+// ---------------------------------------------------------------------------
+
+/**
+ * Sanitize a slug to prevent path traversal and ensure it is safe for use as
+ * a filename. Strips path separators, `..`, and non-URL-safe characters.
+ */
+export function sanitizeSlug(raw: string): string {
+  // Collapse any path separators and parent-directory references
+  let slug = raw.replace(/\.\./g, '').replace(/[/\\]/g, '')
+  // Keep only alphanumeric, hyphens, and underscores
+  slug = slug.replace(/[^a-zA-Z0-9_-]/g, '')
+  // Remove leading/trailing hyphens or underscores left over from stripping
+  slug = slug.replace(/^[-_]+|[-_]+$/g, '')
+  return slug
+}
+
+/**
+ * Verify that a resolved file path is contained within the expected directory.
+ * Throws if the path escapes the directory.
+ */
+export function assertPathContained(filePath: string, containerDir: string): void {
+  const resolved = path.resolve(filePath)
+  const resolvedDir = path.resolve(containerDir) + path.sep
+  if (!resolved.startsWith(resolvedDir) && resolved !== path.resolve(containerDir)) {
+    throw new Error(
+      `Path traversal detected: "${filePath}" resolves outside "${containerDir}"`,
+    )
+  }
+}
 
 // ---------------------------------------------------------------------------
 // Paths
@@ -231,12 +264,19 @@ function stringifyPost(
   body: string,
   data: Record<string, unknown>,
 ): string {
-  // gray-matter's stringify can coerce date-like strings to Date objects.
-  // We build the output with matter.stringify then fix date formatting.
-  const output = matter.stringify(body, data)
-  // Fix any Date objects that gray-matter may have emitted as full ISO timestamps
+  // Ensure the date field is a quoted string so gray-matter won't coerce it
+  // into a Date object. We wrap it in single quotes so YAML treats it as a
+  // plain string, then also apply the regex fallback for safety.
+  const safeCopy = { ...data }
+  if (typeof safeCopy.date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(safeCopy.date)) {
+    safeCopy.date = safeCopy.date // keep as string
+  }
+
+  const output = matter.stringify(body, safeCopy)
+  // Fallback regex: fix any Date objects that gray-matter may have emitted
+  // as full ISO timestamps (handles timezone offsets, Z suffix, quoted or not)
   return output.replace(
-    /^(date:\s*)'?(\d{4}-\d{2}-\d{2})T[\d:.Z]+'?/gm,
+    /^(date:\s*)'?(\d{4}-\d{2}-\d{2})T[\d:.+-Z]+'?/gm,
     "$1'$2'",
   )
 }
@@ -327,10 +367,18 @@ export function sync(
     const finalPath = path.join(folder.dirPath, 'final.md')
     const finalRaw = fs.readFileSync(finalPath, 'utf-8')
     const parsed = matter(finalRaw)
-    const slug = parsed.data.slug || folder.dirName
+    const rawSlug = parsed.data.slug || folder.dirName
+    const slug = sanitizeSlug(rawSlug)
+    if (!slug) {
+      const msg = `WARN: ${folder.dirName} -- slug "${rawSlug}" is empty after sanitization, skipping`
+      console.log(msg)
+      result.warnings.push(msg)
+      continue
+    }
 
     // Check if already exists
     const targetPath = path.join(blogDir, `${slug}.md`)
+    assertPathContained(targetPath, blogDir)
     if (fs.existsSync(targetPath) && !options.force) {
       console.log(`SKIP (exists): ${slug}`)
       result.skipped++
@@ -465,7 +513,7 @@ function main() {
 // Guard: only run main() when executed directly (not when imported by tests)
 const isDirectRun =
   process.argv[1] &&
-  (process.argv[1].endsWith('sync-varro.ts') || process.argv[1].endsWith('sync-varro'))
+  path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)
 
 if (isDirectRun) {
   main()

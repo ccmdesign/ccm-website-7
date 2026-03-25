@@ -123,7 +123,7 @@ const { data: blogPosts } = await useAsyncData('blog-posts', async () => {
   const nonFuturePosts = filteredPosts.filter(post => post.date && post.date <= today)
   
   // Sort by date (reverse chronological - newest first)
-  return nonFuturePosts.sort((a, b) => new Date(b.date) - new Date(a.date))
+  return nonFuturePosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 })
 
 const selectedCategory = ref('All Topics');
