@@ -47,8 +47,11 @@ related_posts:
   - slug: interactive-research-reports-trends
     title: 'The End of the PDF: 5 Trends Redefining Research Communication'
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

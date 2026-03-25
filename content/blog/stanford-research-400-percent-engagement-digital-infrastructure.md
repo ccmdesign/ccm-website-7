@@ -33,8 +33,11 @@ excerpt: >-
   specialized approaches achieve 35-40% stakeholder engagement improvements
   through understanding academic culture, not just technology.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

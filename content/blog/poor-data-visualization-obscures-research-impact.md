@@ -44,8 +44,11 @@ related_posts:
   - slug: design-debt-research-organizations
     title: 'Design Debt in Research Organizations: The Cost of ''We''ll Fix It Later'''
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

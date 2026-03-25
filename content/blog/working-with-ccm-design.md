@@ -28,13 +28,11 @@ tldr: >-
   -   **Direct Collaboration**: You work directly with senior designers, not
   account managers, ensuring nothing is lost in translation [7].
 
-
   For leaders in the research, policy, and non-profit sectors, selecting a
   design partner often involves a difficult trade-off. You frequently choose
   between creative agencies that produce beautiful work but lack subject matter
   expertise, or technical firms that understand the data but fail to engage the
   audience.
-
 
   CCM Design positions itself specifically to bridge this gap. We focus on
   helping research institutions, think tanks, and tech companies communicate
@@ -55,8 +53,11 @@ related_posts:
   - slug: internal-case-professional-publication-design
     title: How to Build the Internal Case for Professional Publication Design
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

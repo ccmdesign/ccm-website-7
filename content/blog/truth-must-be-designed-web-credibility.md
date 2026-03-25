@@ -31,7 +31,6 @@ tldr: >-
   - **The Two-Stage Trust Model**: Design dictates rejection; content dictates
   selection. If your design fails, your content is never evaluated.
 
-
   The World Health Organization describes our current environment as an
   "infodemic"—an overabundance of information, both accurate and false, that
   makes it difficult for people to identify trustworthy sources [11]. In this
@@ -40,12 +39,10 @@ tldr: >-
   public needs, yet they are losing the battle for attention to misinformation
   that is often better packaged.
 
-
   For decades, the assumption in the scientific community was that truth is
   self-evident. If the data is sound, the audience will follow. The reality of
   digital behavior proves otherwise. We have entered an era where truth is no
   longer enough; truth must be *designed* to look credible.
-
 
   When a user lands on a research publication or health portal, they are not
   initially acting as a rational evaluator of citations. They are acting on
@@ -67,8 +64,11 @@ related_posts:
   - slug: static-infographics-failing-research
     title: Why Static Infographics Are Failing Your Research Impact
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

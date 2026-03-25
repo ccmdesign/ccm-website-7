@@ -29,7 +29,6 @@ tldr: >-
   entirely but demoting them to archival status in favor of HTML-first
   workflows.
 
-
   We live in an era defined by fluid, semantic web technologies and
   instantaneous global communication. Yet, the primary vehicle for scientific
   knowledge remains a digital simulation of paper: the Portable Document Format
@@ -39,14 +38,12 @@ tldr: >-
   impact](/static-pdfs-undermining-research-impact) of forward-thinking
   organizations.
 
-
   For researchers and evaluators, understanding the limitations of the PDF is no
   longer merely a technical concern—it is a strategic imperative. The reliance
   on static PDFs creates friction at every stage of the lifecycle: it blocks
   accessibility tools used by disabled scholars, frustrates mobile users who now
   constitute the majority of web traffic, and obfuscates data from the AI agents
   increasingly tasked with synthesizing vast libraries of literature.
-
 
   This isn't an argument for eliminating the PDF. It is an argument against
   using it as a consumption interface. By treating PDFs as archives rather than
@@ -66,8 +63,11 @@ related_posts:
   - slug: 5-signs-research-publications-need-redesign
     title: 5 Signs Your Research Publications Need a Redesign
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

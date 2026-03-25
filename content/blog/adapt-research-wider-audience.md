@@ -38,8 +38,11 @@ tldr: >-
   information using the inverted pyramid method and bridge the gap between
   complex research findings and public understanding.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

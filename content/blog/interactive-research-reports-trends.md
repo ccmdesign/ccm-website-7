@@ -50,8 +50,11 @@ related_posts:
   - slug: interactive-impact-reports-business-case
     title: 'Interactive Impact Reports: The Business Case for Going Digital'
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

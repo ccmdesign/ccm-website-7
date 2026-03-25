@@ -30,19 +30,16 @@ tldr: >-
   - **Budget for discovery:** allocate 10-20% of the project budget to validate
   requirements before building.
 
-
   A publication redesign is rarely just a facelift. It is a fundamental business
   transformation that touches every part of your organization, from how editors
   file stories to how ad operations monetize them. Yet, organizations often
   treat these projects as purely aesthetic exercises, focusing on fonts and
   layouts while neglecting the infrastructure that powers them.
 
-
   This oversight is expensive. Industry estimates suggest that up to 80% of
   website redesigns fail to meet their original business objectives, often
   because the focus skewed too heavily toward visuals rather than functionality
   and strategy [1].
-
 
   For buyers—whether you are a media executive, a think tank director, or a
   foundation leader—preparation is the primary lever you have to control cost
@@ -62,8 +59,11 @@ related_posts:
   - slug: harvard-policy-publication-redesign
     title: How We Rebuilt Harvard’s Policy Publication Ecosystem
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

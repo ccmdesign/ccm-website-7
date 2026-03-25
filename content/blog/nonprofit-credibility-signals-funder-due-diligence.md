@@ -30,18 +30,15 @@ tldr: >-
   communications infrastructure as a proxy for an organization's ability to
   execute its mission.
 
-
   Consider the ratio of effort in your typical grant application cycle. You
   likely spend weeks refining the logic model, calculating budget justifications
   down to the cent, and polishing the narrative until every sentence sings. The
   resulting PDF is a masterpiece of "System 2" thinking—logical, deliberative,
   and dense.
 
-
   Yet, before a program officer reads a single word of that narrative, they have
   likely already made a subconscious decision about your organization's
   competence. They visited your website.
-
 
   In the high-stakes environment of fundraising, trust is not merely an
   intellectual calculation derived from impact data. It is a psychological
@@ -50,7 +47,6 @@ tldr: >-
   your proposal says "[world-class research](/research-brands-funders-remember)"
   but your digital presence says "disorganized and outdated," the dissonance
   creates risk.
-
 
   This article examines the implicit credibility signals that exist outside your
   formal proposal—and how they influence the funding decisions that shape your
@@ -72,8 +68,11 @@ related_posts:
   - slug: static-pdfs-undermine-research-impact
     title: Why Static PDFs Are Undermining Your Research Impact
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

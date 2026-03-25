@@ -34,7 +34,6 @@ tldr: >-
   -   **Strategic UX assessment** must precede any layout work to ensure the
   publication serves specific institutional goals and user needs.
 
-
   The weeks leading up to the launch of a major institutional
   publication—whether an annual report, a policy paper, or a strategic guide—are
   often characterized by anxiety. For Communications Directors and Program
@@ -42,7 +41,6 @@ tldr: >-
   raw text and data to a design partner, and now you wait. The fear is specific:
   what if the final deliverable arrives on deadline but fails to reflect the
   nuance of the content or the gravity of the institution's mission?
-
 
   This "Big Reveal" moment is a relic of traditional design processes, and it
   introduces unnecessary risk into high-stakes projects. At CCM Design, we
@@ -63,8 +61,11 @@ related_posts:
   - slug: evaluate-research-publication-design-partners
     title: How to Evaluate Design Partners for Research Publications
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

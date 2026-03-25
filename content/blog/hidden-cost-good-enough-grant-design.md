@@ -32,11 +32,9 @@ tldr: >-
   *   **Design is a financial strategy**: The "sunk cost" of a rejected proposal
   far exceeds the investment in professional visual communication.
 
-
   You wrote the perfect proposal. The methodology was rigorous, the team was
   qualified, and the impact was clear. Yet, the rejection letter arrived with
   vague feedback or, worse, silence.
-
 
   This is the "Researcher's Fallacy": the belief that scientific merit alone
   dictates funding success. In an ideal world, reviewers would judge every
@@ -63,8 +61,11 @@ related_posts:
   - slug: hidden-cost-inconsistent-publication-design
     title: The Hidden Tax of Inconsistent Publication Design
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

@@ -34,8 +34,11 @@ tldr: >-
   three-field approach that transforms overwhelming academic titles into
   8-second attention grabbers with perfect visual hierarchy.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

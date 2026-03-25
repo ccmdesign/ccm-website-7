@@ -34,21 +34,21 @@ tldr: >-
   team. Inside that toolbox, we will have many interface components to be used
   and reused across the organization's interfaces.
 
-
   These components are built(design and code) as abstract prototypes with
   robustness and flexibility in mind so they can work on multiple scenarios.
 
-
   The **Bad news** of this approach is that these components are harder to
   build, requiring more time to design, develop and test.
-
 
   The **good news** is that once a component is finished, chances are they won't
   change anytime soon and will be used and reused in multiple instances and
   applications without much regard for how it works internally.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

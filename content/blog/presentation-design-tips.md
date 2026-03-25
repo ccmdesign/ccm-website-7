@@ -34,8 +34,11 @@ tldr: >-
   functionality. Learn the difference between support and standalone
   presentations to improve communication results by 60%.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

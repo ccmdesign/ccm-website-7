@@ -35,8 +35,11 @@ tldr: >-
   engagement improvements and 200-400% ROI within 24 months by transforming
   single reports into strategic ecosystems of influence.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

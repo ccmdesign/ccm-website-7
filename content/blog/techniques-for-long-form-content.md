@@ -38,8 +38,11 @@ tldr: >-
   planning, content structuring, and selective formatting reduce reader fatigue
   while maintaining engagement throughout lengthy content.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

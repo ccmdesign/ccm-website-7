@@ -35,8 +35,11 @@ tldr: >-
   meeting attendance rates and 15% survey response improvements, while
   email-centric approaches trap critical insights in digital graveyards.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

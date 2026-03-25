@@ -34,8 +34,11 @@ tldr: >-
   meaningful conversions, and maintain program compliance while maximizing their
   digital marketing impact.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

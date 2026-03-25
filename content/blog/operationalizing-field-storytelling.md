@@ -35,7 +35,6 @@ tldr: >-
   rigorous protocols like the Most Significant Change (MSC) technique to turn
   anecdotes into data.
 
-
   Every year, communications directors face the same crisis. The [annual
   report](/nonprofit-annual-report-fundraising-tool) is due, the gala is
   approaching, or a major donor needs an update. The headquarters team scrambles
@@ -43,15 +42,12 @@ tldr: >-
   managers who are too busy to respond, or hire expensive freelancers to
   parachute in for a week.
 
-
   The irony is palpable. While the marketing team starves for content, the
   organization is swimming in stories. Every day, field staff witness the exact
   impact the donors are funding. They see the water flow, the vaccines
   administered, and the students graduating.
 
-
   The problem isn't a lack of stories; it's a broken supply chain.
-
 
   Most organizations treat storytelling as a creative task reserved for the
   communications department. Leading organizations, however, treat it as an
@@ -74,8 +70,11 @@ related_posts:
   - slug: static-pdfs-undermine-research-impact
     title: Why Static PDFs Are Undermining Your Research Impact
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

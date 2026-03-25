@@ -30,13 +30,11 @@ tldr: >-
   with Ash Carter and helped the Indie Film Landscape project reach industry
   stakeholders with critical market data.
 
-
   When the mechanism for delivering high-stakes policy research breaks down, the
   research itself risks irrelevance. For decades, academic institutions relied
   on a dissemination model built around physical symposia, printed casebooks,
   and static PDFs. These formats signal authority, but they often fail on
   accessibility and resilience.
-
 
   We encountered this friction directly when partnering with Harvard University
   on two critical initiatives: the **Tech Spotlight Award** at the Harvard
@@ -46,7 +44,6 @@ tldr: >-
   impossible by the onset of the COVID-19 pandemic [1]. Meanwhile, the Indie
   Film Landscape project possessed data so complex that a standard academic
   report would likely bury the lede [2].
-
 
   This case study outlines how we rebuilt these legacy publication models into
   resilient digital ecosystems. We moved beyond simple digitization—scanning a
@@ -65,8 +62,11 @@ related_posts:
   - slug: design-resourcing-agency-vs-inhouse
     title: 'Agency vs. In-House Design: A Strategic Resourcing Guide'
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

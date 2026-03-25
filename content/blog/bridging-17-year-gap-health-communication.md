@@ -28,14 +28,12 @@ tldr: >-
   and Kaiser Permanente are closing the loop by building internal engines that
   function like think tanks.
 
-
   For the academic researcher, the peer-reviewed [journal
   article](/5-signs-research-publications-need-redesign) is the currency of the
   realm. It represents the culmination of years of rigorous inquiry, data
   collection, and analysis. But from the perspective of public health and
   societal impact, that publication is not the finish line—it is merely the
   middle of the journey.
-
 
   A profound disconnect exists between the generation of biomedical knowledge
   and its application in the real world. This phenomenon, widely recognized as
@@ -44,7 +42,6 @@ tldr: >-
   While researchers are incentivized to publish, the mechanisms to move that
   knowledge into the hands of patients, practitioners, and policymakers are
   often missing or underfunded [2].
-
 
   This is not a marketing problem. It is a structural deficiency in how health
   knowledge is managed. To fix it, we must look beyond the journal and build the
@@ -62,8 +59,11 @@ related_posts:
   - slug: static-pdfs-undermine-research-impact
     title: Why Static PDFs Are Undermining Your Research Impact
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

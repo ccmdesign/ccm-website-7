@@ -43,8 +43,11 @@ related_posts:
   - slug: harvard-policy-publication-redesign
     title: How We Rebuilt Harvard’s Policy Publication Ecosystem
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

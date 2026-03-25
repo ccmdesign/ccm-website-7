@@ -30,7 +30,6 @@ tldr: >-
   quantitative rigor with human narrative—and are shifting from static PDFs to
   interactive digital formats.
 
-
   Every year, thousands of organizations pour immense resources into producing
   their annual impact report. Teams scramble to gather spreadsheets, writers
   draft emotional anecdotes, and designers wrestle with layouts. Yet, once
@@ -39,7 +38,6 @@ tldr: >-
   graveyards](/5-signs-research-publications-need-redesign). They are
   downloaded, skimmed, and filed away, failing to unlock new funding or deepen
   stakeholder trust.
-
 
   The problem is rarely the effort or the intention. The failure usually stems
   from a fundamental confusion between "things done" and "changes achieved." As
@@ -59,8 +57,11 @@ related_posts:
   - slug: grant-impact-reporting-narrative-decay
     title: 'The 90-Day Window: Fixing Narrative Decay in Grant Reporting'
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

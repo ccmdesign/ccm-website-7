@@ -34,8 +34,11 @@ tldr: >-
   Improve team productivity by up to 40% through better communication,
   collaboration tools, and structured workflows.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

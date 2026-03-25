@@ -35,8 +35,11 @@ tldr: >-
   interactive reports, mobile-first solutions, and user-centered design
   approaches that traditional research outputs cannot achieve.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

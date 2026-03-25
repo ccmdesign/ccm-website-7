@@ -33,7 +33,6 @@ tldr: >-
   - **Speed signals trust**: Users judge credibility in 50 milliseconds; a slow
   site suggests an outdated or inefficient organization.
 
-
   The "Researcher" persona is not browsing for fun. They are hunting. Whether
   they are a policy analyst looking for a specific brief, a journalist
   fact-checking a statistic, or an academic conducting a literature review,
@@ -42,14 +41,12 @@ tldr: >-
   brochure—prioritizing large hero images, scroll-jacking animations, and
   "flashy" aesthetics over functional utility.
 
-
   This creates a fundamental misalignment between user intent and platform
   design. While visual appeal influences the initial impression of a site (the
   "halo effect"), that impression evaporates the moment a search bar returns
   zero results or a navigation menu leads to a dead end. Studies indicate that
   users prioritize findability and speed above all else, with excessive visual
   elements often serving as distractors that increase cognitive load [1], [2].
-
 
   For knowledge-driven organizations, the website is a tool, not a gallery.
   Success is measured by how quickly a user can move from a question to an
@@ -68,8 +65,11 @@ related_posts:
   - slug: 5-signs-research-publications-need-redesign
     title: 5 Signs Your Research Publications Need a Redesign
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

@@ -32,7 +32,6 @@ tldr: >-
   to industry leaders (from Sundance to Google), and preserved the institution's
   authoritative brand equity.
 
-
   The digital transformation of policy publication systems represents a critical
   evolution in how academic and research institutions disseminate knowledge. For
   decades, the standard for prestige was physical: the heavy printed report, the
@@ -42,8 +41,11 @@ tldr: >-
   silos.
 stage: evaluator
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

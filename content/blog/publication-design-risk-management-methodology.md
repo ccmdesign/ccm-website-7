@@ -31,13 +31,11 @@ tldr: >-
   "partnership model" where researchers and designers co-create, rather than a
   transactional hand-off.
 
-
   For organizations operating at the intersection of policy, academia, and
   public interest, the stakes of publication design are often underestimated. A
   failed design project represents not just lost budget, but lost knowledge
   capital. When complex research is buried in dense, inaccessible formats, the
   years of data collection preceding it are effectively nullified.
-
 
   The gap between raw data and impactful dissemination is bridged by design, but
   the process of crossing that bridge is fraught with risk. To navigate this,
@@ -45,8 +43,11 @@ tldr: >-
   *methodology* of their potential partners.
 stage: evaluator
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

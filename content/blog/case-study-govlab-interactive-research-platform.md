@@ -29,12 +29,10 @@ tldr: >-
   *   **Future-Proofing:** "Living Evidence" platforms replaced static archives,
   allowing continuous updates as new data emerges.
 
-
   Governance research faces a persistent delivery problem. Institutions produce
   rigorous, high-value data, but often trap it in static formats—PDFs, academic
   repositories, and dense text blocks—that fail to reach the policymakers and
   citizens who need it most.
-
 
   For The Governance Lab (GovLab) at NYU, the goal was to break this cycle. They
   needed to transform their "text-heavy material with a dry subject" into
@@ -55,8 +53,11 @@ related_posts:
   - slug: harvard-policy-publication-redesign
     title: How We Rebuilt Harvard’s Policy Publication Ecosystem
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

@@ -37,8 +37,11 @@ tldr: >-
   demonstrates how strategic technology implementation achieves 400% engagement
   improvements and ROI within 18-24 months while maintaining academic integrity.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

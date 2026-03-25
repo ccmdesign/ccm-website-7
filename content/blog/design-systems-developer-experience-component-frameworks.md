@@ -33,8 +33,11 @@ excerpt: >-
   consistency while ignoring developer experience. Treating design systems as
   software frameworks transforms adoption rates and team velocity.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

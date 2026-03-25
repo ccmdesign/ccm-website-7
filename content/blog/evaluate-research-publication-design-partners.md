@@ -34,19 +34,16 @@ tldr: >-
   of citations, the rigors of peer review, and the need for rigorous file naming
   conventions.
 
-
   Evaluating a design partner for research publications is fundamentally
   different from hiring an agency for a rebrand or an advertising campaign. In
   marketing, success is often subjective or measured in emotional resonance. In
   research, success is measured by clarity, accuracy, and navigability.
-
 
   When a research organization hires a generalist creative agency, the friction
   often begins immediately after the first draft. Citations break when text
   flows shift. Charts look beautiful but misrepresent the underlying data.
   Accessibility features are treated as an afterthought rather than a structural
   requirement.
-
 
   For the evaluator, the goal is to identify a partner who possesses not only
   aesthetic capability but also a rigorous understanding of data integrity,
@@ -66,8 +63,11 @@ related_posts:
   - slug: design-resourcing-agency-vs-inhouse
     title: 'Agency vs. In-House Design: A Strategic Resourcing Guide'
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

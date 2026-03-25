@@ -29,14 +29,12 @@ tldr: >-
   - **Design drives revenue:** Companies that prioritize design see 32% higher
   revenue growth, and nonprofits see up to 50% better fundraising outcomes.
 
-
   You know that professional publication design is essential. You understand
   that handing a high-stakes policy brief or annual report to an administrative
   assistant—or worse, asking a researcher to format it in Word—undermines the
   authority of the content. Yet, securing the budget for professional support
   often meets resistance from stakeholders who view design as a "nice-to-have"
   aesthetic layer rather than a strategic asset.
-
 
   To win this argument, you must shift the conversation from aesthetics to
   economics. You need to demonstrate that amateur design is an active liability
@@ -56,8 +54,11 @@ related_posts:
   - slug: 5-signs-research-publications-need-redesign
     title: 5 Signs Your Research Publications Need a Redesign
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

@@ -32,14 +32,12 @@ tldr: >-
   issues; they are security vulnerabilities that threaten institutional
   reputation [8].
 
-
   The assumption that "good research finds its own audience" is a dangerous
   fallacy in the digital age. For think tanks, foundations, and policy
   institutes, the website is not merely a digital brochure; it is the primary
   infrastructure for the dissemination of ideas. If a bridge collapses, traffic
   stops. If your digital infrastructure is outdated, the flow of ideas to
   policymakers, journalists, and stakeholders halts.
-
 
   Many research organizations operate with legacy sites designed for a previous
   era of the internet—one where users patiently navigated complex menus on
@@ -60,8 +58,11 @@ related_posts:
   - slug: 5-signs-research-publications-need-redesign
     title: 5 Signs Your Research Publications Need a Redesign
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

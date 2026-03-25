@@ -31,8 +31,11 @@ excerpt: >-
   specialized skill gaps. 70% of creative directors cite insufficient time as
   their biggest barrier to success.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

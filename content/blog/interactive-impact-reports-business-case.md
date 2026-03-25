@@ -31,15 +31,12 @@ tldr: >-
   readers and mobile devices, whereas PDFs often create barriers for users with
   disabilities.
 
-
   Your communications team spends months gathering data, interviewing
   beneficiaries, and crafting the perfect narrative for your annual report. You
   hire a designer, go through endless rounds of proofing, and finally launch the
   PDF via email and social media.
 
-
   Then, silence.
-
 
   You might see a download count, but that number is a dead end. You don't know
   if they read every word or closed the file after the cover page. You don't
@@ -47,7 +44,6 @@ tldr: >-
   stories. In an era where data drives almost every other strategic decision,
   the static annual report remains a "black box"—an asset requiring immense
   effort but yielding minimal intelligence.
-
 
   For mission-driven organizations, the shift to interactive impact reports
   isn't just a design trend. It is a strategic move to solve the problems of
@@ -65,8 +61,11 @@ related_posts:
   - slug: static-pdfs-undermine-research-impact
     title: Why Static PDFs Are Undermining Your Research Impact
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

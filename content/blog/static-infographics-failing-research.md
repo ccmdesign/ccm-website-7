@@ -33,13 +33,11 @@ tldr: >-
   "scrollytelling" and modular design patterns that adapt to the user's device
   and reading behavior.
 
-
   The "Golden Age" of the static infographic—roughly 2012 to 2016—was a time of
   easy wins. An organization could condense a white paper into a 6,000-pixel
   tall JPEG, publish it, and reliably expect significant engagement. The mere
   existence of visual data was novel enough to drive [sharing
   behavior](/why-infographics-fail-engagement).
-
 
   That era is over. Today, communications directors and researchers often find
   that despite high-quality data, their static visual assets see diminishing
@@ -62,8 +60,11 @@ related_posts:
   - slug: mobile-paradox-nonprofit-reporting
     title: 'The Mobile Paradox: Why Static Reports Fail Modern Donors'
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

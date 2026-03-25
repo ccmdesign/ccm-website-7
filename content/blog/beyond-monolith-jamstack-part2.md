@@ -32,8 +32,11 @@ tldr: >-
   JAMstack to achieve 99.84% file size reductions and unlock unlimited
   innovation through decoupled architectures.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

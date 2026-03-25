@@ -49,8 +49,11 @@ related_posts:
       Why Your Grant Proposals Look Like Everyone Else's: The Science of
       Differentiation
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

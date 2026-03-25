@@ -26,14 +26,12 @@ tldr: >-
   (Strategy → Concept → Execution) allows for "off-ramps" and better cash flow
   management.
 
-
   Two proposals sit on your desk for the same annual report project. One quotes
   $8,000; the other is $45,000. Both agencies seem competent, and both promise a
   professional result. This pricing disparity is the most common source of
   friction in design procurement. It rarely signals that one agency is "gouging"
   or the other is a "bargain." Instead, it usually reflects a fundamental
   difference in how scope and risk are calculated.
-
 
   For decision-makers, understanding the mechanics of publication design pricing
   is not about finding the cheapest option—it is about aligning your investment
@@ -51,8 +49,11 @@ related_posts:
   - slug: strategic-publication-design-methodology
     title: 'De-Risking Publication Design: A 9-Step Strategic Methodology'
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

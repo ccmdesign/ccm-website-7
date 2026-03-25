@@ -32,8 +32,11 @@ tldr: >-
   principles and strategic design thinking. Learn the complete process from data
   analysis to viral-ready infographics.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

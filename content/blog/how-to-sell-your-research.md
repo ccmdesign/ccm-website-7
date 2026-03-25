@@ -37,8 +37,11 @@ tldr: >-
   difference between your audience (peers who provide social proof) and your
   clients (funders who invest in your work).
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

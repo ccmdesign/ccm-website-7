@@ -37,8 +37,11 @@ tldr: >-
   brand identity, improves user experience, and increases organizational impact
   and reach through more accessible and engaging content.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

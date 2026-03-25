@@ -34,13 +34,11 @@ tldr: >-
   disclosure," an interactive design principle that aligns information delivery
   with how the human brain actually processes complex data.
 
-
   The modern board pack is a paradox. Organizations possess more data than ever
   before, yet directors frequently report feeling less informed and more
   overwhelmed. The sheer volume of information provided to boards has exploded,
   but the mechanism for delivering that intelligence—typically a static PDF sent
   via email or a basic portal—has failed to evolve.
-
 
   This disconnect represents more than an administrative nuisance; it is a
   governance risk. When directors cannot effectively digest the materials
@@ -62,8 +60,11 @@ related_posts:
   - slug: hybrid-publishing-digital-first-workflow
     title: 'The Hybrid Publishing Paradox: Why Digital-First Workflows Save Print'
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

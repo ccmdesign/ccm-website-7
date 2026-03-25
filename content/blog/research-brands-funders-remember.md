@@ -31,14 +31,12 @@ tldr: >-
   transition from project-based publishing to building a distinct "brand of
   thinking" that separates them from the "sea of sameness."
 
-
   The landscape for research funding has shifted from a model of charitable
   giving to one of strategic investment. Funders—whether private foundations,
   government agencies, or individual donors—increasingly view their grants as
   investments in social impact. In this context, a research organization's brand
   is not a superficial marketing layer but a critical asset that communicates
   capacity, reliability, and alignment with the funder's theory of change.
-
 
   For researchers and organizational leaders, understanding the mechanics of
   brand equity is essential. Producing rigorous work is no longer sufficient;
@@ -60,8 +58,11 @@ related_posts:
   - slug: research-website-features-impact
     title: 'Beyond Aesthetics: 4 Features That Drive Research Impact'
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 
