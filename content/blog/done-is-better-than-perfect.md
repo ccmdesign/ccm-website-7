@@ -38,8 +38,11 @@ tldr: >-
   focus on iterative progress over perfection. This results in faster launch and
   a better client-firm relationship.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

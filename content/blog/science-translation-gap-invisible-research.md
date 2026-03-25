@@ -32,7 +32,6 @@ tldr: >-
   are not aesthetic add-ons; they utilize dual coding to significantly increase
   engagement and comprehension.
 
-
   The "lab-to-public translation gap" represents a fundamental breakdown in the
   social contract of science. Despite the exponential growth in scientific
   publishing, a substantial portion of research remains "invisible"—locked
@@ -42,7 +41,6 @@ tldr: >-
   invisible, public policy lags behind evidence, health outcomes suffer, and the
   public's trust in scientific institutions erodes.
 
-
   For the researcher, the frustration is personal. You spend years gathering
   data and navigating peer review, only for the final paper to land in a digital
   void. Estimates regarding how many papers go unread vary wildly, with some
@@ -51,7 +49,6 @@ tldr: >-
   true rate of uncited research is lower—perhaps around 12% for medicine and
   higher for social sciences—the "long tail" of dormant research is undeniably
   vast [3].
-
 
   The problem isn't the quality of the science. It's the [design of the
   delivery](/5-signs-research-publications-need-redesign).
@@ -70,8 +67,11 @@ related_posts:
   - slug: static-pdfs-undermine-research-impact
     title: Why Static PDFs Are Undermining Your Research Impact
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

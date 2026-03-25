@@ -34,8 +34,11 @@ tldr: >-
   design delivers 60-75% time reductions and transforms communication
   bottlenecks into competitive advantages.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

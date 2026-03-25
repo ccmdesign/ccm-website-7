@@ -34,8 +34,11 @@ tldr: >-
   only 8 seconds to grab attention, visual storytelling techniques can increase
   research engagement by 250% and broaden audience reach.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

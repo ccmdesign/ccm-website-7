@@ -31,7 +31,6 @@ tldr: >-
   reviewers process complex information without the "cognitive tax" of dense
   text.
 
-
   Many researchers operate under a noble but dangerous assumption: that science
   should speak for itself. The belief is that if the methodology is rigorous,
   the hypothesis sound, and the potential impact high, funding will naturally
@@ -39,7 +38,6 @@ tldr: >-
   review panels, however, merit is filtered through human cognition. Reviewers
   are not objective algorithms; they are overburdened professionals subject to
   fatigue, bias, and time constraints [10].
-
 
   This disconnect creates a "hidden curriculum" in funding. While the explicit
   requirements ask for scientific aims and budget justifications, the implicit
@@ -65,8 +63,11 @@ related_posts:
   - slug: research-brands-funders-remember
     title: The Research Brands That Funders Remember
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

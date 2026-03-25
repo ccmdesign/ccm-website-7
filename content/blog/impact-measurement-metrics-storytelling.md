@@ -30,14 +30,12 @@ tldr: >-
   - **Data Wireframing**: Visualizing the final report's charts before fieldwork
   begins ensures the right stories are engineered into the project's DNA.
 
-
   The [annual report](/nonprofit-annual-report-fundraising-tool) deadline
   approaches. The design team is ready, the copywriters are standing by, and the
   leadership team is asking for a "compelling narrative of transformation." Yet,
   when you look at the spreadsheet, the columns are filled with attendance
   figures, download counts, and list of activities. The story of *change* is
   missing.
-
 
   This scenario is common, but the diagnosis is often wrong. Organizations
   frequently treat this as a communications failure—a lack of creative flair or
@@ -60,8 +58,11 @@ related_posts:
   - slug: mobile-paradox-nonprofit-reporting
     title: 'The Mobile Paradox: Why Static Reports Fail Modern Donors'
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

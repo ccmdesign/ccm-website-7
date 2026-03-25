@@ -34,8 +34,11 @@ tldr: >-
   boosting SEO rankings. Discover how accessibility features like semantic HTML
   and alt text benefit both users with disabilities and search engines.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

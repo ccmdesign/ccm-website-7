@@ -29,7 +29,6 @@ tldr: >-
   - **Extend Lifespan**: Effective reports are repurposed year-round into social
   media content, email updates, and major donor presentations.
 
-
   Every year, nonprofit teams scramble to compile the [annual
   report](/annual-report-comparative-disadvantage). It is often a grueling
   process of chasing down department heads for data, wrestling with
@@ -37,7 +36,6 @@ tldr: >-
   program director to the board chair. The result? Frequently, it is a dense,
   text-heavy PDF that is uploaded to the "Financials" page of a website and
   rarely opened again.
-
 
   This approach represents a massive missed opportunity. When treated as a mere
   compliance exercise, the annual report becomes a cost center. But when
@@ -59,8 +57,11 @@ related_posts:
   - slug: nonprofit-credibility-signals-funder-due-diligence
     title: 'Nonprofit Credibility Signals: What Funders Actually Check'
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

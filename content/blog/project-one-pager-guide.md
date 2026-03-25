@@ -32,8 +32,11 @@ tldr: >-
   Learn the proven 4-step structure that captures investor attention and
   facilitates decision-making in just 20 seconds.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

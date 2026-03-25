@@ -33,14 +33,12 @@ tldr: >-
   accessibility standards, fixing these issues is now a prerequisite for
   visibility in AI-driven "answer engines."
 
-
   Research institutions often face a paradoxical challenge during digital
   transformation. There is immense internal pressure to launch a website that
   looks "modern"—typically defined by large hero images, scroll-triggered
   animations, and minimalist aesthetics. Yet, once launched, these platforms
   often fail to deliver on their primary mandate: the dissemination of complex
   knowledge.
-
 
   For stakeholders in the research sector, the problem is rarely a lack of
   content quality. The issue lies in prioritizing the container over the
@@ -62,8 +60,11 @@ related_posts:
   - slug: research-brands-funders-remember
     title: The Research Brands That Funders Remember
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

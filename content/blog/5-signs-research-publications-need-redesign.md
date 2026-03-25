@@ -32,10 +32,8 @@ tldr: >-
   *   **Engagement requires adaptation:** Visual abstracts and interactive
   formats significantly outperform text-heavy summaries on social platforms.
 
-
   "Publish or perish" has evolved. The new reality is "publish and be visible,
   or perish."
-
 
   For years, the scientific community has operated under the assumption that
   good data speaks for itself. If the methodology is sound and the findings are
@@ -44,13 +42,11 @@ tldr: >-
   Groundbreaking science is frequently buried in "print-replica" PDFs that are
   hostile to modern screens and invisible to search engines.
 
-
   Design is no longer just aesthetic decoration; it is a functional heuristic
   for credibility. Research shows that users form a judgment about a website’s
   credibility in as little as **3.42 seconds** [2]. If your research lives in a
   digital environment that looks outdated, the research itself is subconsciously
   flagged as outdated.
-
 
   Here are five data-backed signs that your current [research publication
   design](/5-signs-research-publications-need-redesign) is limiting your impact.
@@ -67,8 +63,11 @@ related_posts:
   - slug: think-tank-website-undermining-impact
     title: Is Your Think Tank's Website Undermining Your Research Impact?
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

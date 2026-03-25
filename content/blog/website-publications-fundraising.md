@@ -37,8 +37,11 @@ tldr: >-
   boost donor engagement, build organizational credibility, and create a
   powerful track record that attracts future funding opportunities.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

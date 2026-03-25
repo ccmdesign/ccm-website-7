@@ -29,14 +29,12 @@ tldr: >-
   -   **Systematization works**: Organizations like CERN and the World Bank use
   design systems to manage massive complexity and ensure accessibility.
 
-
   Your organization spends months, perhaps years, gathering data, conducting
   analysis, and refining conclusions. The research is rigorous, the methodology
   sound. Yet, the moment this high-value intellectual capital enters the digital
   world, it often lands in a fragmented ecosystem of disjointed PDFs, microsites
   with clashing navigation, and social assets that barely resemble the parent
   brand.
-
 
   We often treat [publication
   design](/5-signs-research-publications-need-redesign) as a final "coat of
@@ -60,8 +58,11 @@ related_posts:
       The Invisible Science: How Poor Data Visualization Obscures Research
       Impact
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

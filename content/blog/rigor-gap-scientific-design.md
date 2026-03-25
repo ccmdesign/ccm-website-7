@@ -50,8 +50,11 @@ related_posts:
   - slug: rethinking-research-communication
     title: 'Beyond the PDF: Modern Research Communication Strategies'
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

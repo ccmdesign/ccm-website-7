@@ -44,8 +44,11 @@ related_posts:
   - slug: hidden-cost-good-enough-grant-design
     title: The Hidden Cost of "Good Enough" Design in Grant Proposals
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

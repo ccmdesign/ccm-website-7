@@ -34,13 +34,11 @@ tldr: >-
   - Research leaders must use this window to shift their function from a
   downstream "service bureau" to an upstream strategic partner.
 
-
   The clock starts the moment you accept the offer. For new research and design
   leaders, the "First 100 Days" is not merely a calendar milestone or a
   probation period—it is the strategic window that defines the trajectory of
   your entire tenure. Decisions made and impressions formed during this brief
   interval harden into the reality of your leadership [1].
-
 
   The pressure to deliver immediate results often conflicts with the need to
   deeply understand the organization. Many leaders fall into the trap of
@@ -64,8 +62,11 @@ related_posts:
   - slug: research-website-design-features
     title: 'Research Website Design: 5 Features That Matter More Than Aesthetics'
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

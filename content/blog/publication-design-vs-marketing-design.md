@@ -31,23 +31,19 @@ tldr: >-
   - **Data Integrity**: Publication design prioritizes accurate data
   visualization over decorative "chart junk" to maintain research authority.
 
-
   Most organizations [evaluating design
   partners](/evaluate-research-publication-design-partners) fall into a common
   trap: the "Halo Effect." You see a portfolio filled with stunning websites,
   punchy social media campaigns, and billboard-ready visuals, and assume that
   aesthetic quality translates automatically to long-form report design.
 
-
   It does not.
-
 
   Hiring a generalist branding agency to produce a 100-page research report
   often leads to a specific, painful failure state: a document that looks
   impressive at a glance but is exhausting to read. The layout fights the
   content. The data is "styled" rather than accurate. Revisions take weeks
   because the team is manually formatting text instead of using automation.
-
 
   Marketing design aims to disrupt, entertain, and convert in seconds.
   **Publication design** aims to sustain attention, facilitate deep reading, and
@@ -66,8 +62,11 @@ related_posts:
   - slug: designing-scalable-system-idrc
     title: A Strategic Design System Roadmap for the IDRC
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

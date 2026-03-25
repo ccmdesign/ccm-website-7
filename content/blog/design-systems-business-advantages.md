@@ -40,8 +40,11 @@ tldr: >-
   For both large and small organizations, a design system is an essential part
   of modern software development.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

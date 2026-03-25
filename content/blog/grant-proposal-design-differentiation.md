@@ -33,7 +33,6 @@ tldr: >-
   retention pathways and act as "word savers" in character-constrained
   applications.
 
-
   Funding rates are dropping while the volume of applications rises. For many
   research organizations, the instinct is to increase output—submitting more
   proposals to more funders. Yet, this volume-based strategy often yields
@@ -53,8 +52,11 @@ related_posts:
   - slug: static-pdfs-undermining-research-impact
     title: Why Static PDFs Are Undermining Your Research Impact
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

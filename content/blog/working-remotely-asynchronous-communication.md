@@ -34,8 +34,11 @@ tldr: >-
   strategies. Learn the proven sync vs async framework that eliminates
   distractions and improves focus for distributed teams.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

@@ -38,13 +38,11 @@ tldr: >-
   allows organizations to engage mobile users effectively while still serving
   deep-dive researchers.
 
-
   Donors are already on your website, but they are leaving before they give. The
   numbers paint a clear picture of a disconnect: while the majority of potential
   supporters discover organizations on their phones, they rarely complete
   significant actions there. This isn't a lack of generosity; it is a failure of
   format.
-
 
   When a prospective donor clicks a link to your annual report and is greeted by
   a static PDF that forces them to pinch, zoom, and scroll horizontally, the
@@ -65,8 +63,11 @@ related_posts:
   - slug: interactive-impact-reports-business-case
     title: 'Interactive Impact Reports: The Business Case for Going Digital'
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

@@ -32,7 +32,7 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 404, statusMessage: `Post not found: ${slug}` })
   }
 
-  if (post.newsletterSent === true) {
+  if (post.newsletterSentAt != null) {
     throw createError({ statusCode: 409, statusMessage: 'Newsletter already sent for this post' })
   }
 
@@ -48,16 +48,27 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 502, statusMessage: result.error })
   }
 
+  const newsletterSentAt = new Date().toISOString()
+
   // Service call succeeded — now update frontmatter
   try {
-    await updateFrontmatter(filePath, { newsletterSent: true })
+    const updates: Record<string, unknown> = { newsletterSentAt }
+    if (result.previewUrl) {
+      updates.newsletterPreviewUrl = result.previewUrl
+    }
+    await updateFrontmatter(filePath, updates)
   } catch (err) {
     // Critical: newsletter was sent but we failed to update the flag
     return {
       status: 'sent_but_flag_failed',
-      warning: `Newsletter was sent successfully, but frontmatter update failed: ${(err as Error).message}. Please manually set newsletterSent: true in ${slug}.md`,
+      warning: `Newsletter was sent successfully, but frontmatter update failed: ${(err as Error).message}. Please manually set newsletterSentAt: "${newsletterSentAt}" in ${slug}.md`,
     }
   }
 
-  return { status: 'ok', slug }
+  return {
+    status: 'ok',
+    slug,
+    newsletterSentAt,
+    newsletterPreviewUrl: result.previewUrl || null,
+  }
 })

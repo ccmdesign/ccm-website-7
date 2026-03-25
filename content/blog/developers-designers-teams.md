@@ -39,8 +39,11 @@ tldr: >-
   that free up backend developers to focus on their core expertise, dramatically
   improving team efficiency and product consistency.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

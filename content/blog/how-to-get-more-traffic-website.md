@@ -34,8 +34,11 @@ tldr: >-
   SEO strategies. These inbound marketing techniques help nonprofits increase
   visibility by 40%+ and build deeper audience connections.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

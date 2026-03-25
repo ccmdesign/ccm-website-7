@@ -33,8 +33,11 @@ excerpt: >-
   among target audiences despite measuring downloads and citations. Professional
   visual frameworks deliver 43% higher persuasion rates.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

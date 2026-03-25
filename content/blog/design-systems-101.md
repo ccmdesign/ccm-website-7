@@ -38,8 +38,11 @@ tldr: >-
   essential to highlight that Design Systems are boosters for economies of
   scale, making them very appealing for organizations with multiple websites.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

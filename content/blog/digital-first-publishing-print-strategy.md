@@ -30,14 +30,12 @@ tldr: >-
   and digital; they use a single content source to feed a hybrid ecosystem
   simultaneously.
 
-
   The fear that "going digital" requires abandoning the prestige of print is a
   misunderstanding of modern publishing mechanics. For decades, the industry
   operated on a manufacturing model: content was created, edited, and designed
   specifically for a physical page. Digital versions—usually PDFs or EPUBs—were
   generated as post-production afterthoughts. This linear approach locks
   intellectual property into static formats that are difficult to repurpose.
-
 
   The shift to [digital-first
   publishing](/hybrid-publishing-digital-first-workflow) is not a rejection of
@@ -58,8 +56,11 @@ related_posts:
   - slug: static-pdfs-undermine-research-impact
     title: Why Static PDFs Are Undermining Your Research Impact
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

@@ -32,7 +32,6 @@ tldr: >-
   reporting requires modular, EN 301 549 compliant chart components similar to
   the World Bank's methodology.
 
-
   For the International Development Research Centre (IDRC), the launch of
   **Strategy 2030** represents a bold commitment to mobilizing alliances and
   sharing knowledge on climate resilience, global health, and inclusive
@@ -56,8 +55,11 @@ related_posts:
   - slug: publication-design-vs-marketing-design
     title: 'Publication Design vs. Marketing Design: The Hidden Differences'
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

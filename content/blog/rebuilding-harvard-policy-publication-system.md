@@ -35,13 +35,11 @@ tldr: >-
   Spotlight* can achieve distinct character while reinforcing the prestige of
   the parent institution.
 
-
   For major research institutions, the distance between groundbreaking insight
   and public impact is often measured in user experience. A rigorous policy
   paper buried in a static PDF repository may technically be "published," but if
   it fails to engage the policymaker, the journalist, or the industry
   stakeholder, its utility is compromised.
-
 
   This challenge was the catalyst for a strategic rebuilding of policy
   publication systems at Harvard University, specifically for the Belfer Center
@@ -50,14 +48,16 @@ tldr: >-
   refresh a website, but to fundamentally transform how complex research is
   disseminated in a digital-first world.
 
-
   This analysis outlines our methodology for these projects, examining the
   architectural decisions, migration strategies, and design principles that
   converted legacy constraints into scalable, high-impact digital platforms.
 stage: evaluator
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

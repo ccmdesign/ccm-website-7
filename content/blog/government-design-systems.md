@@ -34,8 +34,11 @@ tldr: >-
   design principles, creating swift, accessible, and user-friendly platforms
   that reimagine how citizens and government interact.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

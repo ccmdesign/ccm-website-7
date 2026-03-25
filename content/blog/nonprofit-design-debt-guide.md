@@ -29,7 +29,6 @@ tldr: >-
   immediately and instead conduct a 90-day brand audit to diagnose risks and
   secure quick, stabilizing wins.
 
-
   New leadership brings a mandate for change. For a new Executive Director, the
   first 90 days—and arguably the first 90 hours—are critical for establishing
   authority and setting a strategic trajectory. Stakeholders are watching
@@ -37,7 +36,6 @@ tldr: >-
   window, many leaders focus instinctively on financial audits or programmatic
   reviews. Yet, a significant operational liability often hides in plain sight:
   the organization's visual and verbal identity.
-
 
   Ignoring the state of the brand is a strategic error. The visual integrity of
   an organization is not merely a cosmetic concern; it is primary evidence of
@@ -59,8 +57,11 @@ related_posts:
   - slug: nonprofit-credibility-signals-funder-due-diligence
     title: 'Nonprofit Credibility Signals: What Funders Actually Check'
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

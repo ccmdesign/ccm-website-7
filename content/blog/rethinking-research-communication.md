@@ -46,8 +46,11 @@ related_posts:
   - slug: think-tank-website-design-mistakes
     title: Is Your Think Tank's Website Undermining Your Research?
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

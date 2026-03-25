@@ -30,8 +30,11 @@ tldr: >-
   chaotic medium it is unrealistic to expect a pixel perfect design. A website
   that doesn't look "broken" is already a good enough.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

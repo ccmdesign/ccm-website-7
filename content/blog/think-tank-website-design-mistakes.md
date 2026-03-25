@@ -30,19 +30,16 @@ tldr: >-
   "digital brochure" model for dynamic "research hubs" that organize content by
   topic, not department.
 
-
   The currency of any think tank is intellectual authority. You spend months,
   sometimes years, conducting rigorous analysis to ensure your findings are
   unassailable. Yet, a growing body of evidence suggests that the "wallet"
   holding this currency—your website—may be actively devaluing it.
-
 
   For many research institutions, the website is treated as a digital archive: a
   place to store what has been printed. But in a digital-first policy
   environment, your website is infrastructure. When that infrastructure
   fails—through poor navigation, slow load times, or mobile hostility—it doesn't
   just frustrate users. It neutralizes impact.
-
 
   Research shows that users form an opinion about a website within 0.05 seconds
   (50 milliseconds) of the page loading [9]. This visceral, "blink" judgment
@@ -64,8 +61,11 @@ related_posts:
   - slug: rethinking-research-communication
     title: 'Beyond the PDF: Modern Research Communication Strategies'
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

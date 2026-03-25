@@ -33,13 +33,11 @@ tldr: >-
   systems and governance, not the burnout-prone efforts of individual
   "unicorns."
 
-
   A program officer spends eighteen months developing a complex grantmaking
   strategy. They conduct landscape analysis, interview experts, and write white
   papers. Then, two weeks before the launch, the file lands on the desk of the
   communications director with a simple sticky note: "Please make this look good
   and get it on the website."
-
 
   This scenario, familiar to almost everyone in the sector, represents the
   "Service Bureau" trap. In this model, communications is a downstream support
@@ -47,7 +45,6 @@ tldr: >-
   approach was sufficient for an era of print annual reports and press releases,
   it is structurally incapable of meeting the demands of a networked digital
   environment.
-
 
   Leading foundations are dismantling this model. They are reclassifying
   communications from a support service to "core infrastructure." Just as
@@ -68,8 +65,11 @@ related_posts:
   - slug: manual-research-workflows-ai
     title: Why Manual Research Workflows Are Failing in the Age of AI
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

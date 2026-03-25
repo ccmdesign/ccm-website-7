@@ -30,6 +30,9 @@ export default defineNuxtConfig({
       siteName: 'CCM Design',
       siteDescription: 'Insights on Design, Data, and Social Impact',
       siteAuthor: 'CCM Design Team',
+      // Exposed to admin UI in dev only so $fetch calls can include the header.
+      // In production builds this is always empty (import.meta.dev is false).
+      adminApiSecret: import.meta.dev ? (process.env.ADMIN_API_SECRET || '') : '',
     }
   },
   ogImage: {

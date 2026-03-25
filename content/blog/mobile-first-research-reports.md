@@ -35,8 +35,11 @@ tldr: >-
   research remains trapped in desktop-optimized PDFs. Organizations implementing
   mobile-first research architecture achieve 340% higher engagement rates.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

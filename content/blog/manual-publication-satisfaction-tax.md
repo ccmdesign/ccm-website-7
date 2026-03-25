@@ -29,7 +29,6 @@ tldr: >-
   replace human judgment; it liberates staff from "human middleware" tasks,
   leading to higher engagement and financial performance.
 
-
   highly skilled professionals often find themselves acting as "human
   middleware." They bridge the gap between incompatible systems not with
   strategy or insight, but with CTRL+C and CTRL+V. A researcher takes data from
@@ -37,9 +36,7 @@ tldr: >-
   then manually lays it out in InDesign. This process repeats for every
   revision, every error correction, and every quarterly update.
 
-
   This is the "Manual Work Satisfaction Tax."
-
 
   It is a silent levy on your organization's most valuable resources: time and
   talent. While leadership often views these workflows as the unavoidable cost
@@ -47,7 +44,6 @@ tldr: >-
   knowledge workers spend up to half their time simply creating and preparing
   documents, with a significant portion of that time dedicated to repetitive
   tasks that require no critical thinking [1].
-
 
   Despite the acceleration of digital transformation in other sectors, a
   surprising number of organizations—some estimates suggest nearly 97%—still
@@ -68,8 +64,11 @@ related_posts:
   - slug: hidden-cost-inconsistent-publication-design
     title: The Hidden Tax of Inconsistent Publication Design
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

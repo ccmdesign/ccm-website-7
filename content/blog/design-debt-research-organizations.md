@@ -32,20 +32,17 @@ tldr: >-
   building" to modular design systems to reclaim velocity and ensure AI
   readiness.
 
-
   You have likely experienced the panic of the eleventh hour. A major policy
   report is due for release. The research is rigorous, the data is
   groundbreaking, and the analysis is sharp. Yet, the document itself is a mess
   of broken formatting. Graphs pasted from Excel are pixelated, headers are
   inconsistent across chapters, and the bibliography styling has collapsed.
 
-
   Your team spends the final 48 hours not refining the argument, but acting as
   manual typesetters—fighting with software to make the document look
   professional. This scenario is not a result of incompetence. It is the symptom
   of a structural liability known as [design
   debt](/hidden-cost-inconsistent-publication-design).
-
 
   For research organizations, [think
   tanks](/think-tank-website-undermining-impact), and NGOs, credibility is the
@@ -68,8 +65,11 @@ related_posts:
   - slug: static-pdfs-undermine-research-impact
     title: Why Static PDFs Are Undermining Your Research Impact
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

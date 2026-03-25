@@ -34,13 +34,11 @@ tldr: >-
   translation layer between expert data and public understanding—a critical step
   that researchers can no longer afford to overlook.
 
-
   The volume of scientific research produced today is staggering, yet the
   ability to consume and understand it has not kept pace. Researchers often
   suffer from the "curse of knowledge"—the cognitive bias that makes it
   difficult to imagine what it is like for others not to know what you know. You
   live in the nuances of your dataset; your audience does not.
-
 
   Data visualization serves as the translation layer between these two worlds.
   It converts the foreign language of raw statistics into the universal language
@@ -64,8 +62,11 @@ related_posts:
   - slug: static-pdfs-undermining-research-impact
     title: Why Static PDFs Are Undermining Your Research Impact
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

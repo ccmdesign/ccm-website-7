@@ -28,8 +28,11 @@ tldr: >-
   SEC compliance costs average $2.3-4.8 million annually, but creative digital
   approaches deliver 25-35% cost reduction with proven ROI frameworks for
   high-stakes communications teams.
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

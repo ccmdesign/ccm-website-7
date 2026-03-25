@@ -35,13 +35,11 @@ tldr: >-
   successful cases, the UX work will be a continuous incremental exercise
   feeding on user data and applying it to the product as a whole.
 
-
   As a rule of thumb, if your product is just starting or you don't have a lot
   of data from your users, the UX work will rely heavily on best practices and
   competition analysis, which is totally fine. This approach will render great
   results, shouldn't be too expensive, and, if coupled with good UI and
   Branding, you will have a pretty good product from the start.
-
 
   If your product is a few years old and you are just starting with this, you
   have two options, depending on how much data you collected from your users and
@@ -50,8 +48,11 @@ tldr: >-
   you have the data and the budget, hire a good UX firm/team and let them cook.
   I'm sure you will be surprised.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

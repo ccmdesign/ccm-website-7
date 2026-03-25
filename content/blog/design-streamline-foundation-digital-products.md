@@ -38,8 +38,11 @@ tldr: >-
   enhance credibility, make organizations more recognizable, and help messages
   resonate more deeply with wider audiences.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

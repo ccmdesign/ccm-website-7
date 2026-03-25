@@ -33,14 +33,12 @@ tldr: >-
   from administrative formatting to strategic oversight and integrity
   management.
 
-
   In the span of twelve months, the standard operating procedure for research
   has fundamentally changed. While many organizations debated the theoretical
   ethics of artificial intelligence, the researchers they serve moved forward.
   Recent data indicates that AI adoption among researchers surged to 84% in 2025
   [1]. This is not a gradual drift; it is a seismic shift in how knowledge is
   generated, synthesized, and consumed.
-
 
   For publishing executives and research directors, this acceleration creates a
   dangerous tension. While the "speed of science" accelerates, many publishing
@@ -66,8 +64,11 @@ related_posts:
   - slug: design-debt-research-organizations
     title: 'Design Debt in Research Organizations: The Cost of ''We''ll Fix It Later'''
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

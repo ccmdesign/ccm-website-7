@@ -35,7 +35,6 @@ tldr: >-
   ensures research is machine-readable and inclusive, while preserving PDFs
   solely for archival printing.
 
-
   For over three decades, the Portable Document Format (PDF) has served as the
   undisputed currency of academic knowledge. Created to ensure that a document
   looked exactly the same on a Windows PC, a Mac, or a laser printer, the PDF
@@ -43,13 +42,11 @@ tldr: >-
   scientific community to transition from physical journals to digital
   distribution without sacrificing the visual fidelity of the printed page.
 
-
   However, the digital landscape has shifted fundamentally. We have moved from a
   desktop-centric world to one dominated by mobile consumption, algorithmic
   discovery, and assistive technologies. In this modern context, the very
   feature that made the PDF successful—its fixed, immutable layout—has
   transformed from an asset into a liability.
-
 
   For the modern researcher or publisher, relying solely on static PDFs acts as
   a bottleneck for **research impact**. While the format remains useful for the
@@ -60,8 +57,11 @@ tldr: >-
   future-proofing scientific contribution.
 stage: researcher
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

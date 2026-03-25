@@ -29,14 +29,12 @@ tldr: >-
   *   **Cost Transparency:** Clarify per-page rates versus flat fees and
   identify hidden costs like "author's alterations" or file release fees.
 
-
   Select a [publication design
   firm](/evaluate-research-publication-design-partners) is an exercise in risk
   management. Unlike a social media graphic or a landing page, a
   publication—whether an annual report, white paper, or policy guide—is a
   high-stakes document. It often carries legal weight, financial scrutiny, and
   the reputation of your organization's research.
-
 
   If you treat this hire like a standard graphic design procurement, you risk
   receiving a beautiful document that is technically flawed, inaccessible to
@@ -56,8 +54,11 @@ related_posts:
   - slug: publication-design-vs-marketing-design
     title: 'Publication Design vs. Marketing Design: The Hidden Differences'
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

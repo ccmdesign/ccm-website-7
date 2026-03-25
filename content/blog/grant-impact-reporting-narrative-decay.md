@@ -31,13 +31,11 @@ tldr: >-
   before the deadline can rescue disappearing content and contextualize
   financial data.
 
-
   The final report is often the only enduring artifact of a grant-funded
   project. Yet, for most organizations, this critical document is produced under
   the worst possible conditions: at the tail end of a funding cycle, when
   resources are depleted, staff are transitioning to new projects, and memories
   of the work have already begun to fade.
-
 
   This structural flaw creates a paradox. The moment you are asked to
   demonstrate the depth of your impact is the moment you are least equipped to
@@ -59,8 +57,11 @@ related_posts:
   - slug: impact-report-activity-trap
     title: The Impact Report That Doesn’t Show Impact
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

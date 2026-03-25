@@ -32,8 +32,11 @@ tldr: >-
   before creating RFPs. Learn how proper discovery phases eliminate up to 80% of
   procurement risks in creative projects.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

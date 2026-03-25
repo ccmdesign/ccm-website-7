@@ -32,7 +32,6 @@ tldr: >-
   accounting for the "Eight Hats of Data Visualization," ensuring that data
   cleaning, analysis, and journalism are scoped alongside design and code.
 
-
   The tension between the open-ended nature of scientific inquiry and the rigid
   constraints of communication budgets is a defining challenge for research
   organizations. You operate in a world where answers emerge slowly and data is
@@ -40,14 +39,12 @@ tldr: >-
   products—microsites, dashboards, and policy hubs—often demand fixed timelines
   and concrete deliverables from day one.
 
-
   For evaluators assessing potential agency partners, understanding how a
   partner navigates this tension is the most reliable predictor of project
   success. A partner who claims they can execute a complex [data
   visualization](/5-signs-research-publications-need-redesign) project without a
   dedicated discovery phase is not being efficient; they are ignoring the
   inherent risks of the work.
-
 
   This guide outlines the methodologies required to scope complex [research
   communication](/interactive-research-reports-trends) projects effectively. It
@@ -66,8 +63,11 @@ related_posts:
   - slug: publication-design-vs-marketing-design
     title: 'Publication Design vs. Marketing Design: The Hidden Differences'
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

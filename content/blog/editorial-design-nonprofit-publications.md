@@ -34,8 +34,11 @@ tldr: >-
   professional donor magnets. Learn proven strategies to elevate credibility and
   maximize impact through strategic visual communication.
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

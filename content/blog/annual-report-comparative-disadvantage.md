@@ -32,12 +32,10 @@ tldr: >-
   - **Strategic Necessity**: Modern design is no longer vanity; it is a
   requirement for competitive viability in the donor marketplace.
 
-
   Nonprofit leaders often view the annual report as a compliance exercise—a
   "yearbook" of activities and a repository for audited financial statements.
   This perspective ignores a fundamental reality of the modern donor journey:
   comparison.
-
 
   Funders, board members, and major donors rarely evaluate organizations in
   isolation. They operate within a comparative framework, often reviewing
@@ -45,7 +43,6 @@ tldr: >-
   releases a polished, digitally native, and data-rich annual report, it does
   not merely elevate their own brand; it actively depreciates the perceived
   value of static, dated reports produced by competitors.
-
 
   This phenomenon is rooted in the **Contrast Effect**. This cognitive bias
   occurs when the perception of a stimulus is altered by the presence of a
@@ -71,8 +68,11 @@ related_posts:
   - slug: static-pdfs-undermine-research-impact
     title: Why Static PDFs Are Undermining Your Research Impact
 published: true
-newsletterSent: true
-linkedinSent: true
+newsletterSentAt: "legacy"
+newsletterPreviewUrl: null
+linkedinDraftedAt: "legacy"
+linkedinPostUrl: null
+linkedinPostedAt: "legacy"
 ---
 
 

@@ -35,11 +35,15 @@ export default defineContentConfig({
           title: z.string()
         })).optional(),
         rawbody: z.string().optional(),
-        // newsletterSent/linkedinSent: true means "already handled" — either
-        // actually sent via the service, or marked true by the initial backfill
-        // to prevent mass-sending old content. See PR #1 for context.
-        newsletterSent: z.boolean().default(false),
-        linkedinSent: z.boolean().default(false)
+        // Distribution timestamps: null = not yet done, "legacy" = migrated from
+        // boolean backfill (PR #1), ISO date string = actually sent with timestamp.
+        newsletterSentAt: z.string().nullable().default(null),
+        newsletterPreviewUrl: z.string().nullable().default(null),
+        linkedinDraftedAt: z.string().nullable().default(null),
+        linkedinPostUrl: z.string().nullable().default(null),
+        linkedinPostedAt: z.string().nullable().default(null),
+        // Marketing content (e.g. linkedin copy from Varro) — passthrough object
+        marketing: z.record(z.unknown()).optional()
       })
     }),
     casestudies: defineCollection({
