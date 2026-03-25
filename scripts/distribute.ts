@@ -25,6 +25,7 @@ dotenv.config({ path: path.resolve(__dirname, '../.env') })
 // Import shared utilities via relative path
 import { resolvePostPath, readPostFrontmatter, updateFrontmatter } from '../server/utils/updateFrontmatter'
 import { sendNewsletter, sendTestNewsletter, draftLinkedInPost, publishLinkedInPost } from '../server/utils/serviceClient'
+import { isNullish } from '../utils/isNullish'
 
 const BLOG_DIR = path.resolve(__dirname, '../content/blog')
 const SITE_URL = process.env.NUXT_PUBLIC_SITE_URL || 'https://ccmdesign.com'
@@ -99,7 +100,7 @@ function printStatus() {
     const liDraft = p.linkedinDraftedAt
     const liPost = p.linkedinPostedAt
     let li: string
-    if (liPost && liPost !== 'null') {
+    if (!isNullish(liPost)) {
       li = liPost === 'legacy' ? 'posted (legacy)' : `posted ${liPost.slice(0, 10)}`
     } else if (liDraft) {
       li = liDraft === 'legacy' ? 'drafted (legacy)' : `drafted ${liDraft.slice(0, 10)}`
@@ -157,7 +158,7 @@ async function sendSingle(
       if (!post.linkedinDraftedAt) {
         return { ok: false, error: `No LinkedIn draft exists — draft first` }
       }
-      if (post.linkedinPostedAt != null && post.linkedinPostedAt !== 'null') {
+      if (!isNullish(post.linkedinPostedAt)) {
         return { ok: true, warning: `Already posted (linkedin), skipping` }
       }
       break
@@ -251,7 +252,7 @@ function getUnsentPosts(action: Action): PostInfo[] {
     case 'draft-linkedin':
       return posts.filter((p) => p.linkedinDraftedAt == null)
     case 'publish-linkedin':
-      return posts.filter((p) => p.linkedinDraftedAt != null && (p.linkedinPostedAt == null || p.linkedinPostedAt === 'null'))
+      return posts.filter((p) => !isNullish(p.linkedinDraftedAt) && isNullish(p.linkedinPostedAt))
     default:
       return []
   }

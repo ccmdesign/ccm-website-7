@@ -1,6 +1,7 @@
 // Nitro auto-imports from server/utils/ — no fragile relative paths needed.
 // resolvePostPath, readPostFrontmatter, updateFrontmatter from server/utils/updateFrontmatter
 // publishLinkedInPost from server/utils/serviceClient
+import { isNullish } from '~/utils/isNullish'
 
 export default defineEventHandler(async (event) => {
   // Block access in production builds
@@ -36,7 +37,7 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 400, statusMessage: 'No LinkedIn draft exists for this post — draft first' })
   }
 
-  if (post.linkedinPostedAt != null && post.linkedinPostedAt !== 'null') {
+  if (!isNullish(post.linkedinPostedAt)) {
     throw createError({ statusCode: 409, statusMessage: 'LinkedIn post already published for this post' })
   }
 

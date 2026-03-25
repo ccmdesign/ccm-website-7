@@ -81,7 +81,7 @@
                   @click.prevent="doAction(post, 'draft-linkedin')"
                 >{{ loading[post.stem + ':draft-linkedin'] ? 'Drafting...' : 'Draft' }}</a>
               </template>
-              <template v-else-if="post.linkedinPostedAt && post.linkedinPostedAt !== 'null'">
+              <template v-else-if="!isNullish(post.linkedinPostedAt)">
                 <span class="status-text">Posted {{ post.linkedinPostedAt === 'legacy' ? '(legacy)' : formatDate(post.linkedinPostedAt) }}</span>
                 <a
                   v-if="post.linkedinPostUrl"
@@ -241,7 +241,19 @@ const actionLabels = {
   'publish-linkedin': 'LinkedIn post',
 }
 
+// Actions that are irreversible and require explicit confirmation before executing
+const destructiveActions = new Set(['send-newsletter', 'publish-linkedin'])
+
 async function doAction(post, action) {
+  // Gate destructive actions behind a confirmation dialog
+  if (destructiveActions.has(action)) {
+    const label = actionLabels[action] || action
+    const confirmed = window.confirm(
+      `Are you sure you want to send "${post.title}" via ${label}? This action cannot be undone.`
+    )
+    if (!confirmed) return
+  }
+
   const key = `${post.stem}:${action}`
   if (loading.value[key]) return
   loading.value[key] = true
@@ -256,38 +268,42 @@ async function doAction(post, action) {
 
     if (res.status === 'sent_but_flag_failed') {
       showToast(res.warning, 'warning', 8000)
-      // Still update local state for draft/publish since the service call succeeded
-      if (action === 'draft-linkedin' && res.warning) {
-        // Extract URL from warning if possible — best effort
-      }
+      // Service call succeeded but frontmatter update failed —
+      // update local state so the UI reflects reality and prevents re-sends.
+      updateLocalState(post, action, res)
     } else {
-      // Update local reactive state immediately
-      switch (action) {
-        case 'test-newsletter':
-          showToast(`Test email sent for "${post.title}"`, 'success')
-          break
-        case 'send-newsletter':
-          post.newsletterSentAt = res.newsletterSentAt
-          post.newsletterPreviewUrl = res.newsletterPreviewUrl
-          showToast(`Newsletter sent for "${post.title}"`, 'success')
-          break
-        case 'draft-linkedin':
-          post.linkedinDraftedAt = res.linkedinDraftedAt
-          post.linkedinPostUrl = res.linkedinPostUrl
-          showToast(`LinkedIn draft created for "${post.title}"`, 'success')
-          break
-        case 'publish-linkedin':
-          post.linkedinPostedAt = res.linkedinPostedAt
-          post.linkedinPostUrl = res.linkedinPostUrl
-          showToast(`LinkedIn post published for "${post.title}"`, 'success')
-          break
-      }
+      updateLocalState(post, action, res)
     }
   } catch (err) {
     const message = err?.data?.statusMessage || err?.message || 'Action failed'
     showToast(`Failed: ${message}`, 'error')
   } finally {
     loading.value[key] = false
+  }
+}
+
+/** Apply API response data to local reactive post object and show a toast. */
+function updateLocalState(post, action, res) {
+  const label = actionLabels[action] || action
+  switch (action) {
+    case 'test-newsletter':
+      showToast(`Test email sent for "${post.title}"`, 'success')
+      break
+    case 'send-newsletter':
+      post.newsletterSentAt = res.newsletterSentAt ?? post.newsletterSentAt
+      post.newsletterPreviewUrl = res.newsletterPreviewUrl ?? post.newsletterPreviewUrl
+      showToast(`${label} sent for "${post.title}"`, 'success')
+      break
+    case 'draft-linkedin':
+      post.linkedinDraftedAt = res.linkedinDraftedAt ?? post.linkedinDraftedAt
+      post.linkedinPostUrl = res.linkedinPostUrl ?? post.linkedinPostUrl
+      showToast(`${label} created for "${post.title}"`, 'success')
+      break
+    case 'publish-linkedin':
+      post.linkedinPostedAt = res.linkedinPostedAt ?? post.linkedinPostedAt
+      post.linkedinPostUrl = res.linkedinPostUrl ?? post.linkedinPostUrl
+      showToast(`${label} published for "${post.title}"`, 'success')
+      break
   }
 }
 

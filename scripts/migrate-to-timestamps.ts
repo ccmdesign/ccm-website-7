@@ -1,7 +1,13 @@
 #!/usr/bin/env npx tsx
 /**
- * Migration script: replaces boolean newsletterSent/linkedinSent flags with
- * timestamp and URL fields in blog post frontmatter.
+ * ONE-TIME MIGRATION — COMPLETED 2026-03-25
+ *
+ * This migration has already been run against all 99 blog posts and is
+ * retained for historical reference only.  Do not re-run unless you
+ * are reverting the content directory to a pre-migration state.
+ *
+ * Replaces boolean newsletterSent/linkedinSent flags with timestamp and
+ * URL fields in blog post frontmatter.
  *
  * - Posts with `newsletterSent: true` get `newsletterSentAt: "legacy"`
  * - Posts with `linkedinSent: true` get `linkedinDraftedAt: "legacy"`,
