@@ -3,12 +3,15 @@
  * CLI script for distributing blog posts to newsletter and LinkedIn services.
  *
  * Usage:
- *   npx tsx scripts/distribute.ts --service newsletter --slug <slug>
- *   npx tsx scripts/distribute.ts --service linkedin --slug <slug>
- *   npx tsx scripts/distribute.ts --service newsletter --all-unsent
- *   npx tsx scripts/distribute.ts --service linkedin --all-unsent
+ *   npx tsx scripts/distribute.ts --action test-newsletter --slug <slug>
+ *   npx tsx scripts/distribute.ts --action send-newsletter --slug <slug>
+ *   npx tsx scripts/distribute.ts --action draft-linkedin --slug <slug>
+ *   npx tsx scripts/distribute.ts --action publish-linkedin --slug <slug>
+ *   npx tsx scripts/distribute.ts --action send-newsletter --all-unsent
+ *   npx tsx scripts/distribute.ts --action draft-linkedin --all-unsent
+ *   npx tsx scripts/distribute.ts --action publish-linkedin --all-unsent
  *   npx tsx scripts/distribute.ts --status
- *   npx tsx scripts/distribute.ts --service newsletter --all-unsent --dry-run
+ *   npx tsx scripts/distribute.ts --action send-newsletter --all-unsent --dry-run
  */
 
 import fs from 'node:fs'
@@ -21,7 +24,7 @@ dotenv.config({ path: path.resolve(__dirname, '../.env') })
 
 // Import shared utilities via relative path
 import { resolvePostPath, readPostFrontmatter, updateFrontmatter } from '../server/utils/updateFrontmatter'
-import { sendNewsletter, sendLinkedInPost } from '../server/utils/serviceClient'
+import { sendNewsletter, sendTestNewsletter, draftLinkedInPost, publishLinkedInPost } from '../server/utils/serviceClient'
 
 const BLOG_DIR = path.resolve(__dirname, '../content/blog')
 const SITE_URL = process.env.NUXT_PUBLIC_SITE_URL || 'https://ccmdesign.com'
@@ -29,14 +32,20 @@ const SITE_URL = process.env.NUXT_PUBLIC_SITE_URL || 'https://ccmdesign.com'
 // Throttle delay between batch sends (ms) — respects Resend 2 req/sec limit
 const SEND_DELAY_MS = 600
 
+type Action = 'test-newsletter' | 'send-newsletter' | 'draft-linkedin' | 'publish-linkedin'
+
 interface PostInfo {
   slug: string
   title: string
   excerpt: string
   date: string
   published: boolean
-  newsletterSent: boolean
-  linkedinSent: boolean
+  newsletterSentAt: string | null
+  newsletterPreviewUrl: string | null
+  linkedinDraftedAt: string | null
+  linkedinPostUrl: string | null
+  linkedinPostedAt: string | null
+  marketing?: Record<string, unknown>
   content: string
 }
 
@@ -56,8 +65,12 @@ function getAllPosts(): PostInfo[] {
       excerpt: (parsed.data.excerpt as string) || '',
       date: (parsed.data.date as string) || '',
       published: parsed.data.published !== false,
-      newsletterSent: parsed.data.newsletterSent === true,
-      linkedinSent: parsed.data.linkedinSent === true,
+      newsletterSentAt: parsed.data.newsletterSentAt ?? null,
+      newsletterPreviewUrl: parsed.data.newsletterPreviewUrl ?? null,
+      linkedinDraftedAt: parsed.data.linkedinDraftedAt ?? null,
+      linkedinPostUrl: parsed.data.linkedinPostUrl ?? null,
+      linkedinPostedAt: parsed.data.linkedinPostedAt ?? null,
+      marketing: parsed.data.marketing as Record<string, unknown> | undefined,
       content: parsed.content,
     })
   }
@@ -73,27 +86,38 @@ function printStatus() {
   console.log(
     'Title'.padEnd(maxTitle) + '  ' +
     'Date'.padEnd(12) + '  ' +
-    'Newsletter'.padEnd(12) + '  ' +
+    'Newsletter'.padEnd(14) + '  ' +
     'LinkedIn'
   )
-  console.log('-'.repeat(maxTitle + 40))
+  console.log('-'.repeat(maxTitle + 44))
 
   for (const p of posts) {
     const title = p.title.length > maxTitle ? p.title.slice(0, maxTitle - 3) + '...' : p.title
-    const nl = p.newsletterSent ? 'Sent' : 'UNSENT'
-    const li = p.linkedinSent ? 'Sent' : 'UNSENT'
+    const nl = p.newsletterSentAt
+      ? (p.newsletterSentAt === 'legacy' ? 'legacy' : p.newsletterSentAt.slice(0, 10))
+      : 'UNSENT'
+    const liDraft = p.linkedinDraftedAt
+    const liPost = p.linkedinPostedAt
+    let li: string
+    if (liPost && liPost !== 'null') {
+      li = liPost === 'legacy' ? 'posted (legacy)' : `posted ${liPost.slice(0, 10)}`
+    } else if (liDraft) {
+      li = liDraft === 'legacy' ? 'drafted (legacy)' : `drafted ${liDraft.slice(0, 10)}`
+    } else {
+      li = 'UNSENT'
+    }
     console.log(
       title.padEnd(maxTitle) + '  ' +
       (p.date || 'n/a').padEnd(12) + '  ' +
-      nl.padEnd(12) + '  ' +
+      nl.padEnd(14) + '  ' +
       li
     )
   }
 
-  const unsentNl = posts.filter((p) => !p.newsletterSent && p.published).length
-  const unsentLi = posts.filter((p) => !p.linkedinSent && p.published).length
+  const unsentNl = posts.filter((p) => !p.newsletterSentAt && p.published).length
+  const unsentLi = posts.filter((p) => !p.linkedinPostedAt && p.published).length
   console.log('')
-  console.log(`Unsent newsletters: ${unsentNl} | Unsent LinkedIn: ${unsentLi} | Total posts: ${posts.length}`)
+  console.log(`Unsent newsletters: ${unsentNl} | Unsent LinkedIn (not posted): ${unsentLi} | Total posts: ${posts.length}`)
 }
 
 function sleep(ms: number): Promise<void> {
@@ -102,7 +126,7 @@ function sleep(ms: number): Promise<void> {
 
 async function sendSingle(
   slug: string,
-  service: 'newsletter' | 'linkedin',
+  action: Action,
   dryRun: boolean
 ): Promise<{ ok: boolean; error?: string; warning?: string }> {
   const filePath = resolvePostPath(slug)
@@ -114,13 +138,33 @@ async function sendSingle(
     return { ok: false, error: `Post not found: ${slug}` }
   }
 
-  const flagKey = service === 'newsletter' ? 'newsletterSent' : 'linkedinSent'
-  if (post[flagKey] === true) {
-    return { ok: true, warning: `Already sent (${service}), skipping` }
+  // Check guards per action
+  switch (action) {
+    case 'test-newsletter':
+      // No guard — test can be sent anytime
+      break
+    case 'send-newsletter':
+      if (post.newsletterSentAt != null) {
+        return { ok: true, warning: `Already sent (newsletter), skipping` }
+      }
+      break
+    case 'draft-linkedin':
+      if (post.linkedinDraftedAt != null) {
+        return { ok: true, warning: `Already drafted (linkedin), skipping` }
+      }
+      break
+    case 'publish-linkedin':
+      if (!post.linkedinDraftedAt) {
+        return { ok: false, error: `No LinkedIn draft exists — draft first` }
+      }
+      if (post.linkedinPostedAt != null && post.linkedinPostedAt !== 'null') {
+        return { ok: true, warning: `Already posted (linkedin), skipping` }
+      }
+      break
   }
 
   if (dryRun) {
-    console.log(`  [DRY RUN] Would send ${service} for: ${post.title || slug}`)
+    console.log(`  [DRY RUN] Would ${action} for: ${post.title || slug}`)
     return { ok: true }
   }
 
@@ -131,26 +175,89 @@ async function sendSingle(
     body: post.content,
   }
 
-  const result = service === 'newsletter'
-    ? await sendNewsletter(payload)
-    : await sendLinkedInPost(payload)
+  let result: { ok: boolean; error?: string; previewUrl?: string; postUrl?: string }
 
-  if (!result.ok) {
-    return { ok: false, error: result.error }
-  }
-
-  // Update frontmatter
-  try {
-    await updateFrontmatter(filePath, { [flagKey]: true })
-  } catch (err) {
-    return {
-      ok: true,
-      warning: `${service} sent successfully, but frontmatter update failed: ${(err as Error).message}. Please manually set ${flagKey}: true in ${slug}.md`,
+  switch (action) {
+    case 'test-newsletter': {
+      const adminEmail = process.env.ADMIN_EMAIL
+      if (!adminEmail) {
+        return { ok: false, error: 'ADMIN_EMAIL environment variable is not set' }
+      }
+      result = await sendTestNewsletter(payload, adminEmail)
+      if (!result.ok) return { ok: false, error: result.error }
+      // Test send does NOT update frontmatter
+      return { ok: true }
+    }
+    case 'send-newsletter': {
+      result = await sendNewsletter(payload)
+      if (!result.ok) return { ok: false, error: result.error }
+      try {
+        const updates: Record<string, unknown> = { newsletterSentAt: new Date().toISOString() }
+        if (result.previewUrl) updates.newsletterPreviewUrl = result.previewUrl
+        await updateFrontmatter(filePath, updates)
+      } catch (err) {
+        return {
+          ok: true,
+          warning: `Newsletter sent successfully, but frontmatter update failed: ${(err as Error).message}. Please manually set newsletterSentAt in ${slug}.md`,
+        }
+      }
+      return { ok: true }
+    }
+    case 'draft-linkedin': {
+      const marketingContent = (post.marketing as Record<string, unknown>)?.linkedin as Record<string, unknown> | undefined
+      result = await draftLinkedInPost(payload, marketingContent)
+      if (!result.ok) return { ok: false, error: result.error }
+      try {
+        const updates: Record<string, unknown> = { linkedinDraftedAt: new Date().toISOString() }
+        if (result.postUrl) updates.linkedinPostUrl = result.postUrl
+        await updateFrontmatter(filePath, updates)
+      } catch (err) {
+        return {
+          ok: true,
+          warning: `LinkedIn draft created${result.postUrl ? ` (${result.postUrl})` : ''}, but frontmatter update failed: ${(err as Error).message}. Please manually set linkedinDraftedAt${result.postUrl ? ` and linkedinPostUrl` : ''} in ${slug}.md`,
+        }
+      }
+      return { ok: true }
+    }
+    case 'publish-linkedin': {
+      const existingPostUrl = post.linkedinPostUrl as string
+      if (!existingPostUrl) {
+        return { ok: false, error: 'No LinkedIn post URL found — cannot publish without a draft URL' }
+      }
+      result = await publishLinkedInPost(existingPostUrl)
+      if (!result.ok) return { ok: false, error: result.error }
+      try {
+        const updates: Record<string, unknown> = { linkedinPostedAt: new Date().toISOString() }
+        if (result.postUrl) updates.linkedinPostUrl = result.postUrl
+        await updateFrontmatter(filePath, updates)
+      } catch (err) {
+        return {
+          ok: true,
+          warning: `LinkedIn post published, but frontmatter update failed: ${(err as Error).message}. Please manually set linkedinPostedAt in ${slug}.md`,
+        }
+      }
+      return { ok: true }
     }
   }
-
-  return { ok: true }
 }
+
+function getUnsentPosts(action: Action): PostInfo[] {
+  const posts = getAllPosts().filter((p) => p.published)
+  switch (action) {
+    case 'test-newsletter':
+      return posts // test can target any post
+    case 'send-newsletter':
+      return posts.filter((p) => p.newsletterSentAt == null)
+    case 'draft-linkedin':
+      return posts.filter((p) => p.linkedinDraftedAt == null)
+    case 'publish-linkedin':
+      return posts.filter((p) => p.linkedinDraftedAt != null && (p.linkedinPostedAt == null || p.linkedinPostedAt === 'null'))
+    default:
+      return []
+  }
+}
+
+const VALID_ACTIONS: Action[] = ['test-newsletter', 'send-newsletter', 'draft-linkedin', 'publish-linkedin']
 
 async function main() {
   const args = process.argv.slice(2)
@@ -160,21 +267,23 @@ async function main() {
     process.exit(0)
   }
 
-  const serviceIdx = args.indexOf('--service')
+  const actionIdx = args.indexOf('--action')
   const slugIdx = args.indexOf('--slug')
   const allUnsent = args.includes('--all-unsent')
   const dryRun = args.includes('--dry-run')
 
-  if (serviceIdx === -1 || !args[serviceIdx + 1]) {
-    console.error('Usage: npx tsx scripts/distribute.ts --service <newsletter|linkedin> --slug <slug>')
-    console.error('       npx tsx scripts/distribute.ts --service <newsletter|linkedin> --all-unsent [--dry-run]')
+  if (actionIdx === -1 || !args[actionIdx + 1]) {
+    console.error('Usage: npx tsx scripts/distribute.ts --action <action> --slug <slug>')
+    console.error('       npx tsx scripts/distribute.ts --action <action> --all-unsent [--dry-run]')
     console.error('       npx tsx scripts/distribute.ts --status')
+    console.error('')
+    console.error('Actions: test-newsletter, send-newsletter, draft-linkedin, publish-linkedin')
     process.exit(1)
   }
 
-  const service = args[serviceIdx + 1] as 'newsletter' | 'linkedin'
-  if (service !== 'newsletter' && service !== 'linkedin') {
-    console.error(`Invalid service: ${service}. Must be "newsletter" or "linkedin".`)
+  const action = args[actionIdx + 1] as Action
+  if (!VALID_ACTIONS.includes(action)) {
+    console.error(`Invalid action: ${action}. Must be one of: ${VALID_ACTIONS.join(', ')}`)
     process.exit(1)
   }
 
@@ -185,8 +294,8 @@ async function main() {
       process.exit(1)
     }
 
-    console.log(`Sending ${service} for: ${slug}${dryRun ? ' (dry run)' : ''}`)
-    const result = await sendSingle(slug, service, dryRun)
+    console.log(`Running ${action} for: ${slug}${dryRun ? ' (dry run)' : ''}`)
+    const result = await sendSingle(slug, action, dryRun)
 
     if (result.warning) console.warn(`  WARNING: ${result.warning}`)
     if (!result.ok) {
@@ -198,15 +307,14 @@ async function main() {
   }
 
   if (allUnsent) {
-    const flagKey = service === 'newsletter' ? 'newsletterSent' : 'linkedinSent'
-    const posts = getAllPosts().filter((p) => p.published && !p[flagKey])
+    const posts = getUnsentPosts(action)
 
     if (posts.length === 0) {
-      console.log(`No unsent ${service} posts found.`)
+      console.log(`No eligible posts found for ${action}.`)
       process.exit(0)
     }
 
-    console.log(`Found ${posts.length} unsent ${service} post(s)${dryRun ? ' (dry run)' : ''}:`)
+    console.log(`Found ${posts.length} eligible post(s) for ${action}${dryRun ? ' (dry run)' : ''}:`)
 
     const errors: Array<{ slug: string; error: string }> = []
     const warnings: Array<{ slug: string; warning: string }> = []
@@ -216,7 +324,7 @@ async function main() {
       const post = posts[i]
       console.log(`  [${i + 1}/${posts.length}] ${post.title}`)
 
-      const result = await sendSingle(post.slug, service, dryRun)
+      const result = await sendSingle(post.slug, action, dryRun)
 
       if (result.warning) {
         warnings.push({ slug: post.slug, warning: result.warning })
