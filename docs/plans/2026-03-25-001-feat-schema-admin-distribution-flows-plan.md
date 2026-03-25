@@ -1,7 +1,7 @@
 ---
 title: "feat: Migrate schema to timestamps, redesign admin UI, implement newsletter/LinkedIn flows"
 type: feat
-status: active
+status: completed
 date: 2026-03-25
 deepened: 2026-03-25
 origin: docs/brainstorms/2026-03-24-content-distribution-admin-requirements.md
