@@ -73,10 +73,10 @@ export const handler: Handler = async (event: HandlerEvent) => {
   }
 
   const apiKey = process.env.RESEND_API_KEY
-  const audienceId = process.env.RESEND_AUDIENCE_ID
+  const segmentId = process.env.RESEND_SEGMENT_ID
 
-  if (!apiKey || !audienceId) {
-    console.error('Missing RESEND_API_KEY or RESEND_AUDIENCE_ID env vars')
+  if (!apiKey || !segmentId) {
+    console.error('Missing RESEND_API_KEY or RESEND_SEGMENT_ID env vars')
     return {
       statusCode: 500,
       headers: corsHeaders(origin),
@@ -91,7 +91,7 @@ export const handler: Handler = async (event: HandlerEvent) => {
         Authorization: `Bearer ${apiKey}`,
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ email, audience_id: audienceId }),
+      body: JSON.stringify({ email, segment_id: segmentId }),
     })
 
     if (!res.ok) {
