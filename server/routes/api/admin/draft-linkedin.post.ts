@@ -1,6 +1,6 @@
 // Nitro auto-imports from server/utils/ — no fragile relative paths needed.
 // resolvePostPath, readPostFrontmatter, updateFrontmatter from server/utils/updateFrontmatter
-// sendLinkedInPost from server/utils/serviceClient
+// draftLinkedInPost from server/utils/serviceClient
 
 export default defineEventHandler(async (event) => {
   // Block access in production builds
@@ -32,31 +32,47 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 404, statusMessage: `Post not found: ${slug}` })
   }
 
-  if (post.linkedinSent === true) {
-    throw createError({ statusCode: 409, statusMessage: 'LinkedIn post already sent for this post' })
+  if (post.linkedinDraftedAt != null) {
+    throw createError({ statusCode: 409, statusMessage: 'LinkedIn draft already created for this post' })
   }
 
   const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://ccmdesign.com'
-  const result = await sendLinkedInPost({
-    title: post.title as string,
-    excerpt: post.excerpt as string,
-    url: `${siteUrl}/blog/${slug}`,
-  })
+  const marketingContent = (post.marketing as Record<string, unknown>)?.linkedin as Record<string, unknown> | undefined
+  const result = await draftLinkedInPost(
+    {
+      title: post.title as string,
+      excerpt: post.excerpt as string,
+      url: `${siteUrl}/blog/${slug}`,
+    },
+    marketingContent,
+  )
 
   if (!result.ok) {
     throw createError({ statusCode: 502, statusMessage: result.error })
   }
 
+  const linkedinDraftedAt = new Date().toISOString()
+
   // Service call succeeded — now update frontmatter
   try {
-    await updateFrontmatter(filePath, { linkedinSent: true })
+    const updates: Record<string, unknown> = { linkedinDraftedAt }
+    if (result.postUrl) {
+      updates.linkedinPostUrl = result.postUrl
+    }
+    await updateFrontmatter(filePath, updates)
   } catch (err) {
-    // Critical: LinkedIn post was sent but we failed to update the flag
+    // Critical: LinkedIn draft was created but we failed to update the flag.
+    // Include the post URL so the user can verify the draft exists before retrying.
     return {
       status: 'sent_but_flag_failed',
-      warning: `LinkedIn post was sent successfully, but frontmatter update failed: ${(err as Error).message}. Please manually set linkedinSent: true in ${slug}.md`,
+      warning: `LinkedIn draft was created successfully${result.postUrl ? ` (${result.postUrl})` : ''}, but frontmatter update failed: ${(err as Error).message}. Please manually set linkedinDraftedAt: "${linkedinDraftedAt}"${result.postUrl ? ` and linkedinPostUrl: "${result.postUrl}"` : ''} in ${slug}.md`,
     }
   }
 
-  return { status: 'ok', slug }
+  return {
+    status: 'ok',
+    slug,
+    linkedinDraftedAt,
+    linkedinPostUrl: result.postUrl || null,
+  }
 })

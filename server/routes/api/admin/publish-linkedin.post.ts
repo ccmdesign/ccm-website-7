@@ -1,6 +1,6 @@
 // Nitro auto-imports from server/utils/ — no fragile relative paths needed.
 // resolvePostPath, readPostFrontmatter, updateFrontmatter from server/utils/updateFrontmatter
-// sendNewsletter from server/utils/serviceClient
+// publishLinkedInPost from server/utils/serviceClient
 
 export default defineEventHandler(async (event) => {
   // Block access in production builds
@@ -32,43 +32,45 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 404, statusMessage: `Post not found: ${slug}` })
   }
 
-  if (post.newsletterSentAt != null) {
-    throw createError({ statusCode: 409, statusMessage: 'Newsletter already sent for this post' })
+  if (!post.linkedinDraftedAt) {
+    throw createError({ statusCode: 400, statusMessage: 'No LinkedIn draft exists for this post — draft first' })
   }
 
-  const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://ccmdesign.com'
-  const result = await sendNewsletter({
-    title: post.title as string,
-    excerpt: post.excerpt as string,
-    url: `${siteUrl}/blog/${slug}`,
-    body: post.content,
-  })
+  if (post.linkedinPostedAt != null && post.linkedinPostedAt !== 'null') {
+    throw createError({ statusCode: 409, statusMessage: 'LinkedIn post already published for this post' })
+  }
+
+  const existingPostUrl = post.linkedinPostUrl as string
+  if (!existingPostUrl) {
+    throw createError({ statusCode: 400, statusMessage: 'No LinkedIn post URL found — cannot publish without a draft URL' })
+  }
+
+  const result = await publishLinkedInPost(existingPostUrl)
 
   if (!result.ok) {
     throw createError({ statusCode: 502, statusMessage: result.error })
   }
 
-  const newsletterSentAt = new Date().toISOString()
+  const linkedinPostedAt = new Date().toISOString()
 
   // Service call succeeded — now update frontmatter
   try {
-    const updates: Record<string, unknown> = { newsletterSentAt }
-    if (result.previewUrl) {
-      updates.newsletterPreviewUrl = result.previewUrl
+    const updates: Record<string, unknown> = { linkedinPostedAt }
+    if (result.postUrl) {
+      updates.linkedinPostUrl = result.postUrl
     }
     await updateFrontmatter(filePath, updates)
   } catch (err) {
-    // Critical: newsletter was sent but we failed to update the flag
     return {
       status: 'sent_but_flag_failed',
-      warning: `Newsletter was sent successfully, but frontmatter update failed: ${(err as Error).message}. Please manually set newsletterSentAt: "${newsletterSentAt}" in ${slug}.md`,
+      warning: `LinkedIn post was published successfully, but frontmatter update failed: ${(err as Error).message}. Please manually set linkedinPostedAt: "${linkedinPostedAt}" in ${slug}.md`,
     }
   }
 
   return {
     status: 'ok',
     slug,
-    newsletterSentAt,
-    newsletterPreviewUrl: result.previewUrl || null,
+    linkedinPostedAt,
+    linkedinPostUrl: result.postUrl || existingPostUrl,
   }
 })
