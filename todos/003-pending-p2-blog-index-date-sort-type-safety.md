@@ -1,5 +1,5 @@
 ---
-status: pending
+status: resolved
 priority: p2
 issue_id: "CCM-119"
 tags: [code-review, quality, architecture]
