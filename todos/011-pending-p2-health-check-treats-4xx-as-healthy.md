@@ -1,5 +1,5 @@
 ---
-status: pending
+status: resolved
 priority: p2
 issue_id: "011"
 tags: [code-review, quality, admin]
@@ -85,3 +85,12 @@ This is misleading: if the newsletter service returns 403 because the API key is
 - Identified overly permissive health check condition during PR #2 review
 - Analyzed how HEAD requests interact with POST-only service endpoints
 - Assessed as P2 because misleading health status undermines the feature's purpose
+
+### 2026-03-24 - Resolved
+
+**By:** Claude Code (resolve-todo-parallel)
+
+**Actions:**
+- Replaced `res.ok || res.status < 500` with `res.ok || res.status === 405`
+- 401/403/404 responses now correctly report as unhealthy (configuration errors)
+- 405 (Method Not Allowed) is accepted as healthy since HEAD on POST-only endpoints returns this

@@ -1,5 +1,5 @@
 ---
-status: pending
+status: resolved
 priority: p2
 issue_id: "010"
 tags: [code-review, security, consistency]
@@ -88,3 +88,12 @@ While the health endpoint is dev-only (`import.meta.dev` guard) and does not rev
 - Identified missing auth check on health endpoint during PR #2 review
 - Compared against send-newsletter and send-linkedin patterns
 - Assessed as P2 due to dev-only scope but auth inconsistency
+
+### 2026-03-24 - Resolved
+
+**By:** Claude Code (resolve-todo-parallel)
+
+**Actions:**
+- Added ADMIN_API_SECRET check to health endpoint, matching the pattern used in send-newsletter and send-linkedin
+- Handler now takes `event` parameter and checks x-admin-secret header when secret is configured
+- Returns 403 Forbidden when secret is configured but not provided

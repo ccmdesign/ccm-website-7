@@ -1,5 +1,5 @@
 ---
-status: pending
+status: resolved
 priority: p3
 issue_id: "012"
 tags: [code-review, quality, refactoring]
@@ -62,3 +62,13 @@ The health endpoint contains two nearly identical code blocks for checking newsl
 **Actions:**
 - Identified code duplication during PR #2 review
 - Assessed as P3 since it's a dev-only endpoint and the duplication is manageable
+
+### 2026-03-24 - Resolved
+
+**By:** Claude Code (resolve-todo-parallel)
+
+**Actions:**
+- Extracted `checkServiceConnectivity(envKey)` helper function for connectivity probes
+- Extracted `checkEnvVar(envKey)` helper function for env var presence checks
+- Newsletter and LinkedIn checks are now single function calls each
+- Adding a new service check requires only one line

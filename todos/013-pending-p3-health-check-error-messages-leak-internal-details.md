@@ -1,5 +1,5 @@
 ---
-status: pending
+status: resolved
 priority: p3
 issue_id: "013"
 tags: [code-review, security, admin]
@@ -62,3 +62,12 @@ This is low severity because the endpoint is behind an `import.meta.dev` guard, 
 **Actions:**
 - Noted raw error message exposure during PR #2 review
 - Assessed as P3 given dev-only scope and diagnostic value of detailed errors
+
+### 2026-03-24 - Resolved
+
+**By:** Claude Code (resolve-todo-parallel)
+
+**Actions:**
+- Decision: accepted as-is per Option 1 — detailed errors are intentional for dev diagnostics
+- Added file-level comment documenting this decision and rationale
+- Endpoint is behind import.meta.dev guard and tree-shaken from production builds
