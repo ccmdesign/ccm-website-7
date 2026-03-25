@@ -1,6 +1,6 @@
 # CCM-116: Service Integration — Implementation Plan
 
-deepened: 2026-03-24
+deepened: 2026-03-24 (second pass)
 
 ## Overview
 
@@ -47,6 +47,8 @@ Run once, verify with `git diff`, commit.
 - The backfill script must be idempotent — running it twice should not corrupt files that already have the flags
 - Verify that the YAML serializer preserves existing frontmatter key ordering and does not re-quote strings unnecessarily. Use a library like `gray-matter` that round-trips frontmatter cleanly rather than a naive regex approach
 
+**Serialization consistency warning:** The backfill script uses `matter.stringify()` to write files back, while `server/utils/updateFrontmatter.ts` uses a regex-based patching approach (added during code review to fix noisy diffs — see todo-006). This means backfilled files will have gray-matter's YAML formatting, while subsequent flag updates will use regex patching. The two approaches produce different formatting for the same file. The backfill is run once and committed, so this is acceptable, but the divergence should be documented. If the backfill is ever re-run after manual edits, it will re-normalize formatting on all touched files
+
 ### 1c. Add `.env.example`
 
 Create `.env.example` with:
@@ -59,23 +61,7 @@ RESEND_API_KEY=
 RESEND_AUDIENCE_ID=
 ```
 
-Update `nuxt.config.ts` `runtimeConfig` to expose non-secret service URLs:
-
-```ts
-runtimeConfig: {
-  // Private (server-only in dev, not available in static build)
-  linkedinAccessToken: '',
-  resendApiKey: '',
-  resendAudienceId: '',
-  public: {
-    // ...existing config...
-    linkedinServiceUrl: 'http://localhost:8001',
-    newsletterServiceUrl: 'http://localhost:3100',
-  }
-}
-```
-
-Note: Since the site is SSG, `runtimeConfig` private keys are only available in `server/` routes during `nuxt dev`. This is fine because the admin features are dev-only.
+**Decision on runtimeConfig (resolved during implementation):** The original plan proposed adding service URLs and secrets to `nuxt.config.ts` `runtimeConfig`. This was rejected because `serviceClient.ts` is shared between Nitro server routes and the CLI script (`scripts/distribute.ts`). The CLI runs outside Nuxt and cannot use `useRuntimeConfig()`. Instead, `process.env` is the single source of truth for all service configuration, and the duplicate `runtimeConfig` entries were removed from `nuxt.config.ts`. See todo-003 for rationale.
 
 ---
 
@@ -408,6 +394,23 @@ When using `--all-unsent`, the script iterates over all posts with `newsletterSe
 
 ---
 
+## System-Wide Impact
+
+### Production surface changes
+- **Netlify Function (`subscribe.ts`)** — New public endpoint. This is the only production-facing change. It introduces a dependency on Resend's API availability for subscriber signups. If Resend is down, signups fail silently (the user sees "Subscription failed. Please try again later.").
+- **`ccmCtaSection.vue` and `ctaSignup.vue`** — Both components now use the `useNewsletterSubscribe` composable. The composable adds a `loading` state that the original Mailchimp JSONP pattern did not have. Verify that the scramble animation in `ccmCtaSection.vue` still works correctly with the async/await flow.
+- **RSS feed (`server/routes/feed.xml.ts`)** — The new `newsletterSent` / `linkedinSent` frontmatter fields are added to all blog posts. The RSS feed route reads blog content; verify it does not expose these internal distribution flags in the feed output.
+
+### Dev-only surface changes
+- **Admin page (`pages/admin/index.vue`)** — Uses `queryCollection` directly (not `useAsyncData`), called inside `onMounted`. This is correct for a client-only dev page but differs from the pattern used elsewhere in the codebase. See todo-004.
+- **Server routes** — The admin server routes use explicit relative imports (`../../../utils/`) rather than Nitro's auto-import from `server/utils/`. Both approaches work, but the relative imports are fragile if the route file structure changes. Nitro auto-imports from `server/utils/` are the idiomatic pattern.
+- **Content database** — The `blog` collection schema now includes `newsletterSent` and `linkedinSent`. Nuxt Content's SQLite database is rebuilt on dev server start. If schema validation fails for any post (e.g., a malformed frontmatter value), it could block the entire blog collection from loading.
+
+### Cross-cutting concerns
+- **Frontmatter is now a write target, not just read** — Before this integration, frontmatter was author-written and read-only at runtime. The admin routes and CLI now programmatically modify `.md` files. This introduces a new class of potential issues: write conflicts if multiple tools edit the same file, formatting drift, and the possibility of corrupting a post if the regex patching fails on unexpected YAML structures.
+
+---
+
 ## Risks & Mitigations
 
 | Risk | Severity | Mitigation |
@@ -419,6 +422,10 @@ When using `--all-unsent`, the script iterates over all posts with `newsletterSe
 | Concurrent frontmatter writes clobber each other | Low | Serialize writes per slug or re-read before write |
 | Resend API rate limit hit during batch CLI sends | Medium | Add inter-request delay; respect `retry-after` header; report partial results |
 | Resend contacts API endpoint URL may differ from plan | Low | Verify endpoint shape during implementation; current Resend docs show body-based `audienceId` |
+| `gray-matter` is a devDependency but used in server runtime code | Medium | `gray-matter` is imported in `server/utils/updateFrontmatter.ts` (for `readPostFrontmatter`) and `scripts/distribute.ts`. Nitro bundles server utils at build time, so the devDependency classification works for `nuxt generate`. However, during `nuxt dev`, Nitro resolves it from `node_modules` — if `gray-matter` were missing at runtime, dev would fail. The current `devDependencies` placement is correct for this project's static-only deployment, but moving it to `dependencies` would be safer if the deployment model ever changes |
+| Backfill script serialization diverges from updateFrontmatter | Low | The backfill uses `matter.stringify` (full re-serialization) while all subsequent updates use regex patching. This is acceptable since the backfill runs once, but re-running it after manual edits will re-normalize formatting. Document this divergence |
+| External services unavailable during development | Medium | Both `serviceClient.ts` functions throw when env vars are missing (`getEnv` throws) and return structured errors when services are unreachable. However, there is no graceful degradation in the admin UI when services are not running — the user sees a generic error toast. Consider adding a health-check or connection status indicator to the admin page |
+| Admin page `queryCollection` depends on Nuxt Content SQLite database | Low | The admin page calls `queryCollection('blog')` directly in `onMounted`. This works in dev because Nuxt Content's SQLite database is populated. If the content database is empty or corrupted (e.g., after a failed build), the admin page will show "No posts to display" with no diagnostic information. The error handling catches the exception but the toast message is generic |
 
 ---
 
@@ -454,6 +461,24 @@ When using `--all-unsent`, the script iterates over all posts with `newsletterSe
 
 ---
 
+## Key Technical Decisions
+
+These decisions were made during planning and implementation. They are recorded here for traceability.
+
+1. **`process.env` over `useRuntimeConfig()`** — The shared `serviceClient.ts` module is imported by both Nitro server routes and the standalone CLI script. Since the CLI runs outside Nuxt's runtime, `useRuntimeConfig()` is unavailable there. Rather than maintaining two config pathways, `process.env` is the single source of truth. The tradeoff is losing Nuxt's environment-aware config layering, but this project deploys as a static site where server-side config is dev-only. See todo-003.
+
+2. **Regex-based frontmatter patching over `gray-matter` stringify** — `updateFrontmatter.ts` uses regex to find and replace individual YAML keys rather than parsing and re-serializing. This preserves original formatting and avoids noisy diffs when only one boolean flag changes. The tradeoff is fragility with complex YAML values (nested objects, multi-line strings), but the current use case is limited to boolean flags. See todo-006.
+
+3. **Per-file mutex for concurrent write safety** — The `updateFrontmatter.ts` utility uses an in-memory Promise-based lock map keyed by file path. This prevents the concurrent newsletter+LinkedIn send race condition (clicking both buttons simultaneously). The lock is process-scoped, which is sufficient because the admin routes only run in a single `nuxt dev` process.
+
+4. **`import.meta.dev` over `process.env.NODE_ENV` for production guards** — The admin page and server routes use `import.meta.dev`, which Vite statically replaces at build time. This means the entire admin code path is tree-shaken in production builds, unlike `process.env.NODE_ENV` which is a runtime check. The original plan proposed `process.env.NODE_ENV`; the implementation correctly uses the stronger `import.meta.dev` guard. See todo-001.
+
+5. **Netlify Function for subscribe vs. newsletter service** — The deployed static site cannot reach `localhost:3100`. Rather than deploying the newsletter service as a public endpoint, the subscribe function calls the Resend API directly. This keeps the architecture simpler (no additional service to deploy/monitor) at the cost of coupling the function to Resend's specific API shape.
+
+6. **Service API endpoint paths (`/send` and `/post`) are assumed, not verified** — Open Question #6 flags this as a blocking dependency. The implementation hardcodes `${serviceUrl}/send` for newsletter and `${serviceUrl}/post` for LinkedIn. These paths are assumptions — the actual service contracts have not been documented or verified. This is the highest-risk technical assumption in the plan.
+
+---
+
 ## Open Questions
 
 1. **LinkedIn teaser content format** — Should we add a `linkedinTeaser` frontmatter field, or auto-generate from title + excerpt? The spec says TBD. Recommendation: start with auto-generated (title + excerpt + URL) and add an optional `linkedinTeaser` field for overrides.
@@ -468,8 +493,16 @@ When using `--all-unsent`, the script iterates over all posts with `newsletterSe
 
 6. **LinkedIn and Newsletter service API contracts** — The plan assumes REST POST endpoints. The implementer needs to confirm the exact request/response shapes for both services (`:8001` and `:3100`). **This is a blocking dependency for Phase 3 and Phase 4.** Before implementation begins, the service contracts should be documented or the services should expose an OpenAPI/Swagger spec. Without this, the `serviceClient.ts` utility cannot be written correctly.
 
-### Resolved During Deepening
+### Resolved During Planning & Implementation
 
-7. **Utility file placement** — Resolved: `updateFrontmatter.ts` and `serviceClient.ts` must go in `server/utils/`, not `utils/`, to avoid client-side bundling of Node.js APIs. The CLI script imports them directly via relative path.
+7. **Utility file placement** — Resolved: `updateFrontmatter.ts` and `serviceClient.ts` must go in `server/utils/`, not `utils/`, to avoid client-side bundling of Node.js APIs. The CLI script imports them directly via relative path. See todo-007.
 
-8. **Admin page in production build** — Resolved: The `process.env.NODE_ENV` guard alone is insufficient. The route must be excluded from prerendering via `nitro.prerender.ignore` or `routeRules` in `nuxt.config.ts`.
+8. **Admin page in production build** — Resolved: The `process.env.NODE_ENV` guard alone is insufficient. The route must be excluded from prerendering via `nitro.prerender.ignore` or `routeRules` in `nuxt.config.ts`. Implementation uses both `routeRules` and `nitro.prerender.ignore`, plus `import.meta.dev` guards.
+
+9. **Resend API endpoint shape** — Resolved during implementation: The subscribe function uses `POST https://api.resend.com/contacts` with `audience_id` in the request body, matching Resend's current documented API shape. The original plan's URL-path-based approach was incorrect.
+
+10. **CORS origin validation** — Resolved: The original substring-based check (`origin.includes('localhost')`) was replaced with URL-parsed hostname matching to prevent subdomain spoofing. See todo-005.
+
+11. **runtimeConfig vs process.env** — Resolved: Duplicate `runtimeConfig` entries removed; `process.env` is the single config pathway. See todo-003.
+
+12. **Backfill flag semantics** — Resolved: Boolean `true` means "already handled" (either actually sent or marked during backfill to prevent mass-sending). Documented inline in `content.config.ts` schema comment. See todo-007.

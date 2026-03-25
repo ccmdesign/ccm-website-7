@@ -1,5 +1,6 @@
-import { resolvePostPath, readPostFrontmatter, updateFrontmatter } from '../../../utils/updateFrontmatter'
-import { sendLinkedInPost } from '../../../utils/serviceClient'
+// Nitro auto-imports from server/utils/ — no fragile relative paths needed.
+// resolvePostPath, readPostFrontmatter, updateFrontmatter from server/utils/updateFrontmatter
+// sendLinkedInPost from server/utils/serviceClient
 
 export default defineEventHandler(async (event) => {
   // Block access in production builds
