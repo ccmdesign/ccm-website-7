@@ -1,37 +1,25 @@
 ---
-title: 'AI Video Abstracts at Scale: A Strategic Evaluation Guide'
+title: 'A Strategic Evaluation Guide'
 slug: ai-video-abstracts-at-scale
-excerpt: >-
-  Manual video production cannot meet the volume of modern research publishing.
-  We evaluate the multi-agent AI architectures and workflows that make scaling
-  possible without sacrificing scientific rigor.
-meta_title: 'AI Video Abstracts at Scale: A Strategic Evaluation Guide'
-meta_description: >-
-  Evaluate the ROI and risks of AI-driven video abstracts. We analyze
-  multi-agent architectures and workflows for scaling science communication.
-  Read the guide.
-stage: evaluator
-category: publications
-keywords:
-  - AI video abstracts
-  - science communication
-  - automated video generation
-  - PaperTalker
-  - research impact
-primary_keyword: AI video abstracts
-author: CCM Design
-status: ready
-related_posts:
-  - slug: designing-voice-interfaces-complex-research
-    title: 'Designing Voice Interfaces for Complex Research: A Strategic Guide'
-  - slug: visualizing-ai-uncertainty-methodologies
-    title: 'Visualizing AI Uncertainty: A Guide for Evaluators'
-  - slug: ethical-ai-interface-design-research
-    title: 'Ethical AI Interface Design: A Framework for Research Evaluators'
-  - slug: evaluating-living-review-model
-    title: 'Beyond the PDF: Evaluating the ''Living Review'' Model'
-  - slug: semantic-html-ai-visibility
-    title: 'Semantic HTML for AI: The New Standard for Visibility'
+brow: 'AI Video Abstracts at Scale'
+tagline: ''
+date: '2026-04-30'
+author: CCM Design Team
+categories:
+- publications
+tags: []
+seo_tags:
+- AI video abstracts
+- science communication
+- automated video generation
+- PaperTalker
+- research impact
+excerpt: Manual video production cannot meet the volume of modern research publishing.
+  We evaluate the multi-agent AI architectures and workflows that make scaling possible
+  without sacrificing scientific rigor.
+tldr: Manual video production cannot meet the volume of modern research publishing.
+  We evaluate the multi-agent AI architectures and workflows that make scaling possible
+  without sacrificing scientific rigor.
 ---
 ## TL;DR
 

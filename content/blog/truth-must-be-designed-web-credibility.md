@@ -1,7 +1,7 @@
 ---
-title: 'Truth Must Be Designed: Web Credibility in the Age of Mistrust'
+title: 'Web Credibility in the Age of Mistrust'
 slug: truth-must-be-designed-web-credibility
-brow: publications
+brow: Truth Must Be Designed
 tagline: 'In an age of misinformation, users judge credibility in 50 milliseconds'
 date: '2026-03-08'
 author: CCM Design Team

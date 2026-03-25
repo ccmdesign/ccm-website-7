@@ -1,38 +1,23 @@
 ---
-title: 'Authenticity as a Design Aesthetic: The Premium Signal of Human Imperfection'
+title: 'The Premium Signal of Human Imperfection'
 slug: authenticity-as-design-aesthetic
-excerpt: >-
-  In an era of AI-generated perfection, human imperfection has become a luxury
+brow: 'Authenticity as a Design Aesthetic'
+tagline: ''
+date: '2026-05-07'
+author: CCM Design Team
+categories:
+- design-trends
+tags: []
+seo_tags:
+- authenticity in design
+- authenticity
+- design-trends
+- trust
+- human-touch
+excerpt: In an era of AI-generated perfection, human imperfection has become a luxury
   asset. Learn how strategic roughness builds trust for research organizations.
-meta_title: 'Authenticity in Design: Why Imperfection Builds Trust'
-meta_description: >-
-  As AI makes visual perfection a commodity, authenticity in design is becoming
-  a premium signal of trust for research and knowledge organizations.
-category: design-trends
-keywords:
-  - authenticity
-  - design-trends
-  - trust
-  - human-touch
-  - authenticity in design
-primary_keyword: authenticity in design
-author: CCM Design
-status: ready
-related_posts:
-  - slug: automated-data-visualization-risks
-    title: 'Automated Data Visualization: The Hidden Risks of Click-to-Graph'
-  - slug: visualizing-ai-uncertainty-methodologies
-    title: 'Visualizing AI Uncertainty: A Guide for Evaluators'
-  - slug: deepfakes-research-integrity-crisis
-    title: AI Deepfakes and the Research Integrity Crisis
-  - slug: ethical-ai-interface-design-research
-    title: 'Ethical AI Interface Design: A Framework for Research Evaluators'
-  - slug: designing-voice-interfaces-complex-research
-    title: 'Designing Voice Interfaces for Complex Research: A Strategic Guide'
-cta:
-  text: Ready to discuss your project?
-  url: /contact
-  label: Schedule a Consultation
+tldr: In an era of AI-generated perfection, human imperfection has become a luxury
+  asset. Learn how strategic roughness builds trust for research organizations.
 ---
 ## TL;DR
 

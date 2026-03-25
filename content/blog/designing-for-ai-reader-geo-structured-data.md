@@ -1,39 +1,22 @@
 ---
-title: 'Designing for the AI Reader: The Shift to Generative Engine Optimization'
+title: 'The Shift to Generative Engine Optimization'
 slug: designing-for-ai-reader-geo-structured-data
-excerpt: >-
-  Learn how to optimize research for AI agents using structured data, semantic
-  HTML, and llms.txt to ensure your insights survive the shift to the Agentic
-  Web.
-meta_title: 'Designing for the AI Reader: SEO to GEO Strategy'
-meta_description: >-
-  To influence policy, research must be readable by machines. Learn the
-  technical standards of Generative Engine Optimization (GEO) and structured
-  data.
-category: ai-trends
-keywords:
-  - ai
-  - llm
-  - seo
-  - structured-data
-primary_keyword: structured-data
-author: CCM Design
-status: ready
-related_posts:
-  - slug: semantic-html-ai-visibility
-    title: 'Semantic HTML for AI: The New Standard for Visibility'
-  - slug: end-of-executive-summary-ai-content
-    title: 'The End of the Executive Summary: Designing for AI Readers'
-  - slug: ephemeral-publishing-trends-research
-    title: 'Ephemeral Publishing: Why Research Is Moving Beyond the PDF'
-  - slug: evaluating-living-review-model
-    title: 'Beyond the PDF: Evaluating the ''Living Review'' Model'
-  - slug: deepfakes-research-integrity-crisis
-    title: AI Deepfakes and the Research Integrity Crisis
-cta:
-  text: Ready to discuss your project?
-  url: /contact
-  label: Schedule a Consultation
+brow: 'Designing for the AI Reader'
+tagline: ''
+date: '2026-05-25'
+author: CCM Design Team
+categories:
+- ai-trends
+tags: []
+seo_tags:
+- structured-data
+- ai
+- llm
+- seo
+excerpt: Learn how to optimize research for AI agents using structured data, semantic
+  HTML, and llms.txt to ensure your insights survive the shift to the Agentic Web.
+tldr: Learn how to optimize research for AI agents using structured data, semantic
+  HTML, and llms.txt to ensure your insights survive the shift to the Agentic Web.
 ---
 ## TL;DR
 

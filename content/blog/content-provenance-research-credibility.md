@@ -1,41 +1,24 @@
 ---
-title: >-
-  The Credibility Crisis in Research: Why Content Provenance Is the New Standard
-  for Truth
+title: 'Why Content Provenance Is the New Standard'
+  for Truth'
 slug: content-provenance-research-credibility
-excerpt: >-
-  As deepfakes threaten the integrity of academic research, the industry is
+brow: 'The Credibility Crisis in Research'
+tagline: ''
+date: '2026-05-14'
+author: CCM Design Team
+categories:
+- ai-trends
+tags: []
+seo_tags:
+- content provenance
+- misinformation
+- verification
+- trust
+- security
+excerpt: As deepfakes threaten the integrity of academic research, the industry is
   pivoting from detection to cryptographic content provenance.
-meta_title: 'Content Provenance: The Solution to Research Credibility'
-meta_description: >-
-  Learn how content provenance and C2PA standards are combating the 'Liar's
-  Dividend' and restoring trust in academic research and digital media.
-category: ai-trends
-keywords:
-  - misinformation
-  - verification
-  - trust
-  - security
-primary_keyword: content provenance
-author: CCM Design
-status: ready
-related_posts:
-  - slug: deepfakes-research-integrity-crisis
-    title: AI Deepfakes and the Research Integrity Crisis
-  - slug: ethical-ai-interface-design-research
-    title: 'Ethical AI Interface Design: A Framework for Research Evaluators'
-  - slug: visualizing-ai-uncertainty
-    title: 'Visualizing AI Uncertainty: Designing for Trust in a Probabilistic World'
-  - slug: authenticity-as-design-aesthetic
-    title: >-
-      Authenticity as a Design Aesthetic: The Premium Signal of Human
-      Imperfection
-  - slug: designing-for-ai-reader-geo-structured-data
-    title: 'Designing for the AI Reader: The Shift to Generative Engine Optimization'
-cta:
-  text: Ready to future-proof your publication design?
-  url: /contact
-  label: Schedule a Consultation
+tldr: As deepfakes threaten the integrity of academic research, the industry is pivoting
+  from detection to cryptographic content provenance.
 ---
 ## TL;DR
 

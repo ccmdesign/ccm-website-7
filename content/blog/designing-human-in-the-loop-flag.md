@@ -1,41 +1,22 @@
 ---
-title: 'Designing the ''Human in the Loop'' Flag: The New Standard for Digital Trust'
+title: 'The New Standard for Digital Trust'
 slug: designing-human-in-the-loop-flag
-excerpt: >-
-  Trust in AI systems now requires making human oversight visible. Learn how to
+brow: "Designing the 'Human in the Loop' Flag"
+tagline: ''
+date: '2026-05-28'
+author: CCM Design Team
+categories:
+- design-trends
+tags: []
+seo_tags:
+- human-in-the-loop
+- verification
+- ui
+- trust
+excerpt: Trust in AI systems now requires making human oversight visible. Learn how
+  to design the 'Human in the Loop' flag to ensure compliance and signal authority.
+tldr: Trust in AI systems now requires making human oversight visible. Learn how to
   design the 'Human in the Loop' flag to ensure compliance and signal authority.
-meta_title: Designing the Human in the Loop Flag for AI Trust
-meta_description: >-
-  Discover how the Human in the Loop flag builds trust, meets EU AI Act
-  compliance, and combats automation bias through seamful interface design.
-category: design-trends
-keywords:
-  - verification
-  - ui
-  - trust
-  - human-in-the-loop
-primary_keyword: human-in-the-loop
-author: CCM Design
-status: ready
-related_posts:
-  - slug: ethical-ai-interface-design-research
-    title: 'Ethical AI Interface Design: A Framework for Research Evaluators'
-  - slug: visualizing-ai-uncertainty
-    title: 'Visualizing AI Uncertainty: Designing for Trust in a Probabilistic World'
-  - slug: authenticity-as-design-aesthetic
-    title: >-
-      Authenticity as a Design Aesthetic: The Premium Signal of Human
-      Imperfection
-  - slug: content-provenance-research-credibility
-    title: >-
-      The Credibility Crisis in Research: Why Content Provenance Is the New
-      Standard for Truth
-  - slug: visualizing-ai-uncertainty-methodologies
-    title: 'Visualizing AI Uncertainty: A Guide for Evaluators'
-cta:
-  text: Ready to discuss your project?
-  url: /contact
-  label: Schedule a Consultation
 ---
 ## TL;DR
 

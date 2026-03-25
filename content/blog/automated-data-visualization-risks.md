@@ -1,37 +1,23 @@
 ---
-title: 'Automated Data Visualization: The Hidden Risks of Click-to-Graph'
+title: 'The Hidden Risks of Click-to-Graph'
 slug: automated-data-visualization-risks
-excerpt: >-
-  AI tools promise instant charts but often hide nuance. Learn the risks of
+brow: 'Automated Data Visualization'
+tagline: ''
+date: '2026-05-11'
+author: CCM Design Team
+categories:
+- publications
+tags: []
+seo_tags:
+- automated data visualization
+- generative BI
+- AI hallucinations
+- data storytelling
+- visual analytics
+excerpt: AI tools promise instant charts but often hide nuance. Learn the risks of
   automated data visualization and how to ensure accuracy with human oversight.
-meta_title: 'Automated Data Visualization: The Hidden Risks of AI Charts'
-meta_description: >-
-  AI tools promise instant charts but often hide nuance. Learn the risks of
-  automated data visualization and how to ensure accuracy with human oversight.
-stage: researcher
-category: publications
-keywords:
-  - automated data visualization
-  - generative BI
-  - AI hallucinations
-  - data storytelling
-  - visual analytics
-primary_keyword: automated data visualization
-author: CCM Design
-status: ready
-related_posts:
-  - slug: data-visualization-research-impact
-    title: 'Data Visualization Research: Why Bad Charts Kill Impact'
-  - slug: poor-data-visualization-obscures-research-impact
-    title: >-
-      The Invisible Science: How Poor Data Visualization Obscures Research
-      Impact
-  - slug: digital-first-publishing-print-strategy
-    title: 'Digital-First Publishing vs. Print: Why You Need Both Strategies'
-  - slug: manual-research-workflows-ai
-    title: Why Manual Research Workflows Are Failing in the Age of AI
-  - slug: grant-impact-reporting-narrative-decay
-    title: 'The 90-Day Window: Fixing Narrative Decay in Grant Reporting'
+tldr: AI tools promise instant charts but often hide nuance. Learn the risks of automated
+  data visualization and how to ensure accuracy with human oversight.
 ---
 ## TL;DR
 

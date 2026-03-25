@@ -1,7 +1,7 @@
 ---
-title: 'The Metrics You Forgot to Track: Why Impact Stories Fail'
+title: 'Why Impact Stories Fail'
 slug: impact-measurement-metrics-storytelling
-brow: Impact Measurement
+brow: 'The Metrics You Forgot to Track'
 date: '2025-05-20'
 author: CCM Design Team
 categories:

@@ -1,7 +1,7 @@
 ---
-title: 'Interactive Impact Reports: The Business Case for Going Digital'
+title: 'The Business Case for Going Digital'
 slug: interactive-impact-reports-business-case
-brow: Business Case
+brow: 'Interactive Impact Reports'
 tagline: Static PDFs are failing to engage donors
 date: '2025-06-03'
 author: CCM Design Team

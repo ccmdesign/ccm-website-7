@@ -1,40 +1,24 @@
 ---
 title: Why AI Summarization Is Killing the Executive Summary
 slug: ai-summarization-killing-executive-summary
-excerpt: >-
-  As AI summarization redefines business intelligence, the static executive
-  summary is obsolete. Here is how authors must evolve from writers into source
-  architects.
-meta_title: Why AI Summarization Is Killing the Executive Summary
-meta_description: >-
-  Static summaries fail in an era of AI interrogation. Learn how AI
-  summarization forces a shift from writing linear reports to designing source
-  architecture.
-category: ai-trends
-keywords:
-  - ai
-  - summarization
-  - automation
-  - writing
-  - source architecture
-primary_keyword: AI summarization
-author: CCM Design
-status: ready
-related_posts:
-  - slug: end-of-executive-summary-ai-content
-    title: 'The End of the Executive Summary: Designing for AI Readers'
-  - slug: designing-for-ai-reader-geo-structured-data
-    title: 'Designing for the AI Reader: The Shift to Generative Engine Optimization'
-  - slug: semantic-html-ai-visibility
-    title: 'Semantic HTML for AI: The New Standard for Visibility'
-  - slug: automated-data-visualization-risks
-    title: 'Automated Data Visualization: The Hidden Risks of Click-to-Graph'
-  - slug: designing-voice-interfaces-complex-research
-    title: 'Designing Voice Interfaces for Complex Research: A Strategic Guide'
-cta:
-  text: Ready to future-proof your research publications?
-  url: /contact
-  label: Schedule a Consultation
+brow: ''
+tagline: ''
+date: '2026-04-27'
+author: CCM Design Team
+categories:
+- ai-trends
+tags: []
+seo_tags:
+- AI summarization
+- ai
+- summarization
+- automation
+- writing
+- source architecture
+excerpt: As AI summarization redefines business intelligence, the static executive
+  summary is obsolete. Here is how authors must evolve from writers into source architects.
+tldr: As AI summarization redefines business intelligence, the static executive summary
+  is obsolete. Here is how authors must evolve from writers into source architects.
 ---
 ## TL;DR
 

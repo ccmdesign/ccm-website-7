@@ -1,37 +1,23 @@
 ---
-title: 'Visualizing AI Uncertainty: Designing for Trust in a Probabilistic World'
+title: 'Designing for Trust in a Probabilistic World'
 slug: visualizing-ai-uncertainty
-excerpt: >-
-  As AI shifts from deterministic tools to probabilistic agents, interfaces must
+brow: 'Visualizing AI Uncertainty'
+tagline: ''
+date: '2026-07-06'
+author: CCM Design Team
+categories:
+- data-viz
+tags: []
+seo_tags:
+- visualizing AI uncertainty
+- data-viz
+- probability
+- uncertainty
+- ai-ethics
+excerpt: As AI shifts from deterministic tools to probabilistic agents, interfaces
+  must evolve to visualize uncertainty and calibrate user trust.
+tldr: As AI shifts from deterministic tools to probabilistic agents, interfaces must
   evolve to visualize uncertainty and calibrate user trust.
-meta_title: 'Visualizing AI Uncertainty: A Design Framework for Research'
-meta_description: >-
-  We must redesign interfaces to handle probabilistic AI. Learn how to visualize
-  uncertainty and prevent automation bias in research tools.
-category: data-viz
-keywords:
-  - data-viz
-  - probability
-  - uncertainty
-  - ai-ethics
-primary_keyword: visualizing AI uncertainty
-author: CCM Design
-status: ready
-related_posts:
-  - slug: visualizing-ai-uncertainty-methodologies
-    title: 'Visualizing AI Uncertainty: A Guide for Evaluators'
-  - slug: automated-data-visualization-risks
-    title: 'Automated Data Visualization: The Hidden Risks of Click-to-Graph'
-  - slug: ethical-ai-interface-design-research
-    title: 'Ethical AI Interface Design: A Framework for Research Evaluators'
-  - slug: authentic-design-aesthetic-ai-era
-    title: 'Authenticity as a Design Aesthetic: Why Imperfection Wins Trust'
-  - slug: deepfakes-research-integrity-crisis
-    title: AI Deepfakes and the Research Integrity Crisis
-cta:
-  text: Ready to design more reliable data tools?
-  url: /contact
-  label: Schedule a Consultation
 ---
 ## TL;DR
 

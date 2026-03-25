@@ -1,35 +1,23 @@
 ---
-title: 'Ethical AI Interface Design: A Framework for Research Evaluators'
+title: 'A Framework for Research Evaluators'
 slug: ethical-ai-interface-design-research
-excerpt: >-
-  Evaluating AI tools? Learn the UI standards—from C2PA disclosure to HITL
+brow: 'Ethical AI Interface Design'
+tagline: ''
+date: '2026-06-18'
+author: CCM Design Team
+categories:
+- publications
+tags: []
+seo_tags:
+- ethical AI interface design
+- C2PA standard
+- human-in-the-loop AI
+- AI research integrity
+- ISO 42001 compliance
+excerpt: Evaluating AI tools? Learn the UI standards—from C2PA disclosure to HITL
   workflows—that ensure research integrity and ISO 42001 compliance.
-meta_title: 'Ethical AI Interface Design: A Framework for Evaluators'
-meta_description: >-
-  Evaluating AI tools? Learn the UI standards—from C2PA disclosure to HITL
-  workflows—that ensure research integrity and ISO 42001 compliance.
-stage: evaluator
-category: publications
-keywords:
-  - ethical AI interface design
-  - C2PA standard
-  - human-in-the-loop AI
-  - AI research integrity
-  - ISO 42001 compliance
-primary_keyword: ethical AI interface design
-author: CCM Design
-status: ready
-related_posts:
-  - slug: evaluate-research-publication-design-partners
-    title: How to Evaluate Design Partners for Research Publications
-  - slug: publication-design-vs-marketing-design
-    title: 'Publication Design vs. Marketing Design: The Hidden Differences'
-  - slug: visualizing-ai-uncertainty-methodologies
-    title: 'Visualizing AI Uncertainty: A Guide for Evaluators'
-  - slug: strategic-publication-design-methodology
-    title: 'De-Risking Publication Design: A 9-Step Strategic Methodology'
-  - slug: design-resourcing-agency-vs-inhouse
-    title: 'Agency vs. In-House Design: A Strategic Resourcing Guide'
+tldr: Evaluating AI tools? Learn the UI standards—from C2PA disclosure to HITL workflows—that
+  ensure research integrity and ISO 42001 compliance.
 ---
 ## TL;DR
 

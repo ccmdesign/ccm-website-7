@@ -1,36 +1,23 @@
 ---
-title: 'Visualizing AI Uncertainty: A Guide for Evaluators'
+title: 'A Guide for Evaluators'
 slug: visualizing-ai-uncertainty-methodologies
-excerpt: >-
-  Learn how to evaluate AI interfaces that visualize uncertainty, prevent
-  automation bias, and calibrate user trust through probabilistic design.
-meta_title: 'Visualizing AI Uncertainty: A Guide for Evaluators'
-meta_description: >-
-  Evaluators must look beyond accuracy metrics. Learn methodologies for
-  visualizing AI uncertainty to prevent automation bias. Schedule a
-  consultation.
-stage: evaluator
-category: publications
-keywords:
-  - AI uncertainty visualization
-  - calibrated trust
-  - probabilistic design
-  - automation bias
-  - XAI tools
-primary_keyword: AI uncertainty visualization
-author: CCM Design
-status: ready
-related_posts:
-  - slug: evaluate-research-publication-design-partners
-    title: How to Evaluate Design Partners for Research Publications
-  - slug: designing-scalable-system-idrc
-    title: A Strategic Design System Roadmap for the IDRC
-  - slug: design-resourcing-agency-vs-inhouse
-    title: 'Agency vs. In-House Design: A Strategic Resourcing Guide'
-  - slug: strategic-publication-design-methodology
-    title: 'De-Risking Publication Design: A 9-Step Strategic Methodology'
-  - slug: harvard-policy-publication-redesign
-    title: How We Rebuilt Harvard’s Policy Publication Ecosystem
+brow: 'Visualizing AI Uncertainty'
+tagline: ''
+date: '2026-07-02'
+author: CCM Design Team
+categories:
+- publications
+tags: []
+seo_tags:
+- AI uncertainty visualization
+- calibrated trust
+- probabilistic design
+- automation bias
+- XAI tools
+excerpt: Learn how to evaluate AI interfaces that visualize uncertainty, prevent automation
+  bias, and calibrate user trust through probabilistic design.
+tldr: Learn how to evaluate AI interfaces that visualize uncertainty, prevent automation
+  bias, and calibrate user trust through probabilistic design.
 ---
 ## TL;DR
 

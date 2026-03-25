@@ -1,6 +1,6 @@
 ---
-title: 'Headings for Academics: 3 Fields Idea'
-brow: Designing Research
+title: '3 Fields Idea'
+brow: 'Headings for Academics'
 tagline: >-
   Transform long academic titles into scannable, engaging headers using the
   journalism-inspired three-field structure

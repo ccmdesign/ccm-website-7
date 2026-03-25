@@ -1,7 +1,7 @@
 ---
-title: 'Nonprofit Annual Reports: Turning Compliance into Fundraising'
+title: 'Turning Compliance into Fundraising'
 slug: nonprofit-annual-report-fundraising-tool
-brow: publications
+brow: 'Nonprofit Annual Reports'
 tagline: Stop treating your nonprofit annual report as a compliance task
 date: '2025-07-15'
 author: CCM Design Team

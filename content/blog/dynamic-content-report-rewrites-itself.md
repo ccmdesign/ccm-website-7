@@ -1,37 +1,23 @@
 ---
-title: 'Dynamic Content: The Report That Rewrites Itself'
+title: 'The Report That Rewrites Itself'
 slug: dynamic-content-report-rewrites-itself
-excerpt: >-
-  Move beyond static PDFs to fluid databases where reports assemble themselves
+brow: 'Dynamic Content'
+tagline: ''
+date: '2026-06-04'
+author: CCM Design Team
+categories:
+- ai-trends
+tags: []
+seo_tags:
+- dynamic content
+- personalization
+- dynamic-content
+- ai
+- user-experience
+excerpt: Move beyond static PDFs to fluid databases where reports assemble themselves
   in real-time, tailoring insights to every stakeholder's unique context.
-meta_title: 'Dynamic Content: The Future of Personalized Reporting'
-meta_description: >-
-  Discover how AI and modular content strategies are transforming static reports
-  into fluid databases that rewrite themselves for every stakeholder.
-category: ai-trends
-keywords:
-  - personalization
-  - dynamic-content
-  - ai
-  - user-experience
-primary_keyword: dynamic content
-author: CCM Design
-status: ready
-related_posts:
-  - slug: evaluating-living-review-model
-    title: 'Beyond the PDF: Evaluating the ''Living Review'' Model'
-  - slug: ephemeral-publishing-trends-research
-    title: 'Ephemeral Publishing: Why Research Is Moving Beyond the PDF'
-  - slug: end-of-executive-summary-ai-content
-    title: 'The End of the Executive Summary: Designing for AI Readers'
-  - slug: ai-summarization-killing-executive-summary
-    title: Why AI Summarization Is Killing the Executive Summary
-  - slug: designing-for-ai-reader-geo-structured-data
-    title: 'Designing for the AI Reader: The Shift to Generative Engine Optimization'
-cta:
-  text: Ready to discuss your project?
-  url: /contact
-  label: Schedule a Consultation
+tldr: Move beyond static PDFs to fluid databases where reports assemble themselves
+  in real-time, tailoring insights to every stakeholder's unique context.
 ---
 ## TL;DR
 

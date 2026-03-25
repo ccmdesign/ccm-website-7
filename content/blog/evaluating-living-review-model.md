@@ -1,37 +1,25 @@
 ---
-title: 'Beyond the PDF: Evaluating the ''Living Review'' Model'
+title: "Evaluating the 'Living Review' Model"
 slug: evaluating-living-review-model
-excerpt: >-
-  Transitioning from static PDFs to living reviews requires a fundamental shift
-  in infrastructure. We analyze the workflows, technology, and strategies
-  required for continuous publishing.
-meta_title: 'Living Systematic Reviews: A Guide for Research Leaders'
-meta_description: >-
-  Evaluate the transition from static PDFs to living reviews. We analyze the
-  workflows and technology required for continuous publishing. Learn about our
-  process.
-stage: evaluator
-category: publications
-keywords:
-  - living systematic reviews
-  - continuous publishing
-  - research workflow automation
-  - academic version control
-  - dynamic evidence synthesis
-primary_keyword: living systematic reviews
-author: CCM Design
-status: ready
-related_posts:
-  - slug: evaluate-research-publication-design-partners
-    title: How to Evaluate Design Partners for Research Publications
-  - slug: design-resourcing-agency-vs-inhouse
-    title: 'Agency vs. In-House Design: A Strategic Resourcing Guide'
-  - slug: ethical-ai-interface-design-research
-    title: 'Ethical AI Interface Design: A Framework for Research Evaluators'
-  - slug: publication-design-vs-marketing-design
-    title: 'Publication Design vs. Marketing Design: The Hidden Differences'
-  - slug: designing-scalable-system-idrc
-    title: A Strategic Design System Roadmap for the IDRC
+brow: 'Beyond the PDF'
+tagline: ''
+date: '2026-06-22'
+author: CCM Design Team
+categories:
+- publications
+tags: []
+seo_tags:
+- living systematic reviews
+- continuous publishing
+- research workflow automation
+- academic version control
+- dynamic evidence synthesis
+excerpt: Transitioning from static PDFs to living reviews requires a fundamental shift
+  in infrastructure. We analyze the workflows, technology, and strategies required
+  for continuous publishing.
+tldr: Transitioning from static PDFs to living reviews requires a fundamental shift
+  in infrastructure. We analyze the workflows, technology, and strategies required
+  for continuous publishing.
 ---
 ## TL;DR
 

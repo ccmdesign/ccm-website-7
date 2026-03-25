@@ -1,39 +1,23 @@
 ---
-title: 'The Ephemeral Publication: Why Research is Moving from Static to Dynamic'
+title: 'Why Research is Moving from Static to Dynamic'
 slug: ephemeral-publication-dynamic-research-trends
-excerpt: >-
-  Scholarly communication is shifting from frozen PDFs to living documents.
+brow: 'The Ephemeral Publication'
+tagline: ''
+date: '2026-06-11'
+author: CCM Design Team
+categories:
+- future-trends
+tags: []
+seo_tags:
+- ephemeral publication
+- ephemeral
+- social
+- trends
+- engagement
+excerpt: Scholarly communication is shifting from frozen PDFs to living documents.
   Discover how ephemeral publications are reshaping research impact.
-meta_title: 'The Ephemeral Publication: Shift to Dynamic Research'
-meta_description: >-
-  Explore the rise of the ephemeral publication, from Living Systematic Reviews
-  to micropublications, and learn how to adapt your strategy for dynamic impact.
-category: future-trends
-keywords:
-  - ephemeral
-  - social
-  - trends
-  - engagement
-primary_keyword: ephemeral publication
-author: CCM Design
-status: ready
-related_posts:
-  - slug: evaluating-living-review-model
-    title: 'Beyond the PDF: Evaluating the ''Living Review'' Model'
-  - slug: dynamic-content-report-rewrites-itself
-    title: 'Dynamic Content: The Report That Rewrites Itself'
-  - slug: authenticity-as-design-aesthetic
-    title: >-
-      Authenticity as a Design Aesthetic: The Premium Signal of Human
-      Imperfection
-  - slug: end-of-executive-summary-ai-content
-    title: 'The End of the Executive Summary: Designing for AI Readers'
-  - slug: ephemeral-publishing-trends-research
-    title: 'Ephemeral Publishing: Why Research Is Moving Beyond the PDF'
-cta:
-  text: Ready to discuss your publication strategy?
-  url: /contact
-  label: Schedule a Consultation
+tldr: Scholarly communication is shifting from frozen PDFs to living documents. Discover
+  how ephemeral publications are reshaping research impact.
 ---
 ## TL;DR
 

@@ -1,35 +1,23 @@
 ---
-title: 'Designing Voice Interfaces for Complex Research: A Strategic Guide'
+title: 'A Strategic Guide'
 slug: designing-voice-interfaces-complex-research
-excerpt: >-
-  Move beyond text-to-speech. Learn how to evaluate and design audio research
+brow: 'Designing Voice Interfaces for Complex Research'
+tagline: ''
+date: '2026-06-01'
+author: CCM Design Team
+categories:
+- publications
+tags: []
+seo_tags:
+- voice interfaces for research
+- data sonification
+- audio papers
+- AI research summaries
+- NotebookLM
+excerpt: Move beyond text-to-speech. Learn how to evaluate and design audio research
   using AI synthesis, ear-first writing, and data sonification.
-meta_title: Designing Voice Interfaces for Complex Research | CCM Design
-meta_description: >-
-  Evaluators' guide to audio research: AI synthesis, ear-first writing, and data
-  sonification. See how we approach multimodal information architecture.
-stage: evaluator
-category: publications
-keywords:
-  - voice interfaces for research
-  - data sonification
-  - audio papers
-  - AI research summaries
-  - NotebookLM
-primary_keyword: voice interfaces for research
-author: CCM Design
-status: ready
-related_posts:
-  - slug: evaluate-research-publication-design-partners
-    title: How to Evaluate Design Partners for Research Publications
-  - slug: visualizing-ai-uncertainty-methodologies
-    title: 'Visualizing AI Uncertainty: A Guide for Evaluators'
-  - slug: strategic-publication-design-methodology
-    title: 'De-Risking Publication Design: A 9-Step Strategic Methodology'
-  - slug: design-resourcing-agency-vs-inhouse
-    title: 'Agency vs. In-House Design: A Strategic Resourcing Guide'
-  - slug: publication-design-vs-marketing-design
-    title: 'Publication Design vs. Marketing Design: The Hidden Differences'
+tldr: Move beyond text-to-speech. Learn how to evaluate and design audio research
+  using AI synthesis, ear-first writing, and data sonification.
 ---
 ## TL;DR
 

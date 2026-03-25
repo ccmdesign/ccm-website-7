@@ -1,39 +1,23 @@
 ---
-title: 'Authenticity as a Design Aesthetic: Why Imperfection Wins Trust'
+title: 'Why Imperfection Wins Trust'
 slug: authentic-design-aesthetic-ai-era
-excerpt: >-
-  In an AI-saturated world, human imperfection has become a premium asset. Learn
+brow: 'Authenticity as a Design Aesthetic'
+tagline: ''
+date: '2026-05-04'
+author: CCM Design Team
+categories:
+- publications
+tags: []
+seo_tags:
+- authentic design aesthetic
+- human-centric design
+- AI trust penalty
+- strategic imperfection
+- digital branding trends
+excerpt: In an AI-saturated world, human imperfection has become a premium asset.
+  Learn why lo-fi design and raw textures are building trust in 2026.
+tldr: In an AI-saturated world, human imperfection has become a premium asset. Learn
   why lo-fi design and raw textures are building trust in 2026.
-meta_title: 'Authenticity in Design: Why Imperfection Wins Trust'
-meta_description: >-
-  As AI perfection saturates the market, brands are turning to strategic
-  imperfection to signal humanity. Learn how lo-fi aesthetics build trust.
-stage: researcher
-category: publications
-keywords:
-  - authentic design aesthetic
-  - human-centric design
-  - AI trust penalty
-  - strategic imperfection
-  - digital branding trends
-primary_keyword: authentic design aesthetic
-author: CCM Design
-status: ready
-related_posts:
-  - slug: hidden-cost-inconsistent-publication-design
-    title: The Hidden Tax of Inconsistent Publication Design
-  - slug: poor-data-visualization-obscures-research-impact
-    title: >-
-      The Invisible Science: How Poor Data Visualization Obscures Research
-      Impact
-  - slug: annual-report-comparative-disadvantage
-    title: >-
-      The Comparative Disadvantage: Why Your Annual Report Is Failing Against
-      Peers
-  - slug: rigor-gap-scientific-design
-    title: 'Scientific Design Rigor: Closing the Gap in Research Communication'
-  - slug: truth-must-be-designed-web-credibility
-    title: 'Truth Must Be Designed: Web Credibility in the Age of Mistrust'
 ---
 ## TL;DR
 

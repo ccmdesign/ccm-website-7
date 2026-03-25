@@ -1,37 +1,23 @@
 ---
-title: 'The End of the Executive Summary: Designing for AI Readers'
+title: 'Designing for AI Readers'
 slug: end-of-executive-summary-ai-content
-excerpt: >-
-  Static summaries are obsolete. As leaders switch to AI-driven querying, learn
+brow: 'The End of the Executive Summary'
+tagline: ''
+date: '2026-06-08'
+author: CCM Design Team
+categories:
+- publications
+tags: []
+seo_tags:
+- AI-ready content strategy
+- generative AI business intelligence
+- atomic content design
+- retrieval-augmented generation
+- executive summary evolution
+excerpt: Static summaries are obsolete. As leaders switch to AI-driven querying, learn
   why your content strategy must shift to atomic, machine-readable formats.
-meta_title: 'The End of the Executive Summary: Designing for AI Readers'
-meta_description: >-
-  Static summaries are obsolete. As leaders switch to AI-driven querying, learn
+tldr: Static summaries are obsolete. As leaders switch to AI-driven querying, learn
   why your content strategy must shift to atomic, machine-readable formats.
-stage: researcher
-category: publications
-keywords:
-  - AI-ready content strategy
-  - generative AI business intelligence
-  - atomic content design
-  - retrieval-augmented generation
-  - executive summary evolution
-primary_keyword: AI-ready content strategy
-author: CCM Design
-status: ready
-related_posts:
-  - slug: static-pdfs-undermine-research-impact
-    title: Why Static PDFs Are Undermining Your Research Impact
-  - slug: static-pdfs-undermining-research-impact
-    title: Why Static PDFs Are Undermining Your Research Impact
-  - slug: grant-proposal-design-differentiation
-    title: >-
-      Why Your Grant Proposals Look Like Everyone Else's: The Science of
-      Differentiation
-  - slug: data-visualization-research-impact
-    title: 'Data Visualization Research: Why Bad Charts Kill Impact'
-  - slug: think-tank-website-undermining-impact
-    title: Is Your Think Tank's Website Undermining Your Research Impact?
 ---
 ## TL;DR
 

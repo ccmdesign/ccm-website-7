@@ -1,37 +1,23 @@
 ---
-title: 'AI-Powered Accessibility: From Complianceware to Automated Richness'
+title: 'From Complianceware to Automated Richness'
 slug: ai-powered-accessibility-automated-richness
-excerpt: >-
-  AI is shifting digital accessibility from a litigious box-checking exercise to
-  a strategic asset for knowledge impact and equitable experiences.
-meta_title: 'AI-Powered Accessibility: From Compliance to Richness'
-meta_description: >-
-  AI-powered accessibility is shifting the goal from legal compliance to
-  equitable richness. Learn how to manage legacy archives and data storytelling.
-category: digital
-keywords:
-  - accessibility
-  - ai
-  - automation
-  - inclusion
-primary_keyword: AI-powered accessibility
-author: CCM Design
-status: ready
-related_posts:
-  - slug: automated-data-visualization-risks
-    title: 'Automated Data Visualization: The Hidden Risks of Click-to-Graph'
-  - slug: ethical-ai-interface-design-research
-    title: 'Ethical AI Interface Design: A Framework for Research Evaluators'
-  - slug: evaluating-living-review-model
-    title: 'Beyond the PDF: Evaluating the ''Living Review'' Model'
-  - slug: designing-for-ai-reader-geo-structured-data
-    title: 'Designing for the AI Reader: The Shift to Generative Engine Optimization'
-  - slug: semantic-html-ai-visibility
-    title: 'Semantic HTML for AI: The New Standard for Visibility'
-cta:
-  text: Need to modernize your research archives?
-  url: /contact
-  label: Discuss Your Accessibility Strategy
+brow: 'AI-Powered Accessibility'
+tagline: ''
+date: '2026-04-23'
+author: CCM Design Team
+categories:
+- digital
+tags: []
+seo_tags:
+- AI-powered accessibility
+- accessibility
+- ai
+- automation
+- inclusion
+excerpt: AI is shifting digital accessibility from a litigious box-checking exercise
+  to a strategic asset for knowledge impact and equitable experiences.
+tldr: AI is shifting digital accessibility from a litigious box-checking exercise
+  to a strategic asset for knowledge impact and equitable experiences.
 ---
 ## TL;DR
 

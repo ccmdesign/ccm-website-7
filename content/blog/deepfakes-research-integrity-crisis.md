@@ -1,37 +1,23 @@
 ---
 title: AI Deepfakes and the Research Integrity Crisis
 slug: deepfakes-research-integrity-crisis
-excerpt: >-
-  AI-generated fraud is eroding trust in science. Explore how C2PA standards and
+brow: ''
+tagline: ''
+date: '2026-05-21'
+author: CCM Design Team
+categories:
+- publications
+tags: []
+seo_tags:
+- AI deepfakes in research
+- C2PA standard
+- scientific fraud
+- academic publishing integrity
+- digital provenance
+excerpt: AI-generated fraud is eroding trust in science. Explore how C2PA standards
+  and cryptographic design are emerging as the only viable defense.
+tldr: AI-generated fraud is eroding trust in science. Explore how C2PA standards and
   cryptographic design are emerging as the only viable defense.
-meta_title: AI Deepfakes and the Research Integrity Crisis
-meta_description: >-
-  AI-generated fraud threatens science. Learn how C2PA standards and
-  cryptographic design offer the only viable defense for research integrity.
-stage: researcher
-category: publications
-keywords:
-  - AI deepfakes in research
-  - C2PA standard
-  - scientific fraud
-  - academic publishing integrity
-  - digital provenance
-primary_keyword: AI deepfakes in research
-author: CCM Design
-status: ready
-related_posts:
-  - slug: rethinking-research-communication
-    title: 'Beyond the PDF: Modern Research Communication Strategies'
-  - slug: science-translation-gap-invisible-research
-    title: 'The Science Translation Gap: Why Important Research Stays Invisible'
-  - slug: hidden-cost-inconsistent-publication-design
-    title: The Hidden Tax of Inconsistent Publication Design
-  - slug: design-debt-research-organizations
-    title: 'Design Debt in Research Organizations: The Cost of ''We''ll Fix It Later'''
-  - slug: poor-data-visualization-obscures-research-impact
-    title: >-
-      The Invisible Science: How Poor Data Visualization Obscures Research
-      Impact
 ---
 ## TL;DR
 

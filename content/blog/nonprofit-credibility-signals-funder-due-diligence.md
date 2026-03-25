@@ -1,7 +1,7 @@
 ---
-title: 'Nonprofit Credibility Signals: What Funders Actually Check'
+title: 'What Funders Actually Check'
 slug: nonprofit-credibility-signals-funder-due-diligence
-brow: publications
+brow: 'Nonprofit Credibility Signals'
 tagline: Funders judge capacity through digital heuristics
 date: '2025-07-22'
 author: CCM Design Team

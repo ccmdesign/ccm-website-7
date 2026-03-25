@@ -1,38 +1,22 @@
 ---
-title: 'From Search to Ask: Conversational UI and the Future of Research Navigation'
+title: 'Conversational UI and the Future of Research Navigation'
 slug: search-to-ask-research-websites
-excerpt: >-
-  User expectations are shifting from keyword search to conversational
-  discovery. Here is how to adapt your information architecture and UX for the
-  AI era.
-meta_title: 'From Search to Ask: The New UX of Research Websites'
-meta_description: >-
-  Research websites are shifting from keyword search to conversational AI. Learn
-  how to adapt your UX and Information Architecture for the "Ask" era.
-category: digital
-keywords:
-  - search
-  - conversational-ui
-  - ux
-  - navigation
-primary_keyword: conversational-ui
-author: CCM Design
-status: ready
-related_posts:
-  - slug: designing-for-ai-reader-geo-structured-data
-    title: 'Designing for the AI Reader: The Shift to Generative Engine Optimization'
-  - slug: end-of-executive-summary-ai-content
-    title: 'The End of the Executive Summary: Designing for AI Readers'
-  - slug: designing-voice-interfaces-complex-research
-    title: 'Designing Voice Interfaces for Complex Research: A Strategic Guide'
-  - slug: semantic-html-ai-visibility
-    title: 'Semantic HTML for AI: The New Standard for Visibility'
-  - slug: ethical-ai-interface-design-research
-    title: 'Ethical AI Interface Design: A Framework for Research Evaluators'
-cta:
-  text: Is your platform ready for the AI era?
-  url: /contact
-  label: Schedule an IA Audit
+brow: 'From Search to Ask'
+tagline: ''
+date: '2026-06-25'
+author: CCM Design Team
+categories:
+- digital
+tags: []
+seo_tags:
+- conversational-ui
+- search
+- ux
+- navigation
+excerpt: User expectations are shifting from keyword search to conversational discovery.
+  Here is how to adapt your information architecture and UX for the AI era.
+tldr: User expectations are shifting from keyword search to conversational discovery.
+  Here is how to adapt your information architecture and UX for the AI era.
 ---
 ## TL;DR
 

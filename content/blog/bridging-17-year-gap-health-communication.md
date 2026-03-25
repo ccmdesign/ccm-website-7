@@ -1,7 +1,7 @@
 ---
-title: 'Bridging the 17-Year Gap: The Missing Layer in Health Communication'
+title: 'The Missing Layer in Health Communication'
 slug: bridging-17-year-gap-health-communication
-brow: publications
+brow: 'Bridging the 17-Year Gap'
 tagline: Research shows a 17-year lag in clinical adoption
 date: '2026-03-01'
 author: CCM Design Team

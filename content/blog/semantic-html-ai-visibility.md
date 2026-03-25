@@ -1,40 +1,23 @@
 ---
-title: 'Semantic HTML: The Secret Weapon for AI Visibility'
+title: 'The Secret Weapon for AI Visibility'
 slug: semantic-html-ai-visibility
-excerpt: >-
-  As search behavior shifts to AI agents, visual design matters less than
-  structural clarity. Learn why semantic code is now a critical communication
-  strategy.
-meta_title: 'Semantic HTML: The Secret Weapon for AI Visibility'
-meta_description: >-
-  AI agents rely on code structure to understand content. Discover why semantic
-  HTML is essential for visibility in the age of the Agentic Web.
-category: digital
-keywords:
-  - code
-  - seo
-  - structure
-  - technical
-primary_keyword: Semantic HTML
-author: CCM Design
-status: ready
-related_posts:
-  - slug: designing-for-ai-reader-geo-structured-data
-    title: 'Designing for the AI Reader: The Shift to Generative Engine Optimization'
-  - slug: ai-powered-accessibility-automated-richness
-    title: 'AI-Powered Accessibility: From Complianceware to Automated Richness'
-  - slug: search-to-ask-research-websites
-    title: >-
-      From Search to Ask: Conversational UI and the Future of Research
-      Navigation
-  - slug: end-of-executive-summary-ai-content
-    title: 'The End of the Executive Summary: Designing for AI Readers'
-  - slug: ephemeral-publishing-trends-research
-    title: 'Ephemeral Publishing: Why Research Is Moving Beyond the PDF'
-cta:
-  text: Is your organization's research ready for the Agentic Web?
-  url: /contact
-  label: Schedule a Consultation
+brow: 'Semantic HTML'
+tagline: ''
+date: '2026-06-29'
+author: CCM Design Team
+categories:
+- digital
+tags: []
+seo_tags:
+- Semantic HTML
+- code
+- seo
+- structure
+- technical
+excerpt: As search behavior shifts to AI agents, visual design matters less than structural
+  clarity. Learn why semantic code is now a critical communication strategy.
+tldr: As search behavior shifts to AI agents, visual design matters less than structural
+  clarity. Learn why semantic code is now a critical communication strategy.
 ---
 ## TL;DR
 

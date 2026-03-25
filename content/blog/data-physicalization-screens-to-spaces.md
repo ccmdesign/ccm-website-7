@@ -1,40 +1,25 @@
 ---
-title: 'Data Physicalization: Moving Analysis from Screens to Spaces'
+title: 'Moving Analysis from Screens to Spaces'
 slug: data-physicalization-screens-to-spaces
-excerpt: >-
-  As digital fatigue grows, data physicalization offers a powerful alternative
-  for impact. Discover how translating abstract data into physical forms
-  improves memory retention and engagement.
-meta_title: 'Data Physicalization: The Future of Tangible Analytics'
-meta_description: >-
-  Explore how data physicalization improves memory retention and engagement.
-  Learn why leading organizations are moving critical insights off the screen.
-category: future-trends
-keywords:
-  - data-viz
-  - physical
-  - ar
-  - vr
-primary_keyword: data physicalization
-author: CCM Design
-status: ready
-related_posts:
-  - slug: authenticity-as-design-aesthetic
-    title: >-
-      Authenticity as a Design Aesthetic: The Premium Signal of Human
-      Imperfection
-  - slug: ephemeral-publishing-trends-research
-    title: 'Ephemeral Publishing: Why Research Is Moving Beyond the PDF'
-  - slug: automated-data-visualization-risks
-    title: 'Automated Data Visualization: The Hidden Risks of Click-to-Graph'
-  - slug: visualizing-ai-uncertainty
-    title: 'Visualizing AI Uncertainty: Designing for Trust in a Probabilistic World'
-  - slug: designing-voice-interfaces-complex-research
-    title: 'Designing Voice Interfaces for Complex Research: A Strategic Guide'
-cta:
-  text: Ready to discuss your project?
-  url: /contact
-  label: Schedule a Consultation
+brow: 'Data Physicalization'
+tagline: ''
+date: '2026-05-18'
+author: CCM Design Team
+categories:
+- future-trends
+tags: []
+seo_tags:
+- data physicalization
+- data-viz
+- physical
+- ar
+- vr
+excerpt: As digital fatigue grows, data physicalization offers a powerful alternative
+  for impact. Discover how translating abstract data into physical forms improves
+  memory retention and engagement.
+tldr: As digital fatigue grows, data physicalization offers a powerful alternative
+  for impact. Discover how translating abstract data into physical forms improves
+  memory retention and engagement.
 ---
 ## TL;DR
 

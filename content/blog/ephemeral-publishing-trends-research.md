@@ -1,35 +1,23 @@
 ---
-title: 'Ephemeral Publishing: Why Research Is Moving Beyond the PDF'
+title: 'Why Research Is Moving Beyond the PDF'
 slug: ephemeral-publishing-trends-research
-excerpt: >-
-  Research is shifting from static documents to living streams. Learn how
-  ephemeral publishing and flash research are redefining impact and engagement.
-meta_title: 'Ephemeral Publishing: Moving Research Beyond the PDF'
-meta_description: >-
-  Research is shifting to living streams. Discover how ephemeral publishing and
-  flash research redefine impact and engagement. Subscribe for insights.
-stage: researcher
-category: publications
-keywords:
-  - ephemeral publishing
-  - living documents
-  - science communication
-  - digital scholarship
-  - flash research
-primary_keyword: ephemeral publishing
-author: CCM Design
-status: ready
-related_posts:
-  - slug: data-visualization-research-impact
-    title: 'Data Visualization Research: Why Bad Charts Kill Impact'
-  - slug: science-translation-gap-invisible-research
-    title: 'The Science Translation Gap: Why Important Research Stays Invisible'
-  - slug: 5-signs-research-publications-need-redesign
-    title: 5 Signs Your Research Publications Need a Redesign
-  - slug: research-brands-funders-remember
-    title: The Research Brands That Funders Remember
-  - slug: psychology-grant-evaluation-design
-    title: 'Grant Proposal Design: The Psychology of Evaluation'
+brow: 'Ephemeral Publishing'
+tagline: ''
+date: '2026-06-15'
+author: CCM Design Team
+categories:
+- publications
+tags: []
+seo_tags:
+- ephemeral publishing
+- living documents
+- science communication
+- digital scholarship
+- flash research
+excerpt: Research is shifting from static documents to living streams. Learn how ephemeral
+  publishing and flash research are redefining impact and engagement.
+tldr: Research is shifting from static documents to living streams. Learn how ephemeral
+  publishing and flash research are redefining impact and engagement.
 ---
 ## TL;DR
 

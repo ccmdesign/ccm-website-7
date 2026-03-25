@@ -1,7 +1,7 @@
 ---
-title: 'The Hybrid Publishing Paradox: Why Digital-First Workflows Save Print'
+title: 'Why Digital-First Workflows Save Print'
 slug: hybrid-publishing-digital-first-workflow
-brow: publications
+brow: 'The Hybrid Publishing Paradox'
 tagline: 'Print drives revenue, but digital drives growth'
 date: '2025-05-13'
 author: CCM Design Team
