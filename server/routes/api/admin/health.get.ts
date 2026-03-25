@@ -65,6 +65,8 @@ export default defineEventHandler(async (event) => {
 
   // Required env var checks (without revealing values)
   checks.resendApiKey = checkEnvVar('RESEND_API_KEY')
+  checks.resendSegmentId = checkEnvVar('RESEND_SEGMENT_ID')
+  checks.adminEmail = checkEnvVar('ADMIN_EMAIL')
   checks.linkedinToken = checkEnvVar('LINKEDIN_ACCESS_TOKEN')
 
   const allOk = Object.values(checks).every((c) => c.ok)
