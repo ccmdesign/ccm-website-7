@@ -3,6 +3,7 @@ title: "feat: Varro sync script to copy articles and marketing files"
 type: feat
 status: active
 date: 2026-03-25
+deepened: 2026-03-25
 origin: docs/brainstorms/2026-03-25-varro-content-sync-requirements.md
 ---
 
@@ -46,7 +47,9 @@ Note: R11-R14 (admin UI integration for LinkedIn drafts from marketing files) ar
 
 - `scripts/backfill-frontmatter.ts` -- Established pattern: uses `gray-matter` for parsing/writing frontmatter, `node:fs` / `node:path` for file I/O, invoked via `npx tsx`
 - `scripts/migrate-to-timestamps.ts` -- Same pattern, uses regex-based YAML patching for precision, but `gray-matter` stringify is fine for net-new files
-- `content.config.ts` -- Blog schema definition with all target fields (`categories`, `seo_tags`, `tldr`, `brow`, `tagline`, `tags`, `author`, distribution timestamps)
+- `content.config.ts` -- Blog schema definition with all target fields (`categories`, `seo_tags`, `tldr`, `brow`, `tagline`, `tags`, `author`, distribution timestamps). **Also includes `marketing: z.record(z.string(), z.any()).optional()` -- a passthrough object field for embedding marketing content directly in blog post frontmatter.** This was added by the completed schema/admin plan (CCM-119, `2026-03-25-001`).
+- `server/routes/api/admin/draft-linkedin.post.ts` -- **Already reads `post.marketing.linkedin` from blog post frontmatter** (line 40) to pass marketing content to the LinkedIn draft service. This is the existing consumer of marketing data.
+- `server/utils/serviceClient.ts` -- `draftLinkedInPost(post, marketingContent)` accepts an optional `marketingContent` parameter that is sent to the LinkedIn service as-is.
 - Blog post examples (e.g., `content/blog/ai-powered-accessibility-automated-richness.md`) -- Show target frontmatter shape
 - `package.json` -- `gray-matter` in devDependencies, `tsx` in devDependencies, `date-fns` in dependencies
 
@@ -55,24 +58,30 @@ Note: R11-R14 (admin UI integration for LinkedIn drafts from marketing files) ar
 - Content pipeline uses future dates for scheduling; posts appear automatically based on date (from project memory)
 - Posting cadence is 2x/week on Mondays and Thursdays (from project memory)
 - 121 blog posts currently exist, latest scheduled date is `2026-07-06`
+- **`gray-matter` stringify reformats YAML**: The sibling plan (`2026-03-25-001`) explicitly warns (in its Institutional Learnings) that `matter.stringify()` reformats YAML differently from the regex-based `updateFrontmatter`. For net-new files this is acceptable, but the implementer should be aware that `gray-matter` may also convert YAML date-like strings (e.g., `2026-07-06`) into JS Date objects during parsing, which `stringify` then writes back in a different format. The workaround is to use `gray-matter`'s `engines` option to disable date parsing, or to post-process the output to ensure dates remain as `'YYYY-MM-DD'` strings.
+- **Existing admin UI already reads `marketing.linkedin` from blog post frontmatter**: The `draft-linkedin.post.ts` route reads `post.marketing?.linkedin` to supply LinkedIn copy when drafting. No blog posts currently have the `marketing` field populated, but the code path exists and expects it in frontmatter, not in a separate file.
 
 ## Key Technical Decisions
 
-- **Use `gray-matter` + `matter.stringify` for new files**: Since we are creating new files (not patching existing ones), `matter.stringify` is appropriate and simpler than regex-based patching. This follows the pattern in `backfill-frontmatter.ts`.
+- **Use `gray-matter` + `matter.stringify` for new files**: Since we are creating new files (not patching existing ones), `matter.stringify` is appropriate and simpler than regex-based patching. This follows the pattern in `backfill-frontmatter.ts`. **Caveat**: `gray-matter` parses YAML date strings into JS Date objects by default. The script must either (a) configure gray-matter to avoid date coercion (pass `{ engines: { yaml: { schema: ... } } }` or use `js-yaml`'s `JSON_SCHEMA`), or (b) ensure all date values are explicitly formatted as quoted strings before calling `matter.stringify`. The simplest approach is to build the frontmatter object manually and pass date values as already-formatted strings wrapped in quotes, then verify the output format in tests.
 
 - **Use `date-fns` for date arithmetic**: Already a project dependency. Provides `nextMonday`, `nextThursday`, `isMonday`, `isThursday`, `addDays`, `parseISO`, `format` for clean cadence calculation.
 
 - **No Nuxt Content collection for marketing files**: Marketing files are stored as plain `.md` in `content/marketing/` but without a collection definition in `content.config.ts`. This keeps them invisible to the blog frontend. The admin UI integration (R11-R14) will decide how to access them -- likely via direct `fs` read in a server route. This avoids premature schema commitment. (Resolves deferred question on R10.)
 
+- **Marketing storage strategy -- dual storage with awareness of existing `marketing` frontmatter field**: The blog schema in `content.config.ts` already includes `marketing: z.record(z.string(), z.any()).optional()`, and the admin UI's `draft-linkedin.post.ts` already reads `post.marketing.linkedin` from blog post frontmatter. This means the admin UI currently expects marketing data *inside the blog post frontmatter*, not in a separate file. This plan stores `marketing.md` as separate files in `content/marketing/` (R8) for archival purposes, but the sync script should **also** parse the LinkedIn section from `marketing.md` and embed it under a `marketing.linkedin` key in the blog post frontmatter during migration. This ensures the existing admin UI LinkedIn draft flow works immediately for synced posts without requiring a follow-up plan to change how the admin reads marketing data. See the open question below if the Varro marketing file structure is not yet confirmed.
+
 - **Frontmatter migration happens at copy time**: The sync script translates Varro's schema to CCM's published schema. Varro never needs to know about CCM's schema.
 
 - **Date scheduling from last existing date**: The script scans all `content/blog/*.md` files, finds the maximum `date` value, then assigns the next Mon or Thu after that date to each new post. If the max date is in the past, it starts from the next Mon/Thu after today. (Resolves deferred question on R4 edge case.)
 
-- **Marketing file parsing deferred to admin UI work**: The sync script copies `marketing.md` as-is. Parsing LinkedIn content from its markdown structure is an admin UI concern (R12), not a sync concern.
+- **Marketing file parsing deferred to admin UI work**: The sync script copies `marketing.md` as-is to `content/marketing/`. Parsing LinkedIn content from its markdown structure for *embedding in blog frontmatter* is handled at sync time as a best-effort extraction (see marketing storage strategy above). If parsing fails or the structure is unexpected, the `marketing` frontmatter key is omitted and the admin falls back to its default behavior (using excerpt).
 
 - **Handle incomplete archives gracefully**: If a Varro folder has `final.md` but no `marketing.md` (or vice versa), the script copies whatever exists and logs a warning for the missing file. (Resolves deferred question on R2.)
 
 - **Slug extraction**: Read from `final.md` frontmatter `slug` field. For `marketing.md`, use `article_slug` frontmatter field; fall back to the parent directory name if needed.
+
+- **Preserve optional schema fields rather than blindly dropping**: The blog schema in `content.config.ts` includes `stage` and `related_posts` as valid optional fields. Rather than dropping these during migration (which loses data that the schema accepts), the script should preserve `stage` if present and drop `related_posts` only because the Varro format uses a different structure (array of strings vs. array of objects). This is a minor correction from the origin brainstorm's "drop" list.
 
 ## Open Questions
 
@@ -84,10 +93,14 @@ Note: R11-R14 (admin UI integration for LinkedIn drafts from marketing files) ar
 
 - **What about incomplete archive folders?** Copy what exists, warn about missing files. Do not fail the entire sync.
 
+- **How does marketing data reach the admin UI?** The admin UI's `draft-linkedin.post.ts` already reads `post.marketing.linkedin` from blog post frontmatter. The sync script should embed parsed LinkedIn content under the `marketing` frontmatter key during migration, in addition to copying the full marketing file to `content/marketing/`. This dual approach satisfies both archival (R8) and immediate admin usability without requiring admin UI changes.
+
 ### Deferred to Implementation
 
 - **Exact Varro archive directory structure**: The script assumes `{archive-root}/*/final.md` where `*` is a hash-named folder. If the actual structure differs, the glob pattern may need adjustment.
 - **Whether `marketing.md` frontmatter includes `article_slug`**: If not, fall back to parent directory name or `final.md`'s slug.
+- **Exact LinkedIn section heading structure in `marketing.md`**: The origin brainstorm mentions `## Professional Posts -> ### LinkedIn -> #### Long-Form Post`. The sync script needs to parse this to extract the LinkedIn content for embedding. If the structure varies across files, the parser should handle gracefully and skip embedding when it cannot extract cleanly.
+- **`gray-matter` date coercion behavior**: The implementer should verify early (in Unit 1) whether `gray-matter` coerces `date: '2026-07-06'` strings into JS Date objects and whether `matter.stringify` writes them back in a different format. If so, use the `engines` option or manual string formatting to preserve the `'YYYY-MM-DD'` format.
 
 ## High-Level Technical Design
 
@@ -106,10 +119,12 @@ sync-varro.ts
       - If exists and no --force: skip, log
       - If exists and --force: overwrite
    d. Migrate frontmatter (schema translation)
-   e. Queue for date assignment
-   f. Check for marketing.md in same folder
-      - If exists: queue marketing copy
+   e. If marketing.md exists in same folder:
+      - Parse LinkedIn section from marketing body
+      - If extraction succeeds: add marketing.linkedin to blog frontmatter
+      - Queue marketing file copy (as-is to content/marketing/)
       - If missing: warn
+   f. Queue for date assignment
 5. Sort queued posts (alphabetically by slug for determinism)
 6. Assign dates: starting from next Mon/Thu after max existing date
 7. Write files (or print dry-run summary):
@@ -144,10 +159,17 @@ sync-varro.ts
     - Set `author: "CCM Design Team"`
     - Add `brow: ""`, `tagline: ""`, `tags: []`
     - Add distribution timestamps: `newsletterSentAt: null`, `newsletterPreviewUrl: null`, `linkedinDraftedAt: null`, `linkedinPostUrl: null`, `linkedinPostedAt: null`
-    - Drop: `meta_title`, `meta_description`, `stage`, `status`, `related_posts`, `cta`, `primary_keyword`, `keywords` (replaced by `seo_tags`)
-    - Preserve: `title`, `slug`, `excerpt`, `published` (default true)
+    - Drop: `meta_title`, `meta_description`, `status`, `related_posts`, `cta`, `primary_keyword`, `keywords` (replaced by `seo_tags`)
+    - Preserve: `title`, `slug`, `excerpt`, `published` (default true), `stage` (if present -- valid optional schema field)
   - Skip logic: check if `content/blog/{slug}.md` exists; skip unless `--force`
   - Dry-run: print intended actions without writing
+
+  **Technical design -- `gray-matter` date handling:**
+  The script must verify early that `matter.stringify` preserves date strings as `'YYYY-MM-DD'`. If `gray-matter` coerces dates into JS Date objects, use one of these mitigations:
+  - Pass date values as already-quoted strings (e.g., set `data.date = "'2026-07-09'"` -- but verify this does not double-quote)
+  - Use `gray-matter`'s `engines` option with `js-yaml`'s `JSON_SCHEMA` to disable date auto-parsing
+  - Post-process the output with a regex to fix date formatting
+  The first test scenario below should catch any formatting regression.
 
   **Patterns to follow:**
   - `scripts/backfill-frontmatter.ts` for file structure, gray-matter usage, console logging style
@@ -155,10 +177,13 @@ sync-varro.ts
 
   **Test scenarios:**
   - Given a Varro folder with `final.md` containing Varro-schema frontmatter, produces correctly migrated frontmatter
+  - **Date format preservation**: Output frontmatter contains `date: 'YYYY-MM-DD'` as a string, not a Date object or ISO timestamp
   - `category: "digital"` becomes `categories: ["digital"]`
   - `keywords` + `primary_keyword` merge into deduplicated `seo_tags`
-  - Dropped fields are absent from output
+  - Dropped fields (`meta_title`, `meta_description`, `status`, `related_posts`, `cta`) are absent from output
+  - `stage` field is preserved when present in source
   - Blank fields (`brow`, `tagline`, `tags`) are present
+  - Distribution timestamps are present with null values
   - Body content is preserved verbatim
   - Existing slug is skipped without `--force`
   - Existing slug is overwritten with `--force`
@@ -168,6 +193,7 @@ sync-varro.ts
   **Verification:**
   - Running with `--dry-run` against a test fixture archive prints expected actions
   - Running without `--dry-run` creates files in `content/blog/` with correct frontmatter shape matching existing posts
+  - Diff a generated file against an existing blog post to confirm field ordering and formatting are compatible
 
 - [ ] **Unit 2: Mon/Thu date scheduling**
 
@@ -190,6 +216,10 @@ sync-varro.ts
   - Assign one date per post in sequence
   - Format as `YYYY-MM-DD` string (matching existing blog post date format, e.g., `'2026-07-06'`)
 
+  **Technical design -- cadence edge cases:**
+  - If the max existing date falls on a Monday, the next date is the following Thursday (same week). If it falls on a Thursday, the next date is the following Monday. If it falls on any other day (unlikely for existing posts, but possible), advance to the next Monday or Thursday, whichever comes first.
+  - When multiple batches are synced on different days, each batch picks up from the latest date in the repo, not from its own internal state. This makes the script stateless and idempotent with respect to scheduling.
+
   **Patterns to follow:**
   - Existing blog posts use `date: 'YYYY-MM-DD'` format (single-quoted string in YAML)
 
@@ -198,14 +228,15 @@ sync-varro.ts
   - Given 3 new posts, dates are assigned as consecutive Mon/Thu pairs
   - Given last existing date is in the past, scheduling starts from today's next Mon/Thu
   - Given no existing blog posts, scheduling starts from today's next Mon/Thu
+  - Given last existing date falls on a Wednesday, next assigned date is the following Thursday (not Monday)
 
   **Verification:**
   - Dry-run output shows correctly sequenced Mon/Thu dates
   - All assigned dates are in the future relative to the latest existing post
 
-- [ ] **Unit 3: Marketing file copy**
+- [ ] **Unit 3: Marketing file copy and LinkedIn content embedding**
 
-  **Goal:** Copy `marketing.md` files from Varro archive to `content/marketing/{slug}.md`.
+  **Goal:** Copy `marketing.md` files from Varro archive to `content/marketing/{slug}.md` and embed LinkedIn content in blog post frontmatter.
 
   **Requirements:** R2 (marketing), R8, R9, R10
 
@@ -220,24 +251,32 @@ sync-varro.ts
   - For each Varro folder, check for `marketing.md` alongside `final.md`
   - Read the file and copy as-is to `content/marketing/{slug}.md` (no frontmatter migration)
   - Use the slug from `final.md` (not from `marketing.md` frontmatter) as the canonical slug
+  - **Parse LinkedIn content from marketing body**: Extract the LinkedIn long-form post section (expected under `## Professional Posts` > `### LinkedIn` > `#### Long-Form Post` per the origin brainstorm). If extraction succeeds, add `marketing: { linkedin: { longForm: <extracted text> } }` to the blog post frontmatter. If parsing fails (unexpected structure), log a warning and omit the `marketing` key -- the admin UI falls back to excerpt-based drafting.
   - If `marketing.md` is missing, log a warning but continue processing `final.md`
   - If `final.md` is missing but `marketing.md` exists, skip the folder with a warning (marketing without a blog post is not useful)
   - Respect `--force` and `--dry-run` flags for marketing files too
   - Ensure `content/marketing/` directory is created if it does not exist
+
+  **Technical design -- LinkedIn extraction:**
+  The extraction function should be a separate, testable utility (e.g., `extractLinkedInContent(markdownBody: string): string | null`). It reads the markdown body of `marketing.md`, locates the LinkedIn long-form section by heading hierarchy, and returns the text content between the `#### Long-Form Post` heading and the next heading of equal or higher level. Returns `null` if the structure does not match, triggering a fallback.
 
   **Patterns to follow:**
   - Same file I/O pattern as blog post writing in Unit 1
 
   **Test scenarios:**
   - Given both `final.md` and `marketing.md` exist, both are copied
-  - Given only `final.md` exists, blog post is copied with warning about missing marketing file
+  - Given `marketing.md` with expected heading structure, LinkedIn content is embedded in blog frontmatter under `marketing.linkedin.longForm`
+  - Given `marketing.md` with unexpected structure, blog post is created without `marketing` key and warning is logged
+  - Given only `final.md` exists, blog post is copied with warning about missing marketing file (no `marketing` key in frontmatter)
   - Given only `marketing.md` exists, folder is skipped with warning
-  - Marketing file content is copied verbatim (no transformation)
+  - Marketing file in `content/marketing/` is copied verbatim (no transformation)
   - `--dry-run` shows marketing file would be copied without writing
 
   **Verification:**
   - After sync, `content/marketing/{slug}.md` exists for each Varro folder that had `marketing.md`
-  - Marketing files are byte-identical to source (no transformation)
+  - Marketing files in `content/marketing/` are byte-identical to source (no transformation)
+  - Blog posts that had a parseable `marketing.md` have `marketing.linkedin` in their frontmatter
+  - The admin UI's LinkedIn draft flow can read `marketing.linkedin` from the synced blog post without code changes
 
 - [ ] **Unit 4: Integration test with fixture data**
 
@@ -255,13 +294,17 @@ sync-varro.ts
 
   **Approach:**
   - Create minimal fixture files with Varro-schema frontmatter
+  - The `marketing.md` fixture should include the expected LinkedIn heading structure so embedding can be tested
   - Test runs the sync against a temp output directory
-  - Verify: correct files created, frontmatter migrated, dates assigned, marketing copied
+  - Verify: correct files created, frontmatter migrated, dates assigned, marketing copied, LinkedIn content embedded
   - Verify: running again skips existing (idempotent)
   - Verify: `--force` overwrites
+  - Verify: date format is `'YYYY-MM-DD'` string, not a Date object
 
   **Test scenarios:**
   - Full sync produces expected blog and marketing files
+  - Blog post from `abc123` has `marketing.linkedin` in frontmatter
+  - Blog post from `def456` does not have `marketing` key (no marketing.md source)
   - Second run skips all (idempotency)
   - Second run with `--force` overwrites all
   - Missing marketing file produces warning but completes
@@ -275,20 +318,25 @@ sync-varro.ts
 ## System-Wide Impact
 
 - **Content directory**: New files in `content/blog/` and new `content/marketing/` directory. Blog files follow existing schema exactly, so no impact on Nuxt Content queries or frontend rendering.
-- **Content config**: No changes to `content.config.ts`. Marketing files are intentionally outside any collection.
+- **Content config**: No changes to `content.config.ts`. Marketing files are intentionally outside any collection. The existing `marketing` field in the blog schema (`z.record(z.string(), z.any()).optional()`) is used by the sync script to embed LinkedIn content in blog post frontmatter.
+- **Admin UI -- LinkedIn draft flow**: Synced blog posts with a parseable `marketing.md` will have `marketing.linkedin` populated in frontmatter. The existing `draft-linkedin.post.ts` route already reads this field (line 40) and passes it to the LinkedIn service. This means LinkedIn drafts for synced posts will use the Varro-authored marketing copy immediately, with no admin UI code changes required.
 - **Build/deploy**: New blog posts will appear on the site once their date passes. No build changes needed.
-- **Admin UI**: Marketing files are stored but not yet surfaced. The admin UI integration (R11-R14) is a separate future unit.
+- **Admin UI**: Marketing files are stored in `content/marketing/` for archival and future use. The `marketing` frontmatter field in blog posts is the active integration point.
 - **Git**: Running sync will produce a potentially large diff (many new files). Recommend running sync on a feature branch and reviewing before merge.
 
 ## Risks & Dependencies
 
 - **Varro archive structure assumption**: The script assumes `{archive}/*/final.md`. If Varro changes its output structure, the discovery glob needs updating. Mitigation: the `--source` flag makes it easy to point at any directory.
-- **`gray-matter` stringify formatting**: `matter.stringify` may produce slightly different YAML formatting than hand-written frontmatter. Mitigation: for new files this is acceptable; existing posts are never modified (unless `--force`).
+- **`gray-matter` stringify formatting**: `matter.stringify` may produce slightly different YAML formatting than hand-written frontmatter. Mitigation: for new files this is acceptable; existing posts are never modified (unless `--force`). **Specific risk**: `gray-matter` parses YAML date strings (e.g., `2026-07-06`) into JS Date objects by default, and `stringify` may write them back as ISO timestamps or unquoted values. Mitigation: test date round-tripping in Unit 1 and use `engines` option or manual formatting if needed.
 - **Large batch**: If Varro has 45+ articles, a single sync produces 45+ new files. Mitigation: `--dry-run` lets the user preview before committing.
+- **LinkedIn section parsing fragility**: The `marketing.md` heading structure (`## Professional Posts` > `### LinkedIn` > `#### Long-Form Post`) is assumed from the origin brainstorm but may vary across files. Mitigation: the parser gracefully returns `null` on mismatch; the admin UI falls back to excerpt-based drafting. A warning is logged so the user can investigate.
+- **Marketing frontmatter field size**: Embedding LinkedIn long-form content in blog post frontmatter could make frontmatter blocks significantly larger. Mitigation: only the LinkedIn long-form section is embedded (not the entire marketing file). The `marketing` schema field is `z.record(z.string(), z.any())` which accepts any structure. If size becomes a concern, the admin UI integration plan can switch to reading from separate files.
 
 ## Sources & References
 
 - **Origin document:** [docs/brainstorms/2026-03-25-varro-content-sync-requirements.md](docs/brainstorms/2026-03-25-varro-content-sync-requirements.md)
+- **Sibling plan (completed):** [docs/plans/2026-03-25-001-feat-schema-admin-distribution-flows-plan.md](docs/plans/2026-03-25-001-feat-schema-admin-distribution-flows-plan.md) -- added `marketing` field to blog schema, implemented LinkedIn draft flow that reads `post.marketing.linkedin`
 - Related code: `scripts/backfill-frontmatter.ts`, `scripts/migrate-to-timestamps.ts`
-- Related schema: `content.config.ts` (blog collection)
+- Related admin code: `server/routes/api/admin/draft-linkedin.post.ts` (reads `marketing.linkedin`), `server/utils/serviceClient.ts` (`draftLinkedInPost`)
+- Related schema: `content.config.ts` (blog collection, `marketing` field)
 - Related issue: CCM-119
