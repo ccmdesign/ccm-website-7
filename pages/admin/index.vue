@@ -7,6 +7,24 @@
     </div>
 
     <template v-else>
+      <!-- Service connectivity status -->
+      <div class="health-status" v-if="healthChecked">
+        <details :open="!healthOk">
+          <summary :class="healthOk ? 'health-ok' : 'health-warn'">
+            {{ healthOk ? 'All services connected' : 'Service connectivity issues' }}
+          </summary>
+          <ul class="health-details">
+            <li v-for="(check, name) in healthChecks" :key="name">
+              <span :class="check.ok ? 'status-sent' : 'status-unsent'">
+                {{ check.ok ? 'OK' : 'FAIL' }}
+              </span>
+              {{ name }}
+              <span v-if="check.error" class="health-error"> — {{ check.error }}</span>
+            </li>
+          </ul>
+        </details>
+      </div>
+
       <div class="admin-controls">
         <label class="filter-toggle">
           <input v-model="showOnlyUnsent" type="checkbox" />
@@ -101,6 +119,9 @@ const posts = ref([])
 const showOnlyUnsent = ref(false)
 const sending = ref({})
 const toasts = ref([])
+const healthChecked = ref(false)
+const healthOk = ref(false)
+const healthChecks = ref({})
 
 const filteredPosts = computed(() => {
   if (!showOnlyUnsent.value) return posts.value
@@ -122,6 +143,19 @@ function showToast(message, type = 'success', duration = 4000) {
   }, duration)
 }
 
+async function checkHealth() {
+  try {
+    const data = await $fetch('/api/admin/health')
+    healthOk.value = data.ok
+    healthChecks.value = data.checks
+  } catch (err) {
+    healthOk.value = false
+    healthChecks.value = { healthEndpoint: { ok: false, error: 'Health check endpoint unreachable' } }
+  } finally {
+    healthChecked.value = true
+  }
+}
+
 async function loadPosts() {
   try {
     // Use queryCollection directly instead of useAsyncData.
@@ -133,7 +167,12 @@ async function loadPosts() {
     }
   } catch (err) {
     console.error('Failed to load posts:', err)
-    showToast('Failed to load posts', 'error')
+    const message = (err && err.message) || 'Unknown error'
+    if (message.includes('SQLITE') || message.includes('database')) {
+      showToast('Content database error. Try restarting the dev server to rebuild the SQLite DB.', 'error', 8000)
+    } else {
+      showToast(`Failed to load posts: ${message}`, 'error', 6000)
+    }
   }
 }
 
@@ -168,7 +207,10 @@ async function send(post, service) {
 }
 
 onMounted(() => {
-  if (isDev) loadPosts()
+  if (isDev) {
+    loadPosts()
+    checkHealth()
+  }
 })
 </script>
 
@@ -246,6 +288,37 @@ onMounted(() => {
   text-align: center;
   padding: 4rem;
   color: #666;
+}
+
+.health-status {
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.health-status summary {
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.health-ok { background: #f0fdf4; color: #16a34a; }
+.health-warn { background: #fefce8; color: #ca8a04; }
+
+.health-details {
+  list-style: none;
+  padding: 0.5rem 0.75rem;
+  margin: 0.25rem 0 0 0;
+  font-size: 0.8125rem;
+}
+
+.health-details li {
+  padding: 0.25rem 0;
+}
+
+.health-error {
+  color: #666;
+  font-style: italic;
 }
 
 .toast-container {
