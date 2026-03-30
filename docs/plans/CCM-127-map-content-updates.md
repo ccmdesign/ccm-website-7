@@ -1,0 +1,238 @@
+# CCM-127: Map Content Updates to Existing Pages
+
+> Audit step: maps every content change from Hannah's content doc to its corresponding file in the **new-commons** codebase (`govlab/new-commons`).
+
+---
+
+## Source codebase
+
+All paths below are relative to the **new-commons** repo root (`/Users/claudiomendonca/Documents/GitHub/govlab/new-commons/`).
+
+---
+
+## 1. Homepage (`pages/index.vue`)
+
+### Current structure (4 sections)
+1. `ncHero` (lines 2-32) -- hero with headline, description, CTA, announcement bar
+2. `ncBaseSection#video-section` (lines 34-42) -- "About the Incubator" heading + YouTube embed
+3. `ncCta#cta` (lines 45-67) -- two-panel CTA: FAQ panel (top) + webinar panel (bottom)
+4. `ncBlogSection#blog` (line 68) -- latest 3 blog posts
+
+### Target structure (9 panels)
+
+| Panel | Action | File / Component | Notes |
+|-------|--------|-----------------|-------|
+| 1 - Hero | **MODIFY** -- replace placeholder hero copy with Incubator intro + "About the Incubator" CTA | `pages/index.vue` lines 4-11 (inside `ncHero > .hero__content > .panel`) | Content ready. Also update announcement bar (lines 20-31). |
+| 2 - Call for Proposals | **NEW SECTION** -- Indigenous Languages CTA + "Apply Now" | `pages/index.vue` -- add new `ncBaseSection` or `ncCta` after hero | **BLOCKED**: application form URL not available. Skip for now; leave a TODO placeholder. |
+| 3 - Webinars | **NEW SECTION** -- webinar signup CTA | `pages/index.vue` -- add after Panel 2 | **BLOCKED**: webinar signup URL not available. Skip; leave TODO placeholder. |
+| 4 - (blank) | No content provided | — | **MISSING** -- skip entirely. |
+| 5 - (skip) | Not in doc | — | — |
+| 6 - FAQ | **MODIFY** -- update FAQ CTA copy | `pages/index.vue` lines 45-67, uses `ncCta` component (`components/ncCta.vue`) | Content ready. Update heading text and description inside `.panel-header`. Remove or restructure the `.panel-footer` webinar sub-panel (it becomes Panel 3 above). |
+| 7 - Initiatives | **NEW SECTION** -- slider with 2025 Challenge + Indigenous Languages cards | `pages/index.vue` -- add new section | Content ready. Needs a new component (e.g. `ncInitiativesSlider.vue`) or inline markup. Cards link to `/the-2025-challenge` and the Indigenous Languages initiative. |
+| 8 - Resources | **NEW SECTION** -- grid of resource cards (same format as blog cards) | `pages/index.vue` -- add new section. Reuse `ncResourceCard` component (already exists at `components/ncResourceCard.vue`). | Content ready. Query `resources` collection similar to `pages/resources/index.vue`. |
+| 9 - Blog | **NO CHANGE** | `ncBlogSection` component, line 68 | Keep as-is. |
+
+### Implementation steps (Homepage)
+1. Replace hero copy (Panel 1) -- update `<h1>`, `<p>`, button text, and announcement bar text in `pages/index.vue`.
+2. Restructure the CTA section (Panel 6) -- keep FAQ CTA, remove embedded webinar sub-panel from `.panel-footer`.
+3. Add Initiatives section (Panel 7) -- create `ncInitiativesSlider.vue` or use inline carousel markup. Needs two cards: "2025 Challenge" and "Indigenous Languages."
+4. Add Resources section (Panel 8) -- add `ncBaseSection` that queries resources collection and renders `ncResourceCard` grid.
+5. Reorder sections: Hero -> (Panel 2 placeholder) -> (Panel 3 placeholder) -> FAQ CTA -> Initiatives -> Resources -> Blog.
+6. Remove the Video section (`#video-section`, lines 34-42) -- it is not in the new structure.
+
+---
+
+## 2. Incubator Page (`pages/incubator/2026.vue`)
+
+### Current structure
+1. `ncHero` -- hero with brow, heading, description, announcement bar
+2. `ncBaseSection` -- Program Overview
+3. `ncBaseSection.section-bg` -- What We Offer (4 cards)
+4. `ncBaseSection` -- Who Should Apply (eligibility)
+5. `ncTimeline` -- Timeline with placeholder dates
+6. `ncBaseSection` -- Ready to Apply CTA
+7. `ncBaseSection` -- Judges + International Observer
+
+### Target structure
+
+| Panel | Action | File | Notes |
+|-------|--------|------|-------|
+| 1 - Hero | **MODIFY** -- replace copy with "Building a Shared Digital Future" + full Incubator description | `pages/incubator/2026.vue` lines 2-23 | Content ready. Replace `<h1>`, `<p>`, brow text. Keep announcement bar pointing to 2025 Challenge. |
+| 2 - Call for Proposals | **NEW SECTION** -- Indigenous Languages CTA | After hero | **BLOCKED**: form URL. Skip; leave TODO. |
+| 3 - Webinars | **NEW SECTION** -- webinar signup CTA | After Panel 2 | **BLOCKED**: signup URL. Skip; leave TODO. |
+| 4 - Why the Incubator? | **NEW SECTION** -- 3-paragraph explanation | Add after Panel 3 position | Content ready. Simple `ncBaseSection` with prose. |
+| 5 - Programmatic Offerings | **MODIFY** -- replace "What We Offer" 4-card grid with narrative description + bullet list | `pages/incubator/2026.vue` lines 42-66 | Content ready (except "X-week" duration TBD). Change `.offer-cards` grid to prose + `<ul>`. |
+| 7 - Call for Proposals (repeat) | Same as Panel 2 | — | **BLOCKED**: same blocker. |
+| 8 - Helpful Tips | **NEW SECTION** -- resources CTA link | Add section | Content ready. Simple CTA linking to `/resources`. |
+| 9 - FAQ | **NEW SECTION** -- FAQ CTA link | Add section | Content ready. Simple CTA linking to `/faq`. |
+| **REMOVE** | Judges/Observers section (lines 103-108) | Delete `<nc-base-section>` with `ncJudgesGrid` and `ncObserversGrid` | — |
+| **REMOVE** | Timeline section (line 89) | Delete `<nc-timeline>` | — |
+| **REMOVE** | "Ready to Apply?" CTA (lines 92-101) | Delete section | — |
+| **REMOVE** | "Who Should Apply" eligibility section (lines 69-87) | Delete section | — |
+| **REMOVE** | "Program Overview" section (lines 26-39) | Replaced by Panel 4 | — |
+
+### Implementation steps (Incubator)
+1. Replace hero copy (Panel 1).
+2. Add "Why the Incubator?" section (Panel 4) as prose `ncBaseSection`.
+3. Transform "What We Offer" into "Programmatic Offerings" (Panel 5) -- replace card grid with narrative + bullets.
+4. Add "Helpful Tips" CTA (Panel 8) linking to `/resources`.
+5. Add "FAQ" CTA (Panel 9) linking to `/faq`.
+6. Remove: Judges/Observers, Timeline, "Ready to Apply?" CTA, "Who Should Apply", "Program Overview."
+
+---
+
+## 3. Challenge Page (`pages/the-2025-challenge.vue`)
+
+| Section | Action | Notes |
+|---------|--------|-------|
+| Panel 1 - Hero overview | **MODIFY** -- replace intro text (lines 6-12) with updated 2025 Challenge description | Content ready. Only the `<p>` blocks inside `.hero__content > .panel > .switcher` change. |
+| Everything else | **NO CHANGE** | Winners, gallery, jury, blog sections stay. |
+
+### Implementation steps (Challenge)
+1. Replace the two `<p>` blocks in the hero switcher with the new description copy.
+
+---
+
+## 4. FAQ Page (`pages/faq.vue`)
+
+### Current structure
+- 6 category sections with 14 total FAQ items (all `[PLACEHOLDER]` text)
+- Categories: About the Incubator (4), Eligibility (3), Application Process (3), Support & Resources (2), Timeline & Key Dates (2), Data Governance (2)
+- Data is inline in `<script setup>` as a `faq` object with category keys
+
+### Target structure
+- 13 new Incubator FAQ items replacing all 14 current items
+- New category grouping TBD
+
+| Action | File | Notes |
+|--------|------|-------|
+| **REPLACE** all FAQ content | `pages/faq.vue` -- replace entire `faq` object in `<script setup>` (lines 33-197) | Content ready. |
+| **UPDATE** category headings in template | `pages/faq.vue` -- update `<h3>` elements and `v-for` keys (lines 7-29) | New grouping TBD -- implementer should organize the 13 items into logical groups. |
+
+### Implementation steps (FAQ)
+1. Replace the `faq` object with 13 new FAQ items, organized into new categories.
+2. Update the `<template>` to reflect the new category structure (add/remove `ncFaqSection` blocks as needed).
+
+---
+
+## 5. Footer (`components/ncFooter.vue`)
+
+### Current structure (line 23-38)
+- Column 3 (`.footer__col3`) contains:
+  - **Partners** heading with `ncDirectReliefLogo` + Institutional Data Initiative image
+  - **International Observer** heading with `ncUnescoLogo`
+
+### Target structure
+- Remove "Partners" section (Direct Relief + IDI)
+- Remove "International Observer" label
+- Replace with: **Partners** section showing UNESCO + Microsoft logos
+
+| Action | File | Notes |
+|--------|------|-------|
+| **MODIFY** `.footer__col3` content | `components/ncFooter.vue` lines 23-38 | Remove `ncDirectReliefLogo`, remove IDI image, remove "International Observer" div. Replace with single "Partners" div containing `ncUnescoLogo` + `ncMsLogo`. Both logo components already exist. |
+
+### Implementation steps (Footer)
+1. In `.footer__col3`, remove the `<nc-direct-relief-logo />` and `<img ... alt="Institutional Data Initiative" />`.
+2. Remove the entire `.international-observer` div.
+3. Change the Partners `.logos` div to contain `<nc-unesco-logo />` and `<nc-ms-logo />`.
+
+---
+
+## 6. Navigation (`components/ncTopbar.vue`)
+
+### Current nav items (line 8-13)
+1. The Incubator (`/incubator/2026`)
+2. The 2025 Challenge (`/the-2025-challenge`)
+3. Resources (`/resources`)
+4. Blog (`/blog`)
+5. FAQ (`/faq`)
+6. Rules (external link via `rulesUrl`)
+
+### Target nav items
+1. The Incubator
+2. The 2025 Challenge
+3. **Initiatives** (new)
+4. Resources
+5. Blog
+6. FAQ
+7. ~~Rules~~ (remove)
+
+| Action | File | Notes |
+|--------|------|-------|
+| **ADD** "Initiatives" link | `components/ncTopbar.vue` -- add `<li>` after "The 2025 Challenge" | Needs a target URL. If `/initiatives` page does not exist, this may link to a homepage anchor (`/#initiatives`) or a new page. **Decision needed.** |
+| **REMOVE** "Rules" link | `components/ncTopbar.vue` -- delete line 13 | Also check if `useSiteLinks` composable (`composables/useSiteLinks.js`) needs cleanup. |
+
+### Implementation steps (Navigation)
+1. Remove the Rules `<li>` (line 13).
+2. Add an Initiatives `<li>` in the desired position.
+3. Determine Initiatives link target (new page vs. anchor).
+
+---
+
+## 7. Branding -- Logo Components
+
+### Current state
+- `components/ncLogoHeader.vue` -- SVG with `alt="New Commons"` `title="New Commons"`. The SVG path data renders the text "New Commons." visually (no word "challenge" in alt/title or visible text).
+- `components/ncLogoFooter.vue` -- SVG rendering "Commons" text in white. No word "challenge" visible in code.
+
+### Assessment
+The logos already say "New Commons" (not "New Commons Challenge"). The SVG vector paths contain the rendered text. **Visually verify** that neither logo currently shows "Challenge" -- if they do, the SVG `<path>` data must be regenerated from a new logo asset (cannot be string-edited).
+
+| Action | File | Notes |
+|--------|------|-------|
+| **VERIFY** no "challenge" text renders | `components/ncLogoHeader.vue`, `components/ncLogoFooter.vue` | If "challenge" is visually present, new SVG assets are needed from the designer. If not, no change required. |
+
+---
+
+## 8. New Components Needed
+
+| Component | Purpose | Reuse opportunity |
+|-----------|---------|-------------------|
+| `ncInitiativesSlider.vue` (or similar) | Homepage Panel 7 -- slider/carousel with initiative cards | Could leverage existing carousel dependency if one exists, or use a simple CSS scroll-snap slider. |
+
+No other new components are strictly required -- all other new sections can be built with existing `ncBaseSection`, `ncCta`, `ncButton`, and `ncResourceCard` components.
+
+---
+
+## 9. Blockers Summary
+
+| Blocker | Affects | Action |
+|---------|---------|--------|
+| Application form URL | Homepage Panel 2, Incubator Panels 2 and 7 | Leave TODO placeholder with disabled button |
+| Webinar signup URL | Homepage Panel 3, Incubator Panel 3 | Leave TODO placeholder |
+| Homepage Panel 4 content | Homepage Panel 4 | Skip entirely (no content) |
+| "X-week" duration | Incubator Panel 5 (Programmatic Offerings) | Use placeholder `[X-week]` |
+| FAQ category grouping | FAQ page | Implementer decides grouping for 13 items |
+| Initiatives link target | Navigation | Decide: new page, homepage anchor, or existing page |
+
+---
+
+## 10. Files Changed Summary
+
+### Modified files (8)
+1. `pages/index.vue` -- hero copy, restructure sections, add initiatives + resources sections
+2. `pages/incubator/2026.vue` -- hero copy, replace offerings, add new sections, remove judges/timeline/CTA
+3. `pages/the-2025-challenge.vue` -- hero intro text only
+4. `pages/faq.vue` -- replace all 14 FAQ items with 13 new ones
+5. `components/ncFooter.vue` -- replace Partners/Observer with UNESCO + Microsoft
+6. `components/ncTopbar.vue` -- add Initiatives link, remove Rules link
+7. `components/ncLogoHeader.vue` -- verify only (likely no change)
+8. `components/ncLogoFooter.vue` -- verify only (likely no change)
+
+### New files (1)
+1. `components/ncInitiativesSlider.vue` -- homepage initiatives carousel (Panel 7)
+
+### Deleted files (0)
+No files deleted. `ncJudgesGrid`, `ncObserversGrid`, `ncTimeline`, `ncDirectReliefLogo` components remain in the codebase (still used on the Challenge page or potentially elsewhere).
+
+---
+
+## 11. Suggested Implementation Order
+
+1. **Footer** (`ncFooter.vue`) -- small, self-contained change
+2. **Navigation** (`ncTopbar.vue`) -- small, self-contained change
+3. **Branding** (logo verification) -- quick visual check
+4. **FAQ page** (`faq.vue`) -- content swap, no structural changes
+5. **Challenge page** (`the-2025-challenge.vue`) -- single paragraph swap
+6. **Incubator page** (`incubator/2026.vue`) -- moderate restructure
+7. **Homepage** (`index.vue`) -- largest change, depends on new initiatives component
