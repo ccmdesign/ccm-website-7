@@ -236,3 +236,248 @@ No files deleted. `ncJudgesGrid`, `ncObserversGrid`, `ncTimeline`, `ncDirectReli
 5. **Challenge page** (`the-2025-challenge.vue`) -- single paragraph swap
 6. **Incubator page** (`incubator/2026.vue`) -- moderate restructure
 7. **Homepage** (`index.vue`) -- largest change, depends on new initiatives component
+
+---
+
+## 12. Deepened Details (Verification & Implementation Notes)
+
+> Added 2026-03-30 after reading every referenced source file.
+
+### Line Number & Structure Corrections
+
+The plan's line references are **accurate** for the current codebase state. Key confirmations:
+
+| Plan claim | Verified? | Notes |
+|------------|-----------|-------|
+| Homepage hero at lines 2-32 | Yes | `<nc-hero id="hero">` runs lines 2-32. |
+| Homepage video section lines 34-42 | Yes | `<nc-base-section id="video-section" width="narrow">` at lines 34-42. |
+| Homepage CTA lines 45-67 | Yes | `<nc-cta id="cta" :single-column="true">` at lines 45-67. |
+| Homepage blog at line 68 | Yes | `<nc-blog-section id="blog" :posts="blogposts" />` at line 68. |
+| Incubator hero lines 2-23 | Yes | Hero runs lines 2-23. |
+| Incubator "What We Offer" lines 42-66 | Yes | `<nc-base-section class="section-bg" color="primary">` at lines 42-66. |
+| Incubator eligibility lines 69-87 | Yes | Lines 68-87 (line 68 is the `<!-- TODO -->` comment). |
+| Incubator timeline line 89 | Yes | Exact match. |
+| Incubator "Ready to Apply?" lines 92-101 | Yes | Lines 91-101 (line 91 is the `<!-- TODO -->` comment). |
+| Incubator Judges lines 103-108 | Yes | Lines 103-108. |
+| Footer `.footer__col3` lines 23-38 | Yes | Lines 23-38 exactly. |
+| Topbar nav lines 8-13 | Yes | 6 `<li>` items at lines 8-13. |
+| FAQ `faq` object lines 33-197 | Yes | Object spans lines 33-197. Template has 6 categories at lines 6-29. |
+| Challenge hero `<p>` blocks lines 6-12 | Yes | The hero switcher contains 3 `<p>` blocks at lines 8-12 (not 2 as stated). Actually there are 3 `<p>` blocks: line 8 (long main paragraph), line 11 (event paragraph), line 12 (grantee details). |
+
+**Correction — Challenge page (Section 3):** The plan says "two `<p>` blocks" in the hero switcher. There are actually **three** `<p>` elements inside `.hero__content > .panel > .switcher > div:first-child` (lines 8, 11, 12). All three need to be reviewed for replacement.
+
+### Component Architecture Details
+
+#### `ncHero` (`components/ncHero.vue`)
+- Pure slot-based wrapper. No props. Renders `<div class="hero | subgrid">` and applies deep scoped styles for `.panel h1` (size-4, 800 weight) and `.panel p` (size-0 + 1px).
+- Layout: uses `display: flex` for `.hero__content` with `gap: var(--space-2xl-3xl)` and children flex: 1.
+- Announcement bar is placed as a sibling to `.hero__content` inside the slot, using the `<nc-announcement>` component.
+
+#### `ncBaseSection` (`components/ncBaseSection.vue`)
+- **Props:** `width` (String, default `'content'`), `color` (String, `''`|`'base'`|`'primary'`|`'secondary'`|`'faded'`), `backgroundImage` (String), `subgrid` (Boolean).
+- Wraps `<ccm-base-section>`, which is the lower-level grid primitive.
+- Content slot goes inside `.nc-base-section__content` which gets `grid-column: content-start / content-end`.
+- `width="narrow"` constrains to `col2 / col11`.
+- Color variants: `"faded"` = `var(--base-color-07-tint)` (light gray).
+
+#### `ncCta` (`components/ncCta.vue`)
+- **Props:** `singleColumn` (Boolean, default `false`).
+- Wraps `<ccm-base-section>` with `size="l"`.
+- Default slot goes into first `.cta__content` (grid-column `content-start / col6`).
+- Named `right` slot goes into second `.cta__content` (grid-column `col7 / content-end`).
+- When `singleColumn=true`, the single `.cta__content` spans `content-start / content-end` with `text-align: center`.
+- **Important:** The current homepage uses `ncCta` with `singleColumn=true` and manages its own two-panel layout (`panel-header` + `panel-footer`) via custom CSS. When removing the `.panel-footer` webinar sub-panel (Panel 6), the `.panel-footer` CSS rules in `pages/index.vue` (lines 177-187) should also be removed to avoid dead CSS.
+
+#### `ncResourceCard` (`components/ncResourceCard.vue`)
+- **Props:** `content` (Object, required). Expects `{ title, description, category, cover_image?, url?, file?, slug }`.
+- Uses `useResources()` composable for `getImage()`, `getResourceLink()`, `isExternalLink()`.
+- CSS: card with outline border, `var(--border-radius-l)`, hover shadow.
+- Image: 16/9 aspect ratio, object-fit cover.
+
+#### `ncFaqSection` (`components/ncFaqSection.vue`)
+- Slot-based. Wraps `<nc-base-section>` and uses CSS to create a 2-column layout at 768px+: heading in `content-start / col4`, collapse items in `col5 / content-end`.
+- Each category needs its own `<nc-faq-section>` block with an `<h3>` and `v-for` of `<nc-collapse>` items.
+
+#### `ncCollapse` (referenced in FAQ)
+- Takes a `data` prop with shape `{ summary: string, content: string (HTML) }` and a `name` prop (string).
+
+### Grid System & Layout Utilities
+
+The project uses an **Every Layout**-based utility CSS system (`public/css/base/everylayout.css`):
+
+- **`.grid`** — `display: grid; grid-template-columns: repeat(auto-fill, minmax(var(--_grid-min-width, 240px), 1fr)); gap: var(--_grid-gap, var(--base-gutter));`
+  - Override `--_grid-min-width` via inline style or scoped CSS (e.g., `--_grid-min-width: 300px` on resources page).
+- **`.stack`** — Vertical stack with `--_stack-space` gap.
+- **`.switcher`** — Flex layout that switches from row to column at a threshold.
+- **`.cluster`** — Flex wrap layout.
+- **`.reel`** — Horizontal scroll container (`display: flex; overflow-x: auto`). **Not currently used anywhere in `.vue` files**, but available. Could be used for the initiatives slider instead of creating a full carousel component.
+
+### New Component: Initiatives Section
+
+#### Recommendation: Use `.reel` utility instead of `ncInitiativesSlider.vue`
+
+The project has `vue-carousel` (v0.18.0) in `package.json` but it is **not imported in any component**. It is a Vue 2 package and will not work with Vue 3/Nuxt 3.
+
+**Recommended approach for Panel 7 (Initiatives):** Do not create `ncInitiativesSlider.vue`. Instead, use the existing `.reel` utility class with CSS `scroll-snap` for a lightweight horizontal scrolling section. With only 2 cards, a simple flexbox row (non-scrolling on desktop, scrollable on mobile) is sufficient.
+
+```html
+<!-- Panel 7: Initiatives — inline in pages/index.vue -->
+<nc-base-section id="initiatives">
+  <h2>Initiatives</h2>
+  <div class="initiatives-cards">
+    <a href="/the-2025-challenge" class="initiative-card">
+      <img src="..." alt="The 2025 Challenge" class="initiative-card__image" />
+      <h3>The 2025 Challenge</h3>
+      <p>Description...</p>
+    </a>
+    <a href="#" class="initiative-card">
+      <!-- TODO: Indigenous Languages initiative URL -->
+      <img src="..." alt="Indigenous Languages" class="initiative-card__image" />
+      <h3>Indigenous Languages</h3>
+      <p>Description...</p>
+    </a>
+  </div>
+</nc-base-section>
+```
+
+Scoped CSS pattern to follow:
+```css
+.initiatives-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--base-gutter);
+}
+
+.initiative-card {
+  background: white;
+  border-radius: var(--border-radius-l);
+  outline: 1px solid var(--black-color-10-tint);
+  padding: var(--space-xs);
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 150ms ease;
+}
+
+.initiative-card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.initiative-card__image {
+  border-radius: var(--border-radius-s);
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+```
+
+This follows the exact same pattern as `ncResourceCard` and `ncBlogCard`.
+
+### Resources Section (Panel 8) — Implementation Detail
+
+The homepage resources section should query the `resources` collection identically to `pages/resources/index.vue`:
+
+```html
+<nc-base-section id="resources">
+  <h2>Resources</h2>
+  <div class="grid resource-grid" style="--_grid-min-width: 300px;">
+    <nc-resource-card
+      v-for="resource in resources"
+      :key="resource.slug"
+      :content="resource"
+    />
+  </div>
+</nc-base-section>
+```
+
+Script addition to `pages/index.vue`:
+```js
+const { data: resources } = await useAsyncData('homepage-resources', () =>
+  queryCollection('resources').limit(3).all()
+)
+```
+
+**Important:** Use a distinct cache key (`'homepage-resources'`) to avoid colliding with the `'resources'` key used on `pages/resources/index.vue`.
+
+### Footer — Concrete Changes
+
+Current `.footer__col3` (lines 23-38) becomes:
+
+```html
+<div class="footer__col3 footer__content stack">
+  <div class="partners">
+    <h3>Partners</h3>
+    <div class="logos">
+      <nc-unesco-logo />
+      <nc-ms-logo />
+    </div>
+  </div>
+</div>
+```
+
+Both `<nc-unesco-logo />` and `<nc-ms-logo />` are confirmed to exist as inline SVG components. The `ncUnescoLogo` renders a white-filled UNESCO temple icon (43x32). The `ncMsLogo` renders the white Microsoft wordmark + four-square logo (94x20). Both will render correctly against the dark footer background (`#0E2F40`) since they use `fill="white"`.
+
+**Note:** The `ncDirectReliefLogo` component is used **only** in the footer. After this change, it becomes dead code. The `<img src="/assets/i-data.png" alt="Institutional Data Initiative" />` is also only in the footer.
+
+### Navigation — Concrete Changes
+
+Remove the Rules `<li>` (line 13) and add Initiatives:
+
+```html
+<li><nc-button to="/incubator/2026" color="base" variant="link">The Incubator</nc-button></li>
+<li><nc-button to="/the-2025-challenge" color="base" variant="link">The 2025 Challenge</nc-button></li>
+<li><nc-button to="/#initiatives" color="base" variant="link">Initiatives</nc-button></li>
+<li><nc-button to="/resources" color="base" variant="link">Resources</nc-button></li>
+<li><nc-button to="/blog" color="base" variant="link">Blog</nc-button></li>
+<li><nc-button to="/faq" color="base" variant="link">FAQ</nc-button></li>
+```
+
+**Decision recommendation:** Link to `/#initiatives` (homepage anchor) since no `/initiatives` page exists and creating one for only 2 items is overkill.
+
+**`useSiteLinks` cleanup:** The composable (`composables/useSiteLinks.js`) only exports `rulesUrl`. After removing the Rules link from `ncTopbar.vue`, also check that `the-2025-challenge.vue` line 99 still uses `rulesUrl` — it does (for the "Read the Challenge Rules" button). So `useSiteLinks` should **not** be deleted; the `rulesUrl` is still used on the Challenge page. But `ncTopbar.vue` no longer needs to import it.
+
+### Logo Branding Verification
+
+- **`ncLogoHeader.vue`:** SVG contains `alt="New Commons"` and `title="New Commons"`. The text path data spells "New Commons." (with period). **No "Challenge" text is present** in alt, title, or SVG paths. Confirmed safe — no change needed.
+- **`ncLogoFooter.vue`:** SVG renders "Commons" text in white (the `N-e-w` text is rendered as the dotted-square icon mark, not a word). The word "Challenge" does not appear anywhere. Confirmed safe — no change needed.
+
+### FAQ Page — Structural Notes
+
+The current template has 6 `<nc-faq-section>` blocks with different background patterns:
+- First block uses `background-color="transparent"` (via the wrapping `<nc-base-section>`)
+- Last block has class `last-item` with `margin-bottom: var(--space-2xl-3xl)`
+
+The `ncCollapse` component expects `{ summary: string, content: string }` in its `data` prop. Content is raw HTML. The `name` prop groups collapses for exclusive open behavior (like an accordion within the same name group).
+
+When replacing the 13 new FAQ items, the implementer should:
+1. Choose new category keys for the `faq` object
+2. Create matching `<nc-faq-section>` blocks in the template
+3. Preserve the first section's `background-color="transparent"` pattern
+4. Keep the `last-item` class on the final section
+
+### Risks & Edge Cases
+
+1. **`vue-carousel` is a Vue 2 package.** It is in `package.json` but unused. Do NOT attempt to use it for the initiatives slider — it will break with Nuxt 3's Vue 3 runtime. Use CSS-only scroll or simple grid instead.
+
+2. **`ncDirectReliefLogo` becomes orphaned.** After footer changes, this component has no consumers. Same for the IDI image asset at `/assets/i-data.png`. These should be tracked for cleanup but are not blockers.
+
+3. **`ncJudgesGrid` and `ncObserversGrid` are still used on the Challenge page** (lines 108 and 113 of `the-2025-challenge.vue`). The plan correctly notes these components should NOT be deleted from the codebase, even though they are removed from the Incubator page.
+
+4. **Incubator page scoped CSS will have dead rules after restructure.** After removing the offer cards, eligibility panel, timeline, and CTA sections, the following scoped CSS blocks in `pages/incubator/2026.vue` become dead code and should be removed:
+   - `.offer-cards` and `.offer-card` rules (lines 150-185)
+   - `.eligibility-panel` rules (lines 187-189)
+   - `.cta-panel` rules (lines 191-200)
+   - `.section-bg` rules (lines 139-144) — only if the background image section is fully removed
+
+5. **Homepage scoped CSS cleanup needed.** After removing `#video-section`, the following CSS blocks become dead:
+   - `#video-section` rules (lines 103-111)
+   - `.video-frame` rules (lines 146-149)
+   After removing `.panel-footer` from the CTA:
+   - `#cta .cta-panel .panel-footer` rules (lines 177-187)
+
+6. **`useAsyncData` cache key collision risk.** The homepage already uses `'blogposts'` as a cache key. The resources query must use a different key (e.g., `'homepage-resources'`).
+
+7. **Incubator page has a commented-out blog section** (line 110: `<!--<nc-blog-section id="blog" :posts="blogposts" />-->`). This should be cleaned up during the restructure — either uncomment if blog is wanted, or delete the comment.
+
+8. **No `/initiatives` page exists.** The nav Initiatives link target needs to be decided. Recommendation: `/#initiatives` homepage anchor (simple, no new page needed). If a dedicated page is later needed, it can be added without changing the anchor link pattern.
+
+9. **Homepage announcement bar links to `/the-2025-challenge`** (line 27). This may need updating depending on the new hero content — the plan mentions updating announcement bar text (Panel 1) but does not specify whether the link target changes.
