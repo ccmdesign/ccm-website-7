@@ -51,6 +51,13 @@
   padding: var(--space-l);
   padding-block-end: var(--space-3xl);
   padding-inline: var(--system-padding-edge);
+  /* Fill the remaining space of the fixed-size featured-work square so the
+     container height never depends on whether the slide image has loaded yet.
+     Without this, an unloaded image collapses the container and shifts the
+     vertically-centred hero text (visible on the deployed CDN, not locally). */
+  flex: 1 1 auto;
+  min-block-size: 0;
+  display: flex;
 }
 
 .featured-work__info {
@@ -99,9 +106,12 @@
 }
 
 .featured-work__image-wrapper {
-  aspect-ratio: 4/3;
+  flex: 1 1 auto;
+  min-block-size: 0;
+  inline-size: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 /* Slide-fade transition for images */

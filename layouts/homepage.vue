@@ -22,6 +22,10 @@
 
 .master-layout {
   display: grid;
+  /* Clip any stray horizontal overflow (e.g. the featured-work square inflating
+     the grid's auto edge column on narrow viewports) so the page can never
+     scroll or jitter sideways. `clip` (not `hidden`) adds no scroll container. */
+  overflow-x: clip;
   grid-template-rows: auto minmax(20svh, auto) 1fr auto;
   min-block-size: 100svh;
   grid-template-areas:

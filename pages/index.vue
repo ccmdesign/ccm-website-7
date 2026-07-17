@@ -34,9 +34,23 @@
 }
 
 .featured-work {
-  max-width: 700px;
+  /* A *definite* inline-size (not just max-width) so aspect-ratio can resolve a
+     stable height. Otherwise the square sizes to its content and collapses while
+     a slide image is still loading, shifting the hero text above it.
+     Cap against the viewport (100vw), NOT 100% — a percentage resolves against
+     the flexible grid track whose auto edge column is fed by this element's own
+     content, creating a feedback loop that jitters the whole grid on each slide. */
+  inline-size: min(700px, calc(100vw - 4rem));
   margin-inline-start: auto;
   aspect-ratio: 1;
+}
+
+/* On the stacked (non-desktop) layout the square drops below the hero text, so
+   the desktop right-hug becomes an overflow. Left-align it there instead. */
+@media (max-width: 959px) {
+  .featured-work {
+    margin-inline-start: 0;
+  }
 }
 
 h2 {
