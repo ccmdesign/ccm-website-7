@@ -26,6 +26,3 @@ logs
 package-lock.json
 
 _archive/
-branch_structure.json
-temp_auto_push.bat
-temp_interactive_push.bat
