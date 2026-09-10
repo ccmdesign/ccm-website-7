@@ -147,14 +147,15 @@ onUnmounted(() => {
   opacity: 0.05;
   z-index: -1;
   pointer-events: none; /* Good practice for overlays */
-  /* Animate gradient to move left to right */
-  @keyframes typewriter-gradient-move {
-    0% {
-      background-position: 0% 0%;
-    }
-    100% {
-      background-position: 100% 0%;
-    }
+}
+
+/* Animate gradient to move left to right */
+@keyframes typewriter-gradient-move {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
   }
 }
 

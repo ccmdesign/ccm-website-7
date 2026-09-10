@@ -88,9 +88,6 @@
 
   --_switcher-width: 30rem;
   --_switcher-gap: var(--space-s);
-  --_switcher-limit: 4;
-
-  --limit: calc(var(--_switcher-limit) + 1);
 }
 
 .switcher > * {
@@ -98,8 +95,12 @@
   flex-basis: calc(( var(--_switcher-width, 30rem) - 100%) * 999);
 }
 
-.switcher > :nth-last-child(n+ var(--limit)),
-.switcher > :nth-last-child(n+ var(--limit)) ~ * {
+/*
+ * Limit: 4 items per row. An+B selector arguments can't use var(), so the
+ * threshold (limit + 1) is a literal. Change both selectors to adjust.
+ */
+.switcher > :nth-last-child(n+5),
+.switcher > :nth-last-child(n+5) ~ * {
   flex-basis: 100%;
 }
 
