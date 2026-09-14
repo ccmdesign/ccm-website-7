@@ -4,3 +4,31 @@
 
 [functions]
   directory = "netlify/functions"
+
+# Canonical host is ccmdesign.ca. Every other hostname that serves this site
+# 301s there so traffic (and Google Analytics) stops splitting across domains.
+# Netlify already redirects www.ccmdesign.ca -> ccmdesign.ca because ccmdesign.ca
+# is the primary domain; the rules below cover the remaining aliases.
+[[redirects]]
+  from = "https://ccm.design/*"
+  to = "https://ccmdesign.ca/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.ccm.design/*"
+  to = "https://ccmdesign.ca/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.ccmdesign.ca/*"
+  to = "https://ccmdesign.ca/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://ccm-website-v7.netlify.app/*"
+  to = "https://ccmdesign.ca/:splat"
+  status = 301
+  force = true
