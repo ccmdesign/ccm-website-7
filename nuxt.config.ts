@@ -1,4 +1,22 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+// --- Google Analytics 4 -------------------------------------------------
+// Two gates so dev and preview traffic never lands in the production property:
+//  1. build-time: only production deploys emit the tag at all (Netlify sets CONTEXT;
+//     `nuxt dev` has NODE_ENV=development).
+//  2. run-time: even in a production bundle, skip localhost / *.netlify.app hosts.
+const GA_ID = 'G-PWP8CD3WD7'
+const NETLIFY_CONTEXT = process.env.CONTEXT || ''
+const GA_ENABLED =
+  process.env.NODE_ENV === 'production'
+  && !['deploy-preview', 'branch-deploy', 'dev'].includes(NETLIFY_CONTEXT)
+const GA_SNIPPET =
+  `(function(){var h=location.hostname;`
+  + `if(/^(localhost|127\\.0\\.0\\.1|\\[?::1\\]?)$/.test(h)||/\\.netlify\\.app$/.test(h))return;`
+  + `var s=document.createElement('script');s.async=true;`
+  + `s.src='https://www.googletagmanager.com/gtag/js?id=${GA_ID}';document.head.appendChild(s);`
+  + `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}`
+  + `window.gtag=gtag;gtag('js',new Date());gtag('config','${GA_ID}');})();`
+
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
@@ -51,18 +69,7 @@ export default defineNuxtConfig({
         { rel: "alternate", type: "application/rss+xml", title: "CCM Design RSS Feed", href: "/feed.xml" },
       ],
       script: [
-        {
-          src: 'https://www.googletagmanager.com/gtag/js?id=G-PWP8CD3WD7',
-          async: true
-        },
-        {
-          innerHTML: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-PWP8CD3WD7');
-          `
-        }
+        ...(GA_ENABLED ? [{ innerHTML: GA_SNIPPET }] : []),
       ],
     }
   },
