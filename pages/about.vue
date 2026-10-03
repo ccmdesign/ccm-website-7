@@ -1,6 +1,6 @@
 <template>
   <article class="trust-page">
-    <section v-for="block in privacyPage.sections" :key="block.heading">
+    <section v-for="block in aboutPage.sections" :key="block.heading">
       <h2>{{ block.heading }}</h2>
       <p v-for="paragraph in block.paragraphs" :key="paragraph">{{ paragraph }}</p>
     </section>
@@ -27,24 +27,24 @@ p {
 </style>
 
 <script setup lang="ts">
-import { privacyPage } from '~/utils/agentContent'
+import { aboutPage } from '~/utils/agentContent'
 
 definePageMeta({
   hero: {
-    brow: 'Legal',
-    title: 'Privacy Policy',
-    tagline: 'What ccmdesign.ca collects, and how to ask for it to be deleted.',
+    brow: 'About',
+    title: 'About',
+    tagline: 'A design studio for research institutions, think tanks, foundations, and technology companies.',
     variant: 'minimal',
   },
 })
 
 const config = useRuntimeConfig()
 useSeoMeta({
-  title: `Privacy - ${config.public.siteName}`,
-  description: privacyPage.description,
-  ogTitle: `Privacy - ${config.public.siteName}`,
-  ogDescription: privacyPage.description,
-  ogUrl: `${config.public.siteUrl}/privacy`,
+  title: `About - ${config.public.siteName}`,
+  description: aboutPage.description,
+  ogTitle: `About - ${config.public.siteName}`,
+  ogDescription: aboutPage.description,
+  ogUrl: `${config.public.siteUrl}/about`,
   ogType: 'website',
   twitterCard: 'summary',
 })

@@ -14,6 +14,7 @@
     </template>
 
     <template #master-layout-main>
+      <div class="contact-page">
       <form class="form | stack" @submit.prevent="handleSubmit" action="https://formspree.io/f/mnnarojy" method="POST">
     
     <div class="form-content">
@@ -40,6 +41,11 @@
     <div v-if="success" class="form-message success" role="status" aria-live="polite">Thanks for reaching out! We'll get back to you soon.</div>
     <div v-if="error" class="form-message error" role="alert" aria-live="assertive">Something went wrong. Please try again.</div>
       </form>
+      <section class="contact-note">
+        <h2>{{ contactPage.sections[0].heading }}</h2>
+        <p v-for="paragraph in contactPage.sections[0].paragraphs" :key="paragraph">{{ paragraph }}</p>
+      </section>
+      </div>
     </template>
   </NuxtLayout>
 </template>
@@ -105,10 +111,33 @@ textarea {
   width: auto;
 }
 
+.contact-page {
+  width: 100%;
+}
+
+.contact-note {
+  max-width: 68ch;
+  margin-inline: auto;
+  padding: var(--space-xl);
+}
+
+.contact-note h2 {
+  font-size: var(--size-1);
+  font-weight: 500;
+  margin-block-end: var(--space-s);
+}
+
+.contact-note p {
+  margin-block-end: var(--space-m);
+  line-height: 1.5;
+}
+
 
 </style>
 
 <script setup>
+import { contactPage } from '~/utils/agentContent'
+
 definePageMeta({
   layout: false,
   hero: {

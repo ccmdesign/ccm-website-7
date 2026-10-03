@@ -28,7 +28,7 @@ import { sendNewsletter, sendTestNewsletter, draftLinkedInPost, publishLinkedInP
 import { isNullish } from '../utils/isNullish'
 
 const BLOG_DIR = path.resolve(__dirname, '../content/blog')
-const SITE_URL = process.env.NUXT_PUBLIC_SITE_URL || 'https://ccmdesign.com'
+const SITE_URL = process.env.NUXT_PUBLIC_SITE_URL || 'https://ccmdesign.ca'
 
 // Throttle delay between batch sends (ms) — respects Resend 2 req/sec limit
 const SEND_DELAY_MS = 600

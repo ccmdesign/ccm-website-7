@@ -1,6 +1,6 @@
 import type { Handler, HandlerEvent } from '@netlify/functions'
 
-const ALLOWED_ORIGIN = 'https://ccmdesign.com'
+const ALLOWED_ORIGIN = 'https://ccmdesign.ca'
 
 // Basic email validation regex
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/

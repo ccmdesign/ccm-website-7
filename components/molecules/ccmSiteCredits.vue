@@ -2,6 +2,7 @@
   <div class="site-credits-bar">
       <div class="site-credits-content">
         <span>
+          <nuxt-link class="by-line links" to="/about" title="About CCM Design">About</nuxt-link> |
           <nuxt-link class="by-line links" to="/terms" title="Terms of Use">Terms of Use</nuxt-link> |
           <nuxt-link class="by-line links" to="/privacy" title="Privacy Policy">Privacy</nuxt-link>
         </span>
