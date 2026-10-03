@@ -59,7 +59,7 @@ watch(reelClients, () => {
 
 <template>
   <section>
-    <h3 class="h6 | text-align:center">Trusted by</h3>
+    <h2 class="h6 | text-align:center">Trusted by</h2>
     <ul ref="reelRef" class="reel" :class="{ 'reel--scrolling': hasScroll }">
       <li v-for="client in reelClients" :key="client.key" data-slide-in="from-bottom">
         <nuxt-link class="reel__link" :to="client.slug ? `/clients/${client.slug}` : '#'" >

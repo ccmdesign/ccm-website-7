@@ -13,13 +13,28 @@
   
   <NuxtLayout name="homepage">
     <template #master-layout-hero>
-      <h2 v-if="hero?.tagline">{{ hero.tagline }}</h2>
+      <h1 v-if="hero?.tagline" class="home-tagline">{{ hero.tagline }}</h1>
     </template>
 
     <template #master-layout-main>
       <ccm-featured-work class="featured-work" data-slide-in="from-top" />
     </template>
   </NuxtLayout>
+
+  <section class="home-summary">
+    <div class="home-summary__inner">
+      <section v-for="block in homeSections" :key="block.heading">
+        <h2>{{ block.heading }}</h2>
+        <p v-for="paragraph in block.paragraphs" :key="paragraph">{{ paragraph }}</p>
+      </section>
+      <p class="home-summary__links">
+        <nuxt-link to="/about">About</nuxt-link>
+        <nuxt-link to="/contact">Contact</nuxt-link>
+        <nuxt-link to="/privacy">Privacy</nuxt-link>
+        <a href="/llms.txt">llms.txt</a>
+      </p>
+    </div>
+  </section>
 </template>
 
 <style scoped>
@@ -53,14 +68,49 @@
   }
 }
 
-h2 {
+.home-tagline {
   padding-block: var(--space-2xl);
+  font-size: var(--size-2);
+  line-height: 130%;
+  font-weight: 100;
+}
+
+.home-summary {
+  position: relative;
+  z-index: 1;
+  background: #fdfdfd;
+  color: var(--color-base);
+  padding: var(--space-3xl) var(--space-l);
+}
+
+.home-summary__inner {
+  max-width: 68ch;
+  margin-inline: auto;
+}
+
+.home-summary h2 {
+  font-size: var(--size-1);
+  font-weight: 500;
+  line-height: 140%;
+  margin-block: var(--space-l) var(--space-s);
+}
+
+.home-summary p {
+  margin-block-end: var(--space-m);
+  line-height: 1.5;
+}
+
+.home-summary__links {
+  display: flex;
+  gap: var(--space-m);
 }
 
 </style>
 
 
 <script setup lang="ts">
+import { homeSections } from '~/utils/agentContent'
+
 definePageMeta({
   layout: false,
   hero: {
@@ -78,6 +128,8 @@ useSeoMeta({
   ogTitle: config.public.siteName,
   ogDescription: config.public.siteDescription,
   ogUrl: config.public.siteUrl,
+  ogImage: 'https://ccmdesign.ca/assets/meta/social-share.png',
+  ogType: 'website',
   twitterCard: 'summary_large_image'
 })
 

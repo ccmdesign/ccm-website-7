@@ -30,8 +30,8 @@
             :key="`info-${currentIndex}`"
             class="featured-work__info-wrapper"
           >
-            <h4 class="featured-work__project">{{ currentProject }}</h4>  
-            <h5 class="featured-work__client">{{ currentClient }}</h5>
+            <h2 class="featured-work__project">{{ currentProject }}</h2>
+            <p class="featured-work__client">{{ currentClient }}</p>
           </div>
         </Transition>
       </div>
@@ -155,12 +155,16 @@
 .featured-work__project {
   font-size: var(--size--1);
   font-weight: 600;
+  line-height: 150%;
+  margin: 0;
 }
 
 .featured-work__client {
   font-size: var(--size--1);
   font-weight: 200;
+  line-height: 150%;
   opacity: 0.6;
+  margin: 0;
 }
 
 </style>

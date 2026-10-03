@@ -36,7 +36,7 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 409, statusMessage: 'Newsletter already sent for this post' })
   }
 
-  const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://ccmdesign.com'
+  const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://ccmdesign.ca'
   const result = await sendNewsletter({
     title: post.title as string,
     excerpt: post.excerpt as string,

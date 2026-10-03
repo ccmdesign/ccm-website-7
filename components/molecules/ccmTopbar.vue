@@ -1,10 +1,10 @@
 <template>
   <div class="topbar | cluster">
-    <h1 class="topbar__title">
+    <p class="topbar__title">
       <slot name="logo">
         <nuxt-link to="/" data-slide-in="from-top"><img src="/assets/ccm-logo.svg" alt="CCM Design" /></nuxt-link>
       </slot>
-    </h1>
+    </p>
     <nav>
       <ul class="menu | cluster">
         <li v-for="link in navLinks" :key="link.to">
@@ -43,6 +43,10 @@ const isActiveRoute = (linkPath) => {
 }
 
 .topbar__title {
+  margin: 0;
+  font-size: var(--size-3);
+  font-weight: 100;
+  line-height: 130%;
   @media (max-width: 600px) { margin-inline: auto; }
   img { block-size: 1.5rem; }
 }

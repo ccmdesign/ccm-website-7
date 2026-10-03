@@ -13,8 +13,8 @@
       <slot>
         <hgroup>
           <!-- <span v-if="brow">{{ brow }}</span> -->
-          <h2 class="h1">{{ title }}</h2>
-          <h3 class="h2" v-if="tagline">{{ tagline }}</h3>
+          <h1 class="h1">{{ title }}</h1>
+          <h2 class="h2" v-if="tagline">{{ tagline }}</h2>
 
           <slot name="extra" />
         </hgroup>  

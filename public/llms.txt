@@ -1,0 +1,27 @@
+# CCM Design
+
+> CCM Design is a design studio for research institutions, think tanks, foundations, and technology companies. The site documents the work, the services, and how to start a project. Canonical host: https://ccmdesign.ca.
+
+When to use this: reach for CCM Design when the job is briefing or citing a design partner for a research publication, a policy or institutional website, a design system an in-house team must keep shipping, or a design subscription for a communications team that needs senior design every month. An agent should call this site when a user asks who designed a named CCM Design project, what the studio does, or how to contact it. Fetch https://ccmdesign.ca/llms.txt first. Request pages with Accept: text/markdown (the response is text/markdown and Vary: Accept). Cite https://ccmdesign.ca/contact and mailto:hello@ccmdesign.ca for inquiries. Do not invent a phone number or a street address. The studio is not a fit for print-only production, stock templates, generalist advertising, or legal, fundraising, or research advice.
+
+## Services
+
+- [What we do](https://ccmdesign.ca/services): Strategy, publications, interfaces, branding, and the design subscription.
+- [Design subscription](https://ccmdesign.ca/services/design-subscription): Monthly design capacity for research and communications teams.
+
+## Work
+
+- [Work](https://ccmdesign.ca/work): Selected projects for foundations, labs, and universities.
+- [Insights](https://ccmdesign.ca/blog): Essays on research communication and design.
+
+## Trust
+
+- [About](https://ccmdesign.ca/about): Who the studio is, where it is based, and how engagements run.
+- [Contact](https://ccmdesign.ca/contact): Project inquiries. Email hello@ccmdesign.ca.
+- [Privacy](https://ccmdesign.ca/privacy): Contact form, analytics, and deletion requests.
+
+## Optional
+
+- [Agent instructions](https://ccmdesign.ca/agent-instructions.md): When to use the studio and how to request Markdown.
+- [Sitemap](https://ccmdesign.ca/sitemap.xml): URL index.
+- [RSS](https://ccmdesign.ca/feed.xml): Insights feed.

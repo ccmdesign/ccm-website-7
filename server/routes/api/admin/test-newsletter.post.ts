@@ -37,7 +37,7 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 404, statusMessage: `Post not found: ${slug}` })
   }
 
-  const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://ccmdesign.com'
+  const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://ccmdesign.ca'
   const result = await sendTestNewsletter(
     {
       title: post.title as string,

@@ -32,3 +32,22 @@
   to = "https://ccmdesign.ca/:splat"
   status = 301
   force = true
+
+# Static generate cannot negotiate Accept. This function serves text/markdown
+# on the same URL browsers use for HTML, and a Markdown body on HTTP 404.
+[[edge_functions]]
+  function = "markdown-negotiate"
+  path = "/*"
+  excludedPath = ["/_nuxt/*", "/assets/*", "/.netlify/*"]
+
+[[headers]]
+  for = "/llms.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+    X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "/agent-instructions.md"
+  [headers.values]
+    Content-Type = "text/markdown; charset=utf-8"
+    X-Content-Type-Options = "nosniff"

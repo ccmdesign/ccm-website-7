@@ -36,7 +36,7 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 409, statusMessage: 'LinkedIn draft already created for this post' })
   }
 
-  const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://ccmdesign.com'
+  const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://ccmdesign.ca'
   const marketingContent = (post.marketing as Record<string, unknown>)?.linkedin as Record<string, unknown> | undefined
   const result = await draftLinkedInPost(
     {
