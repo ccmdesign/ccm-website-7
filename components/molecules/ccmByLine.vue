@@ -2,7 +2,7 @@
     <div class="by-line | cluster">
       <span>© {{ new Date().getFullYear() }} CCM Design</span>
       
-      <a href="https://ccmdesign.ca" class="margin-left:auto">by ccm.design</a>
+      <a href="https://ccm.design" class="margin-left:auto">by ccm.design</a>
     </div>
 </template>
 

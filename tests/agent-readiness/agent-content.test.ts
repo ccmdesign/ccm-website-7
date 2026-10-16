@@ -81,7 +81,7 @@ describe('markdown negotiation', () => {
 
   it('runs the edge handler: markdown home, html home, markdown 404', async () => {
     const home = await handler(
-      new Request('https://ccmdesign.ca/', { headers: { accept: 'text/markdown' } }),
+      new Request('https://ccm.design/', { headers: { accept: 'text/markdown' } }),
       { next: async () => { throw new Error('homepage markdown must not fall through') } },
     )
     expect(home.status).toBe(200)
@@ -90,7 +90,7 @@ describe('markdown negotiation', () => {
     expect(await home.text()).toContain('# CCM Design')
 
     const html = await handler(
-      new Request('https://ccmdesign.ca/', { headers: { accept: 'text/html' } }),
+      new Request('https://ccm.design/', { headers: { accept: 'text/html' } }),
       { next: async () => new Response('<html>ok</html>', { status: 200, headers: { 'content-type': 'text/html; charset=utf-8' } }) },
     )
     expect(html.status).toBe(200)
@@ -98,7 +98,7 @@ describe('markdown negotiation', () => {
     expect(await html.text()).toContain('<html>ok</html>')
 
     const missing = await handler(
-      new Request('https://ccmdesign.ca/__ora-404-probe-2qr4v2z4', { headers: { accept: 'text/markdown' } }),
+      new Request('https://ccm.design/__ora-404-probe-2qr4v2z4', { headers: { accept: 'text/markdown' } }),
       { next: async () => new Response('<html>missing</html>', { status: 404, headers: { 'content-type': 'text/html' } }) },
     )
     const body = await missing.text()
@@ -106,7 +106,7 @@ describe('markdown negotiation', () => {
     expect(missing.headers.get('content-type')).toContain('text/markdown')
     expect(missing.headers.get('vary')).toBe('Accept')
     expect(body.length).toBeGreaterThan(20)
-    expect(body).toContain('https://ccmdesign.ca/llms.txt')
+    expect(body).toContain('https://ccm.design/llms.txt')
     expect(body).not.toContain('<html>missing</html>')
   })
 })
@@ -132,7 +132,7 @@ describe('agent instructions', () => {
       const items = section.split('\n').filter((line) => line.startsWith('- '))
       expect(items.length).toBeGreaterThan(0)
       for (const item of items) {
-        expect(item).toMatch(/^- \[[^\]]+\]\(https:\/\/ccmdesign\.ca\/[^)]+\)/)
+        expect(item).toMatch(/^- \[[^\]]+\]\(https:\/\/ccm\.design\/[^)]+\)/)
       }
     }
   })

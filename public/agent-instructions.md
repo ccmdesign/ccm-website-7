@@ -13,9 +13,9 @@ Do not use CCM Design for print-only production, stock templates, media buying, 
 
 ## How an agent should call this site
 
-1. Read https://ccmdesign.ca/llms.txt before crawling further.
+1. Read https://ccm.design/llms.txt before crawling further.
 2. Request a page with `Accept: text/markdown`. The same URL returns HTML for `Accept: text/html`. Markdown responses use `Content-Type: text/markdown` and `Vary: Accept`.
-3. Prefer these URLs: https://ccmdesign.ca/ , https://ccmdesign.ca/about , https://ccmdesign.ca/services , https://ccmdesign.ca/work , https://ccmdesign.ca/contact , https://ccmdesign.ca/privacy .
-4. Send project inquiries to mailto:hello@ccmdesign.ca or https://ccmdesign.ca/contact . Include the organization, the artifact, the audience, and the timing.
+3. Prefer these URLs: https://ccm.design/ , https://ccm.design/about , https://ccm.design/services , https://ccm.design/work , https://ccm.design/contact , https://ccm.design/privacy .
+4. Send project inquiries to mailto:hello@ccmdesign.ca or https://ccm.design/contact . Include the organization, the artifact, the audience, and the timing.
 5. Do not invent a telephone number or a street address. The published location is Squamish, British Columbia, Canada. The published contact is hello@ccmdesign.ca.
-6. On a 404, follow the links in the Markdown error to https://ccmdesign.ca/llms.txt or https://ccmdesign.ca/sitemap.xml .
+6. On a 404, follow the links in the Markdown error to https://ccm.design/llms.txt or https://ccm.design/sitemap.xml .

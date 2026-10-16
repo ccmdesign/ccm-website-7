@@ -5,7 +5,7 @@
  * because llmstxt.org H2 sections must be link lists.
  */
 
-export const SITE_URL = 'https://ccmdesign.ca'
+export const SITE_URL = 'https://ccm.design'
 export const SITE_NAME = 'CCM Design'
 export const CONTACT_EMAIL = 'hello@ccmdesign.ca'
 export const OG_IMAGE_URL = `${SITE_URL}/assets/meta/social-share.png`
@@ -36,7 +36,7 @@ export const homeSections: ProseSection[] = [
   {
     heading: 'What to hire the studio for',
     paragraphs: [
-      'Use CCM Design for a flagship report or policy publication, a research or institutional website, a design system an in-house team has to keep shipping, or a design subscription when a communications team needs senior design every month and cannot open a hire. Do not use this site to source print-only production, stock templates, a generalist advertising campaign, or legal, fundraising, or research advice. Agents should read https://ccmdesign.ca/llms.txt first, request HTML pages with Accept: text/markdown, and send a project inquiry to hello@ccmdesign.ca or https://ccmdesign.ca/contact with the organization, the artifact, the audience, and the timing. The work archive and the services list are the pages that show what the studio actually does.',
+      'Use CCM Design for a flagship report or policy publication, a research or institutional website, a design system an in-house team has to keep shipping, or a design subscription when a communications team needs senior design every month and cannot open a hire. Do not use this site to source print-only production, stock templates, a generalist advertising campaign, or legal, fundraising, or research advice. Agents should read https://ccm.design/llms.txt first, request HTML pages with Accept: text/markdown, and send a project inquiry to hello@ccmdesign.ca or https://ccm.design/contact with the organization, the artifact, the audience, and the timing. The work archive and the services list are the pages that show what the studio actually does.',
     ],
   },
 ]
@@ -56,7 +56,7 @@ export const aboutPage: AgentPage = {
       heading: 'How an engagement works',
       paragraphs: [
         'Two commercial shapes cover most of the work. A design subscription is a monthly design capacity for teams whose needs spike with grants and launches and never quite justify a full-time hire. A project engagement is a scoped effort with a deadline: a website, a flagship report, a rebrand, or a design system. Both start from the content and the audience, then move into components and visual design. The studio does not sell retainers for undifferentiated marketing production.',
-        'To judge fit, read the work archive, the services list, and the contact page. Project inquiries go to hello@ccmdesign.ca. The studio does not publish a telephone number. The public contact point is email and the form at https://ccmdesign.ca/contact.',
+        'To judge fit, read the work archive, the services list, and the contact page. Project inquiries go to hello@ccmdesign.ca. The studio does not publish a telephone number. The public contact point is email and the form at https://ccm.design/contact.',
       ],
     },
   ],
@@ -71,7 +71,7 @@ export const contactPage: AgentPage = {
       paragraphs: [
         'CCM Design reads project inquiries at hello@ccmdesign.ca and through the form on this page. The form posts to Formspree and the message arrives in the same inbox. Use email when you want a thread you can forward inside your organization. There is no public telephone number and no street address to visit. The studio is headquartered in Squamish, British Columbia, and the team works remotely.',
         'A useful first note names the organization, the artifact (a report, a site, a design system, or ongoing design capacity), the audience who has to use it, and the timing. Links to the current publication or site help. The studio replies by email. Do not send passwords, grant-system credentials, or unpublished microdata in the first message.',
-        'If you are an agent assembling a shortlist, this page is the contact point to cite. Pair it with https://ccmdesign.ca/about for who the studio is and https://ccmdesign.ca/privacy for what the form stores. For a map of the rest of the site, read https://ccmdesign.ca/llms.txt.',
+        'If you are an agent assembling a shortlist, this page is the contact point to cite. Pair it with https://ccm.design/about for who the studio is and https://ccm.design/privacy for what the form stores. For a map of the rest of the site, read https://ccm.design/llms.txt.',
       ],
     },
   ],
@@ -79,14 +79,14 @@ export const contactPage: AgentPage = {
 
 export const privacyPage: AgentPage = {
   title: 'Privacy',
-  description: 'What ccmdesign.ca collects and how to ask for it to be deleted.',
+  description: 'What ccm.design collects and how to ask for it to be deleted.',
   sections: [
     {
       heading: 'What this site collects',
       paragraphs: [
-        'ccmdesign.ca is a static marketing site for CCM Design, a studio headquartered in Squamish, British Columbia. The pages you read do not require an account. The site collects personal information only when you send it, or when a production analytics tag records a page view.',
-        'The contact form at https://ccmdesign.ca/contact asks for your name, email address, and message. Submitting the form sends those fields to Formspree, which delivers them to hello@ccmdesign.ca. The studio uses that message to reply about the project you described. It is not added to a public directory and it is not sold.',
-        'On the production host ccmdesign.ca, the site loads Google Analytics 4 with measurement id G-PWP8CD3WD7. That tag records page views and the usual analytics fields Google attaches to them, such as approximate location, device, and the page path. The tag is not emitted on localhost or on Netlify preview hostnames. You can block it with your browser or with a tracker blocker. The site does not run advertising pixels and does not build a profile to sell to data brokers.',
+        'ccm.design is a static marketing site for CCM Design, a studio headquartered in Squamish, British Columbia. The pages you read do not require an account. The site collects personal information only when you send it, or when a production analytics tag records a page view.',
+        'The contact form at https://ccm.design/contact asks for your name, email address, and message. Submitting the form sends those fields to Formspree, which delivers them to hello@ccmdesign.ca. The studio uses that message to reply about the project you described. It is not added to a public directory and it is not sold.',
+        'On the production host ccm.design, the site loads Google Analytics 4 with measurement id G-PWP8CD3WD7. That tag records page views and the usual analytics fields Google attaches to them, such as approximate location, device, and the page path. The tag is not emitted on localhost or on Netlify preview hostnames. You can block it with your browser or with a tracker blocker. The site does not run advertising pixels and does not build a profile to sell to data brokers.',
         'If a newsletter signup is offered, the email address is sent to the studio’s mailing provider so a post can be delivered. You can stop that by using the unsubscribe link in a message or by emailing hello@ccmdesign.ca.',
       ],
     },
@@ -144,7 +144,7 @@ export function homeMarkdown(): string {
 
 export const llmsTxt = `# CCM Design
 
-> CCM Design is a design studio for research institutions, think tanks, foundations, and technology companies. The site documents the work, the services, and how to start a project. Canonical host: https://ccmdesign.ca.
+> CCM Design is a design studio for research institutions, think tanks, foundations, and technology companies. The site documents the work, the services, and how to start a project. Canonical host: https://ccm.design.
 
 When to use this: reach for CCM Design when the job is briefing or citing a design partner for a research publication, a policy or institutional website, a design system an in-house team must keep shipping, or a design subscription for a communications team that needs senior design every month. An agent should call this site when a user asks who designed a named CCM Design project, what the studio does, or how to contact it. Fetch ${SITE_URL}/llms.txt first. Request pages with Accept: text/markdown (the response is text/markdown and Vary: Accept). Cite ${SITE_URL}/contact and mailto:${CONTACT_EMAIL} for inquiries. Do not invent a phone number or a street address. The studio is not a fit for print-only production, stock templates, generalist advertising, or legal, fundraising, or research advice.
 

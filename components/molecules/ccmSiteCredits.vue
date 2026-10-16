@@ -6,7 +6,7 @@
           <nuxt-link class="by-line links" to="/terms" title="Terms of Use">Terms of Use</nuxt-link> |
           <nuxt-link class="by-line links" to="/privacy" title="Privacy Policy">Privacy</nuxt-link>
         </span>
-        <nuxt-link class="by-line" href="http://ccmdesign.ca" target="_blank" rel="noreferrer" title="Website design and development by ccm.design">by ccm.design<span class="sr-only"> (opens in new tab)</span></nuxt-link>
+        <nuxt-link class="by-line" href="https://ccm.design" target="_blank" rel="noreferrer" title="Website design and development by ccm.design">by ccm.design<span class="sr-only"> (opens in new tab)</span></nuxt-link>
       </div>
     </div>
 </template>
