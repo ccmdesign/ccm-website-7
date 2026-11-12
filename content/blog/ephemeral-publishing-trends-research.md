@@ -34,12 +34,12 @@ We see a fundamental shift in how authority and value are constructed. Where val
 
 ## The "Living Document": When Research Never Ends
 
-The static PDF remains the gold standard of [academic and professional publishing](/5-signs-research-publications-need-redesign), but its rigidity is a liability in fast-moving fields. A PDF freezes knowledge at the moment of export. If the underlying data changes a week later, the "definitive" document becomes misinformation.
+The static PDF remains the gold standard of [academic and professional publishing](/blog/5-signs-research-publications-need-redesign), but its rigidity is a liability in fast-moving fields. A PDF freezes knowledge at the moment of export. If the underlying data changes a week later, the "definitive" document becomes misinformation.
 
 The solution lies in the "living document"—a format that treats research less like a book and more like software.
 
 ### From Static to Dynamic
-Research into "Living Papers" highlights the technological shift from paper-emulating digital formats to native digital documents [1]. New toolkits allow for "augmented [scholarly communication](/science-translation-gap-invisible-research)" where text, code, and data are intertwined. A living paper doesn't just display a static chart; it parses source code to generate dynamic [visualizations](/data-visualization-research-impact) that update as the underlying data changes [2].
+Research into "Living Papers" highlights the technological shift from paper-emulating digital formats to native digital documents [1]. New toolkits allow for "augmented [scholarly communication](/blog/science-translation-gap-invisible-research)" where text, code, and data are intertwined. A living paper doesn't just display a static chart; it parses source code to generate dynamic [visualizations](/blog/data-visualization-research-impact) that update as the underlying data changes [2].
 
 This approach borrows heavily from software engineering. Platforms are moving toward "continuous integration" for text [3]. Just as code is updated via repositories, research papers can accept "commits" (updates). This allows for the correction of errors and the addition of new data without the stigma of a formal "retraction" or the cumbersome process of publishing an erratum [5].
 

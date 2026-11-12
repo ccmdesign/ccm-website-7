@@ -72,7 +72,7 @@ linkedinPostedAt: "legacy"
 
 ## The Crisis of Credibility
 
-The scientific community faces a reckoning. In 2023, the number of retracted research papers smashed previous records, surpassing 10,000 [1, 2]. While "paper mills" and systematic fraud account for a portion of this spike, a significant number of integrity issues stem from [problematic data presentation](/5-signs-research-publications-need-redesign).
+The scientific community faces a reckoning. In 2023, the number of retracted research papers smashed previous records, surpassing 10,000 [1, 2]. While "paper mills" and systematic fraud account for a portion of this spike, a significant number of integrity issues stem from [problematic data presentation](/blog/5-signs-research-publications-need-redesign).
 
 Visualizations are often the first—and sometimes the only—part of a paper scrutinized by peers and the public. When these visuals are flawed, they undermine the validity of the entire study. The "sleuths" who now patrol scientific literature for image manipulation have highlighted how often figures are doctored to support weak data [3]. But malice isn't the only culprit. Well-meaning researchers frequently default to software settings that distort reality, such as 3D pie charts or truncated axes. This "unintentional misinformation" spreads just as rapidly as the intentional kind, creating a landscape where clarity is the exception, not the rule.
 
@@ -110,7 +110,7 @@ The antidote to confusion is not "prettier" charts, but a fundamental shift towa
 Experts like Cole Nussbaumer Knaflic argue that "clutter and confusion are not attributes of data—they are shortcomings of design" [24]. The goal is to strip away the non-essential—the heavy grid lines, the redundant labels, the background shading—to focus attention on the signal rather than the noise. Alberto Cairo, a leading voice in data journalism, emphasizes that a visualization is "an argument, not an image" [26]. It must be constructed with the same rigor as the written text.
 
 ### The Rise of the Visual Abstract
-A tangible application of this shift is the [**Visual Abstract**](/hidden-cost-inconsistent-publication-design)—a graphic summary of a paper’s key methodology and findings. It is not a substitute for the paper but a "trailer" that invites deeper engagement. The impact is measurable. Studies have shown that articles shared on social media with visual abstracts receive significantly higher engagement, including an 8-fold increase in retweets compared to text-only posts [27].
+A tangible application of this shift is the [**Visual Abstract**](/blog/hidden-cost-inconsistent-publication-design)—a graphic summary of a paper’s key methodology and findings. It is not a substitute for the paper but a "trailer" that invites deeper engagement. The impact is measurable. Studies have shown that articles shared on social media with visual abstracts receive significantly higher engagement, including an 8-fold increase in retweets compared to text-only posts [27].
 
 For the researcher, this means the design phase is no longer an optional post-publication step. It is a critical component of dissemination strategy.
 

@@ -45,7 +45,7 @@ tldr: >-
   workflows remain trapped in linear, manual processes designed two decades ago.
   The gap between these two speeds is where relevance is lost. Organizations
   that continue to rely on manual submission checks,
-  [PDF-based](/static-pdfs-undermine-research-impact) peer review, and
+  [PDF-based](/blog/static-pdfs-undermine-research-impact) peer review, and
   human-only editorial triage are entering a "quiet crisis." They are not just
   slower; they are becoming operationally invisible in an ecosystem that
   increasingly demands machine-speed interoperability.

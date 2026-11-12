@@ -73,7 +73,7 @@ linkedinPostedAt: "legacy"
 
 ## The Challenge: Why Generalist Agencies Struggle with Research
 
-The primary point of failure in [research publication design](/5-signs-research-publications-need-redesign) often stems from a misalignment of fundamental objectives. Most creative agencies are built on the principles of [**marketing design**](/publication-design-vs-marketing-design), which prioritizes persuasion, emotional hooks, and sales conversion. Their portfolios are filled with punchy headlines, lifestyle photography, and simplified narratives intended to capture attention quickly [1].
+The primary point of failure in [research publication design](/blog/5-signs-research-publications-need-redesign) often stems from a misalignment of fundamental objectives. Most creative agencies are built on the principles of [**marketing design**](/blog/publication-design-vs-marketing-design), which prioritizes persuasion, emotional hooks, and sales conversion. Their portfolios are filled with punchy headlines, lifestyle photography, and simplified narratives intended to capture attention quickly [1].
 
 **Information design**, by contrast, operates with a different "design thinking" mindset. It views the reader not as a consumer to be converted, but as a learner to be educated [3]. The objective is to reduce cognitive load, allowing complex data and nuanced arguments to be processed efficiently.
 
@@ -149,7 +149,7 @@ Citations are the currency of academic credit [30]. A design partner must treat 
 Technically, this means using **dynamic footnote/endnote tools** within Adobe InDesign [31, 32]. If an agency manually places footnotes as static text boxes, any text reflow will disconnect the note from its reference, breaking the document. The partner must also demonstrate attention to detail regarding specific style guides (APA, Chicago, etc.), ensuring italics and punctuation are consistent [34].
 
 ### Science Communication (SciComm) Capability
-A growing requirement for research organizations is [**Science Communication**](/5-signs-research-publications-need-redesign)—translating expert findings for non-expert audiences like policymakers or the general public [35].
+A growing requirement for research organizations is [**Science Communication**](/blog/5-signs-research-publications-need-redesign)—translating expert findings for non-expert audiences like policymakers or the general public [35].
 
 This requires a specific skill set: the ability to create "plain language" summaries and infographics that retain accuracy while increasing accessibility [36]. The design partner must act as a translator, using visual hierarchy to guide lay readers through complex findings without "dumbing down" the science.
 

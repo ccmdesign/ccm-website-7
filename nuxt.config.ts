@@ -102,8 +102,6 @@ export default defineNuxtConfig({
       crawlLinks: true,
       routes: ['/', '/feed.xml', '/about', '/contact', '/privacy'],
       ignore: [
-        '/blog/**',
-        '/blog',
         '/layouts/**',
         '/layouts',
         '/admin',

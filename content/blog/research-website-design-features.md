@@ -37,7 +37,7 @@ tldr: >-
   they are a policy analyst looking for a specific brief, a journalist
   fact-checking a statistic, or an academic conducting a literature review,
   their goal is information retrieval. Yet, many organizations treat their
-  [research website design](/research-website-features-impact) as a digital
+  [research website design](/blog/research-website-features-impact) as a digital
   brochure—prioritizing large hero images, scroll-jacking animations, and
   "flashy" aesthetics over functional utility.
 
@@ -91,7 +91,7 @@ While navigation plays a role in helping users explore the *scope* of a site, se
 
 If search is the engine, filtering is the steering wheel. When a search for "global health" returns 5,000 results, the user’s next step is not to read 500 pages of results; it is to refine the set.
 
-Faceted search allows users to refine results by multiple dimensions simultaneously—filtering by "Publication Year," "Region," "Topic," and "Author" all at once. For complex datasets, [faceted search](/research-website-features-impact) is not a luxury—it is the only way to prevent user fatigue and abandonment. Without it, users are forced to "pogo-stick"—jumping back and forth between the results list and individual pages to assess relevance—which drastically increases fatigue.
+Faceted search allows users to refine results by multiple dimensions simultaneously—filtering by "Publication Year," "Region," "Topic," and "Author" all at once. For complex datasets, [faceted search](/blog/research-website-features-impact) is not a luxury—it is the only way to prevent user fatigue and abandonment. Without it, users are forced to "pogo-stick"—jumping back and forth between the results list and individual pages to assess relevance—which drastically increases fatigue.
 
 ### The "Zero Results" Dead End
 A critical failure point in research website design is the "No Results" page. When a user’s query matches nothing, a blank page is a dead end that frequently leads to site abandonment.

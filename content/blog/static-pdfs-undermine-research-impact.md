@@ -35,7 +35,7 @@ tldr: >-
   (PDF). While the PDF has historically served a vital role in preserving
   document fidelity across platforms, its dominance as the *primary*
   distribution channel is now actively undermining the [research
-  impact](/static-pdfs-undermining-research-impact) of forward-thinking
+  impact](/blog/static-pdfs-undermine-research-impact) of forward-thinking
   organizations.
 
   For researchers and evaluators, understanding the limitations of the PDF is no
@@ -80,7 +80,7 @@ There is a pervasive misconception that because a document is "born digital" (cr
 ### The Scale of Exclusion
 The study found that a staggering **74.9% of tested PDFs failed to meet even basic accessibility criteria** [1]. These aren't minor formatting errors; they are structural failures that render documents invisible or unintelligible to assistive technology.
 
-When a screen reader encounters an untagged PDF, it often struggles to distinguish between a column of text, a header, or a footer. It may read across columns rather than down them, mashing together unrelated sentences into a chaotic stream of noise [10]. Furthermore, the vast majority of these documents lack alternative text for [figures and charts](/data-visualization-research-impact), meaning blind researchers are cut off from the core evidence of the study [11].
+When a screen reader encounters an untagged PDF, it often struggles to distinguish between a column of text, a header, or a footer. It may read across columns rather than down them, mashing together unrelated sentences into a chaotic stream of noise [10]. Furthermore, the vast majority of these documents lack alternative text for [figures and charts](/blog/data-visualization-research-impact), meaning blind researchers are cut off from the core evidence of the study [11].
 
 ### The High Cost of Remediation
 Fixing these issues after the fact is remarkably inefficient. Remediation—the process of retrofitting accessibility tags onto a static PDF—is a manual, labor-intensive process. While HTML accessibility can largely be handled via semantic code and CSS at the template level, PDF remediation often requires human intervention on a per-document basis.
@@ -111,7 +111,7 @@ When text is extracted from a PDF, layout elements like page breaks, running hea
 ### The "Garbage In" Problem
 Extracting structured data from static documents is equally problematic. Reconstructing the logic of a table from a PDF—where the relationship between a cell and its header is visual rather than coded—is computationally expensive and error-prone [15, 16].
 
-If an AI agent cannot cleanly parse your [policy paper](/think-tank-website-undermining-impact) or technical report, that research effectively becomes invisible to the synthesis tools of the future. Content published in structured formats like XML or HTML, however, provides the machine-readable tags that allow AI systems to accurately ingest and cite your work [8, 19].
+If an AI agent cannot cleanly parse your [policy paper](/blog/think-tank-website-undermining-impact) or technical report, that research effectively becomes invisible to the synthesis tools of the future. Content published in structured formats like XML or HTML, however, provides the machine-readable tags that allow AI systems to accurately ingest and cite your work [8, 19].
 
 ## Strategic Solutions: What Leading Organizations Do
 

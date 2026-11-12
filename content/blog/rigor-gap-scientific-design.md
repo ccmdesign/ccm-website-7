@@ -62,7 +62,7 @@ linkedinPostedAt: "legacy"
 
 A clinical trial protocol might undergo months of scrutiny. Ethics boards review it, statisticians refine the power analysis, and peer reviewers pick apart the methodology. Every step is calibrated to eliminate bias and ensure reproducibility.
 
-Yet, when the findings are finally ready for the world, that rigorous process often halts abruptly. The "last mile" of research—the translation of complex data into figures, slide decks, and [visual abstracts](/science-translation-gap-invisible-research)—frequently relies on default software settings and hurried design choices.
+Yet, when the findings are finally ready for the world, that rigorous process often halts abruptly. The "last mile" of research—the translation of complex data into figures, slide decks, and [visual abstracts](/blog/science-translation-gap-invisible-research)—frequently relies on default software settings and hurried design choices.
 
 This creates a "rigor gap." While the data generation is strictly scientific, the data presentation often is not. Definitions of scientific rigor emphasize robust experimental design and unbiased interpretation [4][5][6]. However, when a figure distorts a trend or a layout confuses a reader, the study's reproducibility is compromised just as surely as if the sampling method were flawed.
 
@@ -76,7 +76,7 @@ Consider the pervasive use of bar graphs to present continuous data. This practi
 
 This is "chartjunk" with consequences [7]. By obscuring the data's true shape, researchers inadvertently prevent critical evaluation.
 
-The stakes rise significantly when research leaves the academic bubble. During the COVID-19 pandemic, inconsistent and misleading [data visualizations](/data-visualization-research-impact) contributed to public confusion. Graphs with manipulated axes or obscured cumulative rates distorted the perception of infection risks [24][25]. These failures highlight a stark reality: design choices are not merely decorative—they are the interface through which public health decisions are made.
+The stakes rise significantly when research leaves the academic bubble. During the COVID-19 pandemic, inconsistent and misleading [data visualizations](/blog/data-visualization-research-impact) contributed to public confusion. Graphs with manipulated axes or obscured cumulative rates distorted the perception of infection risks [24][25]. These failures highlight a stark reality: design choices are not merely decorative—they are the interface through which public health decisions are made.
 
 ## Why This Happens: The Psychology of Credibility
 
@@ -95,7 +95,7 @@ The most effective research organizations are moving away from the "DIY" model o
 ### Adopting Standards: The RIVA-C Checklist
 Just as the CONSORT statement standardized the reporting of randomized trials, new frameworks are standardizing visual communication. The **RIVA-C (Reporting Infographics and Visual Abstracts of Comparative studies)** checklist provides a rigorous set of criteria for visual abstracts [21].
 
-This checklist ensures that visual summaries do not oversimplify findings to the point of inaccuracy. It mandates the reporting of essential context—population size, intervention specifics, and potential harms—preventing the common pitfall where a visual abstract acts more like a [marketing flyer](/publication-design-vs-marketing-design) than a scientific document [22].
+This checklist ensures that visual summaries do not oversimplify findings to the point of inaccuracy. It mandates the reporting of essential context—population size, intervention specifics, and potential harms—preventing the common pitfall where a visual abstract acts more like a [marketing flyer](/blog/publication-design-vs-marketing-design) than a scientific document [22].
 
 ### The Nuance of Visual Abstracts
 Many top-tier journals, including *The New England Journal of Medicine*, have embraced visual abstracts to increase visibility [16]. The evidence supports this for engagement: articles with visual abstracts consistently see higher social media activity and views [18].

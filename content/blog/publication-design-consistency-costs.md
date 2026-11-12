@@ -62,7 +62,7 @@ When a grant proposal, a conference poster, and a digital report from the same i
 
 ## The "Scientific Sinkhole": Operational Costs of Formatting
 
-The most direct cost of [inconsistent publication design](/hidden-cost-inconsistent-publication-design) is the time highly skilled personnel spend on low-value formatting tasks. This phenomenon, often termed the "Scientific Sinkhole," represents a massive diversion of resources away from actual scientific discovery.
+The most direct cost of [inconsistent publication design](/blog/hidden-cost-inconsistent-publication-design) is the time highly skilled personnel spend on low-value formatting tasks. This phenomenon, often termed the "Scientific Sinkhole," represents a massive diversion of resources away from actual scientific discovery.
 
 ### The 52-Hour Tax
 A pivotal study published in *PLOS ONE* surveyed researchers regarding the time spent formatting manuscripts to meet the disparate guidelines of various journals. The results were stark: scientists lose an average of 52 hours per person, per year, solely to formatting [4].
@@ -70,7 +70,7 @@ A pivotal study published in *PLOS ONE* surveyed researchers regarding the time 
 For a research institution with 500 staff members, this aggregates to 26,000 lost hours annually. Based on the median income of the researchers surveyed, this lost time equates to approximately $1,908 per researcher per year [4]. This is budget that should be funding discovery, not adjusting margins or font sizes in Microsoft Word.
 
 ### The Friction of Resubmission
-This inefficiency is compounded by the peer review and dissemination process. Manuscripts are often rejected and must be reformatted for a different journal or platform, a process that consumes a median of 14 hours per manuscript [3]. This repetitive, non-value-added work is a direct result of a lack of standardized [design systems](/hidden-cost-inconsistent-publication-design) within the academic publishing ecosystem. When internal publishing workflows lack templates or a unified system, researchers are forced to reinvent the layout for every white paper or brief they produce, perpetuating this cycle of waste.
+This inefficiency is compounded by the peer review and dissemination process. Manuscripts are often rejected and must be reformatted for a different journal or platform, a process that consumes a median of 14 hours per manuscript [3]. This repetitive, non-value-added work is a direct result of a lack of standardized [design systems](/blog/hidden-cost-inconsistent-publication-design) within the academic publishing ecosystem. When internal publishing workflows lack templates or a unified system, researchers are forced to reinvent the layout for every white paper or brief they produce, perpetuating this cycle of waste.
 
 ## The Psychology of Credibility: Why Design Matters
 
@@ -85,7 +85,7 @@ Crucially, the window for establishing this credibility is vanishingly small. Re
 Inconsistency signals unreliability. When a stakeholder encounters an institution's content across different touchpoints and finds mismatched fonts, conflicting logo usage, or erratic layouts, the subconscious signal is one of carelessness. This creates a "disjointed" experience that confuses the audience. If an institution cannot manage the details of its own presentation, stakeholders may subconsciously question its ability to manage the details of complex research [12].
 
 ### The Visual Abstract Nuance
-To combat this, many institutions are turning to [visual abstracts](/hidden-cost-inconsistent-publication-design). The data here is instructive: studies consistently show that articles with visual abstracts or infographics receive significantly higher attention on social media [30]. However, the link to academic citations is more complex and often debated [32]. This suggests that while good design drives *engagement* and *awareness*—critical top-of-funnel metrics for policy influence—it must be backed by rigorous, accessible underlying data to drive academic citation. Design opens the door; consistency keeps the reader in the room.
+To combat this, many institutions are turning to [visual abstracts](/blog/hidden-cost-inconsistent-publication-design). The data here is instructive: studies consistently show that articles with visual abstracts or infographics receive significantly higher attention on social media [30]. However, the link to academic citations is more complex and often debated [32]. This suggests that while good design drives *engagement* and *awareness*—critical top-of-funnel metrics for policy influence—it must be backed by rigorous, accessible underlying data to drive academic citation. Design opens the door; consistency keeps the reader in the room.
 
 ## The Risk of "Shadow Design" and Compliance Failures
 

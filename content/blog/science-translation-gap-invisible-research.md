@@ -51,7 +51,7 @@ tldr: >-
   vast [3].
 
   The problem isn't the quality of the science. It's the [design of the
-  delivery](/5-signs-research-publications-need-redesign).
+  delivery](/blog/5-signs-research-publications-need-redesign).
 stage: researcher
 related_posts:
   - slug: data-visualization-research-impact
@@ -92,7 +92,7 @@ The study found a strong increasing trend in the use of "general scientific jarg
 ### 3. Cognitive Access: The Format Problem
 The final barrier is format. The standard academic PDF—two columns of dense text, minimal hierarchy, and complex figures—ignores fundamental principles of human cognition. In a digital environment where attention is the scarcest resource, relying solely on text is a strategic error.
 
-This is not about "dumbing down" the science. It is about acknowledging that human brains process visual and verbal information through different channels. When we force non-specialists to decode dense text without visual scaffolding, we increase [cognitive load](/poor-data-visualization-obscures-research-impact) to the point of disengagement.
+This is not about "dumbing down" the science. It is about acknowledging that human brains process visual and verbal information through different channels. When we force non-specialists to decode dense text without visual scaffolding, we increase [cognitive load](/blog/poor-data-visualization-obscures-research-impact) to the point of disengagement.
 
 ## The Mindset Shift: Debunking the Deficit Model
 
@@ -115,7 +115,7 @@ You may have heard the statistic that "visuals are processed 60,000 times faster
 The valid concept is **Dual Coding Theory**. The human brain processes visual and verbal information through separate channels. When text is combined with relevant visuals, the information is encoded in two places in the brain, improving both comprehension and retention. We don't need exaggerated statistics to know that a well-designed diagram can explain a mechanism faster than three paragraphs of text.
 
 ### The Power of the Visual Abstract
-The "[Visual Abstract](/data-visualization-research-impact)"—a graphical summary of a research paper's central findings—has emerged as a powerful tool for bridging the translation gap. It acts as a "movie trailer" for the paper, allowing the reader to quickly assess relevance and main findings before committing to the full text.
+The "[Visual Abstract](/blog/data-visualization-research-impact)"—a graphical summary of a research paper's central findings—has emerged as a powerful tool for bridging the translation gap. It acts as a "movie trailer" for the paper, allowing the reader to quickly assess relevance and main findings before committing to the full text.
 
 The data supports this investment. Research from Northwestern University and other institutions indicates that articles promoted with visual abstracts on social media see significantly higher engagement—up to five times the engagement of text-only posts [52]. This isn't just vanity metrics; higher engagement leads to higher click-through rates to the full article, effectively widening the funnel of potential readers.
 

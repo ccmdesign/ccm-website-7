@@ -6,7 +6,7 @@
           class="menu-item | h5"
           v-for="filter in filters"
           :key="filter.value"
-          :aria-active="activeFilter === filter.value ? 'true' : undefined"
+          :aria-pressed="activeFilter === filter.value ? 'true' : 'false'"
           @click="setFilter(filter.value)"
         >
           {{ filter.label }}
@@ -18,6 +18,7 @@
       v-for="(workItem, index) in workItemsWithImages" 
       :key="workItem.id || index" 
       :to="workItem.path" 
+      :title="workItem.title"
       :image="workItem.image || null"
       :mockupType="workItem.mockupType || null"
     />
@@ -39,7 +40,7 @@ button {
   letter-spacing: .5px;
 }
 
-button[aria-active] {
+button[aria-pressed="true"] {
   color: var(--color-primary-tint-80);
   transform: scale(1);
 }

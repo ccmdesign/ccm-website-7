@@ -44,7 +44,7 @@ tldr: >-
   intellectual calculation derived from impact data. It is a psychological
   response to consistency, clarity, and professional presentation. When a funder
   conducts due diligence, they are assessing your "digital body language." If
-  your proposal says "[world-class research](/research-brands-funders-remember)"
+  your proposal says "[world-class research](/blog/research-brands-funders-remember)"
   but your digital presence says "disorganized and outdated," the dissonance
   creates risk.
 
@@ -78,7 +78,7 @@ linkedinPostedAt: "legacy"
 
 ## The Psychology of Funder Decision-Making
 
-To understand why a grant officer might pass over a rigorous proposal from a poorly presented organization, we must look beyond aesthetics to [cognitive science](/research-brands-funders-remember). Evaluators, despite their professional objectivity, are subject to the same cognitive biases as any other human being.
+To understand why a grant officer might pass over a rigorous proposal from a poorly presented organization, we must look beyond aesthetics to [cognitive science](/blog/research-brands-funders-remember). Evaluators, despite their professional objectivity, are subject to the same cognitive biases as any other human being.
 
 ### System 1 vs. System 2 Thinking
 
@@ -132,7 +132,7 @@ This is the gatekeeper moment. Before a funder reads your mission statement, the
 
 Grant proposals are often dense with complex data. How that data is presented significantly impacts funder comprehension. The brain processes visual information significantly faster and more efficiently than text [11].
 
-An organization that can synthesize complex program data into clear, professional infographics demonstrates a high level of administrative capacity. It shows you understand your own data well enough to communicate it simply. Major funders, including the Kauffman Foundation, have explicitly validated this by offering capacity-building grants specifically for [branding](/research-brands-funders-remember) and web redesign, recognizing these elements as essential operational tools rather than "nice-to-haves" [30].
+An organization that can synthesize complex program data into clear, professional infographics demonstrates a high level of administrative capacity. It shows you understand your own data well enough to communicate it simply. Major funders, including the Kauffman Foundation, have explicitly validated this by offering capacity-building grants specifically for [branding](/blog/research-brands-funders-remember) and web redesign, recognizing these elements as essential operational tools rather than "nice-to-haves" [30].
 
 ## The Verification Checklist (What Leaders Must Do)
 

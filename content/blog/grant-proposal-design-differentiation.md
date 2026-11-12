@@ -75,14 +75,14 @@ For the researcher, the challenge is no longer just about proving merit. It is a
 To solve the differentiation problem, we must shift our perspective from *writing* the proposal to *reading* it. The person on the other end of your submission is likely an expert, but they are also exhausted.
 
 ### Reviewer Fatigue and "Satisficing"
-Reviewers often evaluate dozens of applications in a compressed timeframe. As they progress through the stack, [decision fatigue](/hidden-cost-good-enough-grant-design) sets in. Psychology tells us that under these conditions, humans rely on a heuristic called "satisficing"—choosing the first option that meets minimum criteria rather than expending the energy to find the optimal one [3].
+Reviewers often evaluate dozens of applications in a compressed timeframe. As they progress through the stack, [decision fatigue](/blog/hidden-cost-good-enough-grant-design) sets in. Psychology tells us that under these conditions, humans rely on a heuristic called "satisficing"—choosing the first option that meets minimum criteria rather than expending the energy to find the optimal one [3].
 
 If a proposal is visually dense or difficult to navigate, a tired reviewer is subconsciously primed to reject it. They are looking for reasons to say "no" to reduce their cognitive burden [2].
 
 ### Cognitive Load Theory
 This phenomenon is explained by Cognitive Load Theory, which distinguishes between "intrinsic load" (the inherent complexity of your research) and "extraneous load" (the effort required to process how that research is presented) [9].
 
-A "wall of text"—pages of single-spaced paragraphs without visual relief—imposes a massive extraneous load. It forces the reviewer to expend their limited working memory just to decode the document structure, leaving less mental energy to understand the impact of your work. Effective [proposal design](/psychology-grant-evaluation-design) focuses on minimizing this extraneous load so the reviewer’s brain can focus entirely on the merit of your ideas [21].
+A "wall of text"—pages of single-spaced paragraphs without visual relief—imposes a massive extraneous load. It forces the reviewer to expend their limited working memory just to decode the document structure, leaving less mental energy to understand the impact of your work. Effective [proposal design](/blog/psychology-grant-evaluation-design) focuses on minimizing this extraneous load so the reviewer’s brain can focus entirely on the merit of your ideas [21].
 
 ## Visual Differentiation as a Competitive Advantage
 
@@ -102,7 +102,7 @@ In grant applications with strict character limits, visuals act as strategic loo
 For research-driven organizations, the Theory of Change (ToC) is the backbone of any proposal. It explains the causal logic between your inputs and your intended impact. However, describing this logic in text often results in abstract, linear narratives that are hard to follow.
 
 ### Visualizing Causal Logic
-A visualized ToC—whether a [logic model](/hidden-cost-good-enough-grant-design) or a pathway diagram—proves rigor. It demonstrates that you have mapped the "mechanism of action" for your project. If a reviewer can see the connection between Activity A and Outcome B in a single glance, their confidence in the project's feasibility increases [24], [27].
+A visualized ToC—whether a [logic model](/blog/hidden-cost-good-enough-grant-design) or a pathway diagram—proves rigor. It demonstrates that you have mapped the "mechanism of action" for your project. If a reviewer can see the connection between Activity A and Outcome B in a single glance, their confidence in the project's feasibility increases [24], [27].
 
 ### Visual-Narrative Alignment
 The design must reinforce the story you are telling. If your narrative describes a "community-led, circular ecosystem," but your visual model is a rigid, top-down hierarchy, you create cognitive dissonance. The visual structure must match the project's values.

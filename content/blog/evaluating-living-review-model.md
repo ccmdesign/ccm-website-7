@@ -28,7 +28,7 @@ tldr: Transitioning from static PDFs to living reviews requires a fundamental sh
 -   **The Proof**: Case studies from the COVID-19 Taskforce and *Living Reviews in Relativity* demonstrate high impact and life-saving speed.
 -   **The Strategy**: Adopting this model requires rethinking citation infrastructure and resource allocation, moving from project-based to product-based funding.
 
-The moment a systematic review is published as a static PDF, it begins to decay. In fields where data emerges weekly—such as clinical medicine, machine learning, or climate policy—a review that took twelve months to produce may be obsolete by the time it reaches the reader. The traditional [publishing model](/manual-research-workflows-ai), designed for a print era, treats knowledge as a snapshot. But research is a stream.
+The moment a systematic review is published as a static PDF, it begins to decay. In fields where data emerges weekly—such as clinical medicine, machine learning, or climate policy—a review that took twelve months to produce may be obsolete by the time it reaches the reader. The traditional [publishing model](/blog/manual-research-workflows-ai), designed for a print era, treats knowledge as a snapshot. But research is a stream.
 
 To address this disconnect, institutions are increasingly evaluating the "Living Systematic Review" (LSR). This is not merely a change in publication frequency; it is an operational paradigm shift. It moves academic publishing from a "waterfall" model—where a document is finished, polished, and frozen—to a state of "Continuous Beta," where research outputs are dynamic entities that evolve alongside the evidence base [1].
 
@@ -53,11 +53,11 @@ Evaluating an LSR model means accepting that the document is never truly "finish
 
 ## Our Approach: Engineering the Knowledge Pipeline
 
-Implementing a living review requires more than editorial willpower; it requires a new technology stack. At CCM Design, we approach this challenge by treating content as code. By applying principles from software engineering—specifically [automation](/manual-research-workflows-ai), version control, and continuous integration—we can build pipelines that sustain living documents without burning out research teams.
+Implementing a living review requires more than editorial willpower; it requires a new technology stack. At CCM Design, we approach this challenge by treating content as code. By applying principles from software engineering—specifically [automation](/blog/manual-research-workflows-ai), version control, and continuous integration—we can build pipelines that sustain living documents without burning out research teams.
 
 ### Phase 1: Continuous Surveillance & Screening (The Input)
 
-The first bottleneck in an LSR is the volume of new literature. [Manual searching](/manual-research-workflows-ai) is unsustainable for a living document. The workflow must shift from ad-hoc queries to automated surveillance.
+The first bottleneck in an LSR is the volume of new literature. [Manual searching](/blog/manual-research-workflows-ai) is unsustainable for a living document. The workflow must shift from ad-hoc queries to automated surveillance.
 
 Best practice involves establishing "auto-alerts" across bibliographic databases that feed directly into the screening workflow [16]. However, a steady stream of alerts can quickly overwhelm human reviewers. This is where technology becomes an essential filter.
 

@@ -88,7 +88,7 @@ First impressions are formed with ruthless speed. Users form an opinion about a 
 
 ### The Cost of Delay
 
-The tolerance for latency is virtually non-existent. Data from Google indicates that as page load time increases from **1 second to 3 seconds, the probability of a bounce increases by 32%** [19]. This is particularly critical for [research dissemination](/static-pdfs-undermining-research-impact), where the goal is deep engagement—reading a PDF, exploring a dataset, or citing a paper.
+The tolerance for latency is virtually non-existent. Data from Google indicates that as page load time increases from **1 second to 3 seconds, the probability of a bounce increases by 32%** [19]. This is particularly critical for [research dissemination](/blog/static-pdfs-undermine-research-impact), where the goal is deep engagement—reading a PDF, exploring a dataset, or citing a paper.
 
 Furthermore, the academic community is increasingly mobile. Researchers access content during conferences, on transit, or in the field. Heavy, desktop-first designs that rely on unoptimized assets punish these users. With **53% of mobile users abandoning sites that take longer than 3 seconds to load**, performance optimization is not a technical "nice-to-have"—it is a barrier to entry [21]. Walmart's internal data showed that every one-second improvement in load time correlated with a **2% increase in conversions** [23]. Applied to a research context, this metric translates directly to paper downloads, citations, and policy impacts.
 
@@ -96,7 +96,7 @@ Furthermore, the academic community is increasingly mobile. Researchers access c
 
 For a research website, the publication repository is the product. Yet, many organizations treat their publications library as a static blog feed. This approach fails to account for the complexity of research data, which often spans decades, multiple authors, diverse methodologies, and varying formats.
 
-The solution lies in [faceted search](/research-website-design-features). This interface pattern allows users to refine results by multiple dimensions simultaneously—filtering by year, topic, region, and document type.
+The solution lies in [faceted search](/blog/research-website-design-features). This interface pattern allows users to refine results by multiple dimensions simultaneously—filtering by year, topic, region, and document type.
 
 ### Recall vs. Recognition
 
@@ -118,7 +118,7 @@ The current state of the web is exclusionary by default. The **WebAIM Million re
 
 Here is the critical insight for 2025: The "answer engines" of the future—Google's AI Overviews, Perplexity, and ChatGPT—consume the web in a manner very similar to screen readers used by the visually impaired. They rely on semantic HTML, clear heading structures (H1, H2, H3), and descriptive alt text to understand context.
 
-If your research website is inaccessible to a screen reader, it is likely opaque to an AI agent. Google has explicitly stated that structured data and clear content organization are essential for their AI models to synthesize information effectively [25]. Furthermore, accessible sites benefit from a well-documented "accessibility boost" in organic SEO rankings [17]. By designing for [web accessibility](/research-website-design-features), you are simultaneously future-proofing your content for the next generation of search.
+If your research website is inaccessible to a screen reader, it is likely opaque to an AI agent. Google has explicitly stated that structured data and clear content organization are essential for their AI models to synthesize information effectively [25]. Furthermore, accessible sites benefit from a well-documented "accessibility boost" in organic SEO rankings [17]. By designing for [web accessibility](/blog/research-website-design-features), you are simultaneously future-proofing your content for the next generation of search.
 
 ## Conclusion
 

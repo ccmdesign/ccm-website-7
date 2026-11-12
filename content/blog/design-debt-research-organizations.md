@@ -42,10 +42,10 @@ tldr: >-
   manual typesetters—fighting with software to make the document look
   professional. This scenario is not a result of incompetence. It is the symptom
   of a structural liability known as [design
-  debt](/hidden-cost-inconsistent-publication-design).
+  debt](/blog/hidden-cost-inconsistent-publication-design).
 
   For research organizations, [think
-  tanks](/think-tank-website-undermining-impact), and NGOs, credibility is the
+  tanks](/blog/think-tank-website-undermining-impact), and NGOs, credibility is the
   currency of trade. That credibility is conveyed through the clarity and
   consistency of your output. When that output is compromised by inefficient,
   legacy workflows, you are paying a high interest rate on a loan you never
@@ -81,7 +81,7 @@ It is not just about aesthetics. While "visual design debt" manifests as fragmen
 
 Consider the annual report. For many think tanks, this document is a monolith of debt. It is often a "time-consuming, tedious to compile, and costly" project that drains resources for months [33]. Because the process is manual and the design is treated as a one-off art project rather than a systematic assembly of content, the organization pays for the layout, the corrections, and the sheer inefficiency of the workflow every single year.
 
-This debt accumulates quietly. It is the struggle to format a 100-page policy paper because the styles are broken. It is the inability to update a chart because the source data is locked in a static image. It is the reality that your research is trapped in "flat" formats that are difficult for modern [digital audiences](/5-signs-research-publications-need-redesign) to navigate or digest [10].
+This debt accumulates quietly. It is the struggle to format a 100-page policy paper because the styles are broken. It is the inability to update a chart because the source data is locked in a static image. It is the reality that your research is trapped in "flat" formats that are difficult for modern [digital audiences](/blog/5-signs-research-publications-need-redesign) to navigate or digest [10].
 
 ## Why This Happens: The Mechanics of Accumulation
 

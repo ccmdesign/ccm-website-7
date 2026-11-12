@@ -30,7 +30,7 @@ tldr: >-
   identify hidden costs like "author's alterations" or file release fees.
 
   Select a [publication design
-  firm](/evaluate-research-publication-design-partners) is an exercise in risk
+  firm](/blog/evaluate-research-publication-design-partners) is an exercise in risk
   management. Unlike a social media graphic or a landing page, a
   publication—whether an annual report, white paper, or policy guide—is a
   high-stakes document. It often carries legal weight, financial scrutiny, and
@@ -68,7 +68,7 @@ Generalist agencies often underestimate the structural complexity of a 100-page 
 
 ### Question 1: "Have you designed publications specifically for our industry and of this complexity before?"
 
-You are looking for evidence of specific technical capability, not just style. Publication design requires a mastery of grid systems and [data visualization](/evaluate-research-publication-design-partners) that differs significantly from advertising or web design [1].
+You are looking for evidence of specific technical capability, not just style. Publication design requires a mastery of grid systems and [data visualization](/blog/evaluate-research-publication-design-partners) that differs significantly from advertising or web design [1].
 
 Listen for mentions of "data storytelling." A qualified publication design firm should be able to take a dense spreadsheet of financial data and turn it into a digestible, accurate infographic [10]. If they cannot show examples of complex data visualization, they may struggle with the informational density of a serious report.
 

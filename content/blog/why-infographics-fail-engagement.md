@@ -97,13 +97,13 @@ Effective infographics use a narrative arc (context, conflict, resolution) to gu
 Perhaps the most technical reason for infographic failure is the neglect of the device where consumption actually happens.
 
 ### The "Smudge" Effect
-[Traditional infographics](/static-infographics-failing-research) are often designed on large desktop monitors in portrait dimensions (e.g., 800px by 2000px). When these assets are viewed on a mobile device, they shrink to the width of the screen. Text becomes microscopic; charts become illegible smudges.
+[Traditional infographics](/blog/static-infographics-failing-research) are often designed on large desktop monitors in portrait dimensions (e.g., 800px by 2000px). When these assets are viewed on a mobile device, they shrink to the width of the screen. Text becomes microscopic; charts become illegible smudges.
 
 ### The Traffic Reality
 With over 50% of web traffic originating from mobile devices [4], a desktop-only design is functionally broken for half your potential audience. Mobile users are unlikely to pinch-and-zoom to read tiny text. If the content is not immediately legible, the bounce rate increases, and the likelihood of sharing drops to near zero.
 
 ### The Modular Solution
-The fix requires a shift in mindset from "shrinking" assets to "reflowing" them. "Researcher" stage marketers must advocate for [mobile-first principles](/static-infographics-failing-research):
+The fix requires a shift in mindset from "shrinking" assets to "reflowing" them. "Researcher" stage marketers must advocate for [mobile-first principles](/blog/static-infographics-failing-research):
 *   **Verticality:** Designing for natural vertical scrolling.
 *   **Modularity:** Breaking long infographics into individual "tiles" or "cards" that can be swiped through on Instagram or LinkedIn.
 *   **Legibility:** Using large font sizes that remain readable on small screens without zooming [4].
@@ -122,7 +122,7 @@ When a chart is cluttered or misleading (e.g., truncated axes or disproportionat
 
 ## Future-Proofing: Motion and Interactivity
 
-As static image feeds become more saturated, the threshold for attention continues to rise. Future shareability will likely depend on moving beyond [static formats](/static-infographics-failing-research).
+As static image feeds become more saturated, the threshold for attention continues to rise. Future shareability will likely depend on moving beyond [static formats](/blog/static-infographics-failing-research).
 
 Motion graphics and animated infographics are becoming powerful tools to disrupt the scroll. Animation attracts attention in a way static images cannot, and it allows for the explanation of complex processes over time [34]. Similarly, interactive data visualizations that allow users to explore the data themselves turn passive viewers into active participants, increasing dwell time and engagement depth.
 

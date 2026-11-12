@@ -29,7 +29,7 @@ tldr: >-
   function like think tanks.
 
   For the academic researcher, the peer-reviewed [journal
-  article](/5-signs-research-publications-need-redesign) is the currency of the
+  article](/blog/5-signs-research-publications-need-redesign) is the currency of the
   realm. It represents the culmination of years of rigorous inquiry, data
   collection, and analysis. But from the perspective of public health and
   societal impact, that publication is not the finish line—it is merely the
@@ -38,7 +38,7 @@ tldr: >-
   A profound disconnect exists between the generation of biomedical knowledge
   and its application in the real world. This phenomenon, widely recognized as
   the "know-do" gap, suggests that the current pipeline for [health
-  communication](/science-translation-gap-invisible-research) is broken [1].
+  communication](/blog/science-translation-gap-invisible-research) is broken [1].
   While researchers are incentivized to publish, the mechanisms to move that
   knowledge into the hands of patients, practitioners, and policymakers are
   often missing or underfunded [2].
@@ -93,7 +93,7 @@ This is not about "dumbing down" science for a general audience. It is about con
 Knowledge brokers act as linkage agents. They do not just simplify text; they interpret evidence for specific environments, whether that is a legislative floor or a hospital boardroom [7]. Their role is to facilitate an "engagement model" of communication, replacing the outdated "deficit model" which incorrectly assumes that simply providing more information will change behavior [8].
 
 ### The Power of Accessible Formats
-Tactical changes in [how research is presented](/data-visualization-research-impact) can have outsized effects. The use of "lay summaries"—plain language explanations of complex studies—has been shown to increase visibility and engagement [9]. Yet, most institutional workflows do not prioritize these formats, leaving the translation work to an overburdened press office or the researchers themselves.
+Tactical changes in [how research is presented](/blog/data-visualization-research-impact) can have outsized effects. The use of "lay summaries"—plain language explanations of complex studies—has been shown to increase visibility and engagement [9]. Yet, most institutional workflows do not prioritize these formats, leaving the translation work to an overburdened press office or the researchers themselves.
 
 ## What Leading Organizations Do Differently
 

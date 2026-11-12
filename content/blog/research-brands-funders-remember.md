@@ -68,7 +68,7 @@ linkedinPostedAt: "legacy"
 
 ## The Psychology of Funding Decisions
 
-Grantmakers and program officers are often viewed as purely rational actors driven solely by data. Ideally, funding decisions would be based exclusively on the merit of the proposal and the potential for impact. However, decision-makers are human beings subject to cognitive limitations and biases. When faced with complex societal problems and uncertain outcomes, they employ [heuristics](/psychology-grant-evaluation-design)—mental shortcuts that simplify decision-making [1, 9].
+Grantmakers and program officers are often viewed as purely rational actors driven solely by data. Ideally, funding decisions would be based exclusively on the merit of the proposal and the potential for impact. However, decision-makers are human beings subject to cognitive limitations and biases. When faced with complex societal problems and uncertain outcomes, they employ [heuristics](/blog/psychology-grant-evaluation-design)—mental shortcuts that simplify decision-making [1, 9].
 
 ### The Availability Heuristic
 The **availability heuristic** describes the tendency to weigh judgments toward information that is most easily recalled. In the funding sector, organizations that maintain "mental availability" through consistent visibility are significantly more likely to be shortlisted during review processes [2].
@@ -78,7 +78,7 @@ When a program officer considers a specific issue, such as "climate adaptation,"
 ### Authority and Risk Mitigation
 Funders are inherently risk-averse. They seek to maximize impact while minimizing the risk of operational failure or reputational damage. A cohesive, professional brand acts as a signal of **authority** and stability.
 
-This triggers the "authority principle," a psychological cue where individuals defer to perceived experts [12]. A polished visual identity suggests that the rigorous standards applied to the research are also applied to governance and operations. Conversely, a disjointed or outdated public face can serve as a red flag, prompting deeper scrutiny or skepticism during the [due diligence](/nonprofit-credibility-signals-funder-due-diligence) phase. Visual impressions are formed quickly—often within 90 seconds—and these subconscious judgments frame how the subsequent text is read [14].
+This triggers the "authority principle," a psychological cue where individuals defer to perceived experts [12]. A polished visual identity suggests that the rigorous standards applied to the research are also applied to governance and operations. Conversely, a disjointed or outdated public face can serve as a red flag, prompting deeper scrutiny or skepticism during the [due diligence](/blog/nonprofit-credibility-signals-funder-due-diligence) phase. Visual impressions are formed quickly—often within 90 seconds—and these subconscious judgments frame how the subsequent text is read [14].
 
 ## The "Overhead Myth" vs. Strategic Asset
 
@@ -87,7 +87,7 @@ A persistent barrier to brand investment in the research sector is the "overhead
 ### The Data on Brand ROI
 Despite this skepticism, the data suggests that brand investment correlates directly with financial health and impact. Industry reports indicate that nonprofits investing in professional branding and design are up to 50% more likely to report increased fundraising revenue [3, 4].
 
-Furthermore, visual rigor appears to correlate with research dissemination. Studies have shown that research articles accompanied by [visual abstracts](/data-visualization-research-impact) or graphical summaries can receive significantly higher citation counts—up to 120% higher in some datasets—and generate double the views compared to text-only counterparts [5, 6]. Investing in the visual translation of complex data is not "dumbing it down." It is a strategic move to increase reach and measurable impact.
+Furthermore, visual rigor appears to correlate with research dissemination. Studies have shown that research articles accompanied by [visual abstracts](/blog/data-visualization-research-impact) or graphical summaries can receive significantly higher citation counts—up to 120% higher in some datasets—and generate double the views compared to text-only counterparts [5, 6]. Investing in the visual translation of complex data is not "dumbing it down." It is a strategic move to increase reach and measurable impact.
 
 ### The Shift in Philanthropy
 Sophisticated funders are actively dismantling the overhead myth. The trend toward "trust-based philanthropy" recognizes that strong brands and communications infrastructures are mission-critical capabilities [37].
