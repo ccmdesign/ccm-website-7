@@ -11,7 +11,7 @@ year:
 items:
   - type: image
     mockupType: web
-    image: /assets/portfolio/meta/canada-performs.png
+    image: /assets/portfolio/meta/canada-performs.webp
     title: Canada Performs
     caption: Platform interface
 ---

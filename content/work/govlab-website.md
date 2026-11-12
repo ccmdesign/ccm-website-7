@@ -11,22 +11,22 @@ year:
 items:
   - type: image
     mockupType: web
-    image: /assets/portfolio/govlab/govlab-website-index.jpg
+    image: /assets/portfolio/govlab/govlab-website-index.webp
     title: GovLab Website
     caption: Homepage design
   - type: image
     mockupType: web
-    image: /assets/portfolio/govlab/govlab-website-project-page-1.jpg
+    image: /assets/portfolio/govlab/govlab-website-project-page-1.webp
     title: GovLab Website
     caption: Project page layout 1
   - type: image
     mockupType: web
-    image: /assets/portfolio/govlab/govlab-website-project-page-2.jpg
+    image: /assets/portfolio/govlab/govlab-website-project-page-2.webp
     title: GovLab Website
     caption: Project page layout 2
   - type: image
     mockupType: web
-    image: /assets/portfolio/govlab/govlab-website-projects.jpg
+    image: /assets/portfolio/govlab/govlab-website-projects.webp
     title: GovLab Website
     caption: Projects showcase
 ---

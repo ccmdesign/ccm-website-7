@@ -11,7 +11,7 @@ year:
 items:
   - type: image
     mockupType: web
-    image: /assets/portfolio/meta/facebook-civic-boost-1.png
+    image: /assets/portfolio/meta/facebook-civic-boost-1.webp
     title: Civic Boost
     caption: Platform interface
 ---

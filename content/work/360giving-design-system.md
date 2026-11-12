@@ -17,22 +17,22 @@ items:
     caption: Logo variation 1
   - type: image
     mockupType: web
-    image: /assets/portfolio/360giving/360Giving-Data-Standard-documentation.png
+    image: /assets/portfolio/360giving/360Giving-Data-Standard-documentation.webp
     title: Design System
     caption: Data Standard documentation
   - type: image
     mockupType: web
-    image: /assets/portfolio/360giving/360Giving-institutional.png
+    image: /assets/portfolio/360giving/360Giving-institutional.webp
     title: Design System
     caption: Institutional website
   - type: image
     mockupType: web
-    image: /assets/portfolio/360giving/Data-Registry-360Giving.png
+    image: /assets/portfolio/360giving/Data-Registry-360Giving.webp
     title: Design System
     caption: Data Registry interface
   - type: image
     mockupType: web
-    image: /assets/portfolio/360giving/Resource-Library.png
+    image: /assets/portfolio/360giving/Resource-Library.webp
     title: Design System
     caption: Resource Library interface
   - type: image
