@@ -18,6 +18,9 @@
     <section v-if="firstImage" class="first-image">
       <project-card class="grid-9"
         :image="firstImage.image || null"
+        :title="firstImage.title || workItem?.title"
+        :caption="firstImage.caption"
+        :alt="firstImage.alt"
         :mockupType="firstImage.mockupType || null"
       />
       <p class="grid-3">{{ workItem?.description }}</p>
@@ -41,6 +44,9 @@
         v-for="(imageItem, index) in editorialImages"
         :key="index"
         :image="imageItem.image || null"
+        :title="imageItem.title || workItem?.title"
+        :caption="imageItem.caption"
+        :alt="imageItem.alt"
         :mockupType="imageItem.mockupType || null"
       />
     </section>
@@ -50,6 +56,9 @@
         v-for="(imageItem, index) in webImages"
         :key="index"
         :image="imageItem.image || null"
+        :title="imageItem.title || workItem?.title"
+        :caption="imageItem.caption"
+        :alt="imageItem.alt"
         :mockupType="imageItem.mockupType || null"
       />
     </section>

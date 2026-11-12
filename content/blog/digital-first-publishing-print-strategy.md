@@ -38,7 +38,7 @@ tldr: >-
   intellectual property into static formats that are difficult to repurpose.
 
   The shift to [digital-first
-  publishing](/hybrid-publishing-digital-first-workflow) is not a rejection of
+  publishing](/blog/hybrid-publishing-digital-first-workflow) is not a rejection of
   paper. It is a transition from managing physical inventory to managing
   intellectual property. By decoupling content creation from format
   distribution, organizations can serve the operational need for speed while
@@ -74,7 +74,7 @@ In a traditional "print-first" workflow, the authoritative version of the conten
 ### The Channel-Neutral Solution
 A true digital-first strategy employs a "channel-neutral" workflow. Content is authored and stored as structured data (often XML) rather than visual layout. From this single source of truth, the content flows simultaneously to all outputs. The website updates instantly, the app refreshes, the audiobook script is generated, and—crucially—the print layout is automated [cite: 3].
 
-This "Create Once, Publish Everywhere" ([COPE](/hybrid-publishing-digital-first-workflow)) approach transforms publishing from a series of disconnected tasks into a unified system. It allows organizations to modernize their infrastructure without sacrificing the high-value print products their audiences trust [cite: 32].
+This "Create Once, Publish Everywhere" ([COPE](/blog/hybrid-publishing-digital-first-workflow)) approach transforms publishing from a series of disconnected tasks into a unified system. It allows organizations to modernize their infrastructure without sacrificing the high-value print products their audiences trust [cite: 32].
 
 ## Why Print Survives (The Science of Deep Reading)
 
@@ -107,7 +107,7 @@ Static PDFs—the hallmark of print-first workflows—are often inaccessible to 
 
 ## Leading Organizations Use Hybrid Models
 
-The most mature organizations have stopped debating "[print vs. digital](/hybrid-publishing-digital-first-workflow)" and have moved to a hybrid ecosystem model. They use digital efficiency to subsidize print quality, and print prestige to anchor digital authority.
+The most mature organizations have stopped debating "[print vs. digital](/blog/hybrid-publishing-digital-first-workflow)" and have moved to a hybrid ecosystem model. They use digital efficiency to subsidize print quality, and print prestige to anchor digital authority.
 
 ### The Ecosystem Approach
 Successful publishers now treat their content as a liquid asset that fills different containers based on user intent.

@@ -12,7 +12,7 @@
             class="menu__item menu-item"
             :to="link.to"
             :class="{ 'current-page': isActiveRoute(link.to) }"
-            :aria-active="isActiveRoute(link.to) ? 'true' : undefined"
+            :aria-current="isActiveRoute(link.to) ? 'page' : undefined"
           >{{ link.label }}</nuxt-link>
         </li>
       </ul>
@@ -91,7 +91,7 @@ nav {
 li:not(:first-child) .menu__item { padding-inline-start: var(--space-xs); }
 
 
-.menu-item[aria-active="true"],
+.menu-item[aria-current="page"],
 .menu-item.current-page {
   position: relative;
   

@@ -61,7 +61,7 @@ The narrative that "print is dead" has persisted for two decades, yet the balanc
 
 While print secures the present revenue, digital channels are securing the future audience. Digital audio revenue alone has grown 78.1% over the last five years [14]. This creates a tension that many research and publishing organizations struggle to resolve: how to maintain the quality and prestige of print while capturing the scale, accessibility, and growth of digital.
 
-This is the **Hybrid Publishing Paradox**. Organizations often believe they must choose between a focus on physical quality or digital agility. In reality, the most successful publishers have realized that the conflict isn't between the formats themselves, but in the production method. The solution lies in shifting from a "print-first" workflow—where content is locked into static layouts—to a [digital-first publishing](/digital-first-publishing-print-strategy) workflow that powers both print and digital outputs equally.
+This is the **Hybrid Publishing Paradox**. Organizations often believe they must choose between a focus on physical quality or digital agility. In reality, the most successful publishers have realized that the conflict isn't between the formats themselves, but in the production method. The solution lies in shifting from a "print-first" workflow—where content is locked into static layouts—to a [digital-first publishing](/blog/digital-first-publishing-print-strategy) workflow that powers both print and digital outputs equally.
 
 ## The Cognitive Case for Print
 
@@ -102,7 +102,7 @@ The path through the paradox is a fundamental shift in how content is created. T
 ### Breaking the InDesign Dependency
 In a traditional workflow, an editor writes a manuscript, which is then sent to a designer who places it into Adobe InDesign. At that moment, the content becomes "frozen" in a visual context. Any changes—a corrected statistic, a typo fix—must be manually applied to the InDesign file. To create a digital version, the text must be extracted, often stripping it of its structure.
 
-A digital-first workflow reverses this. Content is created and edited in a [channel-neutral workflow](/digital-first-publishing-print-strategy) (like XML or structured HTML) within a Content Management System (CMS). From this single "source of truth," the content flows in two directions:
+A digital-first workflow reverses this. Content is created and edited in a [channel-neutral workflow](/blog/digital-first-publishing-print-strategy) (like XML or structured HTML) within a Content Management System (CMS). From this single "source of truth," the content flows in two directions:
 1.  **To Digital:** Automatically rendering as responsive web pages, app feeds, and accessible HTML reports.
 2.  **To Print:** Flowing into automated or semi-automated InDesign templates for final polishing.
 

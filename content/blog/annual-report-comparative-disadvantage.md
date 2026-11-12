@@ -92,7 +92,7 @@ Beyond psychology, there is a quantifiable economic cost to outdated reporting. 
 
 A comprehensive study analyzing over 148,000 nonprofits found that organizations earning a "Seal of Transparency" (e.g., via Candid/GuideStar) received **62% more in contributions** on average than those that did not [4]. This "transparency premium" proves that funders actively seek clear, accessible data.
 
-A dated annual report often obscures data in dense paragraphs or static spreadsheets. Modern reports use data visualization to make financial health and [impact metrics](/impact-measurement-metrics-storytelling) immediately comprehensible. When a funder compares a report that requires effort to decipher against one that offers intuitive transparency, the latter wins capital.
+A dated annual report often obscures data in dense paragraphs or static spreadsheets. Modern reports use data visualization to make financial health and [impact metrics](/blog/impact-measurement-metrics-storytelling) immediately comprehensible. When a funder compares a report that requires effort to decipher against one that offers intuitive transparency, the latter wins capital.
 
 Many nonprofits hesitate to invest in high-quality reporting due to the "Starvation Cycle"—the belief that they must appear frugal to please donors [5]. This is a strategic error. A report that looks "cheap" often backfires. It does not signal efficiency; it signals that the organization lacks the infrastructure to scale. A polished, professional report signals that the organization respects the donor's investment enough to present the results clearly.
 
@@ -101,7 +101,7 @@ Many nonprofits hesitate to invest in high-quality reporting due to the "Starvat
 The definition of a "good" annual report has shifted. Leading organizations have moved from producing "Yearbooks" (what we did) to creating "Impact Assets" (what changed because of us). This shift creates a widening gap between leaders and laggards.
 
 ### From PDF to Digital Experience
-The static PDF is increasingly viewed as an archival artifact rather than a communication tool. The trend for 2025 is the [digital-first annual report](/nonprofit-annual-report-fundraising-tool) [6]. These microsites use "scrollytelling"—a technique that transforms long-form narratives into interactive experiences where visuals and data change as the user scrolls [7]. This approach increases engagement and retention of complex information, whereas static text often leads to drop-off.
+The static PDF is increasingly viewed as an archival artifact rather than a communication tool. The trend for 2025 is the [digital-first annual report](/blog/nonprofit-annual-report-fundraising-tool) [6]. These microsites use "scrollytelling"—a technique that transforms long-form narratives into interactive experiences where visuals and data change as the user scrolls [7]. This approach increases engagement and retention of complex information, whereas static text often leads to drop-off.
 
 ### Analytics and Trackability
 A crucial advantage of the digital report is trackability. Organizations can see exactly which sections donors read, how long they stay, and where they lose interest [8]. A PDF sent via email is a black hole; you never know if it was opened or read. Digital reports provide data that informs future fundraising strategies.

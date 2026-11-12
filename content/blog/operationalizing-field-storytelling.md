@@ -36,7 +36,7 @@ tldr: >-
   anecdotes into data.
 
   Every year, communications directors face the same crisis. The [annual
-  report](/nonprofit-annual-report-fundraising-tool) is due, the gala is
+  report](/blog/nonprofit-annual-report-fundraising-tool) is due, the gala is
   approaching, or a major donor needs an update. The headquarters team scrambles
   to find a compelling story. They sift through dry monitoring logs, email field
   managers who are too busy to respond, or hire expensive freelancers to
@@ -94,7 +94,7 @@ Hermann Ebbinghaus’s "forgetting curve" demonstrates that memory does not degr
 
 When a field officer sits down to write a report two weeks after a site visit, they are not retrieving a video-like recording of the event. They are engaging in "reconstructive memory." They rebuild the event based on general schemas and knowledge of what *usually* happens, rather than what *specifically* happened [15].
 
-This is why so many [impact reports](/annual-report-comparative-disadvantage) sound the same. The specific sensory details—the color of the water, the exact words of the beneficiary, the noise of the construction—are the first things to fade. What remains is the "gist." The report says, "The community was grateful," instead of quoting the grandmother who said she could finally wash her children's clothes.
+This is why so many [impact reports](/blog/annual-report-comparative-disadvantage) sound the same. The specific sensory details—the color of the water, the exact words of the beneficiary, the noise of the construction—are the first things to fade. What remains is the "gist." The report says, "The community was grateful," instead of quoting the grandmother who said she could finally wash her children's clothes.
 
 By delaying documentation, organizations are not just getting *less* content; they are getting *fictionalized* content. Operationalizing immediate capture is the only way to preserve the evidentiary integrity of the work.
 
@@ -105,7 +105,7 @@ Beyond accuracy, there is a compelling business case for empowering staff to sha
 ### The Trust Multiplier
 Marketing benchmarks suggest that content shared by employees receives significantly higher engagement than identical content shared via official brand channels [1]. Furthermore, industry data indicates that audiences trust individuals—technicians, experts, and field staff—far more than they trust corporate brands [2].
 
-In the context of a [nonprofit storytelling strategy](/impact-measurement-metrics-storytelling), this means your field staff are your most powerful influencers. They possess a network that the central brand cannot access, and they carry a credibility that the "Info@" handle cannot match.
+In the context of a [nonprofit storytelling strategy](/blog/impact-measurement-metrics-storytelling), this means your field staff are your most powerful influencers. They possess a network that the central brand cannot access, and they carry a credibility that the "Info@" handle cannot match.
 
 ### Visual Proof Over Polish
 There is a pervasive fear among communications teams that field-generated content won't look "professional." This fear is misplaced. In the current media landscape, high production value often signals "advertising," while raw capture signals "reality."

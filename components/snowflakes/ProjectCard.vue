@@ -4,12 +4,11 @@
     class="project-card portfolio-item"
     :data-mockup="mockupType"
     :href="hasLink ? to : undefined"
-    :aria-label="!hasLink ? title : undefined"
-    :aria-describedby="!hasLink ? caption : undefined"
+    :aria-label="hasLink && title ? title : undefined"
     :data-slide-in="hasLink ? 'from-top' : undefined"
     @click="!hasLink && handleClick()"
   >
-    <img :src="image" :alt="title ?? undefined" />
+    <img :src="image" :alt="imageAlt" />
   </component>
 </template>
 
@@ -82,6 +81,7 @@ const props = defineProps<{
   to?: RouteLocationRaw | null
   image: string
   caption?: string | null
+  alt?: string | null
   mockupType?: MockupType | null
 }>()
 
@@ -91,6 +91,14 @@ const emit = defineEmits<{
 
 const hasLink = computed(() => {
   return props.to != null && props.to !== '' && props.to !== '#'
+})
+
+// A linked card is named by its aria-label, so its image is decorative.
+// A standalone image gets alt from `alt`, else "title: caption". Never omit alt.
+const imageAlt = computed(() => {
+  if (hasLink.value && props.title) return ''
+  if (props.alt != null) return props.alt
+  return [props.title, props.caption].filter(Boolean).join(': ')
 })
 
 const handleClick = () => {

@@ -32,7 +32,7 @@ tldr: >-
   visualization over decorative "chart junk" to maintain research authority.
 
   Most organizations [evaluating design
-  partners](/evaluate-research-publication-design-partners) fall into a common
+  partners](/blog/evaluate-research-publication-design-partners) fall into a common
   trap: the "Halo Effect." You see a portfolio filled with stunning websites,
   punchy social media campaigns, and billboard-ready visuals, and assume that
   aesthetic quality translates automatically to long-form report design.
@@ -86,7 +86,7 @@ Our methodology focuses on four specific pillars that distinguish authority-driv
 
 ### Phase 1: Managing Cognitive Load
 
-The primary psychological difference between the two disciplines lies in how they handle [cognitive load](/data-visualization-research-impact).
+The primary psychological difference between the two disciplines lies in how they handle [cognitive load](/blog/data-visualization-research-impact).
 
 **Marketing design** focuses on reducing intrinsic load. It strips away nuance to make the message as simple as possible [1]. The priority is to remove any barrier to a quick decision [2].
 
@@ -113,7 +113,7 @@ For reports, we select typefaces based on legibility metrics:
 
 Nothing destroys the credibility of a research report faster than "chart junk."
 
-Marketing design frequently treats data as an illustration. The goal is often to make a simple number look impressive, leading to the use of 3D effects, heavy drop shadows, and decorative backgrounds. Edward Tufte, a pioneer in [data visualization](/data-visualization-research-impact), argues that this reduces the "Data-Ink Ratio"—the proportion of ink used to represent data versus decoration [12].
+Marketing design frequently treats data as an illustration. The goal is often to make a simple number look impressive, leading to the use of 3D effects, heavy drop shadows, and decorative backgrounds. Edward Tufte, a pioneer in [data visualization](/blog/data-visualization-research-impact), argues that this reduces the "Data-Ink Ratio"—the proportion of ink used to represent data versus decoration [12].
 
 In publication design, we adhere to Tufte’s principle: maximize data-ink. We strip away non-essential elements to reveal complex patterns [13].
 

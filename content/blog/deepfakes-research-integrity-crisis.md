@@ -30,7 +30,7 @@ In February 2024, the journal *Frontiers in Cell and Developmental Biology* publ
 
 While the incident provoked ridicule, it should have provoked fear. If a diagram featuring a rat with massive, nonsensical anatomy can pass through editorial and peer review, what else is slipping through? The "rat incident" was a clumsy warning shot. The real threat lies not in the obvious failures, but in the perfect fakes—the synthetic Western blots and fabricated DNA sequences that are indistinguishable from reality.
 
-We are entering an era of "epistemic insecurity," where the foundational trust necessary for scientific discourse is eroding [9]. The ability to generate hyper-realistic synthetic media has moved beyond political disinformation to infiltrate the core of scientific inquiry. The challenge for research institutions and publishers is no longer just about detecting falsehoods; it is about [designing systems](/ethical-ai-interface-design-research) where truth carries a verifiable, visual signature.
+We are entering an era of "epistemic insecurity," where the foundational trust necessary for scientific discourse is eroding [9]. The ability to generate hyper-realistic synthetic media has moved beyond political disinformation to infiltrate the core of scientific inquiry. The challenge for research institutions and publishers is no longer just about detecting falsehoods; it is about [designing systems](/blog/ethical-ai-interface-design-research) where truth carries a verifiable, visual signature.
 
 ## The Industrialization of Fraud
 
@@ -55,7 +55,7 @@ If we cannot trust our eyes, and we cannot trust detection software, we must cha
 
 ## The Pivot to Provenance (C2PA)
 
-The solution to the deepfake crisis is not finding the fake, but proving the real. This concept is known as **provenance**. The leading standard in this space is the [**Coalition for Content Provenance and Authenticity (C2PA)**](/ethical-ai-interface-design-research), a technical standard that allows publishers and creators to embed a tamper-evident history into digital files [4] [5].
+The solution to the deepfake crisis is not finding the fake, but proving the real. This concept is known as **provenance**. The leading standard in this space is the [**Coalition for Content Provenance and Authenticity (C2PA)**](/blog/ethical-ai-interface-design-research), a technical standard that allows publishers and creators to embed a tamper-evident history into digital files [4] [5].
 
 Think of C2PA as a "digital nutrition label" for content. Just as a consumer checks a label to see ingredients and nutritional value, a researcher should be able to check a digital file to see:
 1.  **Origin:** What device or software created this?

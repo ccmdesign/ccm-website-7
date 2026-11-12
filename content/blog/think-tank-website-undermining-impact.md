@@ -82,10 +82,10 @@ An outdated website does more than look bad; it signals obsolescence. In a secto
 
 ## The "Data Graveyard" and Discoverability
 
-One of the most significant challenges facing think tanks is the sheer volume of content they produce. Without a sophisticated Information Architecture (IA), valuable research is buried in what industry experts call a "[data graveyard](/think-tank-website-design-mistakes)."
+One of the most significant challenges facing think tanks is the sheer volume of content they produce. Without a sophisticated Information Architecture (IA), valuable research is buried in what industry experts call a "[data graveyard](/blog/think-tank-website-design-mistakes)."
 
 ### The Failure of the PDF-First Model
-The traditional dissemination model—posting a link to a [static PDF](/static-pdfs-undermining-research-impact)—is failing. Historical data from the World Bank revealed that nearly one-third of their PDF reports had never been downloaded [3]. This statistic highlights a massive inefficiency: high effort in production meets zero impact in consumption. PDFs are often poorly indexed by search engines at the granular level, meaning specific data points or insights buried on page 40 are invisible to Google.
+The traditional dissemination model—posting a link to a [static PDF](/blog/static-pdfs-undermine-research-impact)—is failing. Historical data from the World Bank revealed that nearly one-third of their PDF reports had never been downloaded [3]. This statistic highlights a massive inefficiency: high effort in production meets zero impact in consumption. PDFs are often poorly indexed by search engines at the granular level, meaning specific data points or insights buried on page 40 are invisible to Google.
 
 ### Search Engine Friction
 Search Engine Optimization (SEO) is the primary discovery mechanism for researchers and journalists. With 68% of online experiences beginning with a search engine, content that is locked in non-indexed formats effectively does not exist for the outside world [13]. Furthermore, think tanks often organize content using internal taxonomy (e.g., "Working Papers vs. Briefs") rather than the issue-based keywords that external users are actually searching for.
@@ -126,7 +126,7 @@ Modern research hubs organize content by issue area (e.g., "Climate Change," "Na
 Successful sites use "Hub Pages" that aggregate all relevant content—reports, experts, events, data, and multimedia—around a specific topic. This provides context and depth, preventing users from having to hunt for related materials across disparate sections of the site.
 
 ### Layered Content
-Effective hubs provide content in layers to suit different engagement levels. A single piece of research might be presented as a social media graphic for awareness, a blog post for summary, an executive summary for triage, and the full report for deep analysis. 59% of people prefer browsing "beautifully designed" content over plain layouts [1]. By using interactive [data visualizations](/data-visualization-research-impact), think tanks allow users to find their own stories within the data, significantly increasing engagement and citation potential [21].
+Effective hubs provide content in layers to suit different engagement levels. A single piece of research might be presented as a social media graphic for awareness, a blog post for summary, an executive summary for triage, and the full report for deep analysis. 59% of people prefer browsing "beautifully designed" content over plain layouts [1]. By using interactive [data visualizations](/blog/data-visualization-research-impact), think tanks allow users to find their own stories within the data, significantly increasing engagement and citation potential [21].
 
 ## Conclusion
 

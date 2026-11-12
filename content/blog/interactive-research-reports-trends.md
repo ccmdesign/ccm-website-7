@@ -62,7 +62,7 @@ linkedinPostedAt: "legacy"
 
 You spend months, sometimes years, designing a study. You gather rigorous data, conduct exhaustive analyses, and undergo peer review. Finally, you publish a comprehensive 100-page report. Then, silence.
 
-This is the "[PDF graveyard](/5-signs-research-publications-need-redesign)"—a term used by industry experts to describe the repository where expensive, high-quality research often goes to die [1]. It is not a reflection of the research quality, but a failure of the delivery mechanism. In an era where information consumption is increasingly mobile and fragmented, the static PDF is an obsolete vessel for complex ideas.
+This is the "[PDF graveyard](/blog/5-signs-research-publications-need-redesign)"—a term used by industry experts to describe the repository where expensive, high-quality research often goes to die [1]. It is not a reflection of the research quality, but a failure of the delivery mechanism. In an era where information consumption is increasingly mobile and fragmented, the static PDF is an obsolete vessel for complex ideas.
 
 The frustration is palpable among research directors and evaluators. You are tasked with driving evidence-based change, yet the primary tool for dissemination creates friction rather than flow. High-value knowledge remains locked in a format that is difficult to read on a phone, impossible for search engines to index deeply, and passive in its engagement. The disconnect is clear: while research methodologies have advanced, the "packaging" of that research has remained stagnant for decades.
 
@@ -78,11 +78,11 @@ Third, **cognitive load is too high**. A wall of text overwhelms the reader. Sta
 
 ## What Leading Organizations Do Differently
 
-Forward-thinking foundations and think tanks are moving away from the "publish and pray" model. They are adopting five specific trends that treat [research communication](/scoping-complex-research-communication-projects) not as an afterthought, but as a strategic product.
+Forward-thinking foundations and think tanks are moving away from the "publish and pray" model. They are adopting five specific trends that treat [research communication](/blog/scoping-complex-research-communication-projects) not as an afterthought, but as a strategic product.
 
 ### 1. Embracing Scrollytelling and Interactivity
 
-Leading organizations are shifting to "[scrollytelling](/static-infographics-failing-research)"—narrative-driven digital experiences where data visualization and text flow together as the user scrolls. This is not just an aesthetic choice; it is a retention strategy.
+Leading organizations are shifting to "[scrollytelling](/blog/static-infographics-failing-research)"—narrative-driven digital experiences where data visualization and text flow together as the user scrolls. This is not just an aesthetic choice; it is a retention strategy.
 
 **The Rockefeller Foundation** exemplifies this shift. Moving away from static documents for their impact reporting, they adopted a digital-first approach that utilized interactive maps and narrative storytelling. The results were quantifiable: their digital campaign achieved a click-through rate (CTR) of 19.27%, and sentiment analysis revealed 96.5% positive mentions [8]. By atomizing the report into digital sections, they drove targeted traffic to specific stories rather than asking users to download a massive file.
 

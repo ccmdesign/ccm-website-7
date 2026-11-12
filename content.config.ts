@@ -119,6 +119,7 @@ export default defineContentConfig({
             image: z.string(),
             title: z.string().optional(),
             caption: z.string().optional(),
+            alt: z.string().optional(),
             mockupType: z.enum(['web', 'editorial', 'branding']).optional(),
             cover: z.boolean().optional()
           }),

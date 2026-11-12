@@ -45,7 +45,7 @@ tldr: >-
   layout, typography, and visual hierarchy—acts as a decisive filter. It
   determines whether your ideas are deeply engaged with or summarily dismissed.
   Understanding the psychology of [grant proposal
-  design](/hidden-cost-good-enough-grant-design) is not about superficial
+  design](/blog/hidden-cost-good-enough-grant-design) is not about superficial
   aesthetics; it is about ensuring your science survives the review process long
   enough to be understood.
 stage: researcher
@@ -76,7 +76,7 @@ linkedinPostedAt: "legacy"
 To understand why presentation matters, we must look at the environment where decisions happen. Grant reviews rarely occur in a vacuum of calm focus. They happen in stacks, often late at night or squeezed between other professional duties.
 
 ### The Burden of Decision Fatigue
-Program officers and peer reviewers frequently evaluate hundreds of proposals annually [10]. As they move through this stack, they experience "[decision fatigue](/grant-proposal-design-differentiation)," a psychological phenomenon where the quality of decisions deteriorates after a long session of decision-making [12]. The brain acts like a muscle; repeated critical evaluations exhaust it, leading to a state known as "ego depletion."
+Program officers and peer reviewers frequently evaluate hundreds of proposals annually [10]. As they move through this stack, they experience "[decision fatigue](/blog/grant-proposal-design-differentiation)," a psychological phenomenon where the quality of decisions deteriorates after a long session of decision-making [12]. The brain acts like a muscle; repeated critical evaluations exhaust it, leading to a state known as "ego depletion."
 
 When fatigue sets in, reviewers unconsciously switch from "System 2" thinking (slow, deliberate, analytical) to "System 1" thinking (fast, intuitive, heuristic-based) [13]. In this state, the brain seeks shortcuts. It conserves energy by defaulting to the safest, easiest option—which, in a competitive funding landscape, is often rejection.
 
@@ -108,7 +108,7 @@ The grant review process shares striking similarities with the venture capital p
 The most immediate way visual quality acts as a filter is through strict adherence to formatting guidelines. A significant volume of proposals is rejected before reaching a subject matter expert simply due to non-compliance with margins, font sizes, or page limits [30, 31, 32]. This is a binary gate. Failure here signals a lack of "grant-readiness."
 
 ### Visual Processing Speed
-Biology favors the visual. Industry studies consistently show that the brain processes [visual information](/data-visualization-research-impact) significantly faster and more efficiently than textual information [7, 33]. A well-designed infographic or logic model can convey a complex methodology in seconds, whereas a textual description might require minutes of intense concentration. By moving complex data into visual formats, you bypass the bottleneck of textual processing and deliver your argument directly to the reviewer's understanding [37, 42].
+Biology favors the visual. Industry studies consistently show that the brain processes [visual information](/blog/data-visualization-research-impact) significantly faster and more efficiently than textual information [7, 33]. A well-designed infographic or logic model can convey a complex methodology in seconds, whereas a textual description might require minutes of intense concentration. By moving complex data into visual formats, you bypass the bottleneck of textual processing and deliver your argument directly to the reviewer's understanding [37, 42].
 
 ## What Leading Organizations Do Differently
 

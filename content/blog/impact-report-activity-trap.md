@@ -35,7 +35,7 @@ tldr: >-
   draft emotional anecdotes, and designers wrestle with layouts. Yet, once
   published, many of these documents face a stark reality: they function less as
   strategic assets and more as [data
-  graveyards](/5-signs-research-publications-need-redesign). They are
+  graveyards](/blog/5-signs-research-publications-need-redesign). They are
   downloaded, skimmed, and filed away, failing to unlock new funding or deepen
   stakeholder trust.
 
@@ -120,7 +120,7 @@ This often takes the form of the "Sandwich Method" or Narrative Policy Framework
 This approach validates the Theory of Change by showing the human reality behind the numbers.
 
 ### From Static to Dynamic
-The traditional [50-page PDF](/interactive-research-reports-trends) is increasingly obsolete. It is static, difficult to read on mobile devices, and often outdated the moment it is published [37].
+The traditional [50-page PDF](/blog/interactive-research-reports-trends) is increasingly obsolete. It is static, difficult to read on mobile devices, and often outdated the moment it is published [37].
 
 The future of social impact reporting is digital and interactive. Web-based reports allow stakeholders to engage with the data directly—filtering by region, drilling down into specific programs, or watching embedded video testimonials [39]. This interactivity reduces cognitive load by allowing the user to control the flow of information, exploring what is relevant to them rather than being overwhelmed by a wall of text.
 

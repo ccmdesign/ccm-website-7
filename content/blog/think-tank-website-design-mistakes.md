@@ -80,7 +80,7 @@ For think tanks, this is a critical vulnerability. Unlike e-commerce brands sell
 ### The "PDF Graveyard"
 The most pervasive design failure in the sector is the over-reliance on the PDF. While the format is excellent for printing, it is catastrophic for digital discovery.
 
-This has led to the "[PDF graveyard](/5-signs-research-publications-need-redesign)"—vast repositories of expensive research that remain unread. A self-audit by the World Bank revealed the scale of this waste: **31% of their policy reports had never been downloaded**, and nearly 87% had never been cited [3].
+This has led to the "[PDF graveyard](/blog/5-signs-research-publications-need-redesign)"—vast repositories of expensive research that remain unread. A self-audit by the World Bank revealed the scale of this waste: **31% of their policy reports had never been downloaded**, and nearly 87% had never been cited [3].
 
 The structural reasons for this are clear. Search engines like Google struggle to rank the contents of a PDF as effectively as HTML pages. A PDF lacks the navigation, internal linking, and structured data that algorithms prize. Consequently, high-quality research often loses search rankings to lower-quality commentary that happens to be published as web-native text. By locking insights inside a static file, think tanks render them invisible to the very algorithms that drive discovery.
 
@@ -113,7 +113,7 @@ Influence today requires "thumb-friendly" design. This means larger touch target
 
 ## From Digital Brochure to Research Hub
 
-Recognizing these failures, leading institutions are shifting their [digital strategy](/think-tank-website-undermining-impact). They are moving away from the static "digital brochure" model—a library of bios and PDFs—toward the "Research Hub" or media publisher model.
+Recognizing these failures, leading institutions are shifting their [digital strategy](/blog/think-tank-website-undermining-impact). They are moving away from the static "digital brochure" model—a library of bios and PDFs—toward the "Research Hub" or media publisher model.
 
 This shift prioritizes the user's need for answers over the institution's need for hierarchy.
 
@@ -126,7 +126,7 @@ Journalists are frequent power users of think tank sites, often looking for a qu
 These tools allow users to filter experts by topic, region, language, and media availability. They often integrate with the expert's Twitter feed and recent publications, providing a real-time snapshot of their relevance. This reduces the friction for media inquiries, directly supporting the mission of shaping public discourse.
 
 ### Living Documents and Data Visualization
-Instead of trapping data in static charts within a PDF, modern hubs use interactive [data visualization](/5-signs-research-publications-need-redesign). This invites the user to explore the data themselves—toggling variables on a map or adjusting inputs on a policy calculator [21].
+Instead of trapping data in static charts within a PDF, modern hubs use interactive [data visualization](/blog/5-signs-research-publications-need-redesign). This invites the user to explore the data themselves—toggling variables on a map or adjusting inputs on a policy calculator [21].
 
 This is not just "eye candy." Interactive content generates significantly higher engagement and signals technical sophistication. It turns a passive reader into an active participant. Furthermore, putting reports directly into HTML allows for better SEO performance and easier sharing of specific charts or quotes on social media—a critical channel even as platform reliability fluctuates [33].
 

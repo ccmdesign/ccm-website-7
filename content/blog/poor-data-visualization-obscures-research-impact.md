@@ -54,7 +54,7 @@ linkedinPostedAt: "legacy"
 
 ## The Crisis of Clarity in Research
 
-Science is not merely about the rigorous collection of data; it is about the effective transmission of that data. If a finding is ground-breaking but buried in an unintelligible chart, its impact is nullified. We operate in an environment where the volume of published research is exploding, yet the human capacity to process information remains static. In this high-noise landscape, poor [data visualization](/data-visualization-research-impact) does not just make research "ugly"—it renders it invisible.
+Science is not merely about the rigorous collection of data; it is about the effective transmission of that data. If a finding is ground-breaking but buried in an unintelligible chart, its impact is nullified. We operate in an environment where the volume of published research is exploding, yet the human capacity to process information remains static. In this high-noise landscape, poor [data visualization](/blog/data-visualization-research-impact) does not just make research "ugly"—it renders it invisible.
 
 For researchers and institutions, the stakes extend beyond aesthetics. A graph that confuses a peer reviewer can lead to rejection. A chart that misleads a policymaker can stall implementation. Evidence suggests that excellent science hidden behind poor visualization is functionally equivalent to invisible science.
 
@@ -82,7 +82,7 @@ Beyond color, simple structural failures undermine credibility. Truncated axes t
 Institutions that consistently achieve high impact have shifted their approach. They no longer view visualization as a post-publication decoration but as a core component of the dissemination strategy.
 
 ### The Shift to Visual Abstracts
-Leading journals are increasingly adopting **graphical abstracts**—single-panel visual summaries of a paper's core findings. The data supports this investment. Studies indicate that tweets containing [visual abstracts](/hidden-cost-inconsistent-publication-design) receive nearly **8 times more shares** than those with text alone [18]. This amplification is critical for breaking out of niche academic circles and reaching broader audiences.
+Leading journals are increasingly adopting **graphical abstracts**—single-panel visual summaries of a paper's core findings. The data supports this investment. Studies indicate that tweets containing [visual abstracts](/blog/hidden-cost-inconsistent-publication-design) receive nearly **8 times more shares** than those with text alone [18]. This amplification is critical for breaking out of niche academic circles and reaching broader audiences.
 
 ### Leveraging the Persuasion Gap
 In grant writing and policy advocacy, the goal is persuasion. A study utilizing 3M's widely cited research framework suggests that presentations using effective visual aids are significantly more persuasive—up to **43% more effective**—than those relying on text alone [20].
@@ -90,7 +90,7 @@ In grant writing and policy advocacy, the goal is persuasion. A study utilizing 
 By "humanizing" data through narrative visualization, researchers can connect statistical trends to real-world outcomes. This emotional resonance is often the differentiator in competitive funding landscapes [22].
 
 ### From Static to Interactive
-The traditional [static PDF](/static-pdfs-undermine-research-impact) is a bottleneck for complex, high-dimensional data. Forward-thinking researchers are moving toward **interactive figures** hosted on platforms like F1000Research. These tools allow readers to zoom, filter, and inspect the underlying data points [24].
+The traditional [static PDF](/blog/static-pdfs-undermine-research-impact) is a bottleneck for complex, high-dimensional data. Forward-thinking researchers are moving toward **interactive figures** hosted on platforms like F1000Research. These tools allow readers to zoom, filter, and inspect the underlying data points [24].
 
 This transparency serves two purposes:
 1.  **Verification:** It allows peers to validate the analysis directly, addressing the reproducibility crisis.

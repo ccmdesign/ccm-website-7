@@ -39,7 +39,7 @@ tldr: >-
   This is the "Researcher's Fallacy": the belief that scientific merit alone
   dictates funding success. In an ideal world, reviewers would judge every
   application purely on the substance of the ideas. In reality, [grant
-  review](/psychology-grant-evaluation-design) is a human process constrained by
+  review](/blog/psychology-grant-evaluation-design) is a human process constrained by
   biology, time, and psychology. When you settle for "good enough"
   design—standard templates, walls of text, and default charts—you are not just
   making an aesthetic choice. You are imposing a cognitive tax on the very
@@ -71,11 +71,11 @@ linkedinPostedAt: "legacy"
 
 ## The Meritocracy Myth and Reviewer Fatigue
 
-Grant reviewers do not read proposals in a vacuum. They evaluate them in stacks of dozens, often late at night or squeezed between their own research and administrative duties. This environment creates [reviewer fatigue](/grant-proposal-design-differentiation), a state where the cognitive energy required to process complex information diminishes rapidly over time [1].
+Grant reviewers do not read proposals in a vacuum. They evaluate them in stacks of dozens, often late at night or squeezed between their own research and administrative duties. This environment creates [reviewer fatigue](/blog/grant-proposal-design-differentiation), a state where the cognitive energy required to process complex information diminishes rapidly over time [1].
 
 As fatigue sets in, the brain shifts from deep, analytical processing to heuristic processing. It looks for shortcuts. It scans for red flags. In this state, a "wall of text" does not look like a comprehensive literature review; it looks like a chore.
 
-The consequences of this [cognitive load](/poor-data-visualization-obscures-research-impact) are tangible. When a reviewer struggles to navigate a document, they become frustrated. That frustration is rarely attributed to the formatting; instead, it is subconsciously transferred to the content itself. A confused reviewer is a skeptical reviewer.
+The consequences of this [cognitive load](/blog/poor-data-visualization-obscures-research-impact) are tangible. When a reviewer struggles to navigate a document, they become frustrated. That frustration is rarely attributed to the formatting; instead, it is subconsciously transferred to the content itself. A confused reviewer is a skeptical reviewer.
 
 Worse, underinvestment in presentation sends a dangerous signal about your organization. In the high-stakes world of federal and foundation funding, reviewers view the quality of the proposal as a proxy for the applicant's ability to execute the project. "Good enough" formatting suggests a lack of attention to detail. As noted by Lohfeld Consulting, poor visual communication can be interpreted as a sign of incompetence, undermining confidence before the reviewer has finished the first page [7].
 

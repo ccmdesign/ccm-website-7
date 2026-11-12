@@ -30,7 +30,7 @@ tldr: >-
   - **Data Wireframing**: Visualizing the final report's charts before fieldwork
   begins ensures the right stories are engineered into the project's DNA.
 
-  The [annual report](/nonprofit-annual-report-fundraising-tool) deadline
+  The [annual report](/blog/nonprofit-annual-report-fundraising-tool) deadline
   approaches. The design team is ready, the copywriters are standing by, and the
   leadership team is asking for a "compelling narrative of transformation." Yet,
   when you look at the spreadsheet, the columns are filled with attendance
@@ -86,7 +86,7 @@ Behavioral metrics, by contrast, measure actions that demonstrate intent, adopti
 
 ### Leading vs. Lagging Indicators
 
-Most [impact reports](/annual-report-comparative-disadvantage) rely heavily on lagging indicators—metrics that look back at what has already happened, such as total beneficiaries served. While necessary for compliance, lagging indicators lack narrative tension. They confirm history but do not predict the future.
+Most [impact reports](/blog/annual-report-comparative-disadvantage) rely heavily on lagging indicators—metrics that look back at what has already happened, such as total beneficiaries served. While necessary for compliance, lagging indicators lack narrative tension. They confirm history but do not predict the future.
 
 Compelling stories often rely on leading indicators—predictive measures that signal future outcomes [10]. For a social change initiative, a leading indicator might be "early adoption rates of a pilot program" or "stakeholder engagement levels." These metrics allow organizations to tell "momentum stories" and "progress stories" long before the final, long-term impact manifests.
 
@@ -108,7 +108,7 @@ If a report claims, "Participants reported a 50% increase in confidence," but th
 
 ### Reconstructing Baselines
 
-A common scenario in failed impact reporting is the absence of baseline data. Without knowing the starting point, it is impossible to calculate the "after" [17]. Reconstructing a baseline requires finding secondary data or using recall, both of which are inferior to [primary data collection](/operationalizing-field-storytelling).
+A common scenario in failed impact reporting is the absence of baseline data. Without knowing the starting point, it is impossible to calculate the "after" [17]. Reconstructing a baseline requires finding secondary data or using recall, both of which are inferior to [primary data collection](/blog/operationalizing-field-storytelling).
 
 The narrative consequence is a "flat" story. Without a solid baseline, the story becomes "We did X," rather than "We moved the needle from Y to Z." This leads to generic narratives that fail to differentiate the organization's work. A claim like "We improved community health" is forgettable. A claim like "We reduced waterborne illness rates by 40% compared to the 2023 baseline" is an asset.
 

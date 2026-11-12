@@ -49,7 +49,7 @@ tldr: >-
   flagged as outdated.
 
   Here are five data-backed signs that your current [research publication
-  design](/5-signs-research-publications-need-redesign) is limiting your impact.
+  design](/blog/5-signs-research-publications-need-redesign) is limiting your impact.
 stage: researcher
 related_posts:
   - slug: 5-signs-research-publications-need-redesign
@@ -103,7 +103,7 @@ When a researcher tries to read a standard two-column PDF on a phone, they are f
 
 If your citation counts and download numbers have plateaued despite the quality of your work, the issue may be discoverability. Text-heavy abstracts do not travel well on social media or in email newsletters.
 
-Modern [research impact](/static-pdfs-undermine-research-impact) relies on "shareability." Publishing services and marketing data indicate that articles accompanied by [visual abstracts](/data-visualization-research-impact)—graphical summaries of the main findings—see significantly higher engagement and click-through rates on platforms like X (formerly Twitter) and LinkedIn compared to text-only links [15].
+Modern [research impact](/blog/static-pdfs-undermine-research-impact) relies on "shareability." Publishing services and marketing data indicate that articles accompanied by [visual abstracts](/blog/data-visualization-research-impact)—graphical summaries of the main findings—see significantly higher engagement and click-through rates on platforms like X (formerly Twitter) and LinkedIn compared to text-only links [15].
 
 The rise of Altmetrics (measuring social attention) means that a static file sitting in a repository is invisible currency. A redesign that incorporates shareable assets directly into the publication flow can reactivate dormant research.
 

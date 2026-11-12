@@ -30,7 +30,7 @@ tldr: >-
   media content, email updates, and major donor presentations.
 
   Every year, nonprofit teams scramble to compile the [annual
-  report](/annual-report-comparative-disadvantage). It is often a grueling
+  report](/blog/annual-report-comparative-disadvantage). It is often a grueling
   process of chasing down department heads for data, wrestling with
   spreadsheets, and finalizing copy that tries to please everyone from the
   program director to the board chair. The result? Frequently, it is a dense,
@@ -67,7 +67,7 @@ linkedinPostedAt: "legacy"
 
 ## The Compliance Trap: Why Most Reports Fail
 
-The "Compliance Trap" occurs when organizations confuse legal requirements with donor stewardship. While nonprofits are federally required to file IRS Form 990 to maintain tax-exempt status, there is no federal mandate for a separate, narrative annual report [11]. Yet, many organizations produce reports that mimic the dry, tabular nature of tax filings, prioritizing internal bureaucratic completeness over compelling [storytelling](/operationalizing-field-storytelling).
+The "Compliance Trap" occurs when organizations confuse legal requirements with donor stewardship. While nonprofits are federally required to file IRS Form 990 to maintain tax-exempt status, there is no federal mandate for a separate, narrative annual report [11]. Yet, many organizations produce reports that mimic the dry, tabular nature of tax filings, prioritizing internal bureaucratic completeness over compelling [storytelling](/blog/operationalizing-field-storytelling).
 
 This leads to significant resource waste. Teams spend hundreds of hours producing documents that fail to engage their primary audience. Industry observations suggest that printed reports sent to the general donor base are often discarded "about 2 minutes after being received" [14]. The opportunity cost is real: the time spent polishing a letter from the Executive Director that few will read could be spent on stewardship activities that directly impact retention.
 
@@ -94,7 +94,7 @@ Many organizations shy away from financial transparency because they fear the "O
 The annual report is the perfect venue to reframe this narrative. Instead of hiding administrative costs, successful reports use narrative to explain them. Investing in expert staff or better technology isn't "waste"; it's the infrastructure that makes impact possible [24]. When you connect the "overhead" directly to the mission's success, you treat the donor as a partner who understands that changing the world requires resources.
 
 ### Visuals Beat Spreadsheets
-While the data validates the mind, the presentation must capture the eye. Humans process visual information 60,000 times faster than text [30]. A spreadsheet showing a 10% increase in literacy rates is accurate, but a photo of a child reading their first book, accompanied by that statistic, is motivating. The most effective reports respect the donor's time by using infographics and [visual storytelling](/impact-measurement-metrics-storytelling) to make complex data instantly digestible.
+While the data validates the mind, the presentation must capture the eye. Humans process visual information 60,000 times faster than text [30]. A spreadsheet showing a 10% increase in literacy rates is accurate, but a photo of a child reading their first book, accompanied by that statistic, is motivating. The most effective reports respect the donor's time by using infographics and [visual storytelling](/blog/impact-measurement-metrics-storytelling) to make complex data instantly digestible.
 
 ## The Strategic Shift: From "Annual Report" to "Impact Asset"
 

@@ -37,7 +37,7 @@ tldr: >-
   easy wins. An organization could condense a white paper into a 6,000-pixel
   tall JPEG, publish it, and reliably expect significant engagement. The mere
   existence of visual data was novel enough to drive [sharing
-  behavior](/why-infographics-fail-engagement).
+  behavior](/blog/why-infographics-fail-engagement).
 
   That era is over. Today, communications directors and researchers often find
   that despite high-quality data, their static visual assets see diminishing
@@ -45,7 +45,7 @@ tldr: >-
   The traditional infographic format has become incompatible with modern mobile
   behavior and the rigorous epistemic standards of 2025. It is no longer enough
   to make data pretty. To [drive
-  impact](/static-pdfs-undermining-research-impact), research must be
+  impact](/blog/static-pdfs-undermine-research-impact), research must be
   responsive, transparent, and narrative-driven.
 stage: researcher
 related_posts:
@@ -114,7 +114,7 @@ For think tanks and research institutes, the visual presentation acts as a proxy
 Forward-thinking organizations are not abandoning visual data; they are evolving how they deliver it. The shift is from static images to dynamic experiences.
 
 ### Scrollytelling
-The most effective replacement for the long-form infographic is "[scrollytelling](/interactive-research-reports-trends)"—interactive web experiences where data reveals itself as the user scrolls. This format keeps the user in control, pacing the narrative to match their reading speed [12]. Instead of dumping a massive file on the user, scrollytelling guides them through the argument, using motion to highlight changes and trends.
+The most effective replacement for the long-form infographic is "[scrollytelling](/blog/interactive-research-reports-trends)"—interactive web experiences where data reveals itself as the user scrolls. This format keeps the user in control, pacing the narrative to match their reading speed [12]. Instead of dumping a massive file on the user, scrollytelling guides them through the argument, using motion to highlight changes and trends.
 
 ### Modular Design
 To solve the mobile friction problem, designers are adopting a modular approach. Instead of one massive canvas, content is broken into individual "blocks" or modules [20].

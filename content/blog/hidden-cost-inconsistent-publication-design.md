@@ -37,7 +37,7 @@ tldr: >-
   brand.
 
   We often treat [publication
-  design](/5-signs-research-publications-need-redesign) as a final "coat of
+  design](/blog/5-signs-research-publications-need-redesign) as a final "coat of
   paint"—an aesthetic choice to be made after the real work is done. But
   evidence suggests that design inconsistency functions less like a cosmetic
   flaw and more like a hidden tax. It levies a cost on your credibility, drains
@@ -88,7 +88,7 @@ There is a direct correlation between brand consistency and financial performanc
 For a research organization, "revenue" might translate to grant funding, donor retention, or policy adoption. When your output looks fragmented, you dilute the authority of your brand, making it harder for stakeholders to recognize the cumulative value of your work.
 
 ### The "Zombie Component" Tax
-In the absence of a unified system, organizations accumulate [design debt](/design-debt-research-organizations)—the interest paid on quick fixes and ad-hoc decisions [16]. A specific manifestation of this is the "zombie component" [20].
+In the absence of a unified system, organizations accumulate [design debt](/blog/design-debt-research-organizations)—the interest paid on quick fixes and ad-hoc decisions [16]. A specific manifestation of this is the "zombie component" [20].
 
 A zombie component is an outdated button, header, or layout style that lingers in your digital ecosystem because no one knows if it's safe to delete it. These elements bloat your codebase and double the workload for Quality Assurance (QA). Every time you launch a new feature, you must test it against the modern design *and* the zombie versions lurking in older reports.
 
@@ -131,7 +131,7 @@ The World Bank produces thousands of reports for a global audience with varying 
 By enforcing strict accessibility standards across all publications, the World Bank protects its reputation and ensures its data reaches the widest possible audience. Inconsistency here would not just be ugly; it would be exclusionary [33].
 
 ### Visual Abstracts as Standard Practice
-Leading journals are also standardizing how they present summaries. The [Visual Abstract](/data-visualization-research-impact)—a graphical summary of key findings—is becoming a requirement. While the direct link to citation counts is still being studied, the impact on engagement is clear. Visual abstracts can generate **2x to 3x higher engagement** on social platforms compared to text-only links [37]. They act as a consistent "hook" that draws the reader into the deeper analysis.
+Leading journals are also standardizing how they present summaries. The [Visual Abstract](/blog/data-visualization-research-impact)—a graphical summary of key findings—is becoming a requirement. While the direct link to citation counts is still being studied, the impact on engagement is clear. Visual abstracts can generate **2x to 3x higher engagement** on social platforms compared to text-only links [37]. They act as a consistent "hook" that draws the reader into the deeper analysis.
 
 ## Conclusion
 

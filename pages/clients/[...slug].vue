@@ -57,7 +57,7 @@ button {
   letter-spacing: .5px;
 }
 
-button[aria-active] {
+button[aria-pressed="true"] {
   color: var(--color-primary-tint-80);
   transform: scale(1);
 }

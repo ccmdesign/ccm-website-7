@@ -42,12 +42,12 @@ tldr: >-
   For evaluators assessing potential agency partners, understanding how a
   partner navigates this tension is the most reliable predictor of project
   success. A partner who claims they can execute a complex [data
-  visualization](/5-signs-research-publications-need-redesign) project without a
+  visualization](/blog/5-signs-research-publications-need-redesign) project without a
   dedicated discovery phase is not being efficient; they are ignoring the
   inherent risks of the work.
 
   This guide outlines the methodologies required to scope complex [research
-  communication](/interactive-research-reports-trends) projects effectively. It
+  communication](/blog/interactive-research-reports-trends) projects effectively. It
   moves beyond standard project management to address the specific "Iron
   Triangle" of data, design, and policy impact.
 stage: evaluator
@@ -95,7 +95,7 @@ Effective scoping begins by defining the purpose, not the deliverable. A common 
 
 We follow the approach of defining the "Central Curiosity"—a concept championed by data visualization experts to identify the single, overarching question the visualization must answer [11]. Scoping must bridge the gap between the "nice to know" and the "need to know" [12]. By establishing the Central Curiosity during a "Product/UX Strategy" phase, we validate institutional objectives before a single pixel is designed [10].
 
-For example, if the Central Curiosity is "How does water scarcity affect migration patterns?", the scope might require a narrative [scrollytelling](/interactive-research-reports-trends) experience. If the question is "Which districts are most at risk right now?", the scope requires a searchable, real-time map. Scoping the format before the question is a recipe for misalignment.
+For example, if the Central Curiosity is "How does water scarcity affect migration patterns?", the scope might require a narrative [scrollytelling](/blog/interactive-research-reports-trends) experience. If the question is "Which districts are most at risk right now?", the scope requires a searchable, real-time map. Scoping the format before the question is a recipe for misalignment.
 
 ### Audience-Centric Boundaries
 Scoping also defines the depth of complexity based on the audience. A policy brief for a government official requires brevity and clear recommendations, while a technical report for fellow researchers requires methodological depth.
