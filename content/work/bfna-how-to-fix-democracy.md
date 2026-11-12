@@ -13,37 +13,37 @@ items:
   - type: image
     mockupType: web
     cover: true
-    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-1.png
+    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-1.webp
     title: How to Fix Democracy
     caption: Platform homepage
   - type: image
     mockupType: web
-    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-3.png
+    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-3.webp
     title: How to Fix Democracy
     caption: Enhanced interface
   - type: image
     mockupType: web
-    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-4.png
+    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-4.webp
     title: How to Fix Democracy
     caption: Updated platform
   - type: image
     mockupType: web
-    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-5.png
+    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-5.webp
     title: How to Fix Democracy
     caption: Platform features
   - type: image
     mockupType: web
-    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-6.png
+    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-6.webp
     title: How to Fix Democracy
     caption: Content showcase
   - type: image
     mockupType: web
-    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-7.png
+    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-7.webp
     title: How to Fix Democracy
     caption: Episode pages
   - type: image
     mockupType: web
-    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-8.png
+    image: /assets/portfolio/bfna/bfna-how-to-fix-democracy-8.webp
     title: How to Fix Democracy
     caption: Platform overview
 ---

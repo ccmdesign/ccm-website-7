@@ -11,7 +11,7 @@ projectUrl: https://bfna-indopacific.netlify.app/
 items:
   - type: image
     mockupType: web
-    image: /assets/portfolio/bfna/renewables-on-the-rise.png
+    image: /assets/portfolio/bfna/renewables-on-the-rise.webp
     title: Renewables on the Rise
     caption: Web Interface
     cover: true

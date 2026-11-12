@@ -11,7 +11,7 @@ year:
 items:
   - type: image
     mockupType: web
-    image: /assets/portfolio/bfna/bfna-the-100-questions.png
+    image: /assets/portfolio/bfna/bfna-the-100-questions.webp
     title: The 100 Questions
     caption: Initiative overview
 ---

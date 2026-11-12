@@ -10,63 +10,63 @@ order: 30
 items:
   - type: image
     mockupType: editorial
-    image: /assets/portfolio/gender-at-work/supporting-gender-equality-outcomes-in-development-research-capa.png
+    image: /assets/portfolio/gender-at-work/supporting-gender-equality-outcomes-in-development-research-capa.webp
     title: Supporting Gender Equality Outcomes
     caption: Cover
     cover: true
   - type: image
     mockupType: editorial
-    image: /assets/portfolio/gender-at-work/supporting-gender-equality-outcomes-in-development-research-capa-e-contracapa.png
+    image: /assets/portfolio/gender-at-work/supporting-gender-equality-outcomes-in-development-research-capa-e-contracapa.webp
     title: Supporting Gender Equality Outcomes
     caption: Full Cover
   - type: image
     mockupType: editorial
-    image: /assets/portfolio/gender-at-work/supporting-gender-equality-outcomes-in-development-research--16-17.png
+    image: /assets/portfolio/gender-at-work/supporting-gender-equality-outcomes-in-development-research--16-17.webp
     title: Supporting Gender Equality Outcomes
     caption: Pages 16-17
   - type: image
     mockupType: editorial
-    image: /assets/portfolio/gender-at-work/supporting-gender-equality-outcomes-in-development-research-20-21.png
+    image: /assets/portfolio/gender-at-work/supporting-gender-equality-outcomes-in-development-research-20-21.webp
     title: Supporting Gender Equality Outcomes
     caption: Pages 20-21
   - type: image
     mockupType: editorial
-    image: /assets/portfolio/gender-at-work/supporting-gender-equality-outcomes-in-development-research-38-39.png
+    image: /assets/portfolio/gender-at-work/supporting-gender-equality-outcomes-in-development-research-38-39.webp
     title: Supporting Gender Equality Outcomes
     caption: Pages 38-39
   - type: image
     mockupType: editorial
-    image: /assets/portfolio/gender-at-work/supporting-gender-equality-outcomes-in-development-research-42-43.png
+    image: /assets/portfolio/gender-at-work/supporting-gender-equality-outcomes-in-development-research-42-43.webp
     title: Supporting Gender Equality Outcomes
     caption: Pages 42-43
   - type: image
     mockupType: editorial
-    image: /assets/portfolio/gender-at-work/supporting-gender-equality-outcomes-in-development-research--46-47.png
+    image: /assets/portfolio/gender-at-work/supporting-gender-equality-outcomes-in-development-research--46-47.webp
     title: Supporting Gender Equality Outcomes
     caption: Pages 46-47
   - type: image
     mockupType: editorial
-    image: /assets/portfolio/gender-at-work/supporting-gender-equality-outcomes-in-development-research-62-63.png
+    image: /assets/portfolio/gender-at-work/supporting-gender-equality-outcomes-in-development-research-62-63.webp
     title: Supporting Gender Equality Outcomes
     caption: Pages 62-63
   - type: image
     mockupType: editorial
-    image: /assets/portfolio/gender-at-work/supporting-gender-equality-outcomes-in-development-research-76-77.png
+    image: /assets/portfolio/gender-at-work/supporting-gender-equality-outcomes-in-development-research-76-77.webp
     title: Supporting Gender Equality Outcomes
     caption: Pages 76-77
   - type: image
     mockupType: editorial
-    image: /assets/portfolio/gender-at-work/supporting-gender-equality-outcomes-in-development-research-82-83.png
+    image: /assets/portfolio/gender-at-work/supporting-gender-equality-outcomes-in-development-research-82-83.webp
     title: Supporting Gender Equality Outcomes
     caption: Pages 82-83
   - type: image
     mockupType: editorial
-    image: /assets/portfolio/gender-at-work/supporting-gender-equality-outcomes-in-development-research-84-85.png
+    image: /assets/portfolio/gender-at-work/supporting-gender-equality-outcomes-in-development-research-84-85.webp
     title: Supporting Gender Equality Outcomes
     caption: Pages 84-85
   - type: image
     mockupType: editorial
-    image: /assets/portfolio/gender-at-work/supporting-gender-equality-outcomes-in-development-research-92-93.png
+    image: /assets/portfolio/gender-at-work/supporting-gender-equality-outcomes-in-development-research-92-93.webp
     title: Supporting Gender Equality Outcomes
     caption: Pages 92-93
 ---

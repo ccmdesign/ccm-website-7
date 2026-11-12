@@ -11,12 +11,12 @@ year:
 items:
   - type: image
     mockupType: web
-    image: /assets/portfolio/harvard/harvard-spotlight-website.jpg
+    image: /assets/portfolio/harvard/harvard-spotlight-website.webp
     title: Tech Spotlight
     caption: Award platform website
   - type: image
     mockupType: web
-    image: /assets/portfolio/harvard/harvard-indie-films-website.png
+    image: /assets/portfolio/harvard/harvard-indie-films-website.webp
     title: Tech Spotlight
     caption: Indie Films showcase
   - type: image

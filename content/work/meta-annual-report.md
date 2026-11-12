@@ -12,7 +12,7 @@ year:
 items:
   - type: image
     mockupType: editorial
-    image: /assets/portfolio/meta/annual-report-2.png
+    image: /assets/portfolio/meta/annual-report-2.webp
     title: Annual Report
     caption: Report layout
 ---

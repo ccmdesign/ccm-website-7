@@ -21,7 +21,7 @@ items:
     caption: Branding system variation 1
   - type: image
     mockupType: website
-    image: /assets/portfolio/govlab/smarter-crowdsourcing-zika.png
+    image: /assets/portfolio/govlab/smarter-crowdsourcing-zika.webp
     title: Smarter Crowdsourcing
     caption: Zika case study interface
 ---

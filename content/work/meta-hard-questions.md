@@ -11,7 +11,7 @@ year:
 items:
   - type: image
     mockupType: web
-    image: /assets/portfolio/meta/hard-questions.png
+    image: /assets/portfolio/meta/hard-questions.webp
     title: Hard Questions
     caption: Publication layout
 ---

@@ -11,12 +11,12 @@ year:
 items:
   - type: image
     mockupType: web
-    image: /assets/portfolio/unicef/rd4c-homepage.png
+    image: /assets/portfolio/unicef/rd4c-homepage.webp
     title: Responsible Data for Children
     caption: Platform homepage
   - type: image
     mockupType: web
-    image: /assets/portfolio/unicef/rd4c-selected-readings.png
+    image: /assets/portfolio/unicef/rd4c-selected-readings.webp
     title: Responsible Data for Children
     caption: Selected readings section
   - type: image

@@ -11,7 +11,7 @@ year:
 items:
   - type: image
     mockupType: branding
-    image: /assets/portfolio/govlab/data-labs.jpg
+    image: /assets/portfolio/govlab/data-labs.webp
     title: Data Labs
     caption: Data Labs branding
 ---

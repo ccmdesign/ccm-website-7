@@ -12,27 +12,27 @@ year:
 items:
   - type: image
     mockupType: web
-    image: /assets/portfolio/bfna/bfna-website-homepage.png
+    image: /assets/portfolio/bfna/bfna-website-homepage.webp
     title: BFNA Website
     caption: Homepage design
   - type: image
     mockupType: web
-    image: /assets/portfolio/bfna/bfna-website-article.png
+    image: /assets/portfolio/bfna/bfna-website-article.webp
     title: BFNA Website
     caption: Article page layout
   - type: image
     mockupType: web
-    image: /assets/portfolio/bfna/bfna-website-product.png
+    image: /assets/portfolio/bfna/bfna-website-product.webp
     title: BFNA Website
     caption: Product showcase page
   - type: image
     mockupType: web
-    image: /assets/portfolio/bfna/bfna-website-updates.png
+    image: /assets/portfolio/bfna/bfna-website-updates.webp
     title: BFNA Website
     caption: Updates section
   - type: image
     mockupType: web
-    image: /assets/portfolio/bfna/bfna-website-workstream.png
+    image: /assets/portfolio/bfna/bfna-website-workstream.webp
     title: BFNA Website
     caption: Workstream navigation
 ---

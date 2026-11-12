@@ -21,7 +21,7 @@ items:
     caption: Logo alternative
   - type: image
     mockupType: web
-    image: /assets/portfolio/govlab/odpl-homepage.png
+    image: /assets/portfolio/govlab/odpl-homepage.webp
     title: Open Data Policy Lab
     caption: Platform homepage
 ---

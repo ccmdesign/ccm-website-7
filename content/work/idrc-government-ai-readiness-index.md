@@ -10,48 +10,48 @@ order: 32
 items:
   - type: image
     mockupType: editorial
-    image: /assets/portfolio/idrc/government-artificial-intelligence-readiness-index-capa.png
+    image: /assets/portfolio/idrc/government-artificial-intelligence-readiness-index-capa.webp
     title: Government AI Readiness Index
     caption: Cover
     cover: true
   - type: image
     mockupType: editorial
-    image: /assets/portfolio/idrc/government-artificial-intelligence-readiness-index-capa-e-contracapa.png
+    image: /assets/portfolio/idrc/government-artificial-intelligence-readiness-index-capa-e-contracapa.webp
     title: Government AI Readiness Index
     caption: Full Cover
   - type: image
     mockupType: editorial
-    image: /assets/portfolio/idrc/government-artificial-intelligence-readiness-index-8-9.png
+    image: /assets/portfolio/idrc/government-artificial-intelligence-readiness-index-8-9.webp
     title: Government AI Readiness Index
     caption: Pages 8-9
   - type: image
     mockupType: editorial
-    image: /assets/portfolio/idrc/government-artificial-intelligence-readiness-index-12-13.png
+    image: /assets/portfolio/idrc/government-artificial-intelligence-readiness-index-12-13.webp
     title: Government AI Readiness Index
     caption: Pages 12-13
   - type: image
     mockupType: editorial
-    image: /assets/portfolio/idrc/government-artificial-intelligence-readiness-index-16-17.png
+    image: /assets/portfolio/idrc/government-artificial-intelligence-readiness-index-16-17.webp
     title: Government AI Readiness Index
     caption: Pages 16-17
   - type: image
     mockupType: editorial
-    image: /assets/portfolio/idrc/government-artificial-intelligence-readiness-index-22-23.png
+    image: /assets/portfolio/idrc/government-artificial-intelligence-readiness-index-22-23.webp
     title: Government AI Readiness Index
     caption: Pages 22-23
   - type: image
     mockupType: editorial
-    image: /assets/portfolio/idrc/government-artificial-intelligence-readiness-index-26-27.png
+    image: /assets/portfolio/idrc/government-artificial-intelligence-readiness-index-26-27.webp
     title: Government AI Readiness Index
     caption: Pages 26-27
   - type: image
     mockupType: editorial
-    image: /assets/portfolio/idrc/government-artificial-intelligence-readiness-index-28-29.png
+    image: /assets/portfolio/idrc/government-artificial-intelligence-readiness-index-28-29.webp
     title: Government AI Readiness Index
     caption: Pages 28-29
   - type: image
     mockupType: editorial
-    image: /assets/portfolio/idrc/government-artificial-intelligence-readiness-index-32-33.png
+    image: /assets/portfolio/idrc/government-artificial-intelligence-readiness-index-32-33.webp
     title: Government AI Readiness Index
     caption: Pages 32-33
 ---

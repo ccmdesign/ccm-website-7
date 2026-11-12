@@ -11,39 +11,39 @@ year:
 items:
 - type: image
   mockupType: editorial
-  image: /assets/portfolio/bfna/bfna-federalism-in-crisis-toc.png
+  image: /assets/portfolio/bfna/bfna-federalism-in-crisis-toc.webp
   title: Federalism in Crisis
   caption: A study of the federalism in crisis
 - type: image
   mockupType: editorial
-  image: /assets/portfolio/bfna/bfna-federalism-in-crisis-10-11.png
+  image: /assets/portfolio/bfna/bfna-federalism-in-crisis-10-11.webp
   title: Federalism in Crisis
   caption: A study of the federalism in crisis
 - type: image
   mockupType: editorial
-  image: /assets/portfolio/bfna/bfna-federalism-in-crisis-24-25.png
+  image: /assets/portfolio/bfna/bfna-federalism-in-crisis-24-25.webp
   title: Federalism in Crisis
   caption: A study of the federalism in crisis
 - type: text
   content: The design system uses a color transition strategy—shifting from American red, white, and blue to German black, red, and gold—to visually represent the comparative analysis as readers progress through the publication.
 - type: image
   mockupType: editorial
-  image: /assets/portfolio/bfna/bfna-federalism-in-crisis-54-55.png
+  image: /assets/portfolio/bfna/bfna-federalism-in-crisis-54-55.webp
   title: Federalism in Crisis
   caption: A study of the federalism in crisis
 - type: image
   mockupType: editorial
-  image: /assets/portfolio/bfna/bfna-federalism-in-crisis-60-61.png
+  image: /assets/portfolio/bfna/bfna-federalism-in-crisis-60-61.webp
   title: Federalism in Crisis
   caption: A study of the federalism in crisis
 - type: image
   mockupType: editorial
-  image: /assets/portfolio/bfna/bfna-federalism-in-crisis-64-65.png
+  image: /assets/portfolio/bfna/bfna-federalism-in-crisis-64-65.webp
   title: Federalism in Crisis
   caption: A study of the federalism in crisis
 - type: image
   mockupType: editorial
-  image: /assets/portfolio/bfna/bfna-federalism-in-crisis-82-83.png
+  image: /assets/portfolio/bfna/bfna-federalism-in-crisis-82-83.webp
   title: Federalism in Crisis
   caption: A study of the federalism in crisis
 - type: text
@@ -51,12 +51,12 @@ items:
   heading: h4
 - type: image
   mockupType: editorial
-  image: /assets/portfolio/bfna/bfna-federalism-in-crisis-86-87.png
+  image: /assets/portfolio/bfna/bfna-federalism-in-crisis-86-87.webp
   title: Federalism in Crisis
   caption: A study of the federalism in crisis
 - type: image
   mockupType: editorial
-  image: /assets/portfolio/bfna/bfna-federalism-in-crisis-cover.png
+  image: /assets/portfolio/bfna/bfna-federalism-in-crisis-cover.webp
   title: Federalism in Crisis
   caption: A study of the federalism in crisis
 

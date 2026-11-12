@@ -11,7 +11,7 @@ year:
 items:
   - type: image
     mockupType: web
-    image: /assets/portfolio/meta/facebook-canadian-election-integrity-initiative-website-1.png
+    image: /assets/portfolio/meta/facebook-canadian-election-integrity-initiative-website-1.webp
     title: Canadian Election Integrity Initiative
     caption: Platform homepage
 ---
